@@ -1,0 +1,390 @@
+---
+sidebar: sidebar 
+permalink: create-database-server.html 
+keywords: create, server, Microsoft SQL, deploy, host, deploy a database host, database host 
+summary: 在 Workload Factory 中為資料庫建立新的 Microsoft SQL Server 。 
+---
+= 在 Workload Factory 中為資料庫建立資料庫伺服器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+若要在資料庫中建立新的 Microsoft SQL Server 或資料庫主機、則需要使用 FSX 進行 ONTAP 檔案系統部署、並為 Active Directory 建立資源。
+
+.關於這項工作
+您需要 AWS 帳戶認證和 _ 自動化 _ 權限。
+
+開始之前、請先瞭解資料庫主機組態、 Active Directory 部署、工作負載工廠作業模式的可用儲存部署類型、以及完成此作業的需求。
+
+部署之後、您需要 <<步驟 2 ：在 Microsoft SQL Server 上啟用遠端連線,在 Microsoft SQL Server 上啟用遠端連線>>。
+
+適用於 ONTAP 檔案系統部署的 FSX:: 若要建立新的 Microsoft SQL Server 、需要將 ONTAP 檔案系統的 FSX 作為儲存後端。您可以使用現有的適用於 ONTAP 檔案系統的 FSX 、或建立新的檔案系統。如果您選擇現有的 ONTAP 檔案系統 FSX 作為資料庫伺服器儲存後端、我們會為 Microsoft SQL 工作負載建立新的儲存 VM 。
++
+--
+適用於 ONTAP 檔案系統的 FSX 有兩種 Microsoft SQL Server 部署模式： _ 容錯移轉叢集執行個體（ FCI ） _ 或 _ 獨立 _ 。根據您所選擇的 ONTAP 部署模型的 FSX 、會為 ONTAP 檔案系統的 FSX 建立不同的資源。
+
+* * 容錯移轉叢集執行個體（ FCI ） Microsoft SQL 部署 * ：當為 ONTAP 檔案系統選取新的 FSX 進行 FCI 部署時、會部署適用於 NetApp ONTAP 檔案系統的多可用性區域 FSX 。針對 FCI 部署的資料、記錄和 tempdb 檔案、會建立個別的磁碟區和 LUN 。為 Windows 叢集的 Quorum 或見證磁碟建立額外的磁碟區和 LUN 。
+* * 獨立 Microsoft SQL 部署 * ：建立新的 Microsoft SQL Server 時、會建立單一可用性區域 FSX for ONTAP 檔案系統。此外、還會針對資料、記錄和 tempdb 檔案建立個別的磁碟區和 LUN 。
+
+
+--
+Active Directory:: 在部署期間、 Active Directory （ AD ）會發生下列情況：
++
+--
+* 如果您未提供現有的 SQL 服務帳戶、則會在網域中建立新的 Microsoft SQL 服務帳戶。
+* Windows 叢集、節點主機名稱和 Microsoft SQL FCI 名稱會新增為受管理的電腦至 Microsoft SQL 服務帳戶。
+* Windows 叢集項目會獲指派權限、可將電腦新增至網域。
+
+
+--
+資源復原:: 如果您決定復原網域名稱系統（ DNS ）資源、則 AD 和 DNS 中的資源記錄不會自動移除。您可以從 DNS 伺服器和 AD 移除記錄、如下所示。
++
+--
+* 對於使用者管理的 AD 、請先 link:https://learn.microsoft.com/en-us/powershell/module/activedirectory/remove-adcomputer?view=windowsserver2022-ps["移除 AD 電腦"^]。然後，從 DNS 管理器和連接到 DNS 服務器 link:https://learn.microsoft.com/en-us/windows-server/networking/technologies/ipam/delete-dns-resource-records["刪除 DNS 資源記錄"^]。
+* 適用於 AWS 託管的 Microsoft AD 、 link:https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_install_ad_tools.html["安裝 AD 管理工具"^]。下一步 link:https://learn.microsoft.com/en-us/powershell/module/activedirectory/remove-adcomputer?view=windowsserver2022-ps["移除 AD 電腦"^]、。最後，從 DNS 管理器和連接到 DNS 服務器 link:https://learn.microsoft.com/en-us/windows-server/networking/technologies/ipam/delete-dns-resource-records["刪除 DNS 資源記錄"^]。
+
+
+--
+工作負載工廠作業模式:: Workload Factory 提供三種作業模式、視您對讓 Workload Factory 管理 AWS 資源的舒適程度而定。
++
+--
+*_Basic_ 模式 * ：在此作業模式中、您不需要在 Workload Factory 中建立任何 AWS 帳戶認證的關聯。您可以從 Codebox 複製或下載部分填寫的 YAML 範本、以便在工作負載工廠以外完成。
+
+* 讀取模式 * ：在此作業模式中、您會提供具有讀取權限的 AWS 帳戶認證、讓您完成 _ 快速建立 _ 或 _ 進階建立 _ 表單、然後複製或下載表單。您也可以使用完整的表單詳細資料、從 Workload Factory 重新導向至 CloudForformation 。您將能夠在 Workload Factory 中管理部署的資料庫伺服器。
+
+* 自動執行 _ 模式 * ：在這種作業模式中、您可以提供 AWS 帳戶認證及自動化權限、讓您在 Workload Factory 中建立及管理 AWS 資源。
+
+--
+
+
+.開始之前
+在建立新的資料庫主機之前、請確定您具備下列先決條件。
+
+認證和權限:: 您必須 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和自動模式權限"^] 在 Workload Factory 中建立新的資料庫主機。
++
+--
+或者、您也可以使用 Codebox 複製空白範本或建立完整的範本、以便使用 REST API 、 AWS CLI 或 AWS Forgation 在 Workload Factory 之外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
+
+--
+Active Directory:: 連線至 Active Directory 時、您必須具有具有權限的管理存取權、才能執行下列動作：
++
+--
+* 加入網域
+* 建立電腦物件
+* 在預設組織單位（ OU ）中建立物件
+* 讀取所有內容
+* 將網域使用者設為 AD 節點上的本機管理員
+* 在 AD 中建立 Microsoft SQL Server 服務使用者（如果該使用者尚未存在）
+
+
+--
+
+
+
+
+== 步驟 1 ：建立資料庫伺服器
+
+您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式、以 _ 自動化 _ 模式權限在 Workload Factory 中完成此工作。
+
+[role="tabbed-block"]
+====
+.快速建立
+--
+
+NOTE: 在 _ 快速建立 _ 中、 FCI 是預設的部署模式、 Windows 2016 是預設的 Windows 版本、 SQL 2019 Standard Edition 是預設的 SQL 版本。
+
+.步驟
+. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 在「資料庫」方塊中、選取 * 部署資料庫主機 * 。
+. 選取 * 快速建立 * 。
+. 在 * AWS 設定 * 下、提供下列項目：
++
+.. * AWS 認證 * ：選取具有自動化權限的 AWS 認證來部署新的資料庫主機。
++
+AWS 認證加上 _ 自動化 _ 權限、讓 Workload Factory 能夠在 Workload Factory 中從 AWS 帳戶部署及管理新的資料庫主機。
+
++
+具有 _ 讀取 _ 權限的 AWS 認證可讓 Workload Factory 產生 CloudForgation 範本、供您在 AWS CloudForgation 主控台中使用。
+
++
+如果您在 Workload Factory 中沒有相關的 AWS 認證、而且想要在 Workload Factory 中建立新的伺服器、請按 * 選項 1* 前往認證頁面。為資料庫工作負載手動新增 _ 自動化 _ 模式所需的認證和權限。
+
++
+如果您想要在 Workload Factory 中完成「建立新伺服器」表單、以便下載完整的 YAML 檔案範本、以便在 AWS CloudForformation 中進行部署、請遵循 * 選項 2* 、以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。為資料庫工作負載手動新增 _Read_ 模式所需的認證和權限。
+
++
+或者、您也可以從 Codebox 下載部分完成的 YAML 檔案範本、在工作負載工廠外部建立堆疊、而無需任何認證或權限。從 Codebox 的下拉式清單中選取 * CloudForiam* 以下載 YAML 檔案。
+
+.. * 地區與 VPC* ：選擇地區與 VPC 網路。
++
+確保現有介面端點的安全性群組允許存取所選子網路的 HTTPS （ 443 ）傳輸協定。
+
++
+AWS 服務介面端點（ SQS 、 FSX 、 EC2 、 CloudWatch 、 CloudFormation 、 SSM) 和 S3 閘道端點會在部署期間建立（如果找不到）。
+
++
+VPC DNS 屬性 `EnableDnsSupport` 並 `EnableDnsHostnames` 經過修改、以在尚未設定為時啟用端點位址解析 `true`。
+
+.. * 可用性區域 * ：根據容錯移轉叢集執行個體（ FCI ）部署模式選取可用性區域和子網路。
++
+
+NOTE: FCI 部署僅支援用於 ONTAP 組態的多重可用性區域（ MAZ ） FSX 。
+
++
+子網路不應共用相同的路由表、以達到高可用度。
+
++
+... 在 * 叢集組態 - 節點 1* 欄位中、從 * 可用性區域 * 下拉式功能表中選取 MAZ FSX for ONTAP 組態的主要可用性區域、並從 * 子網路 * 下拉式功能表中選取子網路。
+... 在 * 叢集組態 - 節點 2* 欄位中、從 * 可用性區域 * 下拉式功能表中選取 MAZ FSX for ONTAP 組態的次要可用區域、並從 * 子網路 * 下拉式功能表中選取子網路。
+
+
+
+
+. 在 * 應用程式設定 * 下、輸入 * 資料庫認證 * 的使用者名稱和密碼。
+. 在 * 連線 * 下、提供下列項目：
++
+.. * 金鑰配對 * ：選取金鑰配對。
+.. * Active Directory* ：
++
+... 在 * 網域名稱 * 欄位中、選取或輸入網域名稱。
++
+.... 對於 AWS 託管的 Active Directory 、網域名稱會顯示在下拉式功能表中。
+.... 對於使用者管理的 Active Directory 、請在 * 搜尋與新增 * 欄位中輸入名稱、然後按一下 * 新增 * 。
+
+
+... 在 * DNS 位址 * 欄位中、輸入網域的 DNS IP 位址。您最多可以新增3個IP位址。
++
+對於 AWS 託管的 Active Directory 、 DNS IP 位址會顯示在下拉式功能表中。
+
+... 在 * 使用者名稱 * 欄位中、輸入 Active Directory 網域的使用者名稱。
+... 在 * 密碼 * 欄位中、輸入 Active Directory 網域的密碼。
+
+
+
+
+. 在 * 基礎架構設定 * 下、提供下列項目：
++
+.. *FSX for ONTAP System* ：為 ONTAP 檔案系統建立新的 FSX 、或使用現有的 FSX for ONTAP 檔案系統。
++
+... * 為 ONTAP * 建立新的 FSX ：輸入使用者名稱和密碼。
++
+適用於 ONTAP 檔案系統的全新 FSX 可能會增加 30 分鐘以上的安裝時間。
+
+... * 為 ONTAP * 選擇現有的 FSX ：從下拉式功能表中選取適用於 ONTAP 名稱的 FSX 、然後輸入檔案系統的使用者名稱和密碼。
+
+
+.. * 資料磁碟機大小 * ：輸入資料磁碟機容量、然後選取容量單位。
+
+
+. 摘要：
++
+.. * 預覽預設 * ：檢閱快速建立所設定的預設組態。
+.. * 預估成本 * ：提供部署所示資源時可能會產生的費用預估。
+
+
+. 按一下「 * 建立 * 」。
++
+或者、如果您想要立即變更這些預設設定、請使用「進階建立」建立資料庫伺服器。
+
++
+您也可以選取 * 儲存組態 * 、稍後再部署主機。
+
+
+
+--
+.進階建立
+--
+.步驟
+. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 在「資料庫」方塊中、選取 * 部署資料庫主機 * 。
+. 選取 * 進階建立 * 。
+. 對於 * 部署模式 * 、請選取 * 容錯移轉叢集執行個體 * 或 * 單一執行個體 * 。
+. 在 * AWS 設定 * 下、提供下列項目：
++
+.. * AWS 認證 * ：選取具有自動化權限的 AWS 認證來部署新的資料庫主機。
++
+AWS 認證加上 _ 自動化 _ 權限、讓 Workload Factory 能夠在 Workload Factory 中從 AWS 帳戶部署及管理新的資料庫主機。
+
++
+具有 _ 讀取 _ 權限的 AWS 認證可讓 Workload Factory 產生 CloudForgation 範本、供您在 AWS CloudForgation 主控台中使用。
+
++
+如果您在 Workload Factory 中沒有相關的 AWS 認證、而且想要在 Workload Factory 中建立新的伺服器、請按 * 選項 1* 前往認證頁面。為資料庫工作負載手動新增 _ 自動化 _ 模式所需的認證和權限。
+
++
+如果您想要在 Workload Factory 中完成「建立新伺服器」表單、以便下載完整的 YAML 檔案範本、以便在 AWS CloudForformation 中進行部署、請遵循 * 選項 2* 、以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。為資料庫工作負載手動新增 _Read_ 模式所需的認證和權限。
+
++
+或者、您也可以從 Codebox 下載部分完成的 YAML 檔案範本、在工作負載工廠外部建立堆疊、而無需任何認證或權限。從 Codebox 的下拉式清單中選取 * CloudForiam* 以下載 YAML 檔案。
+
+.. * 地區與 VPC* ：選擇地區與 VPC 網路。
++
+確保現有介面端點的安全性群組允許存取所選子網路的 HTTPS （ 443 ）傳輸協定。
+
++
+AWS 服務介面端點（ SQS 、 FSX 、 EC2 、 CloudWatch 、雲端形成、 SSM) 和 S3 閘道端點會在部署期間建立（如果找不到）。
+
++
+VPC DNS 屬性 `EnableDnsSupport` 並 `EnableDnsHostnames` 經過修改、以啟用解析端點位址解析（如果尚未設定為 `true`）。
+
+.. * 可用性區域 * ：根據您選擇的部署模式選擇可用性區域和子網路。
++
+
+NOTE: FCI 部署僅支援用於 ONTAP 組態的多重可用性區域（ MAZ ） FSX 。
+
++
+子網路不應共用相同的路由表、以達到高可用度。
+
++
+適用於單一執行個體部署::
++
+--
+... 在 * 叢集組態 - 節點 1* 欄位中、從下拉式功能表的 * 可用性區域 * 中選取可用性區域、並從 * 子網路 * 下拉式功能表中選取子網路。
+
+
+--
+適用於 FCI 部署::
++
+--
+... 在 * 叢集組態 - 節點 1* 欄位中、從 * 可用性區域 * 下拉式功能表中選取 MAZ FSX for ONTAP 組態的主要可用性區域、並從 * 子網路 * 下拉式功能表中選取子網路。
+... 在 * 叢集組態 - 節點 2* 欄位中、從 * 可用性區域 * 下拉式功能表中選取 MAZ FSX for ONTAP 組態的次要可用區域、並從 * 子網路 * 下拉式功能表中選取子網路。
+
+
+--
+
+
+.. * 安全性群組 * ：選取現有的安全性群組或建立新的安全性群組。
++
+在新伺服器部署期間、三個安全群組會附加到 SQL 節點（ EC2 執行個體）。
+
++
+... 建立工作負載安全性群組、以允許節點上的 Microsoft SQL 和 Windows 叢集通訊所需的連接埠和通訊協定。
+... 在 AWS 託管 Active Directory 的情況下、附加至目錄服務的安全性群組會自動新增至 Microsoft SQL 節點、以便與 Active Directory 進行通訊。
+... 對於現有的適用於 ONTAP 檔案系統的 FSX 、相關的安全性群組會自動新增至 SQL 節點、以便與檔案系統進行通訊。建立適用於 ONTAP 系統的新 FSX 時、會為適用於 ONTAP 檔案系統的 FSX 建立新的安全性群組、而同一個安全性群組也會附加至 SQL 節點。
++
+對於使用者管理的 Active Directory 、您可以選取一個安全性群組、以允許現有系統中需要連線至資料庫的流量。安全性群組應允許從設定 Microsoft SQL EC2 執行個體的子網路與 Active Directory 網域控制站進行通訊。
+
+
+
+
+
+. 在 * 應用程式設定 * 下、提供下列項目：
++
+.. 在 * SQL Server 安裝類型 * 下、選取 * 授權內含 AMMI * 或 * 使用自訂 AMMI * 。
++
+... 如果您選擇 * 授權內含 AMMI * 、請提供下列項目：
++
+.... * 作業系統 * ：選擇 * Windows server 2016* 、 * Windows server 2020* 或 * Windows server 2022* 。
+.... * 資料庫版本 * ：選取 * SQL Server Standard Edition* 或 * SQL Server Enterprise Edition* 。
+.... * 資料庫版本 * ：選擇 * SQL Server 2016 * 、 * SQL Server 2019 * 或 * SQL Server 2022* 。
+.... * SQL Server AMMI * ：從下拉式功能表中選取 SQL Server AMI 。
+
+
+... 如果您選取 * 使用自訂 AMMI * 、請從下拉式功能表中選取 AMI 。
+
+
+.. *SQL Server 整理 * ：選取伺服器的定序集。
++
+
+NOTE: 如果選取的定序集與安裝不相容、建議您選取預設定序「 SQL_Latin1_General_CP1_CI_AS 」。
+
+.. * 資料庫名稱 * ：輸入資料庫叢集名稱。
+.. * 資料庫認證 * ：輸入新服務帳戶的使用者名稱和密碼、或使用 Active Directory 中現有的服務帳戶認證。
+
+
+. 在 * 連線 * 下、提供下列項目：
++
+.. * 金鑰配對 * ：選取金鑰配對以安全地連線至執行個體。
+.. * Active Directory* ：提供下列 Active Directory 詳細資料：
++
+... 在 * 網域名稱 * 欄位中、選取或輸入網域名稱。
++
+.... 對於 AWS 託管的 Active Directory 、網域名稱會顯示在下拉式功能表中。
+.... 對於使用者管理的 Active Directory 、請在 * 搜尋與新增 * 欄位中輸入名稱、然後按一下 * 新增 * 。
+
+
+... 在 * DNS 位址 * 欄位中、輸入網域的 DNS IP 位址。您最多可以新增3個IP位址。
++
+對於 AWS 託管的 Active Directory 、 DNS IP 位址會顯示在下拉式功能表中。
+
+... 在 * 使用者名稱 * 欄位中、輸入 Active Directory 網域的使用者名稱。
+... 在 * 密碼 * 欄位中、輸入 Active Directory 網域的密碼。
+
+
+
+
+. 在 * 基礎架構設定 * 下、提供下列項目：
++
+.. * 資料庫執行個體類型 * ：從下拉式功能表中選取資料庫執行個體類型。
+.. *FSX for ONTAP System* ：為 ONTAP 檔案系統建立新的 FSX 、或使用現有的 FSX for ONTAP 檔案系統。
++
+... * 為 ONTAP * 建立新的 FSX ：輸入使用者名稱和密碼。
++
+適用於 ONTAP 檔案系統的全新 FSX 可能會增加 30 分鐘以上的安裝時間。
+
+... * 為 ONTAP * 選擇現有的 FSX ：從下拉式功能表中選取適用於 ONTAP 名稱的 FSX 、然後輸入檔案系統的使用者名稱和密碼。
+
+
+.. * Snapshot polic*: 默認啓用。快照每天拍攝、保留期為 7 天。
++
+快照會指派給為 SQL 工作負載建立的磁碟區。
+
+.. * 資料磁碟機大小 * ：輸入資料磁碟機容量、然後選取容量單位。
+.. * 已配置的 IOPS * ：選擇 * 自動 * 或 * 使用者已配置 * 。如果您選取 * 使用者佈建 * 、請輸入 IOPS 值。
+.. * 處理量容量 * ：從下拉式功能表中選取處理量容量。
++
+在某些地區、您可以選擇 4 Gbps 的處理量容量。若要配置 4 Gbps 的處理量容量、您的 ONTAP 檔案系統 FSX 必須設定至少 5 、 120 GiB 的 SSD 儲存容量和 16 、 000 SSD IOPS 。
+
+.. * 加密 * ：從您的帳戶中選取金鑰、或從其他帳戶選取金鑰。您必須從其他帳戶輸入加密金鑰 ARN 。
++
+ONTAP 的 FSX 自訂加密金鑰並未根據服務適用性列出。選取適當的 FSX 加密金鑰。非 FSX 加密金鑰將導致伺服器建立失敗。
+
++
+AWS 託管金鑰會根據服務適用性進行篩選。
+
+.. * 標記 * ：您可以選擇性地新增最多 40 個標記。
+.. * 簡易通知服務 * ：您也可以選擇從下拉式功能表中選取 Microsoft SQL Server 的 SNS 主題、為此組態啟用簡易通知服務（ SNS ）。
++
+... 啟用 Simple Notification Service 。
+... 從下拉式功能表中選取 ARN 。
+
+
+.. * CloudWatch 監控 * ：您也可以選擇啟用 CloudWatch 監控功能。
++
+我們建議您啟用 CloudWatch 、以便在發生故障時進行除錯。AWS CloudForecation 主控台中出現的事件屬於高層級、並未指定根本原因。所有詳細記錄都會儲存在 `C:\cfn\logs` EC2 執行個體的資料夾中。
+
++
+在 CloudWatch 中、會建立一個記錄群組、其中包含堆疊的名稱。每個驗證節點和 SQL 節點的記錄串流都會出現在記錄群組下方。CloudWatch 會顯示指令碼進度、並提供相關資訊、協助您瞭解部署是否失敗。
+
+.. * 資源復原 * ：目前不支援此功能。
+
+
+. 摘要
++
+.. * 預估成本 * ：提供部署所示資源時可能會產生的費用預估。
+
+
+. 按一下 * 建立 * 以部署新的資料庫主機。
++
+或者、您也可以儲存組態。
+
+
+
+--
+====
+
+
+== 步驟 2 ：在 Microsoft SQL Server 上啟用遠端連線
+
+伺服器部署後、 Workload Factory 不會在 Microsoft SQL Server 上啟用遠端連線。若要啟用遠端連線、請完成下列步驟。
+
+.步驟
+. 請參閱 Microsoft 文件中的、使用電腦身分識別來進行 NTLM link:https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm["網路安全性：允許本機系統使用電腦身分識別進行 NTLM"^] 。
+. 請參閱 Microsoft 文件中的、檢查動態連接埠組態 link:https://learn.microsoft.com/en-us/troubleshoot/sql/database-engine/connect/network-related-or-instance-specific-error-occurred-while-establishing-connection["建立與 SQL Server 的連線時發生網路相關或執行個體特定的錯誤"] 。
+. 允許安全性群組中所需的用戶端 IP 或子網路。
+
+
+.下一步
+現在您可以了 link:create-database.html["在 Workload Factory 中建立資料庫"]。

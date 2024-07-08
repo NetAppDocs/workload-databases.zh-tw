@@ -1,0 +1,75 @@
+---
+settings:
+  name: Database workloads
+  platform: cloud
+  internal:
+    pdf_enabled: true
+    termcheck_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
+sidebar:
+  entries:
+  - title: 資料庫工作負載文件
+    url: "/index.html"
+  - title: 版本資訊
+    entries:
+    - title: 新增功能
+      url: "/whats-new.html"
+    - title: 已知限制
+      url: "/known-limitations.html"
+  - title: 開始使用
+    entries:
+    - title: 瞭解適用於資料庫的 Workload Factory
+      url: "/learn-databases.html"
+    - title: 快速入門
+      url: "/quick-start-databases.html"
+  - title: 使用資料庫工作負載
+    entries:
+    - title: 探索節約效益
+      url: "/explore-savings.html"
+    - title: 建立新的資料庫伺服器
+      url: "/create-database-server.html"
+    - title: 偵測資料庫伺服器
+      url: "/detect-host.html"
+    - title: 建立資料庫
+      url: "/create-database.html"
+    - title: 使用 CodeBox 自動化
+      url: "/automate-codebox.html"
+  - title: 管理與監控
+    entries:
+    - title: 管理 Microsoft SQL Server
+      url: "/manage-server.html"
+    - title: 管理複本
+      entries:
+      - title: 建立沙箱複製
+        url: "/create-sandbox-clone.html"
+      - title: 檢查沙箱複本的完整性
+        url: "/check-clone-integrity.html"
+      - title: 還原沙箱複本
+        url: "/revert-clone.html"
+      - title: 重新整理沙箱複本
+        url: "/refresh-clone.html"
+      - title: 連線至 CI/CD 管道
+        url: "/connect-clone-cicd.html"
+      - title: 檢視複製連線資訊
+        url: "/view-clone-connection.html"
+      - title: 分割沙箱複本
+        url: "/split-clone.html"
+      - title: 刪除沙箱複本
+        url: "/delete-clone.html"
+    - title: 監控資料庫
+      url: "/monitor-databases.html"
+  - title: 知識與支援
+    entries:
+    - title: 註冊以取得支援
+      url: "/support-registration-databases.html"
+    - title: 取得協助
+      url: "/get-help-databases.html"
+  - title: 法律聲明
+    url: "/legal-notices.html"
+product-family:
+  name: BlueXP Workload Factory for AWS
+  repo: workload-family

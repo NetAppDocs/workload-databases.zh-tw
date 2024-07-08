@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: check-clone-integrity.html 
+keywords: integrity check, data corruption 
+summary: 執行完整性檢查以判斷沙箱複製資料是否完整或毀損。 
+---
+= 檢查沙箱複製中資料的完整性
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+執行完整性檢查以判斷沙箱複製資料是否完整或毀損。
+
+.關於這項工作
+當您在來源資料庫忙碌時、從來源資料庫建立沙箱複本時、該複本的資料可能與來源資料庫的最新快照不同步。此作業會檢查沙箱複製中所有物件的完整性、以判斷沙箱複製資料是否為最新資料。
+
+.步驟
+. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
+. 在資料庫中、選取 * 沙箱 * 標籤。
+. 在沙箱索引標籤中、按一下沙箱複製的「三點」功能表、以檢查完整性。
+. 選取 * 執行完整性檢查 * 。
+. 在完整性檢查對話方塊中、按一下 * 完整性檢查 * 。
+. 在沙箱或工作監控中檢查完整性核取方塊的狀態。
+
+
+如果完整性檢查失敗、我們建議您不要使用沙箱複製、並建立新的沙箱複製。

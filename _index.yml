@@ -1,0 +1,28 @@
+---
+indexpage:
+  title: Workload Factory for Databases 工作負載文件
+  lead: 在 BlueXP Workload Factory 的 ONTAP 檔案系統儲存設備上、部署 Microsoft SQL Server 組態、並在
+    FSX 上管理資料庫環境。
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 版本資訊
+      url: "/whats-new.html"
+    - title: 瞭解資料庫
+      url: "/learn-databases.html"
+    - title: 快速入門
+      url: "/quick-start-databases.html"
+  - title: 使用資料庫
+    links:
+    - title: 建立資料庫伺服器
+      url: "/create-database-server.html"
+    - title: 建立資料庫
+      url: "/create-database.html"
+    - title: 監控資料庫
+      url: "/monitor-databases.html"
+  - title: 知識與支援
+    links:
+    - title: 註冊以取得支援
+      url: "/support-registration-databases.html"
+    - title: 取得協助
+      url: "/get-help-databases.html"

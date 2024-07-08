@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: create-sandbox-clone.html 
+keywords: create, clone, sandbox 
+summary: 在 Workload Factory 中為資料庫建立沙箱複本。 
+---
+= 在 Workload Factory 中為資料庫建立沙箱複本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 Workload Factory for 資料庫中建立資料庫的沙箱複本、可讓您使用複本進行開發、測試、整合、分析、訓練、 不需變更來源資料庫、即可進行 QA 及其他工作。
+
+.關於這項工作
+沙箱複本是從來源資料庫上最新的快照建立而成。它可以複製到與來源資料庫相同的 Microsoft SQL Server 中、或是複製到另一個 Microsoft SQL Server 中、只要它們共用相同的適用於 ONTAP 檔案系統的 FSX 即可。
+
+.開始之前
+建立沙箱複本之前、請務必先完成下列先決條件。
+
+認證和權限:: 您必須 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和 _ 讀取 _ 或 _ 自動化 _ 模式權限"^] 在 Workload Factory 中建立沙箱複本。
++
+--
+或者、您也可以使用 Codebox 複製部分完成的範本、或建立完整的範本、以便使用 REST API 在工作負載工廠外部建立沙箱複製。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
+
+--
+Microsoft SQL Server:: 您必須在 Workload Factory 中擁有託管的 Microsoft SQL Server for Databases 、才能裝載新的沙箱複製。
+AWS Systems Manager:: 確保 `NT Authority\SYSTEM` 已透過 AWS Systems Manager 在 Microsoft SQL 主機中啟用使用者權限。
+來源資料庫:: 您需要可用於複製的來源資料庫。
+
+
+.步驟
+. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
+. 在資料庫中、選取 * 沙箱 * 標籤。
+. 在沙箱標籤中、選取 * 建立新的沙箱 * 。
+. 在 [ 建立新的沙箱 ] 頁面的 [ 資料庫來源 ] 底下，提供下列項目：
++
+.. * 來源資料庫主機 * ：選取來源資料庫主機。
+.. * 來源資料庫執行個體 * ：選取來源資料庫執行個體。
+.. * 來源資料庫 * ：選取要從中複製的來源資料庫。
+
+
+. 在 Database target （資料庫目標）下、提供下列項目：
++
+.. * 目標資料庫主機 * ：為同一 VPC 中的沙箱複製選取目標資料庫主機、並將 ONTAP 檔案系統的 FSX 與來源主機相同。
+.. * 目標資料庫執行個體 * ：選取沙箱複製的目標資料庫執行個體。
+.. * 目標資料庫 * ：輸入沙箱複製的名稱。
+
+
+. * 裝載 * ：選取 * 自動指派裝載點 * 或 * 定義裝載點路徑 * 。如果選擇 * 定義掛載點路徑 * 、請輸入掛載點路徑。
+. * 定義標記 * ：選取標記以定義沙箱複製。
+. 按一下「 * 建立 * 」。
+
+
+若要檢查工作進度、請前往 * 工作監控 * 標籤。

@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: detect-host.html 
+keywords: detect, detect server instance, instance, detect a database host, instance 
+summary: 在 Workload Factory 中偵測資料庫的 Microsoft SQL Server 執行個體。 
+---
+= 偵測 Microsoft SQL Server 執行個體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 Workload Factory 中偵測資料庫的 Microsoft SQL Server 執行個體。
+
+此工作用於偵測未偵測到的執行個體 _ 。
+
+.關於這項工作
+當 AWS 認證在 Workload Factory 中建立關聯時、資料庫可自動探索從 SQL Server 2016 開始使用下列 AWS 儲存類型的 Microsoft SQL Server ：
+
+* FSX ONTAP
+* 彈性區塊存放區（ EBS ）
+* 適用於 Windows 檔案伺服器的 FSX
+
+
+在資料庫中、探索到的執行個體分類如下：
+
+* _ 未偵測到的執行個體 _ ：未偵測到由 Workload Factory 自動探索的執行個體。在下列情況下無法偵測到執行個體：
++
+** Microsoft SQL Server 驗證失敗。
+** 適用於 Microsoft SQL Server 的 FSX for ONTAP 檔案系統並未在 Workload Factory 中註冊您的帳戶。
+
+
+* _ 非託管執行個體 _ ：偵測到的執行個體並非由 Workload Factory 管理
+* _Managed Instances ：已偵測到由 Workload Factory 管理的執行個體
+
+
+在 Workload Factory for Databases 中管理 Microsoft SQL Server 執行個體或主機執行個體的第一步、是偵測到未偵測到的資料庫伺服器執行個體。
+
+.開始之前
+偵測未偵測到的資料庫伺服器執行個體的需求如下：
+
+* 您必須 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證"^] 在 Workload Factory 中偵測資料庫伺服器執行個體。
+* 執行個體的儲存類型必須是下列其中一項：
++
+** FSX ONTAP
+** 彈性區塊存放區（ EBS ）
+** 適用於 Windows 檔案伺服器的 FSX
+
+
+* EC2 執行個體必須具有角色 / 執行個體設定檔、才能允許使用 SSM 連線進行偵測。
++
+偵測到 Microsoft SQL 執行個體時、不會修改現有環境。偵測是透過 AWS Systems Manager Session Manager （ SSM ）進行。如果沒有正確的 IAM 執行個體設定檔、偵測將會失敗。link:https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-troubleshooting.html["深入瞭解 SSM 疑難排解"^]。
+
+
+
+.步驟
+. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
+. 在資料庫中、選取 * 庫存 * 索引標籤。
+. 按一下下拉式箭頭以展開要偵測的主機列。
++
+主機隨即展開並顯示主機執行個體。
+
+. 按一下要偵測的執行個體的「三點」功能表。
+. 按一下 * 偵測 * 。
+. 在 * 偵測執行個體 * 對話方塊中、提供 Microsoft SQL Server 使用者名稱和密碼、或是 ONTAP 使用者名稱和密碼的 FSX 。
++
+Workload Factory 會嘗試驗證您的 Microsoft SQL 認證或 ONTAP 認證的 FSX 。
+
++
+如果這些認證中的任一項無法使用、 Workload Factory 會嘗試在 PowerShell 中安裝 `aws.tools.SimpleSystemsManagement` 模組。
+
+. 按一下 * 偵測 * 。
++
+偵測到的執行個體資訊隨即出現。
+
+. 選取 * 是、透過工作負載工廠 * 或 * 否 * 管理執行個體。
+. 按一下「 * 完成 * 」。
+
+
+.下一步
+當主機執行個體的儲存類型為適用於 ONTAP 的 FSX 時、您可以 link:manage-server.html["透過 Workload Factory 管理執行個體"]。

@@ -1,0 +1,75 @@
+---
+sidebar: sidebar 
+permalink: explore-savings.html 
+keywords: cost, savings, compare costs, EBS, FSx for ONTAP 
+summary: 使用 Amazon Elastic Block Store （ EBS ）儲存設備、探索資料庫工作負載的節約效益。 
+---
+= 探索資料庫工作負載工廠的節約效益
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 Amazon Elastic Block Store （ EBS ）儲存設備、探索資料庫工作負載的節約效益。
+
+Workload Factory 提供一個計算機、讓您可以比較在 ONTAP 檔案系統的 FSX 上執行資料庫工作負載的各種成本元件、例如儲存、運算、 SQL 授權、快照和複本、以及彈性區塊存放區（ EBS ）儲存設備。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 最符合資料庫工作負載的成本效益。
+
+如果您使用適用於 ONTAP 檔案系統的 FSX 、計算機會顯示這些 Microsoft SQL Server 上資料庫工作負載的儲存設備是否會降低成本。
+
+如果 Workload Factory 確定您可以在適用於 ONTAP 檔案系統的 FSX 上執行這些工作負載、以節省成本、您可以直接從 Workload Factory 的計算機上部署 Microsoft SQL over FSX for ONTAP 。在某些情況下、 Workload Factory 可能會建議您根據目前使用的儲存容量、並根據資料庫工作負載的效能特性來部署多個檔案系統。在某些情況下、 Workload Factory 可能會建議您根據目前使用的儲存容量、並根據資料庫工作負載的效能特性來部署多個檔案系統。
+
+
+
+== 提供您的系統需求
+
+如果您已將 AWS 認證新增至 Workload Factory 帳戶、以啟用 _ 自動化 _ 模式（link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["深入瞭解模式"]）、則 Workload Factory 可以識別 AWS 帳戶中可用的所有儲存系統、並在儲存設備清查頁面中顯示這些系統上的磁碟區特性。所搜尋的 AWS 帳戶是根據您在 Workload Factory 帳戶中定義的認證而定。
+
+此圖顯示已在 AWS 帳戶中探索的適用於 Windows 檔案伺服器系統的 FSX 上的磁碟區。
+
+image:screenshot-storage-inventory.png["顯示適用於 Windows 檔案伺服器的 FSX 上目前磁碟區庫存的儲存設備詳細目錄頁面。"]
+
+如果您尚未新增認證來將 Workload Factory 帳戶與 AWS 帳戶連結（稱為 _basive_ 模式）、您可以手動輸入要部署的儲存系統所需的特性、而儲存計算機則會根據成本來判斷最佳的檔案系統。您可以使用此方法來為 ONTAP 檔案系統範圍內的新 FSX 、同時也使用 _DE自動化 _ 模式。
+
+此圖顯示儲存計算機頁面、並比較適用於 ONTAP 和 EBS 儲存設備的 FSX 。
+
+image:screenshot-ebs-calculator.png["儲存計算機頁面、其中比較了 ONTAP 的 FSX 和彈性區塊存放區儲存設備。"]
+
+.開始之前
+開始之前、請先完成下列先決條件：
+
+* 請務必 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["授予 _ 自動化 _ 權限"^] 在 AWS 帳戶中偵測資料庫庫存中的彈性區塊存放（ EBS ）系統。
+* 在資料庫庫存中偵測 EBS 儲存設備中的主機。link:detect-host.html["瞭解如何偵測主機"]。
+
+
+.步驟
+. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
+. 選擇 * 瀏覽省錢方案 * 標籤。
+. 按一下 * 探索使用 EBS 儲存設備的資料庫伺服器的節約 * 。
+. 您也可以選擇提供下列有關 EBS 儲存設備複製和快照的詳細資料、以獲得更準確的成本節約預估。
++
+.. * Snapshot frequency * ：從下拉式清單中選取快照頻率。
+.. * 複製重新整理頻率 * ：從下拉式清單中選取複本重新整理頻率。
+.. * 每月變更率 * ：輸入每月平均複製資料和快照資料變更的百分比。
+
+
+. 檢閱頁面上提供的計算和建議。
++
+此外、向下捲動至頁面底部、即可 * 匯出 PDF* 。
+
+
+
+
+
+== 為 ONTAP 檔案系統部署 FSX
+
+如果您想要切換至適用於 ONTAP 的 FSX 以節省成本、請按一下 * 建立 * 、直接從「建立適用於 ONTAP 檔案系統的 FSX 」精靈建立檔案系統、或按一下 * 儲存 * 來儲存建議的組態以供稍後使用。
+
+部署方法:: 在 _ 自動化 _ 模式中、您可以直接從工作負載工廠部署適用於 ONTAP 檔案系統的 FSX 。您也可以從 Codebox 視窗複製內容、並使用其中一種 Codebox 方法來部署系統。
++
+--
+在 _basic 模式中、您可以從 Codebox 視窗複製內容、並使用其中一種 Codebox 方法部署適用於 ONTAP 檔案系統的 FSX 。
+
+--
+

@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: automate-codebox.html 
+keywords: automation, code automation, automate 
+summary: 您可以使用 Codebox 將主機部署、資料庫建立等作業自動化。 
+---
+= 使用 CodeBox 自動化
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用 Codebox 將主機部署、資料庫建立等作業自動化。Codebox 是一種程式碼（ IAC ）共同試驗的基礎架構、可協助您產生程式碼、以執行 Workload Factory 支援的任何作業。
+
+深入瞭解 link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["CodeBox 自動化"^] 及使用方法。

@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: revert-clone.html 
+keywords: re-baseline, revert clone, database, Microsoft SQL 
+summary: 在 Workload Factory 中還原資料庫的沙箱複本。 
+---
+= 在 Workload Factory 中還原資料庫的沙箱複本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在建立時、將資料庫複本還原為原始版本。
+
+.關於這項工作
+當您複製資料庫時、建立時的複本為 _baseline 複本。複製資料庫中的資料與建立時的來源資料庫相同。隨著沙箱資料庫複本中的資料隨時間變更、您可能會想要在首次建立複本時、將資料還原至基準線。此作業稱為重新建立複本的基礎。重新建立複本的基準、而非建立新的複本、可節省空間；不過、對沙箱複本所做的任何變更都會遭到刪除。
+
+.步驟
+. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
+. 在資料庫中、選取 * 沙箱 * 標籤。
+. 在沙箱索引標籤中、按一下您要還原的沙箱複本的「三點」功能表。
+. 選取 * 重新建立基準線 * 。
+. 在重新建立基準線對話方塊中、按一下 * 重新建立基準線 * 。
+
