@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: explore-savings.html 
 keywords: cost, savings, compare costs, EBS, FSx for ONTAP 
-summary: 使用 Amazon Elastic Block Store （ EBS ）儲存設備、探索資料庫工作負載的節約效益。 
+summary: 比較使用 Amazon Elastic Block Store （ EBS ）儲存設備與用於 ONTAP 儲存設備的 FSX 的成本、以探索資料庫工作負載的節約效益。 
 ---
 = 探索資料庫工作負載工廠的節約效益
 :allow-uri-read: 
@@ -11,29 +11,27 @@ summary: 使用 Amazon Elastic Block Store （ EBS ）儲存設備、探索資�
 
 
 [role="lead"]
-使用 Amazon Elastic Block Store （ EBS ）儲存設備、探索資料庫工作負載的節約效益。
+比較使用 Amazon Elastic Block Store （ EBS ）儲存設備與用於 ONTAP 儲存設備的 FSX 的成本、以探索資料庫工作負載的節約效益。
 
-Workload Factory 提供一個計算機、讓您可以比較在 ONTAP 檔案系統的 FSX 上執行資料庫工作負載的各種成本元件、例如儲存、運算、 SQL 授權、快照和複本、以及彈性區塊存放區（ EBS ）儲存設備。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 最符合資料庫工作負載的成本效益。
+Workload Factory 提供節省計算機、可讓您比較在 ONTAP 檔案系統的 FSX 上執行資料庫工作負載的各種成本元件、例如儲存、運算、 SQL 授權、快照和複本、以及 Elastic Block Store （ EBS ）儲存設備。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 最符合資料庫工作負載的成本效益。
 
 如果您使用適用於 ONTAP 檔案系統的 FSX 、計算機會顯示這些 Microsoft SQL Server 上資料庫工作負載的儲存設備是否會降低成本。
 
-如果 Workload Factory 確定您可以在適用於 ONTAP 檔案系統的 FSX 上執行這些工作負載、以節省成本、您可以直接從 Workload Factory 的計算機上部署 Microsoft SQL over FSX for ONTAP 。在某些情況下、 Workload Factory 可能會建議您根據目前使用的儲存容量、並根據資料庫工作負載的效能特性來部署多個檔案系統。在某些情況下、 Workload Factory 可能會建議您根據目前使用的儲存容量、並根據資料庫工作負載的效能特性來部署多個檔案系統。
+image:screenshot-ebs-savings-calculator.png["節約計算機頁面的螢幕擷取畫面會顯示左側 Amazon Elastic Block Store 組態上所選的 Microsoft SQL Server 、並提供自訂快照和複製值的選項。左側顯示的是在適用於 ONTAP 的 FSX 上使用 Microsoft SQL Server 和 Elastic Block Store 儲存設備的每月總成本、可節省美元金額和百分比。"]
+
+如果 Workload Factory 確定您可以在適用於 ONTAP 檔案系統的 FSX 上執行這些工作負載、以節省成本、您可以直接從 Workload Factory 的計算機上部署 Microsoft SQL over FSX for ONTAP 。當您在彈性區塊存放區儲存區上有多個 Microsoft SQL Server 執行個體時、我們會建議您使用單一 SQL 執行個體來設定適用於 ONTAP 的 FSX 組態。
 
 
 
 == 提供您的系統需求
 
-如果您已將 AWS 認證新增至 Workload Factory 帳戶、以啟用 _ 自動化 _ 模式（link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["深入瞭解模式"]）、則 Workload Factory 可以識別 AWS 帳戶中可用的所有儲存系統、並在儲存設備清查頁面中顯示這些系統上的磁碟區特性。所搜尋的 AWS 帳戶是根據您在 Workload Factory 帳戶中定義的認證而定。
+如果您已將 AWS 認證新增至 Workload Factory 帳戶、以啟用 _AIL_ 模式（link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["深入瞭解模式"]）、則 Workload Factory 可以識別 AWS 帳戶中所有執行 Microsoft SQL Server 的儲存系統。所搜尋的 AWS 帳戶是根據您在 Workload Factory 帳戶中定義的認證而定。
 
-此圖顯示已在 AWS 帳戶中探索的適用於 Windows 檔案伺服器系統的 FSX 上的磁碟區。
+此圖顯示 EBS 儲存設備上的 Microsoft SQL Server 主機、位於 AWS 帳戶中發現的「 Explore 節約」索引標籤中。
 
-image:screenshot-storage-inventory.png["顯示適用於 Windows 檔案伺服器的 FSX 上目前磁碟區庫存的儲存設備詳細目錄頁面。"]
+image:screenshot-explore-savings-tab.png["此圖顯示在 AWS 帳戶中發現的「 Explore 節約」索引標籤中偵測到和未受管理的 Microsoft SQL Server 主機。"]
 
-如果您尚未新增認證來將 Workload Factory 帳戶與 AWS 帳戶連結（稱為 _basive_ 模式）、您可以手動輸入要部署的儲存系統所需的特性、而儲存計算機則會根據成本來判斷最佳的檔案系統。您可以使用此方法來為 ONTAP 檔案系統範圍內的新 FSX 、同時也使用 _DE自動化 _ 模式。
-
-此圖顯示儲存計算機頁面、並比較適用於 ONTAP 和 EBS 儲存設備的 FSX 。
-
-image:screenshot-ebs-calculator.png["儲存計算機頁面、其中比較了 ONTAP 的 FSX 和彈性區塊存放區儲存設備。"]
+您可以自動探索所選主機的節約效益、或手動輸入您打算部署的 Microsoft SQL Server 組態的設定。節約計算機將根據成本來判斷 ONTAP 組態的最佳 FSX 。
 
 .開始之前
 開始之前、請先完成下列先決條件：
@@ -42,6 +40,18 @@ image:screenshot-ebs-calculator.png["儲存計算機頁面、其中比較了 ONT
 * 在資料庫庫存中偵測 EBS 儲存設備中的主機。link:detect-host.html["瞭解如何偵測主機"]。
 
 
+
+
+== 探索節約效益
+
+您可以探索選定主機的節約效益、或使用手動方法。
+
+[role="tabbed-block"]
+====
+.探索選定主機的節約效益
+--
+Workload Factory 會輸入所選的主機特性、以便您自動探索節約效益。
+
 .步驟
 . 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
@@ -49,22 +59,68 @@ image:screenshot-ebs-calculator.png["儲存計算機頁面、其中比較了 ONT
 . 按一下 * 探索使用 EBS 儲存設備的資料庫伺服器的節約 * 。
 . 您也可以選擇提供下列有關 EBS 儲存設備複製和快照的詳細資料、以獲得更準確的成本節約預估。
 +
-.. * Snapshot frequency * ：從下拉式清單中選取快照頻率。
-.. * 複製重新整理頻率 * ：從下拉式清單中選取複本重新整理頻率。
+.. * Snapshot frequency * ：從下拉式功能表中選取快照頻率。
+.. * 複製重新整理頻率 * ：從下拉式功能表中選取複製重新整理的頻率。
+.. * 複製複本數 * ：在 EBS 組態中輸入複製複本的數量。
 .. * 每月變更率 * ：輸入每月平均複製資料和快照資料變更的百分比。
 
 
 . 檢閱頁面上提供的計算和建議。
 +
-此外、向下捲動至頁面底部、即可 * 匯出 PDF* 。
+此外、向下捲動至頁面底部、以 * 匯出 PDF* 或 * 檢視計算 * 。
 
 
 
+--
+.手動探索節約效益
+--
+您可以自訂 Microsoft SQL Server 、 Amazon EC2 和彈性區塊存放區設定的設定、以手動探索節約效益。
+
+.步驟
+. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
+. 選擇 * 瀏覽省錢方案 * 標籤。
+. 按一下 [ 手動探索節約效益 ] 底下的 [ 手動探索節約效益 ] 。
+. 在「手動探索節約效益」頁面中、提供下列詳細資料：
++
+.. * 地區 * ：從下拉式功能表中選取地區。
+.. * 部署模式 * ：從下拉式功能表中選取部署模式。
+.. *SQL Server 版本 * ：從下拉式功能表中選取 SQL Server 版本。
+.. * 每月資料變更率（ % ） * ：輸入每月平均複製和快照資料變更的百分比。
+.. * Snapshot frequency * ：從下拉式功能表中選取快照頻率。
+.. * 複製複本數 * ：在 EBS 組態中輸入複製複本的數量。
+.. 根據 EC2 規格、請提供下列資訊：
++
+*** * 機器說明 * ：您也可以輸入描述機器的名稱。
+*** * 執行個體類型 * ：從下拉式功能表中選取 EC2 執行個體類型。
+
+
+.. 在 Volume Types （卷類型）下，至少提供一個卷類型的以下詳細信息。IOPS 與處理量適用於特定磁碟類型的磁碟區。
++
+*** * 磁碟區數量 *
+*** * 每個 Volume 的儲存容量（ GiB ） *
+*** * 每個磁碟區的已配置 IOPS *
+*** * 傳輸量 Mb/s*
+
+
+.. 如果您選擇了「隨時可用」部署模式、請提供 * 次要 EC2 規格 * 和 * Volume 類型 * 的詳細資料。
+
+
+. 檢閱頁面上提供的計算和建議。
++
+此外、向下捲動至頁面底部、以 * 匯出 PDF* 或 * 檢視計算 * 。
+
+
+
+--
+====
 
 
 == 為 ONTAP 檔案系統部署 FSX
 
 如果您想要切換至適用於 ONTAP 的 FSX 以節省成本、請按一下 * 建立 * 、直接從「建立適用於 ONTAP 檔案系統的 FSX 」精靈建立檔案系統、或按一下 * 儲存 * 來儲存建議的組態以供稍後使用。
+
+Workload Factory 不支援儲存或建立多個適用於 ONTAP 檔案系統的 FSX 。
 
 部署方法:: 在 _ 自動化 _ 模式中、您可以直接從工作負載工廠部署適用於 ONTAP 檔案系統的 FSX 。您也可以從 Codebox 視窗複製內容、並使用其中一種 Codebox 方法來部署系統。
 +

@@ -145,7 +145,7 @@ image:diagram-SAZ-database-architecture.png["單一可用區域部署 Amazon FSX
 .多個可用度區域
 下圖顯示單一區域中具有容錯移轉叢集執行個體（ FCI ）叢集的雙節點高可用度（ HA ）架構。
 
-image:diagram-MAZ-database-architecture.png["在單一區域中使用容錯移轉叢集執行個體叢集的雙節點高可用度架構圖表"]
+image:diagram-MAZ-database-architecture.png["雙節點高可用度架構的圖表、在單一區域中使用容錯移轉叢集執行個體叢集"]
 
 
 

@@ -108,3 +108,9 @@ ONTAP 適用的 FSX 自訂加密金鑰並未根據服務適用性列出。您必
 * 在 [ 詳細目錄 ] 索引標籤中，針對每個 Microsoft SQL 執行個體所顯示的預估成本，是在 ONTAP 檔案系統層級的 FSX 計算，而非託管 SQL 執行個體的磁碟區計算。
 * Explore 節約計算不支援適用於 Windows 檔案伺服器的 FSX 。
 
+
+
+
+== 多個適用於 ONTAP 檔案系統的 FSX
+
+Workload Factory 不支援建立或儲存具有多個適用於 ONTAP 檔案系統之 FSX 的 Microsoft SQL Server 組態。僅支援一個用於 ONTAP 檔案系統組態部署的 FSX 。
