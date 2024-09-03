@@ -277,25 +277,17 @@
   <block id="9e9448a6d1fd2450a4d206c8b1b51faf" category="inline-link-macro">透過 Workload Factory 管理執行個體</block>
   <block id="21deafc6f9746f4f6c79c24fd4433020" category="paragraph">當主機執行個體的儲存類型為適用於 ONTAP 的 FSX 時、您可以 <block ref="eb4f13ee4ce82a926f1570589adcc507" category="inline-link-macro-rx"></block>。</block>
   <block id="b9c536d894e64c5ba02e664043160322" category="doc">探索資料庫工作負載工廠的節約效益</block>
-  <block id="2c84d2f326a80650e1f5b43257e48421" category="paragraph">如果您使用適用於 ONTAP 檔案系統的 FSX 、計算機會顯示這些 Microsoft SQL Server 上資料庫工作負載的儲存設備是否會降低成本。</block>
-  <block id="181e3284c48fd57addc02c9c3cecca81" category="section-title">提供您的系統需求</block>
-  <block id="2a94b287f3d99e0e52e81c4f752895f6" category="inline-link-macro">深入瞭解模式</block>
   <block id="bfe3baeb9acd99f2f2bce618befc4139" category="paragraph">開始之前、請先完成下列先決條件：</block>
   <block id="ed8b2920ddc5b14cb6c0ba24c4b6c3af" category="inline-link-macro">授予 _ 自動化 _ 權限</block>
   <block id="fb9d6e1577faaf2582c56f2b6e871a0e" category="list-text">請務必 <block ref="d9270f60c282b5496f17a4b48a6da305" category="inline-link-macro-rx"></block> 在 AWS 帳戶中偵測資料庫庫存中的彈性區塊存放（ EBS ）系統。</block>
   <block id="def9511b261c88922ac5674a45135773" category="inline-link-macro">瞭解如何偵測主機</block>
   <block id="00cfda556057e95fb5c041a6d6e864eb" category="list-text">在資料庫庫存中偵測 EBS 儲存設備中的主機。<block ref="c3d02703f332265b4bfd19fd03e6dd21" category="inline-link-macro-rx"></block>。</block>
-  <block id="f319ba887c03b66fa6a83807c78f65e9" category="list-text">在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。</block>
   <block id="e721578ef71057f68d9b8f95eaa8a01b" category="list-text">選擇 * 瀏覽省錢方案 * 標籤。</block>
   <block id="a9a4b0133e73452e9114b1d65b1a03c5" category="list-text">按一下 * 探索使用 EBS 儲存設備的資料庫伺服器的節約 * 。</block>
   <block id="b6934442f27355012b8f3897d317094b" category="list-text">您也可以選擇提供下列有關 EBS 儲存設備複製和快照的詳細資料、以獲得更準確的成本節約預估。</block>
   <block id="201c4d58b6fa62f021a1865e894234ef" category="list-text">* 每月變更率 * ：輸入每月平均複製資料和快照資料變更的百分比。</block>
   <block id="6b08b43202e1e504a7c87375b1a13b76" category="list-text">檢閱頁面上提供的計算和建議。</block>
-  <block id="aca77c97dcf29f670f572a7129863195" category="section-title">為 ONTAP 檔案系統部署 FSX</block>
-  <block id="d41ee345c8d0261fd097678a17139b63" category="paragraph">如果您想要切換至適用於 ONTAP 的 FSX 以節省成本、請按一下 * 建立 * 、直接從「建立適用於 ONTAP 檔案系統的 FSX 」精靈建立檔案系統、或按一下 * 儲存 * 來儲存建議的組態以供稍後使用。</block>
   <block id="f31ed490fd3768dff2a1121a0a06095c" category="list-text">部署方法</block>
-  <block id="11ed0b3202d6d086758a8d450bf14383" category="list-text">在 _ 自動化 _ 模式中、您可以直接從工作負載工廠部署適用於 ONTAP 檔案系統的 FSX 。您也可以從 Codebox 視窗複製內容、並使用其中一種 Codebox 方法來部署系統。</block>
-  <block id="543b29a63a3d070c0ff920d687259dfc" category="paragraph">在 _basic 模式中、您可以從 Codebox 視窗複製內容、並使用其中一種 Codebox 方法部署適用於 ONTAP 檔案系統的 FSX 。</block>
   <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="summary">NetApp 以多種方式支援工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">取得適用於 ONTAP 的 FSX 支援</block>
@@ -396,18 +388,13 @@
   <block id="510b43743eda65eede671d1132c8ae46" category="paragraph">如果您在 Workload Factory 的 Microsoft SQL Server 部署期間選取「使用者管理的 Active Directory 」、則必須提供安全群組、允許 EC2 執行個體之間的流量傳輸至目錄服務進行部署。Workload Factory 不會像 AWS 託管的 Microsoft AD 一樣、自動附加使用者託管 Active Directory 的安全群組。</block>
   <block id="eaa7c0518c6da1cd852899e0ac6e2378" category="section-title">自訂加密金鑰</block>
   <block id="7a54f916884cb200639bac0c32ef1bec" category="paragraph">ONTAP 適用的 FSX 自訂加密金鑰並未根據服務適用性列出。您必須選擇適當的金鑰。AWS 託管金鑰會根據服務的適用性進行篩選。</block>
-  <block id="cb3bcee5e2029f06ad38b81d08ad4170" category="section-title">Microsoft SQL Server 偵測</block>
   <block id="5424656079a2831a2c08effc8c949f00" category="paragraph">未儲存 Microsoft SQL Server 偵測。每次您存取 Workload Factory 中的資料庫時、 Microsoft SQL Server 偵測會再次執行、以識別該區域中的 SQL 安裝。</block>
   <block id="8705a3301d5f73e6ea84b65029e83433" category="section-title">CloudForgation 範本</block>
   <block id="744086615b7afe69eb64b5ed9b1b2fc2" category="paragraph">下載或複製的 Codebox 產生的 CloudForgation 範本（ YAML 檔案）的保留期限有限、只有七天。</block>
   <block id="0d966ee7b6d851b13a0a1f2ed24a24f2" category="section-title">沙箱支援</block>
   <block id="db3c885c5e8af2c0a6d13c3c191c6317" category="list-text">可從資料庫伺服器建立的沙箱複本數量上限為 50 個。</block>
-  <block id="5d607187a8dfda63b556426b96ca4433" category="list-text">下列案例不支援建立沙箱：</block>
-  <block id="29b82a6a22751f3fb1ee2f3272c4ebd0" category="list-text">資料和記錄檔位於同一個磁碟上。</block>
-  <block id="26d49aa4fda6be53d0166489827d4d7e" category="list-text">來源資料庫有多個資料檔案。</block>
   <block id="16af4c40ef745904a4b9f7f47ce1554d" category="section-title">Microsoft SQL Server 偵測與管理</block>
   <block id="b51c61da776514997803f3c2d879f6cd" category="list-text">使用沒有外部連線的私有網路時、不支援偵測和管理 Microsoft SQL 執行個體。</block>
-  <block id="b7e66788f3dbbc1f39b770c356e6b0bb" category="list-text">當 Microsoft SQL 執行個體封鎖 Windows 型驗證並僅允許 Microsoft SQL 使用者驗證時、支援 Microsoft SQL Server 偵測、但不支援管理作業。</block>
   <block id="cf48d7891f28d92c4308fb5debb574b0" category="section-title">探索節約效益</block>
   <block id="dc1fe4aeb4ef49ddd2886b9ad39d5fa0" category="list-text">在 [ 詳細目錄 ] 索引標籤中，針對每個 Microsoft SQL 執行個體所顯示的預估成本，是在 ONTAP 檔案系統層級的 FSX 計算，而非託管 SQL 執行個體的磁碟區計算。</block>
   <block id="15e6f9d1eeb705afffca65fbfcab4fb8" category="list-text">Explore 節約計算不支援適用於 Windows 檔案伺服器的 FSX 。</block>
@@ -708,30 +695,14 @@
   <block id="d1512bc8e97fad026d3a9604a38eafeb" category="sidebar">檢視複製連線資訊</block>
   <block id="3ed62cfc8918e6f101daf8572a05eac8" category="sidebar">分割沙箱複本</block>
   <block id="651b8da486ba685aa80d9dd4866d0171" category="sidebar">刪除沙箱複本</block>
-  <block id="0bc8faf034442c86c6fdeab467a53492" category="summary">比較使用 Amazon Elastic Block Store （ EBS ）儲存設備與用於 ONTAP 儲存設備的 FSX 的成本、以探索資料庫工作負載的節約效益。</block>
-  <block id="ea6f857f345a2f90ca5d04f75b4ada63" category="paragraph">Workload Factory 提供節省計算機、可讓您比較在 ONTAP 檔案系統的 FSX 上執行資料庫工作負載的各種成本元件、例如儲存、運算、 SQL 授權、快照和複本、以及 Elastic Block Store （ EBS ）儲存設備。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 最符合資料庫工作負載的成本效益。</block>
   <block id="e7310dc180b25aba87aadafb96fb45f4" category="inline-image-macro">節約計算機頁面的螢幕擷取畫面會顯示左側 Amazon Elastic Block Store 組態上所選的 Microsoft SQL Server 、並提供自訂快照和複製值的選項。左側顯示的是在適用於 ONTAP 的 FSX 上使用 Microsoft SQL Server 和 Elastic Block Store 儲存設備的每月總成本、可節省美元金額和百分比。</block>
   <block id="4290546c8ea9a5e870a8b18dc4b0b211" category="paragraph"><block ref="4290546c8ea9a5e870a8b18dc4b0b211" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bf4c020a642ca435f3ff2b7194e23d4b" category="paragraph">如果 Workload Factory 確定您可以在適用於 ONTAP 檔案系統的 FSX 上執行這些工作負載、以節省成本、您可以直接從 Workload Factory 的計算機上部署 Microsoft SQL over FSX for ONTAP 。當您在彈性區塊存放區儲存區上有多個 Microsoft SQL Server 執行個體時、我們會建議您使用單一 SQL 執行個體來設定適用於 ONTAP 的 FSX 組態。</block>
-  <block id="c80764fab4662dd37609b8c7c49541dd" category="paragraph">如果您已將 AWS 認證新增至 Workload Factory 帳戶、以啟用 _AIL_ 模式（<block ref="3ac12273abf0be5e05b49ceaac600ad4" category="inline-link-macro-rx"></block>）、則 Workload Factory 可以識別 AWS 帳戶中所有執行 Microsoft SQL Server 的儲存系統。所搜尋的 AWS 帳戶是根據您在 Workload Factory 帳戶中定義的認證而定。</block>
-  <block id="cefaada1876706c10eff391c6746e4e0" category="paragraph">此圖顯示 EBS 儲存設備上的 Microsoft SQL Server 主機、位於 AWS 帳戶中發現的「 Explore 節約」索引標籤中。</block>
-  <block id="17759b828a4a6e34656dfdfa1444555b" category="inline-image-macro">此圖顯示在 AWS 帳戶中發現的「 Explore 節約」索引標籤中偵測到和未受管理的 Microsoft SQL Server 主機。</block>
-  <block id="af17f7b98f331ae5e61aaa988cd55563" category="paragraph"><block ref="af17f7b98f331ae5e61aaa988cd55563" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4d927e2dd83e5f126f4304e6f3a9ba97" category="paragraph">您可以自動探索所選主機的節約效益、或手動輸入您打算部署的 Microsoft SQL Server 組態的設定。節約計算機將根據成本來判斷 ONTAP 組態的最佳 FSX 。</block>
-  <block id="54694c0771d42916f6e6d4fb6a510530" category="paragraph">您可以探索選定主機的節約效益、或使用手動方法。</block>
-  <block id="c37d4dad6a56ef715eece454d19fa449" category="open-title">探索選定主機的節約效益</block>
-  <block id="f3604b847e26e28b3ce2fe6afa505667" category="paragraph">Workload Factory 會輸入所選的主機特性、以便您自動探索節約效益。</block>
   <block id="dfa401fd4fd8841a340bd9f87c0910f8" category="list-text">* Snapshot frequency * ：從下拉式功能表中選取快照頻率。</block>
   <block id="b92d49f94f8fe0dff03b4a997452d375" category="list-text">* 複製重新整理頻率 * ：從下拉式功能表中選取複製重新整理的頻率。</block>
   <block id="3a886ba0c11f46f4a69567f2c732a39e" category="list-text">* 複製複本數 * ：在 EBS 組態中輸入複製複本的數量。</block>
   <block id="91a0e8a3bbcf21e09bbcd3ac7371afb5" category="paragraph">此外、向下捲動至頁面底部、以 * 匯出 PDF* 或 * 檢視計算 * 。</block>
-  <block id="0b76270e809ecdd909ebf3e23ff33efc" category="open-title">手動探索節約效益</block>
-  <block id="3d4c8f06d9da5a9f025fa6abbe7b31ad" category="paragraph">您可以自訂 Microsoft SQL Server 、 Amazon EC2 和彈性區塊存放區設定的設定、以手動探索節約效益。</block>
-  <block id="04c827c4259c13b52765eaa2c7f7b168" category="list-text">按一下 [ 手動探索節約效益 ] 底下的 [ 手動探索節約效益 ] 。</block>
-  <block id="9c5eb5f0357625b2142c21a521262145" category="list-text">在「手動探索節約效益」頁面中、提供下列詳細資料：</block>
   <block id="6c8bc6142fe7d27949e96c7c1eb44a70" category="list-text">* 地區 * ：從下拉式功能表中選取地區。</block>
   <block id="4b671e090adbd727a425c2dc7c229735" category="list-text">* 部署模式 * ：從下拉式功能表中選取部署模式。</block>
-  <block id="cca2c0129ec4e2d95e1b98931e31d2bf" category="list-text">*SQL Server 版本 * ：從下拉式功能表中選取 SQL Server 版本。</block>
   <block id="fdf29f4b9a5e7550d1d6080071dfd3d6" category="list-text">* 每月資料變更率（ % ） * ：輸入每月平均複製和快照資料變更的百分比。</block>
   <block id="242afb258b3bb26bc973d109ca0bb263" category="list-text">根據 EC2 規格、請提供下列資訊：</block>
   <block id="10f31d1222d6aaa17d4338f4c86e0f3c" category="list-text">* 機器說明 * ：您也可以輸入描述機器的名稱。</block>
@@ -772,4 +743,42 @@
   <block id="996d6e2f42d7b52c1cba72a8225cbb65" category="list-text">連接到適用於 ONTAP 的 FSX 的路由群組可讓路由傳送至子網路以用於部署。</block>
   <block id="74c33b9e5d949f9ac1669cc2da38be60" category="list-text">安全性群組允許來自用於部署的子網路流量、特別是 HTTPS （ 443 ）和 iSCSI （ 3260 ） TCP 連接埠。</block>
   <block id="513217cdb8cfdacc4a193bdd0bbbee78" category="paragraph">對於使用者管理的 Active Directory 、請確保 AD 執行個體上設定的安全性群組允許來自用於部署的子網路流量。安全性群組應允許從設定 Microsoft SQL EC2 執行個體的子網路與 Active Directory 網域控制站進行通訊。</block>
+  <block id="f565eb47bc8c215541fe00205d9b37d3" category="doc">透過自訂功能探索節約效益</block>
+  <block id="bfbd25ddeba7cedc974f1a5a1d0a295c" category="paragraph">您現在可以使用適用於 Windows 檔案伺服器的 FSX 、以及節省計算機中的 Elastic Block Store 儲存設備、在 Amazon EC2 上自訂 Microsoft SQL Server 的組態設定。根據您的儲存需求、您可能會發現 ONTAP 儲存設備的 FSX 最符合資料庫工作負載的成本效益。</block>
+  <block id="f94c119bb7d164adbb1a390a249741e0" category="section-title">從首頁瀏覽至節約計算機</block>
+  <block id="370242ff4edf6eea7ad9f29f501888cd" category="paragraph">您現在可以從<block ref="ed002915dbbbf90a20b3d8fdf4cc2390" category="inline-link-macro-rx"></block>首頁瀏覽至節約計算機。從「 Elastic Block Store 」和「適用於 Windows 檔案伺服器的 FSX 」中選取以開始使用。</block>
+  <block id="1bd7517fe14fe5f1784a4d71ebf0c2e1" category="inline-image-macro">Workload Factory 主控台首頁的螢幕擷取畫面。圖中顯示的資料庫方塊有一個新的「探索節約」按鈕。按一下按鈕以開啟下拉式功能表。下拉式功能表有兩個選項：「 Elastic Block Store 」和「適用於 Windows 檔案伺服器的 FSX 」。選擇任一選項、您都可以前往節約計算機探索節約效益。</block>
+  <block id="ace456f52a384b923a9eedd83d20db48" category="paragraph"><block ref="ace456f52a384b923a9eedd83d20db48" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ed63f509875218d0378b5ddba1aecb80" category="summary">比較使用 Amazon Elastic Block Store （ EBS ）和適用於 Windows 檔案伺服器儲存設備的 FSX 與用於 ONTAP 儲存設備的 FSX 的成本、以節省資料庫工作負載。</block>
+  <block id="700bbf9bdd344aa4590539879dabfb86" category="paragraph">Workload Factory 提供節省計算機、可讓您比較在 ONTAP 檔案系統的 FSX 上執行資料庫工作負載的各種成本元件、例如儲存、運算、 SQL 授權、快照和複本、以及適用於 Windows 檔案伺服器儲存設備的 Elastic Block Store （ EBS ）和 FSX 。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 最符合資料庫工作負載的成本效益。如果您使用適用於 ONTAP 檔案系統的 FSX 、計算機會顯示這些 Microsoft SQL Server 上資料庫工作負載的儲存設備是否會降低成本。</block>
+  <block id="61d9dc1380811848e422522f4e4122a9" category="paragraph">如果 Workload Factory 確定您可以在適用於 ONTAP 檔案系統的 FSX 上執行這些工作負載、以節省成本、您可以直接從 Workload Factory 的計算機上部署 Microsoft SQL over FSX for ONTAP 。當您在彈性區塊存放區或適用於 Windows 檔案伺服器儲存區的 FSX 上有多個 Microsoft SQL Server 執行個體時、我們會建議您使用單一 SQL 執行個體來設定適用於 ONTAP 的 FSX 組態。</block>
+  <block id="9c34331abb32017c0949af1d664fefb5" category="section-title">計算機選項</block>
+  <block id="a235c1c225af92b6423395beadcd9990" category="paragraph">有兩種計算機選項可供您比較系統與適用於 ONTAP 的 FSX 之間的成本、這是 Amazon 儲存環境的自訂和自動偵測功能。</block>
+  <block id="58e73141ee65f1324f33ca6b0e47a481" category="paragraph">透過自訂功能探索節約效益：您可以在 Amazon EC2 上提供適用於 Windows File Server 的 Microsoft SQL Server 組態設定、包括地區、部署模式、 SQL Server 版本、每月資料變更率、快照頻率等。</block>
+  <block id="4ee8a0888e15ce32635ae1f06ea7dcba" category="paragraph">探索偵測到的儲存環境節約效益：工作負載工廠連結至您現有的 AWS 儲存環境、並將詳細資料擷取至計算機以進行自動比較。您必須授予自動化權限、才能使用此計算機選項。您可以變更使用案例、但計算中會自動決定所有其他詳細資料。</block>
+  <block id="c4765968842ae076126d5ea6e55cb9cb" category="paragraph">請依照儲存類型標籤下的步驟進行。</block>
+  <block id="8e276a5c4eecb9cd5c1fbb0729744eb5" category="open-title">Amazon彈性區塊儲存區（EBS）</block>
+  <block id="1feb39b44e4fcef3d4be063a2f0c0c2c" category="list-text">登入 <block ref="372504cb6bb48559009ff8f8cdb9a245" category="inline-link-macro-rx"></block></block>
+  <block id="15520a7de0197475dfee06cf7aa15b3a" category="list-text">從資料庫中、選取 * 探索省錢 * 、然後選取 * Microsoft SQL Server on EBS * 。</block>
+  <block id="f5d70cbe75a099fdb6ff3c8e0c1c9912" category="list-text">在節約計算機中、提供下列詳細資料：</block>
+  <block id="9377d0128a287551f24bed4ce755a952" category="list-text">*SQL Server 版本 * ：從下拉式功能表中選取 SQL Server 版本。</block>
+  <block id="a734ef4348732936d4d6a1d9e152c8a3" category="list-text">* 每月 SQL BYOL 成本（ $ ） * ：您也可以選擇輸入每月的 SQL BYOL 成本（以美元為單位）。</block>
+  <block id="fb37d117e595c8205adc8fecd60f7452" category="open-title">Amazon FSX for Windows File Server</block>
+  <block id="1fa551d666152c8a8364f417df4333f9" category="list-text">從資料庫中、選取 * 探索省錢 * 、然後選取 * 在適用於 Windows* 的 FSX 上的 Microsoft SQL Server 。</block>
+  <block id="29be9cd68074dd5bccfc365f60077d36" category="list-text">在適用於 Windows 檔案伺服器的 FSX 設定下、提供下列項目：</block>
+  <block id="9e3c6005a24d3294e2953078ab76e4b2" category="list-text">* 部署類型 * ：從下拉式功能表中選取部署類型。</block>
+  <block id="ffc3afff283d0341f16dbe649d5a1d97" category="list-text">* 儲存類型 * ： SSD 儲存設備是支援的儲存類型。</block>
+  <block id="d9ce067b75dd9aa4ef5eda584d6a259d" category="list-text">* 總儲存容量 * ：輸入儲存容量、然後選取組態的容量單位。</block>
+  <block id="68d83ae7a042e508f76dc0e27a5f9a29" category="list-text">* 已配置的 SSD IOP* ：輸入配置的 SSD IOPS 。</block>
+  <block id="9b6155708dd8947d64ec42276f1174dd" category="list-text">* 處理量（ MB/s ） * ：以 MB/s 為單位輸入處理量</block>
+  <block id="a5d2a4e28080feba2d0ba29a55f0eeab" category="list-text">在 EC2 規格下、從下拉式功能表中選取 * 執行個體類型 * 。</block>
+  <block id="754cab29df96851e5cc6bac19fb8e4de" category="section-title">探索偵測到的 EBS 主機的節約效益</block>
+  <block id="de1eb6dc4a8c018c4d8f3fcc5ceb9221" category="paragraph">Workload Factory 會輸入偵測到的彈性區塊存放區主機特性、以便您可以自動探索節約效益。</block>
+  <block id="72255b529ff08813154e30f94dac81c3" category="list-text">從資料庫中選取 * 移至資料庫庫存 * 。</block>
+  <block id="10d39a5cdb7cfb8abf1a05097e8f20bc" category="section-title">使用適用於 ONTAP 的 FSX 在 AWS EC2 上部署 Microsoft SQL Server</block>
+  <block id="933800b579b2bf7e0f9916f0fa54607d" category="paragraph">如果您想要切換至 FSX for ONTAP 以節省成本、請按一下 * 建立 * 、直接從「建立新的 Microsoft SQL 伺服器」精靈建立建議的組態、或按一下 * 儲存 * 來儲存建議的組態以供稍後使用。</block>
+  <block id="97bdf4c6d565fdd5cba849eeb1621649" category="list-text">在 _ 自動化 _ 模式中、您可以直接從工作負載工廠使用適用於 ONTAP 的 FSX 、在 AWS EC2 上部署新的 Microsoft SQL Server 。您也可以從 Codebox 視窗複製內容、並使用其中一種 Codebox 方法來部署建議的組態。</block>
+  <block id="e6ae9aa516c09658fbcbb0830276915c" category="paragraph">在 _based_ 模式中、您可以從 Codebox 視窗複製內容、並使用其中一種 Codebox 方法來部署建議的組態。</block>
+  <block id="0bbe82b56668e820bcb7722aa8566ea5" category="list-text">如果來源資料庫有多個資料檔案散佈在超過 2 個磁碟上、則不支援建立沙箱。</block>
+  <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024 年 9 月 1 日</block>
 </blocks>

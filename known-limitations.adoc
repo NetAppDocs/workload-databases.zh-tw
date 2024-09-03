@@ -70,12 +70,6 @@ ONTAP 適用的 FSX 自訂加密金鑰並未根據服務適用性列出。您必
 
 
 
-== Microsoft SQL Server 偵測
-
-未儲存 Microsoft SQL Server 偵測。每次您存取 Workload Factory 中的資料庫時、 Microsoft SQL Server 偵測會再次執行、以識別該區域中的 SQL 安裝。
-
-
-
 == CloudForgation 範本
 
 下載或複製的 Codebox 產生的 CloudForgation 範本（ YAML 檔案）的保留期限有限、只有七天。
@@ -85,12 +79,7 @@ ONTAP 適用的 FSX 自訂加密金鑰並未根據服務適用性列出。您必
 == 沙箱支援
 
 * 可從資料庫伺服器建立的沙箱複本數量上限為 50 個。
-* 下列案例不支援建立沙箱：
-+
-** 資料和記錄檔位於同一個磁碟上。
-** 來源資料庫有多個資料檔案。
-
-
+* 如果來源資料庫有多個資料檔案散佈在超過 2 個磁碟上、則不支援建立沙箱。
 
 
 
@@ -98,7 +87,7 @@ ONTAP 適用的 FSX 自訂加密金鑰並未根據服務適用性列出。您必
 == Microsoft SQL Server 偵測與管理
 
 * 使用沒有外部連線的私有網路時、不支援偵測和管理 Microsoft SQL 執行個體。
-* 當 Microsoft SQL 執行個體封鎖 Windows 型驗證並僅允許 Microsoft SQL 使用者驗證時、支援 Microsoft SQL Server 偵測、但不支援管理作業。
+* 未儲存 Microsoft SQL Server 偵測。每次您存取 Workload Factory 中的資料庫時、 Microsoft SQL Server 偵測會再次執行、以識別該區域中的 SQL 安裝。
 
 
 
