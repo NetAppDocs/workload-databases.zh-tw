@@ -233,7 +233,6 @@
   <block id="b6b9aec3a98d2a803dfd7a3e7b836cb2" category="list-text">* 目標資料庫主機 * ：為同一 VPC 中的沙箱複製選取目標資料庫主機、並將 ONTAP 檔案系統的 FSX 與來源主機相同。</block>
   <block id="04bd2b110b2a3aaa82dccc7fe837f151" category="list-text">* 目標資料庫執行個體 * ：選取沙箱複製的目標資料庫執行個體。</block>
   <block id="26e615a604b088a660581f026763c30b" category="list-text">* 目標資料庫 * ：輸入沙箱複製的名稱。</block>
-  <block id="7f63d4b83f27b850d1eb970cfa4666b3" category="list-text">* 裝載 * ：選取 * 自動指派裝載點 * 或 * 定義裝載點路徑 * 。如果選擇 * 定義掛載點路徑 * 、請輸入掛載點路徑。</block>
   <block id="f3346b0efa80289c47d4e6113a73a3ab" category="list-text">* 定義標記 * ：選取標記以定義沙箱複製。</block>
   <block id="34775e5e4b0b832c45a2707ae9b18f95" category="paragraph">若要檢查工作進度、請前往 * 工作監控 * 標籤。</block>
   <block id="18a852f2a54ab28755adc6bcf4897e75" category="summary">當您不再需要沙箱複本時、請將其刪除。</block>
@@ -781,4 +780,11 @@
   <block id="e6ae9aa516c09658fbcbb0830276915c" category="paragraph">在 _based_ 模式中、您可以從 Codebox 視窗複製內容、並使用其中一種 Codebox 方法來部署建議的組態。</block>
   <block id="0bbe82b56668e820bcb7722aa8566ea5" category="list-text">如果來源資料庫有多個資料檔案散佈在超過 2 個磁碟上、則不支援建立沙箱。</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024 年 9 月 1 日</block>
+  <block id="969e7140d33129e87f01e95c59fed40f" category="list-text">* 掛載 * ：當複製具有多個資料和 / 或記錄檔的 SQL 資料庫時、 Workload Factory 會以自動指派或定義的磁碟機代號來複製所有檔案。</block>
+  <block id="ed09bad7864ec765b3bccff9b87f25fb" category="paragraph">選取下列其中一個選項：</block>
+  <block id="f5154bf526cc04b2839db0c72b2a7c22" category="list-text">* 自動指派掛載點 *</block>
+  <block id="c9e660490143e459ec13d72934832f2c" category="list-text">* 定義掛載點路徑 *</block>
+  <block id="8dc9fd2e016e27559302505db1795c2c" category="paragraph">請提供下列資訊來定義掛載點路徑：</block>
+  <block id="431673d13b715d86ce4d92ad7cf17f75" category="list-text">輸入資料檔案路徑的磁碟機代號。</block>
+  <block id="d8cf051243077cb10ccd52dd0de9d181" category="list-text">輸入記錄檔路徑的磁碟機代號。</block>
 </blocks>
