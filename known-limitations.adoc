@@ -78,25 +78,19 @@ ONTAP 適用的 FSX 自訂加密金鑰並未根據服務適用性列出。您必
 
 == 沙箱支援
 
-* 可從資料庫伺服器建立的沙箱複本數量上限為 50 個。
-* 如果來源資料庫有多個資料檔案散佈在超過 2 個磁碟上、則不支援建立沙箱。
-
+可從資料庫伺服器建立的沙箱複本數量上限為 50 個。
 
 
 
 == Microsoft SQL Server 偵測與管理
 
-* 使用沒有外部連線的私有網路時、不支援偵測和管理 Microsoft SQL 執行個體。
-* 未儲存 Microsoft SQL Server 偵測。每次您存取 Workload Factory 中的資料庫時、 Microsoft SQL Server 偵測會再次執行、以識別該區域中的 SQL 安裝。
-
+未儲存 Microsoft SQL Server 偵測。每次您存取 Workload Factory 中的資料庫時、 Microsoft SQL Server 偵測會再次執行、以識別該區域中的 SQL 安裝。
 
 
 
 == 探索節約效益
 
-* 在 [ 詳細目錄 ] 索引標籤中，針對每個 Microsoft SQL 執行個體所顯示的預估成本，是在 ONTAP 檔案系統層級的 FSX 計算，而非託管 SQL 執行個體的磁碟區計算。
-* Explore 節約計算不支援適用於 Windows 檔案伺服器的 FSX 。
-
+在 [ 詳細目錄 ] 索引標籤中，針對每個 Microsoft SQL 執行個體所顯示的預估成本，是在 ONTAP 檔案系統層級的 FSX 計算，而非託管 SQL 執行個體的磁碟區計算。
 
 
 

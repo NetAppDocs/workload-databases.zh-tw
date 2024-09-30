@@ -23,11 +23,11 @@ image:screenshot-ebs-savings-calculator.png["節約計算機頁面的螢幕擷�
 
 == 計算機選項
 
-有兩種計算機選項可供您比較系統與適用於 ONTAP 的 FSX 之間的成本、這是 Amazon 儲存環境的自訂和自動偵測功能。
+有兩種計算機選項可供您比較系統與適用於 ONTAP 的 FSX 之間的成本—自訂和偵測。
 
 透過自訂功能探索節約效益：您可以在 Amazon EC2 上提供適用於 Windows File Server 的 Microsoft SQL Server 組態設定、包括地區、部署模式、 SQL Server 版本、每月資料變更率、快照頻率等。
 
-探索偵測到的儲存環境節約效益：工作負載工廠連結至您現有的 AWS 儲存環境、並將詳細資料擷取至計算機以進行自動比較。您必須授予自動化權限、才能使用此計算機選項。您可以變更使用案例、但計算中會自動決定所有其他詳細資料。
+探索偵測到主機的節約效益：工作負載工廠連結至您現有的 Microsoft SQL 伺服器、並將詳細資料擷取至計算機以進行自動比較。您必須授予自動化權限、才能使用此計算機選項。您可以變更使用案例、但計算中會自動決定所有其他詳細資料。
 
 
 
@@ -111,23 +111,31 @@ image:screenshot-ebs-savings-calculator.png["節約計算機頁面的螢幕擷�
 ====
 
 
-== 探索偵測到的 EBS 主機的節約效益
+== 探索偵測到的主機的節約效益
 
-Workload Factory 會輸入偵測到的彈性區塊存放區主機特性、以便您可以自動探索節約效益。
+Workload Factory 會輸入偵測到的彈性區塊存放區和適用於 Windows 檔案伺服器主機特性的 FSX 、以便您可以自動探索節約效益。
 
 .開始之前
 開始之前、請先完成下列先決條件：
 
-* 請務必 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["授予 _ 自動化 _ 權限"^] 在 AWS 帳戶中偵測資料庫庫存中的彈性區塊存放（ EBS ）系統。
-* 在資料庫庫存中偵測 EBS 儲存設備中的主機。link:detect-host.html["瞭解如何偵測主機"]。
+* 請務必link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["授予 _ 自動化 _ 權限"^]在 AWS 帳戶中偵測資料庫庫存中的 Windows 系統彈性區塊存放區（ EBS ）和 FSX 。
+* 在資料庫庫存中偵測 EBS 和 FSX 中的主機、以供 Windows 儲存設備使用。link:detect-host.html["瞭解如何偵測主機"]。
 
 
+請依照儲存類型標籤下的步驟進行。
+
+[role="tabbed-block"]
+====
+.Amazon彈性區塊儲存區（EBS）
+--
 .步驟
 . 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
-. 從資料庫中選取 * 移至資料庫庫存 * 。
-. 選擇 * 瀏覽省錢方案 * 標籤。
-. 按一下 * 探索使用 EBS 儲存設備的資料庫伺服器的節約 * 。
-. 您也可以選擇提供下列有關 EBS 儲存設備複製和快照的詳細資料、以獲得更準確的成本節約預估。
+. 在「資料庫」方塊中、從下拉式功能表中選取 * 「 Explore 節約 * 」、然後選取 * 「 Microsoft SQL Server on FSX for Windows* 」。
++
+如果 Workload Factory 偵測到 EBS 主機、系統會將您重新導向至「 Explore 節約」索引標籤。如果 Workload Factory 未偵測到 EBS 主機、系統會將您重新導向至<<透過自訂功能探索節約效益,透過自訂功能探索節約效益>>。
+
+. 在「探索節約效益」標籤中、按一下「 * 探索使用 EBS 儲存設備的資料庫伺服器節約效益 * 」。
+. 在節約計算機中（可選）提供以下有關 EBS 存儲中克隆和快照的詳細信息，以獲得更準確的成本節約估算。
 +
 .. * Snapshot frequency * ：從下拉式功能表中選取快照頻率。
 .. * 複製重新整理頻率 * ：從下拉式功能表中選取複製重新整理的頻率。
@@ -141,6 +149,35 @@ Workload Factory 會輸入偵測到的彈性區塊存放區主機特性、以便
 
 
 
+--
+.Amazon FSX for Windows File Server
+--
+.步驟
+. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 在「資料庫」方塊中、從下拉式功能表中選取 * 「 Explore 節約 * 」、然後選取 * 「 Microsoft SQL Server on FSX for Windows* 」。
++
+如果 Workload Factory 偵測到適用於 Windows 主機的 FSX 、您將會重新導向至「 Explore 節約」標籤。如果 Workload Factory 未偵測到適用於 Windows 主機的 FSX 、系統會將您重新導向至<<透過自訂功能探索節約效益,透過自訂功能探索節約效益>>。
+
+. 在 Explore 節約選項卡中，單擊 * Explore 節約 * （使用適用於 Windows File Server 儲存設備的 FSX ）。
+. 在節約計算機中（可選）提供有關適用於 Windows 儲存設備的 FSX 中的克隆（陰影複製）和快照的下列詳細資料、以獲得更準確的成本節約預估。
++
+.. * Snapshot frequency * ：從下拉式功能表中選取快照頻率。
++
+如果偵測到適用於 Windows 的 FSX 陰影複製、則預設值為 * 每日 * 。如果未偵測到陰影複製、預設值為 * 無快照頻率 * 。
+
+.. * 複製重新整理頻率 * ：從下拉式功能表中選取複製重新整理的頻率。
+.. * 複製複本數 * ：在適用於 Windows 的 FSX 組態中輸入複製複本的數量。
+.. * 每月變更率 * ：輸入每月平均複製資料和快照資料變更的百分比。
+
+
+. 檢閱頁面上提供的計算和建議。
++
+此外、向下捲動至頁面底部、以 * 匯出 PDF* 或 * 檢視計算 * 。
+
+
+
+--
+====
 
 
 == 使用適用於 ONTAP 的 FSX 在 AWS EC2 上部署 Microsoft SQL Server

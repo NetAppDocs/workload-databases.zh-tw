@@ -35,6 +35,14 @@ Microsoft SQL Server 執行個體管理包括下列工作：
 
 管理偵測到或未受管理的主機 Microsoft SQL Server 執行個體。
 
+若要在沒有外部連線的私有網路中管理主機執行個體、則 VPC 必須具備下列端點、並與 SQL 伺服器所在的子網路相關聯。確保介面端點允許附加安全群組中的連接埠 443 。
+
+* `S3 Gateway/endpoint`
+* `ssm`
+* `ssmmessages`
+* `fsx`
+
+
 .開始之前
 開始之前、請先完成下列先決條件：
 
