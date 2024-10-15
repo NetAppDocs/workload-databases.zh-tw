@@ -386,7 +386,6 @@
   <block id="8705a3301d5f73e6ea84b65029e83433" category="section-title">CloudForgation 範本</block>
   <block id="744086615b7afe69eb64b5ed9b1b2fc2" category="paragraph">下載或複製的 Codebox 產生的 CloudForgation 範本（ YAML 檔案）的保留期限有限、只有七天。</block>
   <block id="0d966ee7b6d851b13a0a1f2ed24a24f2" category="section-title">沙箱支援</block>
-  <block id="db3c885c5e8af2c0a6d13c3c191c6317" category="list-text">可從資料庫伺服器建立的沙箱複本數量上限為 50 個。</block>
   <block id="16af4c40ef745904a4b9f7f47ce1554d" category="section-title">Microsoft SQL Server 偵測與管理</block>
   <block id="cf48d7891f28d92c4308fb5debb574b0" category="section-title">探索節約效益</block>
   <block id="dc1fe4aeb4ef49ddd2886b9ad39d5fa0" category="list-text">在 [ 詳細目錄 ] 索引標籤中，針對每個 Microsoft SQL 執行個體所顯示的預估成本，是在 ONTAP 檔案系統層級的 FSX 計算，而非託管 SQL 執行個體的磁碟區計算。</block>
@@ -798,4 +797,5 @@
   <block id="9a178ca3815f6aeb284a65e10447f086" category="paragraph"><block ref="9a178ca3815f6aeb284a65e10447f086" category="inline-link-macro-rx"></block></block>
   <block id="7d6d6d8a97f883d860bff04c0be1019c" category="inline-link-macro">利用適用於 ONTAP 的 FSX 為資料庫工作負載節省成本</block>
   <block id="293758d509326f8da42abf75db2d37e6" category="paragraph"><block ref="293758d509326f8da42abf75db2d37e6" category="inline-link-macro-rx"></block></block>
+  <block id="fbcbba8054f71f57fa8e2b950179bb23" category="paragraph">可從資料庫伺服器建立的沙箱複本數量上限為 90 個。</block>
 </blocks>
