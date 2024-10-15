@@ -23,6 +23,6 @@ indexpage:
   - title: 知識與支援
     links:
     - title: 註冊以取得支援
-      url: "/support-registration-databases.html"
+      url: "/support-registration.html"
     - title: 取得協助
-      url: "/get-help-databases.html"
+      url: "/get-help.html"

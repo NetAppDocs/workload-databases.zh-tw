@@ -465,7 +465,6 @@
   <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">取得協助</block>
   <block id="da444b283df699667b2316206972bdfe" category="paragraph">Amazon FSX for NetApp ONTAP 的功能是AWS的第一方解決方案。如需與適用於 ONTAP 檔案系統、基礎架構或任何使用此服務的解決方案的 FSX 相關的問題或技術支援問題、請使用 AWS 管理主控台的支援中心、開啟 AWS 的支援案例。選取「FSXfor ONTAP Sf1」服務和適當的類別。提供建立AWS支援案例所需的其餘資訊。</block>
   <block id="fc00732c3b79a8178cfd0556a8722a13" category="inline-link-macro">取得 Workload Factory 資料庫的說明</block>
-  <block id="5a0bab72bf8800539ee19d4ebfcb6501" category="paragraph">如需有關 Workload Factory 或 Workload Factory 應用程式與服務的一般問題、請 <block ref="4318b5ec74addc6e7964ffb1638ebe63" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
@@ -798,4 +797,5 @@
   <block id="7d6d6d8a97f883d860bff04c0be1019c" category="inline-link-macro">利用適用於 ONTAP 的 FSX 為資料庫工作負載節省成本</block>
   <block id="293758d509326f8da42abf75db2d37e6" category="paragraph"><block ref="293758d509326f8da42abf75db2d37e6" category="inline-link-macro-rx"></block></block>
   <block id="fbcbba8054f71f57fa8e2b950179bb23" category="paragraph">可從資料庫伺服器建立的沙箱複本數量上限為 90 個。</block>
+  <block id="642917b2f642764c3a6f56b4bd9b6b24" category="paragraph">如需有關 Workload Factory 或 Workload Factory 應用程式與服務的一般問題、請 <block ref="cdcdf14c020a2cc1f9ea3df8ed40ccf4" category="inline-link-macro-rx"></block>參閱。</block>
 </blocks>

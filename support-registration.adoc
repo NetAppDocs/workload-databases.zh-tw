@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: support-registration-databases.html 
+permalink: support-registration.html 
 keywords: support registration, register for support, support, nss account, add nss account 
 summary: 在開啟支援案例之前、 NetApp 您必須先將 NetApp 支援網站帳戶新增至工作負載工廠、然後註冊取得支援。 
 ---

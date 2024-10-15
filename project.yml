@@ -67,9 +67,9 @@ sidebar:
   - title: 知識與支援
     entries:
     - title: 註冊以取得支援
-      url: "/support-registration-databases.html"
+      url: "/support-registration.html"
     - title: 取得協助
-      url: "/get-help-databases.html"
+      url: "/get-help.html"
   - title: 法律聲明
     url: "/legal-notices.html"
 product-family:
