@@ -97,3 +97,9 @@ ONTAP 適用的 FSX 自訂加密金鑰並未根據服務適用性列出。您必
 == 多個適用於 ONTAP 檔案系統的 FSX
 
 Workload Factory 不支援建立或儲存具有多個適用於 ONTAP 檔案系統之 FSX 的 Microsoft SQL Server 組態。僅支援一個用於 ONTAP 檔案系統組態部署的 FSX 。
+
+
+
+== 使用 Terraform 在私有網路中部署 Microsoft SQL Server 的區域可用度
+
+Microsoft SQL Server 部署在沒有使用 Terraform 輸出連線的私有網路中、僅在 us-east-1 （ N.Virginia ）地區支援。

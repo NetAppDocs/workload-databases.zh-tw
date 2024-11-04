@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: optimize-overview.html 
+keywords: continuous optimization, optimize, assess, assessment, scan, optimization, Microsoft SQL Server, Amazon FSx for NetApp ONTAP, FSx for ONTAP, recommendation, recommendations 
+summary: BlueXP  資料庫工作負載工廠可持續最佳化 Amazon FSX 上的 Microsoft SQL Server 部署、以利 NetApp ONTAP 儲存設備。 
+---
+= 持續最佳化資料庫的 BlueXP  工作負載工廠
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP  資料庫工作負載工廠可持續最佳化 Amazon FSX 上的 Microsoft SQL Server 部署、以利 NetApp ONTAP 儲存設備。
+
+持續最佳化會自動大規模掃描及評估您的資料庫基礎架構、確保大型屋苑達到最佳效能、成本效益及符合最佳實務做法。這項功能提供您完整的深入分析報告、以及最佳化建議。
+
+透過持續最佳化、您可以偵測資料庫基礎架構中的問題、瞭解需要變更的項目、並採取行動。
+
+主要功能包括：
+
+* 持續評估
+* 自動最佳實務驗證
+* 適當調整規模的建議
+* 主動觀察
+* 行動洞見
+* AWS 架構良好的架構顧問
+
+
+最佳化的範圍會因評估的元件而異。例如、儲存最佳化是在 SQL 執行個體層級進行、而運算最佳化則是在主機層級進行。
+
+link:optimize-configurations.html["最佳化 Microsoft SQL Server 部署的組態"]

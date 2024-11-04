@@ -11,7 +11,7 @@ settings:
   rss_page: whats-new.html
   release_notes_autogen:
     release_notes_repo: workload-relnotes
-  langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
+  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: 資料庫工作負載文件
@@ -64,6 +64,12 @@ sidebar:
         url: "/delete-clone.html"
     - title: 監控資料庫
       url: "/monitor-databases.html"
+    - title: 最佳化 SQL Server
+      entries:
+      - title: 持續最佳化總覽
+        url: optimize-overview.html
+      - title: 最佳化組態
+        url: optimize-configurations.html
   - title: 知識與支援
     entries:
     - title: 註冊以取得支援

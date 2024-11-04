@@ -63,6 +63,7 @@ Workload Factory for Databases 提供下列功能：
 * * 沙箱建立 * ：建立隨需隔離的資料庫環境、可用於測試、整合、診斷及訓練、而不影響正式作業資料。
 * * 資料庫建立 * ：使用 _Quick_ 或 _Advanced_ 建立模式、為現有的 Microsoft SQL Server 建立使用者資料庫、以設定資料庫定序、檔案名稱和大小。內含儲存組態。
 * * 工作監控 * ：監控及追蹤資料庫工作執行進度、並在發生任何故障時診斷及疑難排解問題。
+* * 持續最佳化 * ：持續離線掃描您的 Microsoft SQL Server 資產、為您提供深入見解、商機及建議的完整報告、協助您達到卓越營運績效。
 
 
 
@@ -83,6 +84,18 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["瞭�
 三種不同的作業模式（ _ 基本 _ 、 _ 讀取 _ 和 _ 自動化 _ ）、提供靈活的選項、可在工作負載工廠內外進行部署。在 _base_ 模式下、利用程式碼片段在工作負載工廠外部使用、以零信任的方式立即獲得價值。在 _ 讀取 _ 和 _ 自動化 _ 模式中以遞增信任獲得遞增價值。
 
 深入瞭解 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["工作負載工廠的作業模式"^]。
+
+
+
+== 使用 Workload Factory 的工具
+
+您可以搭配下列工具使用 BlueXP Workload Factory ：
+
+* * 工作負載工廠主控台 * ：工作負載工廠主控台提供視覺化介面、可讓您全面檢視應用程式和專案
+* * REST API* ： Workload Factory REST API 可讓您部署及管理 Microsoft SQL Server 和其他 AWS 資源
+* * CloudForgi38* ： AWS CloudForgation 程式碼可讓您執行在 Workload Factory 主控台中定義的動作、以建構、配置及管理 AWS 帳戶中 CloudForgation 堆疊中的 AWS 和第三方資源。
+* * Terraform BlueXP 工作負載工廠供應商 * ： Terraform 可讓您建置及管理在 Workload Factory 主控台中產生的基礎架構工作流程。
+
 
 
 

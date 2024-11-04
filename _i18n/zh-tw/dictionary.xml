@@ -71,7 +71,6 @@
   <block id="8b018b615821339740a7c79a7473918a" category="list-text">將網域使用者設為 AD 節點上的本機管理員</block>
   <block id="045b984ac75a0da892fea6afe6b83555" category="list-text">在 AD 中建立 Microsoft SQL Server 服務使用者（如果該使用者尚未存在）</block>
   <block id="15d1ade99815746ab0088981bd7585d3" category="section-title">步驟 1 ：建立資料庫伺服器</block>
-  <block id="e501215e9258fda8d54793a123ed721f" category="paragraph">您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式、以 _ 自動化 _ 模式權限在 Workload Factory 中完成此工作。</block>
   <block id="956eaa6186169471a13345860cad0757" category="open-title">快速建立</block>
   <block id="542af019e2aa3ef9ca4b187a71c918bb" category="admonition">在 _ 快速建立 _ 中、 FCI 是預設的部署模式、 Windows 2016 是預設的 Windows 版本、 SQL 2019 Standard Edition 是預設的 SQL 版本。</block>
   <block id="b26136a388864ee3f9e813ac8f6109ee" category="list-text">在「資料庫」方塊中、選取 * 部署資料庫主機 * 。</block>
@@ -798,4 +797,66 @@
   <block id="293758d509326f8da42abf75db2d37e6" category="paragraph"><block ref="293758d509326f8da42abf75db2d37e6" category="inline-link-macro-rx"></block></block>
   <block id="fbcbba8054f71f57fa8e2b950179bb23" category="paragraph">可從資料庫伺服器建立的沙箱複本數量上限為 90 個。</block>
   <block id="642917b2f642764c3a6f56b4bd9b6b24" category="paragraph">如需有關 Workload Factory 或 Workload Factory 應用程式與服務的一般問題、請 <block ref="cdcdf14c020a2cc1f9ea3df8ed40ccf4" category="inline-link-macro-rx"></block>參閱。</block>
+  <block id="0928468cb2283b21e6802a78c6a64e3a" category="doc">使用資料庫持續最佳化您的 Microsoft SQL Server 工作負載</block>
+  <block id="e73fa899152fb6836032fef4e1c95da4" category="paragraph">BlueXP  工作負載工廠推出持續指引和 guardrails 、確保在 Amazon FSX for NetApp ONTAP 上持續最佳化並遵循 Microsoft SQL Server 工作負載儲存元件的最佳實務做法。這項功能會持續離線掃描您的 Microsoft SQL Server 資產、提供深入分析、商機和建議的完整報告、協助您達到最佳效能、成本效益和法規遵循。</block>
+  <block id="5d743e351f2bc0b96d19c12d46be8be2" category="inline-link-macro">最佳化 SQL Server 工作負載</block>
+  <block id="72d1af9ffdd277a1cf7789b588da9b4d" category="paragraph"><block ref="72d1af9ffdd277a1cf7789b588da9b4d" category="inline-link-macro-rx"></block></block>
+  <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Terraform 支援</block>
+  <block id="822802a1673e79cb7dbd54947e4dc32c" category="paragraph">您現在可以使用 Codebox 中的 Terraform 來部署 Microsoft SQL Server 。</block>
+  <block id="d83b54de9b50110195e4bf3c1f3c6a67" category="list-text"><block ref="d83b54de9b50110195e4bf3c1f3c6a67" category="inline-link-macro-rx"></block></block>
+  <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">使用 CodeBox 的 Terraform</block>
+  <block id="11cb17d1b990bbf37a24337d5692efa1" category="list-text"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
+  <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">瞭解如何使用 Codebox 進行自動化</block>
+  <block id="d3d10fb8f4b8181d69ae2092b30c544a" category="paragraph">您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式、以 _ 自動化 _ 模式權限在 Workload Factory 中完成此工作。您也可以使用 Codebox 中的下列工具： REST API 、 CloudForformation 和 Terraform 。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>。</block>
+  <block id="5de582d1d412797088979e47e496c2fe" category="admonition">從 Codebox 使用 Terraform 時、您複製或下載的程式碼會隱藏<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block> 和<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> 密碼。執行程式碼時、您需要重新輸入密碼。除了 _ 自動 _ 模式權限之外、您還需要為使用者帳戶加入下列權限：<block ref="7f862a4b8fc22b0af5dda5c9ababa346" prefix=" " category="inline-code"></block>和<block ref="319bffed0f518819193d82ffe99b1444" prefix=" " category="inline-code"></block>。</block>
+  <block id="b2636246cf1e5e567e3ded4a9d65b1da" category="section-title">使用 Terraform 在私有網路中部署 Microsoft SQL Server 的區域可用度</block>
+  <block id="eb4fca182b3b78e9a38aa1f6f59c8857" category="paragraph">Microsoft SQL Server 部署在沒有使用 Terraform 輸出連線的私有網路中、僅在 us-east-1 （ N.Virginia ）地區支援。</block>
+  <block id="0937bd87e3f84605f28e13c1956980d3" category="list-text">* 持續最佳化 * ：持續離線掃描您的 Microsoft SQL Server 資產、為您提供深入見解、商機及建議的完整報告、協助您達到卓越營運績效。</block>
+  <block id="0d9b99cb00c934d1cd88332ae901fc26" category="section-title">使用 Workload Factory 的工具</block>
+  <block id="76737aecf42a629e0422271332fcc5a3" category="paragraph">您可以搭配下列工具使用 BlueXP Workload Factory ：</block>
+  <block id="0fc51b33bbeafc6425a9bd19ec449966" category="list-text">* 工作負載工廠主控台 * ：工作負載工廠主控台提供視覺化介面、可讓您全面檢視應用程式和專案</block>
+  <block id="a0ba060c8b176de6550d97a1fc8b4a2a" category="list-text">* REST API* ： Workload Factory REST API 可讓您部署及管理 Microsoft SQL Server 和其他 AWS 資源</block>
+  <block id="fb2bf23fd8d69c944827de16f09d3bb7" category="list-text">* CloudForgi38* ： AWS CloudForgation 程式碼可讓您執行在 Workload Factory 主控台中定義的動作、以建構、配置及管理 AWS 帳戶中 CloudForgation 堆疊中的 AWS 和第三方資源。</block>
+  <block id="887582b3338810bdcfbc9b5a8ff6b6d7" category="list-text">* Terraform BlueXP 工作負載工廠供應商 * ： Terraform 可讓您建置及管理在 Workload Factory 主控台中產生的基礎架構工作流程。</block>
+  <block id="d12f14d8e346018dc03c07aa6b74bf9e" category="summary">資料庫會掃描 Microsoft SQL Server 的儲存組態、提供深入見解和建議、協助您達到卓越營運績效。</block>
+  <block id="13025ba9f92de77af2aeaf1af07a4aa8" category="doc">最佳化 Microsoft SQL Server 部署的組態</block>
+  <block id="a843374a240a6303e99f9130260dec04" category="paragraph">資料庫的 BlueXP  工作負載工廠會持續掃描並評估執行於 Amazon FSX for NetApp ONTAP 上的 Microsoft SQL Server 部署組態。評估提供深入見解、建議和最佳化、讓您達到卓越營運績效。</block>
+  <block id="6f2bcb2f8d4f34c036395a199095be9a" category="paragraph">此評估會針對 Microsoft SQL Server 執行個體、自動且持續地執行一次、其 FSX 適用於在工作負載工廠中管理的 ONTAP 儲存設備。只有在部署後或管理執行個體之後執行每日排程工作時、才能在最佳化儀表板中使用評估報告。</block>
+  <block id="72e34efcd5e12ef888a19ad8bd33c28b" category="paragraph">工作負載工廠根據適用於 ONTAP 儲存設備的 FSX 最佳實務、提供最佳組態最佳化的詳細建議。</block>
+  <block id="246db1206cb640c61b32f7cea2560b8e" category="list-text">掃描內容</block>
+  <block id="af27bafd548aa3e366e582049aeb65f1" category="list-text">工作負載工廠會評估下列 Microsoft SQL Server 執行個體組態的最佳化狀態：</block>
+  <block id="04dff47f9a41cfa54b616dd86a4a6043" category="list-text">儲存規模：包括儲存層、檔案系統保留空間、記錄磁碟機大小及 TempDB 磁碟機大小</block>
+  <block id="b1107628010e55afc5ec740439838f10" category="list-text">儲存配置：包括使用者資料檔案放置、記錄檔放置及 TempDB 放置</block>
+  <block id="8bc38d27c74401312cd5c45bfd8a7d05" category="list-text">儲存組態：包括容量管理、精簡配置、分層原則、快照、多重路徑 I/O 狀態、原則和工作階段等</block>
+  <block id="96ca9ac0bd1d71d3fe0162c29b8a4ff3" category="list-text">運算：包括適當調整規模</block>
+  <block id="1a0e703f0bdb101f4848a5510dd8ec1c" category="list-text">您必須擁有具有讀取或自動化權限的認證。</block>
+  <block id="86bd4600548ee1b734f704338ab13665" category="list-text">若要評估 Microsoft SQL Server 執行個體的儲存、執行個體必須由工作負載工廠管理、且儲存類型必須為適用於 ONTAP 的 FSX 。</block>
+  <block id="40213188bf240529a1293728c4187a56" category="list-text">在選擇最佳化設定或組態之前、請務必仔細檢閱每項建議。</block>
+  <block id="1833c64ed881d7aac5733a15a8116354" category="list-text">選取要掃描的執行個體的三點功能表、然後選取 * 最佳化 * 。</block>
+  <block id="3adf495aa133934a4330d99e0ad90fc1" category="list-text">在主機的最佳化執行個體頁面上、檢閱儲存評估的結果。</block>
+  <block id="a09500dc3402d71be1fe58158c5cdfc9" category="paragraph">篩選條件可依類別、子類別、狀態、嚴重性和標籤進行排序。</block>
+  <block id="49aaa10529fcf35af76ba4e06450bb15" category="paragraph">如有需要、您可以選擇 * 匯出 PDF* 來下載調查結果報告。</block>
+  <block id="5f4f392649432d3064fdf2a04015472b" category="list-text">選取下拉式箭頭以檢視任何組態的建議。請務必仔細檢閱建議內容。</block>
+  <block id="c9e425055996f71ecfc858708d926276" category="paragraph">本建議說明未最佳化組態的最佳實務做法和潛在陷阱。</block>
+  <block id="ea3bf0643d3540c97b9b92a3fb2bbf75" category="list-text">選擇 * 最佳化 * 未最佳化組態。</block>
+  <block id="fa01f4b57079f7ca82b8d852cbf4ed43" category="list-text">檢閱最佳化對話方塊中顯示的最佳化摘要和行動項目、瞭解如果您選擇最佳化、將會發生什麼情況。某些最佳化作業可能會導致執行個體停機或服務中斷。</block>
+  <block id="78a5af6b8a486797f81f9b0dff06821e" category="list-text">選擇 * 繼續 * 以最佳化組態。</block>
+  <block id="c6ff3995f3c633f2808f96020f887fd9" category="paragraph">最佳化程序即會啟動。選取 * 工作監控 * 標籤以檢視作業狀態。</block>
+  <block id="0c47496112bcf6ed0b29fe1fe1d65d62" category="summary">BlueXP  資料庫工作負載工廠可持續最佳化 Amazon FSX 上的 Microsoft SQL Server 部署、以利 NetApp ONTAP 儲存設備。</block>
+  <block id="9d62eb1e78c18c53c2bc3d807f4d5b04" category="doc">持續最佳化資料庫的 BlueXP  工作負載工廠</block>
+  <block id="b97ec9fa7955169dbb93f4727a02e87d" category="paragraph">持續最佳化會自動大規模掃描及評估您的資料庫基礎架構、確保大型屋苑達到最佳效能、成本效益及符合最佳實務做法。這項功能提供您完整的深入分析報告、以及最佳化建議。</block>
+  <block id="638c7d8777be813a6cc36be0ae2ccf68" category="paragraph">透過持續最佳化、您可以偵測資料庫基礎架構中的問題、瞭解需要變更的項目、並採取行動。</block>
+  <block id="1c11d2e59190fe6a4e37f1e68abafcb4" category="paragraph">主要功能包括：</block>
+  <block id="5767d06d754465b4eceaed828d43069f" category="list-text">持續評估</block>
+  <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">自動最佳實務驗證</block>
+  <block id="029d49350caff46ab3e1f31c9c60f494" category="list-text">適當調整規模的建議</block>
+  <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">主動觀察</block>
+  <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">行動洞見</block>
+  <block id="7a3fc3cf12e9da54628c7311398bee5c" category="list-text">AWS 架構良好的架構顧問</block>
+  <block id="de29686d1474303323860ff8044fc4ed" category="paragraph">最佳化的範圍會因評估的元件而異。例如、儲存最佳化是在 SQL 執行個體層級進行、而運算最佳化則是在主機層級進行。</block>
+  <block id="ca3feda4f22b6d2a240006fa0a33f99e" category="paragraph"><block ref="ca3feda4f22b6d2a240006fa0a33f99e" category="inline-link-macro-rx"></block></block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024 年 11 月 3 日</block>
+  <block id="372aea905d324ed9cf6878e3f3ed7abc" category="sidebar">最佳化 SQL Server</block>
+  <block id="6ca43380ae924ff967599986889184b3" category="sidebar">持續最佳化總覽</block>
+  <block id="d1e68728a28b7936858b1484445ef50f" category="sidebar">最佳化組態</block>
 </blocks>
