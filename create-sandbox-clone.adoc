@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: create-sandbox-clone.html 
 keywords: create, clone, sandbox 
-summary: 在 Workload Factory 中為資料庫建立沙箱複本。 
+summary: 在 BlueXP  工作負載工廠中為資料庫建立沙箱複製。 
 ---
-= 在 Workload Factory 中為資料庫建立沙箱複本
+= 在 BlueXP  工作負載工廠中為資料庫建立沙箱複製
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-在 Workload Factory for 資料庫中建立資料庫的沙箱複本、可讓您使用複本進行開發、測試、整合、分析、訓練、 不需變更來源資料庫、即可進行 QA 及其他工作。
+在 BlueXP  工作負載工廠為資料庫建立資料庫的沙箱複本，可讓您使用複本進行開發，測試，整合，分析，訓練， QA 等作業，而無需變更來源資料庫。
 
 .關於這項工作
 沙箱複本是從來源資料庫上最新的快照建立而成。它可以複製到與來源資料庫相同的 Microsoft SQL Server 中、或是複製到另一個 Microsoft SQL Server 中、只要它們共用相同的適用於 ONTAP 檔案系統的 FSX 即可。
@@ -19,19 +19,19 @@ summary: 在 Workload Factory 中為資料庫建立沙箱複本。
 .開始之前
 建立沙箱複本之前、請務必先完成下列先決條件。
 
-認證和權限:: 您必須 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和 _ 讀取 _ 或 _ 自動化 _ 模式權限"^] 在 Workload Factory 中建立沙箱複本。
+認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和 _ 讀取 _ 或 _ 自動化 _ 模式權限"^]在工作負載工廠中建立沙箱複本。
 +
 --
-或者、您也可以使用 Codebox 複製部分完成的範本、或建立完整的範本、以便使用 REST API 在工作負載工廠外部建立沙箱複製。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
+或者，您也可以使用 Codebox 複製部分完成的範本，或建立完整的範本，以便使用 REST API 在工作負載工廠外部建立沙箱複製。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
 
 --
-Microsoft SQL Server:: 您必須在 Workload Factory 中擁有託管的 Microsoft SQL Server for Databases 、才能裝載新的沙箱複製。
+Microsoft SQL Server:: 您必須在工作負載工廠中擁有託管的 Microsoft SQL Server ，資料庫才能裝載新的沙箱複製。
 AWS Systems Manager:: 確保 `NT Authority\SYSTEM` 已透過 AWS Systems Manager 在 Microsoft SQL 主機中啟用使用者權限。
 來源資料庫:: 您需要可用於複製的來源資料庫。
 
 
 .步驟
-. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
 . 在資料庫中、選取 * 沙箱 * 標籤。
 . 在沙箱標籤中、選取 * 建立新的沙箱 * 。
@@ -49,7 +49,7 @@ AWS Systems Manager:: 確保 `NT Authority\SYSTEM` 已透過 AWS Systems Manager
 .. * 目標資料庫 * ：輸入沙箱複製的名稱。
 
 
-. * 掛載 * ：當複製具有多個資料和 / 或記錄檔的 SQL 資料庫時、 Workload Factory 會以自動指派或定義的磁碟機代號來複製所有檔案。
+. * 掛載 * ：當複製具有多個資料和 / 或記錄檔的 SQL 資料庫時，工作負載工廠會以自動指派或定義的磁碟機代號來複製所有檔案。
 +
 選取下列其中一個選項：
 

@@ -24,7 +24,7 @@ sidebar:
       url: "/known-limitations.html"
   - title: 開始使用
     entries:
-    - title: 瞭解適用於資料庫的 Workload Factory
+    - title: 瞭解資料庫的工作負載工廠
       url: "/learn-databases.html"
     - title: 快速入門
       url: "/quick-start-databases.html"
@@ -79,5 +79,5 @@ sidebar:
   - title: 法律聲明
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP Workload Factory for AWS
+  name: BlueXP workload factory for AWS
   repo: workload-family

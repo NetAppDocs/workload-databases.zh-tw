@@ -2,21 +2,21 @@
 sidebar: sidebar 
 permalink: create-database-server.html 
 keywords: create, server, Microsoft SQL, deploy, host, deploy a database host, database host 
-summary: 在 Workload Factory 中為資料庫建立新的 Microsoft SQL Server 。 
+summary: 在 BlueXP  工作負載工廠內為資料庫建立新的 Microsoft SQL Server 。 
 ---
-= 在 Workload Factory 中為資料庫建立資料庫伺服器
+= 在 BlueXP  工作負載工廠中為資料庫建立資料庫伺服器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-若要在資料庫中建立新的 Microsoft SQL Server 或資料庫主機、則需要使用 FSX 進行 ONTAP 檔案系統部署、並為 Active Directory 建立資源。
+在 BlueXP  工作負載工廠中為資料庫建立新的 Microsoft SQL Server 或資料庫主機，需要 FSX 用於 ONTAP 檔案系統部署，以及用於 Active Directory 的資源。
 
 .關於這項工作
 您需要 AWS 帳戶認證和 _ 自動化 _ 權限。
 
-開始之前、請先瞭解資料庫主機組態、 Active Directory 部署、工作負載工廠作業模式的可用儲存部署類型、以及完成此作業的需求。
+開始之前，請先瞭解資料庫主機組態， Active Directory 部署，工作負載原廠操作模式的可用儲存部署類型，以及完成此作業的需求。
 
 部署之後、您需要 <<步驟 2 ：在 Microsoft SQL Server 上啟用遠端連線,在 Microsoft SQL Server 上啟用遠端連線>>。
 
@@ -30,7 +30,7 @@ summary: 在 Workload Factory 中為資料庫建立新的 Microsoft SQL Server �
 
 
 --
-Microsoft 多重路徑 I/O 組態:: Microsoft SQL Server 部署模式都需要使用 iSCSI 儲存傳輸協定來建立 LUN 。Workload Factory 會將 Microsoft 多重路徑 I/O （ MPIO ）設定為透過適用於 ONTAP 的 FSX 為 SQL Server 設定 LUN 的一部分。MPIO 是根據 AWS 和 NetApp 最佳實務做法進行設定。
+Microsoft 多重路徑 I/O 組態:: Microsoft SQL Server 部署模式都需要使用 iSCSI 儲存傳輸協定來建立 LUN 。工作負載工廠會將 Microsoft 多重路徑 I/O （ MPIO ）設定為透過適用於 ONTAP 的 FSX 為 SQL Server 設定 LUN 的一部分。MPIO 是根據 AWS 和 NetApp 最佳實務做法進行設定。
 
 
 如需詳細資訊、請 link:https://aws.amazon.com/blogs/modernizing-with-aws/sql-server-high-availability-amazon-fsx-for-netapp-ontap/["使用 Amazon FSX for NetApp ONTAP 進行 SQL Server 高可用度部署"^]參閱。
@@ -52,25 +52,22 @@ Active Directory:: 在部署期間、 Active Directory （ AD ）會發生下列
 
 
 --
-工作負載工廠作業模式:: Workload Factory 提供三種作業模式、視您對讓 Workload Factory 管理 AWS 資源的舒適程度而定。
-+
---
-*_Basic_ 模式 * ：在此作業模式中、您不需要在 Workload Factory 中建立任何 AWS 帳戶認證的關聯。您可以從 Codebox 複製或下載部分填寫的 YAML 範本、以便在工作負載工廠以外完成。
+工作負載原廠操作模式:: 工作負載工廠提供三種作業模式，視您在工廠管理工作負載時的舒適程度而定。
 
-* 讀取模式 * ：在此作業模式中、您會提供具有讀取權限的 AWS 帳戶認證、讓您完成 _ 快速建立 _ 或 _ 進階建立 _ 表單、然後複製或下載表單。您也可以使用完整的表單詳細資料、從 Workload Factory 重新導向至 CloudForformation 。您將能夠在 Workload Factory 中管理部署的資料庫伺服器。
 
-* 自動執行 _ 模式 * ：在這種作業模式中、您可以提供 AWS 帳戶認證及自動化權限、讓您在 Workload Factory 中建立及管理 AWS 資源。
+*_Basic_ 模式 * ：在此作業模式中，您不需要在工作負載工廠中建立任何 AWS 帳戶認證的關聯。您可以從 Codebox 複製或下載部分填寫的 YAML 範本，以便在工作負載工廠以外完成。
 
---
+* 讀取模式 * ：在此作業模式中、您會提供具有讀取權限的 AWS 帳戶認證、讓您完成 _ 快速建立 _ 或 _ 進階建立 _ 表單、然後複製或下載表單。您也可以從工作負載工廠重新導向至 CloudForformation ，其中包含完整的表單詳細資料。您將能夠在工作負載工廠中管理部署的資料庫伺服器。
 
+*_AILUSE_ 模式 * ：在這種作業模式中，您可以提供 AWS 帳戶認證及自動化權限，讓您在工作負載工廠內建立及管理 AWS 資源。
 
 .開始之前
 在建立新的資料庫主機之前、請確定您具備下列先決條件。
 
-認證和權限:: 您必須 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和自動模式權限"^] 在 Workload Factory 中建立新的資料庫主機。
+認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和自動模式權限"^]在工作負載工廠中建立新的資料庫主機。
 +
 --
-或者、您也可以使用 Codebox 複製空白範本或建立完整的範本、以便使用 REST API 、 AWS CLI 或 AWS Forgation 在 Workload Factory 之外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
+或者，您也可以使用 Codebox 複製空白範本或建立完整的範本，以便使用 REST API ， AWS CLI 或 AWS Forgation 在工作負載工廠以外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
 
 --
 Active Directory:: 連線至 Active Directory 時、您必須具有具有權限的管理存取權、才能執行下列動作：
@@ -91,7 +88,7 @@ Active Directory:: 連線至 Active Directory 時、您必須具有具有權限�
 
 == 步驟 1 ：建立資料庫伺服器
 
-您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式、以 _ 自動化 _ 模式權限在 Workload Factory 中完成此工作。您也可以使用 Codebox 中的下列工具： REST API 、 CloudForformation 和 Terraform 。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["瞭解如何使用 Codebox 進行自動化"^]。
+您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中的下列工具： REST API 、 CloudForformation 和 Terraform 。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["瞭解如何使用 Codebox 進行自動化"^]。
 
 
 NOTE: 從 Codebox 使用 Terraform 時、您複製或下載的程式碼會隱藏 `fsxadmin` 和 `vsadmin` 密碼。執行程式碼時、您需要重新輸入密碼。除了 _ 自動 _ 模式權限之外、您還需要為使用者帳戶加入下列權限： `iam:TagRole`和 `iam:TagInstanceProfile`。
@@ -104,26 +101,26 @@ NOTE: 從 Codebox 使用 Terraform 時、您複製或下載的程式碼會隱藏
 NOTE: 在 _ 快速建立 _ 中、 FCI 是預設的部署模式、 Windows 2016 是預設的 Windows 版本、 SQL 2019 Standard Edition 是預設的 SQL 版本。
 
 .步驟
-. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 部署資料庫主機 * 。
 . 選取 * 快速建立 * 。
 . 在 * AWS 設定 * 下、提供下列項目：
 +
 .. * AWS 認證 * ：選取具有自動化權限的 AWS 認證來部署新的資料庫主機。
 +
-AWS 認證加上 _ 自動化 _ 權限、讓 Workload Factory 能夠在 Workload Factory 中從 AWS 帳戶部署及管理新的資料庫主機。
+AWS 認證加上 _ 自動化 _ 權限，可讓工作負載在出廠時從工作負載工廠內的 AWS 帳戶部署及管理新的資料庫主機。
 
 +
-具有 _ 讀取 _ 權限的 AWS 認證可讓 Workload Factory 產生 CloudForgation 範本、供您在 AWS CloudForgation 主控台中使用。
+具有 _ 讀取 _ 權限的 AWS 認證可讓工作負載工廠產生 CloudForgation 範本，供您在 AWS CloudForgation 主控台中使用。
 
 +
-如果您在 Workload Factory 中沒有相關的 AWS 認證、而且想要在 Workload Factory 中建立新的伺服器、請按 * 選項 1* 前往認證頁面。為資料庫工作負載手動新增 _ 自動化 _ 模式所需的認證和權限。
+如果您在工作負載工廠中沒有相關的 AWS 認證，而且想要在工作負載工廠中建立新的伺服器，請依照 * 選項 1* 前往認證頁面。為資料庫工作負載手動新增 _ 自動化 _ 模式所需的認證和權限。
 
 +
-如果您想要在 Workload Factory 中完成「建立新伺服器」表單、以便下載完整的 YAML 檔案範本、以便在 AWS CloudForformation 中進行部署、請遵循 * 選項 2* 、以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。為資料庫工作負載手動新增 _Read_ 模式所需的認證和權限。
+如果您想要在工作負載工廠中完成建立新伺服器表單，以便下載完整的 YAML 檔案範本，以便在 AWS CloudForformation 中部署，請遵循 * 選項 2* ，以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。為資料庫工作負載手動新增 _Read_ 模式所需的認證和權限。
 
 +
-或者、您也可以從 Codebox 下載部分完成的 YAML 檔案範本、在工作負載工廠外部建立堆疊、而無需任何認證或權限。從 Codebox 的下拉式清單中選取 * CloudForiam* 以下載 YAML 檔案。
+或者，您也可以從 Codebox 下載部分完成的 YAML 檔案範本，在工作負載工廠外部建立堆疊，而無需任何認證或權限。從 Codebox 的下拉式清單中選取 * CloudForiam* 以下載 YAML 檔案。
 
 .. * 地區與 VPC* ：選擇地區與 VPC 網路。
 +
@@ -213,7 +210,7 @@ NOTE: FCI 部署僅支援用於 ONTAP 組態的多重可用性區域（ MAZ ） 
 .進階建立
 --
 .步驟
-. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 部署資料庫主機 * 。
 . 選取 * 進階建立 * 。
 . 對於 * 部署模式 * 、請選取 * 容錯移轉叢集執行個體 * 或 * 單一執行個體 * 。
@@ -221,19 +218,19 @@ NOTE: FCI 部署僅支援用於 ONTAP 組態的多重可用性區域（ MAZ ） 
 +
 .. * AWS 認證 * ：選取具有自動化權限的 AWS 認證來部署新的資料庫主機。
 +
-AWS 認證加上 _ 自動化 _ 權限、讓 Workload Factory 能夠在 Workload Factory 中從 AWS 帳戶部署及管理新的資料庫主機。
+AWS 認證加上 _ 自動化 _ 權限，可讓工作負載在出廠時從工作負載工廠內的 AWS 帳戶部署及管理新的資料庫主機。
 
 +
-具有 _ 讀取 _ 權限的 AWS 認證可讓 Workload Factory 產生 CloudForgation 範本、供您在 AWS CloudForgation 主控台中使用。
+具有 _ 讀取 _ 權限的 AWS 認證可讓工作負載工廠產生 CloudForgation 範本，供您在 AWS CloudForgation 主控台中使用。
 
 +
-如果您在 Workload Factory 中沒有相關的 AWS 認證、而且想要在 Workload Factory 中建立新的伺服器、請按 * 選項 1* 前往認證頁面。為資料庫工作負載手動新增 _ 自動化 _ 模式所需的認證和權限。
+如果您在工作負載工廠中沒有相關的 AWS 認證，而且想要在工作負載工廠中建立新的伺服器，請依照 * 選項 1* 前往認證頁面。為資料庫工作負載手動新增 _ 自動化 _ 模式所需的認證和權限。
 
 +
-如果您想要在 Workload Factory 中完成「建立新伺服器」表單、以便下載完整的 YAML 檔案範本、以便在 AWS CloudForformation 中進行部署、請遵循 * 選項 2* 、以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。為資料庫工作負載手動新增 _Read_ 模式所需的認證和權限。
+如果您想要在工作負載工廠中完成建立新伺服器表單，以便下載完整的 YAML 檔案範本，以便在 AWS CloudForformation 中部署，請遵循 * 選項 2* ，以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。為資料庫工作負載手動新增 _Read_ 模式所需的認證和權限。
 
 +
-或者、您也可以從 Codebox 下載部分完成的 YAML 檔案範本、在工作負載工廠外部建立堆疊、而無需任何認證或權限。從 Codebox 的下拉式清單中選取 * CloudForiam* 以下載 YAML 檔案。
+或者，您也可以從 Codebox 下載部分完成的 YAML 檔案範本，在工作負載工廠外部建立堆疊，而無需任何認證或權限。從 Codebox 的下拉式清單中選取 * CloudForiam* 以下載 YAML 檔案。
 
 .. * 地區與 VPC* ：選擇地區與 VPC 網路。
 +
@@ -402,7 +399,7 @@ AWS 託管金鑰會根據服務適用性進行篩選。
 
 == 步驟 2 ：在 Microsoft SQL Server 上啟用遠端連線
 
-伺服器部署後、 Workload Factory 不會在 Microsoft SQL Server 上啟用遠端連線。若要啟用遠端連線、請完成下列步驟。
+伺服器部署後，工作負載工廠不會在 Microsoft SQL Server 上啟用遠端連線。若要啟用遠端連線、請完成下列步驟。
 
 .步驟
 . 請參閱 Microsoft 文件中的、使用電腦身分識別來進行 NTLM link:https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-security-allow-local-system-to-use-computer-identity-for-ntlm["網路安全性：允許本機系統使用電腦身分識別進行 NTLM"^] 。
@@ -411,4 +408,4 @@ AWS 託管金鑰會根據服務適用性進行篩選。
 
 
 .下一步
-現在您可以了 link:create-database.html["在 Workload Factory 中建立資料庫"]。
+現在您可以了 link:create-database.html["在 BlueXP  工作負載工廠中為資料庫建立資料庫"]。

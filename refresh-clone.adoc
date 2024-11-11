@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: refresh-clone.html 
 keywords: refresh clone, sync, update, database, Microsoft SQL 
-summary: 在 Workload Factory 中重新整理資料庫的沙箱複本。 
+summary: 在 BlueXP  工作負載工廠中重新整理資料庫的沙箱複本。 
 ---
-= 在 Workload Factory 中重新整理資料庫的沙箱複本
+= 在 BlueXP  工作負載工廠中重新整理資料庫的沙箱複本
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-重新整理資料庫複本、使其與目前或上一個時間點的來源資料庫相當。
+在 BlueXP  工作負載工廠中重新整理資料庫的複本，使其與目前或上一個時間點的來源資料庫相當。
 
 .關於這項工作
 重新整理複本可將複本更新至目前的來源資料庫、或更新至先前時間點所拍攝的來源資料庫快照。對沙箱複製所做的任何變更都將被刪除。
@@ -22,7 +22,7 @@ summary: 在 Workload Factory 中重新整理資料庫的沙箱複本。
 若要從快照重新整理資料庫複本、來源資料庫至少必須有一個快照才能執行作業。
 
 .步驟
-. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
 . 在資料庫中、選取 * 沙箱 * 標籤。
 . 在沙箱索引標籤中、按一下您要重新整理的沙箱複本的「三點」功能表。

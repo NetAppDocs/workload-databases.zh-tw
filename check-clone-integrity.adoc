@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: check-clone-integrity.html 
 keywords: integrity check, data corruption 
-summary: 執行完整性檢查以判斷沙箱複製資料是否完整或毀損。 
+summary: 執行完整性檢查，判斷資料庫的沙箱複製資料在 BlueXP  工作負載工廠中是否完整或毀損。 
 ---
 = 檢查沙箱複製中資料的完整性
 :allow-uri-read: 
@@ -11,13 +11,13 @@ summary: 執行完整性檢查以判斷沙箱複製資料是否完整或毀損�
 
 
 [role="lead"]
-執行完整性檢查以判斷沙箱複製資料是否完整或毀損。
+執行完整性檢查，判斷資料庫的沙箱複製資料在 BlueXP  工作負載工廠中是否完整或毀損。
 
 .關於這項工作
 當您在來源資料庫忙碌時、從來源資料庫建立沙箱複本時、該複本的資料可能與來源資料庫的最新快照不同步。此作業會檢查沙箱複製中所有物件的完整性、以判斷沙箱複製資料是否為最新資料。
 
 .步驟
-. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
 . 在資料庫中、選取 * 沙箱 * 標籤。
 . 在沙箱索引標籤中、按一下沙箱複製的「三點」功能表、以檢查完整性。

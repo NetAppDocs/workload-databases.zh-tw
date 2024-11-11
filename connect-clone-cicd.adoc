@@ -11,13 +11,13 @@ summary: 使用 REST API 程式碼將沙箱複本連線至 CI/CD 管線、以透
 
 
 [role="lead"]
-將沙箱複本與 REST API 程式碼連線至持續整合及持續交付（ CI/CD ）管線、以透過自動化改善軟體交付。
+將沙箱複本與 REST API 程式碼連線至持續整合及持續交付（ CI/CD ）管線，透過資料庫的 BlueXP  工作負載工廠自動化來改善軟體交付。
 
 .關於這項工作
 若要將新版軟體自動傳送至資料庫複本、您應該連線至 CI/CD 管道。使用此作業提供的 REST API 程式碼建立連線。
 
 .步驟
-. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
 . 在資料庫中、選取 * 沙箱 * 標籤。
 . 在沙箱索引標籤中、按一下沙箱複本的三點功能表、以連線至 CI/CD 工具。

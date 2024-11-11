@@ -2,23 +2,23 @@
 sidebar: sidebar 
 permalink: create-database.html 
 keywords: create, database, creation, Microsoft SQL 
-summary: 使用 Workload Factory 資料庫建立 Microsoft SQL 資料庫。 
+summary: 為資料庫建立一個 BlueXP  工作負載工廠的 Microsoft SQL 資料庫。 
 ---
-= 在 Workload Factory 中為資料庫建立 Microsoft SQL 資料庫
+= 在 BlueXP  工作負載工廠中為資料庫建立 Microsoft SQL 資料庫
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-在 Workload Factory 主控台中建立新的 Microsoft SQL 資料庫、可讓您在 Workload Factory 中管理資源。
+建立新的 Microsoft SQL 資料庫可讓您在 BlueXP  工作負載工廠內管理資料庫的資源。
 
 .關於這項工作
 建立資料庫時、會在適用於 ONTAP 檔案系統的 FSX 中建立兩個新磁碟區、其中包含用於存放資料庫資料和記錄檔的實體 LUN 。新資料庫中的資料庫檔案是以精簡配置的方式配置、只會使用分配給新資料庫的總大小的幾 MB 。
 
 如果您想要分隔資料庫的儲存空間、可以使用 _virtual 掛載點 _ 來執行此作業。虛擬掛載點可讓您將資料庫整合至主機上的幾個一般磁碟機。
 
-在 Workload Factory 中建立資料庫需要自動化模式權限。或者、在基本模式中、您可以複製或下載部分完成的程式碼範本、以完成工作負載工廠以外的作業。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["瞭解 Workload Factory 的作業模式"^] 決定您要使用的模式。
+在工作負載工廠中建立資料庫需要自動化模式權限。或者，在基本模式中，您可以複製或下載部分完成的程式碼範本，以完成工作負載工廠以外的作業。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["瞭解工作負載工廠的作業模式"^] 決定您要使用的模式。
 
 
 NOTE: 使用 SMB 通訊協定的 Microsoft SQL Server 不支援資料庫建立。
@@ -26,14 +26,14 @@ NOTE: 使用 SMB 通訊協定的 Microsoft SQL Server 不支援資料庫建立�
 .開始之前
 建立新資料庫之前、請務必先完成下列先決條件。
 
-認證和權限:: 您必須 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和 _ 讀取 _ 或 _ 自動化 _ 模式權限"^] 在 Workload Factory 中建立新的資料庫。
+認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和 _ 讀取 _ 或 _ 自動化 _ 模式權限"^]在工作負載工廠中建立新的資料庫。
 +
 --
-或者、您也可以使用 Codebox 來複製範本、以便使用 REST API 在 Workload Factory 之外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
+或者，您也可以使用 Codebox 來複製範本，以便使用 REST API 在工作負載工廠以外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
 
 --
 Windows主機:: 如果使用 _Quick cred_ 模式、您必須在 Microsoft SQL Server 上有足夠的磁碟機代號、才能為新資料庫建立新磁碟機。
-Microsoft SQL Server:: 您必須在 Workload Factory 中擁有託管的 Microsoft SQL Server 、資料庫才能裝載新的資料庫。
+Microsoft SQL Server:: 您必須在工作負載工廠中擁有託管的 Microsoft SQL Server ，資料庫才能裝載新的資料庫。
 AWS Systems Manager:: 請確定已透過 AWS System Manager 在 Microsoft SQL 主機中啟用此 `NT Authority\SYSTEM user` 權限。
 
 
@@ -41,14 +41,14 @@ AWS Systems Manager:: 請確定已透過 AWS System Manager 在 Microsoft SQL �
 
 == 建立資料庫
 
-您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式、以 _ 讀取 _ 或 _ 自動化 _ 模式權限、在工作負載工廠中完成這項工作。
+您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 讀取 _ 或 _ 自動化 _ 模式權限，在工作負載工廠完成這項工作。
 
 [role="tabbed-block"]
 ====
 .快速建立
 --
 .步驟
-. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
 . 在資料庫中、選取 * 庫存 * 索引標籤。
 . 在 [ 詳細目錄 ] 索引標籤中，選取具有託管 SQL Server 執行個體的資料庫伺服器，以便在中建立資料庫。
@@ -81,7 +81,7 @@ AWS Systems Manager:: 請確定已透過 AWS System Manager 在 Microsoft SQL �
 .進階建立
 --
 .步驟
-. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
 . 在資料庫中、選取 * 庫存 * 索引標籤。
 . 在 [ 詳細目錄 ] 索引標籤中，選取具有託管 SQL Server 執行個體的資料庫伺服器，以便在中建立資料庫。

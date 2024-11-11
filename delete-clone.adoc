@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: delete-clone.html 
 keywords: delete, clone 
-summary: 當您不再需要沙箱複本時、請將其刪除。 
+summary: 當您不再需要時，請在 BlueXP  工作負載工廠中刪除沙箱複本。 
 ---
 = 從來源資料庫分割沙箱複本
 :allow-uri-read: 
@@ -11,10 +11,10 @@ summary: 當您不再需要沙箱複本時、請將其刪除。
 
 
 [role="lead"]
-當您不再需要沙箱複本、並且想要釋放儲存容量時、請刪除該複本。
+如果您不再需要資料庫，而且想要釋放儲存容量，請在 BlueXP  工作負載工廠中刪除資料庫的沙箱複製。
 
 .步驟
-. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、按一下「 * 移至資料庫庫存 * 」。
 . 在資料庫中、選取 * 沙箱 * 標籤。
 . 按一下您要刪除的沙箱複本的「三點」功能表。

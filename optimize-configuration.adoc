@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: optimize-configurations.html 
 keywords: optimize, configuration, storage, compute, application, resiliency assessment, scan, optimization, Microsoft SQL Server, host, instance, FSx for ONTAP 
-summary: 資料庫會掃描 Microsoft SQL Server 的儲存組態、提供深入見解和建議、協助您達到卓越營運績效。 
+summary: 資料庫的 BlueXP  工作負載工廠會掃描 Microsoft SQL Server 的儲存組態，提供深入分析和建議，協助您達到卓越營運績效。 
 ---
 = 最佳化 Microsoft SQL Server 部署的組態
 :allow-uri-read: 
@@ -37,7 +37,7 @@ summary: 資料庫會掃描 Microsoft SQL Server 的儲存組態、提供深入�
 
 
 .步驟
-. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
 . 在資料庫中、選取 * 庫存 * 索引標籤。
 . 按一下下拉式箭頭以展開主機列、以檢視其受管理執行個體。

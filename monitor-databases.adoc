@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: monitor-databases.html 
 keywords: monitor databases, monitor jobs, track database jobs 
-summary: 追蹤資料庫工作、並監控 Workload Factory 中的資料庫。 
+summary: 追蹤資料庫工作，並監控 BlueXP  工作負載工廠中的資料庫，以取得資料庫。 
 ---
-= 監控資料庫
+= 監控 BlueXP  工作負載工廠中的資料庫
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-使用 Workload Factory for Databases 追蹤資料庫工作、並監控資料庫。
+追蹤資料庫工作，並監控 BlueXP  工作負載工廠中的資料庫，以取得資料庫。
 
 .關於這項工作
 資料庫提供工作監控功能、讓您追蹤工作進度、並在發生任何故障時進行診斷和疑難排解。此外、依類型和狀態、搜尋功能和下載工作表選項來篩選、有助於資料庫工作導覽和報告。
@@ -36,7 +36,7 @@ summary: 追蹤資料庫工作、並監控 Workload Factory 中的資料庫。
 == 監控工作
 
 .步驟
-. 登入 link:https://console.workloads.netapp.com["Workload Factory 主控台"^]。
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
 . 在資料庫中、選取 * 工作監控 * 標籤。
 . 在「工作監控」標籤中、使用篩選器或搜尋來縮小工作結果範圍。您也可以下載工作報告。

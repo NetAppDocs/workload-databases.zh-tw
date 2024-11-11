@@ -4,7 +4,7 @@ permalink: known-limitations.html
 keywords: limitations, databases 
 summary: 已知限制指出本產品版本不支援的平台、裝置或功能、或是無法與產品正確互通的平台、裝置或功能。請仔細檢閱這些限制。 
 ---
-= 已知限制
+= 資料庫的 BlueXP  工作負載工廠已知限制
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -29,13 +29,13 @@ summary: 已知限制指出本產品版本不支援的平台、裝置或功能�
 * 在映像中選取獨立部署的定序集以外的定序集時
 
 
-在部署過程中、 Workload Factory 不會安裝含有多個 Microsoft SQL Server 執行個體的自訂 AMI 。只會選取預設的 Microsoft SQL Server 執行個體、並將其設定為部署的一部分。
+在部署過程中，工作負載工廠不會安裝含有多個 Microsoft SQL Server 執行個體的自訂 AMI 。只會選取預設的 Microsoft SQL Server 執行個體、並將其設定為部署的一部分。
 
 
 
 == 請針對失敗的部署進行回溯與重試
 
-Workload Factory 不支援失敗部署的復原和重試。您可以從 AWS 中的 CloudForgation 主控台回溯或重試失敗的堆疊。
+工作負載原廠不支援復原和重試失敗的部署。您可以從 AWS 中的 CloudForgation 主控台回溯或重試失敗的堆疊。
 
 
 
@@ -54,13 +54,13 @@ Workload Factory 不支援失敗部署的復原和重試。您可以從 AWS 中�
 
 == 始終可用性群組組組態支援
 
-Workload Factory 不支援管理 Always On Availability Groups 組態。
+工作負載原廠不支援管理 Always On Availability Groups 組態。
 
 
 
 == 使用者管理的 Active Directory 安全性群組
 
-如果您在 Workload Factory 的 Microsoft SQL Server 部署期間選取「使用者管理的 Active Directory 」、則必須提供安全群組、允許 EC2 執行個體之間的流量傳輸至目錄服務進行部署。Workload Factory 不會像 AWS 託管的 Microsoft AD 一樣、自動附加使用者託管 Active Directory 的安全群組。
+如果您在工作負載工廠的 Microsoft SQL Server 部署期間選取「使用者管理的 Active Directory 」，則必須提供安全群組，允許 EC2 執行個體之間的流量傳輸至目錄服務進行部署。工作負載工廠不會像 AWS 託管的 Microsoft AD 一樣，自動附加使用者託管 Active Directory 的安全群組。
 
 
 
@@ -84,7 +84,7 @@ ONTAP 適用的 FSX 自訂加密金鑰並未根據服務適用性列出。您必
 
 == Microsoft SQL Server 偵測與管理
 
-未儲存 Microsoft SQL Server 偵測。每次您存取 Workload Factory 中的資料庫時、 Microsoft SQL Server 偵測會再次執行、以識別該區域中的 SQL 安裝。
+未儲存 Microsoft SQL Server 偵測。每次您存取工作負載工廠中的資料庫時， Microsoft SQL Server 偵測會再次執行，以識別區域中的 SQL 安裝。
 
 
 

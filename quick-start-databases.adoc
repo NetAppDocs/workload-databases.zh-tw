@@ -4,32 +4,32 @@ permalink: quick-start-databases.html
 keywords: requirements, basic mode, read mode, automate mode 
 summary: 資料庫有三種不同的模式、要求不同。 
 ---
-= 資料庫快速入門
+= 資料庫的 BlueXP  工作負載工廠快速入門
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-有了資料庫、您就能立即以 _basive_ 模式開始使用。如果您想要使用 Workload Factory 來探索主機、管理資源等等、只需幾個步驟即可開始使用。
+有了 BlueXP  資料庫工作負載工廠，您就能立即以 _basive_ 模式開始使用。如果您想要使用工作負載工廠來探索主機，管理資源等，只需幾個步驟即可開始使用。
 
-您必須擁有 AWS 帳戶才能開始使用。
+您必須擁有 AWS 帳戶才能使用資料庫。
 
-請依照下列步驟開始使用 Workload Factory 資料庫。
+請依照下列步驟開始使用。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 登入 Workload Factory
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]登入 BlueXP  工作負載工廠
 [role="quick-margin-para"]
-您需要 link:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在 Workload Factory 中設定帳戶"^] 和 link:https://console.workloads.netapp.com["登入"^]
+您需要link:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 新增認證和權限
 [role="quick-margin-para"]
 選擇。 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["_ 基本 _ 、 _ 讀取 _ 和 _ 自動化 _ 作業模式"^]
 
 [role="quick-margin-para"]
-如果您在 _basive_ 模式下操作、就不需要再繼續操作。您可以開始使用 Workload Factory 資料庫來複製部分完成的程式碼範例。在資料庫方塊中、按一下 * 部署資料庫主機 * 。link:create-database-server.html["瞭解如何部署資料庫伺服器"]。
+如果您在 _basive_ 模式下操作、就不需要再繼續操作。您可以開始使用資料庫來複製部分完成的程式碼範例。在資料庫方塊中、按一下 * 部署資料庫主機 * 。link:create-database-server.html["瞭解如何部署資料庫伺服器"]。
 
 [role="quick-margin-para"]
-如果您以 _Read_ 或 _AIL_ 模式操作、則需要 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["手動新增認證至帳戶"^] 選擇工作負載功能、例如資料庫和 AI 、並建立 IAM 原則、以確保您擁有正確的權限、可以在 _Read_ 或 _AIL_ 模式下操作。
+如果您以 _Read_ 或 _AIL_ 模式操作，則需要link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["手動新增認證至帳戶"^]選擇工作負載功能，例如資料庫和 GenAI ，並建立 IAM 原則，以確保您擁有正確的權限，可以在 _Read_ 或 _AIL_ 模式下操作。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 部署資料庫伺服器
 [role="quick-margin-para"]
