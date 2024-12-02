@@ -734,8 +734,6 @@
   <block id="a538aa1311e84c0f42a362aece349223" category="paragraph">* 讀取模式 * ：在此作業模式中、您會提供具有讀取權限的 AWS 帳戶認證、讓您完成 _ 快速建立 _ 或 _ 進階建立 _ 表單、然後複製或下載表單。您也可以從工作負載工廠重新導向至 CloudForformation ，其中包含完整的表單詳細資料。您將能夠在工作負載工廠中管理部署的資料庫伺服器。</block>
   <block id="02b7989729e7d5233996b9d03d093fc1" category="paragraph">*_AILUSE_ 模式 * ：在這種作業模式中，您可以提供 AWS 帳戶認證及自動化權限，讓您在工作負載工廠內建立及管理 AWS 資源。</block>
   <block id="6e604948d399e1365a2d5a11ee7838d8" category="list-text">您必須<block ref="6d0e9cd8cac3e1654b2b4423d6d0dc45" category="inline-link-macro-rx"></block>在工作負載工廠中建立新的資料庫主機。</block>
-  <block id="8f10f2087cc578fb58ebdc9c43f20b29" category="paragraph">或者，您也可以使用 Codebox 複製空白範本或建立完整的範本，以便使用 REST API ， AWS CLI 或 AWS Forgation 在工作負載工廠以外部署資料庫。<block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>。</block>
-  <block id="7e7ea1d0ebe76ee78c10b35c9a89d522" category="paragraph">您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中的下列工具： REST API 、 CloudForformation 和 Terraform 。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>。</block>
   <block id="cef4156e4fa9e5869d4dee02c1b39d6e" category="paragraph">AWS 認證加上 _ 自動化 _ 權限，可讓工作負載在出廠時從工作負載工廠內的 AWS 帳戶部署及管理新的資料庫主機。</block>
   <block id="cc04c98a943715d655ef7f99796aae2a" category="paragraph">具有 _ 讀取 _ 權限的 AWS 認證可讓工作負載工廠產生 CloudForgation 範本，供您在 AWS CloudForgation 主控台中使用。</block>
   <block id="b4db11619512665a02befd7699ec1538" category="paragraph">如果您在工作負載工廠中沒有相關的 AWS 認證，而且想要在工作負載工廠中建立新的伺服器，請依照 * 選項 1* 前往認證頁面。為資料庫工作負載手動新增 _ 自動化 _ 模式所需的認證和權限。</block>
@@ -865,15 +863,12 @@
   <block id="49db1f79602c9ba8e5704a68010c4023" category="paragraph">您現在可以在資料庫中部署及管理獨立的 PostgreSQL 伺服器部署。</block>
   <block id="3627a14d7dc2feba3834d63a37ebb394" category="inline-link-macro">建立 PostgreSQL 伺服器</block>
   <block id="02b7dd87f2a54e2b540ac84598c20252" category="paragraph"><block ref="02b7dd87f2a54e2b540ac84598c20252" category="inline-link-macro-rx"></block></block>
-  <block id="a08c0d26c5f5640f1f5e9c497b9e6819" category="paragraph">或者，您也可以使用 Codebox 複製空範本或建立完整的範本，以便使用 REST API ， AWS CLI 和 AWS Forgation 在工作負載工廠以外部署資料庫。<block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>。</block>
   <block id="6a5525182ed1f6bca47fea4ee51a3e58" category="list-text">在資料庫方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * Microsoft SQL Server* 。</block>
   <block id="16982b5e2c79b1d8f052bfa663a64d77" category="summary">在 BlueXP  工作負載工廠內為資料庫建立新的 PostgreSQL SQL 伺服器。</block>
   <block id="c4f70f11159098cce8873623bffb07aa" category="doc">在 BlueXP  工作負載工廠中建立 PostgreSQL 伺服器</block>
   <block id="5f8d928d8901c8b01302b1c3be720b44" category="paragraph">在 BlueXP  工作負載工廠中為資料庫建立新的 PostgreSQL 伺服器或資料庫主機，需要使用 FSX 進行 ONTAP 檔案系統部署，並為 Active Directory 建立資源。</block>
   <block id="7a65409a338637d9c410720ad6eb8500" category="list-text">若要建立新的 PostgreSQL 伺服器，需要將 ONTAP 檔案系統的 FSX 作為儲存後端。您可以使用現有的適用於 ONTAP 檔案系統的 FSX 、或建立新的檔案系統。如果您選擇現有的 ONTAP 檔案系統 FSX 作為資料庫伺服器儲存後端，我們會為 PostgreSQL 工作負載建立新的儲存 VM 。</block>
   <block id="0f691a321e4cb91f0a8529931ba7bd47" category="paragraph">適用於 ONTAP 檔案系統的 FSX 支援 PostgreSQL 的 _standonstle_ 部署。工作負載工廠會為 ONTAP 檔案系統建立單一可用性區域 FSX ，並為資料，記錄和 tempdb 檔案建立個別的磁碟區和 LUN 。</block>
-  <block id="2fd4d401e5c831dec7c9d6e1b557896e" category="paragraph">您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中提供的下列工具： REST API 和 CloudForgation 。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>。</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
   <block id="dc1a4c3a44cba39fe1ecdcc15fe01cc7" category="list-text">在「資料庫」方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * PostgreSQL * 。</block>
   <block id="26bef182e4e84557ce657df6398df5a0" category="list-text">對於 * 部署模型 * ，預設為 * 獨立執行個體 * 。</block>
   <block id="75b39c0795d7295af69b1d13bbf82285" category="list-text">* 可用性區域 * ：選擇可用性區域和子網路。</block>
@@ -891,4 +886,6 @@
   <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">2024 年 12 月 01 日</block>
   <block id="d35a0f72475ce4ac5dbb2e790338586d" category="sidebar">建立 Microsoft SQL Server</block>
   <block id="b7414b1741661cf43c6fb35227e98183" category="sidebar">建立 PostgreSQL 伺服器</block>
+  <block id="723e2c2f1ab301b9588bd4fda85b4eae" category="paragraph">您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中的下列工具： REST API ， AWS CLI ， AWS CloudForformation 和 Terraform 。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>。</block>
+  <block id="21e80f3d16a915bc267e2251c057686f" category="paragraph">您可以使用 _ 進階建立 _ 部署模式，在工作負載工廠以 _ 自動化 _ 模式權限完成這項工作。您也可以使用 Codebox 中提供的下列工具： REST API ， AWS CLI 和 AWS CloudForgation 。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>。</block>
 </blocks>

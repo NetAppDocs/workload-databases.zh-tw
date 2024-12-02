@@ -65,11 +65,6 @@ Active Directory:: 在部署期間、 Active Directory （ AD ）會發生下列
 在建立新的資料庫主機之前、請確定您具備下列先決條件。
 
 認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和自動模式權限"^]在工作負載工廠中建立新的資料庫主機。
-+
---
-或者，您也可以使用 Codebox 複製空範本或建立完整的範本，以便使用 REST API ， AWS CLI 和 AWS Forgation 在工作負載工廠以外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
-
---
 Active Directory:: 連線至 Active Directory 時、您必須具有具有權限的管理存取權、才能執行下列動作：
 +
 --
@@ -88,7 +83,7 @@ Active Directory:: 連線至 Active Directory 時、您必須具有具有權限�
 
 == 步驟 1 ：建立資料庫伺服器
 
-您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中的下列工具： REST API 、 CloudForformation 和 Terraform 。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["瞭解如何使用 Codebox 進行自動化"^]。
+您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中的下列工具： REST API ， AWS CLI ， AWS CloudForformation 和 Terraform 。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["瞭解如何使用 Codebox 進行自動化"^]。
 
 
 NOTE: 從 Codebox 使用 Terraform 時、您複製或下載的程式碼會隱藏 `fsxadmin` 和 `vsadmin` 密碼。執行程式碼時、您需要重新輸入密碼。除了 _ 自動 _ 模式權限之外、您還需要為使用者帳戶加入下列權限： `iam:TagRole`和 `iam:TagInstanceProfile`。

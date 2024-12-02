@@ -19,37 +19,34 @@ summary: 在 BlueXP  工作負載工廠內為資料庫建立新的 PostgreSQL S
 開始之前，請先瞭解資料庫主機組態， Active Directory 部署，工作負載原廠操作模式的可用儲存部署類型，以及完成此作業的需求。
 
 適用於 ONTAP 檔案系統部署的 FSX:: 若要建立新的 PostgreSQL 伺服器，需要將 ONTAP 檔案系統的 FSX 作為儲存後端。您可以使用現有的適用於 ONTAP 檔案系統的 FSX 、或建立新的檔案系統。如果您選擇現有的 ONTAP 檔案系統 FSX 作為資料庫伺服器儲存後端，我們會為 PostgreSQL 工作負載建立新的儲存 VM 。
-
-
++
+--
 適用於 ONTAP 檔案系統的 FSX 支援 PostgreSQL 的 _standonstle_ 部署。工作負載工廠會為 ONTAP 檔案系統建立單一可用性區域 FSX ，並為資料，記錄和 tempdb 檔案建立個別的磁碟區和 LUN 。
 
+--
 工作負載原廠操作模式:: 工作負載工廠提供三種作業模式，視您在工廠管理工作負載時的舒適程度而定。
-
-
++
+--
 *_Basic_ 模式 * ：在此作業模式中，您不需要在工作負載工廠中建立任何 AWS 帳戶認證的關聯。您可以從 Codebox 複製或下載部分填寫的 YAML 範本，以便在工作負載工廠以外完成。
 
 * 讀取模式 * ：在此作業模式中、您會提供具有讀取權限的 AWS 帳戶認證、讓您完成 _ 快速建立 _ 或 _ 進階建立 _ 表單、然後複製或下載表單。您也可以從工作負載工廠重新導向至 CloudForformation ，其中包含完整的表單詳細資料。您將能夠在工作負載工廠中管理部署的資料庫伺服器。
 
 *_AILUSE_ 模式 * ：在這種作業模式中，您可以提供 AWS 帳戶認證及自動化權限，讓您在工作負載工廠內建立及管理 AWS 資源。
 
+--
+
+
 .開始之前
 在建立新的資料庫主機之前、請確定您具備下列先決條件。
 
 認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和自動模式權限"^]在工作負載工廠中建立新的資料庫主機。
-+
---
-或者，您也可以使用 Codebox 複製空白範本或建立完整的範本，以便使用 REST API ， AWS CLI 或 AWS Forgation 在工作負載工廠以外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
-
---
 
 
 
 
 == 建立資料庫伺服器
 
-您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中提供的下列工具： REST API 和 CloudForgation 。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["瞭解如何使用 Codebox 進行自動化"^]。
-
-+
+您可以使用 _ 進階建立 _ 部署模式，在工作負載工廠以 _ 自動化 _ 模式權限完成這項工作。您也可以使用 Codebox 中提供的下列工具： REST API ， AWS CLI 和 AWS CloudForgation 。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["瞭解如何使用 Codebox 進行自動化"^]。
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
@@ -179,6 +176,3 @@ AWS 託管金鑰會根據服務適用性進行篩選。
 或者、您也可以儲存組態。
 
 
-
-.下一步
-現在您可以了 link:create-database.html["在 BlueXP  工作負載工廠中為資料庫建立資料庫"]。
