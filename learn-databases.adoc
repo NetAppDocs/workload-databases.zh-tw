@@ -104,6 +104,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["瞭�
 
 您可以搭配下列工具使用 BlueXP  工作負載工廠：
 
+* * BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用
 * * 工作負載原廠主控台 * ：工作負載原廠主控台提供視覺化介面，可讓您全面檢視應用程式和專案
 * * REST API* ：工作負載原廠 REST API 可讓您部署及管理 Microsoft SQL Server 和其他 AWS 資源
 * * CloudForgi38* ： AWS CloudForgation 程式碼可讓您執行工作負載原廠主控台中定義的動作，以建構，配置及管理 AWS 帳戶中 CloudForgation 堆疊中的 AWS 和第三方資源。

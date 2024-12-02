@@ -67,7 +67,7 @@ Active Directory:: 在部署期間、 Active Directory （ AD ）會發生下列
 認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和自動模式權限"^]在工作負載工廠中建立新的資料庫主機。
 +
 --
-或者，您也可以使用 Codebox 複製空白範本或建立完整的範本，以便使用 REST API ， AWS CLI 或 AWS Forgation 在工作負載工廠以外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
+或者，您也可以使用 Codebox 複製空範本或建立完整的範本，以便使用 REST API ， AWS CLI 和 AWS Forgation 在工作負載工廠以外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
 
 --
 Active Directory:: 連線至 Active Directory 時、您必須具有具有權限的管理存取權、才能執行下列動作：
@@ -102,7 +102,7 @@ NOTE: 在 _ 快速建立 _ 中、 FCI 是預設的部署模式、 Windows 2016 �
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在「資料庫」方塊中、選取 * 部署資料庫主機 * 。
+. 在資料庫方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * Microsoft SQL Server* 。
 . 選取 * 快速建立 * 。
 . 在 * AWS 設定 * 下、提供下列項目：
 +
@@ -136,9 +136,6 @@ VPC DNS 屬性 `EnableDnsSupport` 並 `EnableDnsHostnames` 經過修改、以在
 +
 
 NOTE: FCI 部署僅支援用於 ONTAP 組態的多重可用性區域（ MAZ ） FSX 。
-
-+
-子網路不應共用相同的路由表、以達到高可用度。
 
 +
 ... 在 * 叢集組態 - 節點 1* 欄位中、從 * 可用性區域 * 下拉式功能表中選取 MAZ FSX for ONTAP 組態的主要可用性區域、並從 * 子網路 * 下拉式功能表中選取子網路。
@@ -211,7 +208,7 @@ NOTE: FCI 部署僅支援用於 ONTAP 組態的多重可用性區域（ MAZ ） 
 --
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在「資料庫」方塊中、選取 * 部署資料庫主機 * 。
+. 在資料庫方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * Microsoft SQL Server* 。
 . 選取 * 進階建立 * 。
 . 對於 * 部署模式 * 、請選取 * 容錯移轉叢集執行個體 * 或 * 單一執行個體 * 。
 . 在 * AWS 設定 * 下、提供下列項目：

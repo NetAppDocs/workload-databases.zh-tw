@@ -57,7 +57,6 @@
   <block id="15d1ade99815746ab0088981bd7585d3" category="section-title">步驟 1 ：建立資料庫伺服器</block>
   <block id="956eaa6186169471a13345860cad0757" category="open-title">快速建立</block>
   <block id="542af019e2aa3ef9ca4b187a71c918bb" category="admonition">在 _ 快速建立 _ 中、 FCI 是預設的部署模式、 Windows 2016 是預設的 Windows 版本、 SQL 2019 Standard Edition 是預設的 SQL 版本。</block>
-  <block id="b26136a388864ee3f9e813ac8f6109ee" category="list-text">在「資料庫」方塊中、選取 * 部署資料庫主機 * 。</block>
   <block id="6139861719bbe0b1fa9017ee94fd4e8e" category="list-text">選取 * 快速建立 * 。</block>
   <block id="cc3305aa1264f3bb3f5edf4bbf7f1ab1" category="list-text">在 * AWS 設定 * 下、提供下列項目：</block>
   <block id="0ddee9622b04a20edcfe59424067f924" category="list-text">* AWS 認證 * ：選取具有自動化權限的 AWS 認證來部署新的資料庫主機。</block>
@@ -398,14 +397,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
-  <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link">工作負載工廠</block>
-  <block id="7ffcbeca3b450b8d05f9cf0eedb617f8" category="list-text"><block ref="7ffcbeca3b450b8d05f9cf0eedb617f8" category="inline-link-rx"></block></block>
-  <block id="887f800d53dc2cd5a7894464a6f60a6b" category="inline-link">適用於資料庫的 Workload Factory</block>
-  <block id="7e505d4c691d86e5bd415f9ccb849966" category="list-text"><block ref="7e505d4c691d86e5bd415f9ccb849966" category="inline-link-rx"></block></block>
-  <block id="9591e2d54c998ae1c9d48fd5be7762e9" category="inline-link">GenAI 的工作負載工廠</block>
-  <block id="f38c7416013fc239c3dd3288d40a40c0" category="list-text"><block ref="f38c7416013fc239c3dd3288d40a40c0" category="inline-link-rx"></block></block>
-  <block id="404a5efb62a3a3f22b02593091042608" category="inline-link">VMware 工作負載工廠</block>
-  <block id="9a211183d3fa82368d76fdbab5abdeda" category="list-text"><block ref="9a211183d3fa82368d76fdbab5abdeda" category="inline-link-rx"></block></block>
   <block id="6130b5542240619621b88baf10547d84" category="paragraph">資料庫只能使用適用於 ONTAP 檔案系統儲存設備的 FSX 來管理 Microsoft SQL Server 執行個體。</block>
   <block id="b43307219a7b65a8301c057d6f6b5478" category="section-title">Microsoft SQL Server 執行個體管理</block>
   <block id="7c6c9edd9611134efa9dc1ed2f630486" category="paragraph">Microsoft SQL Server 執行個體管理包括下列工作：</block>
@@ -866,4 +857,38 @@
   <block id="9d57e52330b97c81921959c45b7d8a7c" category="sidebar">在 BlueXP  工作負載工廠中，部署 Microsoft SQL Server 組態，並在適用於 ONTAP 檔案系統儲存設備的 FSX 上管理資料庫環境。</block>
   <block id="e214e71355e2ee8687f09c83bfbdaabc" category="sidebar">資料庫文件的 BlueXP  工作負載工廠</block>
   <block id="f3ffe4a909ed7f4cc0f396f199ae3471" category="sidebar">瞭解資料庫的工作負載工廠</block>
+  <block id="18caf85143cff2e29943f7fa50a9d531" category="doc">持續最佳化可新增運算修正與評估功能</block>
+  <block id="275b08f4e33388b6598899e256fe46b3" category="paragraph">資料庫現在提供深入分析和建議，協助您最佳化 Microsoft SQL Server 執行個體的運算資源。我們會測量 CPU 使用率，並運用 AWS 運算最佳化工具服務來建議適當大小的最佳執行個體類型，並通知您可用的作業系統修補程式。最佳化運算資源有助於您做出有關執行個體類型的明智決策，進而節省成本並提高資源使用率。</block>
+  <block id="9aa94e25ba754a44d094b78775213e48" category="inline-link-macro">最佳化運算資源組態</block>
+  <block id="25a5dc6deeba5d476ff665ad9c968a2b" category="paragraph"><block ref="25a5dc6deeba5d476ff665ad9c968a2b" category="inline-link-macro-rx"></block></block>
+  <block id="f3cfd7c95d3ff2b556d90beb191fa77a" category="section-title">PostgreSQL 支援</block>
+  <block id="49db1f79602c9ba8e5704a68010c4023" category="paragraph">您現在可以在資料庫中部署及管理獨立的 PostgreSQL 伺服器部署。</block>
+  <block id="3627a14d7dc2feba3834d63a37ebb394" category="inline-link-macro">建立 PostgreSQL 伺服器</block>
+  <block id="02b7dd87f2a54e2b540ac84598c20252" category="paragraph"><block ref="02b7dd87f2a54e2b540ac84598c20252" category="inline-link-macro-rx"></block></block>
+  <block id="a08c0d26c5f5640f1f5e9c497b9e6819" category="paragraph">或者，您也可以使用 Codebox 複製空範本或建立完整的範本，以便使用 REST API ， AWS CLI 和 AWS Forgation 在工作負載工廠以外部署資料庫。<block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>。</block>
+  <block id="6a5525182ed1f6bca47fea4ee51a3e58" category="list-text">在資料庫方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * Microsoft SQL Server* 。</block>
+  <block id="16982b5e2c79b1d8f052bfa663a64d77" category="summary">在 BlueXP  工作負載工廠內為資料庫建立新的 PostgreSQL SQL 伺服器。</block>
+  <block id="c4f70f11159098cce8873623bffb07aa" category="doc">在 BlueXP  工作負載工廠中建立 PostgreSQL 伺服器</block>
+  <block id="5f8d928d8901c8b01302b1c3be720b44" category="paragraph">在 BlueXP  工作負載工廠中為資料庫建立新的 PostgreSQL 伺服器或資料庫主機，需要使用 FSX 進行 ONTAP 檔案系統部署，並為 Active Directory 建立資源。</block>
+  <block id="7a65409a338637d9c410720ad6eb8500" category="list-text">若要建立新的 PostgreSQL 伺服器，需要將 ONTAP 檔案系統的 FSX 作為儲存後端。您可以使用現有的適用於 ONTAP 檔案系統的 FSX 、或建立新的檔案系統。如果您選擇現有的 ONTAP 檔案系統 FSX 作為資料庫伺服器儲存後端，我們會為 PostgreSQL 工作負載建立新的儲存 VM 。</block>
+  <block id="0f691a321e4cb91f0a8529931ba7bd47" category="paragraph">適用於 ONTAP 檔案系統的 FSX 支援 PostgreSQL 的 _standonstle_ 部署。工作負載工廠會為 ONTAP 檔案系統建立單一可用性區域 FSX ，並為資料，記錄和 tempdb 檔案建立個別的磁碟區和 LUN 。</block>
+  <block id="2fd4d401e5c831dec7c9d6e1b557896e" category="paragraph">您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中提供的下列工具： REST API 和 CloudForgation 。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>。</block>
+  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
+  <block id="dc1a4c3a44cba39fe1ecdcc15fe01cc7" category="list-text">在「資料庫」方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * PostgreSQL * 。</block>
+  <block id="26bef182e4e84557ce657df6398df5a0" category="list-text">對於 * 部署模型 * ，預設為 * 獨立執行個體 * 。</block>
+  <block id="75b39c0795d7295af69b1d13bbf82285" category="list-text">* 可用性區域 * ：選擇可用性區域和子網路。</block>
+  <block id="d576650f664651e9b2569ccb346b6649" category="list-text">在 * 叢集組態 - 節點 1* 欄位中，從 * 可用性區域 * 下拉式功能表中選取可用性區域，並從 * 子網路 * 下拉式功能表中選取子網路。</block>
+  <block id="720301aea3fac96d94759700c949e15f" category="paragraph">在新伺服器部署期間，會將兩個安全群組附加至 SQL 節點（ EC2 執行個體）。</block>
+  <block id="f8473adfeac8aca2a2eaa799d6cde778" category="list-text">建立工作負載安全群組，以允許 PostgreSQL 所需的連接埠和通訊協定。</block>
+  <block id="a405e08f97e410f1eb5924541a4cb30c" category="list-text">對於現有的 ONTAP 檔案系統 FSX ，與其相關的安全性群組會自動新增至 PostgreSQL 節點，以便與檔案系統進行通訊。建立適用於 ONTAP 系統的新 FSX 時，會為適用於 ONTAP 檔案系統的 FSX 建立新的安全性群組，而同一個安全性群組也會附加至 SQL 節點。</block>
+  <block id="5d48b45f2ad58c8e1145b474d95593f9" category="list-text">從下拉式功能表中選取 * 作業系統 * 。</block>
+  <block id="6dd53f240f48678994cf9b0109fa0ec2" category="list-text">從下拉式功能表中選取 * PostgreSQL 版本 * 。</block>
+  <block id="d456e032669379ad4e2388045a89301d" category="list-text">* 資料庫伺服器名稱 * ：輸入資料庫叢集名稱。</block>
+  <block id="b4d85afb201cbf3edb4623ef0d8da5e6" category="list-text">在 * 連線 * 下，選取金鑰配對以安全地連線至執行個體。</block>
+  <block id="54d16066caaf498f7f6443098c30a2be" category="paragraph">快照會指派給為 PostgreSQL 工作負載所建立的磁碟區。</block>
+  <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  工作負載工廠</block>
+  <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
+  <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">2024 年 12 月 01 日</block>
+  <block id="d35a0f72475ce4ac5dbb2e790338586d" category="sidebar">建立 Microsoft SQL Server</block>
+  <block id="b7414b1741661cf43c6fb35227e98183" category="sidebar">建立 PostgreSQL 伺服器</block>
 </blocks>
