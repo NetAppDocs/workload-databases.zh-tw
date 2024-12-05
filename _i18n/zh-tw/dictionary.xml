@@ -667,7 +667,6 @@
   <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">使用 CodeBox 的 Terraform</block>
   <block id="11cb17d1b990bbf37a24337d5692efa1" category="list-text"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">瞭解如何使用 Codebox 進行自動化</block>
-  <block id="5de582d1d412797088979e47e496c2fe" category="admonition">從 Codebox 使用 Terraform 時、您複製或下載的程式碼會隱藏<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block> 和<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> 密碼。執行程式碼時、您需要重新輸入密碼。除了 _ 自動 _ 模式權限之外、您還需要為使用者帳戶加入下列權限：<block ref="7f862a4b8fc22b0af5dda5c9ababa346" prefix=" " category="inline-code"></block>和<block ref="319bffed0f518819193d82ffe99b1444" prefix=" " category="inline-code"></block>。</block>
   <block id="b2636246cf1e5e567e3ded4a9d65b1da" category="section-title">使用 Terraform 在私有網路中部署 Microsoft SQL Server 的區域可用度</block>
   <block id="eb4fca182b3b78e9a38aa1f6f59c8857" category="paragraph">Microsoft SQL Server 部署在沒有使用 Terraform 輸出連線的私有網路中、僅在 us-east-1 （ N.Virginia ）地區支援。</block>
   <block id="0937bd87e3f84605f28e13c1956980d3" category="list-text">* 持續最佳化 * ：持續離線掃描您的 Microsoft SQL Server 資產、為您提供深入見解、商機及建議的完整報告、協助您達到卓越營運績效。</block>
@@ -888,4 +887,8 @@
   <block id="b7414b1741661cf43c6fb35227e98183" category="sidebar">建立 PostgreSQL 伺服器</block>
   <block id="723e2c2f1ab301b9588bd4fda85b4eae" category="paragraph">您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中的下列工具： REST API ， AWS CLI ， AWS CloudForformation 和 Terraform 。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>。</block>
   <block id="21e80f3d16a915bc267e2251c057686f" category="paragraph">您可以使用 _ 進階建立 _ 部署模式，在工作負載工廠以 _ 自動化 _ 模式權限完成這項工作。您也可以使用 Codebox 中提供的下列工具： REST API ， AWS CLI 和 AWS CloudForgation 。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>。</block>
+  <block id="81a9b579c806be28ed6e048084a47b52" category="inline-link-macro">瞭解如何從 CodeBox 使用 Terraform</block>
+  <block id="0ec2c706568900a3077d2c43bb52bde7" category="admonition">從 Codebox 使用 Terraform 時、您複製或下載的程式碼會隱藏<block ref="679500f227997b45be97e3ca8115c678" prefix=" " category="inline-code"></block> 和<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block> 密碼。執行程式碼時、您需要重新輸入密碼。除了 _ 自動 _ 模式權限之外、您還需要為使用者帳戶加入下列權限：<block ref="7f862a4b8fc22b0af5dda5c9ababa346" prefix=" " category="inline-code"></block>和<block ref="319bffed0f518819193d82ffe99b1444" prefix=" " category="inline-code"></block>。<block ref="916d5d5f037ba2ec9358c38001da7d8f" category="inline-link-macro-rx"></block>。</block>
+  <block id="037f00cd2eafb994bfbd866e78bb7bc3" category="paragraph">您可以在部署的 PostgreSQL 伺服器上手動設定使用者，遠端存取和資料庫。</block>
+  <block id="3b801b5b7ccdf00990044d1e2711d31e" category="paragraph">PostgreSQL 不支援 Amazon CloudWatch 或在私有網路中部署。</block>
 </blocks>

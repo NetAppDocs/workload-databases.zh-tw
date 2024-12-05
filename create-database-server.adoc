@@ -86,7 +86,7 @@ Active Directory:: 連線至 Active Directory 時、您必須具有具有權限�
 您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中的下列工具： REST API ， AWS CLI ， AWS CloudForformation 和 Terraform 。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["瞭解如何使用 Codebox 進行自動化"^]。
 
 
-NOTE: 從 Codebox 使用 Terraform 時、您複製或下載的程式碼會隱藏 `fsxadmin` 和 `vsadmin` 密碼。執行程式碼時、您需要重新輸入密碼。除了 _ 自動 _ 模式權限之外、您還需要為使用者帳戶加入下列權限： `iam:TagRole`和 `iam:TagInstanceProfile`。
+NOTE: 從 Codebox 使用 Terraform 時、您複製或下載的程式碼會隱藏 `fsxadmin` 和 `vsadmin` 密碼。執行程式碼時、您需要重新輸入密碼。除了 _ 自動 _ 模式權限之外、您還需要為使用者帳戶加入下列權限： `iam:TagRole`和 `iam:TagInstanceProfile`。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#use-terraform-from-codebox["瞭解如何從 CodeBox 使用 Terraform"^]。
 
 [role="tabbed-block"]
 ====
