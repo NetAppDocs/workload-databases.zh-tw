@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: optimize-configurations.html 
 keywords: optimize, configuration, storage, compute, application, resiliency assessment, scan, optimization, Microsoft SQL Server, host, instance, FSx for ONTAP 
-summary: 資料庫的 BlueXP  工作負載工廠會掃描 Microsoft SQL Server 的儲存組態，提供深入分析和建議，協助您達到卓越營運績效。 
+summary: 資料庫的 BlueXP  工作負載工廠會掃描 Microsoft SQL Server 組態，提供深入分析和建議，協助您達到卓越營運績效。 
 ---
 = 最佳化 Microsoft SQL Server 部署的組態
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 資料庫的 BlueXP  工作負載工廠會掃描 Microsoft SQL Server 
 
 
 [role="lead"]
-資料庫的 BlueXP  工作負載工廠會持續掃描並評估執行於 Amazon FSX for NetApp ONTAP 上的 Microsoft SQL Server 部署組態。評估提供深入見解、建議和最佳化、讓您達到卓越營運績效。
+資料庫的 BlueXP  工作負載工廠會持續掃描並評估執行於 Amazon FSX for NetApp ONTAP 上的 Microsoft SQL Server 部署組態。此功能提供深入分析和建議，可選擇自動最佳化未最佳化的組態，讓您的資料庫工作負載達到卓越的營運表現。
 
 .關於這項工作
 此評估會針對 Microsoft SQL Server 執行個體、自動且持續地執行一次、其 FSX 適用於在工作負載工廠中管理的 ONTAP 儲存設備。只有在部署後或管理執行個體之後執行每日排程工作時、才能在最佳化儀表板中使用評估報告。
@@ -24,7 +24,8 @@ summary: 資料庫的 BlueXP  工作負載工廠會掃描 Microsoft SQL Server 
 * 儲存規模：包括儲存層、檔案系統保留空間、記錄磁碟機大小及 TempDB 磁碟機大小
 * 儲存配置：包括使用者資料檔案放置、記錄檔放置及 TempDB 放置
 * 儲存組態：包括容量管理、精簡配置、分層原則、快照、多重路徑 I/O 狀態、原則和工作階段等
-* 運算：包括適當調整規模
+* 運算：包括適當調整規模和作業系統修補程式
+* 應用程式：包括 Microsoft SQL Server 授權
 
 
 --
@@ -38,19 +39,18 @@ summary: 資料庫的 BlueXP  工作負載工廠會掃描 Microsoft SQL Server 
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
-. 在資料庫中、選取 * 庫存 * 索引標籤。
-. 按一下下拉式箭頭以展開主機列、以檢視其受管理執行個體。
+. 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
+. 在 * Inventory （資源清冊） * 選項卡中，選擇下拉箭頭以展開主機行以查看其受管實例。
 +
-主機隨即展開、並顯示主機執行個體。
+主機隨即展開並顯示主機執行個體。
 
-. 選取要掃描的執行個體的三點功能表、然後選取 * 最佳化 * 。
-. 在主機的最佳化執行個體頁面上、檢閱儲存評估的結果。
+. 選取執行個體的三點功能表，然後選取 * 最佳化 * 。
+. 在 SQL Server 執行個體的最佳化執行個體頁面上，檢閱評估結果。
 +
-篩選條件可依類別、子類別、狀態、嚴重性和標籤進行排序。
+您可以依類別，子類別，狀態，嚴重性和標記進行篩選。
 
 +
-如有需要、您可以選擇 * 匯出 PDF* 來下載調查結果報告。
+您也可以選擇 * 匯出 PDF* 來下載評估結果報告。
 
 . 選取下拉式箭頭以檢視任何組態的建議。請務必仔細檢閱建議內容。
 +

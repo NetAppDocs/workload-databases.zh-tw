@@ -71,9 +71,9 @@ sidebar:
     - title: 最佳化 SQL Server
       entries:
       - title: 持續最佳化總覽
-        url: optimize-overview.html
+        url: "/optimize-overview.html"
       - title: 最佳化組態
-        url: optimize-configurations.html
+        url: "/optimize-configurations.html"
   - title: 知識與支援
     entries:
     - title: 註冊以取得支援
@@ -83,5 +83,5 @@ sidebar:
   - title: 法律聲明
     url: "/legal-notices.html"
 product-family:
-  name: BlueXP workload factory for AWS
+  name: BlueXP workload factory
   repo: workload-family

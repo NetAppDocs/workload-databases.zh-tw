@@ -13,11 +13,48 @@ summary: 比較使用 Amazon Elastic Block Store （ EBS ）和適用於 Windows
 [role="lead"]
 比較使用 Amazon Elastic Block Store （ EBS ）和適用於 Windows 檔案伺服器儲存設備的 FSX 搭配 ONTAP 儲存設備的成本，以瞭解資料庫工作負載資料庫在 BlueXP  工作負載工廠中的節約效益。
 
-工作負載工廠提供了一個節約計算機，讓您可以比較在 ONTAP 檔案系統的 FSX 上執行資料庫工作負載的各種成本元件，例如儲存，運算， SQL 授權，快照和複本，以及適用於 Windows 檔案伺服器儲存設備的 Elastic Block Store （ EBS ）和 FSX 。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 最符合資料庫工作負載的成本效益。如果您使用適用於 ONTAP 檔案系統的 FSX 、計算機會顯示這些 Microsoft SQL Server 上資料庫工作負載的儲存設備是否會降低成本。
+
+
+== 關於這項工作
+
+工作負載工廠提供了一個節約計算機，讓您可以比較在 ONTAP 檔案系統的 FSX 上執行資料庫工作負載的各種成本元件，例如儲存，運算， SQL 授權，快照和複本，以及適用於 Windows 檔案伺服器儲存設備的 Elastic Block Store （ EBS ）和 FSX 。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 最符合資料庫工作負載的成本效益。
+
+如果您使用適用於 ONTAP 檔案系統的 FSX 、計算機會顯示這些 Microsoft SQL Server 上資料庫工作負載的儲存設備是否會降低成本。
 
 image:screenshot-ebs-savings-calculator.png["節約計算機頁面的螢幕擷取畫面會顯示左側 Amazon Elastic Block Store 組態上所選的 Microsoft SQL Server 、並提供自訂快照和複製值的選項。左側顯示的是在適用於 ONTAP 的 FSX 上使用 Microsoft SQL Server 和 Elastic Block Store 儲存設備的每月總成本、可節省美元金額和百分比。"]
 
 如果工作負載工廠判斷您可以在適用於 ONTAP 檔案系統的 FSX 上執行這些工作負載，以節省成本，您可以直接從工作負載工廠的計算機，將 Microsoft SQL 透過適用於 ONTAP 的 FSX 部署。當您在彈性區塊存放區或適用於 Windows 檔案伺服器儲存區的 FSX 上有多個 Microsoft SQL Server 執行個體時、我們會建議您使用單一 SQL 執行個體來設定適用於 ONTAP 的 FSX 組態。
+
+
+
+== SQL Server 部署分析
+
+此計算機會對 SQL Server 部署執行全方位分析，以確保所使用的資源和功能與 SQL Server 版本適當配對。以下是計算器建議降級至 Standard Edition 之前檢查的關鍵因素和條件：
+
+部署模式:: 計算機會評估部署模式，以及是否需要 Enterprise 版本。
+已分配資源:: 此計算機會評估下列授權相關分配資源的條件：
++
+--
+* 目標執行個體 vCPU ：執行個體具有 48 個或更少的虛擬 CPU 。
+* 記憶體配置：執行個體擁有 128GB 或更少的記憶體。
+
+
+--
+企業功能使用:: 計算機會驗證是否使用下列任何一項企業功能：
++
+--
+* 資料庫層級的企業功能
+* 線上索引作業
+* 資源管理員
+* 對等或 Oracle 複寫
+* R/Python 副檔名
+* 記憶體最佳化的 TempDB
+
+
+--
+
+
+如果評估的 SQL Server 執行個體未使用上述任何企業功能，且符合資源限制，則計算機會建議將授權降級為 Standard Edition 。本建議旨在協助您最佳化 SQL Server 授權成本，而不影響效能或功能。
 
 
 
@@ -31,7 +68,7 @@ image:screenshot-ebs-savings-calculator.png["節約計算機頁面的螢幕擷�
 
 
 
-== 透過自訂功能探索節約效益
+=== 透過自訂功能探索節約效益
 
 請依照儲存類型標籤下的步驟進行。
 
@@ -111,7 +148,7 @@ image:screenshot-ebs-savings-calculator.png["節約計算機頁面的螢幕擷�
 ====
 
 
-== 探索偵測到的主機的節約效益
+=== 探索偵測到的主機的節約效益
 
 工作負載工廠會進入偵測到的「彈性區塊存放區」和適用於 Windows 檔案伺服器主機特性的 FSX ，以便您可以自動探索節約效益。
 

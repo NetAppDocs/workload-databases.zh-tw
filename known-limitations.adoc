@@ -102,10 +102,4 @@ Workload Factory 不支援建立或儲存具有多個適用於 ONTAP 檔案系�
 
 == 使用 Terraform 在私有網路中部署 Microsoft SQL Server 的區域可用度
 
-Microsoft SQL Server 部署在沒有使用 Terraform 輸出連線的私有網路中、僅在 us-east-1 （ N.Virginia ）地區支援。
-
-
-
-== PostgreSQL 支援
-
-PostgreSQL 不支援 Amazon CloudWatch 或在私有網路中部署。
+Microsoft SQL Server 部署在沒有使用 Terraform 輸出連線的私有網路中、僅在 us-east-1 （ N.Virginia ）地區支援。PostgreSQL 不支援 Amazon CloudWatch 或在私有網路中部署。

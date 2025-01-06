@@ -38,4 +38,4 @@ summary: 資料庫有三種不同的模式、要求不同。
 .下一步
 當您的資料庫庫存中有適用於 ONTAP 託管主機的 FSX 時、您可以 link:create-database.html["建立使用者資料庫"] 或 link:create-sandbox-clone.html["複製主機以建立沙箱"]。
 
-當您的資料庫庫存中有彈性區塊存放區主機時、您可以 link:explore-savings.html["使用儲存節約計算機探索節約效益"]。
+當您的資料庫庫存中有適用於 Windows 檔案伺服器主機的 Elastic Block Store 或 FSX 時link:explore-savings.html["使用節約計算機探索節約效益"]，您可以。

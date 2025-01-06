@@ -18,9 +18,9 @@ summary: 使用 REST API 程式碼將沙箱複本連線至 CI/CD 管線、以透
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在「資料庫」方塊中、選取 * 移至「資料庫庫存」 * 。
+. 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
 . 在資料庫中、選取 * 沙箱 * 標籤。
-. 在沙箱索引標籤中、按一下沙箱複本的三點功能表、以連線至 CI/CD 工具。
+. 在沙箱索引標籤中，按一下沙箱複製的三點功能表，以連線至 CI/CD 工具。
 . 選取 * 連線至 CI/CD 工具 * 。
 . 在 CI/CD 對話方塊中、複製或下載連線至 CI/CD 工具所需的 REST API 程式碼。
 . 按一下 * 關閉 * 。
