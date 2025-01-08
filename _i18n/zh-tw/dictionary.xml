@@ -639,7 +639,6 @@
   <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">使用 CodeBox 的 Terraform</block>
   <block id="11cb17d1b990bbf37a24337d5692efa1" category="list-text"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">瞭解如何使用 Codebox 進行自動化</block>
-  <block id="b2636246cf1e5e567e3ded4a9d65b1da" category="section-title">使用 Terraform 在私有網路中部署 Microsoft SQL Server 的區域可用度</block>
   <block id="0937bd87e3f84605f28e13c1956980d3" category="list-text">* 持續最佳化 * ：持續離線掃描您的 Microsoft SQL Server 資產、為您提供深入見解、商機及建議的完整報告、協助您達到卓越營運績效。</block>
   <block id="13025ba9f92de77af2aeaf1af07a4aa8" category="doc">最佳化 Microsoft SQL Server 部署的組態</block>
   <block id="6f2bcb2f8d4f34c036395a199095be9a" category="paragraph">此評估會針對 Microsoft SQL Server 執行個體、自動且持續地執行一次、其 FSX 適用於在工作負載工廠中管理的 ONTAP 儲存設備。只有在部署後或管理執行個體之後執行每日排程工作時、才能在最佳化儀表板中使用評估報告。</block>
@@ -901,7 +900,6 @@
   <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">加入工作負載工廠社群，追蹤後續討論或建立新討論。</block>
   <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">若要使用 * 建立案例 * 功能，您必須先註冊以取得支援。將您的 NetApp 支援網站認證與工作負載原廠登入建立關聯。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>。</block>
   <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">在工作負載原廠主控台的右上角，選取 * 說明 &gt; 支援 * 。</block>
-  <block id="eb3607016e0d79a6f82dfbbdd3422282" category="paragraph">Microsoft SQL Server 部署在沒有使用 Terraform 輸出連線的私有網路中、僅在 us-east-1 （ N.Virginia ）地區支援。PostgreSQL 不支援 Amazon CloudWatch 或在私有網路中部署。</block>
   <block id="e75c7b17297b3cf3a7564e3033ef939f" category="list-text">單擊要查看的實例的三點菜單，然後選擇 *View instance* 。</block>
   <block id="6b30d701929b5a35aad77b847528d165" category="list-text">按一下包含要檢視之資料庫的執行個體的三點功能表。</block>
   <block id="77b932b7ecf2d2b3689c445fe72bb66a" category="list-text">按一下要取消管理的執行個體的三點功能表。</block>
@@ -926,4 +924,11 @@
   <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需雲端供應商檔案服務，其基礎架構或任何使用服務的解決方案的相關技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
   <block id="195066d54d760bc240b0879aa7a483bf" category="list-text">在沙箱索引標籤中，按一下沙箱複製的三點功能表，即可檢視其連線資訊。</block>
   <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">2025 年 1 月 06 日</block>
+  <block id="f2398fe4ddb880ba6c52b376ef9b960c" category="list-text"><block ref="f2398fe4ddb880ba6c52b376ef9b960c" category="inline-link-macro-rx"></block></block>
+  <block id="f7626e6c4414254923965c059c538355" category="section-title">最佳化的作業系統修補程式評估</block>
+  <block id="caf2103b4a30210f2be52ce13c522aad" category="inline-link-macro">AWS Cloud Operations 部落格「 How to patch Windows EC2 Instances in Private Subnets Using AWS Systems Manager 」</block>
+  <block id="51d9963cd25d44afd5ce890896443f71" category="paragraph">為了最佳化目的而進行的作業系統修補程式評估，可能無法在私有網路中運作。評估仰賴 AWS Patch Manager 。若要瞭解如何修補私有網路中的 Windows EC2 執行個體，請<block ref="8e97bc3ab59f50cb9b025f85a2445baf" category="inline-link-macro-rx"></block>參閱。</block>
+  <block id="a61ebf6aa74399e268808d3801b03702" category="section-title">運算適當調整規模最佳化</block>
+  <block id="f72f493648b25528319887c50a65f0ce" category="inline-link-macro">Amazon Elastic Compute Cloud 文件</block>
+  <block id="bd5d7b32e4164faa655582f169744a05" category="paragraph">變更為特定執行個體類型時，可能會重設網路組態，進而導致最佳化期間節點連線失敗，並導致工作失敗。檢查和更新 DNS 設定和 iSCSI 工作階段可能需要手動介入。如需 EC2 調整大小限制的詳細資訊，請參閱<block ref="b8406a09c509d5c1d937367114bd51b3" category="inline-link-macro-rx"></block>。</block>
 </blocks>
