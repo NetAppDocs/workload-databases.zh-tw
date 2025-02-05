@@ -100,12 +100,28 @@ Workload Factory 不支援建立或儲存具有多個適用於 ONTAP 檔案系�
 
 
 
-== 最佳化的作業系統修補程式評估
+== 最佳化限制
+
+
+
+=== 運算適當調整規模最佳化
+
+變更為特定執行個體類型時，可能會重設網路組態，進而導致最佳化期間節點連線失敗，並導致工作失敗。檢查和更新 DNS 設定和 iSCSI 工作階段可能需要手動介入。如需 EC2 調整大小限制的詳細資訊，請參閱link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resize-limitations.html["Amazon Elastic Compute Cloud 文件"^]。
+
+
+
+=== ONTAP 與作業系統組態最佳化
+
+ONTAP 組態和作業系統組態不支援多個 SQL Server 執行個體的大量最佳化。
+
+
+
+=== 最佳化的作業系統修補程式評估
 
 為了最佳化目的而進行的作業系統修補程式評估，可能無法在私有網路中運作。評估仰賴 AWS Patch Manager 。若要瞭解如何修補私有網路中的 Windows EC2 執行個體，請link:https://aws.amazon.com/blogs/mt/how-to-patch-windows-ec2-instances-in-private-subnets-using-aws-systems-manager/["AWS Cloud Operations 部落格「 How to patch Windows EC2 Instances in Private Subnets Using AWS Systems Manager 」"^]參閱。
 
 
 
-== 運算適當調整規模最佳化
+== 內部部署節約計算
 
-變更為特定執行個體類型時，可能會重設網路組態，進而導致最佳化期間節點連線失敗，並導致工作失敗。檢查和更新 DNS 設定和 iSCSI 工作階段可能需要手動介入。如需 EC2 調整大小限制的詳細資訊，請參閱link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/resize-limitations.html["Amazon Elastic Compute Cloud 文件"^]。
+Microsoft SQL Server 內部部署儲存設備的 Volume 大小成本與百分比節約計算並未納入考量。
