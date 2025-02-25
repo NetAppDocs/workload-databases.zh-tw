@@ -963,4 +963,9 @@
   <block id="8e29c0a71b0719e3f6ed28d4a7c0b30d" category="paragraph">ONTAP 組態和作業系統組態不支援多個 SQL Server 執行個體的大量最佳化。</block>
   <block id="7dd6090f4d4627220763b41db74bb898" category="section-title">內部部署節約計算</block>
   <block id="9fb10d1d0413bc062aa3f807aa200e53" category="paragraph">Microsoft SQL Server 內部部署儲存設備的 Volume 大小成本與百分比節約計算並未納入考量。</block>
+  <block id="79dda14ccc601407ccb09f0fe3d93259" category="paragraph">如果您對 EC2 執行個體的所有傳出連線都使用 Proxy 伺服器，則必須允許存取下列網域，以便管理作業正常運作：</block>
+  <block id="d9f9431d48e0b55421e9c9376798d722" category="list-text"><block ref="c202a4052bc97ff0191552ea4c2c865c" prefix="" category="inline-code"></block></block>
+  <block id="9aa0a44ed97cfd5357fb393a8de57dc7" category="list-text"><block ref="1f378775539050b7c7b5e1cdfe121e2f" prefix="" category="inline-code"></block></block>
+  <block id="4bd2e14395b83906b0838bbcc78df388" category="list-text"><block ref="3e51061ec4171070ff2ffdabfbd63cc3" prefix="" category="inline-code"></block></block>
+  <block id="9b6e1103f46b83b38494e5b294e2c410" category="list-text"><block ref="c1eaf26c3b755ad5252456a5d3f34a2f" prefix="" category="inline-code"></block></block>
 </blocks>
