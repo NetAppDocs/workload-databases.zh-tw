@@ -14,9 +14,7 @@ summary: 在 BlueXP  工作負載工廠內為資料庫建立新的 Microsoft SQ
 在 BlueXP  工作負載工廠中為資料庫建立新的 Microsoft SQL Server 或資料庫主機，需要 FSX 用於 ONTAP 檔案系統部署，以及用於 Active Directory 的資源。
 
 .關於這項工作
-您需要 AWS 帳戶認證和 _ 自動化 _ 權限。
-
-開始之前，請先瞭解資料庫主機組態， Active Directory 部署，工作負載原廠操作模式的可用儲存部署類型，以及完成此作業的需求。
+在從工作負載工廠建立 Microsoft SQL Server 之前，請先瞭解資料庫主機組態， Active Directory 部署，工作負載原廠操作模式的可用儲存部署類型，以及完成此作業的需求。
 
 部署之後、您需要 <<步驟 2 ：在 Microsoft SQL Server 上啟用遠端連線,在 Microsoft SQL Server 上啟用遠端連線>>。
 

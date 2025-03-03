@@ -13,12 +13,16 @@ indexpage:
       url: "/quick-start-databases.html"
   - title: 使用資料庫
     links:
-    - title: 建立資料庫伺服器
+    - title: 探索節約效益
+      url: "/explore-savings.html"
+    - title: 建立 Microsoft SQL Server
       url: "/create-database-server.html"
+    - title: 建立 PostgreSQL 伺服器
+      url: "/create-postgresql-server.html"
     - title: 建立資料庫
       url: "/create-database.html"
-    - title: 監控資料庫
-      url: "/monitor-databases.html"
+    - title: 最佳化組態
+      url: "/optimize-configurations.html"
   - title: 知識與支援
     links:
     - title: 註冊以取得支援

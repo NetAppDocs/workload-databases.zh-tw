@@ -26,6 +26,7 @@ summary: 資料庫的 BlueXP  工作負載工廠會掃描 Microsoft SQL Server 
 * 儲存組態：包括容量管理、精簡配置、分層原則、快照、多重路徑 I/O 狀態、原則和工作階段等
 * 運算：包括正確調整規模，作業系統修補程式，以及接收端調整（ RSS ）和 TCP 卸載等網路介面卡設定
 * 應用程式：包括 Microsoft SQL Server 授權， Microsoft SQL Server 修補程式和 MAXDOP 設定
+* 恢復能力：包括本機快照
 
 
 --
