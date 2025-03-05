@@ -42,6 +42,14 @@ Active Directory:: 在部署期間、 Active Directory （ AD ）會發生下列
 
 
 --
+
+
+
+
+== 使用者管理的 Active Directory 安全性群組
+
+如果您在工作負載工廠的 Microsoft SQL Server 部署期間選取「使用者管理的 Active Directory 」，則必須提供安全群組，允許 EC2 執行個體之間的流量傳輸至目錄服務進行部署。工作負載工廠不會像 AWS 託管的 Microsoft AD 一樣，自動附加使用者託管 Active Directory 的安全群組。
+
 資源復原:: 如果您決定復原網域名稱系統（ DNS ）資源、則 AD 和 DNS 中的資源記錄不會自動移除。您可以從 DNS 伺服器和 AD 移除記錄、如下所示。
 +
 --
@@ -258,10 +266,7 @@ NOTE: FCI 部署僅支援用於 ONTAP 組態的多重可用性區域（ MAZ ） 
 --
 
 
-.. * 安全性群組 * ：選取現有的安全性群組或建立新的安全性群組。
-+
-在新伺服器部署期間、三個安全群組會附加到 SQL 節點（ EC2 執行個體）。
-
+.. * 安全性群組 * ：選取現有的安全性群組或建立新的安全性群組。在新伺服器部署期間、三個安全群組會附加到 SQL 節點（ EC2 執行個體）。
 +
 ... 建立工作負載安全性群組、以允許節點上的 Microsoft SQL 和 Windows 叢集通訊所需的連接埠和通訊協定。
 ... 在 AWS 託管 Active Directory 的情況下、附加至目錄服務的安全性群組會自動新增至 Microsoft SQL 節點、以便與 Active Directory 進行通訊。

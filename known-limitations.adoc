@@ -58,12 +58,6 @@ summary: 已知限制指出本產品版本不支援的平台、裝置或功能�
 
 
 
-== 使用者管理的 Active Directory 安全性群組
-
-如果您在工作負載工廠的 Microsoft SQL Server 部署期間選取「使用者管理的 Active Directory 」，則必須提供安全群組，允許 EC2 執行個體之間的流量傳輸至目錄服務進行部署。工作負載工廠不會像 AWS 託管的 Microsoft AD 一樣，自動附加使用者託管 Active Directory 的安全群組。
-
-
-
 == 自訂加密金鑰
 
 ONTAP 適用的 FSX 自訂加密金鑰並未根據服務適用性列出。您必須選擇適當的金鑰。AWS 託管金鑰會根據服務的適用性進行篩選。
