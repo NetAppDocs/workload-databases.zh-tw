@@ -619,9 +619,7 @@
   <block id="cfa54b7dd19dd91bb87ede68126951eb" category="list-text"><block ref="25f6388206f436c2d1de63216302b13d" prefix="" category="inline-code"></block></block>
   <block id="8d461d34b0f2c02565383f3301044282" category="list-text"><block ref="fea0543b0b4b9d4c240c6219de0db41c" prefix="" category="inline-code"></block></block>
   <block id="26e6f4cc71039ce95ddbb0acdad6891d" category="section-title">2024 年 9 月 29 日</block>
-  <block id="9a178ca3815f6aeb284a65e10447f086" category="paragraph"><block ref="9a178ca3815f6aeb284a65e10447f086" category="inline-link-macro-rx"></block></block>
   <block id="7d6d6d8a97f883d860bff04c0be1019c" category="inline-link-macro">利用適用於 ONTAP 的 FSX 為資料庫工作負載節省成本</block>
-  <block id="293758d509326f8da42abf75db2d37e6" category="paragraph"><block ref="293758d509326f8da42abf75db2d37e6" category="inline-link-macro-rx"></block></block>
   <block id="fbcbba8054f71f57fa8e2b950179bb23" category="paragraph">可從資料庫伺服器建立的沙箱複本數量上限為 90 個。</block>
   <block id="0928468cb2283b21e6802a78c6a64e3a" category="doc">使用資料庫持續最佳化您的 Microsoft SQL Server 工作負載</block>
   <block id="e73fa899152fb6836032fef4e1c95da4" category="paragraph">BlueXP  工作負載工廠推出持續指引和 guardrails 、確保在 Amazon FSX for NetApp ONTAP 上持續最佳化並遵循 Microsoft SQL Server 工作負載儲存元件的最佳實務做法。這項功能會持續離線掃描您的 Microsoft SQL Server 資產、提供深入分析、商機和建議的完整報告、協助您達到最佳效能、成本效益和法規遵循。</block>
@@ -629,9 +627,7 @@
   <block id="72d1af9ffdd277a1cf7789b588da9b4d" category="paragraph"><block ref="72d1af9ffdd277a1cf7789b588da9b4d" category="inline-link-macro-rx"></block></block>
   <block id="efa42d5c66cb9948f402ee559611e12d" category="section-title">Terraform 支援</block>
   <block id="822802a1673e79cb7dbd54947e4dc32c" category="paragraph">您現在可以使用 Codebox 中的 Terraform 來部署 Microsoft SQL Server 。</block>
-  <block id="d83b54de9b50110195e4bf3c1f3c6a67" category="list-text"><block ref="d83b54de9b50110195e4bf3c1f3c6a67" category="inline-link-macro-rx"></block></block>
   <block id="2532cd63354e6e99119077d45134b5ef" category="inline-link-macro">使用 CodeBox 的 Terraform</block>
-  <block id="11cb17d1b990bbf37a24337d5692efa1" category="list-text"><block ref="11cb17d1b990bbf37a24337d5692efa1" category="inline-link-macro-rx"></block></block>
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">瞭解如何使用 Codebox 進行自動化</block>
   <block id="0937bd87e3f84605f28e13c1956980d3" category="list-text">* 持續最佳化 * ：持續離線掃描您的 Microsoft SQL Server 資產、為您提供深入見解、商機及建議的完整報告、協助您達到卓越營運績效。</block>
   <block id="13025ba9f92de77af2aeaf1af07a4aa8" category="doc">最佳化 Microsoft SQL Server 部署的組態</block>
@@ -669,7 +665,6 @@
   <block id="35c4b7b7975b86786b96de60f8d9159c" category="doc">資料庫的 BlueXP  工作負載工廠初始版本</block>
   <block id="fe582581097e432c4b1b3f3135f39b72" category="paragraph">初始版本包含以下功能：利用 Amazon FSX for NetApp ONTAP 做為資料庫工作負載的儲存環境，探索節省成本，偵測，管理及部署 Microsoft SQL Server ，部署及複製資料庫，以及在工作負載工廠內監控這些工作。</block>
   <block id="e5d3c7248ff4540f88c13fbf9252d0a3" category="inline-link-macro">工作負載原廠主控台</block>
-  <block id="e93e8519fa9c34d76ec0735119a46866" category="paragraph">您現在可以從<block ref="fe6e1b2479e1125e03c713ad62b5343f" category="inline-link-macro-rx"></block>首頁瀏覽至節約計算機。從「 Elastic Block Store 」和「適用於 Windows 檔案伺服器的 FSX 」中選取以開始使用。</block>
   <block id="ab1e050e49bbc49befbca952f74f0443" category="inline-image-macro">工作負載原廠主控台首頁的螢幕擷取畫面。圖中顯示的資料庫方塊有一個新的「探索節約」按鈕。按一下按鈕以開啟下拉式功能表。下拉式功能表有兩個選項： EBS 上的 Microsoft SQL Server 和適用於 Windows 檔案伺服器的 FSX 上的 Microsoft SQL Server 。</block>
   <block id="923f11c15ceba3bc0e4d37309ab27ed2" category="paragraph"><block ref="923f11c15ceba3bc0e4d37309ab27ed2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8e73a65c2de8a6be7664465f03b5fb30" category="doc">使用 BlueXP  工作負載工廠中的 Codebox 自動化資料庫</block>
@@ -963,7 +958,6 @@
   <block id="1414de2121340ce91492c56f7800fcc7" category="section-title">Terraform 支援建立 PostgreSQL 伺服器</block>
   <block id="9156ac6cc60e32ed114af1a49af0ffed" category="paragraph">您現在可以使用 Codebox 中的 Terraform 來部署 PostgreSQL 。</block>
   <block id="7a5745faeabd31c33609adf25373d8a1" category="inline-link-macro">建立 PostgreSQL 資料庫伺服器</block>
-  <block id="61b5b69de9c821f5e486ec9c30a821a4" category="list-text"><block ref="61b5b69de9c821f5e486ec9c30a821a4" category="inline-link-macro-rx"></block></block>
   <block id="6a7893eb24462b3da7dd0a66586c5738" category="section-title">本機快照排程的恢復能力評估</block>
   <block id="677bceea5ebbea10cf85a91ebf42050e" category="paragraph">新的恢復能力評估可供資料庫工作負載使用。我們會評估您 Microsoft SQL Server 執行個體的 Volume 是否具有有效的排程快照原則。快照是資料的時間點複本，有助於在資料遺失時保持資料庫環境的彈性。</block>
   <block id="90814442b7f0694d712f43efffe9c178" category="section-title">資料庫工作負載的 MAXDOP 補救措施</block>
@@ -1005,4 +999,9 @@
   <block id="593a4cc0b797fa5f4354bae99e3fa42d" category="list-text">恢復能力：包括本機快照</block>
   <block id="4fbdcdf3c2d8694d5e358b3175b867da" category="section-title">2025 年 3 月 03 日</block>
   <block id="5b9ce98e8b3125f8d921be7829ab8a26" category="sidebar">建立 Microsoft SQL Server</block>
+  <block id="25b3aca23d0668827e396e11779fd3e8" category="paragraph"><block ref="25b3aca23d0668827e396e11779fd3e8" category="inline-link-macro-rx"></block></block>
+  <block id="0cff8121f4037cd80252c2bfd1bbc480" category="paragraph">您現在可以從<block ref="9086d555f1d70469f26e2dfccd9f366f" category="inline-link-macro-rx"></block>首頁瀏覽至節約計算機。從「 Elastic Block Store 」和「適用於 Windows 檔案伺服器的 FSX 」中選取以開始使用。</block>
+  <block id="05e1e00bdb39e9c766a6a0f69a222a3b" category="list-text"><block ref="05e1e00bdb39e9c766a6a0f69a222a3b" category="inline-link-macro-rx"></block></block>
+  <block id="7115d78353263dbb2dbe063624f9f601" category="list-text"><block ref="7115d78353263dbb2dbe063624f9f601" category="inline-link-macro-rx"></block></block>
+  <block id="4666cc74583e6d5c1f202a52bee57a9b" category="list-text"><block ref="4666cc74583e6d5c1f202a52bee57a9b" category="inline-link-macro-rx"></block></block>
 </blocks>

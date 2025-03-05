@@ -35,8 +35,8 @@ link:https://review.docs.netapp.com/us-en/workload-databases_explore-savings-upd
 
 您現在可以使用 Codebox 中的 Terraform 來部署 PostgreSQL 。
 
-* link:https://docs.netapp.com/us-en/workload-databases/create-postgresql-server.html["建立 PostgreSQL 資料庫伺服器"^]
-* link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["使用 CodeBox 的 Terraform"^]
+* link:https://docs.netapp.com/us-en/workload-databases/create-postgresql-server.html["建立 PostgreSQL 資料庫伺服器"]
+* link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["使用 CodeBox 的 Terraform"]
 
 
 
@@ -161,8 +161,8 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 您現在可以使用 Codebox 中的 Terraform 來部署 Microsoft SQL Server 。
 
-* link:https://docs.netapp.com/us-en/workload-databases/create-database-server.html["建立資料庫伺服器"^]
-* link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["使用 CodeBox 的 Terraform"^]
+* link:https://docs.netapp.com/us-en/workload-databases/create-database-server.html["建立資料庫伺服器"]
+* link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html["使用 CodeBox 的 Terraform"]
 
 
 
@@ -175,7 +175,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 您現在可以在 Amazon EC2 上探索偵測到的 Microsoft SQL 伺服器、並在節約計算機中使用適用於 Windows 檔案伺服器儲存設備的 FSX 。根據您的 SQL 伺服器和儲存需求、您可能會發現適用於 ONTAP 儲存設備的 FSX 最符合資料庫工作負載的成本效益。
 
-link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["利用適用於 ONTAP 的 FSX 為資料庫工作負載節省成本"^]
+link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["利用適用於 ONTAP 的 FSX 為資料庫工作負載節省成本"]
 
 
 
@@ -187,13 +187,13 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["利�
 
 您現在可以使用適用於 Windows 檔案伺服器的 FSX 、以及節省計算機中的 Elastic Block Store 儲存設備、在 Amazon EC2 上自訂 Microsoft SQL Server 的組態設定。根據您的儲存需求、您可能會發現 ONTAP 儲存設備的 FSX 最符合資料庫工作負載的成本效益。
 
-link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["利用適用於 ONTAP 的 FSX 為資料庫工作負載節省成本"^]
+link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["利用適用於 ONTAP 的 FSX 為資料庫工作負載節省成本"]
 
 
 
 === 從首頁瀏覽至節約計算機
 
-您現在可以從link:https://console.workloads.netapp.com["工作負載原廠主控台"^]首頁瀏覽至節約計算機。從「 Elastic Block Store 」和「適用於 Windows 檔案伺服器的 FSX 」中選取以開始使用。
+您現在可以從link:https://console.workloads.netapp.com["工作負載原廠主控台"]首頁瀏覽至節約計算機。從「 Elastic Block Store 」和「適用於 Windows 檔案伺服器的 FSX 」中選取以開始使用。
 
 image:screenshot-explore-savings-home-small.png["工作負載原廠主控台首頁的螢幕擷取畫面。圖中顯示的資料庫方塊有一個新的「探索節約」按鈕。按一下按鈕以開啟下拉式功能表。下拉式功能表有兩個選項： EBS 上的 Microsoft SQL Server 和適用於 Windows 檔案伺服器的 FSX 上的 Microsoft SQL Server 。"]
 
@@ -227,7 +227,7 @@ image:screenshot-explore-savings-home-small.png["工作負載原廠主控台首�
 
 
 
-link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["利用適用於 ONTAP 的 FSX 為資料庫工作負載節省成本"^]
+link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["利用適用於 ONTAP 的 FSX 為資料庫工作負載節省成本"]
 
 
 
@@ -239,4 +239,4 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["利�
 
 初始版本包含以下功能：利用 Amazon FSX for NetApp ONTAP 做為資料庫工作負載的儲存環境，探索節省成本，偵測，管理及部署 Microsoft SQL Server ，部署及複製資料庫，以及在工作負載工廠內監控這些工作。
 
-link:https://docs.netapp.com/us-en/workload-databases/learn-databases.html["瞭解資料庫"^]
+link:https://docs.netapp.com/us-en/workload-databases/learn-databases.html["瞭解資料庫"]
