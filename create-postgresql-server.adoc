@@ -48,107 +48,11 @@ summary: 在 BlueXP  工作負載工廠內為資料庫建立新的 PostgreSQL S
 
 == 建立資料庫伺服器
 
-您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中的下列工具： REST API ， AWS CLI ， AWS CloudForformation 和 Terraform 。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["瞭解如何使用 Codebox 進行自動化"^]。
+您可以使用 _ 進階建立 _ 部署模式，在工作負載工廠以 _ 自動化 _ 模式權限完成這項工作。您也可以使用 Codebox 中的下列工具： REST API ， AWS CLI ， AWS CloudForformation 和 Terraform 。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["瞭解如何使用 Codebox 進行自動化"^]。
 
 
 NOTE: 從 Codebox 使用 Terraform 時、您複製或下載的程式碼會隱藏 `fsxadmin` 和 `vsadmin` 密碼。執行程式碼時、您需要重新輸入密碼。除了 _ 自動 _ 模式權限之外、您還需要為使用者帳戶加入下列權限： `iam:TagRole`和 `iam:TagInstanceProfile`。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#use-terraform-from-codebox["瞭解如何從 CodeBox 使用 Terraform"^]。
 
-[role="tabbed-block"]
-====
-.快速建立
---
-
-NOTE: 在 _ 快速建立 _ 中、 HA 是預設的部署模式、 Windows 2016 是預設的 Windows 版本、 SQL 2019 Standard Edition 是預設的 SQL 版本。
-
-.步驟
-. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在資料庫方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * PostgreSQL 伺服器 * 。
-. 選取 * 快速建立 * 。
-. 在 * 登陸區 * 下，提供下列項目：
-+
-.. * AWS 認證 * ：選取具有自動化權限的 AWS 認證來部署新的資料庫主機。
-+
-AWS 認證加上 _ 自動化 _ 權限，可讓工作負載在出廠時從工作負載工廠內的 AWS 帳戶部署及管理新的資料庫主機。
-
-+
-具有 _ 讀取 _ 權限的 AWS 認證可讓工作負載工廠產生 CloudForgation 範本，供您在 AWS CloudForgation 主控台中使用。
-
-+
-如果您在工作負載工廠中沒有相關的 AWS 認證，而且想要在工作負載工廠中建立新的伺服器，請依照 * 選項 1* 前往認證頁面。為資料庫工作負載手動新增 _ 自動化 _ 模式所需的認證和權限。
-
-+
-如果您想要在工作負載工廠中完成建立新伺服器表單，以便下載完整的 YAML 檔案範本，以便在 AWS CloudForformation 中部署，請遵循 * 選項 2* ，以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。為資料庫工作負載手動新增 _Read_ 模式所需的認證和權限。
-
-+
-或者，您也可以從 Codebox 下載部分完成的 YAML 檔案範本，在工作負載工廠外部建立堆疊，而無需任何認證或權限。從 Codebox 的下拉式清單中選取 * CloudForiam* 以下載 YAML 檔案。
-
-.. * 地區與 VPC* ：選擇地區與 VPC 網路。
-+
-確保現有介面端點的安全性群組允許存取所選子網路的 HTTPS （ 443 ）傳輸協定。
-
-+
-AWS 服務介面端點（ SQS 、 FSX 、 EC2 、 CloudWatch 、 CloudFormation 、 SSM) 和 S3 閘道端點會在部署期間建立（如果找不到）。
-
-+
-VPC DNS 屬性 `EnableDnsSupport` 並 `EnableDnsHostnames` 經過修改、以在尚未設定為時啟用端點位址解析 `true`。
-
-.. * 可用性區域 * ：選擇可用性區域和子網路。
-+
-
-NOTE: HA 部署僅支援用於 ONTAP 組態的多重可用性區域（ MAZ ） FSX 。
-
-+
-子網路不應共用相同的路由表、以達到高可用度。
-
-+
-... 在 * 叢集組態 - 節點 1* 欄位中、從 * 可用性區域 * 下拉式功能表中選取 MAZ FSX for ONTAP 組態的主要可用性區域、並從 * 子網路 * 下拉式功能表中選取子網路。
-... 在 * 叢集組態 - 節點 2* 欄位中、從 * 可用性區域 * 下拉式功能表中選取 MAZ FSX for ONTAP 組態的次要可用區域、並從 * 子網路 * 下拉式功能表中選取子網路。
-
-
-
-
-. 在 * 應用程式設定 * 下、輸入 * 資料庫認證 * 的使用者名稱和密碼。
-. 在 * 連線 * 下，選取金鑰配對以安全地連線至執行個體。
-. 在 * 基礎架構設定 * 下、提供下列項目：
-+
-.. *FSX for ONTAP System* ：為 ONTAP 檔案系統建立新的 FSX 、或使用現有的 FSX for ONTAP 檔案系統。
-+
-... * 為 ONTAP * 建立新的 FSX ：輸入使用者名稱和密碼。
-+
-適用於 ONTAP 檔案系統的全新 FSX 可能會增加 30 分鐘以上的安裝時間。
-
-... * 為 ONTAP * 選擇現有的 FSX ：從下拉式功能表中選取適用於 ONTAP 名稱的 FSX 、然後輸入檔案系統的使用者名稱和密碼。
-+
-對於現有的 ONTAP 檔案系統 FSX 、請確保下列事項：
-
-+
-**** 連接到適用於 ONTAP 的 FSX 的路由群組可讓路由傳送至子網路以用於部署。
-**** 安全性群組允許來自用於部署的子網路流量、特別是 HTTPS （ 443 ）和 iSCSI （ 3260 ） TCP 連接埠。
-
-
-
-
-.. * 資料磁碟機大小 * ：輸入資料磁碟機容量、然後選取容量單位。
-
-
-. 摘要：
-+
-.. * 預覽預設 * ：檢閱快速建立所設定的預設組態。
-.. * 預估成本 * ：提供部署所示資源時可能會產生的費用預估。
-
-
-. 按一下「 * 建立 * 」。
-+
-或者、如果您想要立即變更這些預設設定、請使用「進階建立」建立資料庫伺服器。
-
-+
-您也可以選取 * 儲存組態 * 、稍後再部署主機。
-
-
-
---
-.進階建立
---
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在資料庫方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * PostgreSQL 伺服器 * 。
@@ -285,7 +189,5 @@ AWS 託管金鑰會根據服務適用性進行篩選。
 
 
 
---
-====
 .下一步
 您可以在部署的 PostgreSQL 伺服器上手動設定使用者，遠端存取和資料庫。
