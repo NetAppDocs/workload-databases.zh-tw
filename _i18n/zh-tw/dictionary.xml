@@ -948,10 +948,6 @@
   <block id="9aa0a44ed97cfd5357fb393a8de57dc7" category="list-text"><block ref="1f378775539050b7c7b5e1cdfe121e2f" prefix="" category="inline-code"></block></block>
   <block id="4bd2e14395b83906b0838bbcc78df388" category="list-text"><block ref="3e51061ec4171070ff2ffdabfbd63cc3" prefix="" category="inline-code"></block></block>
   <block id="9b6e1103f46b83b38494e5b294e2c410" category="list-text"><block ref="c1eaf26c3b755ad5252456a5d3f34a2f" prefix="" category="inline-code"></block></block>
-  <block id="e1e5f5c3c58578921409fc2e6d5eedd8" category="doc">PostgreSQL 高可用度組態和快速建立</block>
-  <block id="ed9e60a4e06d1c99d8eb3562ecbf8b63" category="paragraph">BlueXP  工作負載工廠支援資料庫的兩個新功能區：</block>
-  <block id="c657a4dd8aa01cb30f32e751a8482131" category="list-text">PostgreSQL 高可用度（ HA ）組態：您現在可以部署 PostgreSQL 伺服器的 HA 組態。</block>
-  <block id="d86f1a99d557ac15f85400fdfbdb8b14" category="list-text">快速建立：您可以使用此快速部署選項，建立具備 HA 組態和內嵌最佳實務做法的 PostgreSQL 伺服器。</block>
   <block id="f57c49a06b4a8a20d9a723cd677b9655" category="inline-link-macro">建立 PostgreSQL 伺服器</block>
   <block id="d3420539383bb38c88221d86000226d1" category="paragraph"><block ref="d3420539383bb38c88221d86000226d1" category="inline-link-macro-rx"></block></block>
   <block id="1414de2121340ce91492c56f7800fcc7" category="section-title">Terraform 支援建立 PostgreSQL 伺服器</block>
@@ -1003,4 +999,6 @@
   <block id="4666cc74583e6d5c1f202a52bee57a9b" category="list-text"><block ref="4666cc74583e6d5c1f202a52bee57a9b" category="inline-link-macro-rx"></block></block>
   <block id="b344730cd36668c36266c1d50c447eea" category="list-text">* 安全性群組 * ：選取現有的安全性群組或建立新的安全性群組。在新伺服器部署期間、三個安全群組會附加到 SQL 節點（ EC2 執行個體）。</block>
   <block id="372b286436aa00cac0e53fa1f2a9c659" category="paragraph">您可以使用 _ 進階建立 _ 部署模式，在工作負載工廠以 _ 自動化 _ 模式權限完成這項工作。您也可以使用 Codebox 中的下列工具： REST API ， AWS CLI ， AWS CloudForformation 和 Terraform 。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block>。</block>
+  <block id="292e876f4d1d5af73b815913bd3d9b26" category="doc">PostgreSQL 高可用度組態</block>
+  <block id="047e8f86b83bb2e8d4c34b1dc560257b" category="paragraph">您現在可以為 PostgreSQL 伺服器部署高可用度（ HA ）組態。</block>
 </blocks>
