@@ -212,7 +212,6 @@
   <block id="1fed0bc2c72e36c6e777e5a1e7def8f8" category="list-text">選取 * 是、透過工作負載工廠 * 或 * 否 * 管理執行個體。</block>
   <block id="e13a15252a4dbf9779c44afe477e3343" category="list-text">按一下「 * 完成 * 」。</block>
   <block id="bfe3baeb9acd99f2f2bce618befc4139" category="paragraph">開始之前、請先完成下列先決條件：</block>
-  <block id="ed8b2920ddc5b14cb6c0ba24c4b6c3af" category="inline-link-macro">授予 _ 自動化 _ 權限</block>
   <block id="def9511b261c88922ac5674a45135773" category="inline-link-macro">瞭解如何偵測主機</block>
   <block id="201c4d58b6fa62f021a1865e894234ef" category="list-text">* 每月變更率 * ：輸入每月平均複製資料和快照資料變更的百分比。</block>
   <block id="f31ed490fd3768dff2a1121a0a06095c" category="list-text">部署方法</block>
@@ -394,12 +393,6 @@
   <block id="ec23fcbca926c2c56578aa4b009e5426" category="inline-link-macro">適用於 Windows 的 Microsoft PowerShell 文件</block>
   <block id="0a2076265c3748f47dd0af532c7aface" category="list-text">需要 PowerShell7 來管理資料庫執行個體。請參閱、手動安裝 PowerShell7 <block ref="83fcecee5da20c347486b34eede460ed" category="inline-link-macro-rx"></block>。</block>
   <block id="14018e7d1ee628c58a60c375fd95df80" category="list-text">所有管理作業均由 AWS System Manager Agent 使用使用者權限執行<block ref="7254170b56a28e207df989a3f40b911f" prefix=" " category="inline-code"></block> 。為資料庫伺服器中的使用者提供下列權限<block ref="7254170b56a28e207df989a3f40b911f" prefix=" " category="inline-code"></block> ：</block>
-  <block id="c502f2bcb11d9b0ae9cc04006ed9085c" category="list-text"><block ref="f3df1667f9c6ceb0ff9503ed0049f55c" prefix="" category="inline-code"></block></block>
-  <block id="901633010bf118aaf6f388141cdd64f9" category="list-text"><block ref="e3181656ffc465b7de7742ba402b2527" prefix="" category="inline-code"></block></block>
-  <block id="0806315ac4bdc0f00042fe455dd8dfeb" category="list-text"><block ref="f787572bd533c2e129b8fe16237eb4bf" prefix="" category="inline-code"></block></block>
-  <block id="5051d68578089ab9d5878b78fa2dffe3" category="list-text"><block ref="651c416ccdee61d9b2abf2d88f4a4e97" prefix="" category="inline-code"></block></block>
-  <block id="afd582c0b2df85a795497b5f15267fc2" category="list-text"><block ref="ef6ac19c607206bb40d2ebb779ec2c8c" prefix="" category="inline-code"></block></block>
-  <block id="69ef3028600d545d3574c333e7ca55b2" category="list-text"><block ref="056ceeb0ee0b0e9d88285e8e483f5943" prefix="" category="inline-code"></block></block>
   <block id="aac2a7646728f5a7e043cf96134ccdb3" category="list-text">按一下要管理的主機列中的 * 管理 * 。</block>
   <block id="2fb4e3404c1ed4190dc6ef818393c670" category="list-text">選取一或多個要管理的主機執行個體。</block>
   <block id="5a71da60e1bd3ad61adeed4b3b25dfd4" category="list-text">按一下 * 管理 * 。</block>
@@ -602,7 +595,6 @@
   <block id="0df73578de7c34ef150c1f37953113f5" category="paragraph">您現在可以在 Amazon EC2 上探索偵測到的 Microsoft SQL 伺服器、並在節約計算機中使用適用於 Windows 檔案伺服器儲存設備的 FSX 。根據您的 SQL 伺服器和儲存需求、您可能會發現適用於 ONTAP 儲存設備的 FSX 最符合資料庫工作負載的成本效益。</block>
   <block id="b68e42fa600661a13849ea15c997cea3" category="paragraph">有兩種計算機選項可供您比較系統與適用於 ONTAP 的 FSX 之間的成本—自訂和偵測。</block>
   <block id="0e98c2470a9fecd3035980d6c9bd5dfe" category="section-title">探索偵測到的主機的節約效益</block>
-  <block id="6db04c74eaedc9c295cd941f8d691d5f" category="list-text">請務必<block ref="d9270f60c282b5496f17a4b48a6da305" category="inline-link-macro-rx"></block>在 AWS 帳戶中偵測資料庫庫存中的 Windows 系統彈性區塊存放區（ EBS ）和 FSX 。</block>
   <block id="70cd361d4d146e35701d6144f1c0ab2b" category="list-text">在資料庫庫存中偵測 EBS 和 FSX 中的主機、以供 Windows 儲存設備使用。<block ref="c3d02703f332265b4bfd19fd03e6dd21" category="inline-link-macro-rx"></block>。</block>
   <block id="8f334cc9204ebef849d5d29b3d23b485" category="list-text">在「資料庫」方塊中、從下拉式功能表中選取 * 「 Explore 節約 * 」、然後選取 * 「 Microsoft SQL Server on FSX for Windows* 」。</block>
   <block id="bd0005565e08b9807da651535d09e628" category="inline-xref">透過自訂功能探索節約效益</block>
@@ -916,7 +908,6 @@
   <block id="7c2632b8df180cfa1528450b19070928" category="paragraph"><block ref="7c2632b8df180cfa1528450b19070928" category="inline-link-macro-rx"></block></block>
   <block id="5e73d91731c9445e9a0cc34e1969976a" category="summary">比較使用 Amazon Elastic Block Store （ EBS ），適用於 Windows 檔案伺服器的 FSX ，以及使用適用於 ONTAP 儲存設備的 SQL Server 內部部署資料庫儲存設備的成本。</block>
   <block id="6bcb23607586342322d4d9d515a81317" category="paragraph">比較在 Amazon Elastic Block Store （ EBS ）上使用 Microsoft SQL Server ，在 Windows 檔案伺服器上使用 FSX ，以及在 ONTAP 儲存設備上使用 FSX 的成本，以瞭解資料庫工作負載的 BlueXP  工作負載工廠節省成本。</block>
-  <block id="a4b85dcfebf932701807e8b3c00ca94e" category="paragraph">探索偵測到主機的節約效益：工作負載工廠連結至您現有的 Microsoft SQL 伺服器，並將詳細資料擷取至計算機以進行自動比較。您必須授予自動化權限、才能使用此計算機選項。您可以變更使用案例、但計算中會自動決定所有其他詳細資料。</block>
   <block id="7cf65e2ff3a983e2d864a8b1c64765f1" category="open-title">Microsoft SQL Server 內部部署</block>
   <block id="a2985bc0847d7596067c038e830be18b" category="list-text">在「資料庫」方塊中，從下拉式功能表中選取 * 「探索節約 * 」，然後選取 * 「 Microsoft SQL Server 內部部署 * 」。</block>
   <block id="979b029ad875506edc5721a6a441e313" category="list-text">從 SQL Server 內部部署索引標籤下載指令碼，以評估內部部署 SQL Server 環境。</block>
@@ -1030,4 +1021,21 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP部落格</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
+  <block id="bcfa2187892cfb20acb57dea1d6a38b4" category="paragraph">探索偵測到主機的節約效益：工作負載工廠連結至您現有的 Microsoft SQL 伺服器，並將詳細資料擷取至計算機以進行自動比較。您需要授予 _read-only_ 或 _read/writ_ 權限，才能使用此計算機選項。您可以變更使用案例、但計算中會自動決定所有其他詳細資料。</block>
+  <block id="f2f8123dee39336570b9e59a3326fd18" category="inline-link-macro">授與 _read-only 或 _read/writ_ 權限</block>
+  <block id="f557e9f26b531156ccdbc9c32935d13a" category="list-text"><block ref="6a1dbb436eb1da80c34b82a70d7d9175" category="inline-link-macro-rx"></block>在 AWS 帳戶中，在「 * 探索節約 * 」標籤下偵測 Windows 系統的彈性區塊儲存（ EBS ）和 FSX ，並在儲蓄計算機中顯示節約計算。</block>
+  <block id="3c424272d86dd628323516001aa99e6e" category="cell">登入安全性</block>
+  <block id="7b749fcc97c5c2a0bb8e16cb377f5a71" category="cell">在需要的地方？</block>
+  <block id="c9bc7594ee62d0c351dae6b83370562b" category="cell"><block ref="ef51f73dd4b173855a32e89075ae6d6a" prefix="" category="inline-code"></block></block>
+  <block id="55b9e1ad0e3385fe9e930e60422bf964" category="paragraph">庫存，評估，補救，建立資料庫，建立沙箱複製，探索節約效益</block>
+  <block id="52dbdba9f8efc424e3647d5fa9481b33" category="cell"><block ref="997eaa81353e01df1a3834bc67b02895" prefix="" category="inline-code"></block></block>
+  <block id="9c63fb58881db7f963fbc50219125431" category="paragraph">庫存，評估，補救，建立資料庫，建立沙箱複製</block>
+  <block id="c2d30b0b254c8547b9acbbdd90603d7a" category="cell"><block ref="60c6c6d38d8a5aa079b31fa10cc7c20a" prefix="" category="inline-code"></block></block>
+  <block id="8a2d6633dcb68e6ff0d85222e7082082" category="cell"><block ref="29eaac47a48cb18afd7ccf57582f12e4" prefix="" category="inline-code"></block></block>
+  <block id="fa51fd57abb0283d815c171a4b309940" category="paragraph">建立資料庫，建立沙箱複製</block>
+  <block id="c95188979745727b537f665c08755be5" category="cell"><block ref="af0cad6b0855295d542d0a31e5d61e2b" prefix="" category="inline-code"></block></block>
+  <block id="fa778d6d07c47f1228af4ce6bcb13480" category="paragraph">建立沙箱複製</block>
+  <block id="3f21b90f61021d5dd0aefe08d40a11a9" category="cell"><block ref="83a834b3af30dbb7c2007ab7f9bc913b" prefix="" category="inline-code"></block></block>
+  <block id="eb0cdf74b605d67e1444197ac2f77c91" category="cell"><block ref="8fdca9c0332e9935139d7384c2a814df" prefix="" category="inline-code"></block></block>
+  <block id="538b18c6800ad42458e0bf0bc8a311b6" category="paragraph">建立沙箱複製，針對 MAXDOP 進行補救</block>
 </blocks>

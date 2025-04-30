@@ -58,14 +58,45 @@ Microsoft SQL Server 執行個體管理包括下列工作：
 * 需要 PowerShell7 來管理資料庫執行個體。請參閱、手動安裝 PowerShell7 link:https://learn.microsoft.com/en-us/powershell/scripting/developer/module/installing-a-powershell-module?view=powershell-7.4["適用於 Windows 的 Microsoft PowerShell 文件"^]。
 * 所有管理作業均由 AWS System Manager Agent 使用使用者權限執行 `NT Authority\SYSTEM` 。為資料庫伺服器中的使用者提供下列權限 `NT Authority\SYSTEM` ：
 +
-** `“ALTER SETTINGS”`
-** `“CONTROL SERVER”`
-** `“ALTER ANY DATABASE”`
-** `“VIEW ANY DEFINITION”`
-** `“CONNECT ANY DATABASE”`
-** `“CREATE ANY DATABASE”`
+[cols="2,2a"]
+|===
+| 登入安全性 | 在需要的地方？ 
 
 
+| `VIEW ANY DEFINITION`  a| 
+庫存，評估，補救，建立資料庫，建立沙箱複製，探索節約效益
+
+
+
+| `CONNECT ANY DATABASE`  a| 
+庫存，評估，補救，建立資料庫，建立沙箱複製
+
+
+
+| `VIEW SERVER STATE`  a| 
+庫存，評估，補救，建立資料庫，建立沙箱複製
+
+
+
+| `CREATE ANY DATABASE`  a| 
+建立資料庫，建立沙箱複製
+
+
+
+| `CONTROL SERVER`  a| 
+建立沙箱複製
+
+
+
+| `ALTER ANY DATABASE`  a| 
+建立沙箱複製
+
+
+
+| `ALTER SETTINGS`  a| 
+建立沙箱複製，針對 MAXDOP 進行補救
+
+|===
 
 
 .步驟
