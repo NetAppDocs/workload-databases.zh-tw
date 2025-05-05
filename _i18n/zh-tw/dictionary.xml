@@ -633,7 +633,6 @@
   <block id="5f4f392649432d3064fdf2a04015472b" category="list-text">選取下拉式箭頭以檢視任何組態的建議。請務必仔細檢閱建議內容。</block>
   <block id="c9e425055996f71ecfc858708d926276" category="paragraph">本建議說明未最佳化組態的最佳實務做法和潛在陷阱。</block>
   <block id="ea3bf0643d3540c97b9b92a3fb2bbf75" category="list-text">選擇 * 最佳化 * 未最佳化組態。</block>
-  <block id="fa01f4b57079f7ca82b8d852cbf4ed43" category="list-text">檢閱最佳化對話方塊中顯示的最佳化摘要和行動項目、瞭解如果您選擇最佳化、將會發生什麼情況。某些最佳化作業可能會導致執行個體停機或服務中斷。</block>
   <block id="78a5af6b8a486797f81f9b0dff06821e" category="list-text">選擇 * 繼續 * 以最佳化組態。</block>
   <block id="c6ff3995f3c633f2808f96020f887fd9" category="paragraph">最佳化程序即會啟動。選取 * 工作監控 * 標籤以檢視作業狀態。</block>
   <block id="0c47496112bcf6ed0b29fe1fe1d65d62" category="summary">BlueXP  資料庫工作負載工廠可持續最佳化 Amazon FSX 上的 Microsoft SQL Server 部署、以利 NetApp ONTAP 儲存設備。</block>
@@ -875,8 +874,6 @@
   <block id="10f9689e79d67ec4a1651805229939e6" category="list-text">按一下工作的三點功能表，然後按一下 * 前往 CloudForgi狀態 * ，即可在 AWS CloudForgation 主控台中檢視工作記錄。</block>
   <block id="820e39a5de0a231b1bdee7ce11de7c77" category="summary">資料庫的 BlueXP  工作負載工廠會掃描 Microsoft SQL Server 組態，提供深入分析和建議，協助您達到卓越營運績效。</block>
   <block id="d156d1de362b4c66bc3effc1835aafe1" category="paragraph">資料庫的 BlueXP  工作負載工廠會持續掃描並評估執行於 Amazon FSX for NetApp ONTAP 上的 Microsoft SQL Server 部署組態。此功能提供深入分析和建議，可選擇自動最佳化未最佳化的組態，讓您的資料庫工作負載達到卓越的營運表現。</block>
-  <block id="53c8dd8acbb0f2913fab098279485e71" category="list-text">在 * Inventory （資源清冊） * 選項卡中，選擇下拉箭頭以展開主機行以查看其受管實例。</block>
-  <block id="14237fbd8e1fcf850f132ae839f0337b" category="list-text">選取執行個體的三點功能表，然後選取 * 最佳化 * 。</block>
   <block id="162d1fe2bfd40fdaf4d1507dff7ac010" category="list-text">在 SQL Server 執行個體的最佳化執行個體頁面上，檢閱評估結果。</block>
   <block id="1d40c1f145e4257a51df779ce509811e" category="paragraph">您可以依類別，子類別，狀態，嚴重性和標記進行篩選。</block>
   <block id="2c43db36710e9c59ec3e8117665a6dd6" category="paragraph">您也可以選擇 * 匯出 PDF* 來下載評估結果報告。</block>
@@ -1038,4 +1035,51 @@
   <block id="3f21b90f61021d5dd0aefe08d40a11a9" category="cell"><block ref="83a834b3af30dbb7c2007ab7f9bc913b" prefix="" category="inline-code"></block></block>
   <block id="eb0cdf74b605d67e1444197ac2f77c91" category="cell"><block ref="8fdca9c0332e9935139d7384c2a814df" prefix="" category="inline-code"></block></block>
   <block id="538b18c6800ad42458e0bf0bc8a311b6" category="paragraph">建立沙箱複製，針對 MAXDOP 進行補救</block>
+  <block id="25696569671071b8bd3db9a4c5f6613e" category="doc">儀表板增強功能</block>
+  <block id="04f9acced28b52e064ba8ccb957a615c" category="list-text">當您在 BlueXP  工作負載工廠主控台的索引標籤之間瀏覽時，可以使用跨帳戶和跨區域檢視。新的檢視可改善資源管理，監控及最佳化。</block>
+  <block id="6e21267988cadc818dd398393c695465" category="list-text">從儀表板的 * 潛在節約 * 方塊中，您可以從 Amazon Elastic Block Store 或 Amazon FSX for Windows 檔案伺服器切換至適用於 ONTAP 的 FSX ，快速檢閱可能節省的成本。</block>
+  <block id="255a96bb0a74416846fbad7e40f8ddf4" category="section-title">可用於資料庫組態的臨機操作掃描</block>
+  <block id="2b1a16b6cd72c9555872ec61d3334af5" category="paragraph">資料庫的 BlueXP  工作負載原廠會自動掃描採用 FSX 的託管 Microsoft SQL Server 執行個體 ONTAP ，以找出可能的組態問題。除了每日掃描之外，您還可以隨時進行掃描。</block>
+  <block id="365d8fe4130e8c12f4a3defc920178dd" category="section-title">刪除內部部署評估記錄</block>
+  <block id="c4fd25bd6650f0eaedfd01e29fbecddd" category="paragraph">探索 Microsoft SQL Server 內部部署主機的節約效益之後，您可以選擇從 BlueXP  工作負載工廠移除內部部署主機記錄。</block>
+  <block id="ae548505379d0043460d8c15540cb546" category="section-title">實體複本清理</block>
+  <block id="0d003b1e16a8cf8a4b6c0774ee3a0f41" category="paragraph">複本清理評估與補救可識別及管理昂貴的舊複本。60 天以上的複本可從 BlueXP  工作負載原廠主控台重新整理或刪除。</block>
+  <block id="6da89f0beda0fbec41b06125b0b7ad32" category="section-title">延遲和關閉組態分析</block>
+  <block id="4a9a50cea48d9e2ded3becc284af4e41" category="paragraph">某些組態可能不適用於您的資料庫環境。您現在可以選擇將特定組態分析延遲 30 天，或是關閉分析。</block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新的權限術語</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">工作負載原廠使用者介面與文件現在使用「唯讀」來指稱讀取權限，而「讀取寫入」則指自動化權限。</block>
+  <block id="2d07fc9146d02690dffeffa52fbd2ec4" category="list-text">內部部署主機移除</block>
+  <block id="1c28fa92b25f4914c091b667402466d3" category="list-text">探索 Microsoft SQL Server 內部部署主機的節約效益之後，您可以選擇從 BlueXP  工作負載工廠移除內部部署主機記錄。選取 Microsoft SQL Server 內部部署主機的三點功能表，然後選取 * 刪除 * 。</block>
+  <block id="d824014300a5fc7a6853a9182b4be5ef" category="list-text">複本：包含重新整理及刪除 60 天以上的複本（沙箱）選項</block>
+  <block id="04467e563313dfe5a1da17bd70a4de75" category="list-text">在 *Inventory （清單） * 選項卡中，選擇 *Instancs* 選項卡。</block>
+  <block id="8e3db49aef4ba359c0140eea33f2459c" category="list-text">選取執行個體的三點功能表進行最佳化，然後選取 * 最佳化 * 。</block>
+  <block id="77b2be525ee3461ec499242fca3978f8" category="list-text">對於所有組態，除了清除複本之外，請檢閱最佳化對話方塊中的最佳化詳細資料，瞭解如果您選擇最佳化，將會發生什麼情況。某些最佳化作業可能會導致執行個體停機或服務中斷。</block>
+  <block id="c5d0b906e655aeb0e712fdc99742d179" category="list-text">若要清除複本，請選取要重新整理或刪除的複製資料庫（沙箱）。</block>
+  <block id="64b911fb444d2ba4347dbcba8d839d9c" category="list-text">重新整理複本會將其與來源資料庫同步。只有在工作負載工廠中建立的複本才能使用重新整理功能。</block>
+  <block id="b11d77d1a514a3b0bdf01908bc4826e9" category="list-text">刪除複本會永久移除複本，釋出儲存空間並降低成本。您可以刪除在工作負載工廠內外建立的複本。</block>
+  <block id="cf00508631c0415d4089fb10cbe0511d" category="summary">延遲或關閉不適用於資料庫環境的特定資料庫組態分析，以避免不必要的警示和不正確的最佳化結果。</block>
+  <block id="0cdf26a09e8e4cde6653e44f4abd73fb" category="doc">延遲或關閉資料庫組態分析</block>
+  <block id="77df5d7dfd76cd0e6a1a7a837c509672" category="paragraph">延遲或關閉不適用於資料庫環境的特定資料庫組態分析，以避免不必要的警示和不正確的最佳化結果。您可以隨時重新啟動延遲或關閉的組態分析。</block>
+  <block id="54498ab3155b38b14174ab9dd5caef5a" category="paragraph">資料庫組態的應用程式需求會有所不同。工作負載工廠提供兩個選項，可略過分析特定資料庫組態，以便您只監控相關問題，並準確檢視相關組態的健全狀況。當特定組態分析被延遲或關閉時，組態不會納入整體最佳化分數中。</block>
+  <block id="47112685bf756c67c8ac297ef60e48dc" category="paragraph">您可以在組態層級和 SQL Server 執行個體層級延遲，關閉及重新啟動組態分析。</block>
+  <block id="8a219fba8bbd202ad1f7a47267ff5a2d" category="list-text">* 延遲 30 天 * ：延遲分析將停止分析 30 天。30 天後，分析將自動重新啟動。</block>
+  <block id="71e07950d625dfcf829cac7019fb6f26" category="list-text">* 關閉 * ：取消分析會無限期地延後分析。您可以視需要重新啟動分析。</block>
+  <block id="cd5a81e0d9eeff49759cb9a6eaa2e1e2" category="paragraph">您可以延遲或關閉 Microsoft SQL Server 執行個體的下列組態：</block>
+  <block id="999cc42b236c7aee1157ff02d6f1bcd5" category="list-text">複製</block>
+  <block id="75d9a01908e416c932fa5ee3fa0c77a3" category="paragraph">下列指示說明如何在組態層級延遲，關閉或重新啟動分析。若要針對特定 SQL Server 執行個體完成下列工作，請從 * 儀表板 * 索引標籤開始。</block>
+  <block id="43d86b2167e8a3464a552ee706d46d88" category="paragraph-title">延後</block>
+  <block id="38d07dc1916e6ca30a9f936368828d18" category="paragraph">延後 30 天內停止組態分析。30 天後，分析將自動重新啟動。</block>
+  <block id="b8bad4787f04ab4d4933464f551ed74c" category="list-text">在 *Inventory （清單） * 選項卡中，向下滾動至要延遲的配置，選擇三點菜單，然後選擇 *postpone for 30 days * （延遲 30 天）。</block>
+  <block id="136dc09835924029e4299fa28f17233d" category="list-text">選擇*繼續*。</block>
+  <block id="8dca288df860b62f4b631d87b4320f91" category="paragraph">組態分析會停止 30 天。</block>
+  <block id="c8a59e7135a20b362f9c768b09454fdb" category="paragraph-title">關閉</block>
+  <block id="26765b6cc82b68114c879d49f83b0e5a" category="paragraph">關閉以無限期停止組態分析。您可以視需要重新啟動分析。</block>
+  <block id="fd9eed8a1f28cfe92f0d2d738455682b" category="list-text">在 *Inventory （資源清冊） * 選項卡中，向下滾動至要關閉的配置，選擇三點菜單，然後選擇 *Dismi* （關閉）。</block>
+  <block id="bfc2ef5a56455cfacfde13cf1612e36b" category="paragraph">組態分析會停止。</block>
+  <block id="8e88e8d3ce1694ab82d525e91ae7c572" category="paragraph-title">重新啟動</block>
+  <block id="54a679b97854ca1a358ef23dc83cfce6" category="paragraph">隨時重新啟動延遲或關閉的組態分析。</block>
+  <block id="58e2f7c25b65ba2e36fc6778b985ab34" category="list-text">在 * 詳細目錄 * 標籤中，向下捲動至要重新啟動的組態，選取三點選單，然後選取 * 重新啟動 * 。</block>
+  <block id="f01282bfdabc9c97224d922f36d898b8" category="paragraph">組態分析會重新啟動，並每天持續進行。</block>
+  <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025 年 04 月 5 日</block>
+  <block id="f865802ec5f0fe104a096589d51b39a4" category="sidebar">延後組態分析</block>
 </blocks>

@@ -266,6 +266,9 @@ image:screenshot-upload-script-on-premises.png["SQL Server 內部部署索引標
 
 若要切換至適用於 ONTAP 的 FSX 、請遵循的指示 <<使用適用於 ONTAP 的 FSX 在 AWS EC2 上部署 Microsoft SQL Server,使用適用於 ONTAP 檔案系統的 FSX 在 AQS EC2 上部署 Microsoft SQL Server>>進行。
 
+內部部署主機移除:: 探索 Microsoft SQL Server 內部部署主機的節約效益之後，您可以選擇從 BlueXP  工作負載工廠移除內部部署主機記錄。選取 Microsoft SQL Server 內部部署主機的三點功能表，然後選取 * 刪除 * 。
+
+
 
 
 == 使用適用於 ONTAP 的 FSX 在 AWS EC2 上部署 Microsoft SQL Server
