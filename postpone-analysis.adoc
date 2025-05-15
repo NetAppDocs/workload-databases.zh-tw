@@ -38,9 +38,9 @@ summary: 延遲或關閉不適用於資料庫環境的特定資料庫組態分�
 [role="tabbed-block"]
 ====
 .延後
+--
 延後 30 天內停止組態分析。30 天後，分析將自動重新啟動。
 
---
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
@@ -53,9 +53,9 @@ summary: 延遲或關閉不適用於資料庫環境的特定資料庫組態分�
 
 --
 .關閉
+--
 關閉以無限期停止組態分析。您可以視需要重新啟動分析。
 
---
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
@@ -68,9 +68,9 @@ summary: 延遲或關閉不適用於資料庫環境的特定資料庫組態分�
 
 --
 .重新啟動
+--
 隨時重新啟動延遲或關閉的組態分析。
 
---
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
