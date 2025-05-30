@@ -212,7 +212,6 @@
   <block id="1fed0bc2c72e36c6e777e5a1e7def8f8" category="list-text">選取 * 是、透過工作負載工廠 * 或 * 否 * 管理執行個體。</block>
   <block id="e13a15252a4dbf9779c44afe477e3343" category="list-text">按一下「 * 完成 * 」。</block>
   <block id="bfe3baeb9acd99f2f2bce618befc4139" category="paragraph">開始之前、請先完成下列先決條件：</block>
-  <block id="def9511b261c88922ac5674a45135773" category="inline-link-macro">瞭解如何偵測主機</block>
   <block id="201c4d58b6fa62f021a1865e894234ef" category="list-text">* 每月變更率 * ：輸入每月平均複製資料和快照資料變更的百分比。</block>
   <block id="f31ed490fd3768dff2a1121a0a06095c" category="list-text">部署方法</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
@@ -595,7 +594,6 @@
   <block id="0df73578de7c34ef150c1f37953113f5" category="paragraph">您現在可以在 Amazon EC2 上探索偵測到的 Microsoft SQL 伺服器、並在節約計算機中使用適用於 Windows 檔案伺服器儲存設備的 FSX 。根據您的 SQL 伺服器和儲存需求、您可能會發現適用於 ONTAP 儲存設備的 FSX 最符合資料庫工作負載的成本效益。</block>
   <block id="b68e42fa600661a13849ea15c997cea3" category="paragraph">有兩種計算機選項可供您比較系統與適用於 ONTAP 的 FSX 之間的成本—自訂和偵測。</block>
   <block id="0e98c2470a9fecd3035980d6c9bd5dfe" category="section-title">探索偵測到的主機的節約效益</block>
-  <block id="70cd361d4d146e35701d6144f1c0ab2b" category="list-text">在資料庫庫存中偵測 EBS 和 FSX 中的主機、以供 Windows 儲存設備使用。<block ref="c3d02703f332265b4bfd19fd03e6dd21" category="inline-link-macro-rx"></block>。</block>
   <block id="8f334cc9204ebef849d5d29b3d23b485" category="list-text">在「資料庫」方塊中、從下拉式功能表中選取 * 「 Explore 節約 * 」、然後選取 * 「 Microsoft SQL Server on FSX for Windows* 」。</block>
   <block id="bd0005565e08b9807da651535d09e628" category="inline-xref">透過自訂功能探索節約效益</block>
   <block id="b2b254b73e406acc574452e9f29f5d9a" category="list-text">在「探索節約效益」標籤中、按一下「 * 探索使用 EBS 儲存設備的資料庫伺服器節約效益 * 」。</block>
@@ -1079,6 +1077,11 @@
   <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CL1* ：工作負載工廠包含 CloudShell CLI ，可透過單一瀏覽器型 CLI ，跨帳戶管理及操作 AWS 和 NetApp 環境。從工作負載原廠主控台的頂端列存取 CloudShell 。</block>
   <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API* ：使用工作負載原廠 REST API 來部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
   <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudForgius* ：使用 AWS CloudForgation 程式碼來執行您在工作負載工廠主控台中定義的動作，以便在 AWS 帳戶中建構，配置及管理 CloudForgation 堆疊中的 AWS 和第三方資源。</block>
-  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理工作負載工廠主控台所產生的基礎架構工作流程。</block>
   <block id="5614519834733a69bfb8911eae5d33b8" category="paragraph">在「庫存」索引標籤和「儀表板」上，工作負載工廠最多可在 SQL Server 執行個體內支援 1,500 個資料庫。</block>
+  <block id="905bc3578e603008d83976307778ddcc" category="list-text">若要取得實例類型建議並提高成本準確性，請執行下列操作：</block>
+  <block id="10d9194778791c152af2c0be1806e0b1" category="list-text">授予 Amazon CloudWatch 和 AWS Compute Optimizer 權限。</block>
+  <block id="1dffe1578c264cd074d1fbf2823deeca" category="list-text">登入AWS管理控制台並開啟IAM服務。</block>
+  <block id="429fc992484e56fc5119b7b343df8bab" category="list-text">編輯 IAM 角色的策略。複製並新增以下 Amazon CloudWatch 和 AWS Compute Optimizer 權限。</block>
+  <block id="948ce9adc60f5781dbfbd99d2c9d74d5" category="list-text">選擇將可計費 AWS 帳戶加入 AWS Compute Optimizer。</block>
+  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理在工作負載工廠主控台產生的基礎架構工作流程。</block>
 </blocks>

@@ -169,7 +169,56 @@ image:screenshot-ebs-savings-calculator-update.png["節約計算機頁面的螢�
 開始之前、請先完成下列先決條件：
 
 * link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["授與 _read-only 或 _read/writ_ 權限"^]在 AWS 帳戶中，在「 * 探索節約 * 」標籤下偵測 Windows 系統的彈性區塊儲存（ EBS ）和 FSX ，並在儲蓄計算機中顯示節約計算。
-* 在資料庫庫存中偵測 EBS 和 FSX 中的主機、以供 Windows 儲存設備使用。link:detect-host.html["瞭解如何偵測主機"]。
+* 若要取得實例類型建議並提高成本準確性，請執行下列操作：
++
+.. 授予 Amazon CloudWatch 和 AWS Compute Optimizer 權限。
++
+... 登入AWS管理控制台並開啟IAM服務。
+... 編輯 IAM 角色的策略。複製並新增以下 Amazon CloudWatch 和 AWS Compute Optimizer 權限。
++
+[source, json]
+----
+{
+"Version": "2012-10-17",
+"Statement": [
+  {
+   "Effect": "Allow",
+   "Action": "compute-optimizer:GetEnrollmentStatus",
+   "Resource": "*"
+  },
+  {
+   "Effect": "Allow",
+   "Action": "compute-optimizer:PutRecommendationPreferences",
+   "Resource": "*"
+  },
+  {
+   "Effect": "Allow",
+   "Action": "compute-optimizer:GetEffectiveRecommendationPreferences",
+   "Resource": "*"
+  },
+  {
+   "Effect": "Allow",
+   "Action": "compute-optimizer:GetEC2InstanceRecommendations",
+   "Resource": "*"
+  },
+  {
+   "Effect": "Allow",
+   "Action": "autoscaling:DescribeAutoScalingGroups",
+   "Resource": "*"
+  },
+  {
+   "Effect": "Allow",
+   "Action": "autoscaling:DescribeAutoScalingInstances",
+   "Resource": "*"
+  }
+]
+}
+----
+
+
+.. 選擇將可計費 AWS 帳戶加入 AWS Compute Optimizer。
+
+
 
 
 請依照儲存類型標籤下的步驟進行。
