@@ -1,0 +1,8 @@
+---
+permalink: detect-host.html 
+redirect: workload-databases/register-instance.html 
+---
+= 
+:allow-uri-read: 
+
+

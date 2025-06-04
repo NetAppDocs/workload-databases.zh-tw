@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar 
 permalink: quick-start-databases.html 
-keywords: requirements, basic mode, read mode, automate mode 
-summary: 資料庫有三種不同的模式、要求不同。 
+keywords: requirements, basic mode, read-only mode, read/write mode 
+summary: 開始使用資料庫工作負載工廠來使用基礎設施即程式碼片段、發現主機、管理資源等。 
 ---
-= 資料庫的 BlueXP  工作負載工廠快速入門
+= 資料庫工作負載工廠快速啟動
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-有了 BlueXP  資料庫工作負載工廠，您就能立即以 _basive_ 模式開始使用。如果您想要使用工作負載工廠來探索主機，管理資源等，只需幾個步驟即可開始使用。
+使用資料庫工作負載工廠，您可以立即以_基本_模式開始。如果您想要使用工作負載工廠來探索主機，管理資源等，只需幾個步驟即可開始使用。
 
 您必須擁有 AWS 帳戶才能使用資料庫。
 
@@ -23,19 +23,19 @@ summary: 資料庫有三種不同的模式、要求不同。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 新增認證和權限
 [role="quick-margin-para"]
-選擇。 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["_ 基本 _ 、 _ 讀取 _ 和 _ 自動化 _ 作業模式"^]
+選擇。 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["_基本_、_唯讀_和_讀/寫_操作模式"^]
 
 [role="quick-margin-para"]
 如果您在 _basive_ 模式下操作、就不需要再繼續操作。您可以開始使用資料庫來複製部分完成的程式碼範例。在資料庫方塊中、按一下 * 部署資料庫主機 * 。link:create-database-server.html["瞭解如何部署資料庫伺服器"]。
 
 [role="quick-margin-para"]
-如果您以 _Read_ 或 _AIL_ 模式操作，則需要link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["手動新增認證至帳戶"^]選擇工作負載功能，例如資料庫和 GenAI ，並建立 IAM 原則，以確保您擁有正確的權限，可以在 _Read_ 或 _AIL_ 模式下操作。
+如果您在「唯讀」或「讀取/寫入」模式下操作，則需要link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["手動新增認證至帳戶"^]其中包括選擇工作負載功能（例如資料庫和 GenAI）以及建立 IAM 策略以確保您擁有以_唯讀_或_讀/寫_模式操作的正確權限。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 部署資料庫伺服器
 [role="quick-margin-para"]
-最後、如果您選擇以 _ 自動化 _ 模式運作、則必須或管理主機資源、 link:create-database-server.html["部署"] link:detect-host.html["偵測資料庫伺服器"] 然後再新增使用者資料庫。
+最後，如果您選擇以讀取/寫入模式操作，則必須link:create-database-server.html["部署主機伺服器"]或者link:register-instance.html["註冊實例"]管理您的主機資源並新增使用者資料庫之前。
 
 .下一步
-當您的資料庫庫存中有適用於 ONTAP 託管主機的 FSX 時、您可以 link:create-database.html["建立使用者資料庫"] 或 link:create-sandbox-clone.html["複製主機以建立沙箱"]。
+當您在資料庫清單中向 FSx for ONTAP 檔案系統儲存註冊主機執行個體後，您可以link:create-database.html["建立使用者資料庫"]或者link:create-sandbox-clone.html["複製主機以建立沙箱"] 。
 
 當您的資料庫庫存中有適用於 Windows 檔案伺服器主機的 Elastic Block Store 或 FSX 時link:explore-savings.html["使用節約計算機探索節約效益"]，您可以。

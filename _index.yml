@@ -15,14 +15,12 @@ indexpage:
     links:
     - title: 探索節約效益
       url: "/explore-savings.html"
+    - title: 註冊實例
+      url: "/register-instance.html"
     - title: 建立 Microsoft SQL Server
       url: "/create-database-server.html"
     - title: 建立 PostgreSQL 伺服器
       url: "/create-postgresql-server.html"
-    - title: 建立資料庫
-      url: "/create-database.html"
-    - title: 最佳化組態
-      url: "/optimize-configurations.html"
   - title: 知識與支援
     links:
     - title: 註冊以取得支援

@@ -1,0 +1,25 @@
+---
+sidebar: sidebar 
+permalink: manage-instance.html 
+keywords: host instance, instance management, FSx for ONTAP, instance, manage host, view host, database host, database instance, manage 
+summary: 了解資料庫工作負載工廠中的執行個體管理。 
+---
+= 資料庫工作負載工廠中的執行個體管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在工作負載工廠中管理已註冊的主機執行個體包括為執行個體部署資源（例如建立資料庫和資料庫複製），以及監控執行個體和資料庫狀態、資源使用率、保護和儲存效能。此外，您還可以分析資料庫配置的架構狀態，並實施配置最佳實踐，以提高效能並降低營運成本。實例管理僅適用於使用 FSx for ONTAP 檔案系統儲存的實例
+
+你必須link:register-instance.html["註冊主機實例"]執行以下任何一項管理任務。
+
+管理任務包括：
+
+* link:create-database.html["建立資料庫"]
+* link:create-sandbox-clone.html["建立資料庫克隆（沙盒）"]
+* link:view-databases.html["查看資料庫"]
+* link:monitor-databases.html["監控資料庫操作"]
+* link:optimize-configurations.html["實施架構良好的資料庫配置"]
+

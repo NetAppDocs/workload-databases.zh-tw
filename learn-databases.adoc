@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: learn-databases.html 
 keywords: Databases 
-summary: 資料庫的 BlueXP  工作負載工廠是一項端對端資料庫部署與維護服務，內建最佳實務做法，可用於最佳化，自動精簡複製，以及監控與解決功能。 
+summary: 資料庫工作負載工廠是一種端到端資料庫部署和維護服務，具有內建的最佳化、自動精簡克隆以及監控和解決功能的最佳實踐。 
 ---
-= 瞭解資料庫的 BlueXP  工作負載工廠
+= 瞭解資料庫的工作負載工廠
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-資料庫的 BlueXP  工作負載工廠是一項端對端資料庫部署與維護服務，內建最佳實務做法，可用於最佳化，自動精簡複製，以及監控與解決功能。
+資料庫工作負載工廠是一種端到端資料庫部署和維護服務，具有內建的最佳化、自動精簡克隆以及監控和解決功能的最佳實踐。
 
 
 
-== 資料庫的 BlueXP  工作負載工廠為何？
+== 資料庫的工作負載工廠是什麼？
 
-資料庫的 BlueXP  工作負載工廠可偵測，評估，規劃，配置 Microsoft SQL Server 資料，並將其移至 Amazon FSX for NetApp ONTAP （適用於 ONTAP 的 FSX ）部署，以符合您的效能與成本期望，同時遵循業界最佳實務做法。在整個生命週期中，工作負載工廠為 ONTAP 的 FSX 上的資料庫提供持續的最佳化與管理。
+資料庫工作負載工廠可偵測、評估、規劃、配置並將 Microsoft SQL Server 資料移至 Amazon FSx for NetApp ONTAP（FSx for ONTAP）部署，並針對滿足您的效能和成本預期進行最佳化，同時遵循業界最佳實務。在整個生命週期中，工作負載工廠為 ONTAP 的 FSX 上的資料庫提供持續的最佳化與管理。
 
 如需工作負載工廠的詳細資訊，請link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作負載原廠總覽"^]參閱。
 
@@ -81,7 +81,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["瞭�
 
 === 工作負載工廠的作業模式
 
-三種不同的作業模式（ _ 基本 _ ， _ 讀取 _ 和 _ 自動化 _ ），提供靈活的選項，可在工作負載工廠內外進行部署。在 _base_ 模式下，利用程式碼片段在工作負載工廠外部使用，以零信任的方式立即獲得價值。在 _ 讀取 _ 和 _ 自動化 _ 模式中以遞增信任獲得遞增價值。
+三種不同的操作模式 - 基本模式、唯讀模式和讀取/寫入模式 - 為工作負載工廠內外的部署提供了靈活的選項。在 _base_ 模式下，利用程式碼片段在工作負載工廠外部使用，以零信任的方式立即獲得價值。在唯讀模式和讀/寫模式下，透過增量信任獲得增量價值。
 
 深入瞭解 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["工作負載工廠的作業模式"^]。
 

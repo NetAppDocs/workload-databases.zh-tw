@@ -4,17 +4,17 @@ permalink: create-database-server.html
 keywords: create, server, Microsoft SQL, deploy, host, deploy a database host, database host 
 summary: 在 BlueXP  工作負載工廠內為資料庫建立新的 Microsoft SQL Server 。 
 ---
-= 在 BlueXP  工作負載工廠中為資料庫建立資料庫伺服器
+= 在資料庫工作負載工廠中建立 Microsoft SQL Server
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-在 BlueXP  工作負載工廠中為資料庫建立新的 Microsoft SQL Server 或資料庫主機，需要 FSX 用於 ONTAP 檔案系統部署，以及用於 Active Directory 的資源。
+在資料庫工作負載工廠中建立新的 Microsoft SQL Server 或資料庫主機需要 FSx for ONTAP 檔案系統部署和 Active Directory 資源。
 
 .關於這項工作
-在從工作負載工廠建立 Microsoft SQL Server 之前，請先瞭解資料庫主機組態， Active Directory 部署，工作負載原廠操作模式的可用儲存部署類型，以及完成此作業的需求。
+在從工作負載工廠建立 Microsoft SQL Server 之前，請先了解資料庫主機配置的可用儲存部署類型、Microsoft 多路徑 I/O 配置、Active Directory 部署、網路詳細資訊以及完成此操作的要求。
 
 部署之後、您需要 <<步驟 2 ：在 Microsoft SQL Server 上啟用遠端連線,在 Microsoft SQL Server 上啟用遠端連線>>。
 
@@ -58,19 +58,12 @@ Active Directory:: 在部署期間、 Active Directory （ AD ）會發生下列
 
 
 --
-工作負載原廠操作模式:: 工作負載工廠提供三種作業模式，視您在工廠管理工作負載時的舒適程度而定。
 
-
-*_Basic_ 模式 * ：在此作業模式中，您不需要在工作負載工廠中建立任何 AWS 帳戶認證的關聯。您可以從 Codebox 複製或下載部分填寫的 YAML 範本，以便在工作負載工廠以外完成。
-
-* 讀取模式 * ：在此作業模式中、您會提供具有讀取權限的 AWS 帳戶認證、讓您完成 _ 快速建立 _ 或 _ 進階建立 _ 表單、然後複製或下載表單。您也可以從工作負載工廠重新導向至 CloudForformation ，其中包含完整的表單詳細資料。您將能夠在工作負載工廠中管理部署的資料庫伺服器。
-
-*_AILUSE_ 模式 * ：在這種作業模式中，您可以提供 AWS 帳戶認證及自動化權限，讓您在工作負載工廠內建立及管理 AWS 資源。
 
 .開始之前
 在建立新的資料庫主機之前、請確定您具備下列先決條件。
 
-認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和自動模式權限"^]在工作負載工廠中建立新的資料庫主機。
+認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和讀取/寫入模式權限"^]在工作負載工廠中建立新的資料庫主機。
 Active Directory:: 連線至 Active Directory 時、您必須具有具有權限的管理存取權、才能執行下列動作：
 +
 --
@@ -125,13 +118,16 @@ AWS 認證加上 _ 自動化 _ 權限，可讓工作負載在出廠時從工作�
 
 .. * 地區與 VPC* ：選擇地區與 VPC 網路。
 +
-確保現有介面端點的安全性群組允許存取所選子網路的 HTTPS （ 443 ）傳輸協定。
+確保部署子網路與現有介面端點相關聯，且安全性群組允許透過 HTTPS (443) 協定存取所選子網路。
 
 +
 AWS 服務介面端點（ SQS 、 FSX 、 EC2 、 CloudWatch 、 CloudFormation 、 SSM) 和 S3 閘道端點會在部署期間建立（如果找不到）。
 
 +
 VPC DNS 屬性 `EnableDnsSupport` 並 `EnableDnsHostnames` 經過修改、以在尚未設定為時啟用端點位址解析 `true`。
+
++
+使用跨 VPC DNS 時，DNS 所在的另一個 VPC 上的終端​​節點的安全群組應允許連接埠 443 存取部署子網路。否則，您應該在加入跨 VPC Active Directory 時提供本機 VPC 的 DNS 解析器。在多複製網域控制器環境中，如果某些網域控制器無法從子網路訪問，您可以「重新導向到 CloudFormation」並輸入 `Preferred domain controller`連接到 Active Directory。
 
 .. * 可用性區域 * ：根據容錯移轉叢集執行個體（ FCI ）部署模式選取可用性區域和子網路。
 +
