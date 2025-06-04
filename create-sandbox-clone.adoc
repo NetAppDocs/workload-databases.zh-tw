@@ -19,7 +19,7 @@ summary: 在 BlueXP  工作負載工廠中為資料庫建立沙箱複製。
 .開始之前
 建立沙箱複本之前、請務必先完成下列先決條件。
 
-認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和 _ 讀取 _ 或 _ 自動化 _ 模式權限"^]在工作負載工廠中建立沙箱複本。
+認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和「唯讀」或「讀取/寫入」模式權限"^]在工作負載工廠中建立沙箱複本。
 +
 --
 或者，您也可以使用 Codebox 複製部分完成的範本，或建立完整的範本，以便使用 REST API 在工作負載工廠外部建立沙箱複製。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。

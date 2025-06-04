@@ -145,7 +145,6 @@
   <block id="6d7b2a50e46356cb2ecf2805e3b5bb59" category="paragraph">如果您想要分隔資料庫的儲存空間、可以使用 _virtual 掛載點 _ 來執行此作業。虛擬掛載點可讓您將資料庫整合至主機上的幾個一般磁碟機。</block>
   <block id="92e04fe5d2a269f38993f394f5b1eb9b" category="admonition">使用 SMB 通訊協定的 Microsoft SQL Server 不支援資料庫建立。</block>
   <block id="7dd1095f5b5a654fc784015352d1066d" category="paragraph">建立新資料庫之前、請務必先完成下列先決條件。</block>
-  <block id="5c42fb317128e01d6e1476bcde042be1" category="inline-link-macro">AWS 帳戶認證和 _ 讀取 _ 或 _ 自動化 _ 模式權限</block>
   <block id="0b059e758179ae9106a6228fd71a42cb" category="list-text">Windows主機</block>
   <block id="db205765ba81a6c0d96687e971328059" category="list-text">如果使用 _Quick cred_ 模式、您必須在 Microsoft SQL Server 上有足夠的磁碟機代號、才能為新資料庫建立新磁碟機。</block>
   <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Microsoft SQL Server</block>
@@ -590,8 +589,6 @@
   <block id="920d5db87e34d780e98c3efabde9041b" category="summary">在 BlueXP  工作負載工廠內為資料庫建立新的 Microsoft SQL Server 。</block>
   <block id="e688adbe92be47aae67ff0624dc5033a" category="list-text">Microsoft SQL Server 部署模式都需要使用 iSCSI 儲存傳輸協定來建立 LUN 。工作負載工廠會將 Microsoft 多重路徑 I/O （ MPIO ）設定為透過適用於 ONTAP 的 FSX 為 SQL Server 設定 LUN 的一部分。MPIO 是根據 AWS 和 NetApp 最佳實務做法進行設定。</block>
   <block id="cef4156e4fa9e5869d4dee02c1b39d6e" category="paragraph">AWS 認證加上 _ 自動化 _ 權限，可讓工作負載在出廠時從工作負載工廠內的 AWS 帳戶部署及管理新的資料庫主機。</block>
-  <block id="cc04c98a943715d655ef7f99796aae2a" category="paragraph">具有 _ 讀取 _ 權限的 AWS 認證可讓工作負載工廠產生 CloudForgation 範本，供您在 AWS CloudForgation 主控台中使用。</block>
-  <block id="b4db11619512665a02befd7699ec1538" category="paragraph">如果您在工作負載工廠中沒有相關的 AWS 認證，而且想要在工作負載工廠中建立新的伺服器，請依照 * 選項 1* 前往認證頁面。為資料庫工作負載手動新增 _ 自動化 _ 模式所需的認證和權限。</block>
   <block id="fea8f5f977933d9473ff7671b078a975" category="paragraph">如果您想要在工作負載工廠中完成建立新伺服器表單，以便下載完整的 YAML 檔案範本，以便在 AWS CloudForformation 中部署，請遵循 * 選項 2* ，以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。為資料庫工作負載手動新增 _Read_ 模式所需的認證和權限。</block>
   <block id="d6631cc039c798bd233c70bae3023936" category="paragraph">或者，您也可以從 Codebox 下載部分完成的 YAML 檔案範本，在工作負載工廠外部建立堆疊，而無需任何認證或權限。從 Codebox 的下拉式清單中選取 * CloudForiam* 以下載 YAML 檔案。</block>
   <block id="6705f898558de9ace7f76d4dba3f6b46" category="paragraph">伺服器部署後，工作負載工廠不會在 Microsoft SQL Server 上啟用遠端連線。若要啟用遠端連線、請完成下列步驟。</block>
@@ -602,14 +599,11 @@
   <block id="d824723631e1f8de1b8bcee4a1de9c1e" category="paragraph">建立新的 Microsoft SQL 資料庫可讓您在 BlueXP  工作負載工廠內管理資料庫的資源。</block>
   <block id="86b0140bb79dd7663425ee50a4e68361" category="inline-link-macro">瞭解工作負載工廠的作業模式</block>
   <block id="3a0419549547987e965186c31b3610eb" category="paragraph">在工作負載工廠中建立資料庫需要自動化模式權限。或者，在基本模式中，您可以複製或下載部分完成的程式碼範本，以完成工作負載工廠以外的作業。<block ref="5968ff3deed2bc48d2bc3a731c0f115b" category="inline-link-macro-rx"></block> 決定您要使用的模式。</block>
-  <block id="ee1084f844db356e13c4fc5d627f91d0" category="list-text">您必須<block ref="2d1718ee7160678739db1128b08d1c1f" category="inline-link-macro-rx"></block>在工作負載工廠中建立新的資料庫。</block>
   <block id="3bfb7d9388422f644c389daf1ad5c953" category="paragraph">或者，您也可以使用 Codebox 來複製範本，以便使用 REST API 在工作負載工廠以外部署資料庫。<block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>。</block>
   <block id="4df748154a165347722755bf184e6bf0" category="list-text">您必須在工作負載工廠中擁有託管的 Microsoft SQL Server ，資料庫才能裝載新的資料庫。</block>
-  <block id="abbd61357a5610bb8f50c7948c4b04df" category="paragraph">您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 讀取 _ 或 _ 自動化 _ 模式權限，在工作負載工廠完成這項工作。</block>
   <block id="c6416602b6423e2ef924b15ae4981503" category="summary">在 BlueXP  工作負載工廠中為資料庫建立沙箱複製。</block>
   <block id="8227770ecb65ecb8937d56c6f259900e" category="doc">在 BlueXP  工作負載工廠中為資料庫建立沙箱複製</block>
   <block id="86fe540236465ca4e3d667ed76acb230" category="paragraph">在 BlueXP  工作負載工廠為資料庫建立資料庫的沙箱複本，可讓您使用複本進行開發，測試，整合，分析，訓練， QA 等作業，而無需變更來源資料庫。</block>
-  <block id="799cecdb1e7c1ee1725fa70f3b9556e5" category="list-text">您必須<block ref="2d1718ee7160678739db1128b08d1c1f" category="inline-link-macro-rx"></block>在工作負載工廠中建立沙箱複本。</block>
   <block id="977ef254da68f1a51ae8a6edf3a4791f" category="paragraph">或者，您也可以使用 Codebox 複製部分完成的範本，或建立完整的範本，以便使用 REST API 在工作負載工廠外部建立沙箱複製。<block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>。</block>
   <block id="36acb14683eb2b002c873c33647cbdba" category="list-text">您必須在工作負載工廠中擁有託管的 Microsoft SQL Server ，資料庫才能裝載新的沙箱複製。</block>
   <block id="23fb636062a19e5367fc7e960e315c4c" category="list-text">* 掛載 * ：當複製具有多個資料和 / 或記錄檔的 SQL 資料庫時，工作負載工廠會以自動指派或定義的磁碟機代號來複製所有檔案。</block>
@@ -905,7 +899,6 @@
   <block id="6da89f0beda0fbec41b06125b0b7ad32" category="section-title">延遲和關閉組態分析</block>
   <block id="4a9a50cea48d9e2ded3becc284af4e41" category="paragraph">某些組態可能不適用於您的資料庫環境。您現在可以選擇將特定組態分析延遲 30 天，或是關閉分析。</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新的權限術語</block>
-  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">工作負載原廠使用者介面與文件現在使用「唯讀」來指稱讀取權限，而「讀取寫入」則指自動化權限。</block>
   <block id="2d07fc9146d02690dffeffa52fbd2ec4" category="list-text">內部部署主機移除</block>
   <block id="1c28fa92b25f4914c091b667402466d3" category="list-text">探索 Microsoft SQL Server 內部部署主機的節約效益之後，您可以選擇從 BlueXP  工作負載工廠移除內部部署主機記錄。選取 Microsoft SQL Server 內部部署主機的三點功能表，然後選取 * 刪除 * 。</block>
   <block id="04467e563313dfe5a1da17bd70a4de75" category="list-text">在 *Inventory （清單） * 選項卡中，選擇 *Instancs* 選項卡。</block>
@@ -1058,8 +1051,6 @@
   <block id="2a627091d8c05a05162dae18a0e3dc31" category="admonition">工作負載工廠僅支援 Microsoft SQL Server 主機執行個體的註冊和管理。根據您在工作負載工廠中選擇的 AWS 帳戶憑證，PostgreSQL 和 Oracle 主機可能會出現在清單中。目前，工作負載工廠僅支援在 Amazon Linux 作業系統上執行的未註冊 PostgreSQL 實例，以及僅在 Red Hat Enterprise Linux 上執行的 Oracle 執行個體。</block>
   <block id="5e6ee18c02f118771f0e10235d44bd14" category="section-title">在私有網路中註冊主機實例</block>
   <block id="0af95213cc557c61a7ba3ca92d68f09e" category="paragraph">若要在沒有外部連線的私有網路中註冊主機實例，下列端點需要在與 SQL 伺服器所在子網路關聯的 VPC 中可用。確保介面端點允許附加安全群組中的連接埠 443 。</block>
-  <block id="d38541ea862d6762d01f5f9d42fbd683" category="inline-link-macro">您必須新增 AWS 帳戶憑證和 _read_ 或 _automate_ 模式權限</block>
-  <block id="36bfb43c49e597b3bb45a5bb2997033b" category="paragraph">實例的主機必須顯示在「清單」標籤中。若要讓主機顯示在清單中， <block ref="dd302a73ba9dc99cb46da731db0bf41c" category="inline-link-macro-rx"></block> 。</block>
   <block id="6a408aaa659cc5010ab5ed464d20688c" category="section-title">註冊主機實例</block>
   <block id="75cd4168051c5052e88a17b464261a1b" category="paragraph">註冊主機實例包括實例身份驗證和準備。</block>
   <block id="573898775af774ec571967393eb2000b" category="list-text">在「庫存」標籤中，選擇「*實例*」標籤。</block>
@@ -1091,4 +1082,15 @@
   <block id="c38254582571637e4bded341a22ff035" category="sidebar">管理實例</block>
   <block id="414fc89f66239e288860442b939928c9" category="sidebar">實施配置最佳實踐</block>
   <block id="a78c9036bfa9cb64272150072bb64123" category="sidebar">資料庫配置分析</block>
+  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。</block>
+  <block id="e38fc2fc30201bd6a5c959baea91e5cf" category="paragraph">具有讀取/寫入權限的 AWS 憑證可讓工作負載工廠從您的 AWS 帳戶在工作負載工廠內部署和管理新的資料庫主機。</block>
+  <block id="9d3d55473abbb7eec4a1df3a6fd8ac50" category="paragraph">具有「唯讀」權限的 AWS 憑證可讓工作負載工廠產生 CloudFormation 模板，供您在 AWS CloudFormation 控制台中使用。</block>
+  <block id="1a6183e6bc3067f41e368cb8ae65eee0" category="paragraph">如果您在工作負載工廠中沒有相關的 AWS 認證，而且想要在工作負載工廠中建立新的伺服器，請依照 * 選項 1* 前往認證頁面。手動新增資料庫工作負載的讀取/寫入模式所需的憑證和權限。</block>
+  <block id="b686945750b38d40d97b18356ad0a4c6" category="paragraph">如果您想要在工作負載工廠中完成建立新伺服器表單，以便下載完整的 YAML 檔案範本，以便在 AWS CloudForformation 中部署，請遵循 * 選項 2* ，以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。手動新增資料庫工作負載的_唯讀_模式所需的憑證和權限。</block>
+  <block id="a8ff9ed21e668d7299478bf75b16abd9" category="inline-link-macro">AWS 帳戶憑證和「唯讀」或「讀取/寫入」模式權限</block>
+  <block id="f62c0d8d53ecd7695a50c95462ff39bc" category="list-text">您必須<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>在工作負載工廠中建立新的資料庫。</block>
+  <block id="970fa5fe1f85bede58eadf785f5bb30d" category="paragraph">您可以使用_快速建立_或_進階建立_部署模式在工作負載工廠中以_唯讀_或_讀取/寫入_模式權限完成此任務。</block>
+  <block id="1ecac8592ecd595bc4f53507e476fc53" category="list-text">您必須<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>在工作負載工廠中建立沙箱複本。</block>
+  <block id="b2a6b8ac31e0bf9968f6f80649cc61cd" category="inline-link-macro">您必須新增 AWS 帳戶憑證和「唯讀」或「讀取/寫入」模式權限</block>
+  <block id="b6693184dc0e8cc975fb8e936b04d129" category="paragraph">實例的主機必須顯示在「清單」標籤中。若要讓主機顯示在清單中， <block ref="99382ab95f660f372dfed7d2289ac38a" category="inline-link-macro-rx"></block> 。</block>
 </blocks>

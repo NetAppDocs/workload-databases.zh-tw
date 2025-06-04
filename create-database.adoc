@@ -26,7 +26,7 @@ NOTE: 使用 SMB 通訊協定的 Microsoft SQL Server 不支援資料庫建立�
 .開始之前
 建立新資料庫之前、請務必先完成下列先決條件。
 
-認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶認證和 _ 讀取 _ 或 _ 自動化 _ 模式權限"^]在工作負載工廠中建立新的資料庫。
+認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和「唯讀」或「讀取/寫入」模式權限"^]在工作負載工廠中建立新的資料庫。
 +
 --
 或者，您也可以使用 Codebox 來複製範本，以便使用 REST API 在工作負載工廠以外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
@@ -41,7 +41,7 @@ AWS Systems Manager:: 請確定已透過 AWS System Manager 在 Microsoft SQL �
 
 == 建立資料庫
 
-您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 讀取 _ 或 _ 自動化 _ 模式權限，在工作負載工廠完成這項工作。
+您可以使用_快速建立_或_進階建立_部署模式在工作負載工廠中以_唯讀_或_讀取/寫入_模式權限完成此任務。
 
 [role="tabbed-block"]
 ====
