@@ -54,7 +54,7 @@ sidebar:
       url: "/automate-codebox.html"
   - title: 管理與監控
     entries:
-    - title: 監控資料庫
+    - title: 監視資料庫作業
       url: "/monitor-databases.html"
     - title: 實施配置最佳實踐
       entries:
@@ -64,8 +64,6 @@ sidebar:
         url: "/optimize-configurations.html"
       - title: 延後組態分析
         url: "/postpone-analysis.html"
-    - title: 管理 Microsoft SQL Server
-      url: "/manage-server.html"
     - title: 管理複本
       entries:
       - title: 檢查沙箱複本的完整性

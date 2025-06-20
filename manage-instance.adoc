@@ -20,6 +20,5 @@ summary: 了解資料庫工作負載工廠中的執行個體管理。
 * link:create-database.html["建立資料庫"]
 * link:create-sandbox-clone.html["建立資料庫克隆（沙盒）"]
 * link:view-databases.html["查看資料庫"]
-* link:monitor-databases.html["監控資料庫操作"]
 * link:optimize-configurations.html["實施架構良好的資料庫配置"]
 

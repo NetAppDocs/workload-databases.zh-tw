@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: monitor-databases.html 
 keywords: monitor databases, monitor jobs, track database jobs 
-summary: 追蹤資料庫工作，並監控 BlueXP  工作負載工廠中的資料庫，以取得資料庫。 
+summary: 追蹤資料庫作業並監控資料庫工作負載工廠內的資料庫。 
 ---
-= 監控 BlueXP  工作負載工廠中的資料庫
+= 監視工作負載工廠中的資料庫作業
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-追蹤資料庫工作，並監控 BlueXP  工作負載工廠中的資料庫，以取得資料庫。
+追蹤資料庫作業並監控資料庫工作負載工廠內的資料庫。
 
 .關於這項工作
 資料庫提供工作監控功能、讓您追蹤工作進度、並在發生任何故障時進行診斷和疑難排解。您可以依類型和狀態篩選工作，使用搜尋功能尋找工作，然後下載工作表。

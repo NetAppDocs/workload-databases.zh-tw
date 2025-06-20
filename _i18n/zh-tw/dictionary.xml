@@ -361,7 +361,6 @@
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="ca6b20c311193d70fa95150e9aadfeff" category="list-text">按一下下拉式箭頭以展開主機的列、以檢視其資料庫。</block>
   <block id="bab47e98a40b74089a0df1373390d048" category="list-text">選取 * 檢視資料庫 * 。</block>
-  <block id="252215232d636a7c096b2327e9a20b42" category="doc">監控資料庫</block>
   <block id="67b0a66954400448325457f930e0f82b" category="paragraph">工作監控可支援最多三個層級的監控、視工作而定。例如、對於新的資料庫和沙箱複製建立、工作監控會追蹤父工作和子工作。</block>
   <block id="b830a8f027299af6d1d8ffbb130bcc58" category="list-text">工作監控層級</block>
   <block id="f52bf93027629736a089ef7f590091e0" category="list-text">層級 1 （父工作）：追蹤主機部署工作。</block>
@@ -453,7 +452,6 @@
   <block id="991fc877b6135bcda7435016745ae066" category="sidebar">使用資料庫工作負載</block>
   <block id="fbe27670bf06b7e38d268c77e7f002f0" category="sidebar">建立新的資料庫伺服器</block>
   <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">管理與監控</block>
-  <block id="077bbf8da979e97e9f7ec7239eb76073" category="sidebar">管理 Microsoft SQL Server</block>
   <block id="6ea5d3d06add60328b6497a58edc5878" category="sidebar">管理複本</block>
   <block id="7375873088079584bbffaf102f0fdae4" category="sidebar">建立沙箱複製</block>
   <block id="566d7361c862d8d2bd63be4cb3f852cd" category="sidebar">檢查沙箱複本的完整性</block>
@@ -645,8 +643,6 @@
   <block id="37c0391f707d07b4c1d64a02e6944c56" category="paragraph">Microsoft SQL Server 的工作負載原廠支援高可用度（永遠在容錯移轉叢集執行個體上），以及根據 AWS ， NetApp ONTAP 和 SQL Server 最佳實務做法進行單一執行個體部署。</block>
   <block id="b9aff8d3c5ff2dd2a4ce0963f381f957" category="paragraph">有關工作負載工廠或工作負載工廠應用程式與服務的一般問題，請<block ref="b9da93c3ce08d7fb81177157f233c056" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="71e2f5eacc9fc09317bbe70e053aeb1e" category="summary">在資料庫的 BlueXP  工作負載工廠中管理 Microsoft SQL Server 執行個體。</block>
-  <block id="72f7ef1037108c5eeefad1bcee23a0a8" category="summary">追蹤資料庫工作，並監控 BlueXP  工作負載工廠中的資料庫，以取得資料庫。</block>
-  <block id="671ef5b67f2b7cbf660faa04c3d4622a" category="doc">監控 BlueXP  工作負載工廠中的資料庫</block>
   <block id="eb7ed5d3b1a2ff72006245ad37f9817b" category="paragraph">您必須擁有 AWS 帳戶才能使用資料庫。</block>
   <block id="c37e590e9c50960a15f3292676cc0c18" category="paragraph">請依照下列步驟開始使用。</block>
   <block id="3e7340039619cc08d8c1c5a3cd4bfb43" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登入 BlueXP  工作負載工廠</block>
@@ -986,8 +982,6 @@
   <block id="fd8a54c517020c653ae1776e8e00d343" category="list-text"><block ref="fd8a54c517020c653ae1776e8e00d343" category="inline-link-macro-rx"></block></block>
   <block id="050cc3957bb212dc2758e7dd27f7faf8" category="inline-link-macro">查看資料庫</block>
   <block id="7a403e4f1f2e0af187fa5a95116054cc" category="list-text"><block ref="7a403e4f1f2e0af187fa5a95116054cc" category="inline-link-macro-rx"></block></block>
-  <block id="f4a7fa0c2cfabd3c771238fbdb6c7ae5" category="inline-link-macro">監控資料庫操作</block>
-  <block id="b92726505ce75a5aa80c8086ae979c25" category="list-text"><block ref="b92726505ce75a5aa80c8086ae979c25" category="inline-link-macro-rx"></block></block>
   <block id="2f2280ee27b03fc450cd69afae071e39" category="inline-link-macro">實施架構良好的資料庫配置</block>
   <block id="d3379f7eb15b947ec99d4daad00317b3" category="list-text"><block ref="d3379f7eb15b947ec99d4daad00317b3" category="inline-link-macro-rx"></block></block>
   <block id="c4363ade7c2d208d79dee9b60bc51922" category="doc">在工作負載工廠中實現架構良好的資料庫配置</block>
@@ -1093,4 +1087,7 @@
   <block id="1ecac8592ecd595bc4f53507e476fc53" category="list-text">您必須<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>在工作負載工廠中建立沙箱複本。</block>
   <block id="b2a6b8ac31e0bf9968f6f80649cc61cd" category="inline-link-macro">您必須新增 AWS 帳戶憑證和「唯讀」或「讀取/寫入」模式權限</block>
   <block id="b6693184dc0e8cc975fb8e936b04d129" category="paragraph">實例的主機必須顯示在「清單」標籤中。若要讓主機顯示在清單中， <block ref="99382ab95f660f372dfed7d2289ac38a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="a38d5cfb962091710b5c8c4cae183d64" category="summary">追蹤資料庫作業並監控資料庫工作負載工廠內的資料庫。</block>
+  <block id="bcdf66d04230e723b2fc5152ae10a7ef" category="doc">監視工作負載工廠中的資料庫作業</block>
+  <block id="9ae4e4b9fdc398feb3be344b26cbf99f" category="sidebar">監視資料庫作業</block>
 </blocks>
