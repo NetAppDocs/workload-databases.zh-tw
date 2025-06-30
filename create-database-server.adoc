@@ -87,6 +87,8 @@ Active Directory:: 連線至 Active Directory 時、您必須具有具有權限�
 
 NOTE: 從 Codebox 使用 Terraform 時、您複製或下載的程式碼會隱藏 `fsxadmin` 和 `vsadmin` 密碼。執行程式碼時、您需要重新輸入密碼。除了 _ 自動 _ 模式權限之外、您還需要為使用者帳戶加入下列權限： `iam:TagRole`和 `iam:TagInstanceProfile`。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#use-terraform-from-codebox["瞭解如何從 CodeBox 使用 Terraform"^]。
 
+在部署期間，工作負載工廠會啟用 CredSSP，以便將憑證委託給用於預配 SQL 的腳本。當所有網域電腦的群組原則阻止 CredSSP 委託時，部署將會失敗。部署後，工作負載工廠會停用 CredSSP。
+
 [role="tabbed-block"]
 ====
 .快速建立

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: optimize-configurations.html 
 keywords: optimize, configuration, storage, compute, application, resiliency assessment, scan, optimization, Microsoft SQL Server, host, instance, FSx for ONTAP 
-summary: 資料庫的 BlueXP  工作負載工廠會掃描 Microsoft SQL Server 組態，提供深入分析和建議，協助您達到卓越營運績效。 
+summary: 資料庫工作負載工廠掃描 Microsoft SQL Server 配置，提供見解和建議，協助您實現卓越營運。 
 ---
 = 在工作負載工廠中實現架構良好的資料庫配置
 :allow-uri-read: 
@@ -23,7 +23,7 @@ summary: 資料庫的 BlueXP  工作負載工廠會掃描 Microsoft SQL Server 
 --
 * 儲存規模：包括儲存層、檔案系統保留空間、記錄磁碟機大小及 TempDB 磁碟機大小
 * 儲存配置：包括使用者資料檔案放置、記錄檔放置及 TempDB 放置
-* 儲存組態：包括容量管理、精簡配置、分層原則、快照、多重路徑 I/O 狀態、原則和工作階段等
+* 儲存配置：包含容量管理、精簡配置、分層策略、快照、Microsoft 多路徑 I/O (MPIO) 狀態和 MPIO 逾時設置
 * 運算：包括正確調整規模，作業系統修補程式，以及接收端調整（ RSS ）和 TCP 卸載等網路介面卡設定
 * 應用程式：包括 Microsoft SQL Server 授權， Microsoft SQL Server 修補程式和 MAXDOP 設定
 * 恢復能力：包括本機快照，用於 ONTAP 備份的 FSX ，以及跨區域複寫（ CRR ）
@@ -57,10 +57,10 @@ NOTE: 補救程序可能會導致執行個體停機或服務中斷。在選擇�
 . 選取下拉式箭頭以檢視任何組態的建議。建議包括最佳實踐、未優化配置的潛在缺陷以及重要注意事項。請務必仔細檢閱建議內容。
 . 當選項可用時，選擇“查看並修復”配置問題。
 +
-* 「全選」 * 是預設值，但您可以選取特定資源進行最佳化。
+*全選*是預設設置，但您可以選擇特定資源進行修復。
 
 +
-.. 對於除克隆清理之外的所有配置，請查看建議詳情，以了解選擇優化後會發生什麼情況。某些修復操作可能會導致執行個體停機或服務中斷。
+.. 對於除克隆清理之外的所有配置，請查看建議詳細資訊以了解如果選擇修復問題會發生什麼。某些修復操作可能會導致執行個體停機或服務中斷。
 .. 若要清除複本，請選取要重新整理或刪除的複製資料庫（沙箱）。
 +
 *** 重新整理複本會將其與來源資料庫同步。只有在工作負載工廠中建立的複本才能使用重新整理功能。
@@ -73,4 +73,4 @@ NOTE: 補救程序可能會導致執行個體停機或服務中斷。在選擇�
 
 
 .結果
-補救過程開始。選取 * 工作監控 * 標籤以檢視作業狀態。
+工作負載工廠開始修復問題。選取 * 工作監控 * 標籤以檢視作業狀態。

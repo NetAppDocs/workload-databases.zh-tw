@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: deregister-instance.html 
 keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle host instance, deregister instance, unregister instance, remove instance 
-summary: 如果您不再想要部署或監控執行個體資源，請取消註冊主機執行個體。 
+summary: 如果您不再想要部署或監控執行個體資源，請取消註冊該執行個體。 
 ---
-= 在工作負載工廠中註銷主機實例
+= 在工作負載工廠中註銷實例
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-如果您不再需要部署或監控執行個體資源，請取消註冊主機執行個體。取消註冊執行個體也會刪除主機執行個體所使用的儲存容量。
+如果您不再需要部署或監控執行個體資源，請取消註冊該執行個體。取消註冊實例也會刪除該實例所使用的儲存容量。
 
 您可以稍後重新註冊該實例。
 
@@ -19,13 +19,13 @@ summary: 如果您不再想要部署或監控執行個體資源，請取消註�
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
 . 在資料庫中、選取 * 庫存 * 索引標籤。
-. 按一下下拉箭頭展開要取消註冊的主機實例的行。
+. 按一下下拉箭頭展開要登出的實例的行。
 +
-主機隨即展開、並顯示主機執行個體。
+主機擴充功能並且實例出現。
 
 . 點選實例的三點選單即可取消註冊。
 . 選擇*註銷*。
 
 
 .結果
-主機實例現已取消註冊。您可以稍後重新註冊該實例。
+該實例現已註銷。您可以稍後重新註冊該實例。
