@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: deregister-instance.html 
-keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle host instance, deregister instance, unregister instance, remove instance 
+keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle instance, deregister instance, unregister instance, remove instance 
 summary: 如果您不再想要部署或監控執行個體資源，請取消註冊該執行個體。 
 ---
 = 在工作負載工廠中註銷實例

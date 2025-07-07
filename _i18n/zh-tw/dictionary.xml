@@ -357,7 +357,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="948d113c0ab3cb85650dda6912a734c5" category="list-text">檢視資料庫</block>
-  <block id="7a85061671bf8d085efe2cb8dfd1c79e" category="paragraph">主機隨即展開、並顯示主機執行個體。</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="ca6b20c311193d70fa95150e9aadfeff" category="list-text">按一下下拉式箭頭以展開主機的列、以檢視其資料庫。</block>
   <block id="bab47e98a40b74089a0df1373390d048" category="list-text">選取 * 檢視資料庫 * 。</block>
@@ -955,7 +954,6 @@
   <block id="db8588c095bdb42680df1d8ae6e6c242" category="paragraph">您可以稍後重新註冊該實例。</block>
   <block id="6e58f833a8c88963786858e4cd0820f1" category="list-text">點選實例的三點選單即可取消註冊。</block>
   <block id="a20e9b47d2ae2e8dcad4b38296aada53" category="list-text">選擇*註銷*。</block>
-  <block id="57b8b12d92efb891c61703846230423a" category="section-title">主機實例偵測支援</block>
   <block id="7d02c7321e50b7c2fa346dd9edc083f2" category="paragraph">工作負載工廠支援偵測僅在 Amazon Linux 作業系統上執行的 PostgreSQL 執行個體和僅在 Red Hat Enterprise Linux 上執行的 Oracle 執行個體。</block>
   <block id="6923ba19fe8a091f76827ff8c86785de" category="summary">資料庫工作負載工廠是一種端到端資料庫部署和維護服務，具有內建的最佳化、自動精簡克隆以及監控和解決功能的最佳實踐。</block>
   <block id="bb3a81d6ea3e61933815d8c7984727a3" category="section-title">資料庫的工作負載工廠是什麼？</block>
@@ -981,12 +979,9 @@
   <block id="eb39e8dfd54bf78043b2372b30f7b2b6" category="list-text">克隆：包括刷新和刪除在工作負載工廠內部或外部創建的超過 60 天的克隆（沙盒）的選項</block>
   <block id="05733d6679707441838e3ca92fcb1e85" category="inline-link-macro">AWS 帳戶憑證和讀取/寫入權限</block>
   <block id="e6ff59cff1eb616f7a9d6b770313807a" category="list-text">你必須有<block ref="6428f71963510d960d64cd03bb6513ae" category="inline-link-macro-rx"></block>分析您的資料庫配置。</block>
-  <block id="bb4dc454356e65051d8e22516b60a260" category="inline-link-macro">了解如何註冊主機實例。</block>
-  <block id="606bc152b33b9976e88d57b374a1d46f" category="list-text">若要評估 Microsoft SQL Server 實例的存儲，必須在工作負載工廠中註冊該實例，且儲存類型必須是 FSx for ONTAP。 <block ref="f22f9817b1d52aa896a88fe9442f70ef" category="inline-link-macro-rx"></block></block>
   <block id="663c686f4608ad8e700ed1cd99a57fcc" category="list-text">在選擇修正設定或組態之前，請務必仔細檢閱每項建議。對於 RSS 和 MAXDOP 設定，我們建議您先測試建議的設定，以判斷效能改善，然後再變更正式作業環境。</block>
   <block id="55900adb296775523b32b30486b0de17" category="admonition">補救程序可能會導致執行個體停機或服務中斷。在選擇修復配置之前，請務必仔細查看建議。</block>
   <block id="da0f3dbe0b914fb78e47ff54702db3df" category="list-text">選擇“修復問題”以查看實例的配置問題。</block>
-  <block id="a85bf70a610b181df621eea76d0068e4" category="list-text">在主機執行個體的「良好架構狀態」頁面上，查看分析結果。</block>
   <block id="8cdf23f9dd4f98a6b709a0a9d53ecd88" category="paragraph">您可以按類別、子類別、狀態、嚴重性和標籤過濾配置問題。</block>
   <block id="dd78deb6ef5fa791112d358b2eccdf97" category="paragraph">您也可以選擇「匯出 PDF」下載調查結果報告。</block>
   <block id="f73028254f9c4297e3f60654068105e0" category="list-text">選取下拉式箭頭以檢視任何組態的建議。建議包括最佳實踐、未優化配置的潛在缺陷以及重要注意事項。請務必仔細檢閱建議內容。</block>
@@ -1008,8 +1003,6 @@
   <block id="49c47aadfeff1e01313108c157d381b4" category="list-text">_ 效能效率 _ ：專注於有效運用資源來滿足系統需求，並在需求改變時維持最佳效能。</block>
   <block id="8b75b787538a5ee0eb97dc541694c82a" category="list-text">分析範圍</block>
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">分析需求</block>
-  <block id="389751c9d4b8ea76783de1b291cac92f" category="paragraph">為了進行完整的資料庫環境分析，主機執行個體必須註冊並上線。</block>
-  <block id="f22f9817b1d52aa896a88fe9442f70ef" category="paragraph"><block ref="f22f9817b1d52aa896a88fe9442f70ef" category="inline-link-macro-rx"></block></block>
   <block id="4eadd345921a1f4292d9b98892d3b84e" category="inline-link-macro">實施結構良好的資料庫配置</block>
   <block id="9f79767d5e4eb4d13f2a6d925ed59d0f" category="paragraph"><block ref="9f79767d5e4eb4d13f2a6d925ed59d0f" category="inline-link-macro-rx"></block></block>
   <block id="27cb094655bbfaa4d3b2c3b34d1c1557" category="summary">開始使用資料庫工作負載工廠來使用基礎設施即程式碼片段、發現主機、管理資源等。</block>
@@ -1021,7 +1014,6 @@
   <block id="32077805607c935c0ac59dd7b4a3fdc6" category="inline-link-macro">部署主機伺服器</block>
   <block id="d53bce2cf4a36ab74378d06b70255899" category="inline-link-macro">註冊實例</block>
   <block id="d4e3cc6f64d77dfb90b8f3a54369d97f" category="paragraph">最後，如果您選擇以讀取/寫入模式操作，則必須<block ref="086045f9b9433534ba0bc16ba8744718" category="inline-link-macro-rx"></block>或者<block ref="70dc6f6bba18b4f574a867d694f53a80" category="inline-link-macro-rx"></block>管理您的主機資源並新增使用者資料庫之前。</block>
-  <block id="db04547f806a50b5e3c5bbceb867c6c9" category="paragraph">當您在資料庫清單中向 FSx for ONTAP 檔案系統儲存註冊主機執行個體後，您可以<block ref="3d11347aa47327ab2988d0d3d3d6bd99" category="inline-link-macro-rx"></block>或者<block ref="e4dc5f068f234adb2616993ddf9e76bc" category="inline-link-macro-rx"></block> 。</block>
   <block id="8373481dd509f9b495f59748db1aa76d" category="doc">在資料庫工作負載工廠中註冊實例</block>
   <block id="42c8e35152475231ef5a183766c9bebc" category="paragraph">資料庫只能向 FSx for ONTAP 檔案系統儲存註冊實例。</block>
   <block id="91a3069301b0dd7ee29890c4b610ba27" category="section-title">關於任務</block>
@@ -1040,9 +1032,6 @@
   <block id="a037e794bf828053866493b8452ab9c7" category="paragraph">實例註冊請求已發起。選擇「作業監控」標籤以追蹤進度。</block>
   <block id="5dfcf5a53e6a3c94eb359647b453a807" category="summary">若要取得工作負載工廠中資料庫資源的摘要，請查看資料庫清單中的所有資料庫。您也可以查看單一註冊實例的資料庫。</block>
   <block id="34f8798aab35970d27e00ecdf2a9f526" category="doc">在資料庫的工作負載工廠中查看資料庫</block>
-  <block id="0ab190804913b1145bf64c21befa3286" category="list-text">包含資料庫資源的主機執行個體必須具有 FSx for ONTAP 檔案系統儲存。</block>
-  <block id="682d1e77482e7088c166b62c34287660" category="inline-link-macro">註冊主機實例</block>
-  <block id="13e6dec9f19066e3153eb07ec978ea2b" category="list-text">主機執行個體必須在工作負載工廠中註冊。瞭解如何<block ref="2dbc08dda5209ee806e4433f973c765a" category="inline-link-macro-rx"></block>。</block>
   <block id="87301bee2c9587d1e63d873a81c4e6fa" category="open-title">查看單一實例的資料庫</block>
   <block id="25734f9761801ac27c5c548d5c1829ca" category="open-title">查看所有實例的資料庫</block>
   <block id="91063ca7fb76f05148ae179b2f84b160" category="paragraph">您已查看工作負載工廠內的資料庫資源。</block>
@@ -1074,19 +1063,10 @@
   <block id="c836d737c77c0dbce2c99a2b01c719fd" category="paragraph">工作負載工廠為資料庫提供以下通知：</block>
   <block id="33e3371223dba19c723617802e06af8d" category="list-text">結構完善的報告</block>
   <block id="d415d128365eca1587931ed756de7819" category="list-text">主機部署</block>
-  <block id="83f1d9ca1a0c4c2fc51a371c0d773f76" category="list-text">保護</block>
   <block id="8306ce5f84163ec6839ec7518f30183a" category="section-title">用於註冊實例的入門增強功能</block>
-  <block id="0a969bb4f7ed7e29d7225c0409a1750b" category="paragraph">資料庫工作負載工廠改進了在 Amazon FSx for NetApp ONTAP 儲存上執行的執行個體的註冊流程。現在，您可以批次選擇實例進行註冊。執行個體註冊完成後，您可以在工作負載工廠控制台中建立和管理資料庫主機資源。</block>
   <block id="2e91c32877a8bf4a56c1853f92a414ba" category="section-title">Microsoft Multipath I/O 逾時設定的分析與修復</block>
-  <block id="221618cb9e519d5c3dd0fcbb1e4f1205" category="paragraph">資料庫主機執行個體的架構完善狀態現在包含對 Microsoft 多路徑 I/O (MPIO) 逾時設定的分析和修復。將 MPIO 逾時設定為 60 秒可確保 FSx for ONTAP 儲存故障轉移期間的連線性和穩定性。如果 MPIO 設定未正確設置，工作負載工廠將提供修復程序，將 MPIO 逾時值設定為 60 秒。</block>
   <block id="a05724b342c36062e480732f660ae9d4" category="paragraph"><block ref="a05724b342c36062e480732f660ae9d4" category="inline-link-macro-rx"></block></block>
-  <block id="2bf19cd7fefccda37a9e51c8d6ae9ef1" category="section-title">主機庫存中的圖形增強功能</block>
-  <block id="29a6225f1f6846093fcfd562090e8654" category="paragraph">在主機清單畫面中，各種資源利用率圖表（例如吞吐量和 IOPS）現在顯示 7 天的數據，以便您可以更有效率地從工作負載工廠控制台監控 SQL 節點的效能。從 SQL 節點收集的效能指標將保存在 Amazon CloudWatch 中，可用於 Logs Insights 或與您環境中的其他分析服務整合。</block>
-  <block id="02212e54266ecdf641215b97bf4ab24e" category="paragraph">從主機清單中的實例和資料庫標籤中，我們增強了主機保護的描述和視覺化。</block>
   <block id="4698c78219bd6bc2a4fb47e8f4149213" category="section-title">工作負載工廠中對 Windows 身份驗證的支持</block>
-  <block id="b3a0e7d1a5170a15143af7a7f86f02b8" category="paragraph">現在，工作負載工廠支援使用 Windows 驗證使用者的 SQL Server 驗證來註冊主機執行個體並受益於主機管理功能。</block>
-  <block id="47668721b89b4afabeb23e27f6ac9b38" category="inline-link-macro">在資料庫的工作負載工廠中註冊主機實例</block>
-  <block id="4f178ea0296d3da0481606b8e3df7542" category="paragraph"><block ref="4f178ea0296d3da0481606b8e3df7542" category="inline-link-macro-rx"></block></block>
   <block id="f7b79998a8d6049aa7838e93bde48d38" category="paragraph">在部署期間，工作負載工廠會啟用 CredSSP，以便將憑證委託給用於預配 SQL 的腳本。當所有網域電腦的群組原則阻止 CredSSP 委託時，部署將會失敗。部署後，工作負載工廠會停用 CredSSP。</block>
   <block id="b6705e62a5d2c7330d2d39782b5e5ea5" category="summary">如果您不再想要部署或監控執行個體資源，請取消註冊該執行個體。</block>
   <block id="aa76a1c51b277c90780c0553dba1e6a6" category="doc">在工作負載工廠中註銷實例</block>
@@ -1121,4 +1101,20 @@
   <block id="1e72ee2b188273bc05d5a58836ef28ea" category="list-text">*Windows 驗證*：輸入 Windows 使用者名稱和密碼，以及 FSx for ONTAP 檔案系統使用者名稱和密碼。</block>
   <block id="3325d27939065e1573633813a5123834" category="list-text">在步驟 3 中，透過確保實例滿足所需的先決條件來準備實例。如果所有必需模組均已安裝且先決條件均已滿足，請選擇「下一步」以註冊實例。如果您需要採取行動，請按照以下步驟操作。</block>
   <block id="b77e8ec0a3425747f32b3dbc303adecb" category="section-title">2025 年 6 月 30 日</block>
+  <block id="d2240cc857b28c2cc0c761811ebb0e4d" category="paragraph">資料庫工作負載工廠改進了在 Amazon FSx for NetApp ONTAP 儲存上執行的執行個體的註冊流程。現在，您可以批次選擇實例進行註冊。一旦執行個體註冊，您就可以在工作負載工廠控制台內建立和管理資料庫資源。</block>
+  <block id="55dedf6eed5a2ce8c260a3944723e099" category="paragraph">資料庫執行個體的良好架構狀態現在包括對 Microsoft 多路徑 I/O (MPIO) 逾時設定的分析和修復。將 MPIO 逾時設定為 60 秒可確保 FSx for ONTAP 儲存故障轉移期間的連線性和穩定性。如果 MPIO 設定未正確設置，工作負載工廠將提供修復程序，將 MPIO 逾時值設定為 60 秒。</block>
+  <block id="0f6f8a7d2c62793903fd07b4a68f2192" category="section-title">實例清單中的圖形增強功能</block>
+  <block id="6bb06f6a313d1245a77bdcc02f151dcd" category="paragraph">從實例庫存螢幕，各種資源利用率圖表（如吞吐量和 IOPS）現在顯示 7 天的數據，以便您可以更有效地從工作負載工廠控制台監控 SQL 節點的效能。從 SQL 節點收集的效能指標將保存在 Amazon CloudWatch 中，可用於 Logs Insights 或與您環境中的其他分析服務整合。</block>
+  <block id="8984f42ceef01f063ea7a1078e620318" category="paragraph">從庫存中的實例和資料庫標籤中，我們增強了保護的描述和視覺化。</block>
+  <block id="e6884d3b77d68ac903da5836a6c33345" category="paragraph">現在，工作負載工廠支援使用 Windows 驗證的使用者來註冊執行個體並從管理功能中受益的 SQL Server 驗證。</block>
+  <block id="b8419cf58039d1a67d2046abd157e28b" category="paragraph"><block ref="b8419cf58039d1a67d2046abd157e28b" category="inline-link-macro-rx"></block></block>
+  <block id="2e1bd7e9b2f7897e3fbd2f64db19746c" category="section-title">實例檢測支持</block>
+  <block id="e5872a50d5d45d5b9d394ddc65dfee1f" category="inline-link-macro">了解如何註冊實例。</block>
+  <block id="09ea6435a2780f6e0f876796133da036" category="list-text">若要評估 Microsoft SQL Server 實例的存儲，必須在工作負載工廠中註冊該實例，且儲存類型必須是 FSx for ONTAP。 <block ref="4dede94da0834ecd430bec6189bab6cc" category="inline-link-macro-rx"></block></block>
+  <block id="e6b1ed7d667d6b75280f0be1619fde20" category="list-text">在實例的「良好架構狀態」頁面上，查看分析結果。</block>
+  <block id="a26f09029b7e444a21db17eb62e9d2d5" category="paragraph">為了進行完整的資料庫環境分析，實例必須註冊並在線。</block>
+  <block id="4dede94da0834ecd430bec6189bab6cc" category="paragraph"><block ref="4dede94da0834ecd430bec6189bab6cc" category="inline-link-macro-rx"></block></block>
+  <block id="897c69f19b2f39fbf3080a555a679d8e" category="paragraph">當您在資料庫清單中註冊了 FSx for ONTAP 檔案系統儲存的實例後，您可以<block ref="3d11347aa47327ab2988d0d3d3d6bd99" category="inline-link-macro-rx"></block>或者<block ref="e4dc5f068f234adb2616993ddf9e76bc" category="inline-link-macro-rx"></block> 。</block>
+  <block id="621bb50103e94b947974d2656fb451ec" category="list-text">包含資料庫資源的實例必須具有 FSx for ONTAP 檔案系統儲存。</block>
+  <block id="dd36ed4d606eb4686fae0a7232af1eac" category="list-text">實例必須在工作負載工廠中註冊。瞭解如何<block ref="e24144bf29586c3fb748c1e1cf493cb5" category="inline-link-macro-rx"></block>。</block>
 </blocks>

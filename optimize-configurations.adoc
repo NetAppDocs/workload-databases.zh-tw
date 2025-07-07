@@ -35,7 +35,7 @@ summary: 資料庫工作負載工廠掃描 Microsoft SQL Server 配置，提供�
 
 .開始之前
 * 你必須有link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和讀取/寫入權限"^]分析您的資料庫配置。
-* 若要評估 Microsoft SQL Server 實例的存儲，必須在工作負載工廠中註冊該實例，且儲存類型必須是 FSx for ONTAP。 link:register-instance.html["了解如何註冊主機實例。"]
+* 若要評估 Microsoft SQL Server 實例的存儲，必須在工作負載工廠中註冊該實例，且儲存類型必須是 FSx for ONTAP。 link:register-instance.html["了解如何註冊實例。"]
 * 在選擇修正設定或組態之前，請務必仔細檢閱每項建議。對於 RSS 和 MAXDOP 設定，我們建議您先測試建議的設定，以判斷效能改善，然後再變更正式作業環境。
 
 
@@ -47,7 +47,7 @@ NOTE: 補救程序可能會導致執行個體停機或服務中斷。在選擇�
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
 . 在 *Inventory （清單） * 選項卡中，選擇 *Instancs* 選項卡。
 . 選擇“修復問題”以查看實例的配置問題。
-. 在主機執行個體的「良好架構狀態」頁面上，查看分析結果。
+. 在實例的「良好架構狀態」頁面上，查看分析結果。
 +
 您可以按類別、子類別、狀態、嚴重性和標籤過濾配置問題。
 

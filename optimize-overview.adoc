@@ -48,9 +48,9 @@ summary: 資料庫工作負載工廠會定期分析 Microsoft SQL Server 配置�
 
 == 分析需求
 
-為了進行完整的資料庫環境分析，主機執行個體必須註冊並上線。
+為了進行完整的資料庫環境分析，實例必須註冊並在線。
 
-link:register-instance.html["了解如何註冊主機實例。"]
+link:register-instance.html["了解如何註冊實例。"]
 
 .下一步
 link:optimize-configurations.html["實施結構良好的資料庫配置"]
