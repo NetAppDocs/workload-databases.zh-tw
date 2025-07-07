@@ -13,7 +13,10 @@ summary: 在 BlueXP  工作負載工廠內為資料庫建立新的 Microsoft SQ
 [role="lead"]
 在資料庫工作負載工廠中建立新的 Microsoft SQL Server 或資料庫主機需要 FSx for ONTAP 檔案系統部署和 Active Directory 資源。
 
-.關於這項工作
+
+
+== 關於這項工作
+
 在從工作負載工廠建立 Microsoft SQL Server 之前，請先了解資料庫主機配置的可用儲存部署類型、Microsoft 多路徑 I/O 配置、Active Directory 部署、網路詳細資訊以及完成此操作的要求。
 
 部署之後、您需要 <<步驟 2 ：在 Microsoft SQL Server 上啟用遠端連線,在 Microsoft SQL Server 上啟用遠端連線>>。
@@ -42,14 +45,7 @@ Active Directory:: 在部署期間、 Active Directory （ AD ）會發生下列
 
 
 --
-
-
-
-
-== 使用者管理的 Active Directory 安全性群組
-
-如果您在工作負載工廠的 Microsoft SQL Server 部署期間選取「使用者管理的 Active Directory 」，則必須提供安全群組，允許 EC2 執行個體之間的流量傳輸至目錄服務進行部署。工作負載工廠不會像 AWS 託管的 Microsoft AD 一樣，自動附加使用者託管 Active Directory 的安全群組。
-
+使用者管理的 Active Directory 安全性群組:: 如果您在工作負載工廠的 Microsoft SQL Server 部署期間選取「使用者管理的 Active Directory 」，則必須提供安全群組，允許 EC2 執行個體之間的流量傳輸至目錄服務進行部署。工作負載工廠不會像 AWS 託管的 Microsoft AD 一樣，自動附加使用者託管 Active Directory 的安全群組。
 資源復原:: 如果您決定復原網域名稱系統（ DNS ）資源、則 AD 和 DNS 中的資源記錄不會自動移除。您可以從 DNS 伺服器和 AD 移除記錄、如下所示。
 +
 --
@@ -60,7 +56,10 @@ Active Directory:: 在部署期間、 Active Directory （ AD ）會發生下列
 --
 
 
-.開始之前
+
+
+== 開始之前
+
 在建立新的資料庫主機之前、請確定您具備下列先決條件。
 
 認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和讀取/寫入模式權限"^]在工作負載工廠中建立新的資料庫主機。
