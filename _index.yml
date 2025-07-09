@@ -17,6 +17,8 @@ indexpage:
       url: "/explore-savings.html"
     - title: 註冊實例
       url: "/register-instance.html"
+    - title: 查看實例的架構完善狀態
+      url: "/optimize-configurations.html"
     - title: 建立 Microsoft SQL Server
       url: "/create-database-server.html"
     - title: 建立 PostgreSQL 伺服器

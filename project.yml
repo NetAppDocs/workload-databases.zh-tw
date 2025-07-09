@@ -1,7 +1,6 @@
 ---
 settings:
   name: Database workloads
-  platform: cloud
   internal:
     pdf_enabled: true
     termcheck_enabled: true
