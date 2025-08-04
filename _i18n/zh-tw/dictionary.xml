@@ -358,8 +358,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="948d113c0ab3cb85650dda6912a734c5" category="list-text">檢視資料庫</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
-  <block id="ca6b20c311193d70fa95150e9aadfeff" category="list-text">按一下下拉式箭頭以展開主機的列、以檢視其資料庫。</block>
-  <block id="bab47e98a40b74089a0df1373390d048" category="list-text">選取 * 檢視資料庫 * 。</block>
   <block id="67b0a66954400448325457f930e0f82b" category="paragraph">工作監控可支援最多三個層級的監控、視工作而定。例如、對於新的資料庫和沙箱複製建立、工作監控會追蹤父工作和子工作。</block>
   <block id="b830a8f027299af6d1d8ffbb130bcc58" category="list-text">工作監控層級</block>
   <block id="f52bf93027629736a089ef7f590091e0" category="list-text">層級 1 （父工作）：追蹤主機部署工作。</block>
@@ -374,10 +372,8 @@
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
   <block id="27c19be9febabd1e2fb82d7a39784f2d" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 新增認證和權限</block>
-  <block id="f13bb46705b371ce5ebc0ccc10f09bb0" category="inline-link-macro">瞭解如何部署資料庫伺服器</block>
   <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link-macro">手動新增認證至帳戶</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
-  <block id="6f6390592b833a81a0bda8c296a3c5b6" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 部署資料庫伺服器</block>
   <block id="76e0353f7732c65129a16b1dee5f98f2" category="inline-link-macro">建立使用者資料庫</block>
   <block id="9099614931eafcd02d62211a634872c7" category="inline-link-macro">複製主機以建立沙箱</block>
   <block id="24ba9febbdf4f0bdec223ad9cf7f746f" category="paragraph">重新整理複本可將複本更新至目前的來源資料庫、或更新至先前時間點所拍攝的來源資料庫快照。對沙箱複製所做的任何變更都將被刪除。</block>
@@ -462,7 +458,6 @@
   <block id="651b8da486ba685aa80d9dd4866d0171" category="sidebar">刪除沙箱複本</block>
   <block id="e7310dc180b25aba87aadafb96fb45f4" category="inline-image-macro">節約計算機頁面的螢幕擷取畫面會顯示左側 Amazon Elastic Block Store 組態上所選的 Microsoft SQL Server 、並提供自訂快照和複製值的選項。左側顯示的是在適用於 ONTAP 的 FSX 上使用 Microsoft SQL Server 和 Elastic Block Store 儲存設備的每月總成本、可節省美元金額和百分比。</block>
   <block id="dfa401fd4fd8841a340bd9f87c0910f8" category="list-text">* Snapshot frequency * ：從下拉式功能表中選取快照頻率。</block>
-  <block id="b92d49f94f8fe0dff03b4a997452d375" category="list-text">* 複製重新整理頻率 * ：從下拉式功能表中選取複製重新整理的頻率。</block>
   <block id="3a886ba0c11f46f4a69567f2c732a39e" category="list-text">* 複製複本數 * ：在 EBS 組態中輸入複製複本的數量。</block>
   <block id="6c8bc6142fe7d27949e96c7c1eb44a70" category="list-text">* 地區 * ：從下拉式功能表中選取地區。</block>
   <block id="4b671e090adbd727a425c2dc7c229735" category="list-text">* 部署模式 * ：從下拉式功能表中選取部署模式。</block>
@@ -540,7 +535,6 @@
   <block id="bd0005565e08b9807da651535d09e628" category="inline-xref">透過自訂功能探索節約效益</block>
   <block id="b2b254b73e406acc574452e9f29f5d9a" category="list-text">在「探索節約效益」標籤中、按一下「 * 探索使用 EBS 儲存設備的資料庫伺服器節約效益 * 」。</block>
   <block id="3f1c1b5d06b7f8c588cd928fa1ac5e90" category="list-text">在節約計算機中（可選）提供以下有關 EBS 存儲中克隆和快照的詳細信息，以獲得更準確的成本節約估算。</block>
-  <block id="8918771901c5636214df46e39006b50c" category="list-text">在 Explore 節約選項卡中，單擊 * Explore 節約 * （使用適用於 Windows File Server 儲存設備的 FSX ）。</block>
   <block id="60d184cc6fb4054879723de86764a020" category="list-text">在節約計算機中（可選）提供有關適用於 Windows 儲存設備的 FSX 中的克隆（陰影複製）和快照的下列詳細資料、以獲得更準確的成本節約預估。</block>
   <block id="c552646e3717f4144059bd229d9b3c96" category="paragraph">如果偵測到適用於 Windows 的 FSX 陰影複製、則預設值為 * 每日 * 。如果未偵測到陰影複製、預設值為 * 無快照頻率 * 。</block>
   <block id="724d4c3a0255dd97a61657dd67fdf48f" category="list-text">* 複製複本數 * ：在適用於 Windows 的 FSX 組態中輸入複製複本的數量。</block>
@@ -647,7 +641,6 @@
   <block id="3e7340039619cc08d8c1c5a3cd4bfb43" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登入 BlueXP  工作負載工廠</block>
   <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link-macro">在工作負載工廠設定帳戶</block>
   <block id="f6c71053fa21be1c35ee95758a3d1050" category="paragraph">您需要<block ref="782deaad814daa4f2ae09237c9394f09" category="inline-link-macro-rx"></block>使用其中一項登入<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>。</block>
-  <block id="a4470118de925b41004832644492fcab" category="paragraph">如果您在 _basive_ 模式下操作、就不需要再繼續操作。您可以開始使用資料庫來複製部分完成的程式碼範例。在資料庫方塊中、按一下 * 部署資料庫主機 * 。<block ref="cf724fcba48c8dc4cbe06a87f2c5df99" category="inline-link-macro-rx"></block>。</block>
   <block id="c1b68fc67f0e2b970d81dd29c91edb3c" category="summary">在 BlueXP  工作負載工廠中重新整理資料庫的沙箱複本。</block>
   <block id="6aa117cc6340cd2479e82444cbbadea9" category="doc">在 BlueXP  工作負載工廠中重新整理資料庫的沙箱複本</block>
   <block id="99ce2cd9a13526e0582af2c9fa2a4382" category="paragraph">在 BlueXP  工作負載工廠中重新整理資料庫的複本，使其與目前或上一個時間點的來源資料庫相當。</block>
@@ -739,12 +732,9 @@
   <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">加入工作負載工廠社群，追蹤後續討論或建立新討論。</block>
   <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">若要使用 * 建立案例 * 功能，您必須先註冊以取得支援。將您的 NetApp 支援網站認證與工作負載原廠登入建立關聯。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>。</block>
   <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">在工作負載原廠主控台的右上角，選取 * 說明 &gt; 支援 * 。</block>
-  <block id="6b30d701929b5a35aad77b847528d165" category="list-text">按一下包含要檢視之資料庫的執行個體的三點功能表。</block>
   <block id="5f08a8bbfa89b18958e70a8c6cbc44c3" category="paragraph">資料庫提供工作監控功能、讓您追蹤工作進度、並在發生任何故障時進行診斷和疑難排解。您可以依類型和狀態篩選工作，使用搜尋功能尋找工作，然後下載工作表。</block>
   <block id="5ade2a57e46cf328c900013574754aa9" category="list-text">工作監控功能會追蹤 _ 進行中 _ ， _ 完成 _ ， _ 完成問題 _ ，以及 _ 每天，每週，每兩週和每月失敗 _ 工作。</block>
   <block id="10f9689e79d67ec4a1651805229939e6" category="list-text">按一下工作的三點功能表，然後按一下 * 前往 CloudForgi狀態 * ，即可在 AWS CloudForgation 主控台中檢視工作記錄。</block>
-  <block id="7bbfa484f6d4f2fd489e0f9cbab2b174" category="inline-link-macro">使用節約計算機探索節約效益</block>
-  <block id="7634b96d2de45d4657e04dff8ecded5f" category="paragraph">當您的資料庫庫存中有適用於 Windows 檔案伺服器主機的 Elastic Block Store 或 FSX 時<block ref="481992ff67d8db3be48d151b768f7ce5" category="inline-link-macro-rx"></block>，您可以。</block>
   <block id="1f14f9d15a2087e9bbf3c4dd4b699191" category="list-text">在沙箱索引標籤中，按一下您要重新整理的沙箱複本的三點功能表。</block>
   <block id="e464b3f9b68caf988cec7cd7b5263281" category="list-text">在沙箱索引標籤中，按一下您要還原的沙箱複本的三點功能表。</block>
   <block id="07755964277c2a6aa1a5c2e771d7dbe0" category="list-text">在沙箱索引標籤中，按一下您要分割的沙箱複本的三點功能表。</block>
@@ -772,7 +762,6 @@
   <block id="5e73d91731c9445e9a0cc34e1969976a" category="summary">比較使用 Amazon Elastic Block Store （ EBS ），適用於 Windows 檔案伺服器的 FSX ，以及使用適用於 ONTAP 儲存設備的 SQL Server 內部部署資料庫儲存設備的成本。</block>
   <block id="6bcb23607586342322d4d9d515a81317" category="paragraph">比較在 Amazon Elastic Block Store （ EBS ）上使用 Microsoft SQL Server ，在 Windows 檔案伺服器上使用 FSX ，以及在 ONTAP 儲存設備上使用 FSX 的成本，以瞭解資料庫工作負載的 BlueXP  工作負載工廠節省成本。</block>
   <block id="7cf65e2ff3a983e2d864a8b1c64765f1" category="open-title">Microsoft SQL Server 內部部署</block>
-  <block id="a2985bc0847d7596067c038e830be18b" category="list-text">在「資料庫」方塊中，從下拉式功能表中選取 * 「探索節約 * 」，然後選取 * 「 Microsoft SQL Server 內部部署 * 」。</block>
   <block id="979b029ad875506edc5721a6a441e313" category="list-text">從 SQL Server 內部部署索引標籤下載指令碼，以評估內部部署 SQL Server 環境。</block>
   <block id="db99a3f687ce317a37116a375a2f8e0a" category="list-text">下載評估指令碼。指令碼是以 PowerShell 為基礎的資料收集工具。它會收集 SQL Server 組態和效能資料，然後上傳至 BlueXP  工作負載工廠。移轉顧問會評估資料，並針對您的 SQL Server 環境規劃適用於 ONTAP 部署的 FSX 。</block>
   <block id="2840f80705232625a2e7a961c5ae7c57" category="inline-image-macro">SQL Server 內部部署索引標籤的螢幕擷取畫面會顯示下載評估指令碼的選項。</block>
@@ -1008,10 +997,7 @@
   <block id="0bf39c9f8183add14af5a19ad4c80ff7" category="paragraph">使用資料庫工作負載工廠，您可以立即以_基本_模式開始。如果您想要使用工作負載工廠來探索主機，管理資源等，只需幾個步驟即可開始使用。</block>
   <block id="742b9524a4ab93b49eb1614d2aa4287b" category="inline-link-macro">_基本_、_唯讀_和_讀/寫_操作模式</block>
   <block id="e19be16b30ba3a27ed29174edef4c120" category="paragraph">選擇。 <block ref="5653101a5bec855c555e8762c96ccdfc" category="inline-link-macro-rx"></block></block>
-  <block id="b60b67e70947e6a46c89e0d1c15f532f" category="paragraph">如果您在「唯讀」或「讀取/寫入」模式下操作，則需要<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block>其中包括選擇工作負載功能（例如資料庫和 GenAI）以及建立 IAM 策略以確保您擁有以_唯讀_或_讀/寫_模式操作的正確權限。</block>
   <block id="32077805607c935c0ac59dd7b4a3fdc6" category="inline-link-macro">部署主機伺服器</block>
-  <block id="d53bce2cf4a36ab74378d06b70255899" category="inline-link-macro">註冊實例</block>
-  <block id="d4e3cc6f64d77dfb90b8f3a54369d97f" category="paragraph">最後，如果您選擇以讀取/寫入模式操作，則必須<block ref="086045f9b9433534ba0bc16ba8744718" category="inline-link-macro-rx"></block>或者<block ref="70dc6f6bba18b4f574a867d694f53a80" category="inline-link-macro-rx"></block>管理您的主機資源並新增使用者資料庫之前。</block>
   <block id="8373481dd509f9b495f59748db1aa76d" category="doc">在資料庫工作負載工廠中註冊實例</block>
   <block id="42c8e35152475231ef5a183766c9bebc" category="paragraph">資料庫只能向 FSx for ONTAP 檔案系統儲存註冊實例。</block>
   <block id="91a3069301b0dd7ee29890c4b610ba27" category="section-title">關於任務</block>
@@ -1032,7 +1018,6 @@
   <block id="34f8798aab35970d27e00ecdf2a9f526" category="doc">在資料庫的工作負載工廠中查看資料庫</block>
   <block id="87301bee2c9587d1e63d873a81c4e6fa" category="open-title">查看單一實例的資料庫</block>
   <block id="25734f9761801ac27c5c548d5c1829ca" category="open-title">查看所有實例的資料庫</block>
-  <block id="91063ca7fb76f05148ae179b2f84b160" category="paragraph">您已查看工作負載工廠內的資料庫資源。</block>
   <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">2025 年 6 月 03 日</block>
   <block id="ebb5d0c39395173ae9cea85bcf7d498e" category="sidebar">註冊實例</block>
   <block id="c38254582571637e4bded341a22ff035" category="sidebar">管理實例</block>
@@ -1114,10 +1099,48 @@
   <block id="4dede94da0834ecd430bec6189bab6cc" category="paragraph"><block ref="4dede94da0834ecd430bec6189bab6cc" category="inline-link-macro-rx"></block></block>
   <block id="897c69f19b2f39fbf3080a555a679d8e" category="paragraph">當您在資料庫清單中註冊了 FSx for ONTAP 檔案系統儲存的實例後，您可以<block ref="3d11347aa47327ab2988d0d3d3d6bd99" category="inline-link-macro-rx"></block>或者<block ref="e4dc5f068f234adb2616993ddf9e76bc" category="inline-link-macro-rx"></block> 。</block>
   <block id="621bb50103e94b947974d2656fb451ec" category="list-text">包含資料庫資源的實例必須具有 FSx for ONTAP 檔案系統儲存。</block>
-  <block id="dd36ed4d606eb4686fae0a7232af1eac" category="list-text">實例必須在工作負載工廠中註冊。瞭解如何<block ref="e24144bf29586c3fb748c1e1cf493cb5" category="inline-link-macro-rx"></block>。</block>
   <block id="2eb8fe4398b92e5c2222314cd13b7749" category="paragraph">利用配置分析洞察和建議，利用工作負載工廠為您的資料庫配置實施最佳實務。您可以輕鬆查看架構良好的狀態，了解資料庫配置的問題，並採取措施改善任何未針對可靠性、安全性、效率、效能和成本進行最佳化的配置。</block>
   <block id="2bab4675fc931e32d65c62820186d2e3" category="inline-link-macro">了解工作負載工廠中的配置分析和良好架構狀態。</block>
   <block id="00d1bba61e4e880f08c0a9d89d53205b" category="paragraph"><block ref="00d1bba61e4e880f08c0a9d89d53205b" category="inline-link-macro-rx"></block></block>
   <block id="8b2297ce6c1f7ab63874a40b0ca4a48f" category="paragraph">工作負載工廠每日分析資料庫配置。每日分析提供精心設計的狀態、見解和建議，以及自動修復配置問題的選項，以便您的配置符合最佳實踐。</block>
   <block id="08957eb86dbd3276e4875a3910d67420" category="sidebar">查看實例的架構完善狀態</block>
+  <block id="65bff5c812b0782e85c3554a907e01d2" category="doc">架構良好的分析包括高可用性叢集驗證</block>
+  <block id="bdd55244a112c438dfe30c6c85a4fcb1" category="paragraph">精心設計的分析現在包括對高可用性叢集的驗證。此驗證會從伺服器端檢查所有與叢集相關的配置，包括兩個節點上的磁碟可用性和配置、Windows 叢集配置和故障轉移準備。這可確保 Windows 叢集正確設定並可在需要時成功進行故障轉移。</block>
+  <block id="ad229ca0142680e057d4328835a9c1ef" category="section-title">實例可用的多層選單</block>
+  <block id="de0915fdab5af6d02111d53dcfd6ccb3" category="paragraph">工作負載工廠控制台現在包括實例的多層選單。此變更為管理實例提供了更有條理、更直觀的導航結構。實例管理的選單選項包括檢視實例儀表板、檢視資料庫、建立資料庫和建立沙盒克隆。</block>
+  <block id="8d79c3f1283ecc54b044e383580c41e0" category="inline-image-macro">具有多層選單結構的實例表選單的螢幕截圖。選擇實例表選單，然後管理實例以查看資料庫、建立資料庫和建立沙盒克隆。</block>
+  <block id="6f3cad43f8bb61ac11ebd8e87e6d6240" category="paragraph"><block ref="6f3cad43f8bb61ac11ebd8e87e6d6240" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5892d833ba074396906362cfc3ad6370" category="section-title">新的身份驗證選項可探索節省</block>
+  <block id="3035f336d9539562dbf5355f26c10a4f" category="paragraph">當<block ref="7254170b56a28e207df989a3f40b911f" prefix=" " category="inline-code"></block>使用者在 Microsoft SQL Server 上沒有足夠的權限，您可以使用 SQL Server 憑證進行驗證，或將缺少的 SQL Server 權限新增至<block ref="7254170b56a28e207df989a3f40b911f" prefix=" " category="inline-code"></block>。</block>
+  <block id="79717347a64fe25d0ea054d1670b04c6" category="inline-link-macro">探索使用Amazon FSx for NetApp ONTAP為您的資料庫環境節省的潛在成本</block>
+  <block id="0c99e0e3525f8446afe1107c5294bead" category="paragraph"><block ref="0c99e0e3525f8446afe1107c5294bead" category="inline-link-macro-rx"></block></block>
+  <block id="0d1fd436d021926cae2510df23023f8f" category="list-text">如果需要，請使用 SQL Server 憑證、Windows 憑證或新增缺少的 SQL Server 權限來驗證資料庫主機。</block>
+  <block id="057a8460985f241177200f51e8c70447" category="paragraph">如果身份驗證成功後「探索節省」頁面未載入數據，請選擇「*庫存*」標籤重新載入數據，然後再次選擇「探索節省」標籤。</block>
+  <block id="23a7f7680ea3dd0d8e35715312180e42" category="list-text">*快照頻率*：從選單中選擇快照頻率。</block>
+  <block id="0f2833865dd9bd39be8189333dae1c4f" category="list-text">*克隆刷新頻率*：從選單中選擇克隆刷新的頻率。</block>
+  <block id="d0e7e25b5d4913c7506b7abe691c9fa9" category="list-text">在資料庫磁貼中，從選單中選擇 *探索節省*，然後選擇 *FSx for Windows 上的 Microsoft SQL Server*。</block>
+  <block id="ca1bcaaac2fa2065767d6cb9b43a5bf7" category="list-text">在「探索節省」標籤中，選擇使用 FSx for Windows File Server 儲存的資料庫主機的「探索節省」*。</block>
+  <block id="e4b085b007f80e7f8236f3693c0d0198" category="list-text">在資料庫磁貼中，從選單中選擇 *探索節省*，然後選擇 *本機 Microsoft SQL Server*。</block>
+  <block id="808d573e3971d8d03b14bfaef043f475" category="section-title">Explore 節省中的資料庫主機驗證</block>
+  <block id="546dcae8b2a33c531e585b76d51af0dd" category="paragraph">在某些權限有限的情況下，身份驗證成功後，探索儲蓄頁面不會載入資料。</block>
+  <block id="012a999834d8188ec17b6ec67f4db97d" category="list-text">彈性：包含本機快照、FSx for ONTAP備份、跨區域複製 (CRR) 和 Microsoft SQL 高可用性。</block>
+  <block id="884d3679394cea72f73ae724c1666492" category="paragraph">如果您在「唯讀」或「讀取/寫入」模式下操作，則需要<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block>選擇工作負載功能，例如資料庫和 GenAI，並為所需的權限建立 IAM 策略。</block>
+  <block id="1caf2514b723d82877e2b000e3ba5e3f" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>發現或部署資源</block>
+  <block id="714bf7245115e9e60e5f4ba3dc04e4f5" category="paragraph">使用憑證和 IAM 策略，您可以發現清單中的現有資料庫資源或<block ref="086045f9b9433534ba0bc16ba8744718" category="inline-link-macro-rx"></block>。庫存提供了統一的介面來管理資源。</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
+  <block id="51632000dec3a4768004497c0cb1dc7a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>探索節省成本的機會</block>
+  <block id="27a00979342c6038e57c451a97056eba" category="inline-link-macro">使用探索儲蓄計算器</block>
+  <block id="dfc5bbea65d061d8ef65858dceb395dd" category="paragraph">當您的資料庫在本機或 AWS 上執行，並且儲存在 Amazon Elastic Block Store (EBS) 或 FSx for Windows File Server 上時，您可以<block ref="34af0e835becefaa17178e7fc48e3086" category="inline-link-macro-rx"></block>分析成本並有效規劃遷移。</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
+  <block id="b898d5d576224cd9ff29f84561766760" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block>實施結構良好的資料庫配置</block>
+  <block id="b06c1406344aa854d261bcc0a6e0f592" category="inline-link-macro">註冊實例</block>
+  <block id="e57096f2d1ce720a79c02a8e8f46d8de" category="paragraph">資料庫工作負載工廠會定期透過 Well-architected 儀表板分析Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 部署。要從結構良好的資料庫資源儀表板解決問題，首先需要<block ref="001cc0ec03a1e5527fa917b277b2c766" category="inline-link-macro-rx"></block>。</block>
+  <block id="e8663036e4d283a237c51601bdcfc5cd" category="inline-link-macro">實施結構良好的資料庫配置</block>
+  <block id="fc5052ca3918c28b8e418893a6b982f9" category="paragraph">註冊實例後，您可以查看架構良好的狀態並採取行動<block ref="1c0f7e78a2011839a2cb972a47f46536" category="inline-link-macro-rx"></block>在工作量工廠中。</block>
+  <block id="38d8d5207d4ef99316428985c300feb1" category="list-text">您必須在工作負載工廠中註冊執行個體才能查看資料庫。了解如何<block ref="e24144bf29586c3fb748c1e1cf493cb5" category="inline-link-macro-rx"></block> 。</block>
+  <block id="19ceb4c9dbec8f50da133f5989360510" category="list-text">點選實例的三點選單，然後選擇*檢視資料庫*。</block>
+  <block id="d1a11c072934a6070961082a4f0ccfac" category="paragraph">資料庫選項卡中顯示單一實例的資料庫。</block>
+  <block id="ad6ac298077f67c060156edbddf13a36" category="list-text">選擇“*資料庫*”標籤。</block>
+  <block id="d0c6ba62b6c3694f7b736785522100f6" category="paragraph">資料庫顯示所有已註冊實例。</block>
+  <block id="3488d38349240c72f75d081c2a79fa3b" category="section-title">2025年8月4日</block>
 </blocks>

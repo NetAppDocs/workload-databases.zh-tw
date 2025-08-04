@@ -26,16 +26,22 @@ summary: 開始使用資料庫工作負載工廠來使用基礎設施即程式�
 選擇。 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["_基本_、_唯讀_和_讀/寫_操作模式"^]
 
 [role="quick-margin-para"]
-如果您在 _basive_ 模式下操作、就不需要再繼續操作。您可以開始使用資料庫來複製部分完成的程式碼範例。在資料庫方塊中、按一下 * 部署資料庫主機 * 。link:create-database-server.html["瞭解如何部署資料庫伺服器"]。
+如果您在「唯讀」或「讀取/寫入」模式下操作，則需要link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["手動新增認證至帳戶"^]選擇工作負載功能，例如資料庫和 GenAI，並為所需的權限建立 IAM 策略。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]發現或部署資源
+[role="quick-margin-para"]
+使用憑證和 IAM 策略，您可以發現清單中的現有資料庫資源或link:create-database-server.html["部署主機伺服器"]。庫存提供了統一的介面來管理資源。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]探索節省成本的機會
+[role="quick-margin-para"]
+當您的資料庫在本機或 AWS 上執行，並且儲存在 Amazon Elastic Block Store (EBS) 或 FSx for Windows File Server 上時，您可以link:explore-savings.html["使用探索儲蓄計算器"]分析成本並有效規劃遷移。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]實施結構良好的資料庫配置
+[role="quick-margin-para"]
+資料庫工作負載工廠會定期透過 Well-architected 儀表板分析Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 部署。要從結構良好的資料庫資源儀表板解決問題，首先需要link:register-instance.html["註冊實例"]。
 
 [role="quick-margin-para"]
-如果您在「唯讀」或「讀取/寫入」模式下操作，則需要link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["手動新增認證至帳戶"^]其中包括選擇工作負載功能（例如資料庫和 GenAI）以及建立 IAM 策略以確保您擁有以_唯讀_或_讀/寫_模式操作的正確權限。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 部署資料庫伺服器
-[role="quick-margin-para"]
-最後，如果您選擇以讀取/寫入模式操作，則必須link:create-database-server.html["部署主機伺服器"]或者link:register-instance.html["註冊實例"]管理您的主機資源並新增使用者資料庫之前。
+註冊實例後，您可以查看架構良好的狀態並採取行動link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.html["實施結構良好的資料庫配置"]在工作量工廠中。
 
 .下一步
 當您在資料庫清單中註冊了 FSx for ONTAP 檔案系統儲存的實例後，您可以link:create-database.html["建立使用者資料庫"]或者link:create-sandbox-clone.html["複製主機以建立沙箱"] 。
-
-當您的資料庫庫存中有適用於 Windows 檔案伺服器主機的 Elastic Block Store 或 FSX 時link:explore-savings.html["使用節約計算機探索節約效益"]，您可以。

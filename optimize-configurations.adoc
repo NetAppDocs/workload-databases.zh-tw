@@ -28,7 +28,7 @@ link:optimize-overview.html["了解工作負載工廠中的配置分析和良好
 * 儲存配置：包含容量管理、精簡配置、分層策略、快照、Microsoft 多路徑 I/O (MPIO) 狀態和 MPIO 逾時設置
 * 運算：包括正確調整規模，作業系統修補程式，以及接收端調整（ RSS ）和 TCP 卸載等網路介面卡設定
 * 應用程式：包括 Microsoft SQL Server 授權， Microsoft SQL Server 修補程式和 MAXDOP 設定
-* 恢復能力：包括本機快照，用於 ONTAP 備份的 FSX ，以及跨區域複寫（ CRR ）
+* 彈性：包含本機快照、FSx for ONTAP備份、跨區域複製 (CRR) 和 Microsoft SQL 高可用性。
 * 克隆：包括刷新和刪除在工作負載工廠內部或外部創建的超過 60 天的克隆（沙盒）的選項
 
 
