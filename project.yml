@@ -51,6 +51,8 @@ sidebar:
         url: "/create-sandbox-clone.html"
     - title: 使用 CodeBox 自動化
       url: "/automate-codebox.html"
+    - title: 保護 Microsoft SQL Server 工作負載
+      url: "/protect-sql-server.html"
   - title: 管理與監控
     entries:
     - title: 監視資料庫作業

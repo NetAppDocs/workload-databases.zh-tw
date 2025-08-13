@@ -139,3 +139,9 @@ Microsoft SQL Server 內部部署儲存設備的 Volume 大小成本與百分比
 == Explore 節省中的資料庫主機驗證
 
 在某些權限有限的情況下，身份驗證成功後，探索儲蓄頁面不會載入資料。
+
+
+
+== 與BlueXP backup and recovery集成
+
+將主機新增至BlueXP備份和復原以進行保護後，資料庫發現有時會失敗。
