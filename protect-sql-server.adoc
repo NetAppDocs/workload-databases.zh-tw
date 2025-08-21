@@ -17,7 +17,7 @@ summary: 保護 Microsoft SQL Server 執行個體和資料庫。
 
 == 關於這項工作
 
-工作負載工廠有助於自動化發現執行個體和資料庫資源、驗證先決條件以及配置和安裝 Microsoft SQL Server 外掛程式的過程，所有這些都是使用BlueXP backup and recovery保護 Microsoft SQL Server 工作負載的準備過程的一部分。該外掛程式是NetApp軟體的主機端元件，可讓您保護 Microsoft SQL Server 工作負載。
+工作負載工廠自動發現資源、驗證先決條件以及配置和安裝 Microsoft SQL Server 插件，為使用BlueXP backup and recovery保護您的工作負載做好準備。該外掛程式是NetApp軟體的主機端元件，可讓您保護 Microsoft SQL Server 工作負載。
 
 BlueXP backup and recovery利用NetApp SnapMirror資料複製技術，透過建立快照副本並將其傳輸到備份位置來確保所有備份完全同步。
 
@@ -27,23 +27,22 @@ BlueXP backup and recovery利用NetApp SnapMirror資料複製技術，透過建�
 
 == 開始之前
 
-以下是使用BlueXP backup and recovery保護 Microsoft SQL Server 工作負載的要求：
+若要使用BlueXP backup and recovery保護 Microsoft SQL Server 工作負載，必須符合下列要求。
 
-* BlueXP連接器
+* 確保您的環境滿足link:https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-start-prereq.html#microsoft-sql-server-workload-requirements["BlueXP backup and recoverySQL Server 的要求"^]。
+* link:https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-start-prereq.html#in-bluexp["完成BlueXP要求"^]包括設定BlueXP、IAM 角色和BlueXP連接器。
 +
-參考link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解如何配置BlueXP連接器"^]和link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["標準BlueXP要求"^]。
+如果您擁有BlueXP帳戶的組織管理員存取權限，則 `backup and recovery super admin`當您<<使用BlueXP backup and recovery做好保護準備,使用BlueXP backup and recovery進行保護準備>>。
 
 +
-連接器需要 Ubuntu 22.04 LTS 作業系統。
-
-* BlueXP backup and recovery許可證
-+
-link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.html["設定BlueXP backup and recovery的許可"^]
-
-* 在連接器上設定主機解析
+** 在連接器上設定主機分辨率
 +
 若要發現資料庫，您必須在連接器上設定主機解析。在託管設備上，在 `/etc/hosts`文件。
 
+
+
+* link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.html["設定BlueXP backup and recovery的許可"^]
+* 在資料庫的工作負載工廠中，請確保使用 Windows 憑證註冊執行個體。若要提供 Windows 憑證，請從清單前往執行個體標籤。識別實例，選擇*管理實例*，然後選擇*實例儀表板*。從實例儀表板中，選擇三點選單，然後選擇*更新 Microsoft SQL Server 密碼*。使用 Windows 驗證更新密碼。
 
 
 
@@ -60,7 +59,7 @@ link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.htm
 . 從選單中選擇要保護的實例的*保護*。
 . 選擇您想要註冊和保護工作負載的*連接器*。
 . 為了準備資料保護，工作負載工廠會自動在BlueXP backup and recovery中註冊您的 SQL Server 資源，配置並安裝 Microsoft SQL Server 插件，並發現滿足保護 SQL Server 執行個體的先決條件的資源。選擇“*開始*”來啟動程序。
-. 滿足先決條件後，選擇「*重定向*」以重定向到BlueXP backup and recovery。
+. 滿足先決條件後，選擇*重定向*以存取BlueXP backup and recovery。
 
 
 .下一步
