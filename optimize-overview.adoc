@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: optimize-overview.html 
 keywords: database configuration issues, issues, analyze, scan, optimize, improve, database configuration, Amazon FSx for NetApp ONTAP, FSx for ONTAP, recommendation, recommendations, storage, compute, application, resiliency, scan, optimization, SQL Server, host, instance 
-summary: 資料庫工作負載工廠會定期分析 Microsoft SQL Server 配置以確定是否有任何問題。 
+summary: 資料庫工作負載工廠會定期分析 Microsoft SQL Server 和 Oracle 配置以確定是否有任何問題。 
 ---
 = 工作負載工廠中的資料庫環境配置分析
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 資料庫工作負載工廠會定期分析 Microsoft SQL Server 配置�
 
 
 [role="lead"]
-資料庫工作負載工廠會定期分析資料庫配置，以確定在 Amazon FSx for NetApp ONTAP 儲存體上部署的 Microsoft SQL Server 是否有任何問題。一旦發現問題，工作負載工廠就會向您展示問題所在，並解釋需要進行哪些更改，以確保您的資料庫配置達到最佳效能、成本效益並符合最佳實務。
+資料庫工作負載工廠會定期分析資料庫配置，以確定Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 和 Oracle 部署是否有任何問題。當發現問題時，工作負載工廠會向您展示問題所在，並解釋需要進行哪些變更以確保您的資料庫配置達到最佳效能、成本效益並符合最佳實務。
 
 主要功能包括：
 
@@ -29,10 +29,18 @@ summary: 資料庫工作負載工廠會定期分析 Microsoft SQL Server 配置�
 
 在檔案系統層級的工作負載原廠主控台中，所有適用於 ONTAP 檔案系統的 FSX 都會列出架構良好的狀態。架構良好的狀態可歸類為「問題」，「未分析」或「架構良好」。選擇架構良好的狀態會將您重新導向至檔案系統內架構良好的狀態索引標籤，您可以在其中找到架構良好的分數，組態類別，檔案系統的所有組態。
 
-架構良好的分數:: 分數包括所有目前分析的組態，並以百分比顯示。25% 的分數表示 25% 的檔案系統組態架構良好。
-組態類別:: 檔案系統組態分為幾類，符合 AWS 架構良好的架構架構的下列五大支柱。
-+
---
+
+
+== 架構良好的分數
+
+分數包括所有目前分析的組態，並以百分比顯示。25% 的分數表示 25% 的檔案系統組態架構良好。
+
+
+
+== 組態類別
+
+檔案系統組態分為幾類，符合 AWS 架構良好的架構架構的下列五大支柱。
+
 * _ 可靠性 _ ：確保工作負載能正確且一致地執行其預期功能，即使發生中斷也沒問題。ONTAP 備份的範例組態為 FSX 。
 * _ 安全 _ ：強調透過風險評估和緩解策略來保護資料，系統和資產。
 * 營運卓越 _ ：專注於提供最理想的架構和商業價值。
@@ -40,17 +48,19 @@ summary: 資料庫工作負載工廠會定期分析 Microsoft SQL Server 配置�
 * _ 效能效率 _ ：專注於有效運用資源來滿足系統需求，並在需求改變時維持最佳效能。
 
 
---
-分析範圍:: 最佳化的範圍會因評估的元件而異。例如、儲存最佳化是在 SQL 執行個體層級進行、而運算最佳化則是在主機層級進行。
 
+
+== 分析範圍
+
+最佳化的範圍會因評估的元件而異。例如、儲存最佳化是在 SQL 執行個體層級進行、而運算最佳化則是在主機層級進行。
 
 
 
 == 分析需求
 
-為了進行完整的資料庫環境分析，實例必須註冊並在線。
+為了進行完整的資料庫環境分析，資源必須註冊並在線。
 
-link:register-instance.html["了解如何註冊實例。"]
+link:register-instance.html["了解如何註冊資源。"]
 
 .下一步
 link:optimize-configurations.html["實施結構良好的資料庫配置"]

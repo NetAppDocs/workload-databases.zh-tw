@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: analyze-error-logs.html 
+keywords: analyze error logs, errors, error severity, Microsoft SQL Server error logs, smart analysis, Agentic AI 
+summary: 分析資料庫工作負載工廠內的錯誤日誌。 
+---
+= 分析工作負載工廠中的錯誤日誌
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用智慧型錯誤日誌分析器自動解釋 Microsoft SQL Server 錯誤日誌，以便您可以快速識別和解決問題。  Agentic AI 為基礎的分析需要 Amazon Bedrock 整合。
+
+.關於這項工作
+錯誤日誌分析和補救有助於維護 SQL Server 執行個體的健康和效能。有效地解釋 SQL Server 錯誤日誌需要仔細的分析和專業知識。手動監控、錯誤偵測和根本原因分析非常耗時，而且容易出錯。這些挑戰可能會延遲問題解決、增加停機時間並導致營運效率低落。智慧錯誤日誌分析器透過以下主要優勢解決了這些挑戰：
+
+* 智慧分組：根據唯一性、嚴重性和類別智慧地合併錯誤，並簡化故障排除過程，以便更快、更有效地解決問題。
+* 人工智慧驅動的調查：利用人工智慧主動分析錯誤，提供清晰、可操作的見解，以加速問題識別，而無需深厚的專業知識。
+* 錯誤豐富：透過外部引用增強錯誤日誌，提供清晰的上下文以提高理解和決策。
+* 最佳實務補救：為在 FSx for ONTAP上執行的 SQL Server 工作負載提供客製化的補救建議，使各種技能等級的使用者都能自信地解決問題。
+
+
+無論何時使用智慧錯誤日誌分析器，您都可以完全控制您的環境，同時受益於先進的 AI 分析。
+
+要使用智慧錯誤日誌分析器，您需要啟動 Amazon Bedrock、選擇模型工作負載工廠使用的模型、建立私人終端節點以連接到 Amazon Bedrock、新增權限並建立企業許可證。
+
+link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrock 定價"^]
+
+.開始之前
+要使用智慧型錯誤日誌分析器，您必須滿足以下先決條件：
+
+* 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和讀取/寫入模式權限"^]在工作負載工廠中建立新的資料庫主機。
+* link:https://docs.netapp.com/us-en/workload-databases/register-instance.html["註冊 SQL Server 實例"^]在工作量工廠中。*
+
+
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
+. 在資料庫中、選取 * 庫存 * 索引標籤。
+. 選擇*SQL Server*作為資料庫引擎。
+. 從「實例」標籤中，找到要分析的特定 SQL Server 實例，然後從選單中選擇「調查錯誤」。
+. 從「錯誤調查」標籤中，請按照控制台中的說明完成以下先決條件：
++
+** 亞馬遜基岩
+** 網路：Amazon Bedrock 的私有終端節點
+** EC2 執行個體設定檔角色的權限
+** 與工作負載資料庫管理 (wlmdb) 相關的憑證
+
+
+. 滿足先決條件後，選擇「立即調查」以使用智慧錯誤日誌分析器深入了解 SQL Server 錯誤日誌。
++
+掃描完成後，錯誤會顯示在控制台中，提供智慧錯誤日誌分析器偵測到的問題的全面視圖。
+
+. 使用過濾器根據嚴重性、時間範圍和錯誤代碼等標準來優化顯示的錯誤。
+. 查看詳細的錯誤訊息，包括原始錯誤訊息、基於 AI 的解釋以及解決錯誤的建議補救步驟。
+

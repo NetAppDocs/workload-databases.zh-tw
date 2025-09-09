@@ -356,7 +356,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
-  <block id="948d113c0ab3cb85650dda6912a734c5" category="list-text">檢視資料庫</block>
   <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
   <block id="67b0a66954400448325457f930e0f82b" category="paragraph">工作監控可支援最多三個層級的監控、視工作而定。例如、對於新的資料庫和沙箱複製建立、工作監控會追蹤父工作和子工作。</block>
   <block id="b830a8f027299af6d1d8ffbb130bcc58" category="list-text">工作監控層級</block>
@@ -556,7 +555,6 @@
   <block id="0937bd87e3f84605f28e13c1956980d3" category="list-text">* 持續最佳化 * ：持續離線掃描您的 Microsoft SQL Server 資產、為您提供深入見解、商機及建議的完整報告、協助您達到卓越營運績效。</block>
   <block id="04dff47f9a41cfa54b616dd86a4a6043" category="list-text">儲存規模：包括儲存層、檔案系統保留空間、記錄磁碟機大小及 TempDB 磁碟機大小</block>
   <block id="b1107628010e55afc5ec740439838f10" category="list-text">儲存配置：包括使用者資料檔案放置、記錄檔放置及 TempDB 放置</block>
-  <block id="8bc38d27c74401312cd5c45bfd8a7d05" category="list-text">儲存組態：包括容量管理、精簡配置、分層原則、快照、多重路徑 I/O 狀態、原則和工作階段等</block>
   <block id="1c11d2e59190fe6a4e37f1e68abafcb4" category="paragraph">主要功能包括：</block>
   <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">自動最佳實務驗證</block>
   <block id="029d49350caff46ab3e1f31c9c60f494" category="list-text">適當調整規模的建議</block>
@@ -635,7 +633,6 @@
   <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以搭配下列工具使用 BlueXP  工作負載工廠：</block>
   <block id="37c0391f707d07b4c1d64a02e6944c56" category="paragraph">Microsoft SQL Server 的工作負載原廠支援高可用度（永遠在容錯移轉叢集執行個體上），以及根據 AWS ， NetApp ONTAP 和 SQL Server 最佳實務做法進行單一執行個體部署。</block>
   <block id="b9aff8d3c5ff2dd2a4ce0963f381f957" category="paragraph">有關工作負載工廠或工作負載工廠應用程式與服務的一般問題，請<block ref="b9da93c3ce08d7fb81177157f233c056" category="inline-link-macro-rx"></block>參閱。</block>
-  <block id="71e2f5eacc9fc09317bbe70e053aeb1e" category="summary">在資料庫的 BlueXP  工作負載工廠中管理 Microsoft SQL Server 執行個體。</block>
   <block id="eb7ed5d3b1a2ff72006245ad37f9817b" category="paragraph">您必須擁有 AWS 帳戶才能使用資料庫。</block>
   <block id="c37e590e9c50960a15f3292676cc0c18" category="paragraph">請依照下列步驟開始使用。</block>
   <block id="3e7340039619cc08d8c1c5a3cd4bfb43" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登入 BlueXP  工作負載工廠</block>
@@ -775,7 +772,6 @@
   <block id="222ef17ae6eab247553156232cd650e1" category="list-text">如需更準確的結果，請更新運算資訊，儲存設備和效能詳細資料。</block>
   <block id="b0398f49dbe9d04be8ddd17378899545" category="list-text">您也可以選擇提供內部部署資料庫環境中的複本（陰影複製）和快照的下列詳細資料，以獲得更準確的成本節約預估。</block>
   <block id="7240997fa0d75a11f0b991615772d5d3" category="list-text">* 複製複本數 * ：在內部部署組態中輸入複製複本的數量。</block>
-  <block id="4597adc0f9f3096964b3b3efbe708588" category="list-text">運算：包括正確調整規模，作業系統修補程式，以及接收端調整（ RSS ）和 TCP 卸載等網路介面卡設定</block>
   <block id="af022f8b2257d68b04e48e672c457177" category="list-text">應用程式：包括 Microsoft SQL Server 授權， Microsoft SQL Server 修補程式和 MAXDOP 設定</block>
   <block id="1c8d307950dbef59ce61b6bc729fdb52" category="section-title">2025 年 03 月 2 日</block>
   <block id="382e51924c0a806fea2a0017322199a5" category="section-title">最佳化限制</block>
@@ -784,8 +780,6 @@
   <block id="7dd6090f4d4627220763b41db74bb898" category="section-title">內部部署節約計算</block>
   <block id="9fb10d1d0413bc062aa3f807aa200e53" category="paragraph">Microsoft SQL Server 內部部署儲存設備的 Volume 大小成本與百分比節約計算並未納入考量。</block>
   <block id="79dda14ccc601407ccb09f0fe3d93259" category="paragraph">如果您對 EC2 執行個體的所有傳出連線都使用 Proxy 伺服器，則必須允許存取下列網域，以便管理作業正常運作：</block>
-  <block id="d9f9431d48e0b55421e9c9376798d722" category="list-text"><block ref="c202a4052bc97ff0191552ea4c2c865c" prefix="" category="inline-code"></block></block>
-  <block id="9aa0a44ed97cfd5357fb393a8de57dc7" category="list-text"><block ref="1f378775539050b7c7b5e1cdfe121e2f" prefix="" category="inline-code"></block></block>
   <block id="4bd2e14395b83906b0838bbcc78df388" category="list-text"><block ref="3e51061ec4171070ff2ffdabfbd63cc3" prefix="" category="inline-code"></block></block>
   <block id="9b6e1103f46b83b38494e5b294e2c410" category="list-text"><block ref="c1eaf26c3b755ad5252456a5d3f34a2f" prefix="" category="inline-code"></block></block>
   <block id="f57c49a06b4a8a20d9a723cd677b9655" category="inline-link-macro">建立 PostgreSQL 伺服器</block>
@@ -860,7 +854,6 @@
   <block id="b06b1cc67628f13db38ca890693627fb" category="section-title">跨區域複寫評估</block>
   <block id="425a11288e6c089ecf9966b89b9be4eb" category="list-text">最佳化評估無法判斷當 ONTAP 檔案系統的目標 FSX 位於不同的 AWS 帳戶時，是否正在使用跨區域複寫（ CRR ）。</block>
   <block id="a73971e47314d5a9302d6e0e452948e6" category="list-text">工作負載工廠僅評估 ONTAP 檔案系統來源 FSX 的 CRR 組態。</block>
-  <block id="fb090b715eaceea73761a137a2eb45c0" category="list-text">恢復能力：包括本機快照，用於 ONTAP 備份的 FSX ，以及跨區域複寫（ CRR ）</block>
   <block id="c69c68bea63a58faad0233887cb8a9aa" category="section-title">2025 年 4 月 04 日</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
@@ -887,16 +880,11 @@
   <block id="c5d0b906e655aeb0e712fdc99742d179" category="list-text">若要清除複本，請選取要重新整理或刪除的複製資料庫（沙箱）。</block>
   <block id="64b911fb444d2ba4347dbcba8d839d9c" category="list-text">重新整理複本會將其與來源資料庫同步。只有在工作負載工廠中建立的複本才能使用重新整理功能。</block>
   <block id="b11d77d1a514a3b0bdf01908bc4826e9" category="list-text">刪除複本會永久移除複本，釋出儲存空間並降低成本。您可以刪除在工作負載工廠內外建立的複本。</block>
-  <block id="cf00508631c0415d4089fb10cbe0511d" category="summary">延遲或關閉不適用於資料庫環境的特定資料庫組態分析，以避免不必要的警示和不正確的最佳化結果。</block>
   <block id="0cdf26a09e8e4cde6653e44f4abd73fb" category="doc">延遲或關閉資料庫組態分析</block>
   <block id="77df5d7dfd76cd0e6a1a7a837c509672" category="paragraph">延遲或關閉不適用於資料庫環境的特定資料庫組態分析，以避免不必要的警示和不正確的最佳化結果。您可以隨時重新啟動延遲或關閉的組態分析。</block>
   <block id="54498ab3155b38b14174ab9dd5caef5a" category="paragraph">資料庫組態的應用程式需求會有所不同。工作負載工廠提供兩個選項，可略過分析特定資料庫組態，以便您只監控相關問題，並準確檢視相關組態的健全狀況。當特定組態分析被延遲或關閉時，組態不會納入整體最佳化分數中。</block>
-  <block id="47112685bf756c67c8ac297ef60e48dc" category="paragraph">您可以在組態層級和 SQL Server 執行個體層級延遲，關閉及重新啟動組態分析。</block>
   <block id="8a219fba8bbd202ad1f7a47267ff5a2d" category="list-text">* 延遲 30 天 * ：延遲分析將停止分析 30 天。30 天後，分析將自動重新啟動。</block>
   <block id="71e07950d625dfcf829cac7019fb6f26" category="list-text">* 關閉 * ：取消分析會無限期地延後分析。您可以視需要重新啟動分析。</block>
-  <block id="cd5a81e0d9eeff49759cb9a6eaa2e1e2" category="paragraph">您可以延遲或關閉 Microsoft SQL Server 執行個體的下列組態：</block>
-  <block id="999cc42b236c7aee1157ff02d6f1bcd5" category="list-text">複製</block>
-  <block id="75d9a01908e416c932fa5ee3fa0c77a3" category="paragraph">下列指示說明如何在組態層級延遲，關閉或重新啟動分析。若要針對特定 SQL Server 執行個體完成下列工作，請從 * 儀表板 * 索引標籤開始。</block>
   <block id="43d86b2167e8a3464a552ee706d46d88" category="paragraph-title">延後</block>
   <block id="38d07dc1916e6ca30a9f936368828d18" category="paragraph">延後 30 天內停止組態分析。30 天後，分析將自動重新啟動。</block>
   <block id="b8bad4787f04ab4d4933464f551ed74c" category="list-text">在 *Inventory （清單） * 選項卡中，向下滾動至要延遲的配置，選擇三點菜單，然後選擇 *postpone for 30 days * （延遲 30 天）。</block>
@@ -940,29 +928,21 @@
   <block id="f8c2bea89896f4c645e761417ab6d4bd" category="paragraph">確保部署子網路與現有介面端點相關聯，且安全性群組允許透過 HTTPS (443) 協定存取所選子網路。</block>
   <block id="e2aadc51c2249a0d2d63030bd046d5b5" category="paragraph">使用跨 VPC DNS 時，DNS 所在的另一個 VPC 上的終端​​節點的安全群組應允許連接埠 443 存取部署子網路。否則，您應該在加入跨 VPC Active Directory 時提供本機 VPC 的 DNS 解析器。在多複製網域控制器環境中，如果某些網域控制器無法從子網路訪問，您可以「重新導向到 CloudFormation」並輸入<block ref="a756f9902f1db5a37f12d3f459f172a5" prefix=" " category="inline-code"></block>連接到 Active Directory。</block>
   <block id="83e91497a1333c0a1b677d8c63d846d9" category="list-text">按一下託管執行個體的三點選單，然後選擇*建立使用者資料庫*。</block>
-  <block id="db8588c095bdb42680df1d8ae6e6c242" category="paragraph">您可以稍後重新註冊該實例。</block>
-  <block id="6e58f833a8c88963786858e4cd0820f1" category="list-text">點選實例的三點選單即可取消註冊。</block>
-  <block id="a20e9b47d2ae2e8dcad4b38296aada53" category="list-text">選擇*註銷*。</block>
   <block id="7d02c7321e50b7c2fa346dd9edc083f2" category="paragraph">工作負載工廠支援偵測僅在 Amazon Linux 作業系統上執行的 PostgreSQL 執行個體和僅在 Red Hat Enterprise Linux 上執行的 Oracle 執行個體。</block>
   <block id="6923ba19fe8a091f76827ff8c86785de" category="summary">資料庫工作負載工廠是一種端到端資料庫部署和維護服務，具有內建的最佳化、自動精簡克隆以及監控和解決功能的最佳實踐。</block>
   <block id="bb3a81d6ea3e61933815d8c7984727a3" category="section-title">資料庫的工作負載工廠是什麼？</block>
   <block id="2d2ef55c7d048aa8eb19ea9e98550603" category="paragraph">資料庫工作負載工廠可偵測、評估、規劃、配置並將 Microsoft SQL Server 資料移至 Amazon FSx for NetApp ONTAP（FSx for ONTAP）部署，並針對滿足您的效能和成本預期進行最佳化，同時遵循業界最佳實務。在整個生命週期中，工作負載工廠為 ONTAP 的 FSX 上的資料庫提供持續的最佳化與管理。</block>
   <block id="9d31d07638cfa37e022a93f50a24a37a" category="paragraph">三種不同的操作模式 - 基本模式、唯讀模式和讀取/寫入模式 - 為工作負載工廠內外的部署提供了靈活的選項。在 _base_ 模式下，利用程式碼片段在工作負載工廠外部使用，以零信任的方式立即獲得價值。在唯讀模式和讀/寫模式下，透過增量信任獲得增量價值。</block>
-  <block id="a114eda0d7b20c56bc3d8d99fe48b64a" category="summary">了解資料庫工作負載工廠中的執行個體管理。</block>
-  <block id="88425651b441fbd6a0bc45cd78baf191" category="doc">資料庫工作負載工廠中的執行個體管理</block>
   <block id="a40a9332a94e9ee509dd52088052022f" category="paragraph">管理任務包括：</block>
   <block id="32b73a9b89aeca54ae1906ac5b5c40a3" category="inline-link-macro">建立資料庫</block>
   <block id="d0a9d2136da399d9e73cfadd54adfb7a" category="list-text"><block ref="d0a9d2136da399d9e73cfadd54adfb7a" category="inline-link-macro-rx"></block></block>
   <block id="45e1b252e76746345363ea0d06920684" category="inline-link-macro">建立資料庫克隆（沙盒）</block>
   <block id="fd8a54c517020c653ae1776e8e00d343" category="list-text"><block ref="fd8a54c517020c653ae1776e8e00d343" category="inline-link-macro-rx"></block></block>
-  <block id="050cc3957bb212dc2758e7dd27f7faf8" category="inline-link-macro">查看資料庫</block>
-  <block id="7a403e4f1f2e0af187fa5a95116054cc" category="list-text"><block ref="7a403e4f1f2e0af187fa5a95116054cc" category="inline-link-macro-rx"></block></block>
   <block id="2f2280ee27b03fc450cd69afae071e39" category="inline-link-macro">實施架構良好的資料庫配置</block>
   <block id="d3379f7eb15b947ec99d4daad00317b3" category="list-text"><block ref="d3379f7eb15b947ec99d4daad00317b3" category="inline-link-macro-rx"></block></block>
   <block id="c4363ade7c2d208d79dee9b60bc51922" category="doc">在工作負載工廠中實現架構良好的資料庫配置</block>
   <block id="622529f53e43499d3ab7bec3ddade638" category="paragraph">您可以選擇查看配置問題的建議並從工作負載工廠控制台內的資料庫清單中修復這些問題。</block>
   <block id="681f8e0d48f8a5609d29d038dfdb7354" category="list-text">分析內容</block>
-  <block id="f6e75af7aefeb95ed6d70c67eae48cbc" category="list-text">工作負載工廠分析 Microsoft SQL Server 執行個體的以下配置的良好架構狀態：</block>
   <block id="eb39e8dfd54bf78043b2372b30f7b2b6" category="list-text">克隆：包括刷新和刪除在工作負載工廠內部或外部創建的超過 60 天的克隆（沙盒）的選項</block>
   <block id="05733d6679707441838e3ca92fcb1e85" category="inline-link-macro">AWS 帳戶憑證和讀取/寫入權限</block>
   <block id="e6ff59cff1eb616f7a9d6b770313807a" category="list-text">你必須有<block ref="6428f71963510d960d64cd03bb6513ae" category="inline-link-macro-rx"></block>分析您的資料庫配置。</block>
@@ -974,8 +954,6 @@
   <block id="f73028254f9c4297e3f60654068105e0" category="list-text">選取下拉式箭頭以檢視任何組態的建議。建議包括最佳實踐、未優化配置的潛在缺陷以及重要注意事項。請務必仔細檢閱建議內容。</block>
   <block id="dae891145ffbf1b1653fc3da2a87faac" category="list-text">當選項可用時，選擇“查看並修復”配置問題。</block>
   <block id="45b5dce37159255d07342e3102124571" category="list-text">選取 * 繼續 * 以修正組態問題。</block>
-  <block id="79d26843be417ff5c9a9e3a3deda3e50" category="summary">資料庫工作負載工廠會定期分析 Microsoft SQL Server 配置以確定是否有任何問題。</block>
-  <block id="dd79b42f7eeac8287405a50984fca176" category="paragraph">資料庫工作負載工廠會定期分析資料庫配置，以確定在 Amazon FSx for NetApp ONTAP 儲存體上部署的 Microsoft SQL Server 是否有任何問題。一旦發現問題，工作負載工廠就會向您展示問題所在，並解釋需要進行哪些更改，以確保您的資料庫配置達到最佳效能、成本效益並符合最佳實務。</block>
   <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">每日組態分析</block>
   <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">架構良好的狀態</block>
   <block id="766f78d394e3aa97e328026acbda4d55" category="paragraph">在檔案系統層級的工作負載原廠主控台中，所有適用於 ONTAP 檔案系統的 FSX 都會列出架構良好的狀態。架構良好的狀態可歸類為「問題」，「未分析」或「架構良好」。選擇架構良好的狀態會將您重新導向至檔案系統內架構良好的狀態索引標籤，您可以在其中找到架構良好的分數，組態類別，檔案系統的所有組態。</block>
@@ -999,25 +977,14 @@
   <block id="e19be16b30ba3a27ed29174edef4c120" category="paragraph">選擇。 <block ref="5653101a5bec855c555e8762c96ccdfc" category="inline-link-macro-rx"></block></block>
   <block id="32077805607c935c0ac59dd7b4a3fdc6" category="inline-link-macro">部署主機伺服器</block>
   <block id="8373481dd509f9b495f59748db1aa76d" category="doc">在資料庫工作負載工廠中註冊實例</block>
-  <block id="42c8e35152475231ef5a183766c9bebc" category="paragraph">資料庫只能向 FSx for ONTAP 檔案系統儲存註冊實例。</block>
   <block id="91a3069301b0dd7ee29890c4b610ba27" category="section-title">關於任務</block>
-  <block id="dda5f7103fa5228c52d16c80f09cc5ad" category="paragraph">您可以使用 SQL Server 憑證或 Windows 憑證驗證連結。</block>
-  <block id="573898775af774ec571967393eb2000b" category="list-text">在「庫存」標籤中，選擇「*實例*」標籤。</block>
   <block id="6f46b8383b008a103c4bdd369e5fa92e" category="list-text">如果缺少，請選擇工作負載工廠來*安裝缺少的 AWS 和 NetApp PowerShell 模組*。</block>
   <block id="32ab85eda4f533657c12e81e940cffd6" category="list-text">如果缺少，請選擇「工作負載工廠」來「安裝缺少的 PowerShell 7」。安裝缺少的 PowerShell 模組 7 需要重新啟動系統。</block>
-  <block id="3a36d2a0f50b8674db7030efa3481a16" category="list-text">查看以下功能的先決條件清單。必須滿足一個先決條件才能註冊實例。</block>
   <block id="63d045fa5e972b158cfb23097e222ca7" category="list-text">*審查精心設計的問題和建議*</block>
   <block id="fadeabdd0af8696756351a03b6a3e38f" category="list-text">*修復架構問題*</block>
   <block id="682848268cf27965cff502f178244a95" category="list-text">建立資料庫</block>
   <block id="e1f772db4ebe33be8870db0341b57f2e" category="list-text">建立資料庫副本（沙盒）</block>
   <block id="bbd75173916a59e2d03d0aa3c8453950" category="paragraph">完成先決條件包括更新您的 AWS IAM 政策權限、EC2 IAM 執行個體設定檔權限、SQL Server 權限和 PowerShell 模組。</block>
-  <block id="00e81f5539f96548498b7f28a5b0bf73" category="list-text">完成至少一個缺失的先決條件才能繼續。</block>
-  <block id="efad96be420cc388123ecddd686d794e" category="list-text">當一個或多個先決條件完成並且檢查*準備就緒*時，您可以選擇*註冊*該實例。</block>
-  <block id="a037e794bf828053866493b8452ab9c7" category="paragraph">實例註冊請求已發起。選擇「作業監控」標籤以追蹤進度。</block>
-  <block id="5dfcf5a53e6a3c94eb359647b453a807" category="summary">若要取得工作負載工廠中資料庫資源的摘要，請查看資料庫清單中的所有資料庫。您也可以查看單一註冊實例的資料庫。</block>
-  <block id="34f8798aab35970d27e00ecdf2a9f526" category="doc">在資料庫的工作負載工廠中查看資料庫</block>
-  <block id="87301bee2c9587d1e63d873a81c4e6fa" category="open-title">查看單一實例的資料庫</block>
-  <block id="25734f9761801ac27c5c548d5c1829ca" category="open-title">查看所有實例的資料庫</block>
   <block id="4aa37f4d9a391345e9a54c68333e2503" category="section-title">2025 年 6 月 03 日</block>
   <block id="ebb5d0c39395173ae9cea85bcf7d498e" category="sidebar">註冊實例</block>
   <block id="c38254582571637e4bded341a22ff035" category="sidebar">管理實例</block>
@@ -1033,7 +1000,6 @@
   <block id="970fa5fe1f85bede58eadf785f5bb30d" category="paragraph">您可以使用_快速建立_或_進階建立_部署模式在工作負載工廠中以_唯讀_或_讀取/寫入_模式權限完成此任務。</block>
   <block id="1ecac8592ecd595bc4f53507e476fc53" category="list-text">您必須<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>在工作負載工廠中建立沙箱複本。</block>
   <block id="b2a6b8ac31e0bf9968f6f80649cc61cd" category="inline-link-macro">您必須新增 AWS 帳戶憑證和「唯讀」或「讀取/寫入」模式權限</block>
-  <block id="b6693184dc0e8cc975fb8e936b04d129" category="paragraph">實例的主機必須顯示在「清單」標籤中。若要讓主機顯示在清單中， <block ref="99382ab95f660f372dfed7d2289ac38a" category="inline-link-macro-rx"></block> 。</block>
   <block id="a38d5cfb962091710b5c8c4cae183d64" category="summary">追蹤資料庫作業並監控資料庫工作負載工廠內的資料庫。</block>
   <block id="bcdf66d04230e723b2fc5152ae10a7ef" category="doc">監視工作負載工廠中的資料庫作業</block>
   <block id="9ae4e4b9fdc398feb3be344b26cbf99f" category="sidebar">監視資料庫作業</block>
@@ -1051,29 +1017,14 @@
   <block id="a05724b342c36062e480732f660ae9d4" category="paragraph"><block ref="a05724b342c36062e480732f660ae9d4" category="inline-link-macro-rx"></block></block>
   <block id="4698c78219bd6bc2a4fb47e8f4149213" category="section-title">工作負載工廠中對 Windows 身份驗證的支持</block>
   <block id="f7b79998a8d6049aa7838e93bde48d38" category="paragraph">在部署期間，工作負載工廠會啟用 CredSSP，以便將憑證委託給用於預配 SQL 的腳本。當所有網域電腦的群組原則阻止 CredSSP 委託時，部署將會失敗。部署後，工作負載工廠會停用 CredSSP。</block>
-  <block id="b6705e62a5d2c7330d2d39782b5e5ea5" category="summary">如果您不再想要部署或監控執行個體資源，請取消註冊該執行個體。</block>
-  <block id="aa76a1c51b277c90780c0553dba1e6a6" category="doc">在工作負載工廠中註銷實例</block>
-  <block id="f6bad6313dc88084b7b528201cafe3f3" category="paragraph">如果您不再需要部署或監控執行個體資源，請取消註冊該執行個體。取消註冊實例也會刪除該實例所使用的儲存容量。</block>
-  <block id="211144ada0054ff2dc63d0d18937aa61" category="list-text">按一下下拉箭頭展開要登出的實例的行。</block>
-  <block id="c26c7662809c3cf0dba6112bdd926af6" category="paragraph">主機擴充功能並且實例出現。</block>
-  <block id="1856b70146e1eb8913254cbfe92297bb" category="paragraph">該實例現已註銷。您可以稍後重新註冊該實例。</block>
-  <block id="6c64b9db2e7fd3b31f4555475ec6d206" category="paragraph">管理工作負載工廠中註冊的執行個體包括為您的執行個體部署資源，例如建立資料庫和資料庫克隆，以及監控執行個體和資料庫狀態、資源利用率、保護和儲存效能。此外，您還可以分析資料庫配置的架構狀態，並實施配置最佳實踐，以提高效能並降低營運成本。實例管理僅適用於使用 FSx for ONTAP 檔案系統儲存的實例</block>
-  <block id="e896cf877d1a24edab48f48ae5b93cd3" category="inline-link-macro">註冊實例</block>
-  <block id="96d6a5888029ed237de0b10d0ebb8c11" category="paragraph">你必須<block ref="e24144bf29586c3fb748c1e1cf493cb5" category="inline-link-macro-rx"></block>執行以下任何一項管理任務。</block>
   <block id="3a8d4198146673b795eefef16f684af6" category="summary">資料庫工作負載工廠掃描 Microsoft SQL Server 配置，提供見解和建議，協助您實現卓越營運。</block>
   <block id="a3fbe9088342ceac653613ae546dd620" category="list-text">儲存配置：包含容量管理、精簡配置、分層策略、快照、Microsoft 多路徑 I/O (MPIO) 狀態和 MPIO 逾時設置</block>
   <block id="29ce878a000bdfaa01aa19a803eb9f01" category="paragraph">*全選*是預設設置，但您可以選擇特定資源進行修復。</block>
   <block id="476140ae72277e361d19df8904bed3f8" category="list-text">對於除克隆清理之外的所有配置，請查看建議詳細資訊以了解如果選擇修復問題會發生什麼。某些修復操作可能會導致執行個體停機或服務中斷。</block>
   <block id="668c940004667a9b45c01f3ac3733e30" category="paragraph">工作負載工廠開始修復問題。選取 * 工作監控 * 標籤以檢視作業狀態。</block>
-  <block id="f05524916dd5a55aec36bddfa5fb904c" category="paragraph">註冊實例，以便您可以在資料庫工作負載工廠中監控實例和資料庫狀態、資源利用率、保護和儲存效能。</block>
-  <block id="7a0d56e0cdd7c291d4bd1c91b0c83fb2" category="paragraph">註冊實例包括兩個步驟 - 對實例進行驗證和準備實例，確保所有 AWS、NetApp 和 PowerShell 模組都安裝在實例上。</block>
-  <block id="d22b8a6da848f40e2e8ffbc5278c4b21" category="admonition">工作負載工廠僅支援 Microsoft SQL Server 執行個體註冊和管理。根據您在工作負載工廠中選擇的 AWS 帳戶憑證，PostgreSQL 和 Oracle 主機可能會出現在清單中。目前，工作負載工廠僅支援在 Amazon Linux 作業系統上執行的未註冊 PostgreSQL 實例，以及僅在 Red Hat Enterprise Linux 上執行的 Oracle 執行個體。</block>
   <block id="b223957af5cc7e8c75e716638466ec57" category="section-title">在私有網路中註冊實例</block>
-  <block id="1aeadeda09b66d1ea52c87bae075d4bd" category="paragraph">若要在沒有外部連線的私有網路中註冊實例，下列端點需要在與 SQL 伺服器所在子網路關聯的 VPC 中可用。確保介面端點允許附加安全群組中的連接埠 443 。</block>
   <block id="1c664ded0c67f82fa7ab21854726e5dd" category="paragraph">在註冊實例之前請考慮以下事項：</block>
-  <block id="5797fd986dbf47b43acfcf7f83794984" category="list-text">使用 Windows 網域使用者憑證對 SQL Server 管理作業進行驗證時，工作負載工廠會在 SQL 節點上啟用 CredSSP 委派。如果使用群組原則封鎖所有網域電腦的 CredSSP 委派，則無法使用 Windows 使用者憑證進行驗證。</block>
   <block id="94c1d05fa1e6006b35f1a65b6916623c" category="paragraph">註冊實例包括實例認證和準備。</block>
-  <block id="1884fd556e561cff2044cef19867f995" category="list-text">選擇註冊單一實例或註冊多個實例。</block>
   <block id="4720c276e94cf6c623b7e0937297e034" category="list-text">單一實例註冊：導航至要管理的實例並選擇*註冊實例*。</block>
   <block id="7731a12ac1a2d63bde3daa3a6805f57d" category="list-text">多實例註冊：選擇*註冊多個實例*按鈕。</block>
   <block id="30e9333193b52fb7cdf293788c864af1" category="paragraph">註冊多個實例有兩種方式。兩種情況下，實例必須具有相同的身份驗證狀態（未身份驗證或已身份驗證）。</block>
@@ -1092,14 +1043,8 @@
   <block id="e6884d3b77d68ac903da5836a6c33345" category="paragraph">現在，工作負載工廠支援使用 Windows 驗證的使用者來註冊執行個體並從管理功能中受益的 SQL Server 驗證。</block>
   <block id="b8419cf58039d1a67d2046abd157e28b" category="paragraph"><block ref="b8419cf58039d1a67d2046abd157e28b" category="inline-link-macro-rx"></block></block>
   <block id="2e1bd7e9b2f7897e3fbd2f64db19746c" category="section-title">實例檢測支持</block>
-  <block id="e5872a50d5d45d5b9d394ddc65dfee1f" category="inline-link-macro">了解如何註冊實例。</block>
-  <block id="09ea6435a2780f6e0f876796133da036" category="list-text">若要評估 Microsoft SQL Server 實例的存儲，必須在工作負載工廠中註冊該實例，且儲存類型必須是 FSx for ONTAP。 <block ref="4dede94da0834ecd430bec6189bab6cc" category="inline-link-macro-rx"></block></block>
   <block id="e6b1ed7d667d6b75280f0be1619fde20" category="list-text">在實例的「良好架構狀態」頁面上，查看分析結果。</block>
-  <block id="a26f09029b7e444a21db17eb62e9d2d5" category="paragraph">為了進行完整的資料庫環境分析，實例必須註冊並在線。</block>
-  <block id="4dede94da0834ecd430bec6189bab6cc" category="paragraph"><block ref="4dede94da0834ecd430bec6189bab6cc" category="inline-link-macro-rx"></block></block>
   <block id="897c69f19b2f39fbf3080a555a679d8e" category="paragraph">當您在資料庫清單中註冊了 FSx for ONTAP 檔案系統儲存的實例後，您可以<block ref="3d11347aa47327ab2988d0d3d3d6bd99" category="inline-link-macro-rx"></block>或者<block ref="e4dc5f068f234adb2616993ddf9e76bc" category="inline-link-macro-rx"></block> 。</block>
-  <block id="621bb50103e94b947974d2656fb451ec" category="list-text">包含資料庫資源的實例必須具有 FSx for ONTAP 檔案系統儲存。</block>
-  <block id="2eb8fe4398b92e5c2222314cd13b7749" category="paragraph">利用配置分析洞察和建議，利用工作負載工廠為您的資料庫配置實施最佳實務。您可以輕鬆查看架構良好的狀態，了解資料庫配置的問題，並採取措施改善任何未針對可靠性、安全性、效率、效能和成本進行最佳化的配置。</block>
   <block id="2bab4675fc931e32d65c62820186d2e3" category="inline-link-macro">了解工作負載工廠中的配置分析和良好架構狀態。</block>
   <block id="00d1bba61e4e880f08c0a9d89d53205b" category="paragraph"><block ref="00d1bba61e4e880f08c0a9d89d53205b" category="inline-link-macro-rx"></block></block>
   <block id="8b2297ce6c1f7ab63874a40b0ca4a48f" category="paragraph">工作負載工廠每日分析資料庫配置。每日分析提供精心設計的狀態、見解和建議，以及自動修復配置問題的選項，以便您的配置符合最佳實踐。</block>
@@ -1137,11 +1082,7 @@
   <block id="e57096f2d1ce720a79c02a8e8f46d8de" category="paragraph">資料庫工作負載工廠會定期透過 Well-architected 儀表板分析Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 部署。要從結構良好的資料庫資源儀表板解決問題，首先需要<block ref="001cc0ec03a1e5527fa917b277b2c766" category="inline-link-macro-rx"></block>。</block>
   <block id="e8663036e4d283a237c51601bdcfc5cd" category="inline-link-macro">實施結構良好的資料庫配置</block>
   <block id="fc5052ca3918c28b8e418893a6b982f9" category="paragraph">註冊實例後，您可以查看架構良好的狀態並採取行動<block ref="1c0f7e78a2011839a2cb972a47f46536" category="inline-link-macro-rx"></block>在工作量工廠中。</block>
-  <block id="38d8d5207d4ef99316428985c300feb1" category="list-text">您必須在工作負載工廠中註冊執行個體才能查看資料庫。了解如何<block ref="e24144bf29586c3fb748c1e1cf493cb5" category="inline-link-macro-rx"></block> 。</block>
-  <block id="19ceb4c9dbec8f50da133f5989360510" category="list-text">點選實例的三點選單，然後選擇*檢視資料庫*。</block>
-  <block id="d1a11c072934a6070961082a4f0ccfac" category="paragraph">資料庫選項卡中顯示單一實例的資料庫。</block>
   <block id="ad6ac298077f67c060156edbddf13a36" category="list-text">選擇“*資料庫*”標籤。</block>
-  <block id="d0c6ba62b6c3694f7b736785522100f6" category="paragraph">資料庫顯示所有已註冊實例。</block>
   <block id="3488d38349240c72f75d081c2a79fa3b" category="section-title">2025年8月4日</block>
   <block id="412038dfc7c530b95fd4f54ca173992c" category="paragraph">BlueXP backup and recovery可讓您備份、還原、驗證和複製 Microsoft SQL Server 資料庫和可用性群組。從工作負載工廠控制台，您可以存取和使用BlueXP backup and recovery保護 Microsoft SQL Server 工作負載。</block>
   <block id="0eabf86e93873fc39b5a49903ec1c780" category="inline-link-macro">了解如何透過工作負載工廠控制台保護 Microsoft SQL Server 工作負載</block>
@@ -1158,7 +1099,6 @@
   <block id="2a664f2dff1a4229f6bce49f7fdfe6f2" category="paragraph">若要發現資料庫，您必須在連接器上設定主機解析。在託管設備上，在<block ref="ad942c725cd0cae65ca4c63717ec464c" prefix=" " category="inline-code"></block>文件。</block>
   <block id="c8e8c4da5256c1c745e327697c0ab942" category="list-text">將*引擎類型*過濾為*Microsoft SQL Server*。</block>
   <block id="60cf19833f9c8f41398952fc003ec02d" category="list-text">從選單中選擇要保護的實例的*保護*。</block>
-  <block id="f44b851c9ab8fcb80a6dd8db43a90f89" category="list-text">選擇您想要註冊和保護工作負載的*連接器*。</block>
   <block id="4aaf55799008f1b65a60e1b728d3e48c" category="list-text">為了準備資料保護，工作負載工廠會自動在BlueXP backup and recovery中註冊您的 SQL Server 資源，配置並安裝 Microsoft SQL Server 插件，並發現滿足保護 SQL Server 執行個體的先決條件的資源。選擇“*開始*”來啟動程序。</block>
   <block id="670bdffbda0cf3a120000d78ea9fef94" category="paragraph">從BlueXP backup and recovery中，建立策略來保護您的 Microsoft SQL Server 執行個體和資料庫。</block>
   <block id="9a4d384d3169400fc10e8236540a38e4" category="inline-link-macro">了解如何建立策略來保護您的 Microsoft SQL Server 執行個體和資料庫</block>
@@ -1180,6 +1120,124 @@
   <block id="27044efdd79fcbe78a3f6c73f94ff8ab" category="inline-xref">使用BlueXP backup and recovery進行保護準備</block>
   <block id="ad9f1468b7af086344a7c9d7f3cfe5e6" category="paragraph">如果您擁有BlueXP帳戶的組織管理員存取權限，則<block ref="d431b2247c053b79ca08cc138d1dc11a" prefix=" " category="inline-code"></block>當您<block ref="fdfea7d26047cfb871b3d198f9393eab" category="inline-xref-macro-rx"></block>。</block>
   <block id="b101f17cf16b7701e98ff3ad94847a38" category="list-text">在連接器上設定主機分辨率</block>
-  <block id="c2f8fe7ac0efafdc8fba2f5f885bc816" category="list-text">在資料庫的工作負載工廠中，請確保使用 Windows 憑證註冊執行個體。若要提供 Windows 憑證，請從清單前往執行個體標籤。識別實例，選擇*管理實例*，然後選擇*實例儀表板*。從實例儀表板中，選擇三點選單，然後選擇*更新 Microsoft SQL Server 密碼*。使用 Windows 驗證更新密碼。</block>
   <block id="aa660deb360d337c08e7ddce4aada0d6" category="list-text">滿足先決條件後，選擇*重定向*以存取BlueXP backup and recovery。</block>
+  <block id="c66ae4617a5e7b903fa49494f6025fe3" category="doc">Agentic AI 驅動的錯誤日誌分析器</block>
+  <block id="9d9b1a38d2c7c04daeaa22b4ab5a3d5d" category="paragraph">Agentic AI 驅動的錯誤日誌分析器是一項新功能，它利用先進的機器學習演算法自動偵測和分析日誌檔案中的錯誤。該工具旨在透過根據日誌中識別的模式向開發人員提供可操作的見解和建議來簡化故障排除過程。</block>
+  <block id="b8b677d9dba6a14dd05b3a0eb592a9c5" category="inline-link-macro">了解有關 Agentic AI 驅動的錯誤日誌分析器的更多信息</block>
+  <block id="eea441a7c94cd96996c9c96d7827e71f" category="paragraph"><block ref="eea441a7c94cd96996c9c96d7827e71f" category="inline-link-macro-rx"></block></block>
+  <block id="87b85aff45217080ba500a992ada602c" category="section-title">Oracle 支援</block>
+  <block id="74ddb3b25ce5cc41642c58d46e3e527b" category="paragraph">工作負載工廠包括對 Oracle 資料庫的支援。在工作負載工廠控制台中，您可以從庫存中查看 Oracle 資料庫，註冊資料庫以使用工作負載工廠中的進階功能，並使用架構良好的功能分析 Oracle 資料庫以符合最佳實務。良好的架構分析決定了 Oracle 資料庫的儲存配置是否已最佳化。您可以使用此資訊對資料庫部署做出明智的決策並確保它們有效運作。</block>
+  <block id="0c32ff88af8d87b6ac8198432d56bd75" category="section-title">支援在第二代 FSx for ONTAP檔案系統上部署 Microsoft SQL Server</block>
+  <block id="6f4eab6394c8d6b2b9c2f5990b195f88" category="paragraph">工作負載工廠支援在第二代 FSx for ONTAP檔案系統上部署 Microsoft SQL Server。此增強功能可讓您在管理 SQL Server 工作負載的同時利用第二代檔案系統中的最新功能和效能改進。</block>
+  <block id="4b0e4c53f590f96c7ae9dbd2af881643" category="section-title">用於 SQL Server 保護的 Windows 驗證</block>
+  <block id="66eac601a6b6ad939034aba1005b0d1f" category="paragraph">使用 Windows 憑證對 Microsoft SQL Server 執行個體進行驗證已嵌入到工作流程中，以準備使用BlueXP backup and recovery原來保護 Microsoft SQL Server 主機。這曾經是需要手動完成的先決步驟。相反，如果您尚未使用 Windows 憑證在工作負載工廠中註冊主機，系統將提示您與管理員存取權限共用 Windows 憑證。</block>
+  <block id="21e7945dde284bd0e0fc5e2026a591e0" category="section-title">架構良好的分析包括 SQL Server 的 MTU 對齊</block>
+  <block id="ecc57bed47e69e41f27979277ae13c78" category="paragraph">精心設計的分析評估並修復了 FSx for ONTAP儲存上 Microsoft SQL Server 跨端點的最大傳輸單元 (MTU) 錯位。調整 MTU 設定有助於最佳化網路效能並減少 SQL Server 工作負載的延遲。</block>
+  <block id="5ec7d7613dc24a00972435b1b5bec7ca" category="summary">分析資料庫工作負載工廠內的錯誤日誌。</block>
+  <block id="258ca63c895b36726016996f97008ce2" category="doc">分析工作負載工廠中的錯誤日誌</block>
+  <block id="d7fbe139bba3a469b965910f0c1b3139" category="paragraph">使用智慧型錯誤日誌分析器自動解釋 Microsoft SQL Server 錯誤日誌，以便您可以快速識別和解決問題。  Agentic AI 為基礎的分析需要 Amazon Bedrock 整合。</block>
+  <block id="b1d75ff3f8d78173eda812ed5b2b5169" category="paragraph">錯誤日誌分析和補救有助於維護 SQL Server 執行個體的健康和效能。有效地解釋 SQL Server 錯誤日誌需要仔細的分析和專業知識。手動監控、錯誤偵測和根本原因分析非常耗時，而且容易出錯。這些挑戰可能會延遲問題解決、增加停機時間並導致營運效率低落。智慧錯誤日誌分析器透過以下主要優勢解決了這些挑戰：</block>
+  <block id="68425dd75582dcda5e795c7294a1b8cc" category="list-text">智慧分組：根據唯一性、嚴重性和類別智慧地合併錯誤，並簡化故障排除過程，以便更快、更有效地解決問題。</block>
+  <block id="787171600253ef2af7e8da149d33cb63" category="list-text">人工智慧驅動的調查：利用人工智慧主動分析錯誤，提供清晰、可操作的見解，以加速問題識別，而無需深厚的專業知識。</block>
+  <block id="da6ca89260c645f5196ae427b50dcaac" category="list-text">錯誤豐富：透過外部引用增強錯誤日誌，提供清晰的上下文以提高理解和決策。</block>
+  <block id="b2ea82afeab4091c155f9cfb595184fd" category="list-text">最佳實務補救：為在 FSx for ONTAP上執行的 SQL Server 工作負載提供客製化的補救建議，使各種技能等級的使用者都能自信地解決問題。</block>
+  <block id="7eb28accaca049ba4d70b1ee3d3d33e8" category="paragraph">無論何時使用智慧錯誤日誌分析器，您都可以完全控制您的環境，同時受益於先進的 AI 分析。</block>
+  <block id="148e9a273226b4629d4e563e7ab8da76" category="paragraph">要使用智慧錯誤日誌分析器，您需要啟動 Amazon Bedrock、選擇模型工作負載工廠使用的模型、建立私人終端節點以連接到 Amazon Bedrock、新增權限並建立企業許可證。</block>
+  <block id="888aee60b948bfcee3f85cb52d4d62f0" category="inline-link-macro">Amazon Bedrock 定價</block>
+  <block id="2064dc6bc6a42df41c5d58cafe4e5108" category="paragraph"><block ref="2064dc6bc6a42df41c5d58cafe4e5108" category="inline-link-macro-rx"></block></block>
+  <block id="3a25a4c05da17a60c6da26a004fe6fc9" category="paragraph">要使用智慧型錯誤日誌分析器，您必須滿足以下先決條件：</block>
+  <block id="15f8b2f1668baad2a169d2b56f5bf029" category="inline-link-macro">註冊 SQL Server 實例</block>
+  <block id="0764d8a84cf6119c865a68cea7ad7997" category="list-text"><block ref="873d2450d820ba11c34ebce38f7d81a0" category="inline-link-macro-rx"></block>在工作量工廠中。*</block>
+  <block id="0f9beae8ccab0894120d4f5ad811202a" category="list-text">選擇*SQL Server*作為資料庫引擎。</block>
+  <block id="e2b234d864fc8c9cad0b4ac907f4b4cb" category="list-text">從「實例」標籤中，找到要分析的特定 SQL Server 實例，然後從選單中選擇「調查錯誤」。</block>
+  <block id="3c6ac7ef553b64f6b1a8db2d3034177d" category="list-text">從「錯誤調查」標籤中，請按照控制台中的說明完成以下先決條件：</block>
+  <block id="34048930da0f8b448828d6774b139b17" category="list-text">亞馬遜基岩</block>
+  <block id="6b0d68ff65de404d491b6292064a079f" category="list-text">網路：Amazon Bedrock 的私有終端節點</block>
+  <block id="e13a1019f98bb51abab8e23f9bf0c5c2" category="list-text">EC2 執行個體設定檔角色的權限</block>
+  <block id="51338cb33c95537fe95c754fca16bf96" category="list-text">與工作負載資料庫管理 (wlmdb) 相關的憑證</block>
+  <block id="7e235a8e26f12cfd3ee5821cfa8e43b5" category="list-text">滿足先決條件後，選擇「立即調查」以使用智慧錯誤日誌分析器深入了解 SQL Server 錯誤日誌。</block>
+  <block id="88c29fe90401d537c3fb507300ab6c20" category="paragraph">掃描完成後，錯誤會顯示在控制台中，提供智慧錯誤日誌分析器偵測到的問題的全面視圖。</block>
+  <block id="1bdd4c6f4051ac693645d05ee75e84ec" category="list-text">使用過濾器根據嚴重性、時間範圍和錯誤代碼等標準來優化顯示的錯誤。</block>
+  <block id="d57a30f2af1e68603bcbf4d88ae44c7f" category="list-text">查看詳細的錯誤訊息，包括原始錯誤訊息、基於 AI 的解釋以及解決錯誤的建議補救步驟。</block>
+  <block id="3152f2e27eff8edb02eb60bb459e4050" category="summary">如果您不再想從工作負載工廠控制台部署或監控資源，請取消註冊該資源。</block>
+  <block id="72a055f1266887c6f8382e17191d6983" category="doc">在工作負載工廠中註銷資源</block>
+  <block id="a2f27b9db2e64d5d957fe1545f961ea2" category="paragraph">如果您不再想從工作負載工廠控制台部署或監控資源，請取消註冊資源，例如 Microsoft SQL Server 執行個體或 Oracle 資料庫。取消註冊資源也會刪除實例使用的 FSx for ONTAP儲存容量。</block>
+  <block id="ada60b484b7d2e3edafc98754146c7c3" category="paragraph">您可以重新註冊該資源。</block>
+  <block id="aa855ee9ef145821feba441919b3c042" category="list-text">在清單中，選擇引擎類型：Microsoft SQL Server、Oracle 或 PostgreSQL。</block>
+  <block id="f610d93ed106aab8ba30c2da3d23a496" category="list-text">找到您想要登出的資源，選擇三點選單，然後選擇*登出*。</block>
+  <block id="257ccbccb121b842e837c79d69337480" category="summary">了解資料庫工作負載工廠中的執行個體和資料庫管理。</block>
+  <block id="6d68ae3c5c1270a56df6e989377c623f" category="doc">資料庫工作負載工廠中的資源管理</block>
+  <block id="60ec19daff12df32a89a9e63c7ac5226" category="paragraph">管理工作負載工廠中的資源可讓您使用進階功能，包括資料庫和複製建立、資源利用和監控。此外，您可以分析資料庫配置的良好架構狀態並實施配置最佳實踐以提高效能並降低營運成本。資源管理僅適用於在 FSx for ONTAP檔案系統儲存上執行的 Microsoft SQL Server 和 Oracle 環境。</block>
+  <block id="605deef06e1372beea22ad9cd2be1a6a" category="inline-link-macro">註冊資源</block>
+  <block id="cdef502718e102280b7153349fc5453d" category="paragraph">你必須<block ref="7b211aa8ea2e7da5bf6451b8c7477b8d" category="inline-link-macro-rx"></block>執行以下任何一項管理任務。</block>
+  <block id="6f714b468132b90f6781178d5cddd82a" category="list-text">從清單中查看資料庫</block>
+  <block id="e3d9af7400190b7c1a2a8a8f5044efc8" category="paragraph">使用配置分析洞察和建議，利用工作負載工廠使用 Microsoft SQL Server 和 Oracle 為您的資料庫配置實施最佳實務。您可以輕鬆查看架構良好的狀態，了解資料庫配置的問題，並採取措施改善任何未針對可靠性、安全性、效率、效能和成本進行最佳化的配置。</block>
+  <block id="8778288856610f6bf20035173fbad2be" category="paragraph">您也可以忽略不適用於您的環境的特定配置的分析，以避免不必要的警報和不準確的最佳化結果。</block>
+  <block id="3cba6060de73258408bd0da332e31cf6" category="paragraph">工作負載工廠分析以下配置的良好架構狀態：</block>
+  <block id="e40dd147294abaab8b8ebe348a6ff323" category="paragraph">對於 Microsoft SQL Server 執行個體：</block>
+  <block id="e13a21e0f6e79bd6e277440afe81c7a2" category="list-text">計算：包括調整大小、作業系統修補程式和網路適配器設置，如接收方縮放 (RSS)、TCP 卸載和 MTU 對齊</block>
+  <block id="dede452df8eba39c0a57cc96ce3b98c4" category="paragraph">對於 Oracle 資料庫：</block>
+  <block id="10331d3fa6738ec78eba4707eaedfb38" category="list-text">儲存配置：包含容量管理、精簡配置、分層策略、快照和儲存效率</block>
+  <block id="438f1f56c44366f5204e6f9931b85516" category="inline-link-macro">了解如何註冊資源。</block>
+  <block id="0802ab71af28bc46997c272bf444f225" category="list-text">若要評估 Microsoft SQL Server 執行個體或 Oracle 資料庫的存儲，必須在工作負載工廠中註冊資源，且儲存類型必須是 FSx for ONTAP。<block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
+  <block id="74bdd3d51d7fef35f3c1e1829b2c63fe" category="section-title">修復配置問題</block>
+  <block id="1c6128cdb2d10cb97e9f36f037cb4ceb" category="paragraph">修正在 FSx for ONTAP儲存上執行的 SQL Server 或 Oracle 環境的設定問題。</block>
+  <block id="47df3bf0f7ade58852082d72bcde28c6" category="admonition">修復過程可能會導致執行個體停機或服務中斷。在選擇修復配置問題之前，請務必仔細查看建議。</block>
+  <block id="bfa392944d88404ace768c77a2975abf" category="paragraph">您可以在配置層級、SQL Server 執行個體或 Oracle 資料庫層級延後、解除和重新啟動組態分析。</block>
+  <block id="450fabb8226fa1a89909f2bc792a37e5" category="paragraph">以下說明說明如何在配置層級延後、解除或重新啟動分析。若要針對特定 SQL Server 執行個體或 Oracle 資料庫完成下列任務，請從 *儀表板* 標籤開始。</block>
+  <block id="9adcb62f83b991a69c8f3d3115f77371" category="summary">資料庫工作負載工廠會定期分析 Microsoft SQL Server 和 Oracle 配置以確定是否有任何問題。</block>
+  <block id="26991062cc0864bcbaf33364fd496dd7" category="paragraph">資料庫工作負載工廠會定期分析資料庫配置，以確定Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 和 Oracle 部署是否有任何問題。當發現問題時，工作負載工廠會向您展示問題所在，並解釋需要進行哪些變更以確保您的資料庫配置達到最佳效能、成本效益並符合最佳實務。</block>
+  <block id="4c7f98dd35929abb47ec47b5961e9ca4" category="paragraph">為了進行完整的資料庫環境分析，資源必須註冊並在線。</block>
+  <block id="aed8a618f1e8a1dc325945b821521d6c" category="paragraph"><block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
+  <block id="15e4986095a476a300a86c98e005c03f" category="list-text">如果出現提示，請提供具有管理存取權限的 Windows 憑證。</block>
+  <block id="6b839f04b2b72d377b07b0d79e294178" category="paragraph">若要使用BlueXP backup and recovery進行保護，必須使用 Windows 憑證在工作負載工廠中註冊 SQL Server 執行個體。</block>
+  <block id="32a457ad7086b73a0831995da6a0529f" category="list-text">如果有多個連接器處於作用中且可用，請選擇要註冊和保護工作負載的*連接器*。</block>
+  <block id="a982f8491a35755aaef9156fb5ad6bbf" category="summary">註冊資源，以便您可以監控資料庫工作負載工廠中的資源狀態、資源利用率、保護和儲存效能。</block>
+  <block id="96e84242aea09d1b8acef30db1b81726" category="doc">在資料庫工作負載工廠註冊資源</block>
+  <block id="12de2974d1ae967399b67d77b8fc1cc2" category="paragraph">註冊 Microsoft SQL Server 的執行個體和 Oracle 的資料庫，以便您可以在資料庫的工作負載工廠中監控執行個體和資料庫狀態、資源使用率、保護和儲存效能。</block>
+  <block id="7aff78d7a87160ba551df374b4456194" category="paragraph">僅在 FSx for ONTAP檔案系統儲存上執行的資料庫引擎才可以註冊。</block>
+  <block id="51c5a8b1cc6e1b12dfec7056b4d4270e" category="paragraph">註冊實例（SQL Server）或資料庫（Oracle）包括兩個步驟 - 身份驗證和準備。準備工作包括確保所有 AWS、 NetApp和 PowerShell 模組都安裝在實例上。</block>
+  <block id="d7c31e449e7a823ed2d427ad55864dd0" category="paragraph">您可以使用 SQL Server 憑證或 Windows 憑證進行驗證。</block>
+  <block id="8176a748cf9e05830153f7bf9026326b" category="admonition">工作負載工廠僅支援Microsoft SQL Server執行個體和Oracle資料庫的註冊和管理。根據您在工作負載工廠中選擇的 AWS 帳戶憑證，PostgreSQL 主機可能會出現在清單中。目前，工作負載工廠僅支援在 Amazon Linux 作業系統上執行的未註冊的 PostgreSQL 執行個體。</block>
+  <block id="8eb2e76249fd281f42a65a8a3461d52e" category="paragraph">實例或資料庫的主機必須出現在「清單」標籤中。要讓主機出現在清單中，<block ref="99382ab95f660f372dfed7d2289ac38a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="6e3efb52bfff9a14482d677371391920" category="paragraph">若要在沒有外部連線的私人網路中註冊執行個體（SQL Server）或資料庫（Oracle），需要在 VPC 中提供下列終端節點，並與 SQL Server 所在的子網路關聯。確保介面端點允許附加的安全群組中的連接埠 443。</block>
+  <block id="0670483b9d94213fd07ca4df3baae2eb" category="list-text"><block ref="c202a4052bc97ff0191552ea4c2c865c" prefix="" category="inline-code"></block>（SQL 伺服器）</block>
+  <block id="6da87aebc1358666c2653e7d0852ee63" category="list-text"><block ref="1f378775539050b7c7b5e1cdfe121e2f" prefix="" category="inline-code"></block>（SQL 伺服器）</block>
+  <block id="ced73862020ae018386a5e6771c61bc9" category="list-text">選擇*Microsoft SQL Server*作為引擎類型。</block>
+  <block id="968e1e1e0d9bdbc5d123e7fe52928ccf" category="list-text">選擇“*實例*”標籤。</block>
+  <block id="574cb46655ea85708805d607e35d7b2e" category="list-text">選擇註冊單一實例或多個實例。</block>
+  <block id="fd04518b404dd2e04b78e54b8c7dbd95" category="list-text">查看以下功能的先決條件清單。確保您滿足註冊實例的每個功能的所有先決條件。</block>
+  <block id="90e33916dd54343e6255ccf8dcaafb37" category="list-text">當先決條件完成並且檢查*準備就緒*時，您可以選擇*註冊*該實例。</block>
+  <block id="9195a167e7e3c06a4c81fd7b20e6558f" category="paragraph">實例註冊啟動。選擇「作業監控」標籤來追蹤進度。</block>
+  <block id="2be3766a7781349eb1b5afffac277a87" category="section-title">註冊 Oracle 資料庫</block>
+  <block id="08ba06afd71242693837a5363c8cec75" category="paragraph">註冊資料庫包括實例認證和準備。</block>
+  <block id="a7d92c376d5fa6fff5f8dd52d7ca71c6" category="list-text">在「庫存」標籤中，選擇「*Oracle*」作為資料庫引擎。</block>
+  <block id="b1260d7204d7a54ec6aa4f9cebcb5433" category="list-text">選擇註冊單一資料庫或多個資料庫。</block>
+  <block id="480e9aa75d6d0bd897fdeca693309821" category="list-text">單一資料庫註冊：導航至要管理的資料庫並選擇*註冊資料庫*。</block>
+  <block id="dded28e278bb27d27408ee76b5bda6ae" category="list-text">多資料庫註冊：選擇*註冊多個資料庫*按鈕。</block>
+  <block id="ce6fca8a519073adaa9fce99d3f0905b" category="paragraph">有兩個選項可用於註冊多個資料庫。在這兩種情況下，資料庫必須共用相同的身份驗證狀態（未經身份驗證或已驗證）。</block>
+  <block id="236469943203a30e0bc427c0763fab1a" category="list-text">未經身份驗證的資料庫：選擇多個未經身份驗證的資料庫進行註冊。這些資料庫必須共用相同的驗證憑證和 FSx for ONTAP憑證。選擇“*應用*”，然後選擇“*下一步*”。</block>
+  <block id="4b47f31449190a7836147548816a99df" category="list-text">已驗證的資料庫：選擇多個已驗證的資料庫進行註冊，然後選擇*下一步*。</block>
+  <block id="0782d75bc9f3d380bdfe655a581eed56" category="list-text">在註冊資料庫頁面的第 2 步中，選擇資料庫身份驗證模式，輸入以下詳細信息，然後選擇*下一步*。如果資料庫已經過身份驗證，請選擇「下一步」。</block>
+  <block id="f1f7d2215bd71780fab7fb02ada7bd29" category="list-text">*Oracle 使用者驗證*：輸入 Oracle 使用者名稱和密碼，以及 FSx for ONTAP檔案系統使用者名稱和密碼。</block>
+  <block id="ea829d746981efa398b4ee2609e14504" category="list-text">*Oracle ASM 使用者驗證*：可選。如果 Oracle 資料庫使用自動儲存管理 (ASM)，請輸入 Oracle ASM（網格）使用者名稱和密碼。</block>
+  <block id="6cbb36210d27ed786114291233bb72f8" category="list-text">在步驟 3 中，準備資料庫，確保資料庫符合所需的先決條件。如果安裝了所有必要的模組並且滿足先決條件，請選擇「下一步」來註冊資料庫。如果您需要採取行動，請按照以下步驟操作。</block>
+  <block id="6f91197ef9cd634221d1acdc34994b00" category="list-text">查看以下功能的先決條件清單。必須滿足單一功能的所有先決條件才能註冊資料庫。</block>
+  <block id="9db55a173626aa2b6896c9aad35787fe" category="list-text">完成以下先決條件：</block>
+  <block id="48c012260d22f763088fc13ea4d81fe8" category="list-text">*AWS IAM 政策權限*：在 AWS 控制台中複製和更新 AWS 權限。</block>
+  <block id="6f3617d892394939da18416f0b62ca9b" category="list-text">*EC2 IAM 執行個體設定檔權限*：在 AWS 控制台中複製並更新 Amazon EC2 執行個體上的 EC2 IAM 執行個體設定檔權限。</block>
+  <block id="0c25c1dbd225d4f138e3f041717e66a8" category="list-text">*部署模組*：如果需要，請選擇安裝依賴模組，包括 AWS 命令​​列介面 (AWS CLI)、jq（命令列 JSON 處理器）和 Python 3.12（如果尚未安裝 3.6 或更高版本）。工作負載工廠會在註冊過程中自動安裝這些模組。</block>
+  <block id="b8edce3ea869eb4c2f3190bca4111d7a" category="list-text">*Oracle 使用者權限*：如果需要，更新 Oracle 使用者的權限。</block>
+  <block id="4050e144f4282867a7634aca850d52d0" category="list-text">當先決條件完成並且檢查*準備就緒*時，您可以選擇*註冊*資料庫。</block>
+  <block id="20d90c166fc44f8b2026db1a52964a70" category="paragraph">資料庫註冊啟動。選擇「作業監控」標籤來追蹤進度。</block>
+  <block id="20adcf70350935fa6bdc7751bbf6442d" category="paragraph">資源註冊後，您可以執行以下操作。</block>
+  <block id="c2b1e7ce1a2b40c91ad25a11bc6b9258" category="list-text">從清單中查看資料庫</block>
+  <block id="07071ae7b2f725f2cea50ff565939a5e" category="list-text"><block ref="07071ae7b2f725f2cea50ff565939a5e" category="inline-link-macro-rx"></block></block>
+  <block id="acf0646ef57dc0492b63959fc34cdc91" category="inline-link-macro">建立資料庫克隆（沙盒）</block>
+  <block id="efb9ae2b052781fc46baf1db4a00b8d7" category="list-text"><block ref="efb9ae2b052781fc46baf1db4a00b8d7" category="inline-link-macro-rx"></block></block>
+  <block id="931764efb1d7ee6fd0b954d720054504" category="section-title">2025年9月1日</block>
+  <block id="048a4f85ec54eab1ffe8345d67b72d5c" category="sidebar">資源管理</block>
+  <block id="a1a8b5ea7b89ec9ebfd06924f494937a" category="sidebar">註冊資源</block>
+  <block id="17ab5a0a01917c54c0534d54ab690906" category="sidebar">分析錯誤日誌</block>
+  <block id="cf3287365e2745af5b195b5dcf4dab25" category="sidebar">註銷資源</block>
 </blocks>

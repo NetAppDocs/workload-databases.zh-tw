@@ -1,31 +1,24 @@
 ---
 sidebar: sidebar 
 permalink: deregister-instance.html 
-keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle instance, deregister instance, unregister instance, remove instance 
-summary: 如果您不再想要部署或監控執行個體資源，請取消註冊該執行個體。 
+keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle database, deregister instance, unregister instance, remove instance 
+summary: 如果您不再想從工作負載工廠控制台部署或監控資源，請取消註冊該資源。 
 ---
-= 在工作負載工廠中註銷實例
+= 在工作負載工廠中註銷資源
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-如果您不再需要部署或監控執行個體資源，請取消註冊該執行個體。取消註冊實例也會刪除該實例所使用的儲存容量。
+如果您不再想從工作負載工廠控制台部署或監控資源，請取消註冊資源，例如 Microsoft SQL Server 執行個體或 Oracle 資料庫。取消註冊資源也會刪除實例使用的 FSx for ONTAP儲存容量。
 
-您可以稍後重新註冊該實例。
+您可以重新註冊該資源。
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
 . 在資料庫中、選取 * 庫存 * 索引標籤。
-. 按一下下拉箭頭展開要登出的實例的行。
-+
-主機擴充功能並且實例出現。
+. 在清單中，選擇引擎類型：Microsoft SQL Server、Oracle 或 PostgreSQL。
+. 找到您想要登出的資源，選擇三點選單，然後選擇*登出*。
 
-. 點選實例的三點選單即可取消註冊。
-. 選擇*註銷*。
-
-
-.結果
-該實例現已註銷。您可以稍後重新註冊該實例。
