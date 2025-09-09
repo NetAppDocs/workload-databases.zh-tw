@@ -61,8 +61,6 @@ sidebar:
         url: "/optimize-overview.html"
       - title: 實施結構良好的資料庫配置
         url: "/optimize-configurations.html"
-      - title: 延後組態分析
-        url: "/postpone-analysis.html"
     - title: 分析錯誤日誌
       url: "/analyze-error-logs.html"
     - title: 管理複本
