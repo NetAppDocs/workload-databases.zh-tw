@@ -2,30 +2,30 @@
 sidebar: sidebar 
 permalink: learn-databases.html 
 keywords: Databases 
-summary: 資料庫工作負載工廠是一種端到端資料庫部署和維護服務，具有內建的最佳化、自動精簡克隆以及監控和解決功能的最佳實踐。 
+summary: NetApp Workload Factory for Databases 是一種端到端資料庫部署和維護服務，具有內建的最佳化最佳實踐、自動精簡克隆以及監控和解決功能。 
 ---
-= 瞭解資料庫的工作負載工廠
+= 了解NetApp資料庫工作負載工廠
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-資料庫工作負載工廠是一種端到端資料庫部署和維護服務，具有內建的最佳化、自動精簡克隆以及監控和解決功能的最佳實踐。
+NetApp Workload Factory for Databases 是一種端到端資料庫部署和維護服務，具有內建的最佳化最佳實踐、自動精簡克隆以及監控和解決功能。
 
 
 
-== 資料庫的工作負載工廠是什麼？
+== 什麼是NetApp Workload Factory for Databases？
 
-資料庫工作負載工廠可偵測、評估、規劃、配置並將 Microsoft SQL Server 資料移至 Amazon FSx for NetApp ONTAP（FSx for ONTAP）部署，並針對滿足您的效能和成本預期進行最佳化，同時遵循業界最佳實務。在整個生命週期中，工作負載工廠為 ONTAP 的 FSX 上的資料庫提供持續的最佳化與管理。
+NetApp Workload Factory for Databases 可偵測、評估、規劃、配置並將 Microsoft SQL Server 資料移至Amazon FSx for NetApp ONTAP (FSx for ONTAP) 部署，並進行最佳化以滿足您的效能和成本預期，同時遵循業界最佳實務。在整個生命週期中， NetApp Workload Factory for Databases 為 FSx for ONTAP上的資料庫提供持續的最佳化和管理。
 
-如需工作負載工廠的詳細資訊，請link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作負載原廠總覽"^]參閱。
+有關 Workload Factory 的更多信息，請參閱link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作負載工廠概述"^]。
 
 
 
-== 自助管理資料庫的工作負載工廠效益
+== 工作負載工廠為自管理資料庫帶來的優勢
 
-工作負載工廠為自我管理的資料庫提供下列實用的最佳實務做法和自動化功能。
+Workload Factory 為自管理資料庫提供了以下有益的最佳實踐和自動化。
 
 
 
@@ -34,31 +34,31 @@ summary: 資料庫工作負載工廠是一種端到端資料庫部署和維護�
 * AWS Cloud 、 Microsoft Windows 和 SQL 伺服器、以及 NetApp ONTAP 在 EC2 執行個體上部署 SQL Server 的整合式知識。
 * 整體擁有成本最佳化部署。
 * 遵循 AWS 、 Microsoft 和 ONTAP 最佳實務做法的端點對端部署自動化。
-* 「快速建立」部署模式可協助您避免手動設定的潛在陷阱。
+* _快速建立_部署模式可協助您避免手動配置的潛在陷阱。
 
 
 
 
-=== 使用工作負載原廠 CodeBox 自動化
+=== 使用 Workload Factory Codebox 實現自動化
 
-工作負載工廠採用 _Codebox_ 內建自動化功能。Codebox 提供下列自動化優點：
+Workload Factory 透過 _Codebox_ 引入了內建自動化功能。  Codebox 具有以下自動化優勢：
 
 * * 程式碼片段產生 * ：基礎架構即程式碼（ IAC ）片段是在資源建立期間產生、可與現有的協調工作流程無縫整合。
-* * 基礎架構即程式碼協同作業 * ： Codebox 是基礎架構即程式碼（ IAC ）聯合試驗計畫，可協助開發人員和 DevOps 產生程式碼，以執行工作負載工廠所支援的任何作業。
+* *基礎架構即程式碼副駕駛*：Codebox 是一個基礎架構即程式碼 (IaC) 副駕駛，可協助開發人員和 DevOps 產生程式碼來執行 Workload Factory 支援的任何操作。
 * * 程式碼檢視器與自動化目錄 * ： Codebox 提供程式碼檢視器、可快速分析自動化、並提供自動化目錄、供日後快速重複使用。
 
 
 
 
-=== 資料庫功能的工作負載工廠
+=== 資料庫工作負載工廠功能
 
-資料庫的工作負載工廠提供下列功能：
+資料庫工作負載工廠提供以下功能：
 
 * * 簡單、快速的部署 * ：選擇規格問題的答案、並免除調查如何在 AWS 上配置和設定 Microsoft SQL Server 所需的時間、藉此簡化和簡化您的資源配置體驗。
-* * 自動化協調 * ：可透過工作負載工廠使用者介面使用 _Quick_ 和 _Advanced_ 來建立部署模式，工作負載工廠的 Chatbot 和使用 AWS CloudForemation 的 API 。
+* *自動編排*：可透過 Workload Factory 控制台使用_Quick_和_Advanced_建立部署模式、Chatbot 和透過 Codebox 的 AWS CloudFormation。
 * * 內建功能 * ：利用內建於部署組態的 NetApp 、 Microsoft 和 Amazon 最佳實務做法和 AWS 資源選擇。
 * * 成本預估 * ：使用節省計算機評估潛在成本節約效益，並詳細說明使用 Elastic Block Store 和適用於 Windows 檔案伺服器的 FSX 進行現有 Microsoft SQL Server 部署的儲存，運算， SQL 授權，快照和複製明細成本，相較於適用於 ONTAP 的 FSX 。
-* * 可重複使用的自動化範本 * ：從工作負載原廠 Codebox 建立，重新使用及自訂 CloudForgation 範本，以供未來在多種環境中部署 Microsoft SQL Server 。
+* *可重複使用的自動化模板*：從 Workload Factory Codebox 建立、重複使用和自訂 CloudFormation 模板，以便將來在多個環境中部署 Microsoft SQL Server。
 * * AWS 資源探索與資源配置 * ：自動偵測適用於 ONTAP 的 FSX 上的 Microsoft SQL Server 、適用於 Windows 檔案伺服器的 FSX 、以及從 AWS 帳戶部署的彈性區塊存放區。資料庫庫存是探索其他 AWS 儲存系統中伺服器的成本節約機會的起點、或是 ONTAP 型伺服器和執行個體的 FSX 管理工具。
 * * 沙箱建立 * ：建立隨需隔離的資料庫環境、可用於測試、整合、診斷及訓練、而不影響正式作業資料。
 * * 資料庫建立 * ：使用 _Quick_ 或 _Advanced_ 建立模式、為現有的 Microsoft SQL Server 建立使用者資料庫、以設定資料庫定序、檔案名稱和大小。內含儲存組態。
@@ -75,97 +75,110 @@ summary: 資料庫工作負載工廠是一種端到端資料庫部署和維護�
 * * 資料管理與效率 * ：適用於 ONTAP 的 FSX 提供多項功能、可強化資料管理與效率、例如節省空間的精簡型複本、精簡配置、壓縮與重複資料刪除、以及將不常存取的資料分層至容量集區。
 
 
-link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["瞭解適用於 ONTAP for Workload Factory 的 FSX"^]。
+link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["了解適用於 Workload Factory 的 FSx for ONTAP"^] 。
 
 
 
-=== 工作負載工廠的作業模式
+=== 工作負載工廠中的操作模式
 
-三種不同的操作模式 - 基本模式、唯讀模式和讀取/寫入模式 - 為工作負載工廠內外的部署提供了靈活的選項。在 _base_ 模式下，利用程式碼片段在工作負載工廠外部使用，以零信任的方式立即獲得價值。在唯讀模式和讀/寫模式下，透過增量信任獲得增量價值。
+三種不同的操作模式 - _基本_、_唯讀_和_讀/寫_ - 為工作負載工廠內部和外部的部署提供了靈活的選項。使用可在 Workload Factory 外部使用的程式碼片段，在基本模式下以零信任獲得直接價值。在_唯讀_和_讀/寫_模式下透過增量信任取得增量值。
 
-深入瞭解 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["工作負載工廠的作業模式"^]。
-
-
-
-== 使用工作負載工廠的工具
-
-您可以搭配下列工具使用 BlueXP  工作負載工廠：
-
-* * 工作負載原廠主控台 * ：工作負載原廠主控台可提供應用程式與專案的視覺化整體檢視。
-* * BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用。
-* * 詢問我 * ：使用「詢問我 AI 」助理來詢問問題，並深入瞭解工作負載工廠，而無需離開工作負載工廠的網路 UI 。從工作負載原廠說明功能表存取 Ask me 。
-* * CloudShell CL1* ：工作負載工廠包含 CloudShell CLI ，可透過單一瀏覽器型 CLI ，跨帳戶管理及操作 AWS 和 NetApp 環境。從工作負載原廠主控台的頂端列存取 CloudShell 。
-* * REST API* ：使用工作負載原廠 REST API 來部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。
-* * CloudForgius* ：使用 AWS CloudForgation 程式碼來執行您在工作負載工廠主控台中定義的動作，以便在 AWS 帳戶中建構，配置及管理 CloudForgation 堆疊中的 AWS 和第三方資源。
-* * Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理在工作負載工廠主控台產生的基礎架構工作流程。
+詳細了解link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["工作負載工廠中的操作模式"^] 。
 
 
 
+== 使用NetApp Workload Factory 的工具
 
-== 部署詳細資料
+您可以將NetApp Workload Factory 與以下工具一起使用：
+
+* *Workload Factory 控制台*：Workload Factory 控制台提供您的應用程式和專案的視覺化、整體視圖。
+* * NetApp控制台*： NetApp控制台提供混合介面體驗，以便您可以將 Workload Factory 與其他NetApp資料服務一起使用。
+* *問我*：使用問我 AI 助理來提問並了解有關 Workload Factory 的更多信息，而無需離開 Workload Factory 控制台。從 Workload Factory 幫助選單中存取「問我」。
+* *CloudShell CLI*：Workload Factory 包含 CloudShell CLI，可透過基於瀏覽器的單一 CLI 跨帳號管理和操作 AWS 和NetApp環境。從 Workload Factory 控制台頂部欄存取 CloudShell。
+* *REST API*：使用 Workload Factory REST API 部署和管理您的 FSx for ONTAP檔案系統和其他 AWS 資源。
+* *CloudFormation*：使用 AWS CloudFormation 程式碼執行您在 Workload Factory 控制台中定義的操作，以從您的 AWS 帳戶中的 CloudFormation 堆疊對 AWS 和第三方資源進行建模、配置和管理。
+* *Terraform NetApp Workload Factory 提供者*：使用 Terraform 建置和管理在 Workload Factory 控制台中產生的基礎架構工作流程。
 
 
 
-=== 支援的組態
 
-Microsoft SQL Server 的工作負載原廠支援高可用度（永遠在容錯移轉叢集執行個體上），以及根據 AWS ， NetApp ONTAP 和 SQL Server 最佳實務做法進行單一執行個體部署。
+== 支援的組態
 
-[cols="2a,2a,2a,2a"]
+Workload Factory 根據 AWS、 NetApp ONTAP、Microsoft SQL Server、Oracle 和 PostgreSQL 最佳實務支援下列資料庫引擎、版本、作業系統和部署模型。
+
+[cols="1,1,1,1"]
 |===
-| SQL Server 版本 | Windows Server 2016 | Windows Server 2019 | Windows Server 2022 
+| 引擎 | 版本 | 作業系統 | 部署模型 
 
 
- a| 
-2016年SQL Server
- a| 
-是的
- a| 
-是的
- a| 
-否
+| Microsoft SQL Server | 2016年SQL Server | Windows Server 2016 | FCI，單一實例 
 
 
-
- a| 
-2019年SQL Server
- a| 
-是的
- a| 
-是的
- a| 
-是的
+| Microsoft SQL Server | 2019年SQL Server | Windows Server 2016 | FCI，單一實例 
 
 
+| Microsoft SQL Server | 2022年SQL Server | Windows Server 2016 | FCI，單一實例 
 
- a| 
-2022年SQL Server
- a| 
-否
- a| 
-是的
- a| 
-是的
 
+| Microsoft SQL Server | 2016年SQL Server | Windows Server 2019 | FCI，單一實例 
+
+
+| Microsoft SQL Server | 2019年SQL Server | Windows Server 2019 | FCI，單一實例 
+
+
+| Microsoft SQL Server | 2022年SQL Server | Windows Server 2019 | FCI，單一實例 
+
+
+| Microsoft SQL Server | 2016年SQL Server | Windows Server 2022 | FCI，單一實例 
+
+
+| Microsoft SQL Server | 2019年SQL Server | Windows Server 2022 | FCI，單一實例 
+
+
+| Microsoft SQL Server | 2022年SQL Server | Windows Server 2022 | FCI，單一實例 
+
+
+| Microsoft SQL Server | SQL 伺服器 2017 | 任何 | FCI，單一實例 
+
+
+| Microsoft SQL Server | SQL Server 2016、2017、2019、2022 | 任何 | FCI，單一實例 
+
+
+| Microsoft SQL Server | SQL Server 2016、2019、2022 | 任何 | Always On 可用性組 
+
+
+| 甲骨文 | 19c | RHEL、SuSe Linux | 獨立（單/多租戶） 
+
+
+| 甲骨文 | 21c | RHEL、SuSe Linux | 獨立（單/多租戶） 
+
+
+| 甲骨文 | 19c | RHEL、SuSe Linux | 獨立（單/多租戶） 
+
+
+| 甲骨文 | 21c | RHEL、SuSe Linux | 獨立（單/多租戶） 
+
+
+| 甲骨文 | 19c | RHEL、SuSe Linux | 獨立於 ASM（單/多租戶） 
+
+
+| 甲骨文 | 21c | RHEL、SuSe Linux | 獨立於 ASM（單/多租戶） 
+
+
+| 甲骨文 | 19c | RHEL、SuSe Linux | 數據衛士 
+
+
+| 甲骨文 | 21c | RHEL、SuSe Linux | 數據衛士 
+
+
+| PostgreSQL | PostgreSQL 15 | 亞馬遜 Linux 2023 AMI | HA，獨立實例 
+
+
+| PostgreSQL | PostgreSQL 16 | 亞馬遜 Linux 2023 AMI | HA，獨立實例 
 |===
 
 
-=== 部署架構
-
-資料庫支援單一可用性區域和多重可用性區域部署架構。
-
-.單一可用度區域
-下圖顯示單一區域中單一可用區域的獨立式架構。
-
-image:diagram-SAZ-database-architecture.png["單一可用區域部署 Amazon FSX for NetApp ONTAP 的獨立式架構圖表"]
-
-.多個可用度區域
-下圖顯示單一區域中具有容錯移轉叢集執行個體（ FCI ）叢集的雙節點高可用度（ HA ）架構。
-
-image:diagram-MAZ-database-architecture.png["雙節點高可用度架構的圖表、在單一區域中使用容錯移轉叢集執行個體叢集"]
-
-
-
-=== 整合式 AWS 服務
+== 整合式 AWS 服務
 
 資料庫包含下列整合式 AWS 服務：
 
@@ -178,7 +191,7 @@ image:diagram-MAZ-database-architecture.png["雙節點高可用度架構的圖�
 
 
 
-=== 支援的地區
+== 區域
 
 支援 ONTAP 適用的 FSX 的所有商業地區均支援資料庫。 https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["檢視支援的Amazon地區。"^]
 
@@ -196,4 +209,4 @@ image:diagram-MAZ-database-architecture.png["雙節點高可用度架構的圖�
 
 Amazon FSX for NetApp ONTAP 的功能是AWS的第一方解決方案。如需與適用於 ONTAP 檔案系統、基礎架構或任何使用此服務的解決方案的 FSX 相關的問題或技術支援問題、請使用 AWS 管理主控台的支援中心、開啟 AWS 的支援案例。選取「FSXfor ONTAP Sf1」服務和適當的類別。提供建立AWS支援案例所需的其餘資訊。
 
-有關工作負載工廠或工作負載工廠應用程式與服務的一般問題，請link:get-help.html["取得資料庫 BlueXP  工作負載工廠的說明"]參閱。
+有關 Workload Factory 或 Workload Factory 應用程式和服務的一般問題，請參閱link:get-help.html["取得有關NetApp Workload Factory for Databases 的協助"]。

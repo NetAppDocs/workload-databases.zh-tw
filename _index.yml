@@ -1,7 +1,7 @@
 ---
 indexpage:
-  title: 資料庫文件的 BlueXP  工作負載工廠
-  lead: 在 BlueXP  工作負載工廠中，部署 Microsoft SQL Server 組態，並在適用於 ONTAP 檔案系統儲存設備的 FSX 上管理資料庫環境。
+  title: NetApp Workload Factory for Databases 文檔
+  lead: 在NetApp Workload Factory 中的 FSx for ONTAP檔案系統儲存之上部署 Microsoft SQL Server 設定並管理資料庫環境。
   tiles:
   - title: 開始使用
     links:
@@ -31,9 +31,9 @@ indexpage:
       url: "/get-help.html"
   - title: 部落格與社群
     links:
+    - title: NetApp控制台
+      url: https://www.netapp.com/console
+    - title: NetApp資料服務
+      url: https://www.netapp.com/data-services/
     - title: NetApp社群
-      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: BlueXP部落格
-      url: https://bluexp.netapp.com/blog
-    - title: 雲端網路研討會
-      url: https://bluexp.netapp.com/events
+      url: https://community.netapp.com/

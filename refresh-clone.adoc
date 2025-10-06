@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: refresh-clone.html 
 keywords: refresh clone, sync, update, database, Microsoft SQL 
-summary: 在 BlueXP  工作負載工廠中重新整理資料庫的沙箱複本。 
+summary: 刷新NetApp Workload Factory for Databases 中的資料庫克隆，使其等同於當下時刻或先前某個時間點的來源資料庫。 
 ---
-= 在 BlueXP  工作負載工廠中重新整理資料庫的沙箱複本
+= 在NetApp Workload Factory for Databases 中刷新資料庫克隆
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-在 BlueXP  工作負載工廠中重新整理資料庫的複本，使其與目前或上一個時間點的來源資料庫相當。
+刷新NetApp Workload Factory for Databases 中的資料庫（沙盒）克隆，使其等同於當前時刻或先前時間點的來源資料庫。
 
 .關於這項工作
 重新整理複本可將複本更新至目前的來源資料庫、或更新至先前時間點所拍攝的來源資料庫快照。對沙箱複製所做的任何變更都將被刪除。
@@ -24,8 +24,8 @@ summary: 在 BlueXP  工作負載工廠中重新整理資料庫的沙箱複本�
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
-. 在資料庫中、選取 * 沙箱 * 標籤。
-. 在沙箱索引標籤中，按一下您要重新整理的沙箱複本的三點功能表。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇要刷新的沙盒克隆的操作選單。
 . 選取 * 重新整理 * 。
 . 在「重新整理」對話方塊中、選取下列其中一個選項：
 +

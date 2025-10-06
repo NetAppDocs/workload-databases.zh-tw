@@ -4,14 +4,14 @@ permalink: optimize-overview.html
 keywords: database configuration issues, issues, analyze, scan, optimize, improve, database configuration, Amazon FSx for NetApp ONTAP, FSx for ONTAP, recommendation, recommendations, storage, compute, application, resiliency, scan, optimization, SQL Server, host, instance 
 summary: 資料庫工作負載工廠會定期分析 Microsoft SQL Server 和 Oracle 配置以確定是否有任何問題。 
 ---
-= 工作負載工廠中的資料庫環境配置分析
+= Workload Factory 中的資料庫環境配置分析
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-資料庫工作負載工廠會定期分析資料庫配置，以確定Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 和 Oracle 部署是否有任何問題。當發現問題時，工作負載工廠會向您展示問題所在，並解釋需要進行哪些變更以確保您的資料庫配置達到最佳效能、成本效益並符合最佳實務。
+資料庫工作負載工廠會定期分析資料庫配置，以確定Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 和 Oracle 部署是否有任何問題。當發現問題時，Workload Factory 會向您展示問題所在，並解釋需要進行哪些更改以確保您的資料庫配置達到最佳效能、成本效益並符合最佳實踐。
 
 主要功能包括：
 
@@ -27,7 +27,7 @@ summary: 資料庫工作負載工廠會定期分析 Microsoft SQL Server 和 Ora
 
 == 架構良好的狀態
 
-在檔案系統層級的工作負載原廠主控台中，所有適用於 ONTAP 檔案系統的 FSX 都會列出架構良好的狀態。架構良好的狀態可歸類為「問題」，「未分析」或「架構良好」。選擇架構良好的狀態會將您重新導向至檔案系統內架構良好的狀態索引標籤，您可以在其中找到架構良好的分數，組態類別，檔案系統的所有組態。
+在檔案系統層級的 Workload Factory 控制台中，列出了所有 FSx for ONTAP檔案系統的良好架構狀態。架構良好的狀態分為「問題」、「未分析」或「架構良好」。選擇良好架構狀態會將您重新導向至檔案系統內的良好架構狀態標籤，您可以在其中找到良好架構分數、設定類別以及檔案系統的所有設定。
 
 
 

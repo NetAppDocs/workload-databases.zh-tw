@@ -2,25 +2,25 @@
 sidebar: sidebar 
 permalink: revert-clone.html 
 keywords: re-baseline, revert clone, database, Microsoft SQL 
-summary: 在 BlueXP  工作負載工廠中還原資料庫的沙箱複本。 
+summary: 將資料庫（沙盒）克隆還原為在NetApp Workload Factory for Databases 中建立時的原始版本。 
 ---
-= 在 BlueXP  工作負載工廠中還原資料庫的沙箱複本
+= 在NetApp Workload Factory for Databases 中還原資料庫克隆
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-在資料庫的 BlueXP  工作負載工廠中建立時，將資料庫複製還原為原始版本。
+將資料庫（沙盒）克隆還原為在NetApp Workload Factory for Databases 中建立時的原始版本。
 
 .關於這項工作
-當您複製資料庫時、建立時的複本為 _baseline 複本。複製資料庫中的資料與建立時的來源資料庫相同。隨著沙箱資料庫複本中的資料隨時間變更、您可能會想要在首次建立複本時、將資料還原至基準線。此作業稱為重新建立複本的基礎。重新建立複本的基準、而非建立新的複本、可節省空間；不過、對沙箱複本所做的任何變更都會遭到刪除。
+當您克隆資料庫時，建立時的克隆是_baseline_克隆。克隆的資料庫中的資料與建立時的來源資料庫相同。由於資料庫克隆中的資料會隨著時間而變化，您可能希望將資料還原到首次建立克隆時的基線。此操作稱為重新基線克隆。重新基準化克隆而不是創建新的克隆可以節省空間；但是，對資料庫克隆所做的任何更改都將被刪除。
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
-. 在資料庫中、選取 * 沙箱 * 標籤。
-. 在沙箱索引標籤中，按一下您要還原的沙箱複本的三點功能表。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇要還原的資料庫複製的操作選單。
 . 選取 * 重新建立基準線 * 。
-. 在重新建立基準線對話方塊中、按一下 * 重新建立基準線 * 。
+. 在「重新基線」對話方塊中，選擇「*重新基線*」。
 

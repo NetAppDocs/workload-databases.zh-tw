@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: manage-instance.html 
 keywords: instance, instance management, FSx for ONTAP, instance, manage host, view host, database host, database instance, manage 
-summary: 了解資料庫工作負載工廠中的執行個體和資料庫管理。 
+summary: 了解NetApp Workload Factory for Databases 中的實例和資料庫管理。 
 ---
-= 資料庫工作負載工廠中的資源管理
+= NetApp Workload Factory for Databases 中的資源管理
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-管理工作負載工廠中的資源可讓您使用進階功能，包括資料庫和複製建立、資源利用和監控。此外，您可以分析資料庫配置的良好架構狀態並實施配置最佳實踐以提高效能並降低營運成本。資源管理僅適用於在 FSx for ONTAP檔案系統儲存上執行的 Microsoft SQL Server 和 Oracle 環境。
+透過管理NetApp Workload Factory for Databases 中的資源，您可以使用進階功能，包括資料庫和複製建立、資源利用和監控。此外，您可以分析資料庫配置的良好架構狀態並實施配置最佳實踐以提高效能並降低營運成本。資源管理僅適用於在 FSx for ONTAP檔案系統儲存上執行的 Microsoft SQL Server 和 Oracle 環境。
 
 你必須link:register-instance.html["註冊資源"]執行以下任何一項管理任務。
 
 管理任務包括：
 
-* 從清單中查看資料庫
+* 從庫存中查看資料庫
 * link:create-database.html["建立資料庫"]
 * link:create-sandbox-clone.html["建立資料庫克隆（沙盒）"]
 * link:optimize-configurations.html["實施架構良好的資料庫配置"]

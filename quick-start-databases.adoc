@@ -2,24 +2,24 @@
 sidebar: sidebar 
 permalink: quick-start-databases.html 
 keywords: requirements, basic mode, read-only mode, read/write mode 
-summary: 開始使用資料庫工作負載工廠來使用基礎設施即程式碼片段、發現主機、管理資源等。 
+summary: 開始使用NetApp Workload Factory for Databases 來使用基礎架構即程式碼片段、發現主機、管理資源等。 
 ---
-= 資料庫工作負載工廠快速啟動
+= NetApp Workload Factory for Databases 快速入門
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-使用資料庫工作負載工廠，您可以立即以_基本_模式開始。如果您想要使用工作負載工廠來探索主機，管理資源等，只需幾個步驟即可開始使用。
+透過NetApp Workload Factory for Databases，您可以立即以_基本_模式開始使用。如果您想使用 Workload Factory 來發現主機、管理資源等，您可以透過幾個步驟開始。
 
 您必須擁有 AWS 帳戶才能使用資料庫。
 
 請依照下列步驟開始使用。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]登入 BlueXP  工作負載工廠
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]登入NetApp Workload Factory
 [role="quick-margin-para"]
-您需要link:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在工作負載工廠設定帳戶"^]使用其中一項登入link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
+你需要link:https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在NetApp Workload Factory 上建立帳戶"^]並使用以下任一方式登入link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 新增認證和權限
 [role="quick-margin-para"]
@@ -38,10 +38,10 @@ summary: 開始使用資料庫工作負載工廠來使用基礎設施即程式�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]實施結構良好的資料庫配置
 [role="quick-margin-para"]
-資料庫工作負載工廠會定期透過 Well-architected 儀表板分析Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 部署。要從結構良好的資料庫資源儀表板解決問題，首先需要link:register-instance.html["註冊實例"]。
+資料庫工作負載工廠會定期透過 Well-architected 儀表板分析Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 和 Oracle 部署。要從結構良好的資料庫資源儀表板解決問題，首先需要link:register-instance.html["註冊實例"]。
 
 [role="quick-margin-para"]
-註冊實例後，您可以查看架構良好的狀態並採取行動link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.html["實施結構良好的資料庫配置"]在工作量工廠中。
+註冊實例後，您可以查看架構良好的狀態並採取行動link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.html["實施結構良好的資料庫配置"]在工作負載工廠中。
 
 .下一步
-當您在資料庫清單中註冊了 FSx for ONTAP 檔案系統儲存的實例後，您可以link:create-database.html["建立使用者資料庫"]或者link:create-sandbox-clone.html["複製主機以建立沙箱"] 。
+當您在資料庫清單中使用 FSx for ONTAP檔案系統儲存註冊資源後，您可以link:create-database.html["建立使用者資料庫"]或者link:create-sandbox-clone.html["複製主機以建立沙箱"]。

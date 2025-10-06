@@ -11,63 +11,64 @@ summary: 保護 Microsoft SQL Server 執行個體和資料庫。
 
 
 [role="lead"]
-使用來自工作負載工廠控制台的BlueXP backup and recovery保護您的 Microsoft SQL Server 應用程式資料。透過此集成，您可以實現以下保護目標：使用本機快照在本機主Amazon FSx for NetApp ONTAP （FSx for ONTAP）儲存上備份工作負載，並將工作負載複製到輔助 FSx for ONTAP儲存。
+使用 Workload Factory 控制台中的NetApp Backup and Recovery 保護您的 Microsoft SQL Server 應用程式資料。透過此集成，您可以實現以下保護目標：使用本機快照在本機主Amazon FSx for NetApp ONTAP （FSx for ONTAP）儲存上備份工作負載，並將工作負載複製到輔助 FSx for ONTAP儲存。
 
 
 
 == 關於這項工作
 
-工作負載工廠自動發現資源、驗證先決條件以及配置和安裝 Microsoft SQL Server 插件，為使用BlueXP backup and recovery保護您的工作負載做好準備。該外掛程式是NetApp軟體的主機端元件，可讓您保護 Microsoft SQL Server 工作負載。
+Workload Factory 可自動發現資源、驗證先決條件以及設定和安裝 Microsoft SQL Server 插件，為使用NetApp Backup and Recovery 保護您的工作負載做好準備。該外掛程式是NetApp軟體的主機端元件，可讓您保護 Microsoft SQL Server 工作負載。
 
-BlueXP backup and recovery利用NetApp SnapMirror資料複製技術，透過建立快照副本並將其傳輸到備份位置來確保所有備份完全同步。
+NetApp Backup and Recovery 利用NetApp SnapMirror資料複製技術，透過建立快照副本並將其傳輸到備份位置來確保所有備份完全同步。
 
-有關使用BlueXP backup and recovery進行保護的詳細信息，請參閱link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-mssql-protect-overview.html["使用BlueXP backup and recovery保護 Microsoft SQL 工作負載概述"^]。
+有關使用備份和恢復進行保護的詳細信息，請參閱link:https://docs.netapp.com/us-en/console-backup-recovery/br-use-mssql-protect-overview.html["使用備份和復原保護 Microsoft SQL 工作負載概述"^]。
 
 
 
 == 開始之前
 
-若要使用BlueXP backup and recovery保護 Microsoft SQL Server 工作負載，必須符合下列要求。
+必須滿足下列要求才能使用備份和復原來保護 Microsoft SQL Server 工作負載。
 
-* 確保您的環境滿足link:https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-start-prereq.html#microsoft-sql-server-workload-requirements["BlueXP backup and recoverySQL Server 的要求"^]。
-* link:https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-start-prereq.html#in-bluexp["完成BlueXP要求"^]包括設定BlueXP、IAM 角色和BlueXP連接器。
-+
-如果您擁有BlueXP帳戶的組織管理員存取權限，則 `backup and recovery super admin`當您<<使用BlueXP backup and recovery做好保護準備,使用BlueXP backup and recovery進行保護準備>>。
+* 確保您的環境滿足link:https://docs.netapp.com/us-en/console-backup-recovery/concept-start-prereq.html#microsoft-sql-server-workload-requirements["備份和還原 SQL Server 要求"^]。
+* link:https://docs.netapp.com/us-en/console-backup-recovery/concept-start-prereq.html#in-netapp-console["完成NetApp控制台要求"^]包括設定、指派 IAM 角色和安裝控制台代理程式。
 
-+
-** 在連接器上設定主機分辨率
+
+如果您擁有NetApp帳戶的組織管理員存取權限，則 `backup and recovery super admin`當您<<使用NetApp Backup and Recovery 做好保護準備,使用NetApp Backup and Recovery 做好保護準備>>。
+
+* 在連接器上設定主機分辨率
 +
 若要發現資料庫，您必須在連接器上設定主機解析。在託管設備上，在 `/etc/hosts`文件。
 
++
+** link:https://docs.netapp.com/us-en/console-backup-recovery/br-start-licensing.html["設定NetApp Backup and Recovery 的許可"^]
 
 
-* link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-start-licensing.html["設定BlueXP backup and recovery的許可"^]
 
 
 
 
-== 使用BlueXP backup and recovery做好保護準備
+== 使用NetApp Backup and Recovery 做好保護準備
 
-完成準備過程，以使用BlueXP backup and recovery保護您的 Microsoft SQL Server 資源。
+完成準備過程，以使用NetApp備份和復原來保護您的 Microsoft SQL Server 資源。
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
-. 在資料庫中、選取 * 庫存 * 索引標籤。
-. 將*引擎類型*過濾為*Microsoft SQL Server*。
-. 從選單中選擇要保護的實例的*保護*。
+. 從資料庫選單中，選擇*Inventory*。
+. 在清單中，選擇 *Microsoft SQL Server* 作為引擎類型。
+. 找到您想要保護的實例，然後從選單中選擇*保護*。
 . 如果出現提示，請提供具有管理存取權限的 Windows 憑證。
 +
-若要使用BlueXP backup and recovery進行保護，必須使用 Windows 憑證在工作負載工廠中註冊 SQL Server 執行個體。
+若要使用NetApp Backup and Recovery 進行保護，必須使用 Windows 憑證在 Workload Factory 中註冊 SQL Server 執行個體。
 
-. 如果有多個連接器處於作用中且可用，請選擇要註冊和保護工作負載的*連接器*。
-. 為了準備資料保護，工作負載工廠會自動在BlueXP backup and recovery中註冊您的 SQL Server 資源，配置並安裝 Microsoft SQL Server 插件，並發現滿足保護 SQL Server 執行個體的先決條件的資源。選擇“*開始*”來啟動程序。
-. 滿足先決條件後，選擇*重定向*以存取BlueXP backup and recovery。
+. 如果有多個控制台代理處於活動狀態且可用，請選擇要註冊和保護工作負載的「控制台代理」。
+. 為了準備資料保護，Workload Factory 會自動在備份和復原中註冊您的 SQL Server 資源，配置和安裝 Microsoft SQL Server 插件，並發現滿足保護 SQL Server 執行個體的先決條件的資源。選擇“*開始*”來啟動程序。
+. 滿足先決條件後，選擇*重定向*以存取備份和復原。
 
 
 .下一步
-從BlueXP backup and recovery中，建立策略來保護您的 Microsoft SQL Server 執行個體和資料庫。
+從備份和復原中，建立一個原則來保護您的 Microsoft SQL Server 執行個體和資料庫。
 
-link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-policies-create.html["了解如何建立策略來保護您的 Microsoft SQL Server 執行個體和資料庫"^] 。
+link:https://docs.netapp.com/us-en/console-backup-recovery/br-use-policies-create.html["了解如何建立策略來保護您的 Microsoft SQL Server 執行個體和資料庫"^] 。
 
-相關信息，請參閱link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-mssql-protect-overview.html["BlueXP backup and recovery文檔"^]用於管理 Microsoft SQL Server 工作負載。
+相關信息，請參閱link:https://docs.netapp.com/us-en/console-backup-recovery/br-use-mssql-protect-overview.html["備份和恢復文檔"^]用於管理 Microsoft SQL Server 工作負載。

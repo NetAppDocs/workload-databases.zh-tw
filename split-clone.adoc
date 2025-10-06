@@ -2,16 +2,16 @@
 sidebar: sidebar 
 permalink: split-clone.html 
 keywords: split, clone, source, new database 
-summary: 從來源資料庫分割沙箱複本，以便在 BlueXP  工作負載工廠中為資料庫建立新的資料庫。 
+summary: 從來源資料庫中拆分資料庫克隆以在NetApp Workload Factory for Databases 中建立新資料庫。 
 ---
-= 從來源資料庫分割沙箱複本
+= 從來源資料庫拆分資料庫克隆
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-在資料庫的 BlueXP  工作負載工廠中，從來源資料庫分割沙箱複本會建立一個新的資料庫，該資料庫會消耗一定數量的儲存容量。分割完成時、會刪除複本、而新資料庫會出現在庫存中。
+在NetApp Workload Factory for Databases 中，將資料庫克隆從其來源資料庫中拆分出來會建立一個新的資料庫，這將消耗一定量的儲存容量。當拆分完成並且新資料庫出現在庫存中時，克隆將被刪除。
 
 .開始之前
 請考慮新資料庫需要多少儲存容量。如有需要、 link:https://docs.netapp.com/us-en/workload-fsx-ontap/increase-file-system-capacity.html["增加檔案系統容量"^] 請在開始之前為 ONTAP 檔案系統使用 FSX 。
@@ -19,8 +19,8 @@ summary: 從來源資料庫分割沙箱複本，以便在 BlueXP  工作負載�
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
-. 在資料庫中、選取 * 沙箱 * 標籤。
-. 在沙箱索引標籤中，按一下您要分割的沙箱複本的三點功能表。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇要拆分的資料庫克隆的操作選單。
 . 選取 * 分割 * 。
-. 在分割對話方塊中、按一下 * 分割 * 。
+. 在拆分對話框中，選擇*拆分*。
 

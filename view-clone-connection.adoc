@@ -2,23 +2,23 @@
 sidebar: sidebar 
 permalink: view-clone-connection.html 
 keywords: view clone connection, copy connection information 
-summary: 在 BlueXP  工作負載工廠中檢視及複製資料庫的沙箱複製連線資訊。 
+summary: 檢視和複製NetApp Workload Factory for Databases 中資料庫複製的連線資訊。 
 ---
-= 檢視沙箱複製的連線資訊
+= 查看資料庫克隆的連接信息
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-在 BlueXP  工作負載工廠中檢視及複製資料庫的沙箱複製連線資訊。
+檢視和複製NetApp Workload Factory for Databases 中資料庫複製的連線資訊。
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
 . 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
-. 在資料庫中、選取 * 沙箱 * 標籤。
-. 在沙箱索引標籤中，按一下沙箱複製的三點功能表，即可檢視其連線資訊。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇沙盒克隆的操作選單來查看其連接資訊。
 . 選取 * 顯示連線資訊 * 。
 . 在 [ 顯示連線資訊 ] 對話方塊中，視需要複製連線資訊。
-. 按一下 * 關閉 * 。
+. 選擇*關閉*。
 

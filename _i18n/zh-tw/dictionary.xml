@@ -92,10 +92,7 @@
   <block id="93b004a62753aa3ecb7a47929a80309e" category="list-text">對於 * 部署模式 * 、請選取 * 容錯移轉叢集執行個體 * 或 * 單一執行個體 * 。</block>
   <block id="cd1a078082e7012671955f628fc5a709" category="paragraph">AWS 服務介面端點（ SQS 、 FSX 、 EC2 、 CloudWatch 、雲端形成、 SSM) 和 S3 閘道端點會在部署期間建立（如果找不到）。</block>
   <block id="4f8707176b7235252f943ef6ef597d55" category="paragraph">VPC DNS 屬性<block ref="cb0df2380d372b70fd568d139d704794" prefix=" " category="inline-code"></block> 並<block ref="df550516571c5adda5f49cb0f14d22f1" prefix=" " category="inline-code"></block> 經過修改、以啟用解析端點位址解析（如果尚未設定為<block ref="b326b5062b2f0e69046810717534cb09" prefix=" " category="inline-code"></block>）。</block>
-  <block id="4a7e9ea93c0e42c9eebad0069ff58fa9" category="list-text">* 可用性區域 * ：根據您選擇的部署模式選擇可用性區域和子網路。</block>
-  <block id="d2547fab6cf9d1064e2c017687d213c5" category="list-text">適用於單一執行個體部署</block>
   <block id="8738f299dd52a2650f23bf1ae30694fa" category="list-text">在 * 叢集組態 - 節點 1* 欄位中、從下拉式功能表的 * 可用性區域 * 中選取可用性區域、並從 * 子網路 * 下拉式功能表中選取子網路。</block>
-  <block id="9c622025b2f6aaf628ede7de56df481b" category="list-text">適用於 FCI 部署</block>
   <block id="5ac7c1b392927ce429f17a8855e854b5" category="list-text">* 安全性群組 * ：選取現有的安全性群組或建立新的安全性群組。</block>
   <block id="ba4f09fe932ad91d759a5dd3636acec6" category="list-text">建立工作負載安全性群組、以允許節點上的 Microsoft SQL 和 Windows 叢集通訊所需的連接埠和通訊協定。</block>
   <block id="1f653bdd2a02e3ebdc4f28328a96b00f" category="list-text">在 AWS 託管 Active Directory 的情況下、附加至目錄服務的安全性群組會自動新增至 Microsoft SQL 節點、以便與 Active Directory 進行通訊。</block>
@@ -145,14 +142,8 @@
   <block id="6d7b2a50e46356cb2ecf2805e3b5bb59" category="paragraph">如果您想要分隔資料庫的儲存空間、可以使用 _virtual 掛載點 _ 來執行此作業。虛擬掛載點可讓您將資料庫整合至主機上的幾個一般磁碟機。</block>
   <block id="92e04fe5d2a269f38993f394f5b1eb9b" category="admonition">使用 SMB 通訊協定的 Microsoft SQL Server 不支援資料庫建立。</block>
   <block id="7dd1095f5b5a654fc784015352d1066d" category="paragraph">建立新資料庫之前、請務必先完成下列先決條件。</block>
-  <block id="0b059e758179ae9106a6228fd71a42cb" category="list-text">Windows主機</block>
-  <block id="db205765ba81a6c0d96687e971328059" category="list-text">如果使用 _Quick cred_ 模式、您必須在 Microsoft SQL Server 上有足夠的磁碟機代號、才能為新資料庫建立新磁碟機。</block>
   <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Microsoft SQL Server</block>
-  <block id="113b1ad9ce6cdc3a37ad8475bc9bb2b2" category="list-text">AWS Systems Manager</block>
-  <block id="eb9283ad3309785d5def8a502da2a5fa" category="list-text">請確定已透過 AWS System Manager 在 Microsoft SQL 主機中啟用此<block ref="83cdffdaa23e1c6056018d21fda6ed6d" prefix=" " category="inline-code"></block> 權限。</block>
   <block id="1271a3d360115d2332889fc326f89944" category="section-title">建立資料庫</block>
-  <block id="ceef677928e7c6188983fdf4dd271a6e" category="list-text">在資料庫中、選取 * 庫存 * 索引標籤。</block>
-  <block id="8b882c3fbdc1d7d9a3892836061c41c2" category="list-text">在 [ 詳細目錄 ] 索引標籤中，選取具有託管 SQL Server 執行個體的資料庫伺服器，以便在中建立資料庫。</block>
   <block id="16b7e1ed68be5b41e619ec00b93a3de0" category="list-text">在「建立使用者資料庫」頁面的「資料庫資訊」下、提供下列資訊：</block>
   <block id="a657ad1c8328b5552791626de3484dcb" category="list-text">* 資料庫名稱 * ：輸入資料庫名稱。</block>
   <block id="16aa8185bcc829996f58f9ef641ffca9" category="list-text">*Collation* ：選擇資料庫的定序。已選取 Microsoft SQL Server 上的預設定序 SQL_Latin1_General_CP1_CI_AS 。</block>
@@ -172,9 +163,6 @@
   <block id="1679e79d01cec56d49e52ccb811c967f" category="paragraph">如果您已建立資料庫主機、可以在 * 工作監控 * 標籤中檢查工作進度。</block>
   <block id="944311d4a84e7d454ea59856dc26eae6" category="paragraph">沙箱複本是從來源資料庫上最新的快照建立而成。它可以複製到與來源資料庫相同的 Microsoft SQL Server 中、或是複製到另一個 Microsoft SQL Server 中、只要它們共用相同的適用於 ONTAP 檔案系統的 FSX 即可。</block>
   <block id="e40afef0cb2c3b82a9c6800c8c2f0f8a" category="paragraph">建立沙箱複本之前、請務必先完成下列先決條件。</block>
-  <block id="643d722e4b683cc7d65a0dca14d8df6e" category="list-text">確保<block ref="7254170b56a28e207df989a3f40b911f" prefix=" " category="inline-code"></block> 已透過 AWS Systems Manager 在 Microsoft SQL 主機中啟用使用者權限。</block>
-  <block id="6d75a53f3497a91632eb53863b237177" category="list-text">來源資料庫</block>
-  <block id="099ef1d3b9d5d76aafe25fa74a879a54" category="list-text">您需要可用於複製的來源資料庫。</block>
   <block id="7a4ee61e686f7a2654e0de589bb56945" category="list-text">在沙箱標籤中、選取 * 建立新的沙箱 * 。</block>
   <block id="a52444590926ede8f4c66b5fa95a9dcc" category="list-text">在 [ 建立新的沙箱 ] 頁面的 [ 資料庫來源 ] 底下，提供下列項目：</block>
   <block id="d63aa00e9cb281e7cc97e4e0a6bd3e85" category="list-text">* 來源資料庫主機 * ：選取來源資料庫主機。</block>
@@ -186,16 +174,13 @@
   <block id="26e615a604b088a660581f026763c30b" category="list-text">* 目標資料庫 * ：輸入沙箱複製的名稱。</block>
   <block id="f3346b0efa80289c47d4e6113a73a3ab" category="list-text">* 定義標記 * ：選取標記以定義沙箱複製。</block>
   <block id="34775e5e4b0b832c45a2707ae9b18f95" category="paragraph">若要檢查工作進度、請前往 * 工作監控 * 標籤。</block>
-  <block id="5697f3fa0c3bfd3435b1268d395d044b" category="doc">從來源資料庫分割沙箱複本</block>
   <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">選擇*刪除*。</block>
-  <block id="1aef21babcea64bea2aff92468198535" category="list-text">在刪除對話方塊中、按一下 * 刪除 * 。</block>
   <block id="bfe3baeb9acd99f2f2bce618befc4139" category="paragraph">開始之前、請先完成下列先決條件：</block>
   <block id="201c4d58b6fa62f021a1865e894234ef" category="list-text">* 每月變更率 * ：輸入每月平均複製資料和快照資料變更的百分比。</block>
   <block id="f31ed490fd3768dff2a1121a0a06095c" category="list-text">部署方法</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
   <block id="6a7b2c9c4cec65ad972b108fa0a1192b" category="section-title">取得適用於 ONTAP 的 FSX 支援</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX for ONTAP Sf</block>
-  <block id="9d06990508d25d367d9158c6558eb9c8" category="paragraph"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="35f9849ffdd809bda11d0fc56e1e3583" category="paragraph">若要獲得工作負載工廠及其儲存解決方案與服務的專屬技術支援、請使用下列支援選項。</block>
   <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自我支援選項</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項可供免費使用、一天24小時、一週7天：</block>
@@ -208,7 +193,6 @@
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">開始之前</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
-  <block id="aadd86a3fadf19221852692c6e4adc2f" category="paragraph">選取此選項會開啟 BlueXP 主控台新的瀏覽器索引標籤、並載入支援儀表板。</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上、選擇「技術支援」下的其中一個可用選項：</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">如果您想與電話上的某人通話、請選取 * 致電 * 。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
   <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">選擇 * 建立案例 * 、與 NetApp 支援專家一起開啟 Ticket ：</block>
@@ -226,12 +210,10 @@
   <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">如需支援案例的記錄、您可以選取 * 設定 &gt; 時間軸 * 、然後尋找名為「建立支援案例」的動作。最右側的按鈕可讓您展開動作以查看詳細資料。</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">嘗試建立案例時、可能會遇到下列錯誤訊息：</block>
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"您無權針對所選服務建立案例"</block>
-  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">此錯誤可能表示、與該帳戶相關聯的NSS帳戶及記錄公司與BlueXP帳戶序號的記錄公司不同（例如960xxxx)或工作環境序號。您可以使用下列其中一個選項尋求協助：</block>
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">使用產品內對談</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">請至提交非技術案例<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">管理支援案例（預覽）</block>
-  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">您可以直接從BlueXP檢視及管理作用中和已解決的支援案例。您可以管理與您的NSS帳戶和貴公司相關的個案。</block>
   <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">案例管理可透過預覽取得。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意下列事項：</block>
   <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">頁面頂端的案例管理儀表板提供兩種檢視：</block>
@@ -241,8 +223,6 @@
   <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">您可以新增或移除感興趣的欄、也可以篩選優先順序和狀態等欄的內容。其他欄則只提供排序功能。</block>
   <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">如需詳細資料、請參閱下列步驟。</block>
   <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">在個別案例層級、我們提供更新案例附註或關閉尚未處於「已結案」或「待結案」狀態的案例的功能。</block>
-  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">選取 * 個案管理 * 、如果出現提示、請將您的 NSS 帳戶新增至 BlueXP 。</block>
-  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">「*個案管理*」頁面會顯示與您的BlueXP使用者帳戶相關聯的與NSS帳戶相關的未決個案。這是顯示在「* nssnmanagement *」頁面頂端的相同nss.帳戶。</block>
   <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">（可選）修改表格中顯示的資訊：</block>
   <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">在 * 組織案例 * 下、選取 * 檢視 * 以檢視與貴公司相關的所有案例。</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">選擇確切的日期範圍或選擇不同的時間範圍、以修改日期範圍。</block>
@@ -291,7 +271,6 @@
   <block id="8c13e82e1f3b94b558fc62725c62e275" category="list-text">AWS Cloud 、 Microsoft Windows 和 SQL 伺服器、以及 NetApp ONTAP 在 EC2 執行個體上部署 SQL Server 的整合式知識。</block>
   <block id="3c346a6e5b8bfffe9f594d4b570f64b2" category="list-text">整體擁有成本最佳化部署。</block>
   <block id="95b422671139518fef625dc57caa75d6" category="list-text">遵循 AWS 、 Microsoft 和 ONTAP 最佳實務做法的端點對端部署自動化。</block>
-  <block id="a5bf0aed4e29e1013fda731bbe113130" category="list-text">「快速建立」部署模式可協助您避免手動設定的潛在陷阱。</block>
   <block id="b6cb73add7d1e5bdd9c209cdffe99073" category="list-text">* 程式碼片段產生 * ：基礎架構即程式碼（ IAC ）片段是在資源建立期間產生、可與現有的協調工作流程無縫整合。</block>
   <block id="d8135e6fae6748dcba5e9d108c9af427" category="list-text">* 程式碼檢視器與自動化目錄 * ： Codebox 提供程式碼檢視器、可快速分析自動化、並提供自動化目錄、供日後快速重複使用。</block>
   <block id="bd3efbff9056d0d06b47ed96623fda0d" category="list-text">* 簡單、快速的部署 * ：選擇規格問題的答案、並免除調查如何在 AWS 上配置和設定 Microsoft SQL Server 所需的時間、藉此簡化和簡化您的資源配置體驗。</block>
@@ -304,23 +283,13 @@
   <block id="3f6d25a55efe97b6946734de9f11179a" category="list-text">* 耐用性、可用度及可靠性 * ：適用於 ONTAP 的 FSX 提供多項功能、可提升在適用於 ONTAP 的 FSX 上託管的自我管理資料庫的耐用性與可用度、例如支援單一和多重可用性區域部署的高可用度、應用程式感知快照、使用複寫改善災難恢復、以及有效率的備份。</block>
   <block id="8a1827433b93fc37d164f704e5105ae4" category="list-text">* 效能與擴充性 * ：適用於 ONTAP 的 FSX 提供高處理量、低延遲、高速網路連線、以及多個檔案系統的擴充性等效能最佳化功能、可擴充工作負載所需的彙總效能。</block>
   <block id="831029cddd4860adff9325d95aeb21bf" category="list-text">* 資料管理與效率 * ：適用於 ONTAP 的 FSX 提供多項功能、可強化資料管理與效率、例如節省空間的精簡型複本、精簡配置、壓縮與重複資料刪除、以及將不常存取的資料分層至容量集區。</block>
-  <block id="ac4cc23ff41c1cade709408d699aa76e" category="section-title">部署詳細資料</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">支援的組態</block>
-  <block id="b014dec561cac856e6794b24ddf4e0ae" category="cell">SQL Server 版本</block>
   <block id="ed590cb2453f0683b64cb528f78610a2" category="cell">Windows Server 2016</block>
   <block id="31f8757839909e87266f2b53482c86ef" category="cell">Windows Server 2019</block>
   <block id="de547bcab0e20f54ec4d5e95ba44b0b1" category="cell">Windows Server 2022</block>
   <block id="6398e4fc7f27908af1536ab8fc6a8a8c" category="paragraph">2016年SQL Server</block>
-  <block id="93cba07454f06a4a960172bbd6e2a435" category="paragraph">是的</block>
-  <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="paragraph">否</block>
   <block id="e40ceeaead715c564e85bdc9b183e491" category="paragraph">2019年SQL Server</block>
   <block id="4299db16db1e4a3a88d3942050ce43f2" category="paragraph">2022年SQL Server</block>
-  <block id="1db243dea70edead0d0207ad0a6fcf03" category="section-title">部署架構</block>
-  <block id="116c94009b6bbaaad10e64be0dc2ae6e" category="paragraph">資料庫支援單一可用性區域和多重可用性區域部署架構。</block>
-  <block id="213cb4fa8613615178e793d9dcd42165" category="paragraph-title">單一可用度區域</block>
-  <block id="eceb487f9210f0e2c685f44aa826a428" category="paragraph">下圖顯示單一區域中單一可用區域的獨立式架構。</block>
-  <block id="bc2a46f921494df9fc5f911909c03874" category="paragraph-title">多個可用度區域</block>
-  <block id="45ff909c10981ab6ad483d76f5f0eb91" category="paragraph">下圖顯示單一區域中具有容錯移轉叢集執行個體（ FCI ）叢集的雙節點高可用度（ HA ）架構。</block>
   <block id="49d814834d377dce6b3bd66dc0f18083" category="section-title">整合式 AWS 服務</block>
   <block id="da0a192f6b5c69db0c8e520f16669cc8" category="paragraph">資料庫包含下列整合式 AWS 服務：</block>
   <block id="58e3bfbabf904de43a6a22aca509b0d8" category="list-text">CloudForation</block>
@@ -328,7 +297,6 @@
   <block id="311bdda432aba736b8dcb987523c0c92" category="list-text">CloudWatch</block>
   <block id="8e75b153e61c22a8ea4e14aadc7cb4ee" category="list-text">Systems Manager</block>
   <block id="6557196a178a8218ef6c930021f81c27" category="list-text">Secrets Manager</block>
-  <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">支援的地區</block>
   <block id="d5b1044cbc510048a5dac270bde89ed5" category="inline-link">檢視支援的Amazon地區。</block>
   <block id="ad308330f566581c7c1ac5769e060883" category="paragraph">支援 ONTAP 適用的 FSX 的所有商業地區均支援資料庫。<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
   <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">不支援下列 AWS 區域：</block>
@@ -366,8 +334,6 @@
   <block id="5c7a83ffcacee6b5f8b97e61c20dc908" category="list-text">工作事件保留</block>
   <block id="a4c455fbdb91b6c5a283d4a40626cd5b" category="list-text">工作監控事件會保留在使用者介面中 30 天。</block>
   <block id="4639d0e2e2909a747265c2f704128bca" category="section-title">監控工作</block>
-  <block id="96ea9efb359a91a00480c8f67e682c8f" category="list-text">在資料庫中、選取 * 工作監控 * 標籤。</block>
-  <block id="59d6e1b8f6bd894db211d6ad27845f97" category="list-text">在「工作監控」標籤中、使用篩選器或搜尋來縮小工作結果範圍。您也可以下載工作報告。</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
   <block id="27c19be9febabd1e2fb82d7a39784f2d" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 新增認證和權限</block>
@@ -384,36 +350,24 @@
   <block id="d8d2ddd0343da02a81aaa9fd2bb270e7" category="list-text">* 重新整理至時間點 *</block>
   <block id="a9b30d5aec7c9f917986ea976c3be0c1" category="paragraph">針對此選項、請從下拉式功能表中選取要重新整理的資料庫快照。</block>
   <block id="d687cb57e7c0a2bc72631659265b9d28" category="list-text">按一下*重新整理*。</block>
-  <block id="36bfe5aa9dbfbad068e6721ddea626bb" category="paragraph">當您複製資料庫時、建立時的複本為 _baseline 複本。複製資料庫中的資料與建立時的來源資料庫相同。隨著沙箱資料庫複本中的資料隨時間變更、您可能會想要在首次建立複本時、將資料還原至基準線。此作業稱為重新建立複本的基礎。重新建立複本的基準、而非建立新的複本、可節省空間；不過、對沙箱複本所做的任何變更都會遭到刪除。</block>
   <block id="0975db7a2f5f2be54dab36d8b76af890" category="list-text">選取 * 重新建立基準線 * 。</block>
-  <block id="ee39d3157a6b84476b1e530c43e7e0af" category="list-text">在重新建立基準線對話方塊中、按一下 * 重新建立基準線 * 。</block>
   <block id="bad5772919d73bf3b17433524b58ead6" category="inline-link-macro">增加檔案系統容量</block>
   <block id="eed30e1e95c32e95da513640e3e7e215" category="paragraph">請考慮新資料庫需要多少儲存容量。如有需要、 <block ref="ecf193ca0846a4137269dac878e92281" category="inline-link-macro-rx"></block> 請在開始之前為 ONTAP 檔案系統使用 FSX 。</block>
   <block id="54e2c4dd2b9e992b761540f131754e81" category="list-text">選取 * 分割 * 。</block>
-  <block id="05b751f4cbd4ae2611783e6ab193a961" category="list-text">在分割對話方塊中、按一下 * 分割 * 。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援登錄總覽</block>
-  <block id="d7e4bb081bf4ec4814d83edcfbdb8b96" category="paragraph">註冊您的帳戶 ID 支援訂閱（您的 20 位數 960xxxxxxxxx 序號位於 BlueXP 的「支援資源」頁面）、即為您的單一支援訂閱 ID 。每個BlueXP帳戶層級的支援訂閱都必須註冊。</block>
-  <block id="f9e05c2b383e3f11e3b4bebbe8952225" category="paragraph">註冊可提供開啟支援服務單和自動產生個案等功能。如下列所述、將 NetApp 支援網站 （ NSS ）帳戶新增至 BlueXP 即可完成登錄。</block>
   <block id="856edc4caec68fece6859c4be9360f3c" category="section-title">註冊您的帳戶以取得 NetApp 支援</block>
-  <block id="2d6573b6ae4c51dc24e58109473f2490" category="paragraph">若要註冊以取得支援並啟動支援授權、您帳戶中的一位使用者必須將 NetApp 支援網站帳戶與其 BlueXP 登入建立關聯。您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">現有的客戶、擁有一個新服務客戶帳戶</block>
-  <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是擁有NSS帳戶的NetApp客戶、您只需透過BlueXP註冊即可獲得支援。</block>
-  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。</block>
   <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">選取 * 使用者認證 * 。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">若要確認註冊程序是否成功、請選取「說明」圖示、然後選取 * 「支援 * 」。</block>
   <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">「 * 資源 * 」頁面應顯示您的帳戶已註冊以取得支援。</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">螢幕擷取畫面會顯示帳戶序號和綠色核取方塊、以及註冊支援的文字。</block>
   <block id="fa7897454f637026faa3e00ccbfec239" category="paragraph"><block ref="fa7897454f637026faa3e00ccbfec239" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">請注意、如果其他 BlueXP 使用者尚未將 NetApp 支援網站 帳戶與 BlueXP 登入建立關聯、則不會看到此相同的支援登錄狀態。不過、這並不表示您的 BlueXP 帳戶尚未註冊支援。只要帳戶中有一位使用者已遵循這些步驟、您的帳戶就已登錄。</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶、但無NSS.帳戶</block>
-  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是現有的 NetApp 客戶、擁有現有的授權和序號、但沒有 NSS_ 帳戶、則需要建立一個 NSS 帳戶、並將其與您的 BlueXP 登入建立關聯。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">《使用者登錄表》NetApp 支援網站</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">完成建立 NetApp 支援網站帳戶<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。</block>
-  <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">請務必複製上述序號欄位使用的BlueXP帳戶序號（960xxxx）。這將加速帳戶處理。</block>
-  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">完成下的步驟、將新的 NSS 帳戶與 BlueXP 登入建立關聯 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp全新推出</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp的新客戶、而且您沒有新的NSS帳戶、請依照下列每個步驟操作。</block>
   <block id="f5d7029ed18f998c0a9d780b2554e538" category="list-text">從「支援資源」頁面找到您的帳戶 ID 序號。</block>
@@ -429,11 +383,8 @@
   <block id="201080500e946070a2e4873042507c77" category="paragraph">確認將您的申請提交給NetApp、並建議您建立NetApp 支援網站 一個申請表。</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">在此過程中、NetApp應與您聯絡。這是新使用者的一次性就職練習。</block>
-  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">擁有 NetApp 支援網站帳戶後、請完成下的步驟、將帳戶與 BlueXP 登入建立關聯 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
-  <block id="5e121c3e57ce0f4b69bb4130bd318d27" category="doc">檢視沙箱複製的連線資訊</block>
   <block id="43c2cf40a7db4f77b2c6c793066c47a5" category="list-text">選取 * 顯示連線資訊 * 。</block>
   <block id="383d22dfa0525ab8f4cf0db98c16e30f" category="list-text">在 [ 顯示連線資訊 ] 對話方塊中，視需要複製連線資訊。</block>
-  <block id="e180b7ca8fea43e3b6bee94a5f547753" category="paragraph">瞭解資料庫的新功能。</block>
   <block id="76d820a16128270adf6a061b253cca06" category="inline-link-macro">瞭解資料庫</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
@@ -472,10 +423,6 @@
   <block id="bc022c3667608474d06f63ffb2eebae2" category="list-text">如果您選擇了「隨時可用」部署模式、請提供 * 次要 EC2 規格 * 和 * Volume 類型 * 的詳細資料。</block>
   <block id="987744b5f771277a1178cfe644cbc0fc" category="section-title">多個適用於 ONTAP 檔案系統的 FSX</block>
   <block id="99efe89c42d431b837f65532aae23835" category="paragraph">Workload Factory 不支援建立或儲存具有多個適用於 ONTAP 檔案系統之 FSX 的 Microsoft SQL Server 組態。僅支援一個用於 ONTAP 檔案系統組態部署的 FSX 。</block>
-  <block id="47a163f004615087c2657ccd33556b21" category="inline-image-macro">單一可用區域部署 Amazon FSX for NetApp ONTAP 的獨立式架構圖表</block>
-  <block id="b5f6bf8fd8be52125c5a57623c59fb74" category="paragraph"><block ref="b5f6bf8fd8be52125c5a57623c59fb74" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d0f89584864be2185a335bc4929a20b1" category="inline-image-macro">雙節點高可用度架構的圖表、在單一區域中使用容錯移轉叢集執行個體叢集</block>
-  <block id="7a63a16765732857342ebddb28cd6643" category="paragraph"><block ref="7a63a16765732857342ebddb28cd6643" category="inline-image-macro-rx" type="image"></block></block>
   <block id="691e71734464aaf43017f5b033e54559" category="section-title">2024 年 8 月 4 日</block>
   <block id="4b93fd033dead8dde7a70076fe4dfb36" category="section-title">節省計算機增強功能</block>
   <block id="7aeef6f406aa249df106ff2e48e80f59" category="list-text">成本預估說明</block>
@@ -490,8 +437,6 @@
   <block id="3d97983d64bf9e9b4ee62805c09d1774" category="paragraph">現在您可以自訂 Microsoft SQL Server 、 Amazon EC2 和 Elastic Block Store 的設定、以手動探索節約效益。節約計算機將根據成本來決定最佳組態。</block>
   <block id="1d949c7c5600289e10795f178278edd1" category="section-title">2024 年 7 月 7 日</block>
   <block id="b43b4421683dbb9b1b6736babc3a3104" category="list-text">Microsoft 多重路徑 I/O 組態</block>
-  <block id="79cd591b45c99c7009501060c190216b" category="inline-link-macro">使用 Amazon FSX for NetApp ONTAP 進行 SQL Server 高可用度部署</block>
-  <block id="1ff667d8710153a8539d76d68aecd4b5" category="paragraph">如需詳細資訊、請 <block ref="36ceba25653f76919b1587a7f1d056fa" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="42284190cc0e4af01d69e70bf8966f0e" category="paragraph">對於現有的 ONTAP 檔案系統 FSX 、請確保下列事項：</block>
   <block id="996d6e2f42d7b52c1cba72a8225cbb65" category="list-text">連接到適用於 ONTAP 的 FSX 的路由群組可讓路由傳送至子網路以用於部署。</block>
   <block id="74c33b9e5d949f9ac1669cc2da38be60" category="list-text">安全性群組允許來自用於部署的子網路流量、特別是 HTTPS （ 443 ）和 iSCSI （ 3260 ） TCP 連接埠。</block>
@@ -518,7 +463,6 @@
   <block id="a5d2a4e28080feba2d0ba29a55f0eeab" category="list-text">在 EC2 規格下、從下拉式功能表中選取 * 執行個體類型 * 。</block>
   <block id="10d39a5cdb7cfb8abf1a05097e8f20bc" category="section-title">使用適用於 ONTAP 的 FSX 在 AWS EC2 上部署 Microsoft SQL Server</block>
   <block id="933800b579b2bf7e0f9916f0fa54607d" category="paragraph">如果您想要切換至 FSX for ONTAP 以節省成本、請按一下 * 建立 * 、直接從「建立新的 Microsoft SQL 伺服器」精靈建立建議的組態、或按一下 * 儲存 * 來儲存建議的組態以供稍後使用。</block>
-  <block id="e6ae9aa516c09658fbcbb0830276915c" category="paragraph">在 _based_ 模式中、您可以從 Codebox 視窗複製內容、並使用其中一種 Codebox 方法來部署建議的組態。</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024 年 9 月 1 日</block>
   <block id="ed09bad7864ec765b3bccff9b87f25fb" category="paragraph">選取下列其中一個選項：</block>
   <block id="f5154bf526cc04b2839db0c72b2a7c22" category="list-text">* 自動指派掛載點 *</block>
@@ -569,90 +513,17 @@
   <block id="e5d3c7248ff4540f88c13fbf9252d0a3" category="inline-link-macro">工作負載原廠主控台</block>
   <block id="ab1e050e49bbc49befbca952f74f0443" category="inline-image-macro">工作負載原廠主控台首頁的螢幕擷取畫面。圖中顯示的資料庫方塊有一個新的「探索節約」按鈕。按一下按鈕以開啟下拉式功能表。下拉式功能表有兩個選項： EBS 上的 Microsoft SQL Server 和適用於 Windows 檔案伺服器的 FSX 上的 Microsoft SQL Server 。</block>
   <block id="923f11c15ceba3bc0e4d37309ab27ed2" category="paragraph"><block ref="923f11c15ceba3bc0e4d37309ab27ed2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8e73a65c2de8a6be7664465f03b5fb30" category="doc">使用 BlueXP  工作負載工廠中的 Codebox 自動化資料庫</block>
-  <block id="51e4916a9fe4770db146f2aed9289957" category="paragraph">您可以使用 BlueXP  工作負載工廠中的 Codebox 來自動化資料庫的主機部署，資料庫建立等作業。CodeBox 是一種程式碼（ IAC ）共同試驗基礎架構，可協助您產生程式碼，以執行工作負載工廠支援的任何作業。</block>
-  <block id="30ff17c408a791bb5ea2db0f271e1b5a" category="summary">執行完整性檢查，判斷資料庫的沙箱複製資料在 BlueXP  工作負載工廠中是否完整或毀損。</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link-macro">主控台體驗</block>
   <block id="e1e54933838bb7ba662301d01c937d2d" category="list-text">使用其中一項登<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>入。</block>
-  <block id="842cadd8705fae5a3bbfb5a3b59568fe" category="paragraph">將沙箱複本與 REST API 程式碼連線至持續整合及持續交付（ CI/CD ）管線，透過資料庫的 BlueXP  工作負載工廠自動化來改善軟體交付。</block>
-  <block id="920d5db87e34d780e98c3efabde9041b" category="summary">在 BlueXP  工作負載工廠內為資料庫建立新的 Microsoft SQL Server 。</block>
-  <block id="e688adbe92be47aae67ff0624dc5033a" category="list-text">Microsoft SQL Server 部署模式都需要使用 iSCSI 儲存傳輸協定來建立 LUN 。工作負載工廠會將 Microsoft 多重路徑 I/O （ MPIO ）設定為透過適用於 ONTAP 的 FSX 為 SQL Server 設定 LUN 的一部分。MPIO 是根據 AWS 和 NetApp 最佳實務做法進行設定。</block>
   <block id="cef4156e4fa9e5869d4dee02c1b39d6e" category="paragraph">AWS 認證加上 _ 自動化 _ 權限，可讓工作負載在出廠時從工作負載工廠內的 AWS 帳戶部署及管理新的資料庫主機。</block>
-  <block id="fea8f5f977933d9473ff7671b078a975" category="paragraph">如果您想要在工作負載工廠中完成建立新伺服器表單，以便下載完整的 YAML 檔案範本，以便在 AWS CloudForformation 中部署，請遵循 * 選項 2* ，以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。為資料庫工作負載手動新增 _Read_ 模式所需的認證和權限。</block>
   <block id="d6631cc039c798bd233c70bae3023936" category="paragraph">或者，您也可以從 Codebox 下載部分完成的 YAML 檔案範本，在工作負載工廠外部建立堆疊，而無需任何認證或權限。從 Codebox 的下拉式清單中選取 * CloudForiam* 以下載 YAML 檔案。</block>
-  <block id="6705f898558de9ace7f76d4dba3f6b46" category="paragraph">伺服器部署後，工作負載工廠不會在 Microsoft SQL Server 上啟用遠端連線。若要啟用遠端連線、請完成下列步驟。</block>
-  <block id="ab10527f72b802d94f02853d4f1464d9" category="inline-link-macro">在 BlueXP  工作負載工廠中為資料庫建立資料庫</block>
-  <block id="1a1650a540cb9fce3a9e114c64e5db7f" category="paragraph">現在您可以了 <block ref="2f3db65621a99732d2f0b65d2f314173" category="inline-link-macro-rx"></block>。</block>
-  <block id="8bded105abcda3d172a4e1fa27c12e95" category="summary">為資料庫建立一個 BlueXP  工作負載工廠的 Microsoft SQL 資料庫。</block>
-  <block id="4db1f06a61b684f54f7d19df4c93ec15" category="doc">在 BlueXP  工作負載工廠中為資料庫建立 Microsoft SQL 資料庫</block>
-  <block id="d824723631e1f8de1b8bcee4a1de9c1e" category="paragraph">建立新的 Microsoft SQL 資料庫可讓您在 BlueXP  工作負載工廠內管理資料庫的資源。</block>
   <block id="86b0140bb79dd7663425ee50a4e68361" category="inline-link-macro">瞭解工作負載工廠的作業模式</block>
   <block id="3a0419549547987e965186c31b3610eb" category="paragraph">在工作負載工廠中建立資料庫需要自動化模式權限。或者，在基本模式中，您可以複製或下載部分完成的程式碼範本，以完成工作負載工廠以外的作業。<block ref="5968ff3deed2bc48d2bc3a731c0f115b" category="inline-link-macro-rx"></block> 決定您要使用的模式。</block>
   <block id="3bfb7d9388422f644c389daf1ad5c953" category="paragraph">或者，您也可以使用 Codebox 來複製範本，以便使用 REST API 在工作負載工廠以外部署資料庫。<block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>。</block>
-  <block id="4df748154a165347722755bf184e6bf0" category="list-text">您必須在工作負載工廠中擁有託管的 Microsoft SQL Server ，資料庫才能裝載新的資料庫。</block>
-  <block id="c6416602b6423e2ef924b15ae4981503" category="summary">在 BlueXP  工作負載工廠中為資料庫建立沙箱複製。</block>
-  <block id="8227770ecb65ecb8937d56c6f259900e" category="doc">在 BlueXP  工作負載工廠中為資料庫建立沙箱複製</block>
-  <block id="86fe540236465ca4e3d667ed76acb230" category="paragraph">在 BlueXP  工作負載工廠為資料庫建立資料庫的沙箱複本，可讓您使用複本進行開發，測試，整合，分析，訓練， QA 等作業，而無需變更來源資料庫。</block>
-  <block id="977ef254da68f1a51ae8a6edf3a4791f" category="paragraph">或者，您也可以使用 Codebox 複製部分完成的範本，或建立完整的範本，以便使用 REST API 在工作負載工廠外部建立沙箱複製。<block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>。</block>
-  <block id="36acb14683eb2b002c873c33647cbdba" category="list-text">您必須在工作負載工廠中擁有託管的 Microsoft SQL Server ，資料庫才能裝載新的沙箱複製。</block>
-  <block id="23fb636062a19e5367fc7e960e315c4c" category="list-text">* 掛載 * ：當複製具有多個資料和 / 或記錄檔的 SQL 資料庫時，工作負載工廠會以自動指派或定義的磁碟機代號來複製所有檔案。</block>
-  <block id="f18c09ef6c0024eb6c989751920a14b8" category="summary">當您不再需要時，請在 BlueXP  工作負載工廠中刪除沙箱複本。</block>
-  <block id="b77d65b48658772b1938bb5f92515cad" category="paragraph">如果您不再需要資料庫，而且想要釋放儲存容量，請在 BlueXP  工作負載工廠中刪除資料庫的沙箱複製。</block>
-  <block id="51bdfc0a469b2ea10ef9ab2e5263224e" category="doc">探索 BlueXP  資料庫工作負載工廠的節約效益</block>
-  <block id="5817c5b26a2a7f4c1334dc3c03403f64" category="paragraph">工作負載工廠會進入偵測到的「彈性區塊存放區」和適用於 Windows 檔案伺服器主機特性的 FSX ，以便您可以自動探索節約效益。</block>
-  <block id="02cb01a24a3bd2f230f64c9dacb47b9b" category="paragraph">如果工作負載工廠偵測到 EBS 主機，您將會被重新導向至「探索節約效益」索引標籤。如果工作負載工廠未偵測到 EBS 主機，您將會被重新導向至<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block>。</block>
-  <block id="410e51fe916df293f504b839d0f57635" category="paragraph">如果工作負載工廠偵測到適用於 Windows 主機的 FSX ，您將會重新導向至「 Explore 節約」標籤。如果工作負載工廠未偵測到適用於 Windows 主機的 FSX ，您將會重新導向至<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block>。</block>
-  <block id="e00404dee5b9f38b5bb22a8003216d6c" category="admonition">工作負載工廠不支援儲存或建立多個適用於 ONTAP 檔案系統的 FSX 。</block>
-  <block id="33676eddd497e24b312ae6ea5bd80401" category="list-text">在 _ 自動化 _ 模式中，您可以直接從工作負載工廠使用適用於 ONTAP 的 FSX ，在 AWS EC2 上部署新的 Microsoft SQL Server 。您也可以從 Codebox 視窗複製內容、並使用其中一種 Codebox 方法來部署建議的組態。</block>
-  <block id="42342e81c625fd1c1141771fe2b6b202" category="summary">NetApp 以多種方式支援工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
-  <block id="c7d32b65d743ab2db5a256038dc2d47f" category="doc">取得資料庫 BlueXP  工作負載工廠的說明</block>
-  <block id="8d73f6c12fd7443dc2523bc487ff399d" category="doc">資料庫的 BlueXP  工作負載工廠已知限制</block>
-  <block id="81a3f70aad37916fff75f46319b0b4f4" category="paragraph">在部署過程中，工作負載工廠不會安裝含有多個 Microsoft SQL Server 執行個體的自訂 AMI 。只會選取預設的 Microsoft SQL Server 執行個體、並將其設定為部署的一部分。</block>
-  <block id="9a9f0b72c18ecdcfa44766a84963da91" category="paragraph">工作負載原廠不支援復原和重試失敗的部署。您可以從 AWS 中的 CloudForgation 主控台回溯或重試失敗的堆疊。</block>
-  <block id="4a50857e1707616ee60a78ae42c9b8a0" category="paragraph">工作負載原廠不支援管理 Always On Availability Groups 組態。</block>
-  <block id="620aae64a79a6a9f3dd3cbcf536b15df" category="paragraph">如果您在工作負載工廠的 Microsoft SQL Server 部署期間選取「使用者管理的 Active Directory 」，則必須提供安全群組，允許 EC2 執行個體之間的流量傳輸至目錄服務進行部署。工作負載工廠不會像 AWS 託管的 Microsoft AD 一樣，自動附加使用者託管 Active Directory 的安全群組。</block>
-  <block id="647fea922cff8e907550de558b4cd653" category="paragraph">未儲存 Microsoft SQL Server 偵測。每次您存取工作負載工廠中的資料庫時， Microsoft SQL Server 偵測會再次執行，以識別區域中的 SQL 安裝。</block>
-  <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link-macro">工作負載原廠總覽</block>
-  <block id="092d6885b847467d6999738db9651764" category="paragraph">如需工作負載工廠的詳細資訊，請<block ref="f3c978a33f5f67b2b7f311b0ac6d0acd" category="inline-link-macro-rx"></block>參閱。</block>
-  <block id="ebfbd585b037101117706b78fcfab22b" category="section-title">自助管理資料庫的工作負載工廠效益</block>
-  <block id="9b5b77ae9c2b5afb1fd7b3d0e5d05ad2" category="paragraph">工作負載工廠為自我管理的資料庫提供下列實用的最佳實務做法和自動化功能。</block>
-  <block id="f63ee042c60cee6f631e4d8e0414dd00" category="section-title">使用工作負載原廠 CodeBox 自動化</block>
-  <block id="e8d2772773d0b560ee5057d9b413b85b" category="paragraph">工作負載工廠採用 _Codebox_ 內建自動化功能。Codebox 提供下列自動化優點：</block>
-  <block id="dbebcf8b009c3066f6c2e41d9d151db3" category="list-text">* 基礎架構即程式碼協同作業 * ： Codebox 是基礎架構即程式碼（ IAC ）聯合試驗計畫，可協助開發人員和 DevOps 產生程式碼，以執行工作負載工廠所支援的任何作業。</block>
-  <block id="eab11377e722eee4827c722ddb332dea" category="section-title">資料庫功能的工作負載工廠</block>
-  <block id="a64bfb89ea4c055947979c22458eeaf5" category="paragraph">資料庫的工作負載工廠提供下列功能：</block>
-  <block id="b5525c91b3789739ba99a54cb2c721a9" category="list-text">* 自動化協調 * ：可透過工作負載工廠使用者介面使用 _Quick_ 和 _Advanced_ 來建立部署模式，工作負載工廠的 Chatbot 和使用 AWS CloudForemation 的 API 。</block>
   <block id="ac48048cc385514c8193aeb51f798df3" category="list-text">* 成本預估 * ：使用節省計算機評估潛在成本節約效益，並詳細說明使用 Elastic Block Store 和適用於 Windows 檔案伺服器的 FSX 進行現有 Microsoft SQL Server 部署的儲存，運算， SQL 授權，快照和複製明細成本，相較於適用於 ONTAP 的 FSX 。</block>
-  <block id="fb2076e79d297f45b57510dfff465ed5" category="list-text">* 可重複使用的自動化範本 * ：從工作負載原廠 Codebox 建立，重新使用及自訂 CloudForgation 範本，以供未來在多種環境中部署 Microsoft SQL Server 。</block>
-  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">使用工作負載工廠的工具</block>
-  <block id="11366d0688d978b3372702f5c4d33b84" category="inline-link-macro">瞭解適用於 ONTAP for Workload Factory 的 FSX</block>
-  <block id="27dfabff613e2389e886e5b797252438" category="paragraph"><block ref="2e826ed2a2f94b608ac7d80f7c1db3b6" category="inline-link-macro-rx"></block>。</block>
-  <block id="5e403a4c3b152d7f395a9974ccfd4e4c" category="section-title">工作負載工廠的作業模式</block>
-  <block id="eb6e457556694fbc8d187534ac1188e1" category="inline-link-macro">工作負載工廠的作業模式</block>
-  <block id="7bb004aef4b112c40189995d006d040c" category="paragraph">深入瞭解 <block ref="eda3e48a35318d9f8306be63aaa1ab6b" category="inline-link-macro-rx"></block>。</block>
-  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以搭配下列工具使用 BlueXP  工作負載工廠：</block>
-  <block id="37c0391f707d07b4c1d64a02e6944c56" category="paragraph">Microsoft SQL Server 的工作負載原廠支援高可用度（永遠在容錯移轉叢集執行個體上），以及根據 AWS ， NetApp ONTAP 和 SQL Server 最佳實務做法進行單一執行個體部署。</block>
-  <block id="b9aff8d3c5ff2dd2a4ce0963f381f957" category="paragraph">有關工作負載工廠或工作負載工廠應用程式與服務的一般問題，請<block ref="b9da93c3ce08d7fb81177157f233c056" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="eb7ed5d3b1a2ff72006245ad37f9817b" category="paragraph">您必須擁有 AWS 帳戶才能使用資料庫。</block>
   <block id="c37e590e9c50960a15f3292676cc0c18" category="paragraph">請依照下列步驟開始使用。</block>
-  <block id="3e7340039619cc08d8c1c5a3cd4bfb43" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登入 BlueXP  工作負載工廠</block>
-  <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link-macro">在工作負載工廠設定帳戶</block>
-  <block id="f6c71053fa21be1c35ee95758a3d1050" category="paragraph">您需要<block ref="782deaad814daa4f2ae09237c9394f09" category="inline-link-macro-rx"></block>使用其中一項登入<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>。</block>
-  <block id="c1b68fc67f0e2b970d81dd29c91edb3c" category="summary">在 BlueXP  工作負載工廠中重新整理資料庫的沙箱複本。</block>
-  <block id="6aa117cc6340cd2479e82444cbbadea9" category="doc">在 BlueXP  工作負載工廠中重新整理資料庫的沙箱複本</block>
-  <block id="99ce2cd9a13526e0582af2c9fa2a4382" category="paragraph">在 BlueXP  工作負載工廠中重新整理資料庫的複本，使其與目前或上一個時間點的來源資料庫相當。</block>
-  <block id="f309866754bf35f695ffb6fb634a2f37" category="summary">在 BlueXP  工作負載工廠中還原資料庫的沙箱複本。</block>
-  <block id="74a9cd4d55ad48487f0d0caeb29ac324" category="doc">在 BlueXP  工作負載工廠中還原資料庫的沙箱複本</block>
-  <block id="fe0782eca6dc24ac15087637f0896cda" category="paragraph">在資料庫的 BlueXP  工作負載工廠中建立時，將資料庫複製還原為原始版本。</block>
-  <block id="321fa0ec40364e6269ee0605ab6fc4a3" category="summary">從來源資料庫分割沙箱複本，以便在 BlueXP  工作負載工廠中為資料庫建立新的資料庫。</block>
-  <block id="8f47ec9e857d6d91e6cc21e59856d6ba" category="paragraph">在資料庫的 BlueXP  工作負載工廠中，從來源資料庫分割沙箱複本會建立一個新的資料庫，該資料庫會消耗一定數量的儲存容量。分割完成時、會刪除複本、而新資料庫會出現在庫存中。</block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">您必須先將 NetApp 支援網站帳戶新增至工作負載工廠，然後註冊取得支援，才能使用 NetApp 技術支援開啟支援案例。</block>
-  <block id="fb5f65005064b28d705c013134fa00b8" category="summary">在 BlueXP  工作負載工廠中檢視及複製資料庫的沙箱複製連線資訊。</block>
-  <block id="c2b9cddcae0f32bcb502fc0246619781" category="summary">瞭解 BlueXP  資料庫工作負載工廠的新功能。</block>
-  <block id="d011991b3f3f51873109e4d0f5575be0" category="doc">BlueXP  資料庫工作負載工廠的新功能</block>
-  <block id="9d57e52330b97c81921959c45b7d8a7c" category="sidebar">在 BlueXP  工作負載工廠中，部署 Microsoft SQL Server 組態，並在適用於 ONTAP 檔案系統儲存設備的 FSX 上管理資料庫環境。</block>
-  <block id="e214e71355e2ee8687f09c83bfbdaabc" category="sidebar">資料庫文件的 BlueXP  工作負載工廠</block>
-  <block id="f3ffe4a909ed7f4cc0f396f199ae3471" category="sidebar">瞭解資料庫的工作負載工廠</block>
   <block id="18caf85143cff2e29943f7fa50a9d531" category="doc">持續最佳化可新增運算修正與評估功能</block>
   <block id="275b08f4e33388b6598899e256fe46b3" category="paragraph">資料庫現在提供深入分析和建議，協助您最佳化 Microsoft SQL Server 執行個體的運算資源。我們會測量 CPU 使用率，並運用 AWS 運算最佳化工具服務來建議適當大小的最佳執行個體類型，並通知您可用的作業系統修補程式。最佳化運算資源有助於您做出有關執行個體類型的明智決策，進而節省成本並提高資源使用率。</block>
   <block id="9aa94e25ba754a44d094b78775213e48" category="inline-link-macro">最佳化運算資源組態</block>
@@ -661,10 +532,7 @@
   <block id="49db1f79602c9ba8e5704a68010c4023" category="paragraph">您現在可以在資料庫中部署及管理獨立的 PostgreSQL 伺服器部署。</block>
   <block id="3627a14d7dc2feba3834d63a37ebb394" category="inline-link-macro">建立 PostgreSQL 伺服器</block>
   <block id="02b7dd87f2a54e2b540ac84598c20252" category="paragraph"><block ref="02b7dd87f2a54e2b540ac84598c20252" category="inline-link-macro-rx"></block></block>
-  <block id="6a5525182ed1f6bca47fea4ee51a3e58" category="list-text">在資料庫方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * Microsoft SQL Server* 。</block>
-  <block id="16982b5e2c79b1d8f052bfa663a64d77" category="summary">在 BlueXP  工作負載工廠內為資料庫建立新的 PostgreSQL SQL 伺服器。</block>
   <block id="c4f70f11159098cce8873623bffb07aa" category="doc">在 BlueXP  工作負載工廠中建立 PostgreSQL 伺服器</block>
-  <block id="5f8d928d8901c8b01302b1c3be720b44" category="paragraph">在 BlueXP  工作負載工廠中為資料庫建立新的 PostgreSQL 伺服器或資料庫主機，需要使用 FSX 進行 ONTAP 檔案系統部署，並為 Active Directory 建立資源。</block>
   <block id="7a65409a338637d9c410720ad6eb8500" category="list-text">若要建立新的 PostgreSQL 伺服器，需要將 ONTAP 檔案系統的 FSX 作為儲存後端。您可以使用現有的適用於 ONTAP 檔案系統的 FSX 、或建立新的檔案系統。如果您選擇現有的 ONTAP 檔案系統 FSX 作為資料庫伺服器儲存後端，我們會為 PostgreSQL 工作負載建立新的儲存 VM 。</block>
   <block id="75b39c0795d7295af69b1d13bbf82285" category="list-text">* 可用性區域 * ：選擇可用性區域和子網路。</block>
   <block id="d576650f664651e9b2569ccb346b6649" category="list-text">在 * 叢集組態 - 節點 1* 欄位中，從 * 可用性區域 * 下拉式功能表中選取可用性區域，並從 * 子網路 * 下拉式功能表中選取子網路。</block>
@@ -675,8 +543,6 @@
   <block id="d456e032669379ad4e2388045a89301d" category="list-text">* 資料庫伺服器名稱 * ：輸入資料庫叢集名稱。</block>
   <block id="b4d85afb201cbf3edb4623ef0d8da5e6" category="list-text">在 * 連線 * 下，選取金鑰配對以安全地連線至執行個體。</block>
   <block id="54d16066caaf498f7f6443098c30a2be" category="paragraph">快照會指派給為 PostgreSQL 工作負載所建立的磁碟區。</block>
-  <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  工作負載工廠</block>
-  <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
   <block id="6ad17d07338dffda7982d8efdad3a276" category="section-title">2024 年 12 月 01 日</block>
   <block id="d35a0f72475ce4ac5dbb2e790338586d" category="sidebar">建立 Microsoft SQL Server</block>
   <block id="b7414b1741661cf43c6fb35227e98183" category="sidebar">建立 PostgreSQL 伺服器</block>
@@ -700,49 +566,20 @@
   <block id="fd3039d7fbe9d24b3141aca3c62383a2" category="section-title">針對過度配置的 Microsoft SQL Server 授權進行評估與最佳化</block>
   <block id="f90a806c02db45741274868bc065ab90" category="paragraph">節約計算機現在會評估您的 Microsoft SQL Server 部署是否需要 Enterprise Edition 。如果授權過度配置，計算機會建議降級。您可以透過最佳化應用程式，自動降級資料庫中的授權。</block>
   <block id="f319ba887c03b66fa6a83807c78f65e9" category="list-text">在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。</block>
-  <block id="89beb934231f6ea165d992b7e0925877" category="list-text">在沙箱索引標籤中，按一下沙箱複製的三點功能表，以檢查完整性。</block>
-  <block id="5b8419bd5ee6af2c2f5fd0ef8e3ca4a9" category="list-text">在沙箱索引標籤中，按一下沙箱複製的三點功能表，以連線至 CI/CD 工具。</block>
-  <block id="5e85f9bc067e4ee023078ba85e21857b" category="list-text">按一下受管理執行個體的三點選單，然後選取 * 建立使用者資料庫 * 。</block>
-  <block id="934fed95fff79f45510cc744c25ff3f4" category="list-text">在資料庫方塊中，按一下 * 移至資料庫庫存 * 。</block>
-  <block id="6e07e3cf1d291785f594756e71522cfe" category="list-text">按一下您要刪除的沙箱複本的三點功能表。</block>
   <block id="770dee3f954306dca2e369d2ef823c94" category="section-title">SQL Server 部署分析</block>
   <block id="1d93f11e5331c46990f076ad4257106e" category="paragraph">此計算機會對 SQL Server 部署執行全方位分析，以確保所使用的資源和功能與 SQL Server 版本適當配對。以下是計算器建議降級至 Standard Edition 之前檢查的關鍵因素和條件：</block>
   <block id="a0e3089d312c100208595d685b4104d2" category="list-text">部署模式</block>
   <block id="9c67ec91896556f3bd46fddd92093d04" category="list-text">計算機會評估部署模式，以及是否需要 Enterprise 版本。</block>
   <block id="1ca7013158d8416bb0a3239a9a7e8910" category="list-text">已分配資源</block>
   <block id="9812aa4803326e6a5401134b4e94a3d3" category="list-text">此計算機會評估下列授權相關分配資源的條件：</block>
-  <block id="4b810d3bd37142aca8bc7441044ac6e1" category="list-text">目標執行個體 vCPU ：執行個體具有 48 個或更少的虛擬 CPU 。</block>
-  <block id="3152b3044e87ba29a0ef483b2905447f" category="list-text">記憶體配置：執行個體擁有 128GB 或更少的記憶體。</block>
   <block id="509a14e7eed7c8c8d42162d9af93a1ec" category="list-text">企業功能使用</block>
   <block id="4fdb074e0b83810d198c8cb5f3b2752e" category="list-text">計算機會驗證是否使用下列任何一項企業功能：</block>
-  <block id="0337db3af77375f3eca40ab259fad71c" category="list-text">資料庫層級的企業功能</block>
-  <block id="3d01a99bca7dfee0c24b05774c636f2b" category="list-text">線上索引作業</block>
-  <block id="a042028704aa193c37c291b87325adba" category="list-text">資源管理員</block>
-  <block id="bde0cb834299864818961ff69bf50c2a" category="list-text">對等或 Oracle 複寫</block>
-  <block id="11abd4a419be10d4141e0034d99314af" category="list-text">R/Python 副檔名</block>
-  <block id="b4cc3328bb29447a4e3bfe42f68c706e" category="list-text">記憶體最佳化的 TempDB</block>
   <block id="931f2fcd53e5a10ccfc806cb89a2b27c" category="paragraph">如果評估的 SQL Server 執行個體未使用上述任何企業功能，且符合資源限制，則計算機會建議將授權降級為 Standard Edition 。本建議旨在協助您最佳化 SQL Server 授權成本，而不影響效能或功能。</block>
-  <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetApp 以多種方式支援 BlueXP  工作負載工廠及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
-  <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">如需與適用於 ONTAP 的 FSX ，其基礎架構或使用服務的任何解決方案相關的技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
-  <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">您目前正在檢視的工作負載原廠文件。</block>
-  <block id="ba51332e265e54eb4295d6e7d057bad8" category="paragraph">搜尋工作負載原廠知識庫，找出有助於疑難排解問題的文章。</block>
-  <block id="fc3e8f3c2017c33d444d483913a485ba" category="paragraph">加入工作負載工廠社群，追蹤後續討論或建立新討論。</block>
-  <block id="ffa18fada5deeeb1e533786297855e7d" category="paragraph">若要使用 * 建立案例 * 功能，您必須先註冊以取得支援。將您的 NetApp 支援網站認證與工作負載原廠登入建立關聯。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block>。</block>
-  <block id="e13a5649dfef3a1c76c4be8e463226d7" category="list-text">在工作負載原廠主控台的右上角，選取 * 說明 &gt; 支援 * 。</block>
   <block id="5f08a8bbfa89b18958e70a8c6cbc44c3" category="paragraph">資料庫提供工作監控功能、讓您追蹤工作進度、並在發生任何故障時進行診斷和疑難排解。您可以依類型和狀態篩選工作，使用搜尋功能尋找工作，然後下載工作表。</block>
   <block id="5ade2a57e46cf328c900013574754aa9" category="list-text">工作監控功能會追蹤 _ 進行中 _ ， _ 完成 _ ， _ 完成問題 _ ，以及 _ 每天，每週，每兩週和每月失敗 _ 工作。</block>
-  <block id="10f9689e79d67ec4a1651805229939e6" category="list-text">按一下工作的三點功能表，然後按一下 * 前往 CloudForgi狀態 * ，即可在 AWS CloudForgation 主控台中檢視工作記錄。</block>
-  <block id="1f14f9d15a2087e9bbf3c4dd4b699191" category="list-text">在沙箱索引標籤中，按一下您要重新整理的沙箱複本的三點功能表。</block>
-  <block id="e464b3f9b68caf988cec7cd7b5263281" category="list-text">在沙箱索引標籤中，按一下您要還原的沙箱複本的三點功能表。</block>
-  <block id="07755964277c2a6aa1a5c2e771d7dbe0" category="list-text">在沙箱索引標籤中，按一下您要分割的沙箱複本的三點功能表。</block>
-  <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">需要註冊支援，才能獲得 BlueXP  工作負載工廠及其儲存解決方案與服務的專屬技術支援。您必須向 BlueXP  主控台註冊以取得支援，該主控台是獨立於工作負載工廠的網路型主控台。</block>
-  <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需雲端供應商檔案服務，其基礎架構或任何使用服務的解決方案的相關技術支援，請參閱該產品工作負載原廠文件中的「取得說明」。</block>
-  <block id="195066d54d760bc240b0879aa7a483bf" category="list-text">在沙箱索引標籤中，按一下沙箱複製的三點功能表，即可檢視其連線資訊。</block>
   <block id="13ac5039f81a1aa4ae7419bf17b5b6a0" category="section-title">2025 年 1 月 06 日</block>
   <block id="f2398fe4ddb880ba6c52b376ef9b960c" category="list-text"><block ref="f2398fe4ddb880ba6c52b376ef9b960c" category="inline-link-macro-rx"></block></block>
   <block id="f7626e6c4414254923965c059c538355" category="section-title">最佳化的作業系統修補程式評估</block>
-  <block id="caf2103b4a30210f2be52ce13c522aad" category="inline-link-macro">AWS Cloud Operations 部落格「 How to patch Windows EC2 Instances in Private Subnets Using AWS Systems Manager 」</block>
-  <block id="51d9963cd25d44afd5ce890896443f71" category="paragraph">為了最佳化目的而進行的作業系統修補程式評估，可能無法在私有網路中運作。評估仰賴 AWS Patch Manager 。若要瞭解如何修補私有網路中的 Windows EC2 執行個體，請<block ref="8e97bc3ab59f50cb9b025f85a2445baf" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="a61ebf6aa74399e268808d3801b03702" category="section-title">運算適當調整規模最佳化</block>
   <block id="f72f493648b25528319887c50a65f0ce" category="inline-link-macro">Amazon Elastic Compute Cloud 文件</block>
   <block id="bd5d7b32e4164faa655582f169744a05" category="paragraph">變更為特定執行個體類型時，可能會重設網路組態，進而導致最佳化期間節點連線失敗，並導致工作失敗。檢查和更新 DNS 設定和 iSCSI 工作階段可能需要手動介入。如需 EC2 調整大小限制的詳細資訊，請參閱<block ref="b8406a09c509d5c1d937367114bd51b3" category="inline-link-macro-rx"></block>。</block>
@@ -757,14 +594,11 @@
   <block id="288748eac82542205cccb2a59e324600" category="list-text">* Microsoft SQL Server 修補程式 * ：評估會檢查 SQL Server 執行個體上是否安裝最新的修補程式，並提供安裝最新修補程式的建議。</block>
   <block id="7c2632b8df180cfa1528450b19070928" category="paragraph"><block ref="7c2632b8df180cfa1528450b19070928" category="inline-link-macro-rx"></block></block>
   <block id="5e73d91731c9445e9a0cc34e1969976a" category="summary">比較使用 Amazon Elastic Block Store （ EBS ），適用於 Windows 檔案伺服器的 FSX ，以及使用適用於 ONTAP 儲存設備的 SQL Server 內部部署資料庫儲存設備的成本。</block>
-  <block id="6bcb23607586342322d4d9d515a81317" category="paragraph">比較在 Amazon Elastic Block Store （ EBS ）上使用 Microsoft SQL Server ，在 Windows 檔案伺服器上使用 FSX ，以及在 ONTAP 儲存設備上使用 FSX 的成本，以瞭解資料庫工作負載的 BlueXP  工作負載工廠節省成本。</block>
   <block id="7cf65e2ff3a983e2d864a8b1c64765f1" category="open-title">Microsoft SQL Server 內部部署</block>
   <block id="979b029ad875506edc5721a6a441e313" category="list-text">從 SQL Server 內部部署索引標籤下載指令碼，以評估內部部署 SQL Server 環境。</block>
-  <block id="db99a3f687ce317a37116a375a2f8e0a" category="list-text">下載評估指令碼。指令碼是以 PowerShell 為基礎的資料收集工具。它會收集 SQL Server 組態和效能資料，然後上傳至 BlueXP  工作負載工廠。移轉顧問會評估資料，並針對您的 SQL Server 環境規劃適用於 ONTAP 部署的 FSX 。</block>
   <block id="2840f80705232625a2e7a961c5ae7c57" category="inline-image-macro">SQL Server 內部部署索引標籤的螢幕擷取畫面會顯示下載評估指令碼的選項。</block>
   <block id="43b057dd7af35e065506e3e9c40e69b5" category="paragraph"><block ref="43b057dd7af35e065506e3e9c40e69b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="11bfb2872e63a5ed545dd1a42c50ca27" category="list-text">在 SQL Server 主機上執行指令碼。</block>
-  <block id="93fc841273934516b5d0c3c8c898594c" category="list-text">在工作負載工廠的 SQL Server 內部部署索引標籤上傳指令碼輸出。</block>
   <block id="e4784aa5341ea2989d2193e58d7d7f6d" category="inline-image-macro">SQL Server 內部部署索引標籤的螢幕擷取畫面會顯示上傳評估指令碼的選項。</block>
   <block id="2b894f40697fe51db0b06a9bf9f9a2a1" category="paragraph"><block ref="2b894f40697fe51db0b06a9bf9f9a2a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c034eca1def3a7b989b774cd862bad8c" category="list-text">從 SQL Server 內部部署索引標籤中，選取 * 探索節約 * ，以執行 SQL Server 內部部署主機與適用於 ONTAP 的 FSX 的成本分析。</block>
@@ -793,21 +627,12 @@
   <block id="3231190e9014bf678d835272ec7c9234" category="paragraph">BlueXP  資料庫工作負載工廠現在支援補救最大平行度（ MAXDOP ）伺服器組態。當 MAXDOP 組態不是最佳化時，您可以讓 BlueXP  工作負載原廠為您最佳化組態。</block>
   <block id="4a21bedf189bb26f9f4aeb26c0dc26a2" category="section-title">電子郵件節約分析報告</block>
   <block id="5b89ef008454fd9a61723d3572865363" category="paragraph">當您探索 Amazon Elastic Block Store 和適用於 Windows 檔案伺服器儲存環境的 FSX 與適用於 ONTAP 的 FSX 的節約效益時，您現在可以透過電子郵件傳送建議報告給自己，團隊成員和客戶。</block>
-  <block id="d165069c83b8bcdcdac74dac0647a6f8" category="paragraph">在從 BlueXP  工作負載工廠建立 PostgreSQL 伺服器之前，請先瞭解資料庫主機組態的可用儲存部署類型，工作負載原廠操作模式，以及完成此作業的需求。</block>
-  <block id="a54a2d2457f861c5ced69c71edee65c9" category="paragraph">適用於 ONTAP 檔案系統的 FSX 有兩種 PostgreSQL 伺服器部署模式： _ 高可用度（ HA ） _ 或 _ 單一執行個體 _ 。根據您所選擇的 ONTAP 部署模型的 FSX 、會為 ONTAP 檔案系統的 FSX 建立不同的資源。</block>
   <block id="7081d1beb2d41751a0211b5a5c5f3b56" category="list-text">* 高可用度（ HA ）部署 * ：當為 ONTAP 檔案系統選擇新的 FSX 進行 HA 部署時，會部署適用於 NetApp ONTAP 檔案系統的多可用性區域 FSX 。針對 HA 部署的資料、記錄和 tempdb 檔案、會建立個別的磁碟區和 LUN 。為 Windows 叢集的 Quorum 或見證磁碟建立額外的磁碟區和 LUN 。HA 部署可在主要和次要 PostgreSQL 伺服器之間設定串流複寫。</block>
   <block id="30e232f58ccaf796b9d3c66a4c7f3eae" category="list-text">* 單一執行個體部署 * ：建立新的 PostgreSQL 伺服器時，會建立單一可用性區域 FSX for ONTAP 檔案系統。此外、還會針對資料、記錄和 tempdb 檔案建立個別的磁碟區和 LUN 。</block>
-  <block id="8afd299f4346ad5e3b322116411294bc" category="list-text">在資料庫方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * PostgreSQL 伺服器 * 。</block>
   <block id="5ac68d725f8eef71a0523eb1c6cca14f" category="list-text">在 * 登陸區 * 下，提供下列項目：</block>
   <block id="9a7005e13653f915b8e1367cbdc68e4e" category="list-text">在 * 部署模式 * 下，選取 * 獨立執行個體 * 或 * 高可用度（ HA ） * 。</block>
-  <block id="c4ccde85ea5b8e0593caaf8004ff8930" category="list-text">適用於 HA 部署</block>
   <block id="d2eadd2943100e3e5ea25460fadf93c2" category="list-text">對於新的適用於 ONTAP 檔案系統的 FSX ，系統會建立新的安全性群組，並將其附加至 SQL 節點。對於現有的 ONTAP 檔案系統 FSX ，與其相關的安全性群組會自動新增至 PostgreSQL 節點，以便與檔案系統進行通訊。</block>
-  <block id="74026b51b0207a27d3fd38b62768c254" category="paragraph">工作負載工廠有多種方法可讓您探索在 Amazon Elastic Block Store （ EBS ），適用於 Windows File Server 的 FSX 和內部部署儲存設備上執行的資料庫工作負載，這些工作負載可從儀表板，庫存索引標籤和「探索節約」索引標籤中節省。在所有情況下，您都可以使用節約計算機，比較在 ONTAP 檔案系統的 FSX 上執行資料庫工作負載的各種成本元件，例如儲存，運算， SQL 授權，快照和複本，以及彈性區塊存放區（ EBS ），適用於 Windows 檔案伺服器的 FSX 和內部部署儲存設備。</block>
-  <block id="551d3fb74afeea4ac02ada029e97d26b" category="paragraph">如果工作負載工廠判斷您可以在適用於 ONTAP 檔案系統的 FSX 上執行這些工作負載，以節省成本，則您可以直接從工作負載工廠的節約計算機，透過適用於 ONTAP 的 FSX 部署 Microsoft SQL 。當您在彈性區塊存放區，適用於 Windows 檔案伺服器的 FSX 或內部部署儲存區上有多個 Microsoft SQL Server 執行個體時，我們會建議您使用單一 SQL 執行個體進行 ONTAP 組態的 FSX 。</block>
   <block id="6040bb4a85eec1c3be0e69ac393a4c24" category="paragraph-title">所有資料庫工作負載的潛在節約效益</block>
-  <block id="21739ec7d2d9e1ee769824ea604e87e4" category="paragraph">請從工作負載原廠主控台前往資料庫 * 儀表板 * ，取得在適用於 ONTAP 的 FSX 上執行所有資料庫工作負載的潛在成本節約總覽。在 * 潛在節約 * 方塊中，您可以檢視彈性區塊存放區和適用於 Windows 檔案伺服器的 FSX 上所有資料庫工作負載的數量，可能的成本節約，節約百分比，以及長條圖中的視覺呈現。</block>
-  <block id="ceb758e79c470fbc2ebba2a5fa8a2c32" category="inline-image-macro">從工作負載工廠主控台的資料庫儀表板中，擷取潛在節約區塊的螢幕快照。「潛在節約」方塊會顯示您在彈性區塊存放區和適用於 Windows 檔案伺服器的 FSX 上擁有的所有資料庫工作負載數量，潛在成本節約效益，節約百分比，以及長條圖中的視覺呈現。</block>
-  <block id="8a197a96889c1350d0921a2744e0dcff" category="paragraph"><block ref="8a197a96889c1350d0921a2744e0dcff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="14e0ba144c9ea737e00075f15ba92914" category="paragraph-title">節約計算機</block>
   <block id="b9c1a7494e47e88c73ed9177dac50512" category="paragraph">您可以使用節約計算機，比較在 ONTAP 檔案系統的 FSX 上執行資料庫工作負載的各種成本元件，例如儲存，運算， SQL 授權，快照和複本，以及彈性區塊存放區（ EBS ），適用於 Windows 檔案伺服器的 FSX 和內部部署儲存設備。根據您的儲存需求、您可能會發現 ONTAP 檔案系統的 FSX 最符合資料庫工作負載的成本效益。</block>
   <block id="34bd0eb13cbfc5b3e75abc9ef37d28a9" category="inline-xref">瞭解如何使用計算機。</block>
@@ -853,13 +678,9 @@
   <block id="a18df64f6d327d9f4d8ffd9736b846f6" category="admonition">HA 部署僅支援用於 ONTAP 組態的多重可用性區域（ MAZ ） FSX 。</block>
   <block id="b06b1cc67628f13db38ca890693627fb" category="section-title">跨區域複寫評估</block>
   <block id="425a11288e6c089ecf9966b89b9be4eb" category="list-text">最佳化評估無法判斷當 ONTAP 檔案系統的目標 FSX 位於不同的 AWS 帳戶時，是否正在使用跨區域複寫（ CRR ）。</block>
-  <block id="a73971e47314d5a9302d6e0e452948e6" category="list-text">工作負載工廠僅評估 ONTAP 檔案系統來源 FSX 的 CRR 組態。</block>
   <block id="c69c68bea63a58faad0233887cb8a9aa" category="section-title">2025 年 4 月 04 日</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
-  <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP部落格</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
-  <block id="bcfa2187892cfb20acb57dea1d6a38b4" category="paragraph">探索偵測到主機的節約效益：工作負載工廠連結至您現有的 Microsoft SQL 伺服器，並將詳細資料擷取至計算機以進行自動比較。您需要授予 _read-only_ 或 _read/writ_ 權限，才能使用此計算機選項。您可以變更使用案例、但計算中會自動決定所有其他詳細資料。</block>
   <block id="f2f8123dee39336570b9e59a3326fd18" category="inline-link-macro">授與 _read-only 或 _read/writ_ 權限</block>
   <block id="f557e9f26b531156ccdbc9c32935d13a" category="list-text"><block ref="6a1dbb436eb1da80c34b82a70d7d9175" category="inline-link-macro-rx"></block>在 AWS 帳戶中，在「 * 探索節約 * 」標籤下偵測 Windows 系統的彈性區塊儲存（ EBS ）和 FSX ，並在儲蓄計算機中顯示節約計算。</block>
   <block id="25696569671071b8bd3db9a4c5f6613e" category="doc">儀表板增強功能</block>
@@ -875,43 +696,26 @@
   <block id="4a9a50cea48d9e2ded3becc284af4e41" category="paragraph">某些組態可能不適用於您的資料庫環境。您現在可以選擇將特定組態分析延遲 30 天，或是關閉分析。</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新的權限術語</block>
   <block id="2d07fc9146d02690dffeffa52fbd2ec4" category="list-text">內部部署主機移除</block>
-  <block id="1c28fa92b25f4914c091b667402466d3" category="list-text">探索 Microsoft SQL Server 內部部署主機的節約效益之後，您可以選擇從 BlueXP  工作負載工廠移除內部部署主機記錄。選取 Microsoft SQL Server 內部部署主機的三點功能表，然後選取 * 刪除 * 。</block>
-  <block id="04467e563313dfe5a1da17bd70a4de75" category="list-text">在 *Inventory （清單） * 選項卡中，選擇 *Instancs* 選項卡。</block>
   <block id="c5d0b906e655aeb0e712fdc99742d179" category="list-text">若要清除複本，請選取要重新整理或刪除的複製資料庫（沙箱）。</block>
-  <block id="64b911fb444d2ba4347dbcba8d839d9c" category="list-text">重新整理複本會將其與來源資料庫同步。只有在工作負載工廠中建立的複本才能使用重新整理功能。</block>
-  <block id="b11d77d1a514a3b0bdf01908bc4826e9" category="list-text">刪除複本會永久移除複本，釋出儲存空間並降低成本。您可以刪除在工作負載工廠內外建立的複本。</block>
   <block id="0cdf26a09e8e4cde6653e44f4abd73fb" category="doc">延遲或關閉資料庫組態分析</block>
   <block id="77df5d7dfd76cd0e6a1a7a837c509672" category="paragraph">延遲或關閉不適用於資料庫環境的特定資料庫組態分析，以避免不必要的警示和不正確的最佳化結果。您可以隨時重新啟動延遲或關閉的組態分析。</block>
-  <block id="54498ab3155b38b14174ab9dd5caef5a" category="paragraph">資料庫組態的應用程式需求會有所不同。工作負載工廠提供兩個選項，可略過分析特定資料庫組態，以便您只監控相關問題，並準確檢視相關組態的健全狀況。當特定組態分析被延遲或關閉時，組態不會納入整體最佳化分數中。</block>
   <block id="8a219fba8bbd202ad1f7a47267ff5a2d" category="list-text">* 延遲 30 天 * ：延遲分析將停止分析 30 天。30 天後，分析將自動重新啟動。</block>
   <block id="71e07950d625dfcf829cac7019fb6f26" category="list-text">* 關閉 * ：取消分析會無限期地延後分析。您可以視需要重新啟動分析。</block>
   <block id="43d86b2167e8a3464a552ee706d46d88" category="paragraph-title">延後</block>
   <block id="38d07dc1916e6ca30a9f936368828d18" category="paragraph">延後 30 天內停止組態分析。30 天後，分析將自動重新啟動。</block>
-  <block id="b8bad4787f04ab4d4933464f551ed74c" category="list-text">在 *Inventory （清單） * 選項卡中，向下滾動至要延遲的配置，選擇三點菜單，然後選擇 *postpone for 30 days * （延遲 30 天）。</block>
-  <block id="136dc09835924029e4299fa28f17233d" category="list-text">選擇*繼續*。</block>
   <block id="8dca288df860b62f4b631d87b4320f91" category="paragraph">組態分析會停止 30 天。</block>
   <block id="c8a59e7135a20b362f9c768b09454fdb" category="paragraph-title">關閉</block>
   <block id="26765b6cc82b68114c879d49f83b0e5a" category="paragraph">關閉以無限期停止組態分析。您可以視需要重新啟動分析。</block>
-  <block id="fd9eed8a1f28cfe92f0d2d738455682b" category="list-text">在 *Inventory （資源清冊） * 選項卡中，向下滾動至要關閉的配置，選擇三點菜單，然後選擇 *Dismi* （關閉）。</block>
   <block id="bfc2ef5a56455cfacfde13cf1612e36b" category="paragraph">組態分析會停止。</block>
   <block id="8e88e8d3ce1694ab82d525e91ae7c572" category="paragraph-title">重新啟動</block>
   <block id="54a679b97854ca1a358ef23dc83cfce6" category="paragraph">隨時重新啟動延遲或關閉的組態分析。</block>
-  <block id="58e2f7c25b65ba2e36fc6778b985ab34" category="list-text">在 * 詳細目錄 * 標籤中，向下捲動至要重新啟動的組態，選取三點選單，然後選取 * 重新啟動 * 。</block>
   <block id="f01282bfdabc9c97224d922f36d898b8" category="paragraph">組態分析會重新啟動，並每天持續進行。</block>
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025 年 04 月 5 日</block>
-  <block id="f865802ec5f0fe104a096589d51b39a4" category="sidebar">延後組態分析</block>
-  <block id="4b50901597179fa075617d96ccf51901" category="list-text">* 工作負載原廠主控台 * ：工作負載原廠主控台可提供應用程式與專案的視覺化整體檢視。</block>
-  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">* BlueXP  console* ： BlueXP  主控台提供混合式介面體驗，讓您可以將 BlueXP  工作負載工廠與其他 BlueXP  服務一起使用。</block>
-  <block id="62c5120220d244bd5e611d7c4459b5c5" category="list-text">* 詢問我 * ：使用「詢問我 AI 」助理來詢問問題，並深入瞭解工作負載工廠，而無需離開工作負載工廠的網路 UI 。從工作負載原廠說明功能表存取 Ask me 。</block>
-  <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">* CloudShell CL1* ：工作負載工廠包含 CloudShell CLI ，可透過單一瀏覽器型 CLI ，跨帳戶管理及操作 AWS 和 NetApp 環境。從工作負載原廠主控台的頂端列存取 CloudShell 。</block>
-  <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">* REST API* ：使用工作負載原廠 REST API 來部署及管理適用於 ONTAP 檔案系統和其他 AWS 資源的 FSX 。</block>
-  <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">* CloudForgius* ：使用 AWS CloudForgation 程式碼來執行您在工作負載工廠主控台中定義的動作，以便在 AWS 帳戶中建構，配置及管理 CloudForgation 堆疊中的 AWS 和第三方資源。</block>
   <block id="905bc3578e603008d83976307778ddcc" category="list-text">若要取得實例類型建議並提高成本準確性，請執行下列操作：</block>
   <block id="10d9194778791c152af2c0be1806e0b1" category="list-text">授予 Amazon CloudWatch 和 AWS Compute Optimizer 權限。</block>
   <block id="1dffe1578c264cd074d1fbf2823deeca" category="list-text">登入AWS管理控制台並開啟IAM服務。</block>
   <block id="429fc992484e56fc5119b7b343df8bab" category="list-text">編輯 IAM 角色的策略。複製並新增以下 Amazon CloudWatch 和 AWS Compute Optimizer 權限。</block>
   <block id="948ce9adc60f5781dbfbd99d2c9d74d5" category="list-text">選擇將可計費 AWS 帳戶加入 AWS Compute Optimizer。</block>
-  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">* Terraform BlueXP  工作負載工廠供應商 * ：使用 Terraform 建置及管理在工作負載工廠主控台產生的基礎架構工作流程。</block>
   <block id="938691193541892254da342a65418ef3" category="doc">PostgreSQL 和 Oracle 檢測</block>
   <block id="a35833d039b2504ef8c787b30e723967" category="paragraph">現在，您可以在工作負載工廠控制台中發現 AWS 帳戶中執行 PostgreSQL 伺服器資料庫和 Oracle 資料庫部署的執行個體。已發現的實例將顯示在資料庫清單中。</block>
   <block id="fd1fe4efcf471a552598d4396db84a26" category="section-title">更新了「優化」術語</block>
@@ -920,19 +724,10 @@
   <block id="2cfa2ba77f1346dd5f1a96ad6f3af2b2" category="paragraph"><block ref="2cfa2ba77f1346dd5f1a96ad6f3af2b2" category="inline-link-macro-rx"></block></block>
   <block id="4f91bce4a20615964f35d2fd97ddb2e1" category="inline-link-macro">執行個體管理</block>
   <block id="68d9261728b0a851ce7bc78b7cfd2a69" category="paragraph"><block ref="68d9261728b0a851ce7bc78b7cfd2a69" category="inline-link-macro-rx"></block></block>
-  <block id="a037440b0e452d149e3d4cdec9e6a911" category="doc">在資料庫工作負載工廠中建立 Microsoft SQL Server</block>
-  <block id="5d89a931c9c04b55c06760675a1ace5a" category="paragraph">在資料庫工作負載工廠中建立新的 Microsoft SQL Server 或資料庫主機需要 FSx for ONTAP 檔案系統部署和 Active Directory 資源。</block>
-  <block id="633d049f8d85b55877f18aabc34b1da8" category="paragraph">在從工作負載工廠建立 Microsoft SQL Server 之前，請先了解資料庫主機配置的可用儲存部署類型、Microsoft 多路徑 I/O 配置、Active Directory 部署、網路詳細資訊以及完成此操作的要求。</block>
   <block id="ccac5f43f95e209ed7e8f8ddd1b75d8b" category="inline-link-macro">AWS 帳戶憑證和讀取/寫入模式權限</block>
   <block id="b949760a108bef94fc7f866ca09b5155" category="list-text">您必須<block ref="09d2f3d3c667abb40f8d2ba111b9c06b" category="inline-link-macro-rx"></block>在工作負載工廠中建立新的資料庫主機。</block>
   <block id="f8c2bea89896f4c645e761417ab6d4bd" category="paragraph">確保部署子網路與現有介面端點相關聯，且安全性群組允許透過 HTTPS (443) 協定存取所選子網路。</block>
   <block id="e2aadc51c2249a0d2d63030bd046d5b5" category="paragraph">使用跨 VPC DNS 時，DNS 所在的另一個 VPC 上的終端​​節點的安全群組應允許連接埠 443 存取部署子網路。否則，您應該在加入跨 VPC Active Directory 時提供本機 VPC 的 DNS 解析器。在多複製網域控制器環境中，如果某些網域控制器無法從子網路訪問，您可以「重新導向到 CloudFormation」並輸入<block ref="a756f9902f1db5a37f12d3f459f172a5" prefix=" " category="inline-code"></block>連接到 Active Directory。</block>
-  <block id="83e91497a1333c0a1b677d8c63d846d9" category="list-text">按一下託管執行個體的三點選單，然後選擇*建立使用者資料庫*。</block>
-  <block id="7d02c7321e50b7c2fa346dd9edc083f2" category="paragraph">工作負載工廠支援偵測僅在 Amazon Linux 作業系統上執行的 PostgreSQL 執行個體和僅在 Red Hat Enterprise Linux 上執行的 Oracle 執行個體。</block>
-  <block id="6923ba19fe8a091f76827ff8c86785de" category="summary">資料庫工作負載工廠是一種端到端資料庫部署和維護服務，具有內建的最佳化、自動精簡克隆以及監控和解決功能的最佳實踐。</block>
-  <block id="bb3a81d6ea3e61933815d8c7984727a3" category="section-title">資料庫的工作負載工廠是什麼？</block>
-  <block id="2d2ef55c7d048aa8eb19ea9e98550603" category="paragraph">資料庫工作負載工廠可偵測、評估、規劃、配置並將 Microsoft SQL Server 資料移至 Amazon FSx for NetApp ONTAP（FSx for ONTAP）部署，並針對滿足您的效能和成本預期進行最佳化，同時遵循業界最佳實務。在整個生命週期中，工作負載工廠為 ONTAP 的 FSX 上的資料庫提供持續的最佳化與管理。</block>
-  <block id="9d31d07638cfa37e022a93f50a24a37a" category="paragraph">三種不同的操作模式 - 基本模式、唯讀模式和讀取/寫入模式 - 為工作負載工廠內外的部署提供了靈活的選項。在 _base_ 模式下，利用程式碼片段在工作負載工廠外部使用，以零信任的方式立即獲得價值。在唯讀模式和讀/寫模式下，透過增量信任獲得增量價值。</block>
   <block id="a40a9332a94e9ee509dd52088052022f" category="paragraph">管理任務包括：</block>
   <block id="32b73a9b89aeca54ae1906ac5b5c40a3" category="inline-link-macro">建立資料庫</block>
   <block id="d0a9d2136da399d9e73cfadd54adfb7a" category="list-text"><block ref="d0a9d2136da399d9e73cfadd54adfb7a" category="inline-link-macro-rx"></block></block>
@@ -941,14 +736,11 @@
   <block id="2f2280ee27b03fc450cd69afae071e39" category="inline-link-macro">實施架構良好的資料庫配置</block>
   <block id="d3379f7eb15b947ec99d4daad00317b3" category="list-text"><block ref="d3379f7eb15b947ec99d4daad00317b3" category="inline-link-macro-rx"></block></block>
   <block id="c4363ade7c2d208d79dee9b60bc51922" category="doc">在工作負載工廠中實現架構良好的資料庫配置</block>
-  <block id="622529f53e43499d3ab7bec3ddade638" category="paragraph">您可以選擇查看配置問題的建議並從工作負載工廠控制台內的資料庫清單中修復這些問題。</block>
   <block id="681f8e0d48f8a5609d29d038dfdb7354" category="list-text">分析內容</block>
-  <block id="eb39e8dfd54bf78043b2372b30f7b2b6" category="list-text">克隆：包括刷新和刪除在工作負載工廠內部或外部創建的超過 60 天的克隆（沙盒）的選項</block>
   <block id="05733d6679707441838e3ca92fcb1e85" category="inline-link-macro">AWS 帳戶憑證和讀取/寫入權限</block>
   <block id="e6ff59cff1eb616f7a9d6b770313807a" category="list-text">你必須有<block ref="6428f71963510d960d64cd03bb6513ae" category="inline-link-macro-rx"></block>分析您的資料庫配置。</block>
   <block id="663c686f4608ad8e700ed1cd99a57fcc" category="list-text">在選擇修正設定或組態之前，請務必仔細檢閱每項建議。對於 RSS 和 MAXDOP 設定，我們建議您先測試建議的設定，以判斷效能改善，然後再變更正式作業環境。</block>
   <block id="55900adb296775523b32b30486b0de17" category="admonition">補救程序可能會導致執行個體停機或服務中斷。在選擇修復配置之前，請務必仔細查看建議。</block>
-  <block id="da0f3dbe0b914fb78e47ff54702db3df" category="list-text">選擇“修復問題”以查看實例的配置問題。</block>
   <block id="8cdf23f9dd4f98a6b709a0a9d53ecd88" category="paragraph">您可以按類別、子類別、狀態、嚴重性和標籤過濾配置問題。</block>
   <block id="dd78deb6ef5fa791112d358b2eccdf97" category="paragraph">您也可以選擇「匯出 PDF」下載調查結果報告。</block>
   <block id="f73028254f9c4297e3f60654068105e0" category="list-text">選取下拉式箭頭以檢視任何組態的建議。建議包括最佳實踐、未優化配置的潛在缺陷以及重要注意事項。請務必仔細檢閱建議內容。</block>
@@ -956,7 +748,6 @@
   <block id="45b5dce37159255d07342e3102124571" category="list-text">選取 * 繼續 * 以修正組態問題。</block>
   <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">每日組態分析</block>
   <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">架構良好的狀態</block>
-  <block id="766f78d394e3aa97e328026acbda4d55" category="paragraph">在檔案系統層級的工作負載原廠主控台中，所有適用於 ONTAP 檔案系統的 FSX 都會列出架構良好的狀態。架構良好的狀態可歸類為「問題」，「未分析」或「架構良好」。選擇架構良好的狀態會將您重新導向至檔案系統內架構良好的狀態索引標籤，您可以在其中找到架構良好的分數，組態類別，檔案系統的所有組態。</block>
   <block id="a64cfe5c8ae4b3445ff288e9acf4b12e" category="list-text">架構良好的分數</block>
   <block id="3ae4c18410c2fa4fdf19fa3a943ef362" category="list-text">分數包括所有目前分析的組態，並以百分比顯示。25% 的分數表示 25% 的檔案系統組態架構良好。</block>
   <block id="a4394e01049a42d14bd6258585de98b7" category="list-text">組態類別</block>
@@ -970,9 +761,6 @@
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">分析需求</block>
   <block id="4eadd345921a1f4292d9b98892d3b84e" category="inline-link-macro">實施結構良好的資料庫配置</block>
   <block id="9f79767d5e4eb4d13f2a6d925ed59d0f" category="paragraph"><block ref="9f79767d5e4eb4d13f2a6d925ed59d0f" category="inline-link-macro-rx"></block></block>
-  <block id="27cb094655bbfaa4d3b2c3b34d1c1557" category="summary">開始使用資料庫工作負載工廠來使用基礎設施即程式碼片段、發現主機、管理資源等。</block>
-  <block id="9581188088644b11d46ac4ae29789386" category="doc">資料庫工作負載工廠快速啟動</block>
-  <block id="0bf39c9f8183add14af5a19ad4c80ff7" category="paragraph">使用資料庫工作負載工廠，您可以立即以_基本_模式開始。如果您想要使用工作負載工廠來探索主機，管理資源等，只需幾個步驟即可開始使用。</block>
   <block id="742b9524a4ab93b49eb1614d2aa4287b" category="inline-link-macro">_基本_、_唯讀_和_讀/寫_操作模式</block>
   <block id="e19be16b30ba3a27ed29174edef4c120" category="paragraph">選擇。 <block ref="5653101a5bec855c555e8762c96ccdfc" category="inline-link-macro-rx"></block></block>
   <block id="32077805607c935c0ac59dd7b4a3fdc6" category="inline-link-macro">部署主機伺服器</block>
@@ -996,12 +784,8 @@
   <block id="1a6183e6bc3067f41e368cb8ae65eee0" category="paragraph">如果您在工作負載工廠中沒有相關的 AWS 認證，而且想要在工作負載工廠中建立新的伺服器，請依照 * 選項 1* 前往認證頁面。手動新增資料庫工作負載的讀取/寫入模式所需的憑證和權限。</block>
   <block id="b686945750b38d40d97b18356ad0a4c6" category="paragraph">如果您想要在工作負載工廠中完成建立新伺服器表單，以便下載完整的 YAML 檔案範本，以便在 AWS CloudForformation 中部署，請遵循 * 選項 2* ，以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。手動新增資料庫工作負載的_唯讀_模式所需的憑證和權限。</block>
   <block id="a8ff9ed21e668d7299478bf75b16abd9" category="inline-link-macro">AWS 帳戶憑證和「唯讀」或「讀取/寫入」模式權限</block>
-  <block id="f62c0d8d53ecd7695a50c95462ff39bc" category="list-text">您必須<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>在工作負載工廠中建立新的資料庫。</block>
   <block id="970fa5fe1f85bede58eadf785f5bb30d" category="paragraph">您可以使用_快速建立_或_進階建立_部署模式在工作負載工廠中以_唯讀_或_讀取/寫入_模式權限完成此任務。</block>
-  <block id="1ecac8592ecd595bc4f53507e476fc53" category="list-text">您必須<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>在工作負載工廠中建立沙箱複本。</block>
   <block id="b2a6b8ac31e0bf9968f6f80649cc61cd" category="inline-link-macro">您必須新增 AWS 帳戶憑證和「唯讀」或「讀取/寫入」模式權限</block>
-  <block id="a38d5cfb962091710b5c8c4cae183d64" category="summary">追蹤資料庫作業並監控資料庫工作負載工廠內的資料庫。</block>
-  <block id="bcdf66d04230e723b2fc5152ae10a7ef" category="doc">監視工作負載工廠中的資料庫作業</block>
   <block id="9ae4e4b9fdc398feb3be344b26cbf99f" category="sidebar">監視資料庫作業</block>
   <block id="a43e14359a13ff9144351ad74db7b351" category="section-title">改進實例的入門</block>
   <block id="af2ef84a7c6d5792c23eddfef4cc4ed9" category="paragraph">工作負載工廠現在使用「註冊」來表示執行個體管理，而不是使用「未偵測到」、「未託管」或「託管」等術語。新的註冊流程包括對執行個體進行身份驗證和準備，以便您可以在工作負載工廠控制台中建立、監控、分析和修復資料庫配置中的資源。註冊流程中的準備步驟指示您的實例是否已準備好進行管理。</block>
@@ -1016,12 +800,9 @@
   <block id="2e91c32877a8bf4a56c1853f92a414ba" category="section-title">Microsoft Multipath I/O 逾時設定的分析與修復</block>
   <block id="a05724b342c36062e480732f660ae9d4" category="paragraph"><block ref="a05724b342c36062e480732f660ae9d4" category="inline-link-macro-rx"></block></block>
   <block id="4698c78219bd6bc2a4fb47e8f4149213" category="section-title">工作負載工廠中對 Windows 身份驗證的支持</block>
-  <block id="f7b79998a8d6049aa7838e93bde48d38" category="paragraph">在部署期間，工作負載工廠會啟用 CredSSP，以便將憑證委託給用於預配 SQL 的腳本。當所有網域電腦的群組原則阻止 CredSSP 委託時，部署將會失敗。部署後，工作負載工廠會停用 CredSSP。</block>
-  <block id="3a8d4198146673b795eefef16f684af6" category="summary">資料庫工作負載工廠掃描 Microsoft SQL Server 配置，提供見解和建議，協助您實現卓越營運。</block>
   <block id="a3fbe9088342ceac653613ae546dd620" category="list-text">儲存配置：包含容量管理、精簡配置、分層策略、快照、Microsoft 多路徑 I/O (MPIO) 狀態和 MPIO 逾時設置</block>
   <block id="29ce878a000bdfaa01aa19a803eb9f01" category="paragraph">*全選*是預設設置，但您可以選擇特定資源進行修復。</block>
   <block id="476140ae72277e361d19df8904bed3f8" category="list-text">對於除克隆清理之外的所有配置，請查看建議詳細資訊以了解如果選擇修復問題會發生什麼。某些修復操作可能會導致執行個體停機或服務中斷。</block>
-  <block id="668c940004667a9b45c01f3ac3733e30" category="paragraph">工作負載工廠開始修復問題。選取 * 工作監控 * 標籤以檢視作業狀態。</block>
   <block id="b223957af5cc7e8c75e716638466ec57" category="section-title">在私有網路中註冊實例</block>
   <block id="1c664ded0c67f82fa7ab21854726e5dd" category="paragraph">在註冊實例之前請考慮以下事項：</block>
   <block id="94c1d05fa1e6006b35f1a65b6916623c" category="paragraph">註冊實例包括實例認證和準備。</block>
@@ -1044,10 +825,6 @@
   <block id="b8419cf58039d1a67d2046abd157e28b" category="paragraph"><block ref="b8419cf58039d1a67d2046abd157e28b" category="inline-link-macro-rx"></block></block>
   <block id="2e1bd7e9b2f7897e3fbd2f64db19746c" category="section-title">實例檢測支持</block>
   <block id="e6b1ed7d667d6b75280f0be1619fde20" category="list-text">在實例的「良好架構狀態」頁面上，查看分析結果。</block>
-  <block id="897c69f19b2f39fbf3080a555a679d8e" category="paragraph">當您在資料庫清單中註冊了 FSx for ONTAP 檔案系統儲存的實例後，您可以<block ref="3d11347aa47327ab2988d0d3d3d6bd99" category="inline-link-macro-rx"></block>或者<block ref="e4dc5f068f234adb2616993ddf9e76bc" category="inline-link-macro-rx"></block> 。</block>
-  <block id="2bab4675fc931e32d65c62820186d2e3" category="inline-link-macro">了解工作負載工廠中的配置分析和良好架構狀態。</block>
-  <block id="00d1bba61e4e880f08c0a9d89d53205b" category="paragraph"><block ref="00d1bba61e4e880f08c0a9d89d53205b" category="inline-link-macro-rx"></block></block>
-  <block id="8b2297ce6c1f7ab63874a40b0ca4a48f" category="paragraph">工作負載工廠每日分析資料庫配置。每日分析提供精心設計的狀態、見解和建議，以及自動修復配置問題的選項，以便您的配置符合最佳實踐。</block>
   <block id="08957eb86dbd3276e4875a3910d67420" category="sidebar">查看實例的架構完善狀態</block>
   <block id="65bff5c812b0782e85c3554a907e01d2" category="doc">架構良好的分析包括高可用性叢集驗證</block>
   <block id="bdd55244a112c438dfe30c6c85a4fcb1" category="paragraph">精心設計的分析現在包括對高可用性叢集的驗證。此驗證會從伺服器端檢查所有與叢集相關的配置，包括兩個節點上的磁碟可用性和配置、Windows 叢集配置和故障轉移準備。這可確保 Windows 叢集正確設定並可在需要時成功進行故障轉移。</block>
@@ -1066,7 +843,6 @@
   <block id="d0e7e25b5d4913c7506b7abe691c9fa9" category="list-text">在資料庫磁貼中，從選單中選擇 *探索節省*，然後選擇 *FSx for Windows 上的 Microsoft SQL Server*。</block>
   <block id="ca1bcaaac2fa2065767d6cb9b43a5bf7" category="list-text">在「探索節省」標籤中，選擇使用 FSx for Windows File Server 儲存的資料庫主機的「探索節省」*。</block>
   <block id="e4b085b007f80e7f8236f3693c0d0198" category="list-text">在資料庫磁貼中，從選單中選擇 *探索節省*，然後選擇 *本機 Microsoft SQL Server*。</block>
-  <block id="808d573e3971d8d03b14bfaef043f475" category="section-title">Explore 節省中的資料庫主機驗證</block>
   <block id="546dcae8b2a33c531e585b76d51af0dd" category="paragraph">在某些權限有限的情況下，身份驗證成功後，探索儲蓄頁面不會載入資料。</block>
   <block id="012a999834d8188ec17b6ec67f4db97d" category="list-text">彈性：包含本機快照、FSx for ONTAP備份、跨區域複製 (CRR) 和 Microsoft SQL 高可用性。</block>
   <block id="884d3679394cea72f73ae724c1666492" category="paragraph">如果您在「唯讀」或「讀取/寫入」模式下操作，則需要<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block>選擇工作負載功能，例如資料庫和 GenAI，並為所需的權限建立 IAM 策略。</block>
@@ -1079,48 +855,21 @@
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
   <block id="b898d5d576224cd9ff29f84561766760" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block>實施結構良好的資料庫配置</block>
   <block id="b06c1406344aa854d261bcc0a6e0f592" category="inline-link-macro">註冊實例</block>
-  <block id="e57096f2d1ce720a79c02a8e8f46d8de" category="paragraph">資料庫工作負載工廠會定期透過 Well-architected 儀表板分析Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 部署。要從結構良好的資料庫資源儀表板解決問題，首先需要<block ref="001cc0ec03a1e5527fa917b277b2c766" category="inline-link-macro-rx"></block>。</block>
   <block id="e8663036e4d283a237c51601bdcfc5cd" category="inline-link-macro">實施結構良好的資料庫配置</block>
-  <block id="fc5052ca3918c28b8e418893a6b982f9" category="paragraph">註冊實例後，您可以查看架構良好的狀態並採取行動<block ref="1c0f7e78a2011839a2cb972a47f46536" category="inline-link-macro-rx"></block>在工作量工廠中。</block>
   <block id="ad6ac298077f67c060156edbddf13a36" category="list-text">選擇“*資料庫*”標籤。</block>
   <block id="3488d38349240c72f75d081c2a79fa3b" category="section-title">2025年8月4日</block>
   <block id="412038dfc7c530b95fd4f54ca173992c" category="paragraph">BlueXP backup and recovery可讓您備份、還原、驗證和複製 Microsoft SQL Server 資料庫和可用性群組。從工作負載工廠控制台，您可以存取和使用BlueXP backup and recovery保護 Microsoft SQL Server 工作負載。</block>
   <block id="0eabf86e93873fc39b5a49903ec1c780" category="inline-link-macro">了解如何透過工作負載工廠控制台保護 Microsoft SQL Server 工作負載</block>
   <block id="7b26957c70db2d24aefeef252ab7b883" category="inline-link-macro">使用BlueXP backup and recovery保護 Microsoft SQL 工作負載概述</block>
   <block id="6f452244df857c1e0fc35a2a40650322" category="paragraph">有關BlueXP backup and recovery的詳細信息，請參閱<block ref="b3db6ed8425306b30d05a9028a6a4afe" category="inline-link-macro-rx"></block>。</block>
-  <block id="5990f2117edf64c38e97fdde23b1397e" category="section-title">與BlueXP backup and recovery集成</block>
-  <block id="51292e2d8212f9b8bc9828cc387d8722" category="paragraph">將主機新增至BlueXP備份和復原以進行保護後，資料庫發現有時會失敗。</block>
   <block id="6928b7abf5d9fe2390db1739e7eb6d4b" category="summary">保護 Microsoft SQL Server 執行個體和資料庫。</block>
   <block id="3d5a9cd83b30ec6ec9f0802593907f05" category="doc">保護 Microsoft SQL Server 工作負載</block>
-  <block id="b488e89ecf7de1a4b1b2b7c08eaf5ec7" category="paragraph">BlueXP backup and recovery利用NetApp SnapMirror資料複製技術，透過建立快照副本並將其傳輸到備份位置來確保所有備份完全同步。</block>
-  <block id="84e16205176c2d47e586e6b70d30c355" category="paragraph">有關使用BlueXP backup and recovery進行保護的詳細信息，請參閱<block ref="b3db6ed8425306b30d05a9028a6a4afe" category="inline-link-macro-rx"></block>。</block>
-  <block id="f4b04af639ebf32754e26b928989f33f" category="inline-link-macro">設定BlueXP backup and recovery的許可</block>
-  <block id="3c075e9819b05a2e34af9858d549a406" category="paragraph"><block ref="3c075e9819b05a2e34af9858d549a406" category="inline-link-macro-rx"></block></block>
   <block id="2a664f2dff1a4229f6bce49f7fdfe6f2" category="paragraph">若要發現資料庫，您必須在連接器上設定主機解析。在託管設備上，在<block ref="ad942c725cd0cae65ca4c63717ec464c" prefix=" " category="inline-code"></block>文件。</block>
-  <block id="c8e8c4da5256c1c745e327697c0ab942" category="list-text">將*引擎類型*過濾為*Microsoft SQL Server*。</block>
-  <block id="60cf19833f9c8f41398952fc003ec02d" category="list-text">從選單中選擇要保護的實例的*保護*。</block>
-  <block id="4aaf55799008f1b65a60e1b728d3e48c" category="list-text">為了準備資料保護，工作負載工廠會自動在BlueXP backup and recovery中註冊您的 SQL Server 資源，配置並安裝 Microsoft SQL Server 插件，並發現滿足保護 SQL Server 執行個體的先決條件的資源。選擇“*開始*”來啟動程序。</block>
-  <block id="670bdffbda0cf3a120000d78ea9fef94" category="paragraph">從BlueXP backup and recovery中，建立策略來保護您的 Microsoft SQL Server 執行個體和資料庫。</block>
   <block id="9a4d384d3169400fc10e8236540a38e4" category="inline-link-macro">了解如何建立策略來保護您的 Microsoft SQL Server 執行個體和資料庫</block>
-  <block id="ad2885286b9ea46a9ef4e984cc15fd97" category="paragraph"><block ref="5d8b861adb73a9004c15944cd0df7095" category="inline-link-macro-rx"></block> 。</block>
-  <block id="c756b6b1ba6b752239a8d49eda5ad2a4" category="inline-link-macro">BlueXP backup and recovery文檔</block>
-  <block id="2b26ff19745211be5d0a237c9563b2e9" category="paragraph">相關信息，請參閱<block ref="1fc5869f304c5b888d6ddfbf36e6f479" category="inline-link-macro-rx"></block>用於管理 Microsoft SQL Server 工作負載。</block>
   <block id="d341f0c47f4b7ad5cc1b4c9bb210cfda" category="section-title">2025年8月12日</block>
   <block id="82776afd94423c79dbb6478467a55ee1" category="paragraph"><block ref="01ada1ee9ae7e42f0ced5cd933931e08" category="inline-link-macro-rx"></block> 。</block>
   <block id="1d7888e9a7739b1a3282310704484ae5" category="doc">BlueXP backup and recovery現在支援 Microsoft SQL Server 工作負載</block>
-  <block id="89f47c3c1994a3db38e0daf9dd673194" category="paragraph">使用來自工作負載工廠控制台的BlueXP backup and recovery保護您的 Microsoft SQL Server 應用程式資料。透過此集成，您可以實現以下保護目標：使用本機快照在本機主Amazon FSx for NetApp ONTAP （FSx for ONTAP）儲存上備份工作負載，並將工作負載複製到輔助 FSx for ONTAP儲存。</block>
-  <block id="151fbaa196a40c93d8a7ab6cdfe564fe" category="section-title">使用BlueXP backup and recovery做好保護準備</block>
-  <block id="0560cb07d58d813bf36ae0c3bcdcec57" category="paragraph">完成準備過程，以使用BlueXP backup and recovery保護您的 Microsoft SQL Server 資源。</block>
-  <block id="b3aa6571a8796bf368f93709826c5cca" category="paragraph">工作負載工廠自動發現資源、驗證先決條件以及配置和安裝 Microsoft SQL Server 插件，為使用BlueXP backup and recovery保護您的工作負載做好準備。該外掛程式是NetApp軟體的主機端元件，可讓您保護 Microsoft SQL Server 工作負載。</block>
-  <block id="2e236abf3c6b1def80ac2b6884c1b5ab" category="paragraph">若要使用BlueXP backup and recovery保護 Microsoft SQL Server 工作負載，必須符合下列要求。</block>
-  <block id="3d7cbbcb00b12dcb8b1ac2f24bf3ea56" category="inline-link-macro">BlueXP backup and recoverySQL Server 的要求</block>
-  <block id="ba3196b3748bf69daba9160040c84853" category="list-text">確保您的環境滿足<block ref="db876250b10693778272e32877c79f1e" category="inline-link-macro-rx"></block>。</block>
-  <block id="4499b1faa84c7528a77910b47c230bfb" category="inline-link-macro">完成BlueXP要求</block>
-  <block id="36cb54a50029122a2701724926881723" category="list-text"><block ref="820c789cd0a515d3f846ace99ca806ea" category="inline-link-macro-rx"></block>包括設定BlueXP、IAM 角色和BlueXP連接器。</block>
-  <block id="27044efdd79fcbe78a3f6c73f94ff8ab" category="inline-xref">使用BlueXP backup and recovery進行保護準備</block>
-  <block id="ad9f1468b7af086344a7c9d7f3cfe5e6" category="paragraph">如果您擁有BlueXP帳戶的組織管理員存取權限，則<block ref="d431b2247c053b79ca08cc138d1dc11a" prefix=" " category="inline-code"></block>當您<block ref="fdfea7d26047cfb871b3d198f9393eab" category="inline-xref-macro-rx"></block>。</block>
   <block id="b101f17cf16b7701e98ff3ad94847a38" category="list-text">在連接器上設定主機分辨率</block>
-  <block id="aa660deb360d337c08e7ddce4aada0d6" category="list-text">滿足先決條件後，選擇*重定向*以存取BlueXP backup and recovery。</block>
   <block id="c66ae4617a5e7b903fa49494f6025fe3" category="doc">Agentic AI 驅動的錯誤日誌分析器</block>
   <block id="9d9b1a38d2c7c04daeaa22b4ab5a3d5d" category="paragraph">Agentic AI 驅動的錯誤日誌分析器是一項新功能，它利用先進的機器學習演算法自動偵測和分析日誌檔案中的錯誤。該工具旨在透過根據日誌中識別的模式向開發人員提供可操作的見解和建議來簡化故障排除過程。</block>
   <block id="b8b677d9dba6a14dd05b3a0eb592a9c5" category="inline-link-macro">了解有關 Agentic AI 驅動的錯誤日誌分析器的更多信息</block>
@@ -1133,77 +882,44 @@
   <block id="66eac601a6b6ad939034aba1005b0d1f" category="paragraph">使用 Windows 憑證對 Microsoft SQL Server 執行個體進行驗證已嵌入到工作流程中，以準備使用BlueXP backup and recovery原來保護 Microsoft SQL Server 主機。這曾經是需要手動完成的先決步驟。相反，如果您尚未使用 Windows 憑證在工作負載工廠中註冊主機，系統將提示您與管理員存取權限共用 Windows 憑證。</block>
   <block id="21e7945dde284bd0e0fc5e2026a591e0" category="section-title">架構良好的分析包括 SQL Server 的 MTU 對齊</block>
   <block id="ecc57bed47e69e41f27979277ae13c78" category="paragraph">精心設計的分析評估並修復了 FSx for ONTAP儲存上 Microsoft SQL Server 跨端點的最大傳輸單元 (MTU) 錯位。調整 MTU 設定有助於最佳化網路效能並減少 SQL Server 工作負載的延遲。</block>
-  <block id="5ec7d7613dc24a00972435b1b5bec7ca" category="summary">分析資料庫工作負載工廠內的錯誤日誌。</block>
-  <block id="258ca63c895b36726016996f97008ce2" category="doc">分析工作負載工廠中的錯誤日誌</block>
-  <block id="d7fbe139bba3a469b965910f0c1b3139" category="paragraph">使用智慧型錯誤日誌分析器自動解釋 Microsoft SQL Server 錯誤日誌，以便您可以快速識別和解決問題。  Agentic AI 為基礎的分析需要 Amazon Bedrock 整合。</block>
-  <block id="b1d75ff3f8d78173eda812ed5b2b5169" category="paragraph">錯誤日誌分析和補救有助於維護 SQL Server 執行個體的健康和效能。有效地解釋 SQL Server 錯誤日誌需要仔細的分析和專業知識。手動監控、錯誤偵測和根本原因分析非常耗時，而且容易出錯。這些挑戰可能會延遲問題解決、增加停機時間並導致營運效率低落。智慧錯誤日誌分析器透過以下主要優勢解決了這些挑戰：</block>
   <block id="68425dd75582dcda5e795c7294a1b8cc" category="list-text">智慧分組：根據唯一性、嚴重性和類別智慧地合併錯誤，並簡化故障排除過程，以便更快、更有效地解決問題。</block>
   <block id="787171600253ef2af7e8da149d33cb63" category="list-text">人工智慧驅動的調查：利用人工智慧主動分析錯誤，提供清晰、可操作的見解，以加速問題識別，而無需深厚的專業知識。</block>
   <block id="da6ca89260c645f5196ae427b50dcaac" category="list-text">錯誤豐富：透過外部引用增強錯誤日誌，提供清晰的上下文以提高理解和決策。</block>
   <block id="b2ea82afeab4091c155f9cfb595184fd" category="list-text">最佳實務補救：為在 FSx for ONTAP上執行的 SQL Server 工作負載提供客製化的補救建議，使各種技能等級的使用者都能自信地解決問題。</block>
-  <block id="7eb28accaca049ba4d70b1ee3d3d33e8" category="paragraph">無論何時使用智慧錯誤日誌分析器，您都可以完全控制您的環境，同時受益於先進的 AI 分析。</block>
-  <block id="148e9a273226b4629d4e563e7ab8da76" category="paragraph">要使用智慧錯誤日誌分析器，您需要啟動 Amazon Bedrock、選擇模型工作負載工廠使用的模型、建立私人終端節點以連接到 Amazon Bedrock、新增權限並建立企業許可證。</block>
   <block id="888aee60b948bfcee3f85cb52d4d62f0" category="inline-link-macro">Amazon Bedrock 定價</block>
   <block id="2064dc6bc6a42df41c5d58cafe4e5108" category="paragraph"><block ref="2064dc6bc6a42df41c5d58cafe4e5108" category="inline-link-macro-rx"></block></block>
-  <block id="3a25a4c05da17a60c6da26a004fe6fc9" category="paragraph">要使用智慧型錯誤日誌分析器，您必須滿足以下先決條件：</block>
   <block id="15f8b2f1668baad2a169d2b56f5bf029" category="inline-link-macro">註冊 SQL Server 實例</block>
-  <block id="0764d8a84cf6119c865a68cea7ad7997" category="list-text"><block ref="873d2450d820ba11c34ebce38f7d81a0" category="inline-link-macro-rx"></block>在工作量工廠中。*</block>
-  <block id="0f9beae8ccab0894120d4f5ad811202a" category="list-text">選擇*SQL Server*作為資料庫引擎。</block>
   <block id="e2b234d864fc8c9cad0b4ac907f4b4cb" category="list-text">從「實例」標籤中，找到要分析的特定 SQL Server 實例，然後從選單中選擇「調查錯誤」。</block>
   <block id="3c6ac7ef553b64f6b1a8db2d3034177d" category="list-text">從「錯誤調查」標籤中，請按照控制台中的說明完成以下先決條件：</block>
   <block id="34048930da0f8b448828d6774b139b17" category="list-text">亞馬遜基岩</block>
   <block id="6b0d68ff65de404d491b6292064a079f" category="list-text">網路：Amazon Bedrock 的私有終端節點</block>
   <block id="e13a1019f98bb51abab8e23f9bf0c5c2" category="list-text">EC2 執行個體設定檔角色的權限</block>
   <block id="51338cb33c95537fe95c754fca16bf96" category="list-text">與工作負載資料庫管理 (wlmdb) 相關的憑證</block>
-  <block id="7e235a8e26f12cfd3ee5821cfa8e43b5" category="list-text">滿足先決條件後，選擇「立即調查」以使用智慧錯誤日誌分析器深入了解 SQL Server 錯誤日誌。</block>
   <block id="88c29fe90401d537c3fb507300ab6c20" category="paragraph">掃描完成後，錯誤會顯示在控制台中，提供智慧錯誤日誌分析器偵測到的問題的全面視圖。</block>
   <block id="1bdd4c6f4051ac693645d05ee75e84ec" category="list-text">使用過濾器根據嚴重性、時間範圍和錯誤代碼等標準來優化顯示的錯誤。</block>
   <block id="d57a30f2af1e68603bcbf4d88ae44c7f" category="list-text">查看詳細的錯誤訊息，包括原始錯誤訊息、基於 AI 的解釋以及解決錯誤的建議補救步驟。</block>
-  <block id="3152f2e27eff8edb02eb60bb459e4050" category="summary">如果您不再想從工作負載工廠控制台部署或監控資源，請取消註冊該資源。</block>
-  <block id="72a055f1266887c6f8382e17191d6983" category="doc">在工作負載工廠中註銷資源</block>
-  <block id="a2f27b9db2e64d5d957fe1545f961ea2" category="paragraph">如果您不再想從工作負載工廠控制台部署或監控資源，請取消註冊資源，例如 Microsoft SQL Server 執行個體或 Oracle 資料庫。取消註冊資源也會刪除實例使用的 FSx for ONTAP儲存容量。</block>
   <block id="ada60b484b7d2e3edafc98754146c7c3" category="paragraph">您可以重新註冊該資源。</block>
-  <block id="aa855ee9ef145821feba441919b3c042" category="list-text">在清單中，選擇引擎類型：Microsoft SQL Server、Oracle 或 PostgreSQL。</block>
-  <block id="f610d93ed106aab8ba30c2da3d23a496" category="list-text">找到您想要登出的資源，選擇三點選單，然後選擇*登出*。</block>
-  <block id="257ccbccb121b842e837c79d69337480" category="summary">了解資料庫工作負載工廠中的執行個體和資料庫管理。</block>
-  <block id="6d68ae3c5c1270a56df6e989377c623f" category="doc">資料庫工作負載工廠中的資源管理</block>
-  <block id="60ec19daff12df32a89a9e63c7ac5226" category="paragraph">管理工作負載工廠中的資源可讓您使用進階功能，包括資料庫和複製建立、資源利用和監控。此外，您可以分析資料庫配置的良好架構狀態並實施配置最佳實踐以提高效能並降低營運成本。資源管理僅適用於在 FSx for ONTAP檔案系統儲存上執行的 Microsoft SQL Server 和 Oracle 環境。</block>
   <block id="605deef06e1372beea22ad9cd2be1a6a" category="inline-link-macro">註冊資源</block>
   <block id="cdef502718e102280b7153349fc5453d" category="paragraph">你必須<block ref="7b211aa8ea2e7da5bf6451b8c7477b8d" category="inline-link-macro-rx"></block>執行以下任何一項管理任務。</block>
-  <block id="6f714b468132b90f6781178d5cddd82a" category="list-text">從清單中查看資料庫</block>
-  <block id="e3d9af7400190b7c1a2a8a8f5044efc8" category="paragraph">使用配置分析洞察和建議，利用工作負載工廠使用 Microsoft SQL Server 和 Oracle 為您的資料庫配置實施最佳實務。您可以輕鬆查看架構良好的狀態，了解資料庫配置的問題，並採取措施改善任何未針對可靠性、安全性、效率、效能和成本進行最佳化的配置。</block>
   <block id="8778288856610f6bf20035173fbad2be" category="paragraph">您也可以忽略不適用於您的環境的特定配置的分析，以避免不必要的警報和不準確的最佳化結果。</block>
-  <block id="3cba6060de73258408bd0da332e31cf6" category="paragraph">工作負載工廠分析以下配置的良好架構狀態：</block>
   <block id="e40dd147294abaab8b8ebe348a6ff323" category="paragraph">對於 Microsoft SQL Server 執行個體：</block>
   <block id="e13a21e0f6e79bd6e277440afe81c7a2" category="list-text">計算：包括調整大小、作業系統修補程式和網路適配器設置，如接收方縮放 (RSS)、TCP 卸載和 MTU 對齊</block>
   <block id="dede452df8eba39c0a57cc96ce3b98c4" category="paragraph">對於 Oracle 資料庫：</block>
-  <block id="10331d3fa6738ec78eba4707eaedfb38" category="list-text">儲存配置：包含容量管理、精簡配置、分層策略、快照和儲存效率</block>
   <block id="438f1f56c44366f5204e6f9931b85516" category="inline-link-macro">了解如何註冊資源。</block>
-  <block id="0802ab71af28bc46997c272bf444f225" category="list-text">若要評估 Microsoft SQL Server 執行個體或 Oracle 資料庫的存儲，必須在工作負載工廠中註冊資源，且儲存類型必須是 FSx for ONTAP。<block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
   <block id="74bdd3d51d7fef35f3c1e1829b2c63fe" category="section-title">修復配置問題</block>
   <block id="1c6128cdb2d10cb97e9f36f037cb4ceb" category="paragraph">修正在 FSx for ONTAP儲存上執行的 SQL Server 或 Oracle 環境的設定問題。</block>
   <block id="47df3bf0f7ade58852082d72bcde28c6" category="admonition">修復過程可能會導致執行個體停機或服務中斷。在選擇修復配置問題之前，請務必仔細查看建議。</block>
   <block id="bfa392944d88404ace768c77a2975abf" category="paragraph">您可以在配置層級、SQL Server 執行個體或 Oracle 資料庫層級延後、解除和重新啟動組態分析。</block>
   <block id="450fabb8226fa1a89909f2bc792a37e5" category="paragraph">以下說明說明如何在配置層級延後、解除或重新啟動分析。若要針對特定 SQL Server 執行個體或 Oracle 資料庫完成下列任務，請從 *儀表板* 標籤開始。</block>
-  <block id="9adcb62f83b991a69c8f3d3115f77371" category="summary">資料庫工作負載工廠會定期分析 Microsoft SQL Server 和 Oracle 配置以確定是否有任何問題。</block>
-  <block id="26991062cc0864bcbaf33364fd496dd7" category="paragraph">資料庫工作負載工廠會定期分析資料庫配置，以確定Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 和 Oracle 部署是否有任何問題。當發現問題時，工作負載工廠會向您展示問題所在，並解釋需要進行哪些變更以確保您的資料庫配置達到最佳效能、成本效益並符合最佳實務。</block>
   <block id="4c7f98dd35929abb47ec47b5961e9ca4" category="paragraph">為了進行完整的資料庫環境分析，資源必須註冊並在線。</block>
   <block id="aed8a618f1e8a1dc325945b821521d6c" category="paragraph"><block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
   <block id="15e4986095a476a300a86c98e005c03f" category="list-text">如果出現提示，請提供具有管理存取權限的 Windows 憑證。</block>
-  <block id="6b839f04b2b72d377b07b0d79e294178" category="paragraph">若要使用BlueXP backup and recovery進行保護，必須使用 Windows 憑證在工作負載工廠中註冊 SQL Server 執行個體。</block>
-  <block id="32a457ad7086b73a0831995da6a0529f" category="list-text">如果有多個連接器處於作用中且可用，請選擇要註冊和保護工作負載的*連接器*。</block>
-  <block id="a982f8491a35755aaef9156fb5ad6bbf" category="summary">註冊資源，以便您可以監控資料庫工作負載工廠中的資源狀態、資源利用率、保護和儲存效能。</block>
-  <block id="96e84242aea09d1b8acef30db1b81726" category="doc">在資料庫工作負載工廠註冊資源</block>
-  <block id="12de2974d1ae967399b67d77b8fc1cc2" category="paragraph">註冊 Microsoft SQL Server 的執行個體和 Oracle 的資料庫，以便您可以在資料庫的工作負載工廠中監控執行個體和資料庫狀態、資源使用率、保護和儲存效能。</block>
   <block id="7aff78d7a87160ba551df374b4456194" category="paragraph">僅在 FSx for ONTAP檔案系統儲存上執行的資料庫引擎才可以註冊。</block>
   <block id="51c5a8b1cc6e1b12dfec7056b4d4270e" category="paragraph">註冊實例（SQL Server）或資料庫（Oracle）包括兩個步驟 - 身份驗證和準備。準備工作包括確保所有 AWS、 NetApp和 PowerShell 模組都安裝在實例上。</block>
   <block id="d7c31e449e7a823ed2d427ad55864dd0" category="paragraph">您可以使用 SQL Server 憑證或 Windows 憑證進行驗證。</block>
-  <block id="8176a748cf9e05830153f7bf9026326b" category="admonition">工作負載工廠僅支援Microsoft SQL Server執行個體和Oracle資料庫的註冊和管理。根據您在工作負載工廠中選擇的 AWS 帳戶憑證，PostgreSQL 主機可能會出現在清單中。目前，工作負載工廠僅支援在 Amazon Linux 作業系統上執行的未註冊的 PostgreSQL 執行個體。</block>
-  <block id="8eb2e76249fd281f42a65a8a3461d52e" category="paragraph">實例或資料庫的主機必須出現在「清單」標籤中。要讓主機出現在清單中，<block ref="99382ab95f660f372dfed7d2289ac38a" category="inline-link-macro-rx"></block> 。</block>
   <block id="6e3efb52bfff9a14482d677371391920" category="paragraph">若要在沒有外部連線的私人網路中註冊執行個體（SQL Server）或資料庫（Oracle），需要在 VPC 中提供下列終端節點，並與 SQL Server 所在的子網路關聯。確保介面端點允許附加的安全群組中的連接埠 443。</block>
   <block id="0670483b9d94213fd07ca4df3baae2eb" category="list-text"><block ref="c202a4052bc97ff0191552ea4c2c865c" prefix="" category="inline-code"></block>（SQL 伺服器）</block>
   <block id="6da87aebc1358666c2653e7d0852ee63" category="list-text"><block ref="1f378775539050b7c7b5e1cdfe121e2f" prefix="" category="inline-code"></block>（SQL 伺服器）</block>
-  <block id="ced73862020ae018386a5e6771c61bc9" category="list-text">選擇*Microsoft SQL Server*作為引擎類型。</block>
   <block id="968e1e1e0d9bdbc5d123e7fe52928ccf" category="list-text">選擇“*實例*”標籤。</block>
   <block id="574cb46655ea85708805d607e35d7b2e" category="list-text">選擇註冊單一實例或多個實例。</block>
   <block id="fd04518b404dd2e04b78e54b8c7dbd95" category="list-text">查看以下功能的先決條件清單。確保您滿足註冊實例的每個功能的所有先決條件。</block>
@@ -1211,7 +927,6 @@
   <block id="9195a167e7e3c06a4c81fd7b20e6558f" category="paragraph">實例註冊啟動。選擇「作業監控」標籤來追蹤進度。</block>
   <block id="2be3766a7781349eb1b5afffac277a87" category="section-title">註冊 Oracle 資料庫</block>
   <block id="08ba06afd71242693837a5363c8cec75" category="paragraph">註冊資料庫包括實例認證和準備。</block>
-  <block id="a7d92c376d5fa6fff5f8dd52d7ca71c6" category="list-text">在「庫存」標籤中，選擇「*Oracle*」作為資料庫引擎。</block>
   <block id="b1260d7204d7a54ec6aa4f9cebcb5433" category="list-text">選擇註冊單一資料庫或多個資料庫。</block>
   <block id="480e9aa75d6d0bd897fdeca693309821" category="list-text">單一資料庫註冊：導航至要管理的資料庫並選擇*註冊資料庫*。</block>
   <block id="dded28e278bb27d27408ee76b5bda6ae" category="list-text">多資料庫註冊：選擇*註冊多個資料庫*按鈕。</block>
@@ -1240,4 +955,348 @@
   <block id="a1a8b5ea7b89ec9ebfd06924f494937a" category="sidebar">註冊資源</block>
   <block id="17ab5a0a01917c54c0534d54ab690906" category="sidebar">分析錯誤日誌</block>
   <block id="cf3287365e2745af5b195b5dcf4dab25" category="sidebar">註銷資源</block>
+  <block id="2bbead322f2dd5c4a40fbd66537e304f" category="doc">BlueXP workload factory現為NetApp工作負載工廠</block>
+  <block id="9c80606adc6065bc48c6d99fbb8c3f1d" category="paragraph">BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。因此， BlueXP workload factory已重新命名為NetApp工作負載工廠。</block>
+  <block id="fe1ae90129b3fc6c05d6d55d62ca79b2" category="section-title">Workload Factory 控制台中針對 Oracle 的增強功能</block>
+  <block id="bde440a6f221f754dda1ba04c79f7982" category="section-title">Oracle 資料庫資源畫面</block>
+  <block id="b9e6ca1860385235df9a27b8a183c14b" category="paragraph">每個 Oracle 資料庫都有自己的專用資源螢幕，可從資料庫清單中取得。資源畫面提供資料庫名稱、狀態（線上或離線）、租賃和部署類型的概覽。還包括三個月內以下數據的圖表：CPU 使用率、延遲、IOPS 和吞吐量。容量利用率提供資料庫的總大小、寫入的資料大小、已使用的固態硬碟容量以及已使用的容量池儲存。</block>
+  <block id="61e62ed73221a8d36e3b5ccff5df1c34" category="paragraph">從資源畫面，您可以查看有關 Oracle 伺服器（部署模型、作業系統、版本、版本等）、位置（AWS 帳戶、區域、可用區和子網路）、儲存和計算（FSx for ONTAP檔案系統詳細資訊、資料庫執行個體類型以及關聯的 LUN 和磁碟區）以及連接（VPC 和存取協定）的資訊。您也可以檢查資料庫配置的架構狀態並查看與資料庫關聯的可插拔資料庫（PDB）。</block>
+  <block id="2a862d414b58bb1053d6a8628126f4e0" category="section-title">支援 Oracle 可插拔資料庫</block>
+  <block id="345333792e16177a530fc4095c146b12" category="paragraph">Oracle 可插拔資料庫可在資料庫清單中以及其父容器資料庫的資源畫面中檢視。您的 PDB 可取得下列資訊：CDB 名稱、主機名稱、保護狀態、資料庫大小、FSx for ONTAP檔案系統、AWS 憑證、AWS 帳戶和區域。</block>
+  <block id="41d5af71402e1d82f05775556afa695b" category="section-title">針對 Oracle 的良好架構分析</block>
+  <block id="87e54cc3f4d743196aa5ce47b68e9f65" category="paragraph">精心設計的分析包括對通過 NFS 或 iSCSI（有或沒有自動儲存管理 (ASM)）的 Oracle 資料庫的儲存佈局的配置問題進行評估，以及對透過 iSCSI LUN 的 Oracle 作業系統的儲存配置問題進行評估。您可以使用此資訊對資料庫部署做出明智的決策並確保它們有效運作。</block>
+  <block id="dd0f28440676e89c09bd52c7f70e866b" category="inline-link-macro">在 Workload Factory 中實作架構良好的資料庫配置</block>
+  <block id="24373c35884bc6090ef23efe0b026c1e" category="paragraph"><block ref="24373c35884bc6090ef23efe0b026c1e" category="inline-link-macro-rx"></block></block>
+  <block id="d90600b832876e9302411cfab905b9bc" category="section-title">資料庫清單增強功能</block>
+  <block id="3772c3dfbcdf91deef3f77333da3ced1" category="paragraph">在資料庫清單中的執行個體畫面中，對於 Microsoft SQL Server 的單一或多個實例，或對於 Oracle 的單一或多個資料庫，可以使用修復、延遲和消除配置問題的選項。</block>
+  <block id="945d9800b1b25a8b224232b57dabb8a6" category="section-title">優化 Amazon Elastic Block Store (EBS) 儲存計算器中的節省</block>
+  <block id="b051b129322b1fa228bb46d5704f8ad2" category="paragraph">Workload Factory 可以分析您的 EBS 效能使用情況，然後建議最佳且最具成本效益的 FSx for ONTAP配置，以便您可以透過切換到 FSx for ONTAP來節省更多。</block>
+  <block id="75851f48043c7a3877391f5330fb19c1" category="inline-link-macro">在 Workload Factory 控制台中探索偵測到的儲存環境的節省情況</block>
+  <block id="a0766b901d28d8d972d369d556ae3e10" category="paragraph"><block ref="a0766b901d28d8d972d369d556ae3e10" category="inline-link-macro-rx"></block></block>
+  <block id="c6ce33e049285b31d2f12d7b30e16106" category="summary">分析資料庫工作負載工廠中的錯誤日誌。</block>
+  <block id="de5aa3916ae7d5763f4d4fe818491a77" category="doc">分析工作負載工廠中的錯誤日誌</block>
+  <block id="538c4703bd3218c445fac5ee3d4f4df1" category="paragraph">使用智慧型錯誤日誌分析器自動解釋 Microsoft SQL Server 錯誤日誌，以便您可以快速識別和解決問題。Agentic AI 為基礎的分析需要 Amazon Bedrock 整合。</block>
+  <block id="4f3d050ec78741e4f048cd1a9c202d21" category="paragraph">錯誤日誌分析和補救有助於維護 SQL Server 執行個體的健康和效能。有效地解釋 SQL Server 錯誤日誌需要仔細的分析和專業知識。手動監控、錯誤偵測和根本原因分析非常耗時，而且容易出錯。這些挑戰可能會延遲問題解決、增加停機時間並導致營運效率低落。智慧錯誤日誌分析器透過以下主要優勢解決了這些挑戰：</block>
+  <block id="3d573c7428ab9f849be508456eb81821" category="paragraph">無論何時使用錯誤日誌分析器，您都可以完全控制您的環境，同時受益於先進的 AI 分析。</block>
+  <block id="14f1fce00d2e95227126f5556a73ec6a" category="paragraph">要使用錯誤日誌分析器，您需要啟動 Amazon Bedrock、選擇 Workload Factory 使用的模型、建立私有端點以連接到 Amazon Bedrock、新增權限並建立企業授權。</block>
+  <block id="bf71ae5aa16f5632361df660e7d643c6" category="section-title">資料隱私和安全</block>
+  <block id="4156616e317ae39855b5f4857b036da9" category="paragraph">此功能透過以下措施確保資料隱私和安全：</block>
+  <block id="a492925ae64557e89b32f29da418b5eb" category="paragraph-title">數據主權</block>
+  <block id="5022435b88cf1022f4823e05dabd1732" category="paragraph">日誌資料和聚合保留在您的 AWS 帳戶內，透過私有 VPC 端點（Amazon Bedrock）進行通信，確保不會暴露在公共互聯網上。</block>
+  <block id="2405b8bbe1eec9accdcb22235860c3f2" category="paragraph-title">無需人工智慧訓練</block>
+  <block id="ff8598dd406774c1ca9008fc13afdda5" category="inline-link-macro">Amazon Bedrock 資料保護文檔</block>
+  <block id="f3bdceeaea10004cfc3c616ca8eb3736" category="paragraph">客戶資料不用於訓練或改進模型。 Amazon Bedrock 即時處理日誌，但不會對您的資料進行訓練。結果儲存在您的環境中僅供參考。如欲了解更多詳情，請參閱<block ref="b066fd87fd1e8a2b8d520c5977ecc43e" category="inline-link-macro-rx"></block>。</block>
+  <block id="b9ab059dc08ef721b8e84a71c31836ca" category="paragraph">要使用錯誤日誌分析器，您必須滿足以下先決條件：</block>
+  <block id="03b5d863e5ce2e0457e2439ea29d15c0" category="list-text">你必須有<block ref="09d2f3d3c667abb40f8d2ba111b9c06b" category="inline-link-macro-rx"></block>在 Workload Factory 中建立一個新的資料庫主機。</block>
+  <block id="1638ab4de4a9db0d742db9639754f78d" category="list-text"><block ref="873d2450d820ba11c34ebce38f7d81a0" category="inline-link-macro-rx"></block>在工作負載工廠中。</block>
+  <block id="646959962ba0d3aba0b9eba63fd30f66" category="list-text">也必須滿足以下先決條件。作為分析日誌錯誤的步驟的一部分，系統將提示您完成這些先決條件。</block>
+  <block id="b731c0685ba6b81efc2a3730248eb9d5" category="list-text">*Amazon Bedrock 啟動*</block>
+  <block id="81516992886ccf91505613c45ff870d0" category="paragraph">需要 Amazon Bedrock，以便在 Workload Factory 的 SQL 節點上執行的 AI 代理可以無縫連接 Bedrock 並為已識別的錯誤日誌取得基於 AI 的見解。</block>
+  <block id="d0e5aa254f1ccca87a0cd6748a924c03" category="list-text">*聯網*</block>
+  <block id="cb8d218eea5cb58b307a5ab0213e0e7b" category="paragraph">Amazon Bedrock VPC 端點可確保您的 SQL 節點與 Amazon Bedrock API 進行私密通信，並消除公共網路暴露。確保 Amazon Bedrock VPC 端點與 SQL Server 節點的子網路相關聯（例如：vpce-050cb2f33a1380ffd）。</block>
+  <block id="7ed47c99073de0aed63f1c44842de720" category="list-text">AWS IAM 權限</block>
+  <block id="c2c7ac9892a54cd8c39b1d9c5f58fee8" category="paragraph">與 SQL 節點關聯的 EC2 執行個體設定檔角色以及與 Workload Factory 關聯的 AWS 憑證需要下列權限。</block>
+  <block id="25977d35457399335400a71d0f8a6a75" category="list-text">具有“bedrock:InvokeModel”權限的 EC2 實例設定檔角色</block>
+  <block id="75b51e246b2117f69d42b2da83b880cf" category="paragraph">此權限使對應 SQL 節點上的 EC2 執行個體能夠呼叫 Bedrock 模型進行主動錯誤調查和補救指導。此設定檔還可確保安全的 AI 存取以獲得客製化的見解。</block>
+  <block id="378a86b0e0b9ed128b62cbb2ee357b61" category="list-text">與 Workload Factory 關聯的 AWS 憑證：「bedrock:GetFoundationModelAvailability」和「bedrock:ListInferenceProfiles」權限</block>
+  <block id="c44ddf9ba9f5224d51227669678fea5f" category="paragraph">這些權限驗證 SQL 節點區域中的模型可用性和配置，並確保可靠的、特定於區域的效能。</block>
+  <block id="7bc852edc2e072288bc0aee045416ffb" category="paragraph">使用 Workload Factory 控制台分析 SQL Server 錯誤日誌。</block>
+  <block id="759696af629832df91ea2580617b889c" category="list-text">從資料庫選單中，選擇*Inventory*。</block>
+  <block id="e671fcca7a0408f20ff0ad8657e918fe" category="list-text">在清單中，選擇 *Microsoft SQL Server* 作為資料庫引擎類型。</block>
+  <block id="426632902ba5365fa24d1725a5bb2307" category="list-text">當滿足先決條件時，選擇*立即調查*以使用錯誤日誌分析器深入了解您的 SQL Server 錯誤日誌。</block>
+  <block id="cd7a507a4da632eb786601c0c59b73ae" category="doc">使用NetApp Workload Factory 中的 Codebox 實現資料庫自動化</block>
+  <block id="34223b9b750f0c4370760ac0d38a69f2" category="paragraph">您可以使用NetApp Workload Factory for Databases 中的 Codebox 自動執行主機部署、資料庫建立等操作。Codebox 是一個基礎設施即代碼 (IaC) 副駕駛，可協助您產生程式碼來執行 Workload Factory 支援的任何操作。</block>
+  <block id="8bf07297af4a9c02272f0afdc351f796" category="summary">執行完整性檢查以確定NetApp Workload Factory for Databases 中的沙盒克隆資料是否完整或損壞。</block>
+  <block id="3407a8c10534c64ebf4dd6fe26f7daca" category="list-text">從資料庫選單中，選擇*沙盒*。</block>
+  <block id="92e9c3b500a0e7936b2c194e74ddbc37" category="list-text">在沙盒中，選擇要檢查完整性的沙盒克隆的操作選單。</block>
+  <block id="6c66105ac3f36d7885800e03e5285fd9" category="paragraph">使用 REST API 程式碼將沙盒克隆連接到持續整合和持續交付 (CI/CD) 管道，以透過NetApp Workload Factory for Databases 中的自動化改進軟體交付。</block>
+  <block id="db976ff1c57ed4bcfb284135455febc2" category="list-text">在沙盒中，選擇沙盒克隆的操作選單以連接到 CI/CD 工具。</block>
+  <block id="b95fa4e6e7b8f2168ad9a4d81e4e65cb" category="summary">在NetApp Workload Factory for Databases 中建立一個新的 Microsoft SQL Server。</block>
+  <block id="03f5b1a395b2051aedbbb6bf1bdb40e6" category="doc">在資料庫工作負載工廠中建立 Microsoft SQL Server</block>
+  <block id="197df9493ba9fcc2016851ab07990409" category="paragraph">在 Workload Factory for Databases 中建立新的 Microsoft SQL Server 或資料庫主機需要 FSx for ONTAP檔案系統部署和 Active Directory 資源。</block>
+  <block id="a6955f3c1d9afee975ddac409c1488f3" category="paragraph">在從 Workload Factory 建立 Microsoft SQL Server 之前，請先了解資料庫主機配置的可用儲存部署類型、Microsoft 多路徑 I/O 設定、Active Directory 部署、網路詳細資訊以及完成此操作的要求。</block>
+  <block id="bc032bc6a4cd520164072ac886f6e6fe" category="paragraph">Microsoft SQL Server 部署模型都需要使用 iSCSI 儲存協定建立 LUN。  Workload Factory 將 Microsoft 多路徑 I/O (MPIO) 設定為透過 FSx for ONTAP設定 SQL Server 的 LUN 的一部分。  MPIO 是根據 AWS 和NetApp最佳實務配置的。</block>
+  <block id="42e051f4b3bd9a59be27dcc2ba29ed4e" category="inline-link-macro">使用Amazon FSx for NetApp ONTAP進行 SQL Server 高可用性部署</block>
+  <block id="269326fff62168855c3430aa9d65f9e5" category="paragraph">有關詳細信息，請參閱<block ref="6ac8e9e2317e732c3bb49cf592e670cc" category="inline-link-macro-rx"></block> 。</block>
+  <block id="510b43743eda65eede671d1132c8ae46" category="paragraph">如果您在 Workload Factory 中的 Microsoft SQL Server 部署期間選擇“使用者管理的 Active Directory”，則必須提供安全群組，以允許 EC2 執行個體之間的流量到目錄服務進行部署。  Workload Factory 不會像 AWS Managed Microsoft AD 那樣自動附加使用者管理的 Active Directory 的安全性群組。</block>
+  <block id="371573fffb2c00aae667cd0b9c3e0b91" category="paragraph">您可以使用_快速建立_或_進階建立_部署模式在具有_自動化_模式權限的工作負載工廠中完成此任務。您也可以使用 Codebox 中提供的以下工具：REST API、AWS CLI、AWS CloudFormation 和 Terraform。<block ref="e0a3467dce43941c7b863cc8d6f0a62a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="cb6a5c4fb05bde0a093a725bae0d13bc" category="paragraph">在部署期間，Workload Factory 啟用 CredSSP 將憑證委託給用於設定 SQL 的腳本。當使用群組原則阻止所有網域電腦的 CredSSP 委派時，部署將會失敗。部署後，Workload Factory 會停用 CredSSP。</block>
+  <block id="dd1c783bbc98e7611d4daeb16d767dc1" category="list-text">在資料庫圖塊中，選擇*部署主機*，然後從選單中選擇*Microsoft SQL Server*。</block>
+  <block id="5b9c26b50b3ca96732c7eed47036b5f5" category="paragraph">具有讀取/寫入權限的 AWS 憑證允許 Workload Factory 從 Workload Factory 內的 AWS 帳戶部署和管理新的資料庫主機。</block>
+  <block id="840104c7c4d83fbb059df6e4b7236e1f" category="paragraph">具有「唯讀」權限的 AWS 憑證可讓 Workload Factory 產生 CloudFormation 模板，供您在 AWS CloudFormation 控制台中使用。</block>
+  <block id="b15889cda7cc15623b7382a0b047742b" category="paragraph">如果您沒有在 Workload Factory 中關聯的 AWS 憑證，並且想要在 Workload Factory 中建立新伺服器，請依照 *選項 1* 前往憑證頁面。手動新增資料庫工作負載的讀取/寫入模式所需的憑證和權限。</block>
+  <block id="4d02ad7172dc82d3b0274a4825836a82" category="paragraph">如果您想完成 Workload Factory 中的建立新伺服器表單，以便可以下載完整的 YAML 檔案範本以在 AWS CloudFormation 中部署，請依照 *選項 2* 操作以確保您擁有在 AWS CloudFormation 中建立新伺服器所需的權限。手動新增資料庫工作負載的讀取模式所需的憑證和權限。</block>
+  <block id="58e20c30835c21bc7ea424ffc1fc9c8d" category="paragraph">或者，您可以從 Codebox 下載部分完成的 YAML 檔案模板，以在 Workload Factory 之外建立堆疊，而無需任何憑證或權限。從 Codebox 的下拉式選單中選擇 *CloudFormation* 下載 YAML 檔案。</block>
+  <block id="e88ddf306d09a986cd718e9af0bc80fb" category="list-text">使用以下任一方式登入<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>。在資料庫磁貼中，選擇*部署主機*，然後從選單中選擇*Microsoft SQL Server*。</block>
+  <block id="341cb4707e46b8d074696db4d9ac5282" category="paragraph">如果您想完成 Workload Factory 中的建立新伺服器表單，以便可以下載完整的 YAML 檔案範本以在 AWS CloudFormation 中部署，請依照 *選項 2* 操作以確保您擁有在 AWS CloudFormation 中建立新伺服器所需的權限。手動新增資料庫工作負載的_唯讀_模式所需的憑證和權限。</block>
+  <block id="2686c583ae25419c84cb594060b8c4ed" category="list-text">*可用區域*：根據您選擇的部署模型選擇可用區域和子網路。為了實現高可用性，子網路不應共用相同的路由表。</block>
+  <block id="9341cfbe64d852decb507bdebc0e454c" category="list-text">對於單一執行個體部署：</block>
+  <block id="496fa7f97504100a02edd7b5fb2a86ea" category="list-text">對於 FCI 部署：</block>
+  <block id="dd47a29282cb01a03505df7eafe39815" category="paragraph">伺服器部署後，Workload Factory 不會在 Microsoft SQL Server 上啟用遠端連線。若要啟用遠端連接，請完成以下步驟。</block>
+  <block id="81743ae19e59a5c4aea5971633da6ebe" category="inline-link-macro">在 Workload Factory for Databases 中建立資料庫</block>
+  <block id="c3ff02fca2c48c2112c538c9d20f17e8" category="paragraph">現在你可以<block ref="8e96987f92f96d9a777adc7f1f8123b1" category="inline-link-macro-rx"></block>。</block>
+  <block id="093a3d726cbf25e589822ef36b3e7d6d" category="summary">使用NetApp Workload Factory for Databases 建立 Microsoft SQL 資料庫。</block>
+  <block id="d410c054e57809de4c2928a86ff5857a" category="doc">在NetApp Workload Factory for Databases 中建立 Microsoft SQL 資料庫</block>
+  <block id="e7c408256e10da6c2b63aa1ec40e89c6" category="paragraph">建立新的 Microsoft SQL 資料庫可讓您管理NetApp Workload Factory for Databases 中的資源。</block>
+  <block id="7e330efc62ab9aa02e901fd0e9ddfe04" category="list-text">*憑證和權限*：您必須擁有<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>在工作負載工廠中建立一個新的資料庫。</block>
+  <block id="5def691d4ba23ba4c19e8fb3f4ebd179" category="list-text">*Windows 主機*：如果您使用_快速建立_模式，則 Microsoft SQL Server 上必須有足夠的磁碟機號碼來為新資料庫建立新磁碟機。</block>
+  <block id="45c09a12c8c7e32b997298e5ab0cc9f7" category="list-text">*Microsoft SQL Server*：您必須在工作負載工廠中擁有一個託管的 Microsoft SQL Server，以便資料庫託管新的資料庫。</block>
+  <block id="fba597a5ff37192edad0ebb2de795a4d" category="list-text">*AWS Systems Manager*：確保<block ref="7254170b56a28e207df989a3f40b911f" prefix=" " category="inline-code"></block>透過 AWS Systems Manager 在 Microsoft SQL 主機中啟用使用者權限。</block>
+  <block id="33802730984f4af59a8f5644e1ba546a" category="list-text">選擇具有託管 SQL 伺服器執行個體的資料庫伺服器來建立資料庫。</block>
+  <block id="9b54a5b8ea82e880e1fd6cc2a1d063e7" category="list-text">按一下託管執行個體的操作選單，然後選擇*建立使用者資料庫*。</block>
+  <block id="af3c6f6c1f47dc04d93d4779689c9eca" category="summary">在NetApp Workload Factory for Databases 中建立一個新的 PostgreSQL SQL 伺服器。</block>
+  <block id="3df8ab93e6ee66742b140a409805477c" category="doc">在NetApp Workload Factory 中建立 PostgreSQL 伺服器</block>
+  <block id="8b9f915cb2ecd69bdd7dd72955de0196" category="paragraph">在NetApp Workload Factory for Databases 中建立新的 PostgreSQL 伺服器或資料庫主機需要 FSx for ONTAP檔案系統部署和 Active Directory 資源。</block>
+  <block id="aee2d1bda2fa7a372599f9dc76274403" category="paragraph">在從 Workload Factory 建立 PostgreSQL 伺服器之前，請先了解資料庫主機配置的可用儲存部署類型、工作負載工廠操作模式以及完成此操作的要求。</block>
+  <block id="ff041d4f4cf4ed6c6abc6b5c4266cc8c" category="paragraph">+ FSx for ONTAP檔案系統有兩種 PostgreSQL 伺服器部署模型：_高可用性 (HA)_ 或_單一實例_。根據您選擇的 FSx for ONTAP部署模型，為 FSx for ONTAP檔案系統建立不同的資源。</block>
+  <block id="357e0a3c41e14e924e972d9834762ebb" category="list-text">在資料庫圖塊中，選擇*部署主機*，然後從選單中選擇*PostgreSQL 伺服器*。</block>
+  <block id="eb286e45a827a3837ec5eb11c68b33ae" category="paragraph">*對於單一實例部署*</block>
+  <block id="c5fa99a956bb466e21eb5c13bbb80fd2" category="paragraph">*適用於 HA 部署*</block>
+  <block id="d99f6150a4efcd4d48fdaf436886511c" category="summary">在NetApp Workload Factory for Databases 中建立沙盒克隆。</block>
+  <block id="f11ac2427a7b573ec3b6ff10fab4b086" category="doc">在NetApp Workload Factory for Databases 中建立沙盒克隆</block>
+  <block id="275720de7888dfa64f5efd2265bd4ff1" category="paragraph">透過在NetApp Workload Factory for Databases 中建立資料庫的沙盒克隆，您可以使用克隆進行開發、測試、整合、分析、培訓、品質保證等，而無需更改來源資料庫。</block>
+  <block id="7346725773928eba0f4a6bd24d75cfe2" category="list-text">*憑證和權限*：您必須擁有<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>在 Workload Factory 中建立沙盒克隆。</block>
+  <block id="19d25173728d8d76e86a76626ff0e340" category="paragraph">或者，您可以使用 Codebox 複製部分完成的模板或建立已完成的模板，以便您可以使用 REST API 在 Workload Factory 之外建立沙盒克隆。<block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="de53b203cddcf425805457c9ee61f4fa" category="list-text">*Microsoft SQL Server*：您必須在 Workload Factory for Databases 中擁有託管的 Microsoft SQL Server 來託管新的沙盒複製。</block>
+  <block id="c4445bf1142f4fd36aa3139618ee4f3f" category="list-text">*來源資料庫*：您需要一個可用於複製的來源資料庫。</block>
+  <block id="969e7140d33129e87f01e95c59fed40f" category="list-text">*安裝*：當複製具有多個資料和/或日誌檔案的 SQL 資料庫時，Workload Factory 會複製自動指派或定義的磁碟機號碼下的所有檔案。</block>
+  <block id="e84beb556a76fd6484a39d4447262026" category="summary">當您不再需要NetApp Workload Factory for Databases 中的沙盒克隆並想要釋放儲存容量時，請將其刪除。</block>
+  <block id="b0a116a4eb9216062a5e5afb2cd40a82" category="doc">在NetApp Workload Factory for Databases 中刪除資料庫克隆</block>
+  <block id="e0c0b02aa121e916724ee28f460bc605" category="list-text">在沙盒中，選擇要刪除的沙盒複製的操作選單。</block>
+  <block id="478b782141e49e75e5d4d0534bf71587" category="list-text">在刪除對話方塊中，選擇*刪除*確認刪除。</block>
+  <block id="54be7afd7595249ed399278de89305fa" category="summary">如果您不再想從 Workload Factory 控制台部署或監控資源，請取消註冊該資源。</block>
+  <block id="5a2d38279bf5114017c85d3f5b74a52f" category="doc">在NetApp Workload Factory 中取消註冊資源</block>
+  <block id="df442bf005a0d53e338d95bb9b23b0c2" category="paragraph">如果您不再想從NetApp Workload Factory 控制台部署或監控資源，請取消註冊資源，例如 Microsoft SQL Server 執行個體或 Oracle 資料庫。取消註冊資源也會刪除實例使用的 FSx for ONTAP儲存容量。</block>
+  <block id="5e515299dfd2f2c8ff923eaac6bbb1bf" category="list-text">在清單中，選擇引擎類型：*Microsoft SQL Server*、*Oracle* 或 *PostgreSQL*。</block>
+  <block id="e91df2086570d35902c167d64feb1a17" category="list-text">找到您要取消註冊的資源，選擇操作選單，然後選擇*取消註冊*。</block>
+  <block id="ed3b0a0e4302f7b2d136fab3b16aa821" category="doc">探索NetApp Workload Factory for Databases 的節省</block>
+  <block id="da04ea76e1caee6b818a505ce02fa93b" category="paragraph">透過比較在 Amazon Elastic Block Store (EBS) 上使用 Microsoft SQL Server、FSx for Windows File Server 和本地儲存與 FSx for ONTAP儲存的成本，探索NetApp Workload Factory for Databases 為您的資料庫工作負載節省的成本。</block>
+  <block id="b0dc0ddc3b447df040e0e8762a14c68c" category="paragraph">Workload Factory 有多種方法可供您探索在 Amazon Elastic Block Store (EBS)、FSx for Windows File Server 和本機儲存上執行的資料庫工作負載的節省情況 - 從儀表板、庫存標籤和探索節省標籤。在所有情況下，您都可以使用節省計算器來比較在 FSx for ONTAP檔案系統上執行 Microsoft SQL Server 工作負載的各種成本組成部分，例如儲存、運算、SQL 授權、快照和克隆，以及彈性區塊儲存 (EBS)、FSx for Windows File Server 和本機儲存。</block>
+  <block id="a4e51d52bc464b022375b8780b342f79" category="paragraph">如果 Workload Factory 確定您可以透過在 FSx for ONTAP檔案系統上執行這些工作負載來節省資金，則可以直接從 Workload Factory 控制台中的節省計算器透過 FSx for ONTAP部署 Microsoft SQL。當您在 Elastic Block Store、FSx for Windows File Server 或本機儲存上擁有多個 Microsoft SQL Server 執行個體時，我們建議使用具有單一 SQL 執行個體的 FSx for ONTAP配置。</block>
+  <block id="9c987d520f60a3366527c3f40f808979" category="paragraph">存取 Workload Factory 控制台中的資料庫*儀表板*，以概覽在 FSx for ONTAP上執行所有資料庫工作負載的潛在成本節省。在「潛在節省」圖塊中，您可以查看 Elastic Block Store 和 FSx for Windows File Server 上的所有資料庫工作負載的數量、潛在的成本節省、節省百分比以及條形圖中的直覺表示。</block>
+  <block id="e123e8395730b190f146babf1b2d52a4" category="inline-image-macro">工作負載工廠控制台中資料庫儀表板的潛在節省圖塊的螢幕截圖。潛在節省圖塊顯示您在 Elastic Block Store 和 FSx for Windows File Server 上的所有資料庫工作負載的數量、潛在的成本節省、節省百分比以及條形圖中的直觀表示。</block>
+  <block id="092e04ebb92f098a8d23a32d9a42e747" category="paragraph"><block ref="092e04ebb92f098a8d23a32d9a42e747" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="415a5d8c7b61b7b6644a82777ab19fd7" category="paragraph">+ * 目標執行個體 vCPU：此執行個體具有 48 個或更少的虛擬 CPU。  * 記憶體分配：實例具有 128GB 或更少的記憶體。</block>
+  <block id="10bc36142cfe526f2ba0fecd1ac4fbe9" category="paragraph">+ * 資料庫級企業功能 * 線上索引操作 * 資源調控器 * 點對點或 Oracle 複製 * R/Python 擴充 * 記憶體最佳化的 TempDB</block>
+  <block id="5e633dc647061a3cdb155c548d275ddc" category="paragraph">探索偵測到的主機的節省：Workload Factory 連結到您現有的 Microsoft SQL 伺服器並將詳細資訊拉入計算器進行自動比較。您需要授予_唯讀_或_讀/寫_權限才能使用此計算器選項。您可以更改用例，但所有其他細節都會在計算中自動確定。</block>
+  <block id="e5af3e73361e966fe2adc79aadc34d57" category="paragraph">Workload Factory 輸入偵測到的 Elastic Block Store 和 FSx for Windows File Server 主機特性，以便您可以自動探索節省。</block>
+  <block id="8792c25f641e40dfbd968350e410bed0" category="paragraph">如果 Workload Factory 偵測到 EBS 主機，您將被重新導向到「探索節省」標籤。如果 Workload Factory 未偵測到 EBS 主機，您將被重新導向到計算器<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block>。</block>
+  <block id="7ca6391eb61738d8b33e189705bb5857" category="paragraph">如果 Workload Factory 偵測到適用於 Windows 主機的 FSx，您將被重新導向到「探索節省」標籤。如果 Workload Factory 未偵測到 FSx for Windows 主機，您將被重新導向到計算器<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block>。</block>
+  <block id="6ba070bcb376ce369afa4105b4acc11e" category="list-text">下載評估腳本。該腳本是一個基於PowerShell的資料收集工具。它收集 SQL Server 配置和效能數據，然後上傳到 Workload Factory。遷移顧問會評估資料並為您的 SQL Server 環境規劃 FSx for ONTAP部署。</block>
+  <block id="b5745d8b2f6a0cf9cddb7bbb1fed3157" category="list-text">在 Workload Factory 中的 SQL Server 本機標籤中上傳腳本輸出。</block>
+  <block id="b9382a492febc168d96a9e8228ee319f" category="paragraph">在您了解了 Microsoft SQL 伺服器本機的節省情況後，您可以選擇從 Workload Factory 中刪除本機主機記錄。選擇 Microsoft SQL Server 本機的操作選單，然後選擇*刪除*。</block>
+  <block id="1dbb11b39a311ecc5e8a64d372008d84" category="admonition">Workload Factory 不支援儲存或建立多個 FSx for ONTAP檔案系統。</block>
+  <block id="c29b94e2d4d4a00b7378026c4025918f" category="paragraph">在讀取/寫入模式下，您可以直接從 Workload Factory 使用 FSx for ONTAP在 AWS EC2 上部署新的 Microsoft SQL 伺服器。您也可以從 Codebox 視窗複製內容，並使用其中一種 Codebox 方法部署建議的配置。</block>
+  <block id="8e40b4db610d42aa9e94bf6dddc5da17" category="paragraph">+ 在基本模式下，您可以從 Codebox 視窗複製內容，並使用其中一種 Codebox 方法部署建議的設定。</block>
+  <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="summary">NetApp透過多種方式為 Workload Factory 及其雲端服務提供支援。全天候提供廣泛的免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
+  <block id="d18da0722f47f2cf3fb9e69d8727fb2a" category="doc">取得有關NetApp Workload Factory for Databases 的協助</block>
+  <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">有關 FSx for ONTAP、其基礎架構或任何使用該服務的解決方案的技術支持，請參閱該產品的 Workload Factory 文件中的「取得協助」。</block>
+  <block id="359d8b16e442ffaa72e03c95fcd60448" category="paragraph"><block ref="359d8b16e442ffaa72e03c95fcd60448" category="inline-link-macro-rx"></block></block>
+  <block id="d935525f4850c4638cbf48ae53fb4686" category="paragraph">您目前正在查看的 Workload Factory 文件。</block>
+  <block id="ba6274b9c9d1f81bb3a648fa289986b8" category="paragraph">搜尋 Workload Factory 知識庫以尋找有助於解決問題的文章。</block>
+  <block id="7faef90df03399696ba9d4815b37171a" category="paragraph">加入 Workload Factory 社群以關注正在進行的討論或創建新的討論。</block>
+  <block id="a12ea39ddf1c98adfd7f751299705efa" category="paragraph">若要使用*建立案例*功能，您必須先註冊支援。將您的NetApp支援網站憑證與您的 Workload Factory 登入名稱關聯。<block ref="d9fea24984986beabae03291c4b721de" category="inline-link-macro-rx"></block> 。</block>
+  <block id="356c88ac4b0ec3f7689cc91f54701fef" category="list-text">在 Workload Factory 控制台的右上角，選擇 *幫助 &gt; 支援*。</block>
+  <block id="6e74b203173a9994c366c7e7a3cf4748" category="paragraph">選擇此選項將在新瀏覽器標籤中開啟NetApp控制台並載入支援儀表板。</block>
+  <block id="3f13dd54818447375c92bf35e0a35f00" category="paragraph">此錯誤可能表示 NSS 帳戶及其關聯的記錄公司與NetApp控制台帳戶序號的記錄公司不同（即。960xxxx）或系統序號。您可以使用以下選項之一尋求協助：</block>
+  <block id="289d2ab2d9b0e116790d035921c12b56" category="paragraph">您可以直接從NetApp控制台檢視和管理活動和已解決的支援案例。您可以管理與您的 NSS 帳戶和公司相關的案例。</block>
+  <block id="f9a63cd3a07378e169c58addd5fdce8d" category="paragraph">選擇此選項將開啟NetApp控制台的新瀏覽器標籤並載入支援儀表板。</block>
+  <block id="785b440c0be1d853c5e2f4fb1f1ee2ab" category="list-text">選擇*案例管理*，如果出現提示，請將您的 NSS 帳戶新增至NetApp控制台。</block>
+  <block id="c80d8addb8aa8e8872bbc44894b077f3" category="paragraph">*案例管理*頁面顯示與您的NetApp控制台使用者帳戶關聯的 NSS 帳戶相關的未結案例。這與出現在 *NSS 管理* 頁面頂部的 NSS 帳戶相同。</block>
+  <block id="04accfc4cf0a057692403f19441ce6a5" category="doc">NetApp Workload Factory for Databases 的已知限制</block>
+  <block id="0974cf96a7f464f52c2e007a309fcc20" category="paragraph">已知限制標識了NetApp Workload Factory for Databases 不支援或無法與其正確互通的平台、裝置或功能。仔細審查這些限制。</block>
+  <block id="86e6d3ebf07a70eaf674ab88522baf02" category="paragraph">Workload Factory 支援可偵測僅在 Amazon Linux 作業系統上執行的 PostgreSQL 執行個體和僅在 Red Hat Enterprise Linux 上執行的 Oracle 執行個體。</block>
+  <block id="a798873e710657564aa8785b54567904" category="paragraph">作為部署的一部分，Workload Factory 不會安裝具有多個 Microsoft SQL Server 執行個體的自訂 AMI。作為部署的一部分，僅選擇並設定預設的 Microsoft SQL Server 執行個體。</block>
+  <block id="b4eda91cb9cfd770c8fe6fd1fbba8622" category="paragraph">Workload Factory 不支援回滾和重試失敗的部署。您可以從 AWS 中的 CloudFormation 控制台回滾或重試失敗的堆疊。</block>
+  <block id="24b348c8bd07496b62afd8994bae270d" category="paragraph">工作負載工廠不支援管理 Always On 可用性群組配置。</block>
+  <block id="5424656079a2831a2c08effc8c949f00" category="paragraph">Microsoft SQL Server 偵測未儲存。每次存取 Workload Factory 中的資料庫時，Microsoft SQL Server 偵測都會再次執行以識別該區域中的 SQL 安裝。</block>
+  <block id="7efb794e8fb39638d8737bccf2e7931f" category="inline-link-macro">如何使用 AWS Systems Manager 修補私有子網路中的 Windows EC2 執行個體</block>
+  <block id="686e990ddb6252a64a31cd2236cca2cb" category="paragraph">為優化目的而進行的作業系統修補程式評估可能無法在專用網路中發揮作用。評估依賴 AWS Patch Manager。若要了解如何修補私有網路中的 Windows EC2 實例，請參閱 AWS 雲端操作部落格<block ref="ce7c9edbdf20b457d8e99f62f8c42ca7" category="inline-link-macro-rx"></block>。</block>
+  <block id="54687fab80943d179c7a16219a060cec" category="list-text">Workload Factory 僅評估來源 FSx for ONTAP檔案系統的 CRR 設定。</block>
+  <block id="2dcbce065f45cb95fc91ab3906ac6258" category="section-title">探索節省時進行資料庫主機身份驗證</block>
+  <block id="77c629fb538a49debc70b4435c8e1ab7" category="section-title">與NetApp備份和恢復集成</block>
+  <block id="c9c889acddfefd2a1a7ee5526589f276" category="paragraph">將主機新增至NetApp Backup and Recovery 進行保護後，資料庫發現有時會失敗。</block>
+  <block id="044dbc650d6316ed90f739b69dfff7ee" category="section-title">區域支持</block>
+  <block id="8babc97a6f62a4649716f4df8d61728f" category="list-text">最高機密</block>
+  <block id="e4de27e51531149b62108b5c478493b4" category="section-title">在 SUSE Linux Enterprise Server 12 上註冊 Oracle</block>
+  <block id="774f3f6589da5e0d099a784e5826c79a" category="paragraph">在 SUSE Linux Enterprise Server 12 上註冊 Oracle 資料庫時，Workload Factory 不會安裝 Python 相依性。您必須手動設定所需的 Python 版本。  Workload Factory 要求最低版本為 3.6；但是，我們建議版本 3.11。</block>
+  <block id="f72b509b27ced61253679165d0aaa2de" category="summary">NetApp Workload Factory for Databases 是一種端到端資料庫部署和維護服務，具有內建的最佳化最佳實踐、自動精簡克隆以及監控和解決功能。</block>
+  <block id="c985e54c06d4236f1d198dc4ebd8b5ea" category="doc">了解NetApp資料庫工作負載工廠</block>
+  <block id="abbf69870f02f79cb2e3732a71a2cf7a" category="section-title">什麼是NetApp Workload Factory for Databases？</block>
+  <block id="4ecbb8d6e8481952dc98dc756ad0f660" category="paragraph">NetApp Workload Factory for Databases 可偵測、評估、規劃、配置並將 Microsoft SQL Server 資料移至Amazon FSx for NetApp ONTAP (FSx for ONTAP) 部署，並進行最佳化以滿足您的效能和成本預期，同時遵循業界最佳實務。在整個生命週期中， NetApp Workload Factory for Databases 為 FSx for ONTAP上的資料庫提供持續的最佳化和管理。</block>
+  <block id="6ae8e58cb52cd45b321927bcb2961f4e" category="inline-link-macro">工作負載工廠概述</block>
+  <block id="1de2994a7e96b0f9f5ffc5fbf74c7cfe" category="paragraph">有關 Workload Factory 的更多信息，請參閱<block ref="74c54dbaee345ad32db577029257fe31" category="inline-link-macro-rx"></block>。</block>
+  <block id="b6e94273667fda2a79903f22b68e8dfd" category="section-title">工作負載工廠為自管理資料庫帶來的優勢</block>
+  <block id="e64b68425fc9016aa12a0706d8ce873b" category="paragraph">Workload Factory 為自管理資料庫提供了以下有益的最佳實踐和自動化。</block>
+  <block id="effb9368ba6cbd12847f52908fa64349" category="list-text">_快速建立_部署模式可協助您避免手動配置的潛在陷阱。</block>
+  <block id="5354d1e9ecaabd928d4235d17bb92d9e" category="section-title">使用 Workload Factory Codebox 實現自動化</block>
+  <block id="d9c90e086fcb11b72cc6731b0bd016c2" category="paragraph">Workload Factory 透過 _Codebox_ 引入了內建自動化功能。  Codebox 具有以下自動化優勢：</block>
+  <block id="3b9355b880979c4a10f7d88ded288364" category="list-text">*基礎架構即程式碼副駕駛*：Codebox 是一個基礎架構即程式碼 (IaC) 副駕駛，可協助開發人員和 DevOps 產生程式碼來執行 Workload Factory 支援的任何操作。</block>
+  <block id="1dfcc4058d887e51547cd071ae73d5ca" category="section-title">資料庫工作負載工廠功能</block>
+  <block id="0494ceb57b82f2b9e1bd730752e840ff" category="paragraph">資料庫工作負載工廠提供以下功能：</block>
+  <block id="d05a06b8187c80e636132e3f3d756fad" category="list-text">*自動編排*：可透過 Workload Factory 控制台使用_Quick_和_Advanced_建立部署模式、Chatbot 和透過 Codebox 的 AWS CloudFormation。</block>
+  <block id="00642e68a741fc0fb7b3297f3d85e094" category="list-text">*可重複使用的自動化模板*：從 Workload Factory Codebox 建立、重複使用和自訂 CloudFormation 模板，以便將來在多個環境中部署 Microsoft SQL Server。</block>
+  <block id="b637a3cf08f073bba2452017262c6f0e" category="inline-link-macro">了解適用於 Workload Factory 的 FSx for ONTAP</block>
+  <block id="5451b14a2cc0c73081374e5d49684660" category="paragraph"><block ref="c8d2af036244cbf733f21cfd3484b898" category="inline-link-macro-rx"></block> 。</block>
+  <block id="4f7eefbe2de22aca4f898d56772c8c9f" category="section-title">工作負載工廠中的操作模式</block>
+  <block id="7b3be34e841ef7654765950b44c0736d" category="paragraph">三種不同的操作模式 - _基本_、_唯讀_和_讀/寫_ - 為工作負載工廠內部和外部的部署提供了靈活的選項。使用可在 Workload Factory 外部使用的程式碼片段，在基本模式下以零信任獲得直接價值。在_唯讀_和_讀/寫_模式下透過增量信任取得增量值。</block>
+  <block id="d7df29879844d570a3e64b343a7227e2" category="inline-link-macro">工作負載工廠中的操作模式</block>
+  <block id="dde084f0d745ae579f63b79d128d3cac" category="paragraph">詳細了解<block ref="006fa329b97a0e61c793bc816f297534" category="inline-link-macro-rx"></block> 。</block>
+  <block id="4bbb8d481021011f9afb73ca196bfecd" category="section-title">使用NetApp Workload Factory 的工具</block>
+  <block id="227f846d45d01d0f9fb62a784d506d51" category="paragraph">您可以將NetApp Workload Factory 與以下工具一起使用：</block>
+  <block id="36445dd6e44838348239a5d874596e0d" category="list-text">*Workload Factory 控制台*：Workload Factory 控制台提供您的應用程式和專案的視覺化、整體視圖。</block>
+  <block id="e71fd0837014d1987a939c9af71a3353" category="list-text">* NetApp控制台*： NetApp控制台提供混合介面體驗，以便您可以將 Workload Factory 與其他NetApp資料服務一起使用。</block>
+  <block id="38c157d73ba6e13febe98e5199b858c8" category="list-text">*問我*：使用問我 AI 助理來提問並了解有關 Workload Factory 的更多信息，而無需離開 Workload Factory 控制台。從 Workload Factory 幫助選單中存取「問我」。</block>
+  <block id="65c95ed5c9f895be6dfa81e8583c86af" category="list-text">*CloudShell CLI*：Workload Factory 包含 CloudShell CLI，可透過基於瀏覽器的單一 CLI 跨帳號管理和操作 AWS 和NetApp環境。從 Workload Factory 控制台頂部欄存取 CloudShell。</block>
+  <block id="34904d30d825a389b588efb76a1ceb16" category="list-text">*REST API*：使用 Workload Factory REST API 部署和管理您的 FSx for ONTAP檔案系統和其他 AWS 資源。</block>
+  <block id="3995165ba76339d9d4d08edf5a17c07c" category="list-text">*CloudFormation*：使用 AWS CloudFormation 程式碼執行您在 Workload Factory 控制台中定義的操作，以從您的 AWS 帳戶中的 CloudFormation 堆疊對 AWS 和第三方資源進行建模、配置和管理。</block>
+  <block id="a1b1209dad1b58c4e66fd68ee5bc0148" category="list-text">*Terraform NetApp Workload Factory 提供者*：使用 Terraform 建置和管理在 Workload Factory 控制台中產生的基礎架構工作流程。</block>
+  <block id="e27c3441b5ec947f9b9088fdf2414919" category="paragraph">Workload Factory 根據 AWS、 NetApp ONTAP、Microsoft SQL Server、Oracle 和 PostgreSQL 最佳實務支援下列資料庫引擎、版本、作業系統和部署模型。</block>
+  <block id="7bfa30721c5e726ff17e3f972237a82c" category="cell">引擎</block>
+  <block id="34b6cd75171affba6957e308dcbd92be" category="cell">版本</block>
+  <block id="64d354dc5879cf570ce7b4ef676e75bd" category="cell">作業系統</block>
+  <block id="6a8ea381bc968709d6273a5aa36a7057" category="cell">部署模型</block>
+  <block id="bd34a7328fdb8c253d03be31e71c2569" category="cell">FCI，單一實例</block>
+  <block id="b727574e55ad796217e2a7aaf6e9f42d" category="cell">SQL 伺服器 2017</block>
+  <block id="ed36a1ef76a59ee3f15180e0441188ad" category="cell">任何</block>
+  <block id="8cf301ab4443cef37ee630b5434c3fb2" category="cell">SQL Server 2016、2017、2019、2022</block>
+  <block id="835bfc5a74490eff719b5c8742da9048" category="cell">SQL Server 2016、2019、2022</block>
+  <block id="91f9e116b3abf8558df521fb932a17ec" category="cell">Always On 可用性組</block>
+  <block id="30162ed78b6c10f731411f2fc440c24f" category="cell">甲骨文</block>
+  <block id="89b327b02ad20e9d93a23c30a3bfa1bf" category="cell">19c</block>
+  <block id="04bcbe2fb36bb4652b7f66367657c64b" category="cell">RHEL、SuSe Linux</block>
+  <block id="6d40548220fdaa1735b97fafdbde0686" category="cell">獨立（單/多租戶）</block>
+  <block id="0de4a754b71d1086723f693052fb7ed2" category="cell">21c</block>
+  <block id="d4dd4b927f19f35413e56d438f3960de" category="cell">獨立於 ASM（單/多租戶）</block>
+  <block id="154b1e792860b6ece9bff342944b91b2" category="cell">數據衛士</block>
+  <block id="399bd1ee587245ecac6f39beaa99886f" category="cell">PostgreSQL</block>
+  <block id="ff97094f6c5420d1530362f8c8ec5d41" category="cell">PostgreSQL 15</block>
+  <block id="03c8e8d9438240d9d59f41ce5d676c9c" category="cell">亞馬遜 Linux 2023 AMI</block>
+  <block id="13c947aef6d97764c97840abe8971403" category="cell">HA，獨立實例</block>
+  <block id="a300b4f9e5fb690b8fb60e9bc78ec739" category="cell">PostgreSQL 16</block>
+  <block id="5948f3347ebc02ebc690227c059661e1" category="section-title">區域</block>
+  <block id="574ed77d4febeab063d1e531375f7d09" category="paragraph">有關 Workload Factory 或 Workload Factory 應用程式和服務的一般問題，請參閱<block ref="a27556edc56dcb5c3c94d817dd574765" category="inline-link-macro-rx"></block>。</block>
+  <block id="aeb31c9f8c311597856b129ab948b4e6" category="inline-link">NetApp工作負載工廠</block>
+  <block id="55f7843f27571db97da76bdf68a76d22" category="paragraph"><block ref="55f7843f27571db97da76bdf68a76d22" category="inline-link-rx"></block></block>
+  <block id="00f0ae44a56d58ab9de7c35c9f2bd62a" category="summary">了解NetApp Workload Factory for Databases 中的實例和資料庫管理。</block>
+  <block id="cfb5dd4eb4d13f7bc74e01f3c6dd8c9a" category="doc">NetApp Workload Factory for Databases 中的資源管理</block>
+  <block id="11a6396604d8219ed002cb8225307c46" category="paragraph">透過管理NetApp Workload Factory for Databases 中的資源，您可以使用進階功能，包括資料庫和複製建立、資源利用和監控。此外，您可以分析資料庫配置的良好架構狀態並實施配置最佳實踐以提高效能並降低營運成本。資源管理僅適用於在 FSx for ONTAP檔案系統儲存上執行的 Microsoft SQL Server 和 Oracle 環境。</block>
+  <block id="e98220d7d332a2a7434542839da04607" category="list-text">從庫存中查看資料庫</block>
+  <block id="0690b01336afa366f51f1055a4ad9fe3" category="summary">在NetApp Workload Factory for Databases 中追蹤資料庫作業並監控資料庫。</block>
+  <block id="a6b42ef301955a90099ca61e9ef81cf4" category="doc">在資料庫工作負載工廠監控資料庫作業</block>
+  <block id="286fce2abd655f344b009a041e8e00c8" category="paragraph">在NetApp Workload Factory for Databases 中追蹤資料庫作業並監控資料庫，以提高對資料庫操作的可見性和控制力。</block>
+  <block id="1cd28a54c1c28cd395b6d2b065f22570" category="paragraph">監控作業以追蹤資料庫操作的進度，並在發生任何故障時進行診斷和排除故障。</block>
+  <block id="83ec30ad643377590496c7c3f631d82e" category="list-text">從資料庫選單中，選擇*作業監控*。</block>
+  <block id="25372b696736cc8872762877a51aa062" category="list-text">在「作業監控」中，使用篩選器或搜尋來縮小作業結果範圍。您也可以下載工作報告。</block>
+  <block id="a2d1f59bacfe584c82f07fe77341a830" category="list-text">或者，選擇作業的操作選單，然後按一下「前往 CloudFormation」以在 AWS CloudFormation 控制台中查看作業日誌。</block>
+  <block id="58ee6063aaed57090a82d5cfa901a882" category="summary">NetApp Workload Factory for Databases 掃描 Microsoft SQL Server 配置，提供見解和建議，協助您實現卓越營運。</block>
+  <block id="c978158e4d17af88b1390f6040962e37" category="paragraph">使用配置分析見解和建議，利用NetApp Workload Factory 為使用 Microsoft SQL Server 和 Oracle 的資料庫配置實作最佳實務。您可以輕鬆查看架構良好的狀態，了解資料庫配置的問題，並採取措施改善任何未針對可靠性、安全性、效率、效能和成本進行最佳化的配置。</block>
+  <block id="04b3e1206245453c778ab6cffd793ea7" category="inline-link-macro">了解 Workload Factory 中的配置分析和良好架構狀態。</block>
+  <block id="9198e3a1fac406d0bf2e8a31d569e09c" category="paragraph"><block ref="9198e3a1fac406d0bf2e8a31d569e09c" category="inline-link-macro-rx"></block></block>
+  <block id="1d8f9be49aaafb6902357ae957cf2900" category="paragraph">Workload Factory 每天分析資料庫配置。每日分析提供精心設計的狀態、見解和建議，以及自動修復配置問題的選項，以便您的配置符合最佳實踐。</block>
+  <block id="15ff0edfa22106f59b2d6897f5c93ff7" category="paragraph">您可以選擇查看配置問題的建議並從 Workload Factory 控制台內的資料庫清單中修復這些問題。</block>
+  <block id="61ee1dd5e668df870f53e81aa15e3813" category="paragraph">Workload Factory 分析以下配置的良好架構狀態：</block>
+  <block id="b8995cc72a69581d30a1bda023cdd963" category="list-text">克隆：包括刷新和刪除在 Workload Factory 內部或外部創建的超過 60 天的克隆（沙盒）的選項</block>
+  <block id="aaab95005352513769753dbb1a879086" category="list-text">儲存配置：包括容量管理、精簡配置、分層策略、快照、儲存效率以及使用 iSCSI 部署的作業系統配置（帶或不帶自動儲存管理 (ASM)），包括 Microsoft 多路徑 I/O (MPIO) 狀態和設定</block>
+  <block id="7ad2228e24b645ace87b19a4d0e1ea84" category="list-text">儲存佈局：包括重做日誌放置、臨時表空間放置、資料檔案放置、存檔日誌放置、控製檔案放置和二進位檔案放置、ASM 磁碟組 LUN 數量</block>
+  <block id="d8e924feff88175a3a6e329d7a242ef9" category="list-text">若要評估 Microsoft SQL Server 執行個體或 Oracle 資料庫的存儲，必須在 Workload Factory 中註冊資源，且儲存類型必須是 FSx for ONTAP。<block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
+  <block id="bf2b2769ceeef90639022670d2ded3af" category="list-text">在*庫存*中，選擇引擎類型：Microsoft SQL Server 或 Oracle。</block>
+  <block id="97dc4b0ba577b7da6dfbf77719b88d70" category="list-text">選擇要修復特定配置的資源。</block>
+  <block id="0c173783cbcf5f1b41a4b4c810a55a8a" category="list-text">如果選擇了 Microsoft SQL Server，請選擇「*實例*」標籤。</block>
+  <block id="d9f00360e22835473126a50acc8d01f3" category="list-text">如果您選擇了 Oracle，請選擇「*資料庫*」標籤。</block>
+  <block id="3480359632d21515212b7bdce25999c7" category="list-text">選擇“查看並修復”以查看實例的配置問題。</block>
+  <block id="0a54f15a678a47b48d82268f86efdc99" category="list-text">刷新克隆會使其與來源資料庫同步。刷新僅適用於在 Workload Factory 中建立的克隆。</block>
+  <block id="f842fe7ac3d7da41d936288b414e6598" category="list-text">刪除克隆會將其永久刪除，釋放儲存空間並降低成本。您可以刪除在 Workload Factory 內部和外部建立的克隆。</block>
+  <block id="74d409755480cc932aeaf23b6f09b823" category="paragraph">Workload Factory 開始修復問題。選擇「作業監控」標籤來查看操作的狀態。</block>
+  <block id="8e2ad9a1989936828c220859a77a615f" category="paragraph">應用程式對資料庫配置的要求各不相同。 Workload Factory 為您提供了兩個跳過特定資料庫配置分析的選項，以便您可以只監控相關問題並準確了解相關配置的健康狀況。當特定配置分析被推遲或取消時，該配置將不包含在總最佳化分數中。</block>
+  <block id="6aaef09cae74be9963dbe52f3f3d7ac1" category="list-text">在清單中，選擇資料庫引擎類型：*Microsoft SQL Server* 或 *Oracle*。</block>
+  <block id="3171f14b71a4811069dc6e060c1f9f7a" category="list-text">導覽至要延後配置的 SQL Server 執行個體或 Oracle 資料庫，選擇操作選單，然後選擇 *Well-architected*。</block>
+  <block id="ca7509f05b7eb996cdb457d74197634c" category="list-text">在 Well-architected 分析頁面上，向下捲動到要延遲的配置，選擇操作選單，然後選擇 *Dismiss*。</block>
+  <block id="ac4005750f183c3470bff91188e0ceb5" category="list-text">在“解除”設定對話框中，選擇“延遲 30 天”，然後選擇“解除”。</block>
+  <block id="a1d71d2f9c80113890561cab6b64ffa1" category="list-text">在 Dismiss 設定對話方塊中，選擇 *Dismiss* 選項，然後選擇 *Dismiss* 確認關閉。</block>
+  <block id="51bbd388cda4367b34d6dc50a5e134a5" category="list-text">在 Well-architected 分析頁面上，選擇 *Dismissed configuration* 以僅顯示已解除的設定。</block>
+  <block id="bc4a349f7f95e73490c3e2f8aaabe892" category="list-text">選擇*重新啟動*以重新啟動已延遲或已取消的配置的配置分析。</block>
+  <block id="7c6a7786a083c7d074bada76f0bcd33b" category="summary">資料庫工作負載工廠會定期分析 Microsoft SQL Server 和 Oracle 配置以確定是否有任何問題。</block>
+  <block id="8317ffd1a53e5d269aaac07d321b8dd0" category="doc">Workload Factory 中的資料庫環境配置分析</block>
+  <block id="1725276922bab9d023ef938d5fce0d7c" category="paragraph">資料庫工作負載工廠會定期分析資料庫配置，以確定Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 和 Oracle 部署是否有任何問題。當發現問題時，Workload Factory 會向您展示問題所在，並解釋需要進行哪些更改以確保您的資料庫配置達到最佳效能、成本效益並符合最佳實踐。</block>
+  <block id="b0a0826c5a9c2b2e6c919de33e89dbfe" category="paragraph">在檔案系統層級的 Workload Factory 控制台中，列出了所有 FSx for ONTAP檔案系統的良好架構狀態。架構良好的狀態分為「問題」、「未分析」或「架構良好」。選擇良好架構狀態會將您重新導向至檔案系統內的良好架構狀態標籤，您可以在其中找到良好架構分數、設定類別以及檔案系統的所有設定。</block>
+  <block id="84ee3cc4e2a4f169585c115121112580" category="paragraph">使用 Workload Factory 控制台中的NetApp Backup and Recovery 保護您的 Microsoft SQL Server 應用程式資料。透過此集成，您可以實現以下保護目標：使用本機快照在本機主Amazon FSx for NetApp ONTAP （FSx for ONTAP）儲存上備份工作負載，並將工作負載複製到輔助 FSx for ONTAP儲存。</block>
+  <block id="bb1b704677e0a9ac00a2bda88f85fe27" category="paragraph">Workload Factory 可自動發現資源、驗證先決條件以及設定和安裝 Microsoft SQL Server 插件，為使用NetApp Backup and Recovery 保護您的工作負載做好準備。該外掛程式是NetApp軟體的主機端元件，可讓您保護 Microsoft SQL Server 工作負載。</block>
+  <block id="e9575ae90b7ec054c43a9797544d0103" category="paragraph">NetApp Backup and Recovery 利用NetApp SnapMirror資料複製技術，透過建立快照副本並將其傳輸到備份位置來確保所有備份完全同步。</block>
+  <block id="51c9172cf36fbb00094cffedddeabb88" category="inline-link-macro">使用備份和復原保護 Microsoft SQL 工作負載概述</block>
+  <block id="a292d9789e1a8310e21f5a8a602daa0f" category="paragraph">有關使用備份和恢復進行保護的詳細信息，請參閱<block ref="85948b58ef5177befb6ab29aca8b19b5" category="inline-link-macro-rx"></block>。</block>
+  <block id="ce8e733ff697d3370377249dbc3ffd6d" category="paragraph">必須滿足下列要求才能使用備份和復原來保護 Microsoft SQL Server 工作負載。</block>
+  <block id="e3f8bb97f8af8ab70be96564f7d02f6f" category="inline-link-macro">備份和還原 SQL Server 要求</block>
+  <block id="e08bd5423f9a375d5cb1f9f4c8b79db6" category="list-text">確保您的環境滿足<block ref="e98bf21ac036414aba6dc78dc64aa41b" category="inline-link-macro-rx"></block>。</block>
+  <block id="c9fac6b51e56e1759975cd42fd695b0b" category="inline-link-macro">完成NetApp控制台要求</block>
+  <block id="7f9a133b28a3d76a5c8f832f834cc204" category="list-text"><block ref="8acd0ec71994a25eb6e3e3ae982731d3" category="inline-link-macro-rx"></block>包括設定、指派 IAM 角色和安裝控制台代理程式。</block>
+  <block id="6c10f0d7d75df4253299ebf279f9f52e" category="inline-xref">使用NetApp Backup and Recovery 做好保護準備</block>
+  <block id="b807a81f390179f97e9c142515fa129d" category="paragraph">如果您擁有NetApp帳戶的組織管理員存取權限，則<block ref="d431b2247c053b79ca08cc138d1dc11a" prefix=" " category="inline-code"></block>當您<block ref="18ec113fe3fddf3d32c25f017ae9116b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="50913c9499a96938febd19de9c1bf895" category="inline-link-macro">設定NetApp Backup and Recovery 的許可</block>
+  <block id="52a63c60e4cc1cb7e13a179287a93716" category="list-text"><block ref="52a63c60e4cc1cb7e13a179287a93716" category="inline-link-macro-rx"></block></block>
+  <block id="45c35d83e41e395f7c62d7b77450c660" category="section-title">使用NetApp Backup and Recovery 做好保護準備</block>
+  <block id="de18c48772737ff03e5d5c7e6db0044c" category="paragraph">完成準備過程，以使用NetApp備份和復原來保護您的 Microsoft SQL Server 資源。</block>
+  <block id="00151bd722bf3fd83e9173ec473238da" category="list-text">在清單中，選擇 *Microsoft SQL Server* 作為引擎類型。</block>
+  <block id="aff5576e83048c511b5253daf9d7f210" category="list-text">找到您想要保護的實例，然後從選單中選擇*保護*。</block>
+  <block id="20f1b3a019be92852e5053e60b0d82ab" category="paragraph">若要使用NetApp Backup and Recovery 進行保護，必須使用 Windows 憑證在 Workload Factory 中註冊 SQL Server 執行個體。</block>
+  <block id="63b9cd7c8282516215f0adc0c391780a" category="list-text">如果有多個控制台代理處於活動狀態且可用，請選擇要註冊和保護工作負載的「控制台代理」。</block>
+  <block id="1f6bfa37836a1e9968d5ea7593e0629b" category="list-text">為了準備資料保護，Workload Factory 會自動在備份和復原中註冊您的 SQL Server 資源，配置和安裝 Microsoft SQL Server 插件，並發現滿足保護 SQL Server 執行個體的先決條件的資源。選擇“*開始*”來啟動程序。</block>
+  <block id="8b48bc7f871383eb926099b2126e0377" category="list-text">滿足先決條件後，選擇*重定向*以存取備份和復原。</block>
+  <block id="0a34414f3db7a7d22b890f0de8eb8225" category="paragraph">從備份和復原中，建立一個原則來保護您的 Microsoft SQL Server 執行個體和資料庫。</block>
+  <block id="429cd6f061edda5c69ca25c65e8ea236" category="paragraph"><block ref="1712bcf9c278b15383d89f55649b8558" category="inline-link-macro-rx"></block> 。</block>
+  <block id="a34428791f8c5ce4b1184d505db69402" category="inline-link-macro">備份和恢復文檔</block>
+  <block id="466ae7236a1ef5fce9dae7319a9d7e2f" category="paragraph">相關信息，請參閱<block ref="708964af478ed2d68a5d28b41ebeb257" category="inline-link-macro-rx"></block>用於管理 Microsoft SQL Server 工作負載。</block>
+  <block id="d05a91a23b39b2ef83c7f917a0c9c7e5" category="summary">開始使用NetApp Workload Factory for Databases 來使用基礎架構即程式碼片段、發現主機、管理資源等。</block>
+  <block id="91494b330cfa4716e9d4103109705d0c" category="doc">NetApp Workload Factory for Databases 快速入門</block>
+  <block id="0680daa6368db6612af2c2ea36617ecc" category="paragraph">透過NetApp Workload Factory for Databases，您可以立即以_基本_模式開始使用。如果您想使用 Workload Factory 來發現主機、管理資源等，您可以透過幾個步驟開始。</block>
+  <block id="ddd0dc114cff37632f8d5d916455e0c4" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登入NetApp Workload Factory</block>
+  <block id="a6b5107fe1026f3a525fc038fc31176b" category="inline-link-macro">在NetApp Workload Factory 上建立帳戶</block>
+  <block id="f3e2e133316c1344717da0beeb7d5a1f" category="paragraph">你需要<block ref="0aca974f0fa4a99475948f57b49a2eb0" category="inline-link-macro-rx"></block>並使用以下任一方式登入<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>。</block>
+  <block id="5e0206d9f6dda7994dfcc67c593023cc" category="paragraph">資料庫工作負載工廠會定期透過 Well-architected 儀表板分析Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 和 Oracle 部署。要從結構良好的資料庫資源儀表板解決問題，首先需要<block ref="001cc0ec03a1e5527fa917b277b2c766" category="inline-link-macro-rx"></block>。</block>
+  <block id="3fbdba44cc285fba2fa390c4a2d7bd17" category="paragraph">註冊實例後，您可以查看架構良好的狀態並採取行動<block ref="1c0f7e78a2011839a2cb972a47f46536" category="inline-link-macro-rx"></block>在工作負載工廠中。</block>
+  <block id="1783d14ebd2dc685cc9c5fb74ee32f49" category="paragraph">當您在資料庫清單中使用 FSx for ONTAP檔案系統儲存註冊資源後，您可以<block ref="3d11347aa47327ab2988d0d3d3d6bd99" category="inline-link-macro-rx"></block>或者<block ref="e4dc5f068f234adb2616993ddf9e76bc" category="inline-link-macro-rx"></block>。</block>
+  <block id="f151b3fb8dc81419491717835cd44e64" category="summary">刷新NetApp Workload Factory for Databases 中的資料庫克隆，使其等同於當下時刻或先前某個時間點的來源資料庫。</block>
+  <block id="b7a6cd6a59539d67306baf5891d48224" category="doc">在NetApp Workload Factory for Databases 中刷新資料庫克隆</block>
+  <block id="c22418865f823dceb3fa0031532d541e" category="paragraph">刷新NetApp Workload Factory for Databases 中的資料庫（沙盒）克隆，使其等同於當前時刻或先前時間點的來源資料庫。</block>
+  <block id="63ba9d2341fcd316dd11a8e4d659a680" category="list-text">在沙盒中，選擇要刷新的沙盒克隆的操作選單。</block>
+  <block id="5c312d6e56cb086ef38ed7860931fe1c" category="summary">註冊資源，以便您可以監控NetApp Workload Factory for Databases 中的資源狀態、資源使用率、保護和儲存效能。</block>
+  <block id="ec1098eb54d9b05cc1e929562eb8d30d" category="doc">在NetApp Workload Factory for Databases 中註冊資源</block>
+  <block id="0bc907adb7562b30973df586f142f009" category="paragraph">註冊 Microsoft SQL Server 執行個體和 Oracle 資料庫，以便您可以在NetApp Workload Factory for Databases 中監控執行個體和資料庫狀態、資源使用率、保護和儲存效能。</block>
+  <block id="3774c3fd6b6e5830079da1f94d3f1872" category="admonition">Workload Factory 僅支援 Microsoft SQL Server 執行個體和 Oracle 資料庫的註冊和管理。根據您在 Workload Factory 中選擇的 AWS 帳戶憑證，PostgreSQL 主機可能會出現在清單中。目前，Workload Factory 僅支援在 Amazon Linux 作業系統上執行的未註冊的 PostgreSQL 執行個體。</block>
+  <block id="22bab21849e5441abbd62affb81cd026" category="paragraph">實例或資料庫的主機必須出現在清單中。要讓主機出現在清單中，<block ref="99382ab95f660f372dfed7d2289ac38a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="962361e8c13e22625220beba80548057" category="list-text">在清單中，選擇 *Oracle* 作為資料庫引擎。</block>
+  <block id="1d72541b2e1a224311e8b78af73bab83" category="summary">將資料庫（沙盒）克隆還原為在NetApp Workload Factory for Databases 中建立時的原始版本。</block>
+  <block id="ecf8d68388a40ca09bc6475e0cb33a92" category="doc">在NetApp Workload Factory for Databases 中還原資料庫克隆</block>
+  <block id="b006ea3a9fc3f700c7ea6c3fc404a855" category="paragraph">當您克隆資料庫時，建立時的克隆是_baseline_克隆。克隆的資料庫中的資料與建立時的來源資料庫相同。由於資料庫克隆中的資料會隨著時間而變化，您可能希望將資料還原到首次建立克隆時的基線。此操作稱為重新基線克隆。重新基準化克隆而不是創建新的克隆可以節省空間；但是，對資料庫克隆所做的任何更改都將被刪除。</block>
+  <block id="b9b9dcaedb68518f618349de0f962cda" category="list-text">在沙盒中，選擇要還原的資料庫複製的操作選單。</block>
+  <block id="6e9172aaf947b38ec5222c7fb3133fb6" category="list-text">在「重新基線」對話方塊中，選擇「*重新基線*」。</block>
+  <block id="9fb5614e3401e433c6a39f267483e3be" category="summary">從來源資料庫中拆分資料庫克隆以在NetApp Workload Factory for Databases 中建立新資料庫。</block>
+  <block id="e56d0520400755a2305a399e4c431a50" category="doc">從來源資料庫拆分資料庫克隆</block>
+  <block id="9d708cb240624cc1bb63ba25da0a742b" category="paragraph">在NetApp Workload Factory for Databases 中，將資料庫克隆從其來源資料庫中拆分出來會建立一個新的資料庫，這將消耗一定量的儲存容量。當拆分完成並且新資料庫出現在庫存中時，克隆將被刪除。</block>
+  <block id="98af8bdb2147926a0a4db45c478851f0" category="list-text">在沙盒中，選擇要拆分的資料庫克隆的操作選單。</block>
+  <block id="2c9eebdddd5694f0300c1318fc1f439d" category="list-text">在拆分對話框中，選擇*拆分*。</block>
+  <block id="3d9b602ae77ac6a4951ca31b05b6b54f" category="paragraph">需要註冊支援才能獲得針對NetApp Workload Factory 及其儲存解決方案和服務的技術支援。您必須註冊NetApp Console 的支持，它是獨立於 Workload Factory 的基於 Web 的控制台。</block>
+  <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">註冊支援並不能使NetApp獲得雲端提供者文件服務的支援。有關雲端提供者文件服務、其基礎設施或使用該服務的任何解決方案的技術支持，請參閱該產品的 Workload Factory 文件中的「取得協助」。</block>
+  <block id="eb803e55617f13b716b5e56642cce2b0" category="paragraph">註冊您的帳戶 ID 支援訂閱（位於NetApp控制台中的「支援資源」頁面上的 20 位 960xxxxxxxxx 序號）作為您的單一支援訂閱 ID。每個NetApp帳號級支援訂閱都必須註冊。</block>
+  <block id="4cffd3c1dbf2f1038c01d18e7a860305" category="paragraph">註冊後即可實現開立支援票和自動產生案例等功能。透過將NetApp支援網站 (NSS) 帳戶新增至NetApp控制台即可完成註冊，如下所述。</block>
+  <block id="f6c4a3ae75d6616126e6da8310ae7384" category="paragraph">若要註冊支援並啟動支援權利，您帳戶中的使用者必須將NetApp支援網站帳戶與其NetApp控制台登入名稱關聯。如何註冊NetApp支援取決於您是否已經擁有NetApp支援網站 (NSS) 帳號。</block>
+  <block id="f732375b4bc27328f202e3b10a957017" category="paragraph">如果您是擁有 NSS 帳戶的NetApp客戶，只需透過NetApp控制台註冊即可獲得支援。</block>
+  <block id="f65aaf10469eac2932fc53c6a37afb71" category="list-text">從NetApp控制台選單中，選擇 *管理*，然後選擇 *憑證*。</block>
+  <block id="9094354ffd09e4644caa0010edc66d24" category="paragraph">請注意，如果其他NetApp控制台使用者尚未將NetApp支援網站帳戶與其NetApp控制台登入名稱關聯，則他們將看不到相同的支援註冊狀態。但是，這並不意味著您的NetApp帳戶未註冊支援。只要帳戶中有一位使用者遵循了這些步驟，那麼您的帳戶就註冊成功了。</block>
+  <block id="a8f62b208e5177a219f0b0d4ce88e0a9" category="paragraph">如果您是現有NetApp客戶，擁有現有授權和序號但沒有 NSS 帳戶，則需要建立 NSS 帳戶並將其與您的NetApp控制台登入關聯。</block>
+  <block id="fb9b6bbcab5fb396a13f67594a0ba1ee" category="list-text">請務必複製上面用於序號欄位的NetApp帳號序號 (960xxxx)。這將加快帳戶處理速度。</block>
+  <block id="40eff8559acd41057187b6cb11fa1919" category="list-text">完成以下步驟，將您的新 NSS 帳戶與您的NetApp控制台登入關聯<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f335678326583cea28377216c5515221" category="paragraph">擁有NetApp支援網站帳號後，請依照下列步驟將帳號與您的NetApp控制台登入關聯<block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e4fded9c69219e4b9e3629dcc1d6ec81" category="summary">檢視和複製NetApp Workload Factory for Databases 中資料庫複製的連線資訊。</block>
+  <block id="b5e7499b294ed4ae4fad36d6e70d1cdf" category="doc">查看資料庫克隆的連接信息</block>
+  <block id="cfb19a0ff7e382b29551267d52377e0f" category="list-text">在沙盒中，選擇沙盒克隆的操作選單來查看其連接資訊。</block>
+  <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">選擇*關閉*。</block>
+  <block id="0b640c5e49490eb540208568a359492b" category="summary">了解NetApp Workload Factory for Databases 的新功能。</block>
+  <block id="1c6922f994b9da3a35a8bb9b0644ab56" category="doc">NetApp Workload Factory for Databases 的新功能</block>
+  <block id="61c3763b08308c467fdf40bde3586f08" category="section-title">2026年10月6日</block>
+  <block id="7197ea7b7a0d83f9800a417fd561bcea" category="sidebar">在NetApp Workload Factory 中的 FSx for ONTAP檔案系統儲存之上部署 Microsoft SQL Server 設定並管理資料庫環境。</block>
+  <block id="d83c92d6ba7b7ac809c4616f670db665" category="sidebar">NetApp Workload Factory for Databases 文檔</block>
+  <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp控制台</block>
+  <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp資料服務</block>
+  <block id="da799d994391b08e1d7460381c98559f" category="sidebar">了解資料庫工作負載工廠</block>
 </blocks>

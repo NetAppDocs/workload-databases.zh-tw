@@ -2,41 +2,41 @@
 sidebar: sidebar 
 permalink: create-postgresql-server.html 
 keywords: create, server, PostgreSQL, deploy, host, deploy a database host, database host 
-summary: 在 BlueXP  工作負載工廠內為資料庫建立新的 PostgreSQL SQL 伺服器。 
+summary: 在NetApp Workload Factory for Databases 中建立一個新的 PostgreSQL SQL 伺服器。 
 ---
-= 在 BlueXP  工作負載工廠中建立 PostgreSQL 伺服器
+= 在NetApp Workload Factory 中建立 PostgreSQL 伺服器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-在 BlueXP  工作負載工廠中為資料庫建立新的 PostgreSQL 伺服器或資料庫主機，需要使用 FSX 進行 ONTAP 檔案系統部署，並為 Active Directory 建立資源。
+在NetApp Workload Factory for Databases 中建立新的 PostgreSQL 伺服器或資料庫主機需要 FSx for ONTAP檔案系統部署和 Active Directory 資源。
 
-.關於這項工作
-在從 BlueXP  工作負載工廠建立 PostgreSQL 伺服器之前，請先瞭解資料庫主機組態的可用儲存部署類型，工作負載原廠操作模式，以及完成此作業的需求。
 
-適用於 ONTAP 檔案系統部署的 FSX:: 若要建立新的 PostgreSQL 伺服器，需要將 ONTAP 檔案系統的 FSX 作為儲存後端。您可以使用現有的適用於 ONTAP 檔案系統的 FSX 、或建立新的檔案系統。如果您選擇現有的 ONTAP 檔案系統 FSX 作為資料庫伺服器儲存後端，我們會為 PostgreSQL 工作負載建立新的儲存 VM 。
-+
---
-適用於 ONTAP 檔案系統的 FSX 有兩種 PostgreSQL 伺服器部署模式： _ 高可用度（ HA ） _ 或 _ 單一執行個體 _ 。根據您所選擇的 ONTAP 部署模型的 FSX 、會為 ONTAP 檔案系統的 FSX 建立不同的資源。
+
+== 關於這項工作
+
+在從 Workload Factory 建立 PostgreSQL 伺服器之前，請先了解資料庫主機配置的可用儲存部署類型、工作負載工廠操作模式以及完成此操作的要求。
+
+.適用於 ONTAP 檔案系統部署的 FSX
+若要建立新的 PostgreSQL 伺服器，需要將 ONTAP 檔案系統的 FSX 作為儲存後端。您可以使用現有的適用於 ONTAP 檔案系統的 FSX 、或建立新的檔案系統。如果您選擇現有的 ONTAP 檔案系統 FSX 作為資料庫伺服器儲存後端，我們會為 PostgreSQL 工作負載建立新的儲存 VM 。
+
++ FSx for ONTAP檔案系統有兩種 PostgreSQL 伺服器部署模型：_高可用性 (HA)_ 或_單一實例_。根據您選擇的 FSx for ONTAP部署模型，為 FSx for ONTAP檔案系統建立不同的資源。
 
 * * 高可用度（ HA ）部署 * ：當為 ONTAP 檔案系統選擇新的 FSX 進行 HA 部署時，會部署適用於 NetApp ONTAP 檔案系統的多可用性區域 FSX 。針對 HA 部署的資料、記錄和 tempdb 檔案、會建立個別的磁碟區和 LUN 。為 Windows 叢集的 Quorum 或見證磁碟建立額外的磁碟區和 LUN 。HA 部署可在主要和次要 PostgreSQL 伺服器之間設定串流複寫。
 * * 單一執行個體部署 * ：建立新的 PostgreSQL 伺服器時，會建立單一可用性區域 FSX for ONTAP 檔案系統。此外、還會針對資料、記錄和 tempdb 檔案建立個別的磁碟區和 LUN 。
 
 
---
 
 
-.開始之前
-在建立新的資料庫主機之前、請確定您具備下列先決條件。
+== 開始之前
 
-認證和權限:: 您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和讀取/寫入模式權限"^]在工作負載工廠中建立新的資料庫主機。
-
+您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和讀取/寫入模式權限"^]在工作負載工廠中建立新的資料庫主機。
 
 
 
-== 建立資料庫伺服器
+== 建立 PostgreSQL 伺服器
 
 您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中的下列工具： REST API ， AWS CLI ， AWS CloudForformation 和 Terraform 。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["瞭解如何使用 Codebox 進行自動化"^]。
 
@@ -52,7 +52,7 @@ NOTE: 在 _ 快速建立 _ 中、 HA 是預設的部署模式、 Windows 2016 �
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在資料庫方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * PostgreSQL 伺服器 * 。
+. 在資料庫圖塊中，選擇*部署主機*，然後從選單中選擇*PostgreSQL 伺服器*。
 . 選取 * 快速建立 * 。
 . 在 * 登陸區 * 下，提供下列項目：
 +
@@ -141,7 +141,7 @@ NOTE: HA 部署僅支援用於 ONTAP 組態的多重可用性區域（ MAZ ） F
 --
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在資料庫方塊中，選取 * 部署資料庫主機 * ，然後從下拉式功能表中選取 * PostgreSQL 伺服器 * 。
+. 在資料庫圖塊中，選擇*部署主機*，然後從選單中選擇*PostgreSQL 伺服器*。
 . 選取 * 進階建立 * 。
 . 在 * 部署模式 * 下，選取 * 獨立執行個體 * 或 * 高可用度（ HA ） * 。
 . 在 * 登陸區 * 下，提供下列項目：
@@ -174,20 +174,17 @@ VPC DNS 屬性 `EnableDnsSupport` 並 `EnableDnsHostnames` 經過修改、以啟
 
 .. * 可用性區域 * ：選擇可用性區域和子網路。
 +
-適用於單一執行個體部署::
+*對於單一實例部署*
+
 +
---
 在 * 叢集組態 - 節點 1* 欄位中，從 * 可用性區域 * 下拉式功能表中選取可用性區域，並從 * 子網路 * 下拉式功能表中選取子網路。
 
---
-適用於 HA 部署::
 +
---
+*適用於 HA 部署*
+
++
 ... 在 * 叢集組態 - 節點 1* 欄位中、從 * 可用性區域 * 下拉式功能表中選取 MAZ FSX for ONTAP 組態的主要可用性區域、並從 * 子網路 * 下拉式功能表中選取子網路。
 ... 在 * 叢集組態 - 節點 2* 欄位中、從 * 可用性區域 * 下拉式功能表中選取 MAZ FSX for ONTAP 組態的次要可用區域、並從 * 子網路 * 下拉式功能表中選取子網路。
-
-
---
 
 
 .. * 安全性群組 * ：選取現有的安全性群組或建立新的安全性群組。

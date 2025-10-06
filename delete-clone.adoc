@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: delete-clone.html 
 keywords: delete, clone 
-summary: 當您不再需要時，請在 BlueXP  工作負載工廠中刪除沙箱複本。 
+summary: 當您不再需要NetApp Workload Factory for Databases 中的沙盒克隆並想要釋放儲存容量時，請將其刪除。 
 ---
-= 從來源資料庫分割沙箱複本
+= 在NetApp Workload Factory for Databases 中刪除資料庫克隆
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-如果您不再需要資料庫，而且想要釋放儲存容量，請在 BlueXP  工作負載工廠中刪除資料庫的沙箱複製。
+當您不再需要NetApp Workload Factory for Databases 中的沙盒克隆並想要釋放儲存容量時，請將其刪除。
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在資料庫方塊中，按一下 * 移至資料庫庫存 * 。
-. 在資料庫中、選取 * 沙箱 * 標籤。
-. 按一下您要刪除的沙箱複本的三點功能表。
+. 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇要刪除的沙盒複製的操作選單。
 . 選擇*刪除*。
-. 在刪除對話方塊中、按一下 * 刪除 * 。
+. 在刪除對話方塊中，選擇*刪除*確認刪除。
 
