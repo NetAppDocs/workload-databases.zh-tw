@@ -1224,16 +1224,12 @@
   <block id="bb1b704677e0a9ac00a2bda88f85fe27" category="paragraph">Workload Factory 可自動發現資源、驗證先決條件以及設定和安裝 Microsoft SQL Server 插件，為使用NetApp Backup and Recovery 保護您的工作負載做好準備。該外掛程式是NetApp軟體的主機端元件，可讓您保護 Microsoft SQL Server 工作負載。</block>
   <block id="e9575ae90b7ec054c43a9797544d0103" category="paragraph">NetApp Backup and Recovery 利用NetApp SnapMirror資料複製技術，透過建立快照副本並將其傳輸到備份位置來確保所有備份完全同步。</block>
   <block id="51c9172cf36fbb00094cffedddeabb88" category="inline-link-macro">使用備份和復原保護 Microsoft SQL 工作負載概述</block>
-  <block id="a292d9789e1a8310e21f5a8a602daa0f" category="paragraph">有關使用備份和恢復進行保護的詳細信息，請參閱<block ref="85948b58ef5177befb6ab29aca8b19b5" category="inline-link-macro-rx"></block>。</block>
   <block id="ce8e733ff697d3370377249dbc3ffd6d" category="paragraph">必須滿足下列要求才能使用備份和復原來保護 Microsoft SQL Server 工作負載。</block>
   <block id="e3f8bb97f8af8ab70be96564f7d02f6f" category="inline-link-macro">備份和還原 SQL Server 要求</block>
-  <block id="e08bd5423f9a375d5cb1f9f4c8b79db6" category="list-text">確保您的環境滿足<block ref="e98bf21ac036414aba6dc78dc64aa41b" category="inline-link-macro-rx"></block>。</block>
   <block id="c9fac6b51e56e1759975cd42fd695b0b" category="inline-link-macro">完成NetApp控制台要求</block>
-  <block id="7f9a133b28a3d76a5c8f832f834cc204" category="list-text"><block ref="8acd0ec71994a25eb6e3e3ae982731d3" category="inline-link-macro-rx"></block>包括設定、指派 IAM 角色和安裝控制台代理程式。</block>
   <block id="6c10f0d7d75df4253299ebf279f9f52e" category="inline-xref">使用NetApp Backup and Recovery 做好保護準備</block>
   <block id="b807a81f390179f97e9c142515fa129d" category="paragraph">如果您擁有NetApp帳戶的組織管理員存取權限，則<block ref="d431b2247c053b79ca08cc138d1dc11a" prefix=" " category="inline-code"></block>當您<block ref="18ec113fe3fddf3d32c25f017ae9116b" category="inline-xref-macro-rx"></block>。</block>
   <block id="50913c9499a96938febd19de9c1bf895" category="inline-link-macro">設定NetApp Backup and Recovery 的許可</block>
-  <block id="52a63c60e4cc1cb7e13a179287a93716" category="list-text"><block ref="52a63c60e4cc1cb7e13a179287a93716" category="inline-link-macro-rx"></block></block>
   <block id="45c35d83e41e395f7c62d7b77450c660" category="section-title">使用NetApp Backup and Recovery 做好保護準備</block>
   <block id="de18c48772737ff03e5d5c7e6db0044c" category="paragraph">完成準備過程，以使用NetApp備份和復原來保護您的 Microsoft SQL Server 資源。</block>
   <block id="00151bd722bf3fd83e9173ec473238da" category="list-text">在清單中，選擇 *Microsoft SQL Server* 作為引擎類型。</block>
@@ -1243,9 +1239,7 @@
   <block id="1f6bfa37836a1e9968d5ea7593e0629b" category="list-text">為了準備資料保護，Workload Factory 會自動在備份和復原中註冊您的 SQL Server 資源，配置和安裝 Microsoft SQL Server 插件，並發現滿足保護 SQL Server 執行個體的先決條件的資源。選擇“*開始*”來啟動程序。</block>
   <block id="8b48bc7f871383eb926099b2126e0377" category="list-text">滿足先決條件後，選擇*重定向*以存取備份和復原。</block>
   <block id="0a34414f3db7a7d22b890f0de8eb8225" category="paragraph">從備份和復原中，建立一個原則來保護您的 Microsoft SQL Server 執行個體和資料庫。</block>
-  <block id="429cd6f061edda5c69ca25c65e8ea236" category="paragraph"><block ref="1712bcf9c278b15383d89f55649b8558" category="inline-link-macro-rx"></block> 。</block>
   <block id="a34428791f8c5ce4b1184d505db69402" category="inline-link-macro">備份和恢復文檔</block>
-  <block id="466ae7236a1ef5fce9dae7319a9d7e2f" category="paragraph">相關信息，請參閱<block ref="708964af478ed2d68a5d28b41ebeb257" category="inline-link-macro-rx"></block>用於管理 Microsoft SQL Server 工作負載。</block>
   <block id="d05a91a23b39b2ef83c7f917a0c9c7e5" category="summary">開始使用NetApp Workload Factory for Databases 來使用基礎架構即程式碼片段、發現主機、管理資源等。</block>
   <block id="91494b330cfa4716e9d4103109705d0c" category="doc">NetApp Workload Factory for Databases 快速入門</block>
   <block id="0680daa6368db6612af2c2ea36617ecc" category="paragraph">透過NetApp Workload Factory for Databases，您可以立即以_基本_模式開始使用。如果您想使用 Workload Factory 來發現主機、管理資源等，您可以透過幾個步驟開始。</block>
@@ -1299,4 +1293,10 @@
   <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp控制台</block>
   <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp資料服務</block>
   <block id="da799d994391b08e1d7460381c98559f" category="sidebar">了解資料庫工作負載工廠</block>
+  <block id="b932f0cf95f538a8c687f905809c4de8" category="paragraph">有關使用備份和恢復進行保護的詳細信息，請參閱 <block ref="aefe430dd4ebf4bd80cdc056d521c135" category="inline-link-macro-rx"></block>。</block>
+  <block id="1a60f402f44b25587846bc52b43a5256" category="list-text">確保您的環境滿足 <block ref="e28e35d1fa3b60445b98139b282e0fe6" category="inline-link-macro-rx"></block>。</block>
+  <block id="b840c4396ce722a09c18899a4424775c" category="list-text"><block ref="3a4019be669eb0d9a01f9ed45fbe9c1e" category="inline-link-macro-rx"></block> 包括設定、指派 IAM 角色和安裝控制台代理程式。</block>
+  <block id="1cad8c414706b5bcb0b45db25ebf8cb8" category="list-text"><block ref="1cad8c414706b5bcb0b45db25ebf8cb8" category="inline-link-macro-rx"></block></block>
+  <block id="8cddfd1e7d348910ccb9f33f1875227b" category="paragraph"><block ref="f04d9a72ed4e336f6d3f26aa1ae4191f" category="inline-link-macro-rx"></block>。</block>
+  <block id="99a41b50ffc589da72247d73d9ef02ed" category="paragraph">相關信息，請參閱 <block ref="dc3edb02c7b9b729d8ce33699dc1f607" category="inline-link-macro-rx"></block> 用於管理 Microsoft SQL Server 工作負載。</block>
 </blocks>
