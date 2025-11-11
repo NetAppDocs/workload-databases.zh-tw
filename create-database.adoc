@@ -18,7 +18,7 @@ summary: 使用NetApp Workload Factory for Databases 建立 Microsoft SQL 資料
 
 如果您想要分隔資料庫的儲存空間、可以使用 _virtual 掛載點 _ 來執行此作業。虛擬掛載點可讓您將資料庫整合至主機上的幾個一般磁碟機。
 
-在工作負載工廠中建立資料庫需要自動化模式權限。或者，在基本模式中，您可以複製或下載部分完成的程式碼範本，以完成工作負載工廠以外的作業。link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["瞭解工作負載工廠的作業模式"^] 決定您要使用的模式。
+在工作負載工廠中建立資料庫需要_檢視、規劃和分析_權限。或者，您可以複製或下載部分完成的程式碼模板，在工作負載工廠之外完成操作。link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["了解工作負載工廠權限"^] 決定你想使用哪種模式。
 
 
 NOTE: 使用 SMB 通訊協定的 Microsoft SQL Server 不支援資料庫建立。
@@ -26,7 +26,7 @@ NOTE: 使用 SMB 通訊協定的 Microsoft SQL Server 不支援資料庫建立�
 .開始之前
 建立新資料庫之前、請務必先完成下列先決條件。
 
-* *憑證和權限*：您必須擁有link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和「唯讀」或「讀取/寫入」模式權限"^]在工作負載工廠中建立一個新的資料庫。
+* *憑證和權限*：您必須擁有 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和_檢視、規劃和分析_權限"^] 在 Workload Factory 中建立一個新資料庫。
 +
 或者，您也可以使用 Codebox 來複製範本，以便使用 REST API 在工作負載工廠以外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
 
@@ -39,7 +39,7 @@ NOTE: 使用 SMB 通訊協定的 Microsoft SQL Server 不支援資料庫建立�
 
 == 建立資料庫
 
-您可以使用_快速建立_或_進階建立_部署模式在工作負載工廠中以_唯讀_或_讀取/寫入_模式權限完成此任務。
+在 Workload Factory 中，您可以使用「快速建立」或「進階建立」部署模式來完成此任務。
 
 [role="tabbed-block"]
 ====

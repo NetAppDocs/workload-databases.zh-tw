@@ -49,7 +49,7 @@ Workload Factory 分析以下配置的良好架構狀態：
 
 == 開始之前
 
-* 你必須有link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和讀取/寫入權限"^]分析您的資料庫配置。
+* 你必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["授予 _操作和修復_ 權限"^]在您的 AWS 帳戶中。
 * 若要評估 Microsoft SQL Server 執行個體或 Oracle 資料庫的存儲，必須在 Workload Factory 中註冊資源，且儲存類型必須是 FSx for ONTAP。link:register-instance.html["了解如何註冊資源。"]
 * 在選擇修正設定或組態之前，請務必仔細檢閱每項建議。對於 RSS 和 MAXDOP 設定，我們建議您先測試建議的設定，以判斷效能改善，然後再變更正式作業環境。
 

@@ -517,8 +517,6 @@
   <block id="e1e54933838bb7ba662301d01c937d2d" category="list-text">使用其中一項登<block ref="68ceec76279c6913cdee16884c2d813a" category="inline-link-macro-rx"></block>入。</block>
   <block id="cef4156e4fa9e5869d4dee02c1b39d6e" category="paragraph">AWS 認證加上 _ 自動化 _ 權限，可讓工作負載在出廠時從工作負載工廠內的 AWS 帳戶部署及管理新的資料庫主機。</block>
   <block id="d6631cc039c798bd233c70bae3023936" category="paragraph">或者，您也可以從 Codebox 下載部分完成的 YAML 檔案範本，在工作負載工廠外部建立堆疊，而無需任何認證或權限。從 Codebox 的下拉式清單中選取 * CloudForiam* 以下載 YAML 檔案。</block>
-  <block id="86b0140bb79dd7663425ee50a4e68361" category="inline-link-macro">瞭解工作負載工廠的作業模式</block>
-  <block id="3a0419549547987e965186c31b3610eb" category="paragraph">在工作負載工廠中建立資料庫需要自動化模式權限。或者，在基本模式中，您可以複製或下載部分完成的程式碼範本，以完成工作負載工廠以外的作業。<block ref="5968ff3deed2bc48d2bc3a731c0f115b" category="inline-link-macro-rx"></block> 決定您要使用的模式。</block>
   <block id="3bfb7d9388422f644c389daf1ad5c953" category="paragraph">或者，您也可以使用 Codebox 來複製範本，以便使用 REST API 在工作負載工廠以外部署資料庫。<block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block>。</block>
   <block id="ac48048cc385514c8193aeb51f798df3" category="list-text">* 成本預估 * ：使用節省計算機評估潛在成本節約效益，並詳細說明使用 Elastic Block Store 和適用於 Windows 檔案伺服器的 FSX 進行現有 Microsoft SQL Server 部署的儲存，運算， SQL 授權，快照和複製明細成本，相較於適用於 ONTAP 的 FSX 。</block>
   <block id="eb7ed5d3b1a2ff72006245ad37f9817b" category="paragraph">您必須擁有 AWS 帳戶才能使用資料庫。</block>
@@ -681,8 +679,6 @@
   <block id="c69c68bea63a58faad0233887cb8a9aa" category="section-title">2025 年 4 月 04 日</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
-  <block id="f2f8123dee39336570b9e59a3326fd18" category="inline-link-macro">授與 _read-only 或 _read/writ_ 權限</block>
-  <block id="f557e9f26b531156ccdbc9c32935d13a" category="list-text"><block ref="6a1dbb436eb1da80c34b82a70d7d9175" category="inline-link-macro-rx"></block>在 AWS 帳戶中，在「 * 探索節約 * 」標籤下偵測 Windows 系統的彈性區塊儲存（ EBS ）和 FSX ，並在儲蓄計算機中顯示節約計算。</block>
   <block id="25696569671071b8bd3db9a4c5f6613e" category="doc">儀表板增強功能</block>
   <block id="04f9acced28b52e064ba8ccb957a615c" category="list-text">當您在 BlueXP  工作負載工廠主控台的索引標籤之間瀏覽時，可以使用跨帳戶和跨區域檢視。新的檢視可改善資源管理，監控及最佳化。</block>
   <block id="6e21267988cadc818dd398393c695465" category="list-text">從儀表板的 * 潛在節約 * 方塊中，您可以從 Amazon Elastic Block Store 或 Amazon FSX for Windows 檔案伺服器切換至適用於 ONTAP 的 FSX ，快速檢閱可能節省的成本。</block>
@@ -724,8 +720,6 @@
   <block id="2cfa2ba77f1346dd5f1a96ad6f3af2b2" category="paragraph"><block ref="2cfa2ba77f1346dd5f1a96ad6f3af2b2" category="inline-link-macro-rx"></block></block>
   <block id="4f91bce4a20615964f35d2fd97ddb2e1" category="inline-link-macro">執行個體管理</block>
   <block id="68d9261728b0a851ce7bc78b7cfd2a69" category="paragraph"><block ref="68d9261728b0a851ce7bc78b7cfd2a69" category="inline-link-macro-rx"></block></block>
-  <block id="ccac5f43f95e209ed7e8f8ddd1b75d8b" category="inline-link-macro">AWS 帳戶憑證和讀取/寫入模式權限</block>
-  <block id="b949760a108bef94fc7f866ca09b5155" category="list-text">您必須<block ref="09d2f3d3c667abb40f8d2ba111b9c06b" category="inline-link-macro-rx"></block>在工作負載工廠中建立新的資料庫主機。</block>
   <block id="f8c2bea89896f4c645e761417ab6d4bd" category="paragraph">確保部署子網路與現有介面端點相關聯，且安全性群組允許透過 HTTPS (443) 協定存取所選子網路。</block>
   <block id="e2aadc51c2249a0d2d63030bd046d5b5" category="paragraph">使用跨 VPC DNS 時，DNS 所在的另一個 VPC 上的終端​​節點的安全群組應允許連接埠 443 存取部署子網路。否則，您應該在加入跨 VPC Active Directory 時提供本機 VPC 的 DNS 解析器。在多複製網域控制器環境中，如果某些網域控制器無法從子網路訪問，您可以「重新導向到 CloudFormation」並輸入<block ref="a756f9902f1db5a37f12d3f459f172a5" prefix=" " category="inline-code"></block>連接到 Active Directory。</block>
   <block id="a40a9332a94e9ee509dd52088052022f" category="paragraph">管理任務包括：</block>
@@ -737,8 +731,6 @@
   <block id="d3379f7eb15b947ec99d4daad00317b3" category="list-text"><block ref="d3379f7eb15b947ec99d4daad00317b3" category="inline-link-macro-rx"></block></block>
   <block id="c4363ade7c2d208d79dee9b60bc51922" category="doc">在工作負載工廠中實現架構良好的資料庫配置</block>
   <block id="681f8e0d48f8a5609d29d038dfdb7354" category="list-text">分析內容</block>
-  <block id="05733d6679707441838e3ca92fcb1e85" category="inline-link-macro">AWS 帳戶憑證和讀取/寫入權限</block>
-  <block id="e6ff59cff1eb616f7a9d6b770313807a" category="list-text">你必須有<block ref="6428f71963510d960d64cd03bb6513ae" category="inline-link-macro-rx"></block>分析您的資料庫配置。</block>
   <block id="663c686f4608ad8e700ed1cd99a57fcc" category="list-text">在選擇修正設定或組態之前，請務必仔細檢閱每項建議。對於 RSS 和 MAXDOP 設定，我們建議您先測試建議的設定，以判斷效能改善，然後再變更正式作業環境。</block>
   <block id="55900adb296775523b32b30486b0de17" category="admonition">補救程序可能會導致執行個體停機或服務中斷。在選擇修復配置之前，請務必仔細查看建議。</block>
   <block id="8cdf23f9dd4f98a6b709a0a9d53ecd88" category="paragraph">您可以按類別、子類別、狀態、嚴重性和標籤過濾配置問題。</block>
@@ -754,8 +746,6 @@
   <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">分析需求</block>
   <block id="4eadd345921a1f4292d9b98892d3b84e" category="inline-link-macro">實施結構良好的資料庫配置</block>
   <block id="9f79767d5e4eb4d13f2a6d925ed59d0f" category="paragraph"><block ref="9f79767d5e4eb4d13f2a6d925ed59d0f" category="inline-link-macro-rx"></block></block>
-  <block id="742b9524a4ab93b49eb1614d2aa4287b" category="inline-link-macro">_基本_、_唯讀_和_讀/寫_操作模式</block>
-  <block id="e19be16b30ba3a27ed29174edef4c120" category="paragraph">選擇。 <block ref="5653101a5bec855c555e8762c96ccdfc" category="inline-link-macro-rx"></block></block>
   <block id="32077805607c935c0ac59dd7b4a3fdc6" category="inline-link-macro">部署主機伺服器</block>
   <block id="8373481dd509f9b495f59748db1aa76d" category="doc">在資料庫工作負載工廠中註冊實例</block>
   <block id="91a3069301b0dd7ee29890c4b610ba27" category="section-title">關於任務</block>
@@ -776,9 +766,6 @@
   <block id="9d3d55473abbb7eec4a1df3a6fd8ac50" category="paragraph">具有「唯讀」權限的 AWS 憑證可讓工作負載工廠產生 CloudFormation 模板，供您在 AWS CloudFormation 控制台中使用。</block>
   <block id="1a6183e6bc3067f41e368cb8ae65eee0" category="paragraph">如果您在工作負載工廠中沒有相關的 AWS 認證，而且想要在工作負載工廠中建立新的伺服器，請依照 * 選項 1* 前往認證頁面。手動新增資料庫工作負載的讀取/寫入模式所需的憑證和權限。</block>
   <block id="b686945750b38d40d97b18356ad0a4c6" category="paragraph">如果您想要在工作負載工廠中完成建立新伺服器表單，以便下載完整的 YAML 檔案範本，以便在 AWS CloudForformation 中部署，請遵循 * 選項 2* ，以確保您擁有在 AWS CloudForformation 中建立新伺服器所需的權限。手動新增資料庫工作負載的_唯讀_模式所需的憑證和權限。</block>
-  <block id="a8ff9ed21e668d7299478bf75b16abd9" category="inline-link-macro">AWS 帳戶憑證和「唯讀」或「讀取/寫入」模式權限</block>
-  <block id="970fa5fe1f85bede58eadf785f5bb30d" category="paragraph">您可以使用_快速建立_或_進階建立_部署模式在工作負載工廠中以_唯讀_或_讀取/寫入_模式權限完成此任務。</block>
-  <block id="b2a6b8ac31e0bf9968f6f80649cc61cd" category="inline-link-macro">您必須新增 AWS 帳戶憑證和「唯讀」或「讀取/寫入」模式權限</block>
   <block id="9ae4e4b9fdc398feb3be344b26cbf99f" category="sidebar">監視資料庫作業</block>
   <block id="a43e14359a13ff9144351ad74db7b351" category="section-title">改進實例的入門</block>
   <block id="af2ef84a7c6d5792c23eddfef4cc4ed9" category="paragraph">工作負載工廠現在使用「註冊」來表示執行個體管理，而不是使用「未偵測到」、「未託管」或「託管」等術語。新的註冊流程包括對執行個體進行身份驗證和準備，以便您可以在工作負載工廠控制台中建立、監控、分析和修復資料庫配置中的資源。註冊流程中的準備步驟指示您的實例是否已準備好進行管理。</block>
@@ -838,7 +825,6 @@
   <block id="e4b085b007f80e7f8236f3693c0d0198" category="list-text">在資料庫磁貼中，從選單中選擇 *探索節省*，然後選擇 *本機 Microsoft SQL Server*。</block>
   <block id="546dcae8b2a33c531e585b76d51af0dd" category="paragraph">在某些權限有限的情況下，身份驗證成功後，探索儲蓄頁面不會載入資料。</block>
   <block id="012a999834d8188ec17b6ec67f4db97d" category="list-text">彈性：包含本機快照、FSx for ONTAP備份、跨區域複製 (CRR) 和 Microsoft SQL 高可用性。</block>
-  <block id="884d3679394cea72f73ae724c1666492" category="paragraph">如果您在「唯讀」或「讀取/寫入」模式下操作，則需要<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block>選擇工作負載功能，例如資料庫和 GenAI，並為所需的權限建立 IAM 策略。</block>
   <block id="1caf2514b723d82877e2b000e3ba5e3f" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>發現或部署資源</block>
   <block id="714bf7245115e9e60e5f4ba3dc04e4f5" category="paragraph">使用憑證和 IAM 策略，您可以發現清單中的現有資料庫資源或<block ref="086045f9b9433534ba0bc16ba8744718" category="inline-link-macro-rx"></block>。庫存提供了統一的介面來管理資源。</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
@@ -978,7 +964,6 @@
   <block id="ff8598dd406774c1ca9008fc13afdda5" category="inline-link-macro">Amazon Bedrock 資料保護文檔</block>
   <block id="f3bdceeaea10004cfc3c616ca8eb3736" category="paragraph">客戶資料不用於訓練或改進模型。 Amazon Bedrock 即時處理日誌，但不會對您的資料進行訓練。結果儲存在您的環境中僅供參考。如欲了解更多詳情，請參閱<block ref="b066fd87fd1e8a2b8d520c5977ecc43e" category="inline-link-macro-rx"></block>。</block>
   <block id="b9ab059dc08ef721b8e84a71c31836ca" category="paragraph">要使用錯誤日誌分析器，您必須滿足以下先決條件：</block>
-  <block id="03b5d863e5ce2e0457e2439ea29d15c0" category="list-text">你必須有<block ref="09d2f3d3c667abb40f8d2ba111b9c06b" category="inline-link-macro-rx"></block>在 Workload Factory 中建立一個新的資料庫主機。</block>
   <block id="1638ab4de4a9db0d742db9639754f78d" category="list-text"><block ref="873d2450d820ba11c34ebce38f7d81a0" category="inline-link-macro-rx"></block>在工作負載工廠中。</block>
   <block id="646959962ba0d3aba0b9eba63fd30f66" category="list-text">也必須滿足以下先決條件。作為分析日誌錯誤的步驟的一部分，系統將提示您完成這些先決條件。</block>
   <block id="b731c0685ba6b81efc2a3730248eb9d5" category="list-text">*Amazon Bedrock 啟動*</block>
@@ -1029,7 +1014,6 @@
   <block id="093a3d726cbf25e589822ef36b3e7d6d" category="summary">使用NetApp Workload Factory for Databases 建立 Microsoft SQL 資料庫。</block>
   <block id="d410c054e57809de4c2928a86ff5857a" category="doc">在NetApp Workload Factory for Databases 中建立 Microsoft SQL 資料庫</block>
   <block id="e7c408256e10da6c2b63aa1ec40e89c6" category="paragraph">建立新的 Microsoft SQL 資料庫可讓您管理NetApp Workload Factory for Databases 中的資源。</block>
-  <block id="7e330efc62ab9aa02e901fd0e9ddfe04" category="list-text">*憑證和權限*：您必須擁有<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>在工作負載工廠中建立一個新的資料庫。</block>
   <block id="5def691d4ba23ba4c19e8fb3f4ebd179" category="list-text">*Windows 主機*：如果您使用_快速建立_模式，則 Microsoft SQL Server 上必須有足夠的磁碟機號碼來為新資料庫建立新磁碟機。</block>
   <block id="45c09a12c8c7e32b997298e5ab0cc9f7" category="list-text">*Microsoft SQL Server*：您必須在工作負載工廠中擁有一個託管的 Microsoft SQL Server，以便資料庫託管新的資料庫。</block>
   <block id="fba597a5ff37192edad0ebb2de795a4d" category="list-text">*AWS Systems Manager*：確保<block ref="7254170b56a28e207df989a3f40b911f" prefix=" " category="inline-code"></block>透過 AWS Systems Manager 在 Microsoft SQL 主機中啟用使用者權限。</block>
@@ -1046,7 +1030,6 @@
   <block id="d99f6150a4efcd4d48fdaf436886511c" category="summary">在NetApp Workload Factory for Databases 中建立沙盒克隆。</block>
   <block id="f11ac2427a7b573ec3b6ff10fab4b086" category="doc">在NetApp Workload Factory for Databases 中建立沙盒克隆</block>
   <block id="275720de7888dfa64f5efd2265bd4ff1" category="paragraph">透過在NetApp Workload Factory for Databases 中建立資料庫的沙盒克隆，您可以使用克隆進行開發、測試、整合、分析、培訓、品質保證等，而無需更改來源資料庫。</block>
-  <block id="7346725773928eba0f4a6bd24d75cfe2" category="list-text">*憑證和權限*：您必須擁有<block ref="9c62e895201e97f6c74e26e0f3de2d15" category="inline-link-macro-rx"></block>在 Workload Factory 中建立沙盒克隆。</block>
   <block id="19d25173728d8d76e86a76626ff0e340" category="paragraph">或者，您可以使用 Codebox 複製部分完成的模板或建立已完成的模板，以便您可以使用 REST API 在 Workload Factory 之外建立沙盒克隆。<block ref="2d990d14c53331d19396f393ba4ea98c" category="inline-link-macro-rx"></block> 。</block>
   <block id="de53b203cddcf425805457c9ee61f4fa" category="list-text">*Microsoft SQL Server*：您必須在 Workload Factory for Databases 中擁有託管的 Microsoft SQL Server 來託管新的沙盒複製。</block>
   <block id="c4445bf1142f4fd36aa3139618ee4f3f" category="list-text">*來源資料庫*：您需要一個可用於複製的來源資料庫。</block>
@@ -1069,7 +1052,6 @@
   <block id="092e04ebb92f098a8d23a32d9a42e747" category="paragraph"><block ref="092e04ebb92f098a8d23a32d9a42e747" category="inline-image-macro-rx" type="image"></block></block>
   <block id="415a5d8c7b61b7b6644a82777ab19fd7" category="paragraph">+ * 目標執行個體 vCPU：此執行個體具有 48 個或更少的虛擬 CPU。  * 記憶體分配：實例具有 128GB 或更少的記憶體。</block>
   <block id="10bc36142cfe526f2ba0fecd1ac4fbe9" category="paragraph">+ * 資料庫級企業功能 * 線上索引操作 * 資源調控器 * 點對點或 Oracle 複製 * R/Python 擴充 * 記憶體最佳化的 TempDB</block>
-  <block id="5e633dc647061a3cdb155c548d275ddc" category="paragraph">探索偵測到的主機的節省：Workload Factory 連結到您現有的 Microsoft SQL 伺服器並將詳細資訊拉入計算器進行自動比較。您需要授予_唯讀_或_讀/寫_權限才能使用此計算器選項。您可以更改用例，但所有其他細節都會在計算中自動確定。</block>
   <block id="e5af3e73361e966fe2adc79aadc34d57" category="paragraph">Workload Factory 輸入偵測到的 Elastic Block Store 和 FSx for Windows File Server 主機特性，以便您可以自動探索節省。</block>
   <block id="8792c25f641e40dfbd968350e410bed0" category="paragraph">如果 Workload Factory 偵測到 EBS 主機，您將被重新導向到「探索節省」標籤。如果 Workload Factory 未偵測到 EBS 主機，您將被重新導向到計算器<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block>。</block>
   <block id="7ca6391eb61738d8b33e189705bb5857" category="paragraph">如果 Workload Factory 偵測到適用於 Windows 主機的 FSx，您將被重新導向到「探索節省」標籤。如果 Workload Factory 未偵測到 FSx for Windows 主機，您將被重新導向到計算器<block ref="1aa155ccc357a88465786c9c4e421569" category="inline-xref-macro-rx"></block>。</block>
@@ -1077,8 +1059,6 @@
   <block id="b5745d8b2f6a0cf9cddb7bbb1fed3157" category="list-text">在 Workload Factory 中的 SQL Server 本機標籤中上傳腳本輸出。</block>
   <block id="b9382a492febc168d96a9e8228ee319f" category="paragraph">在您了解了 Microsoft SQL 伺服器本機的節省情況後，您可以選擇從 Workload Factory 中刪除本機主機記錄。選擇 Microsoft SQL Server 本機的操作選單，然後選擇*刪除*。</block>
   <block id="1dbb11b39a311ecc5e8a64d372008d84" category="admonition">Workload Factory 不支援儲存或建立多個 FSx for ONTAP檔案系統。</block>
-  <block id="c29b94e2d4d4a00b7378026c4025918f" category="paragraph">在讀取/寫入模式下，您可以直接從 Workload Factory 使用 FSx for ONTAP在 AWS EC2 上部署新的 Microsoft SQL 伺服器。您也可以從 Codebox 視窗複製內容，並使用其中一種 Codebox 方法部署建議的配置。</block>
-  <block id="8e40b4db610d42aa9e94bf6dddc5da17" category="paragraph">+ 在基本模式下，您可以從 Codebox 視窗複製內容，並使用其中一種 Codebox 方法部署建議的設定。</block>
   <block id="3c6efe0ce159fb5b8ee4882bcf3ad973" category="summary">NetApp透過多種方式為 Workload Factory 及其雲端服務提供支援。全天候提供廣泛的免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
   <block id="d18da0722f47f2cf3fb9e69d8727fb2a" category="doc">取得有關NetApp Workload Factory for Databases 的協助</block>
   <block id="4435b263dd1a35bcd8dfda050db92b3b" category="paragraph">有關 FSx for ONTAP、其基礎架構或任何使用該服務的解決方案的技術支持，請參閱該產品的 Workload Factory 文件中的「取得協助」。</block>
@@ -1151,15 +1131,12 @@
   <block id="b727574e55ad796217e2a7aaf6e9f42d" category="cell">SQL 伺服器 2017</block>
   <block id="ed36a1ef76a59ee3f15180e0441188ad" category="cell">任何</block>
   <block id="8cf301ab4443cef37ee630b5434c3fb2" category="cell">SQL Server 2016、2017、2019、2022</block>
-  <block id="835bfc5a74490eff719b5c8742da9048" category="cell">SQL Server 2016、2019、2022</block>
-  <block id="91f9e116b3abf8558df521fb932a17ec" category="cell">Always On 可用性組</block>
   <block id="30162ed78b6c10f731411f2fc440c24f" category="cell">甲骨文</block>
   <block id="89b327b02ad20e9d93a23c30a3bfa1bf" category="cell">19c</block>
   <block id="04bcbe2fb36bb4652b7f66367657c64b" category="cell">RHEL、SuSe Linux</block>
   <block id="6d40548220fdaa1735b97fafdbde0686" category="cell">獨立（單/多租戶）</block>
   <block id="0de4a754b71d1086723f693052fb7ed2" category="cell">21c</block>
   <block id="d4dd4b927f19f35413e56d438f3960de" category="cell">獨立於 ASM（單/多租戶）</block>
-  <block id="154b1e792860b6ece9bff342944b91b2" category="cell">數據衛士</block>
   <block id="399bd1ee587245ecac6f39beaa99886f" category="cell">PostgreSQL</block>
   <block id="ff97094f6c5420d1530362f8c8ec5d41" category="cell">PostgreSQL 15</block>
   <block id="03c8e8d9438240d9d59f41ce5d676c9c" category="cell">亞馬遜 Linux 2023 AMI</block>
@@ -1246,7 +1223,6 @@
   <block id="ec1098eb54d9b05cc1e929562eb8d30d" category="doc">在NetApp Workload Factory for Databases 中註冊資源</block>
   <block id="0bc907adb7562b30973df586f142f009" category="paragraph">註冊 Microsoft SQL Server 執行個體和 Oracle 資料庫，以便您可以在NetApp Workload Factory for Databases 中監控執行個體和資料庫狀態、資源使用率、保護和儲存效能。</block>
   <block id="3774c3fd6b6e5830079da1f94d3f1872" category="admonition">Workload Factory 僅支援 Microsoft SQL Server 執行個體和 Oracle 資料庫的註冊和管理。根據您在 Workload Factory 中選擇的 AWS 帳戶憑證，PostgreSQL 主機可能會出現在清單中。目前，Workload Factory 僅支援在 Amazon Linux 作業系統上執行的未註冊的 PostgreSQL 執行個體。</block>
-  <block id="22bab21849e5441abbd62affb81cd026" category="paragraph">實例或資料庫的主機必須出現在清單中。要讓主機出現在清單中，<block ref="99382ab95f660f372dfed7d2289ac38a" category="inline-link-macro-rx"></block> 。</block>
   <block id="962361e8c13e22625220beba80548057" category="list-text">在清單中，選擇 *Oracle* 作為資料庫引擎。</block>
   <block id="1d72541b2e1a224311e8b78af73bab83" category="summary">將資料庫（沙盒）克隆還原為在NetApp Workload Factory for Databases 中建立時的原始版本。</block>
   <block id="ecf8d68388a40ca09bc6475e0cb33a92" category="doc">在NetApp Workload Factory for Databases 中還原資料庫克隆</block>
@@ -1300,7 +1276,6 @@
   <block id="d9fff61478503c71474a780705c79af6" category="list-text">檢視、規劃與分析：檢視資料庫資源清單，了解資源運作狀況，檢視資料庫配置的架構分析，取得錯誤日誌分析，並探索節省成本的方案。</block>
   <block id="9ef8eb2bc51c8c6f6ba459302a542484" category="list-text">操作與修復：對資料庫資源執行操作任務，並修復資料庫配置和底層 FSx for ONTAP檔案系統儲存的問題。</block>
   <block id="3f285f24375531d34b8b7d73726b69bc" category="list-text">資料庫主機建立：根據最佳實務部署資料庫主機和底層用於ONTAP檔案系統儲存的 FSx。</block>
-  <block id="6ca55df595e9339b20f869e49eb0d710" category="paragraph">新增憑證時，您可以根據要授予 Workload Factory for Databases 的存取級別，選擇一個或多個權限原則。</block>
   <block id="b20b01e02162a68002ca1747d1bd3c10" category="inline-link-macro">Workload Factory 權限參考</block>
   <block id="444b052e3d1349e221d4ceb42e6c1cf7" category="paragraph"><block ref="444b052e3d1349e221d4ceb42e6c1cf7" category="inline-link-macro-rx"></block></block>
   <block id="034b7227f8903ae8faac7359c9b3d064" category="section-title">新增了設計精良的儀錶板介面。</block>
@@ -1321,4 +1296,33 @@
   <block id="5c947d6fa21e25852d9b8fc4ae1d52fb" category="list-text">得分包括所有目前已分析的配置，並以百分比形式顯示。25% 的得分意味著 25% 的資料庫部署架構良好。架構良好評分可從「架構良好」畫面以及 Workload Factory 控制台中的 Microsoft SQL Server 執行個體或 Oracle 資料庫中取得。</block>
   <block id="b63a27b7b1942197825500589350fdb1" category="list-text">配置分為以下幾類：儲存、運算、應用、彈性、克隆。每個類別都包含特定的配置評估，這些評估會定期進行分析。配置類別可以從「架構完善」畫面以及工作負載工廠控制台中的 Microsoft SQL Server 執行個體或 Oracle 資料庫中進行參考。</block>
   <block id="2afa479317acb4455a0a649aab2944d1" category="section-title">2025年11月2日</block>
+  <block id="d0892726ec1e74441a4a801494ed29bb" category="paragraph">新增憑證時，您可以根據要授予 Workload Factory for Databases 的存取級別，選擇一個或多個權限原則。</block>
+  <block id="af7c77855745c2192ad309cfc11ed68c" category="inline-link-macro">授予_查看、規劃和分析_權限</block>
+  <block id="e532abcabd3833f3f7c459c33e56184e" category="list-text">你必須 <block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> 在您的 AWS 帳戶中，在 Workload Factory 中建立一個新的資料庫主機。</block>
+  <block id="3e44f3c8515896309f0ef94bd98f9c01" category="inline-link-macro">授予 _database 主機建立_ 權限</block>
+  <block id="465e9d802e89a57d0c6d975dfa335b10" category="paragraph">你必須 <block ref="c00ccdcb7558b1384f2bfe03bc0ccfc2" category="inline-link-macro-rx"></block> 在您的 AWS 帳戶中，在 Workload Factory 中建立一個新的資料庫主機。</block>
+  <block id="faf57b7ea755136ba278c7ca635d000d" category="inline-link-macro">了解工作負載工廠權限</block>
+  <block id="ee8d92152066f3db5bcbd21ab0bf2f95" category="paragraph">在工作負載工廠中建立資料庫需要_檢視、規劃和分析_權限。或者，您可以複製或下載部分完成的程式碼模板，在工作負載工廠之外完成操作。<block ref="2ed05d763ad52dc4a74c37608a2573bc" category="inline-link-macro-rx"></block> 決定你想使用哪種模式。</block>
+  <block id="24f052bbfc9bd9df6db2a9420a7adf2b" category="inline-link-macro">AWS 帳戶憑證和_檢視、規劃和分析_權限</block>
+  <block id="4f56231d78cda077af94d3e0dfd51958" category="list-text">*憑證和權限*：您必須擁有 <block ref="acc024b2636f2b609a405107ce7e1e7a" category="inline-link-macro-rx"></block> 在 Workload Factory 中建立一個新資料庫。</block>
+  <block id="93d1a10f5427dcaad9dbfd835a2f78c4" category="paragraph">在 Workload Factory 中，您可以使用「快速建立」或「進階建立」部署模式來完成此任務。</block>
+  <block id="2025a0042a0ae8427cc7478e4f0629ea" category="paragraph">你必須有 <block ref="c00ccdcb7558b1384f2bfe03bc0ccfc2" category="inline-link-macro-rx"></block> 在您的 AWS 帳戶中，在工作負載工廠中建立一個新的資料庫主機。</block>
+  <block id="c2a828d4f87d9d9d6977488310b2783f" category="list-text">*憑證和權限*：您必須擁有 <block ref="acc024b2636f2b609a405107ce7e1e7a" category="inline-link-macro-rx"></block> 在 Workload Factory 中建立沙盒克隆。</block>
+  <block id="e271b1d3bc72a38f89e2810646dd71a1" category="paragraph">探索已偵測到的主機的節省：工作負載工廠連接到您現有的 Microsoft SQL 伺服器，並將詳細資訊提取到計算器中進行自動比較。您需要授予 _檢視、規劃和分析_ 權限才能使用此計算器選項。您可以變更使用場景，但所有其他細節都會在計算中自動確定。</block>
+  <block id="d186a87b5715922555a4959a0edebfb5" category="inline-link-macro">授予查看、規劃和分析權限</block>
+  <block id="1dd2a215cce31e07e812222b302e45d0" category="list-text"><block ref="eb47095b3da29cffa9f1ed319e537b9b" category="inline-link-macro-rx"></block> 在您的 AWS 帳戶中，在「探索節省」標籤下偵測 Elastic Block Store (EBS) 和 FSx for Windows 系統，並在節省計算器中顯示節省計算結果。</block>
+  <block id="660272dbb31c8ff32feca711ccb2eca8" category="paragraph">擁有_資料庫主機建立權限_後，您可以直接從 Workload Factory 使用 FSx for ONTAP在 AWS EC2 上部署新的 Microsoft SQL 伺服器。您也可以從程式碼框視窗複製內容，並使用程式碼框方法之一部署建議的配置。</block>
+  <block id="172e8ce3918eb0e11214d418457bac16" category="paragraph">即使沒有權限，您也可以從 Codebox 視窗複製內容，並使用 Codebox 方法之一部署建議的設定。</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="paragraph-title">相關資訊</block>
+  <block id="79e27ec6fe4e85288757fae779bab815" category="inline-link-macro">授予 _操作和修復_ 權限</block>
+  <block id="357d9dd76af15c8aaf8f09990a2846a9" category="list-text">你必須<block ref="6f74e2a9589a6666ba7fdb81dabfc5eb" category="inline-link-macro-rx"></block>在您的 AWS 帳戶中。</block>
+  <block id="e356e44b7b0d0cf4b654070dfef04e57" category="section-title">Microsoft SQL Server 資源的編輯保護</block>
+  <block id="278b615e41498ce80d2681f3084c99c9" category="paragraph">您可以編輯NetApp Backup and Recovery中已受保護的 Microsoft SQL Server 執行個體和資料庫的保護設定。編輯保護功能可讓您修改受保護 SQL Server 執行個體的保護原則或計畫。</block>
+  <block id="cb7606a7d98f8eb425ed4ccd15723b8d" category="list-text">找到要編輯保護的資料庫，然後從選單中選擇「編輯保護」。</block>
+  <block id="a42023de78ebfc0b813130624c220f36" category="paragraph">您將被重新導向到NetApp Console中的「備份和還原」頁面，您可以在其中修改保護策略或計畫。</block>
+  <block id="51bf12717b370e03e3310859db67cac6" category="inline-link-macro">權限策略</block>
+  <block id="4e9dffb84355d8e05d841ef09cb0b14f" category="paragraph">選擇<block ref="7cb8f01033b9f51b50ad23ef165f92b6" category="inline-link-macro-rx"></block>滿足您的需求。</block>
+  <block id="611dad37557a2cb5ae289c5e019aed4c" category="paragraph">如果您選擇不授予權限，您可以開始使用 Workload Factory for Databases 來複製部分完成的程式碼範例。</block>
+  <block id="38c4c72673e051381c12c32e1dd20f50" category="paragraph">如果您選擇授予權限，您需要…<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block>這包括選擇工作負載功能（例如資料庫和人工智慧），以及建立所需權限的 IAM 策略。</block>
+  <block id="14a812993e30c1769069f1d355d3b4a0" category="paragraph">實例或資料庫的主機必須出現在清單中。要讓主機出現在庫存中，您必須 <block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> 在您的 AWS 帳戶中。</block>
 </blocks>

@@ -32,7 +32,7 @@ summary: 在NetApp Workload Factory for Databases 中建立一個新的 PostgreS
 
 == 開始之前
 
-您必須link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和讀取/寫入模式權限"^]在工作負載工廠中建立新的資料庫主機。
+你必須有 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["授予 _database 主機建立_ 權限"^] 在您的 AWS 帳戶中，在工作負載工廠中建立一個新的資料庫主機。
 
 
 

@@ -23,10 +23,13 @@ summary: 開始使用NetApp Workload Factory for Databases 來使用基礎架構
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 新增認證和權限
 [role="quick-margin-para"]
-選擇。 link:https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["_基本_、_唯讀_和_讀/寫_操作模式"^]
+選擇link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["權限策略"^]滿足您的需求。
 
 [role="quick-margin-para"]
-如果您在「唯讀」或「讀取/寫入」模式下操作，則需要link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["手動新增認證至帳戶"^]選擇工作負載功能，例如資料庫和 GenAI，並為所需的權限建立 IAM 策略。
+如果您選擇不授予權限，您可以開始使用 Workload Factory for Databases 來複製部分完成的程式碼範例。
+
+[role="quick-margin-para"]
+如果您選擇授予權限，您需要…link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["手動新增認證至帳戶"^]這包括選擇工作負載功能（例如資料庫和人工智慧），以及建立所需權限的 IAM 策略。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]發現或部署資源
 [role="quick-margin-para"]

@@ -144,9 +144,6 @@ Workload Factory 根據 AWS、 NetApp ONTAP、Microsoft SQL Server、Oracle 和 
 | Microsoft SQL Server | SQL Server 2016、2017、2019、2022 | 任何 | FCI，單一實例 
 
 
-| Microsoft SQL Server | SQL Server 2016、2019、2022 | 任何 | Always On 可用性組 
-
-
 | 甲骨文 | 19c | RHEL、SuSe Linux | 獨立（單/多租戶） 
 
 
@@ -163,12 +160,6 @@ Workload Factory 根據 AWS、 NetApp ONTAP、Microsoft SQL Server、Oracle 和 
 
 
 | 甲骨文 | 21c | RHEL、SuSe Linux | 獨立於 ASM（單/多租戶） 
-
-
-| 甲骨文 | 19c | RHEL、SuSe Linux | 數據衛士 
-
-
-| 甲骨文 | 21c | RHEL、SuSe Linux | 數據衛士 
 
 
 | PostgreSQL | PostgreSQL 15 | 亞馬遜 Linux 2023 AMI | HA，獨立實例 

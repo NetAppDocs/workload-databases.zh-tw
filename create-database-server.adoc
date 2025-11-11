@@ -60,7 +60,7 @@ Microsoft SQL Server 部署模型都需要使用 iSCSI 儲存協定建立 LUN。
 在建立新的資料庫主機之前、請確定您具備下列先決條件。
 
 .認證和權限
-你必須有link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和讀取/寫入模式權限"^]在 Workload Factory 中建立一個新的資料庫主機。
+你必須 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["授予 _database 主機建立_ 權限"^] 在您的 AWS 帳戶中，在 Workload Factory 中建立一個新的資料庫主機。
 
 .Active Directory
 連線至 Active Directory 時、您必須具有具有權限的管理存取權、才能執行下列動作：

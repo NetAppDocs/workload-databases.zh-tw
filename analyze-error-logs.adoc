@@ -49,7 +49,7 @@ link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrock 定價"^]
 
 要使用錯誤日誌分析器，您必須滿足以下先決條件：
 
-* 你必須有link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和讀取/寫入模式權限"^]在 Workload Factory 中建立一個新的資料庫主機。
+* 你必須 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["授予_查看、規劃和分析_權限"^] 在您的 AWS 帳戶中，在 Workload Factory 中建立一個新的資料庫主機。
 * link:https://docs.netapp.com/us-en/workload-databases/register-instance.html["註冊 SQL Server 實例"^]在工作負載工廠中。
 * 也必須滿足以下先決條件。作為分析日誌錯誤的步驟的一部分，系統將提示您完成這些先決條件。
 +
