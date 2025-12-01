@@ -474,9 +474,7 @@
   <block id="0df73578de7c34ef150c1f37953113f5" category="paragraph">您現在可以在 Amazon EC2 上探索偵測到的 Microsoft SQL 伺服器、並在節約計算機中使用適用於 Windows 檔案伺服器儲存設備的 FSX 。根據您的 SQL 伺服器和儲存需求、您可能會發現適用於 ONTAP 儲存設備的 FSX 最符合資料庫工作負載的成本效益。</block>
   <block id="b68e42fa600661a13849ea15c997cea3" category="paragraph">有兩種計算機選項可供您比較系統與適用於 ONTAP 的 FSX 之間的成本—自訂和偵測。</block>
   <block id="0e98c2470a9fecd3035980d6c9bd5dfe" category="section-title">探索偵測到的主機的節約效益</block>
-  <block id="8f334cc9204ebef849d5d29b3d23b485" category="list-text">在「資料庫」方塊中、從下拉式功能表中選取 * 「 Explore 節約 * 」、然後選取 * 「 Microsoft SQL Server on FSX for Windows* 」。</block>
   <block id="bd0005565e08b9807da651535d09e628" category="inline-xref">透過自訂功能探索節約效益</block>
-  <block id="b2b254b73e406acc574452e9f29f5d9a" category="list-text">在「探索節約效益」標籤中、按一下「 * 探索使用 EBS 儲存設備的資料庫伺服器節約效益 * 」。</block>
   <block id="3f1c1b5d06b7f8c588cd928fa1ac5e90" category="list-text">在節約計算機中（可選）提供以下有關 EBS 存儲中克隆和快照的詳細信息，以獲得更準確的成本節約估算。</block>
   <block id="60d184cc6fb4054879723de86764a020" category="list-text">在節約計算機中（可選）提供有關適用於 Windows 儲存設備的 FSX 中的克隆（陰影複製）和快照的下列詳細資料、以獲得更準確的成本節約預估。</block>
   <block id="c552646e3717f4144059bd229d9b3c96" category="paragraph">如果偵測到適用於 Windows 的 FSX 陰影複製、則預設值為 * 每日 * 。如果未偵測到陰影複製、預設值為 * 無快照頻率 * 。</block>
@@ -868,7 +866,6 @@
   <block id="888aee60b948bfcee3f85cb52d4d62f0" category="inline-link-macro">Amazon Bedrock 定價</block>
   <block id="2064dc6bc6a42df41c5d58cafe4e5108" category="paragraph"><block ref="2064dc6bc6a42df41c5d58cafe4e5108" category="inline-link-macro-rx"></block></block>
   <block id="15f8b2f1668baad2a169d2b56f5bf029" category="inline-link-macro">註冊 SQL Server 實例</block>
-  <block id="e2b234d864fc8c9cad0b4ac907f4b4cb" category="list-text">從「實例」標籤中，找到要分析的特定 SQL Server 實例，然後從選單中選擇「調查錯誤」。</block>
   <block id="3c6ac7ef553b64f6b1a8db2d3034177d" category="list-text">從「錯誤調查」標籤中，請按照控制台中的說明完成以下先決條件：</block>
   <block id="34048930da0f8b448828d6774b139b17" category="list-text">亞馬遜基岩</block>
   <block id="6b0d68ff65de404d491b6292064a079f" category="list-text">網路：Amazon Bedrock 的私有終端節點</block>
@@ -952,8 +949,6 @@
   <block id="a0766b901d28d8d972d369d556ae3e10" category="paragraph"><block ref="a0766b901d28d8d972d369d556ae3e10" category="inline-link-macro-rx"></block></block>
   <block id="c6ce33e049285b31d2f12d7b30e16106" category="summary">分析資料庫工作負載工廠中的錯誤日誌。</block>
   <block id="de5aa3916ae7d5763f4d4fe818491a77" category="doc">分析工作負載工廠中的錯誤日誌</block>
-  <block id="538c4703bd3218c445fac5ee3d4f4df1" category="paragraph">使用智慧型錯誤日誌分析器自動解釋 Microsoft SQL Server 錯誤日誌，以便您可以快速識別和解決問題。Agentic AI 為基礎的分析需要 Amazon Bedrock 整合。</block>
-  <block id="4f3d050ec78741e4f048cd1a9c202d21" category="paragraph">錯誤日誌分析和補救有助於維護 SQL Server 執行個體的健康和效能。有效地解釋 SQL Server 錯誤日誌需要仔細的分析和專業知識。手動監控、錯誤偵測和根本原因分析非常耗時，而且容易出錯。這些挑戰可能會延遲問題解決、增加停機時間並導致營運效率低落。智慧錯誤日誌分析器透過以下主要優勢解決了這些挑戰：</block>
   <block id="3d573c7428ab9f849be508456eb81821" category="paragraph">無論何時使用錯誤日誌分析器，您都可以完全控制您的環境，同時受益於先進的 AI 分析。</block>
   <block id="14f1fce00d2e95227126f5556a73ec6a" category="paragraph">要使用錯誤日誌分析器，您需要啟動 Amazon Bedrock、選擇 Workload Factory 使用的模型、建立私有端點以連接到 Amazon Bedrock、新增權限並建立企業授權。</block>
   <block id="bf71ae5aa16f5632361df660e7d643c6" category="section-title">資料隱私和安全</block>
@@ -964,18 +959,12 @@
   <block id="ff8598dd406774c1ca9008fc13afdda5" category="inline-link-macro">Amazon Bedrock 資料保護文檔</block>
   <block id="f3bdceeaea10004cfc3c616ca8eb3736" category="paragraph">客戶資料不用於訓練或改進模型。 Amazon Bedrock 即時處理日誌，但不會對您的資料進行訓練。結果儲存在您的環境中僅供參考。如欲了解更多詳情，請參閱<block ref="b066fd87fd1e8a2b8d520c5977ecc43e" category="inline-link-macro-rx"></block>。</block>
   <block id="b9ab059dc08ef721b8e84a71c31836ca" category="paragraph">要使用錯誤日誌分析器，您必須滿足以下先決條件：</block>
-  <block id="1638ab4de4a9db0d742db9639754f78d" category="list-text"><block ref="873d2450d820ba11c34ebce38f7d81a0" category="inline-link-macro-rx"></block>在工作負載工廠中。</block>
   <block id="646959962ba0d3aba0b9eba63fd30f66" category="list-text">也必須滿足以下先決條件。作為分析日誌錯誤的步驟的一部分，系統將提示您完成這些先決條件。</block>
   <block id="b731c0685ba6b81efc2a3730248eb9d5" category="list-text">*Amazon Bedrock 啟動*</block>
-  <block id="81516992886ccf91505613c45ff870d0" category="paragraph">需要 Amazon Bedrock，以便在 Workload Factory 的 SQL 節點上執行的 AI 代理可以無縫連接 Bedrock 並為已識別的錯誤日誌取得基於 AI 的見解。</block>
   <block id="d0e5aa254f1ccca87a0cd6748a924c03" category="list-text">*聯網*</block>
-  <block id="cb8d218eea5cb58b307a5ab0213e0e7b" category="paragraph">Amazon Bedrock VPC 端點可確保您的 SQL 節點與 Amazon Bedrock API 進行私密通信，並消除公共網路暴露。確保 Amazon Bedrock VPC 端點與 SQL Server 節點的子網路相關聯（例如：vpce-050cb2f33a1380ffd）。</block>
   <block id="7ed47c99073de0aed63f1c44842de720" category="list-text">AWS IAM 權限</block>
-  <block id="c2c7ac9892a54cd8c39b1d9c5f58fee8" category="paragraph">與 SQL 節點關聯的 EC2 執行個體設定檔角色以及與 Workload Factory 關聯的 AWS 憑證需要下列權限。</block>
   <block id="25977d35457399335400a71d0f8a6a75" category="list-text">具有“bedrock:InvokeModel”權限的 EC2 實例設定檔角色</block>
-  <block id="75b51e246b2117f69d42b2da83b880cf" category="paragraph">此權限使對應 SQL 節點上的 EC2 執行個體能夠呼叫 Bedrock 模型進行主動錯誤調查和補救指導。此設定檔還可確保安全的 AI 存取以獲得客製化的見解。</block>
   <block id="378a86b0e0b9ed128b62cbb2ee357b61" category="list-text">與 Workload Factory 關聯的 AWS 憑證：「bedrock:GetFoundationModelAvailability」和「bedrock:ListInferenceProfiles」權限</block>
-  <block id="c44ddf9ba9f5224d51227669678fea5f" category="paragraph">這些權限驗證 SQL 節點區域中的模型可用性和配置，並確保可靠的、特定於區域的效能。</block>
   <block id="7bc852edc2e072288bc0aee045416ffb" category="paragraph">使用 Workload Factory 控制台分析 SQL Server 錯誤日誌。</block>
   <block id="759696af629832df91ea2580617b889c" category="list-text">從資料庫選單中，選擇*Inventory*。</block>
   <block id="e671fcca7a0408f20ff0ad8657e918fe" category="list-text">在清單中，選擇 *Microsoft SQL Server* 作為資料庫引擎類型。</block>
@@ -1109,10 +1098,6 @@
   <block id="00642e68a741fc0fb7b3297f3d85e094" category="list-text">*可重複使用的自動化模板*：從 Workload Factory Codebox 建立、重複使用和自訂 CloudFormation 模板，以便將來在多個環境中部署 Microsoft SQL Server。</block>
   <block id="b637a3cf08f073bba2452017262c6f0e" category="inline-link-macro">了解適用於 Workload Factory 的 FSx for ONTAP</block>
   <block id="5451b14a2cc0c73081374e5d49684660" category="paragraph"><block ref="c8d2af036244cbf733f21cfd3484b898" category="inline-link-macro-rx"></block> 。</block>
-  <block id="4f7eefbe2de22aca4f898d56772c8c9f" category="section-title">工作負載工廠中的操作模式</block>
-  <block id="7b3be34e841ef7654765950b44c0736d" category="paragraph">三種不同的操作模式 - _基本_、_唯讀_和_讀/寫_ - 為工作負載工廠內部和外部的部署提供了靈活的選項。使用可在 Workload Factory 外部使用的程式碼片段，在基本模式下以零信任獲得直接價值。在_唯讀_和_讀/寫_模式下透過增量信任取得增量值。</block>
-  <block id="d7df29879844d570a3e64b343a7227e2" category="inline-link-macro">工作負載工廠中的操作模式</block>
-  <block id="dde084f0d745ae579f63b79d128d3cac" category="paragraph">詳細了解<block ref="006fa329b97a0e61c793bc816f297534" category="inline-link-macro-rx"></block> 。</block>
   <block id="4bbb8d481021011f9afb73ca196bfecd" category="section-title">使用NetApp Workload Factory 的工具</block>
   <block id="227f846d45d01d0f9fb62a784d506d51" category="paragraph">您可以將NetApp Workload Factory 與以下工具一起使用：</block>
   <block id="36445dd6e44838348239a5d874596e0d" category="list-text">*Workload Factory 控制台*：Workload Factory 控制台提供您的應用程式和專案的視覺化、整體視圖。</block>
@@ -1325,4 +1310,32 @@
   <block id="611dad37557a2cb5ae289c5e019aed4c" category="paragraph">如果您選擇不授予權限，您可以開始使用 Workload Factory for Databases 來複製部分完成的程式碼範例。</block>
   <block id="38c4c72673e051381c12c32e1dd20f50" category="paragraph">如果您選擇授予權限，您需要…<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block>這包括選擇工作負載功能（例如資料庫和人工智慧），以及建立所需權限的 IAM 策略。</block>
   <block id="14a812993e30c1769069f1d355d3b4a0" category="paragraph">實例或資料庫的主機必須出現在清單中。要讓主機出現在庫存中，您必須 <block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> 在您的 AWS 帳戶中。</block>
+  <block id="4afeabae14ccab1ba1ff53887c3a9701" category="doc">優化 Amazon Elastic Block Store (EBS) 資料庫節省計算器</block>
+  <block id="d9f7bd12b1b11b300e5288560b5e9987" category="paragraph">兩個新的計算器功能改進了在使用 EBS 儲存體運行多個執行個體時的成本節約分析，以便您可以透過切換到 FSx for ONTAP來節省更多成本。</block>
+  <block id="32ccdc5dd4f059ebfa9dabaa8c301cf0" category="list-text">Workload Factory 為多個資料庫主機在單一 FSx for ONTAP檔案系統上提供統一的儲存解決方案。這種整合透過減少多個資料庫主機所需的檔案系統數量來優化儲存成本，從而提高成本效益。</block>
+  <block id="e11501c7d779140aaf7bc3e06e0c5005" category="list-text">Workload Factory 分析您的 EBS 效能使用情況，然後建議最佳且最具成本效益的 FSx for ONTAP配置。</block>
+  <block id="754cab29df96851e5cc6bac19fb8e4de" category="inline-link-macro">探索已偵測到的 EBS 主機的節省方案。</block>
+  <block id="9c9dd70e9f385deab27852576ec6db9a" category="paragraph"><block ref="9c9dd70e9f385deab27852576ec6db9a" category="inline-link-macro-rx"></block></block>
+  <block id="0694112a63d48c58b25bbffa268e0b70" category="section-title">針對架構完善的儀表板，提供 Excel 報表。</block>
+  <block id="5f00eea0cea6c8b64f9e110f5d403194" category="paragraph">您可以下載一份結構完善的儀表板的 Excel 報表。該報告提供了資料庫資源的良好架構狀態，並針對所有資源配置（包括作業系統和ONTAP 的子配置）提出了建議。</block>
+  <block id="9dc9a356684c35282d9c1ed4aa30e7a3" category="section-title">適用於 Oracle 資料庫的錯誤日誌分析器</block>
+  <block id="269a351d2772f2eea3d4497bdc4e42cf" category="paragraph">Agentic AI 驅動的錯誤日誌分析器適用於 Oracle 資料庫。此功能利用先進的機器學習演算法自動偵測和分析日誌檔案中的錯誤。該工具旨在透過根據日誌中識別的模式向開發人員提供可操作的見解和建議來簡化故障排除過程。</block>
+  <block id="08b4436fffbd9bb2227d03f1cf33889b" category="paragraph">精心設計的分析包括兩種新的儲存容量配置。此分析評估並修復了現有 Oracle 資料庫部署中與交換空間分配和檔案系統餘裕相關的設定問題。</block>
+  <block id="9d152669cfbc7f26b96ac365effedae4" category="paragraph">使用智慧型錯誤日誌分析器自動解釋 Microsoft SQL Server 和 Oracle 資料庫錯誤日誌，以便您可以快速識別和解決問題。Agentic AI 為基礎的分析需要 Amazon Bedrock 整合。</block>
+  <block id="0a44a8722c7bac67d404e7b828b0fa66" category="paragraph">錯誤日誌分析和修復有助於維護 SQL Server 執行個體和 Oracle 資料庫的健康狀況和效能。有效解讀錯誤日誌需要仔細分析和專業知識。手動監控、錯誤偵測和根本原因分析非常耗時，而且容易出錯。這些挑戰可能會延遲問題解決、增加停機時間並導致營運效率低落。智慧錯誤日誌分析器透過以下主要優勢應對了這些挑戰：</block>
+  <block id="8a1fc074135ca97c3e41c2b6603201b5" category="list-text"><block ref="b116d1667af242d32122d5079d1ba5fa" category="inline-link-macro-rx"></block>在工作負載工廠中。</block>
+  <block id="8f591971d60ff379567cac1d6fe605a9" category="paragraph">要讓 Workload Factory 中執行在 SQL Server 或 Oracle 主機上的 AI 代理程式能夠無縫連接到 Bedrock 並取得已識別錯誤日誌的 AI 見解，就需要 Amazon Bedrock。</block>
+  <block id="55746a60f65a4c4a669e341395ff898b" category="paragraph">Amazon Bedrock VPC 端點可確保您的 SQL Server 或 Oracle 主機與 Amazon Bedrock API 進行私密通信，並消除公共網際網路暴露。確保 Amazon Bedrock VPC 端點與 SQL Server 或 Oracle 主機的子網路關聯（例如：vpce-050cb2f33a1380ffd）。</block>
+  <block id="0c3497bd788216b96538a7c6f6e071b2" category="paragraph">以下權限是與 SQL Server 或 Oracle 主機關聯的 EC2 執行個體設定檔角色以及與 Workload Factory 關聯的 AWS 憑證所必需的。</block>
+  <block id="65fcd4fbdfb629efb51ac6136101fcd6" category="paragraph">此權限允許相應的 SQL Server 或 Oracle 主機上的 EC2 執行個體呼叫 Bedrock 模型，以便主動進行錯誤調查和補救指導。此設定檔還能確保安全地存取人工智慧，從而提供客製化的洞察。</block>
+  <block id="f7991fd16b87e08bdd167a0aae7a8290" category="paragraph">這些權限驗證 SQL Server 或 Oracle 主機所在區域的模型可用性和配置，並確保可靠的、特定於區域的效能。</block>
+  <block id="9d4b0b2e78136984a24846c364551a8e" category="list-text">*Oracle 使用者權限*</block>
+  <block id="55048a1306ae548163118fae2191def0" category="paragraph">以下權限授予對擴展診斷警報的讀取訪問權限，從而可以從日誌中提取錯誤/跟踪詳細信息，以進行 AI 驅動的模式檢測和修復：<block ref="289f8a65a303930e56cd71bf1396d56b" prefix=" " category="inline-code"></block> 。此權限僅適用於 Oracle 資料庫。</block>
+  <block id="631911b60e468e3d1142502ce7c0e907" category="list-text">在「清單」中，選擇「Microsoft SQL Server」或「Oracle」作為資料庫引擎類型。</block>
+  <block id="2f57066fb8b36f0342f8c3cbc677339f" category="list-text">在「執行個體」標籤中，找到要分析的特定 SQL Server 執行個體或 Oracle 資料庫，然後從選單中選擇「調查錯誤」。</block>
+  <block id="a28f3ff00a54ce62f89b0b2d838a9b82" category="list-text">從「探索節省」中，選擇一個或多個在 EBS 上執行的資料庫主機，然後選擇「探索節省」。</block>
+  <block id="cb736a07db8d1010837499448f949516" category="list-text">*新增主機*：您可以選擇最多五個偵測到的 EBS 主機，將其包含在節省運算中。</block>
+  <block id="edb81fcd705508c0f4e0b66b31bfc44f" category="paragraph">Workload Factory 將多個 SQL Server 主機合併到單一 FSx for ONTAP設定建議中，以最佳化成本節約，除非所選 EBS 主機超過單一 FSx for ONTAP檔案系統的吞吐量、容量或 IOPS 限制。</block>
+  <block id="7bc5d760eb2707645670155d907850e9" category="list-text">儲存空間大小：包括交換空間分配和檔案系統餘裕</block>
+  <block id="815e75619b370a1b845eccec6979ed74" category="section-title">2025年11月27日</block>
 </blocks>
