@@ -1338,4 +1338,17 @@
   <block id="edb81fcd705508c0f4e0b66b31bfc44f" category="paragraph">Workload Factory 將多個 SQL Server 主機合併到單一 FSx for ONTAP設定建議中，以最佳化成本節約，除非所選 EBS 主機超過單一 FSx for ONTAP檔案系統的吞吐量、容量或 IOPS 限制。</block>
   <block id="7bc5d760eb2707645670155d907850e9" category="list-text">儲存空間大小：包括交換空間分配和檔案系統餘裕</block>
   <block id="815e75619b370a1b845eccec6979ed74" category="section-title">2025年11月27日</block>
+  <block id="e75004bce0e2abb43e6673b8bd4bbd2f" category="doc">Active Directory 整合增強功能</block>
+  <block id="4be7fbd19e77cc55e8637326f3cc569d" category="paragraph">使用「進階建立」選項部署 Microsoft SQL Server 時，資料庫工作負載工廠將包含三個新的 Active Directory (AD) 欄位。這些增強功能可讓您指定 Active Directory 加入首選項並使用託管服務帳戶。</block>
+  <block id="2d652258eef11b26b58d2ac1040af4fb" category="paragraph">新增的 AD 欄位包括：</block>
+  <block id="f069ee08ebc87aaad1c479cd4f54611c" category="list-text">首選網域控制器</block>
+  <block id="5a90d56c7caec61381ba4316f0a43849" category="list-text">首選組織單元路徑</block>
+  <block id="b535bc12ab7716de58cac2633cbe0ec8" category="list-text">目標 Active Directory 群組</block>
+  <block id="f43a09fcb5f30e27a88e58e1804f13d0" category="inline-link-macro">部署 Microsoft SQL Server</block>
+  <block id="8139c8013582edc0d0eba7cc713f8ffd" category="paragraph"><block ref="8139c8013582edc0d0eba7cc713f8ffd" category="inline-link-macro-rx"></block></block>
+  <block id="568883356bf64941250150c47d023c85" category="paragraph">選用：選擇「使用託管服務帳戶」作為 SQL Server 服務帳戶。如果您的環境使用 MSA（託管服務帳戶）或群組託管服務帳戶 (gMSA)，且密碼管理由 Active Directory 處理，請使用此選項。</block>
+  <block id="b3c4527b66cf49711e0f4c425a9fdbe1" category="list-text">*首選網域控制站*：（選用）輸入要用於加入 Active Directory 的首選網域控制站。</block>
+  <block id="ae41853f33cf42c1d6ea60e021ce20b3" category="list-text">*首選組織單元路徑*：（選用）在 Active Directory 中輸入要加入的首選組織單元 (OU)。</block>
+  <block id="5da5a84735de60ec35b817899791d509" category="list-text">*目標 Active Directory 群組*：可選，輸入要將電腦新增至的目標 Active Directory 群組。</block>
+  <block id="bfcc9fa5a3178fd803540af87a6b6ab7" category="section-title">2025年12月18日</block>
 </blocks>
