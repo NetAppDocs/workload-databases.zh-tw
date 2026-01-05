@@ -18,7 +18,7 @@ summary: 從來源資料庫中拆分資料庫克隆以在NetApp Workload Factory
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇*資料庫*。
 . 從資料庫選單中，選擇*沙盒*。
 . 在沙盒中，選擇要拆分的資料庫克隆的操作選單。
 . 選取 * 分割 * 。

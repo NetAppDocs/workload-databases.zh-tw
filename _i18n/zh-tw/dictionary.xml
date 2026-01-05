@@ -561,7 +561,6 @@
   <block id="5c89f4f6af1a71c2ed6cfac605e94c16" category="paragraph"><block ref="5c89f4f6af1a71c2ed6cfac605e94c16" category="inline-link-macro-rx"></block></block>
   <block id="fd3039d7fbe9d24b3141aca3c62383a2" category="section-title">針對過度配置的 Microsoft SQL Server 授權進行評估與最佳化</block>
   <block id="f90a806c02db45741274868bc065ab90" category="paragraph">節約計算機現在會評估您的 Microsoft SQL Server 部署是否需要 Enterprise Edition 。如果授權過度配置，計算機會建議降級。您可以透過最佳化應用程式，自動降級資料庫中的授權。</block>
-  <block id="f319ba887c03b66fa6a83807c78f65e9" category="list-text">在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。</block>
   <block id="770dee3f954306dca2e369d2ef823c94" category="section-title">SQL Server 部署分析</block>
   <block id="1d93f11e5331c46990f076ad4257106e" category="paragraph">此計算機會對 SQL Server 部署執行全方位分析，以確保所使用的資源和功能與 SQL Server 版本適當配對。以下是計算器建議降級至 Standard Edition 之前檢查的關鍵因素和條件：</block>
   <block id="a0e3089d312c100208595d685b4104d2" category="list-text">部署模式</block>
@@ -1354,4 +1353,7 @@
   <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">問我關於人工智慧助理首頁整合的問題</block>
   <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 控制台主頁嵌入了 Ask me AI 助手，讓您可以詢問有關您自己的儲存環境的問題，直接從您的環境中獲取個人化見解，並參考先前的對話。您可以與「問我」進行交互，以了解您的工作負載、解決問題並了解更多關於工作負載工廠的資訊——所有這些都無需離開控制台。</block>
   <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026年1月4日</block>
+  <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。</block>
+  <block id="1d59c9bea900e36e3d5b9ca53cd55587" category="list-text">選擇選單 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> 然後選擇*資料庫*。</block>
+  <block id="757a7ffb20a279d7239febb013141ad5" category="list-text">選擇選單 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> 然後選擇“儲存”。</block>
 </blocks>

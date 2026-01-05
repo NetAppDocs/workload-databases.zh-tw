@@ -17,7 +17,7 @@ summary: 如果您不再想從 Workload Factory 控制台部署或監控資源�
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇*資料庫*。
 . 從資料庫選單中，選擇*Inventory*。
 . 在清單中，選擇引擎類型：*Microsoft SQL Server*、*Oracle* 或 *PostgreSQL*。
 . 找到您要取消註冊的資源，選擇操作選單，然後選擇*取消註冊*。

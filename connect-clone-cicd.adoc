@@ -18,7 +18,7 @@ summary: 使用 REST API 程式碼將沙箱複本連線至 CI/CD 管線、以透
 
 .步驟
 . 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
-. 在「資料庫」方塊中、選取 * 前往資料庫庫存 * 。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇*資料庫*。
 . 從資料庫選單中，選擇*沙盒*。
 . 在沙盒中，選擇沙盒克隆的操作選單以連接到 CI/CD 工具。
 . 選取 * 連線至 CI/CD 工具 * 。
