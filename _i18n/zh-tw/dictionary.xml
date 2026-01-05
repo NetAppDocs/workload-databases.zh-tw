@@ -1351,4 +1351,7 @@
   <block id="ae41853f33cf42c1d6ea60e021ce20b3" category="list-text">*首選組織單元路徑*：（選用）在 Active Directory 中輸入要加入的首選組織單元 (OU)。</block>
   <block id="5da5a84735de60ec35b817899791d509" category="list-text">*目標 Active Directory 群組*：可選，輸入要將電腦新增至的目標 Active Directory 群組。</block>
   <block id="bfcc9fa5a3178fd803540af87a6b6ab7" category="section-title">2025年12月18日</block>
+  <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">問我關於人工智慧助理首頁整合的問題</block>
+  <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 控制台主頁嵌入了 Ask me AI 助手，讓您可以詢問有關您自己的儲存環境的問題，直接從您的環境中獲取個人化見解，並參考先前的對話。您可以與「問我」進行交互，以了解您的工作負載、解決問題並了解更多關於工作負載工廠的資訊——所有這些都無需離開控制台。</block>
+  <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026年1月4日</block>
 </blocks>
