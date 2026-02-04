@@ -37,7 +37,7 @@ sidebar:
         url: "/create-database-server.html"
       - title: 建立 PostgreSQL 伺服器
         url: "/create-postgresql-server.html"
-    - title: 管理實例
+    - title: 管理資源
       entries:
       - title: 資源管理
         url: manage-instance.html

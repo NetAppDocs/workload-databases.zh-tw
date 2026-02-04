@@ -11,7 +11,7 @@ summary: NetApp Workload Factory for Databases 掃描 Microsoft SQL Server 配�
 
 
 [role="lead"]
-使用配置分析見解和建議，利用NetApp Workload Factory 為使用 Microsoft SQL Server 和 Oracle 的資料庫配置實作最佳實務。您可以輕鬆查看架構良好的狀態，了解資料庫配置的問題，並採取措施改善任何未針對可靠性、安全性、效率、效能和成本進行最佳化的配置。
+利用配置分析洞察和建議，借助 NetApp Workload Factory，您可以針對 Microsoft SQL Server 和 Oracle 資料庫配置實作最佳實務。您可以輕鬆查看架構良好的狀態，了解資料庫配置中存在的問題，並修復那些在可靠性、安全性、效率、效能和成本方面未達到最佳狀態的配置。
 
 您也可以忽略不適用於您的環境的特定配置的分析，以避免不必要的警報和不準確的最佳化結果。
 
@@ -42,7 +42,7 @@ Workload Factory 分析以下配置的良好架構狀態：
 對於 Oracle 資料庫：
 
 * 儲存空間大小：包括交換空間分配和檔案系統餘裕
-* 儲存配置：包含容量管理、精簡配置、分層策略、快照、儲存效率以及使用 NFS 或 iSCSI 部署（無論是否啟用自動儲存管理 (ASM)）的作業系統配置，包括 Microsoft 多路徑 I/O (MPIO) 的狀態和設定
+* 儲存配置：包含容量管理、精簡配置、分層策略、快照、儲存效率以及使用 NFS 或 iSCSI（無論是否啟用自動儲存管理（ASM））部署的作業系統配置，包括 Microsoft Multipath I/O（MPIO）狀態和設定，以及下列 dNFS 設定：dNFS 啟用、dNFS 一致性 IP 解析、dNFS 設定檔和 dNFS `nosharecache`
 * 儲存佈局：包括重做日誌放置、臨時表空間放置、資料檔案放置、存檔日誌放置、控製檔案放置和二進位檔案放置、ASM 磁碟組 LUN 數量
 
 
