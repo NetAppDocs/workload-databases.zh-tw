@@ -65,8 +65,8 @@ Workload Factory 支援 SQL Server 的容錯移轉叢集執行個體（FCI）和
 . 選擇註冊單一實例或多個實例。
 . 若要驗證執行個體（步驟 1）、請執行下列動作、然後選取 *Next* ：
 +
-** 選擇 *Use the same credentials for all instances* 或 *Manage credentials manually*。
-** 透過提供使用者名稱和密碼資訊來驗證 SQL Server 和 Windows 的身分。
+.. 選擇 *Use the same credentials for all instances* 或 *Manage credentials manually*。
+.. 透過提供使用者名稱和密碼資訊來驗證 SQL Server 和 Windows 的身分。
 +
 如果執行個體已通過驗證，請選取 *Next* 。
 
@@ -74,8 +74,8 @@ Workload Factory 支援 SQL Server 的容錯移轉叢集執行個體（FCI）和
 
 . 若要驗證 FSx for ONTAP（步驟 2）、請執行下列操作：
 +
-** 選擇 *對所有資源使用相同的憑證* 或 *手動管理憑證*。
-** 輸入 FSx for ONTAP 檔案系統使用者名稱和密碼，然後選取 *Next* 。
+.. 選擇 *對所有資源使用相同的憑證* 或 *手動管理憑證*。
+.. 輸入 FSx for ONTAP 檔案系統使用者名稱和密碼，然後選取 *Next* 。
 +
 如果 FSx for ONTAP 檔案系統已通過驗證、請選取 *Next* 。
 
@@ -83,12 +83,13 @@ Workload Factory 支援 SQL Server 的容錯移轉叢集執行個體（FCI）和
 
 . 準備工作（步驟 3）：確保執行個體符合最低要求。
 +
-為滿足最低要求，執行個體必須安裝 AWS 和 NetApp PowerShell 模組以及 PowerShell 7 模組，並且您必須完成「先決條件檢查」下列出的至少一項功能的先決條件。..請在*先決條件檢查檢視*中查看先決條件。
+為滿足最低要求，執行個體必須安裝 AWS 和 NetApp PowerShell 模組以及 PowerShell 7 模組，並且您必須完成「先決條件檢查」下列出的至少一項功能的先決條件。
 
 +
-+ 您必須完成單一功能的所有先決條件，例如 *Review well-architected issues and recommendations*，才能註冊執行個體。
-
+.. 請在 *Prerequisite check view* 中查看先決條件。
 +
+您必須完成單一功能的所有先決條件，例如 *Review well-architected issues and recommendations*，才能註冊執行個體。
+
 .. 選擇每個功能的 *Setup details* ，以瞭解該功能的先決條件，並按照螢幕上的指示完成該功能任何缺失的先決條件。
 +
 若要讓 Workload Factory link:optimize-configurations.html["檢閱並修正架構完善的問題"]您的執行個體，請完成*審查架構良好的問題和建議*和*修復架構良好的問題*功能下列出的所有先決條件。
@@ -140,7 +141,7 @@ Workload Factory 支援 SQL Server 的容錯移轉叢集執行個體（FCI）和
 
 .. 選擇每個功能的 *Setup details* ，以瞭解該功能的先決條件，並按照螢幕上的指示完成該功能任何缺失的先決條件。
 +
-要讓 Workload Factory 為您的資料庫link:optimize-configurations.html["檢閱並修正架構完善的問題"]，請完成 *審查架構良好的問題和建議* 和 *修復架構良好的問題* 功能下列出的所有先決條件。
+若要讓 Workload Factory link:optimize-configurations.html["檢閱並修正架構完善的問題"]您的資料庫，請完成*審查架構良好的問題和建議*和*修復架構良好的問題*功能下列出的所有先決條件。
 
 
 

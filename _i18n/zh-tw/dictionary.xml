@@ -1340,11 +1340,8 @@
   <block id="a26f5beb654e47a87608f8a28b573758" category="list-text">輸入 FSx for ONTAP 檔案系統使用者名稱和密碼，然後選取 *Next* 。</block>
   <block id="34b2f9d708b57fa0ab164ac81a844832" category="paragraph">如果 FSx for ONTAP 檔案系統已通過驗證、請選取 *Next* 。</block>
   <block id="9ed181f71730a4b981c04369e2f1719e" category="list-text">準備工作（步驟 3）：確保執行個體符合最低要求。</block>
-  <block id="6b5a6b5bbb8db715d3ff675c1200264b" category="paragraph">為滿足最低要求，執行個體必須安裝 AWS 和 NetApp PowerShell 模組以及 PowerShell 7 模組，並且您必須完成「先決條件檢查」下列出的至少一項功能的先決條件。..請在*先決條件檢查檢視*中查看先決條件。</block>
-  <block id="a50f4670050c58a2a08ccc2babd2d5b2" category="paragraph">+ 您必須完成單一功能的所有先決條件，例如 *Review well-architected issues and recommendations*，才能註冊執行個體。</block>
   <block id="4aa1b1ff22a8dfe18a969e9e18594ab0" category="list-text">選擇每個功能的 *Setup details* ，以瞭解該功能的先決條件，並按照螢幕上的指示完成該功能任何缺失的先決條件。</block>
   <block id="d521398ad1462fd891ea513e4855ce5b" category="inline-link-macro">檢閱並修正架構完善的問題</block>
-  <block id="de1cc997e7f69a895e3fb53fb41d279d" category="paragraph">若要讓 Workload Factory <block ref="78fb719485add27049471292c9f9720d" category="inline-link-macro-rx"></block>您的執行個體，請完成*審查架構良好的問題和建議*和*修復架構良好的問題*功能下列出的所有先決條件。</block>
   <block id="f035f450e95801f1197ab2843b43b16a" category="list-text">當所有先決條件都滿足後、請 * 註冊 * 執行個體。</block>
   <block id="9d96bcc0867ec5be17a78fc127af4785" category="paragraph">執行個體註冊開始。選取 *Job monitoring* 標籤以追蹤進度。</block>
   <block id="efd81ed9168d148e7b33debfd48f5bbe" category="paragraph">註冊執行個體分為三個步驟：資料庫驗證、FSx for ONTAP 驗證以及準備完成缺少的先決條件。您可以註冊單一或多個資料庫。</block>
@@ -1357,9 +1354,12 @@
   <block id="aea7afc9754b2383c56fbbaee6c6009d" category="list-text">在準備工作（步驟 3）中，請確保資料庫符合所有必要的先決條件。如果所有必需模組均已安裝且先決條件已滿足，請選擇 *Next* 註冊資料庫。否則，請按照以下步驟操作。</block>
   <block id="1717c98238cd6bd4091f92979d40a891" category="list-text">請在 *Prerequisite check view* 中查看先決條件。</block>
   <block id="3f4c61df91a8ed4b5fc7622369d6e56d" category="paragraph">您必須完成單一功能的所有先決條件，例如 *Review well-architected issues and recommendations*，才能註冊資料庫。</block>
-  <block id="7a38e7578edd4ba664ee05634d9ac39e" category="paragraph">要讓 Workload Factory 為您的資料庫<block ref="78fb719485add27049471292c9f9720d" category="inline-link-macro-rx"></block>，請完成 *審查架構良好的問題和建議* 和 *修復架構良好的問題* 功能下列出的所有先決條件。</block>
   <block id="9e7001c2bb163521a51de7186846104e" category="list-text">當所有先決條件都滿足後、*註冊*資料庫。</block>
   <block id="aece37c900cf74271d49a4aec3628d66" category="paragraph">資料庫註冊開始。選取 *Job monitoring* 標籤以追蹤進度。</block>
   <block id="e6437d0fab94a9cc41e9fc0354b23716" category="section-title">2026 年 2 月 02 日</block>
   <block id="ecd36d02576c4fe28ab61b5c14fa69c4" category="sidebar">管理資源</block>
+  <block id="5dd712766e41aed3df90d60e36279568" category="paragraph">為滿足最低要求，執行個體必須安裝 AWS 和 NetApp PowerShell 模組以及 PowerShell 7 模組，並且您必須完成「先決條件檢查」下列出的至少一項功能的先決條件。</block>
+  <block id="4f04ccc3925b5039da28842c277cda6c" category="paragraph">您必須完成單一功能的所有先決條件，例如 *Review well-architected issues and recommendations*，才能註冊執行個體。</block>
+  <block id="747eccfe479b7957e243e10257e40143" category="paragraph">若要讓 Workload Factory <block ref="78fb719485add27049471292c9f9720d" category="inline-link-macro-rx"></block>您的執行個體，請完成*審查架構良好的問題和建議*和*修復架構良好的問題*功能下列出的所有先決條件。</block>
+  <block id="7fa2af2634cfeecc9f90ce75c17fad3f" category="paragraph">若要讓 Workload Factory <block ref="78fb719485add27049471292c9f9720d" category="inline-link-macro-rx"></block>您的資料庫，請完成*審查架構良好的問題和建議*和*修復架構良好的問題*功能下列出的所有先決條件。</block>
 </blocks>
