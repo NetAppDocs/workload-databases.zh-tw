@@ -40,7 +40,7 @@ sidebar:
     - title: 管理資源
       entries:
       - title: 資源管理
-        url: manage-instance.html
+        url: "/manage-instance.html"
       - title: 註冊資源
         url: "/register-instance.html"
       - title: 建立資料庫
