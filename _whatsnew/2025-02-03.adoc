@@ -1,12 +1,12 @@
-= 內部部署資料庫環境成本分析與移轉規劃
+= SQL Server 內部部署資料庫環境成本分析與移轉規劃
 :allow-uri-read: 
 
 
 
 
-=== 內部部署資料庫環境成本分析與移轉規劃
+=== SQL Server 內部部署資料庫環境成本分析與移轉規劃
 
-BlueXP  工作負載工廠適用於資料庫，現在可偵測，分析及協助您規劃內部部署資料庫移轉至 Amazon FSX for NetApp ONTAP 。您可以使用節約計算機來估算在雲端中執行內部部署資料庫環境的成本，並檢閱將內部部署資料庫環境移轉至雲端的建議。
+BlueXP workload factory for Databases 現在可以偵測、分析並協助您規劃將內部部署 SQL Server 資料庫移轉至 Amazon FSx for NetApp ONTAP 。您可以使用節省成本計算機來估算在雲端執行內部部署 SQL Server 資料庫環境的成本，並檢視將內部部署資料庫環境移轉至雲端的建議。
 
 link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["探索內部部署資料庫環境的節約效益"]
 

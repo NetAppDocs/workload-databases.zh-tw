@@ -19,9 +19,9 @@ summary: 註冊資源，以便您可以監控NetApp Workload Factory for Databas
 
 == 關於任務
 
-註冊執行個體（SQL Server）或資料庫（Oracle）包含三個步驟：執行個體或資料庫驗證、FSx for ONTAP 驗證以及準備工作。準備工作包括確保在執行個體或資料庫上已安裝所有 AWS、NetApp 和 PowerShell 模組，並符合 Workload Factory for Databases 功能（例如 link:analyze-error-logs.html["錯誤日誌分析"] 或 link:optimize-configurations.html["架構完善的審查"]）的最低要求。
+註冊執行個體（SQL Server）或資料庫（Oracle）涉及三個步驟：執行個體或資料庫驗證、FSx for ONTAP 驗證以及準備工作。準備工作包括在執行個體或資料庫上安裝 AWS、NetApp 和 PowerShell 模組，並符合 Workload Factory for Databases 功能（例如 link:analyze-error-logs.html["錯誤日誌分析"] 或 link:optimize-configurations.html["架構完善的評估"]）的最低要求。
 
-Workload Factory 僅支援 Microsoft SQL Server 執行個體和 Oracle 資料庫的註冊和管理。根據您在 Workload Factory 中選擇的 AWS 帳戶憑證，PostgreSQL 主機可能會出現在清單中。目前，Workload Factory 僅支援在 Amazon Linux 作業系統上執行的未註冊的 PostgreSQL 執行個體。
+Workload Factory 僅支援 Microsoft SQL Server 執行個體和 Oracle 資料庫的註冊和管理。根據您在 Workload Factory 中選擇的 AWS 帳戶憑證，PostgreSQL 主機會出現在清單中。目前，Workload Factory 僅支援在 Amazon Linux 作業系統上執行的未註冊 PostgreSQL 執行個體。
 
 
 
@@ -33,14 +33,14 @@ Workload Factory 僅支援 Microsoft SQL Server 執行個體和 Oracle 資料庫
 
 === 在私有網路中註冊實例
 
-若要在沒有外部連線的私人網路中註冊執行個體（SQL Server）或資料庫（Oracle），需要在 VPC 中提供下列終端節點，並與 SQL Server 所在的子網路關聯。確保介面端點允許附加的安全群組中的連接埠 443。
+若要在沒有外部連線的私人網路中註冊執行個體或資料庫，請在 VPC 中提供所需的端點，並將其與相關的子網路建立關聯。在介面端點的安全群組中允許連接埠 443。
 
 * `S3 Gateway/endpoint`
 * `ssm`
 * `ssmmessages`
 * `fsx`
 +
-如果您對 EC2 執行個體的所有傳出連線都使用 Proxy 伺服器，則必須允許存取下列網域，以便管理作業正常運作：
+如果您使用 Proxy 伺服器進行傳出 EC2 連線、請允許存取這些網域以進行管理作業：
 
 * ``.microsoft.com``（SQL 伺服器）
 * ``.powershellgallery.com``（SQL 伺服器）
@@ -92,11 +92,11 @@ Workload Factory 支援 SQL Server 的容錯移轉叢集執行個體（FCI）和
 
 .. 選擇每個功能的 *Setup details* ，以瞭解該功能的先決條件，並按照螢幕上的指示完成該功能任何缺失的先決條件。
 +
-若要讓 Workload Factory link:optimize-configurations.html["檢閱並修正架構完善的問題"]您的執行個體，請完成*審查架構良好的問題和建議*和*修復架構良好的問題*功能下列出的所有先決條件。
+要啟用 Workload Factory link:optimize-configurations.html["檢閱並修正架構完善的問題"]，請完成*審查架構良好的問題和建議*和*修復架構良好的問題*下的所有先決條件。
 
 
 
-. 當所有先決條件都滿足後、請 * 註冊 * 執行個體。
+. 完成所有先決條件後，*註冊* 實例。
 
 
 .結果
@@ -145,14 +145,14 @@ Workload Factory 支援 SQL Server 的容錯移轉叢集執行個體（FCI）和
 
 
 
-. 當所有先決條件都滿足後、*註冊*資料庫。
+. 完成先決條件後、請 * 註冊 * 資料庫。
 
 
 .結果
 資料庫註冊開始。選取 *Job monitoring* 標籤以追蹤進度。
 
 .下一步
-資源註冊後，您可以執行以下操作。
+註冊後、您可以執行這些工作。
 
 * 從清單中查看資料庫
 * link:create-database.html["建立資料庫"]
