@@ -587,7 +587,6 @@
   <block id="222ef17ae6eab247553156232cd650e1" category="list-text">如需更準確的結果，請更新運算資訊，儲存設備和效能詳細資料。</block>
   <block id="b0398f49dbe9d04be8ddd17378899545" category="list-text">您也可以選擇提供內部部署資料庫環境中的複本（陰影複製）和快照的下列詳細資料，以獲得更準確的成本節約預估。</block>
   <block id="7240997fa0d75a11f0b991615772d5d3" category="list-text">* 複製複本數 * ：在內部部署組態中輸入複製複本的數量。</block>
-  <block id="af022f8b2257d68b04e48e672c457177" category="list-text">應用程式：包括 Microsoft SQL Server 授權， Microsoft SQL Server 修補程式和 MAXDOP 設定</block>
   <block id="1c8d307950dbef59ce61b6bc729fdb52" category="section-title">2025 年 03 月 2 日</block>
   <block id="382e51924c0a806fea2a0017322199a5" category="section-title">最佳化限制</block>
   <block id="d65e48d2f6a810cde4c31e5a88aecedb" category="section-title">ONTAP 與作業系統組態最佳化</block>
@@ -674,7 +673,6 @@
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新的權限術語</block>
   <block id="2d07fc9146d02690dffeffa52fbd2ec4" category="list-text">內部部署主機移除</block>
   <block id="c5d0b906e655aeb0e712fdc99742d179" category="list-text">若要清除複本，請選取要重新整理或刪除的複製資料庫（沙箱）。</block>
-  <block id="bfc2ef5a56455cfacfde13cf1612e36b" category="paragraph">組態分析會停止。</block>
   <block id="822748e99c70e9162ce5432b2e1eff5c" category="section-title">2025 年 04 月 5 日</block>
   <block id="905bc3578e603008d83976307778ddcc" category="list-text">若要取得實例類型建議並提高成本準確性，請執行下列操作：</block>
   <block id="10d9194778791c152af2c0be1806e0b1" category="list-text">授予 Amazon CloudWatch 和 AWS Compute Optimizer 權限。</block>
@@ -735,7 +733,6 @@
   <block id="4698c78219bd6bc2a4fb47e8f4149213" category="section-title">工作負載工廠中對 Windows 身份驗證的支持</block>
   <block id="a3fbe9088342ceac653613ae546dd620" category="list-text">儲存配置：包含容量管理、精簡配置、分層策略、快照、Microsoft 多路徑 I/O (MPIO) 狀態和 MPIO 逾時設置</block>
   <block id="29ce878a000bdfaa01aa19a803eb9f01" category="paragraph">*全選*是預設設置，但您可以選擇特定資源進行修復。</block>
-  <block id="476140ae72277e361d19df8904bed3f8" category="list-text">對於除克隆清理之外的所有配置，請查看建議詳細資訊以了解如果選擇修復問題會發生什麼。某些修復操作可能會導致執行個體停機或服務中斷。</block>
   <block id="b223957af5cc7e8c75e716638466ec57" category="section-title">在私有網路中註冊實例</block>
   <block id="b77e8ec0a3425747f32b3dbc303adecb" category="section-title">2025 年 6 月 30 日</block>
   <block id="d2240cc857b28c2cc0c761811ebb0e4d" category="paragraph">資料庫工作負載工廠改進了在 Amazon FSx for NetApp ONTAP 儲存上執行的執行個體的註冊流程。現在，您可以批次選擇實例進行註冊。一旦執行個體註冊，您就可以在工作負載工廠控制台內建立和管理資料庫資源。</block>
@@ -817,14 +814,12 @@
   <block id="ada60b484b7d2e3edafc98754146c7c3" category="paragraph">您可以重新註冊該資源。</block>
   <block id="605deef06e1372beea22ad9cd2be1a6a" category="inline-link-macro">註冊資源</block>
   <block id="cdef502718e102280b7153349fc5453d" category="paragraph">你必須<block ref="7b211aa8ea2e7da5bf6451b8c7477b8d" category="inline-link-macro-rx"></block>執行以下任何一項管理任務。</block>
-  <block id="8778288856610f6bf20035173fbad2be" category="paragraph">您也可以忽略不適用於您的環境的特定配置的分析，以避免不必要的警報和不準確的最佳化結果。</block>
   <block id="e40dd147294abaab8b8ebe348a6ff323" category="paragraph">對於 Microsoft SQL Server 執行個體：</block>
   <block id="e13a21e0f6e79bd6e277440afe81c7a2" category="list-text">計算：包括調整大小、作業系統修補程式和網路適配器設置，如接收方縮放 (RSS)、TCP 卸載和 MTU 對齊</block>
   <block id="dede452df8eba39c0a57cc96ce3b98c4" category="paragraph">對於 Oracle 資料庫：</block>
   <block id="438f1f56c44366f5204e6f9931b85516" category="inline-link-macro">了解如何註冊資源。</block>
   <block id="74bdd3d51d7fef35f3c1e1829b2c63fe" category="section-title">修復配置問題</block>
   <block id="1c6128cdb2d10cb97e9f36f037cb4ceb" category="paragraph">修正在 FSx for ONTAP儲存上執行的 SQL Server 或 Oracle 環境的設定問題。</block>
-  <block id="47df3bf0f7ade58852082d72bcde28c6" category="admonition">修復過程可能會導致執行個體停機或服務中斷。在選擇修復配置問題之前，請務必仔細查看建議。</block>
   <block id="15e4986095a476a300a86c98e005c03f" category="list-text">如果出現提示，請提供具有管理存取權限的 Windows 憑證。</block>
   <block id="0670483b9d94213fd07ca4df3baae2eb" category="list-text"><block ref="c202a4052bc97ff0191552ea4c2c865c" prefix="" category="inline-code"></block>（SQL 伺服器）</block>
   <block id="6da87aebc1358666c2653e7d0852ee63" category="list-text"><block ref="1f378775539050b7c7b5e1cdfe121e2f" prefix="" category="inline-code"></block>（SQL 伺服器）</block>
@@ -1300,8 +1295,6 @@
   <block id="56b090f7afa365cc9265c8fc7c52c73c" category="paragraph">BlueXP workload factory for Databases 現在可以偵測、分析並協助您規劃將內部部署 SQL Server 資料庫移轉至 Amazon FSx for NetApp ONTAP 。您可以使用節省成本計算機來估算在雲端執行內部部署 SQL Server 資料庫環境的成本，並檢視將內部部署資料庫環境移轉至雲端的建議。</block>
   <block id="8d73c4037df134a624f4a3cc9d442a9e" category="doc">Ask Me AI 助理首頁整合</block>
   <block id="a00917b130263595d00c3587c0e66a4f" category="paragraph">Workload Factory 控制台主頁內建了 Ask Me AI 助手，您可以向它諮詢有關自身儲存環境的問題，直接從您的環境中獲取個人化見解，並查看先前的對話。您可以與 Ask Me 互動，了解您的工作負載、排查問題並深入了解 Workload Factory ——所有操作均無需離開控制台。</block>
-  <block id="4b51d568a03393cf563624fcbba9143f" category="doc">一次性評估</block>
-  <block id="c87bb3ba3f920d90c329acddc2fe7385" category="paragraph">Workload Factory 現在提供一次性評估服務，隨時分析您的資料庫部署配置—無論是新部署、遷移後部署、故障排除等等。您將獲得最佳化部署配置並遵循最佳實務的建議。這是您無需完全投入設定流程即可使用這項架構完善的功能的絕佳機會。您無需在 Workload Factory 中儲存憑證、註冊資料庫資源或設定外部連線即可評估您的資料庫。</block>
   <block id="e0b323aef6004097ab97ed7d77d06388" category="inline-link-macro">對您的資料庫部署進行一次性評估</block>
   <block id="fa29998d7ba5fe0bb430a106a7dd86bc" category="paragraph"><block ref="fa29998d7ba5fe0bb430a106a7dd86bc" category="inline-link-macro-rx"></block></block>
   <block id="db82eade40cb0d84a1267b72a439d756" category="section-title">支援在 Microsoft SQL Server 上註冊 Always On 可用性群組，以及在 Oracle 上註冊 Data Guard</block>
@@ -1347,31 +1340,22 @@
   <block id="650870d240bc8043d6977b1a1c975ce0" category="cell">19c、21c</block>
   <block id="edd8af7eaa131179cb70a5db89636876" category="cell">Data Guard</block>
   <block id="5a493bafe2fb35c6f5339a3ced4adce7" category="paragraph">Workload Factory 每日分析資料庫組態。每日分析提供架構完善的狀態、洞察分析與建議。您可以自動修復組態問題，以符合最佳實務做法。</block>
-  <block id="4ec20b6d44158ae33673aec51794c09b" category="paragraph">您可以查看組態問題的建議，並在 Workload Factory 主控台的資料庫清單中修復這些問題。</block>
-  <block id="4a798c756347a1f9f34d59ee0f8fb34d" category="paragraph">對於 SQL Server 資源，您可以執行一次性評估，以檢視資料庫組態的最佳實務做法。您無需註冊資源或儲存認證即可執行一次性評估。</block>
   <block id="cac9df85ec3dc71ff56914f00db69c7a" category="list-text">運算：包含作業系統修補程式</block>
   <block id="2ad033703ef0dac4d52edf323faa1918" category="paragraph">Oracle 的架構完善分析功能會在組態依賴其他組態時通知您，並列出最佳化連結組態的動作。</block>
-  <block id="89e18dfb2f73d9aea558dfa37e146a3d" category="section-title">對 SQL Server 資料庫組態執行一次性評估</block>
-  <block id="fc1edbd0f2b3738c54d8f2398b9945a0" category="paragraph">執行一次性評估，以了解 Microsoft SQL Server 執行個體的架構是否良好，而無需儲存憑證或註冊執行個體。</block>
-  <block id="f64b3cb5f5729ca0945015067499622a" category="paragraph">您可以根據需要多次執行指令碼並上傳結果。每次上傳後，Well-Architected 狀態和分析都會根據最新結果進行更新。</block>
   <block id="a790f6e28b649137870b00ccf3589944" category="list-text">選擇選單 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> 然後選擇 *Databases* 。</block>
-  <block id="6095483bc20af74df0bca991f69f87dd" category="list-text">在 *Inventory* 中，選擇 *One-time assessment* &gt; *Learn about assessment*。查看有關一次性評估的資訊。</block>
   <block id="be87867043f3a6e9ec43771084901ca7" category="list-text">選擇 *Download script* 。</block>
   <block id="79473441dd5f2ed36fd986a90db7c9cf" category="list-text">將指令碼複製到您的 Microsoft SQL Server 主機。</block>
   <block id="cea7ad7075430d1bd0be98ca92701bcb" category="list-text">在 PowerShell 中運行腳本。一個腳本會收集所有實例的元資料。</block>
   <block id="b33feb370f35879eddcd9293135b1df1" category="list-text">選擇 *One-time assessment* &gt; *Upload* 。找到檔案並將其上傳到 Workload Factory 主控台。</block>
-  <block id="3065c918b2ac31893b241184a7b01959" category="list-text">檢視任何組態的建議。建議包括最佳實務做法，以及組態未最佳化時可能遇到的問題。</block>
   <block id="c70615017296ffdedf34ebb8730eaa77" category="section-title">在開始修復、關閉和重新啟動配置之前</block>
   <block id="50bac09b5a353b5521f0ff914fff6808" category="list-text">此資源必須在 Workload Factory 中註冊，且儲存類型必須為 FSx for ONTAP。<block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
   <block id="85d21d13c3f58b49f129dacfb4cab3a1" category="list-text">在修改設定或組態之前，請檢閱每項建議。對於 RSS 和 MAXDOP，請在變更正式作業環境之前測試建議的設定以檢查效能。</block>
-  <block id="550a46672ef778ca098c025d166cdd66" category="admonition">修復組態可能會導致執行個體停機或服務中斷。請務必在選擇修復組態之前仔細檢閱建議。</block>
   <block id="88228ff74222d41a7b32f7f73b628495" category="paragraph">選擇 *Export PDF* 以下載調查結果報告。</block>
   <block id="370419de045637c04622917ea040cd16" category="section-title">關閉資料庫組態分析</block>
   <block id="b3af08a651def642c2a5741d36be8f65" category="paragraph">為避免不必要的警報和不準確的最佳化結果，請忽略不適用於您資料庫環境的特定資料庫配置分析。您可以隨時重新啟動已忽略的組態分析。</block>
   <block id="d6b510061438391f590afb73a62f098c" category="paragraph">您可以隨時重新啟動分析。此組態不再計入總優化分數。</block>
   <block id="61ab3b6f044b76185565a9f1d6db2113" category="section-title">重新啟動已關閉的組態分析</block>
   <block id="99206ff00921c00b5d887375a108d167" category="paragraph">您可以隨時重新啟動已關閉的組態分析。您可以選擇一個或多個組態進行重新啟動。</block>
-  <block id="a25cb7311bf319b68bd7bff7ddd66451" category="paragraph">組態分析功能已重新啟用，並將從現在開始每天執行。</block>
   <block id="1a0cee014540e049f4d08b2ca15c2447" category="inline-link-macro">架構完善的評估</block>
   <block id="27cfb14157482da47350bb4484f7e792" category="paragraph">註冊執行個體（SQL Server）或資料庫（Oracle）涉及三個步驟：執行個體或資料庫驗證、FSx for ONTAP 驗證以及準備工作。準備工作包括在執行個體或資料庫上安裝 AWS、NetApp 和 PowerShell 模組，並符合 Workload Factory for Databases 功能（例如 <block ref="b3b44214924ae2c9e9d272ea31fcb428" category="inline-link-macro-rx"></block> 或 <block ref="d21897e75c312daacd024fa4c48cd6a7" category="inline-link-macro-rx"></block>）的最低要求。</block>
   <block id="672da44d295a636d22c64c52022ddf81" category="paragraph">Workload Factory 僅支援 Microsoft SQL Server 執行個體和 Oracle 資料庫的註冊和管理。根據您在 Workload Factory 中選擇的 AWS 帳戶憑證，PostgreSQL 主機會出現在清單中。目前，Workload Factory 僅支援在 Amazon Linux 作業系統上執行的未註冊 PostgreSQL 執行個體。</block>
@@ -1388,7 +1372,6 @@
   <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">您可以忽略不適用於您環境的配置分析。這樣可以避免不必要的警報和不準確的優化結果。當您忽略某個設定分析時，Workload Factory 不會將該配置計入總最佳化得分。</block>
   <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">為什麼這很重要</block>
   <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factory 將最佳實踐應用於大型儲存、資料庫和 VMware 環境，透過持續評估與建議洞察和修復措施相結合。在 Workload Factory 主控台中套用的自動化修復可減少人為錯誤、確保統一管理，並維護工作負載基礎架構的效能和可靠性。</block>
-  <block id="b5c307f00406a7d48e2b76f206ea8a5f" category="paragraph">要進行完整的資料庫環境分析、您必須執行以下操作：</block>
   <block id="a54f5b1fe41547cbf19f1fb9561340dc" category="inline-link-macro">註冊您的資源</block>
   <block id="32b8a48be5601496781767d49968bd51" category="list-text"><block ref="89c16bb90a0fdfa73434baf56ae09810" category="inline-link-macro-rx"></block> 並確保它們在線。</block>
   <block id="25c44f83d9d45dc9b2d2a8e46fcc5b19" category="list-text">關聯連結。連結連線功能使 Workload Factory 能夠分析所有資料庫部署組態，例如儲存配置和恢復能力。</block>
@@ -1466,4 +1449,57 @@
   <block id="d1bf0b5773fa36619112fb2acdf1eef8" category="paragraph">針對 Oracle 資料庫最佳化 FSx for ONTAP 組態，啟用精簡配置、自動調整大小和磁碟區空間管理。設定適當的快照原則和分層策略，以平衡效能和成本。對於 LUN，請確保正確的作業系統類型對齊、空間保留和空間配置設定，以防止寫入失敗並啟用自動空間回收。</block>
   <block id="ec2a0c82b5fcb006f719221eff77fb9b" category="paragraph">配置作業系統設定以獲得最佳 Oracle 資料庫效能，包括針對資料庫工作負載調整核心參數，以及針對網路檔案系統存取適當配置 NFS 或 dNFS 設定。</block>
   <block id="f02adb373ce0bc6a6199e6d2ba9b16b9" category="paragraph">定期套用作業系統修補程式，以確保 Oracle 資料庫環境的安全性、穩定性和效能改善。</block>
+  <block id="d3274d6efd4629f10f6f21cf8a7c4820" category="doc">SQL Server 一次性評估</block>
+  <block id="8f42179a48bba7e0f2424b2849f64183" category="paragraph">Workload Factory 現在提供一次性評估，可隨時分析您的 SQL Server 資料庫部署配置 - 新部署、遷移後、故障排除等。您將獲得有助於最佳化部署配置並遵循最佳實務的建議。這是您無需完全投入設定流程即可使用架構完善功能的絕佳機會。您無需在 Workload Factory 中儲存憑證、註冊資料庫資源或設定外部連線即可評估資料庫。</block>
+  <block id="d34510ab77e099f24fa05ceac3ff150c" category="paragraph">架構完善的分析包括以下針對 Oracle 的新組態：</block>
+  <block id="9712df87120461c7551eea660e7f56a6" category="list-text">*Oracle Critical Patch Updates*：評估支援的 Oracle 自我管理資料庫安裝中缺少的安全性修補程式。</block>
+  <block id="b435abcc161e9c500b1c5e15baf0cbb5" category="list-text">*跨區域複寫*：檢查是否為服務於 Oracle 資料庫的 FSx for ONTAP 檔案系統啟用了跨區域複寫（CRR）。</block>
+  <block id="1d06ae97515a4da719bc482a7995a7ae" category="list-text">*應用程式一致性快照*：檢查 Oracle 資料庫是否受應用程式一致性快照保護，並使用 NetApp SnapCenter。</block>
+  <block id="6a4580dc4131680131fa2d1447aa1deb" category="section-title">Oracle 的一次性評估</block>
+  <block id="d268ce986e7de78be251b51e6126893b" category="paragraph">Workload Factory 現在提供一次性評估，可隨時分析您的 Oracle 資料庫部署配置 - 新部署、遷移後、故障排除等。您將獲得有助於最佳化部署配置並遵循最佳實務的建議。這是您無需完全投入設定流程即可使用架構完善功能的機會。您可以在不於 Workload Factory 中儲存憑證、不註冊資料庫資源或不設定外部連線的情況下評估資料庫。</block>
+  <block id="9c1752a9ed07d091eb717e163d985505" category="inline-link-macro">對您的 Oracle 資料庫部署進行一次性評估</block>
+  <block id="24d6ca96f32f995e477bbc13ce8c644a" category="paragraph"><block ref="24d6ca96f32f995e477bbc13ce8c644a" category="inline-link-macro-rx"></block></block>
+  <block id="48b0592736b0870e6ff074c10fa5d5dc" category="section-title">改善多個 Oracle 資料庫的成本節約</block>
+  <block id="dc6ae15573380001d0b7dbda2215fba9" category="paragraph">我們增強了 Oracle 的成本節約分析，為多個 Oracle 內部部署資料庫提供統一的儲存解決方案，這些資料庫將儲存在一個 FSx for ONTAP 檔案系統上。這種整合透過減少多個資料庫所需的檔案系統數量來優化儲存成本，從而進一步降低成本。</block>
+  <block id="141e832aa43713671a149000ddcd45e7" category="inline-link-macro">探索在內部部署 Oracle 上偵測到的資料庫的節省方案</block>
+  <block id="dd6bcf35b4739e139fa3041add91e4f2" category="paragraph"><block ref="dd6bcf35b4739e139fa3041add91e4f2" category="inline-link-macro-rx"></block></block>
+  <block id="7e54439875eebd71cfeadcfc4cd7318c" category="paragraph">Workload Factory 將多個 Oracle 內部部署資料庫整合為單一 FSx for ONTAP 組態建議，以最佳化成本節約，除非所選的內部部署資料庫超過單一 FSx for ONTAP 檔案系統的處理量、容量或 IOPS 限制。</block>
+  <block id="6a5a609e38cb11091780a0494b87dc4d" category="paragraph">您也可以忽略不適用於您環境的組態分析，以避免產生額外的警示和不準確的結果。</block>
+  <block id="c3ebb88c8fa8ba0761ebfdca34dbaeba" category="paragraph">您可以在 Workload Factory 控制台的「資料庫清單」或「架構完善」儀表板中檢視和修復問題。</block>
+  <block id="3a40f68be193f0f7bc0c01f622d3cc5f" category="paragraph">您也可以選擇執行一次性評估，以審查資料庫組態的最佳實務做法，而無需儲存認證資料或註冊資源。</block>
+  <block id="e112d8634bd0280eb27ad63e9eeb9493" category="list-text">應用程式：包括 Microsoft SQL Server 授權、Microsoft SQL Server 修補程式和 MAXDOP 設定</block>
+  <block id="f953bb98ceaddd49464d672fa425c300" category="list-text">應用程式：包括 Oracle Critical Patch Updates</block>
+  <block id="10e1b7780581fec77099c3ba816f3e14" category="list-text">恢復能力：包括跨區域複寫（CRR）和應用程式一致的快照</block>
+  <block id="c20a2029d45b71b182aee84243212b9d" category="section-title">對您的組態進行一次性評估</block>
+  <block id="384e59575141746d138a94a55377c6e8" category="paragraph">執行一次性評估，以了解您的 Microsoft SQL Server 執行個體或 Oracle 資料庫的架構是否良好，而無需儲存認證或註冊資源。</block>
+  <block id="c091a4936cfa8cd2dad53f925bd5aee2" category="paragraph">您可以多次執行指令碼並上傳結果。Workload Factory 會在每次上傳時更新架構完善的狀態和洞見。</block>
+  <block id="16764b6a83028e2ba158fe9563fecab0" category="open-title">Microsoft SQL Server 執行個體</block>
+  <block id="95cd2e65021832c5e9a52a57dd07ff01" category="list-text">在 *Inventory* 中，選擇 *SQL Server* 作為引擎類型。</block>
+  <block id="9d98556bc723d858756fd0843fa906c5" category="list-text">選擇 *One-time assessment* &gt; *Learn about assessment*。檢閱有關一次性評估的資訊。</block>
+  <block id="7c0eb4e39d40023981d0b86686c042ec" category="list-text">檢視任何組態的建議。Workload Factory 的建議中包含最佳實務做法，並指出如果組態未最佳化可能出現的問題。</block>
+  <block id="5ffbe0deb5b41148dc58e63a20df8411" category="open-title">Oracle 資料庫</block>
+  <block id="5ff54af90bf02d618e79e03c84b00700" category="list-text">在 *Inventory* 中，選擇 *Oracle* 作為引擎類型。</block>
+  <block id="8cbcf57c0ff19d0bfce7c5c703a985f7" category="list-text">將 Python 指令碼複製到您的 Oracle 資料庫主機。</block>
+  <block id="1403600c1d66e7c9c648c18cc49caa6b" category="list-text">在對應的 shell 中執行腳本。一個腳本會收集所有資料庫的元資料。</block>
+  <block id="b740c45c86ad7009995655549fe4d99e" category="paragraph">持續監控資料庫環境並自動修正組態問題需要符合下列需求。一次性評估不需要這些需求。</block>
+  <block id="ee3b04dc1b62ec42f7ac81b2e81b8eef" category="admonition">修正組態可能會導致停機或服務中斷。在選擇修正組態之前，請務必仔細檢閱建議。</block>
+  <block id="4f03f223eb6e4b828fcf786106ebb22e" category="list-text">除了複製清理之外，對於所有組態，請檢閱建議詳細資料以瞭解修正問題的影響。某些補救作業可能會導致停機或服務中斷。</block>
+  <block id="9d5f676da687a39223271ef7bfef6eb9" category="paragraph">Workload Factory 停止組態分析。</block>
+  <block id="26ba07e6b041d123d9095fe79f71abdf" category="paragraph">Workload Factory 會重新啟動組態分析，並從現在開始每天執行一次。</block>
+  <block id="ba52550fcd053eb4d2da84f252e514e7" category="section-title">分析資料庫環境的選項</block>
+  <block id="fbce5e4a64b8c9a295b946cbdba92ed5" category="paragraph">Workload Factory 提供以下選項來分析您的資料庫環境：</block>
+  <block id="b2583e88253ca682a5c9db94c5ed500a" category="inline-link-macro">一次性評估</block>
+  <block id="552cb152a031acb4dd113f600e3ade2f" category="list-text">*一次性評估*：執行<block ref="8a4d4d5f036a1f87bfd488fd328f962f" category="inline-link-macro-rx"></block>以了解您的 Microsoft SQL Server 執行個體或 Oracle 資料庫的架構良好狀態，而無需儲存憑證或註冊資源。</block>
+  <block id="2527ed375db9a9b7c8eb438c41b158af" category="list-text">*持續監控*：註冊資源以啟用持續監控。Workload Factory 會定期分析您的資料庫環境、持續提供最佳化組態的建議，並自動修復問題。</block>
+  <block id="c00d1429cf92a83ae3a29f82b1d3ce87" category="paragraph">對於一次性評估，您只需提供一次要分析的 Microsoft SQL Server 執行個體或 Oracle 資料庫的認證即可。</block>
+  <block id="8e66e2128d2e2c62b019aa77535f4ea2" category="paragraph">若要進行持續監控，您需要在 AWS 帳戶中註冊資源、建立連結關聯並授予權限。</block>
+  <block id="e498749f3c42246d50b15c81c101d988" category="section-title">應用程式</block>
+  <block id="6f4c4a3cb603b128e3558183f12a42c6" category="list-text">*Oracle 重大修補程式更新*</block>
+  <block id="b73450e7e11af7bf00f7fdd615541be8" category="paragraph">套用最新的 Oracle Critical Patch Updates 以解決安全性漏洞，並維護資料庫環境的完整性。定期檢閱並套用修補程式，以防範潛在威脅並確保符合安全性最佳實務做法。</block>
+  <block id="02bc0523497de72834c4c7990e32d155" category="section-title">彈性</block>
+  <block id="10797d31a69c2502a69facc97a069c1e" category="list-text">*跨區域複寫（CRR）*</block>
+  <block id="a9e4d72be69fab8a75dc490382a14871" category="paragraph">啟用跨區域複製（CRR）可增強 Oracle 資料庫的資料可用性和災難復原能力。CRR 透過在地理位置分散的區域複製資料，幫助防止區域性中斷，並確保業務連續性。</block>
+  <block id="4e3fbfcdffe2becd73a5b796de048459" category="list-text">*應用程式一致性快照*</block>
+  <block id="0d0d1e59f6397f54691afa326ea6ef15" category="paragraph">使用應用程式一致性快照搭配 NetApp SnapCenter，可以在特定時間點對磁碟區資料進行準確可靠的快照。這可確保應用程式流暢運行，資料安全無虞。SnapCenter 能簡化備份流程，幫助您快速且準確地恢復資料，從而減少停機時間，並保護最重要的工作負載。</block>
+  <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">2026 年 4 月 6 日</block>
 </blocks>

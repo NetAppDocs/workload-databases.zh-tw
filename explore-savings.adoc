@@ -348,6 +348,9 @@ Workload Factory 將多個內部部署 SQL Server 主機整合為單一 FSx for 
 
 
 . 如需更準確的結果，請更新運算資訊，儲存設備和效能詳細資料。
++
+Workload Factory 將多個 Oracle 內部部署資料庫整合為單一 FSx for ONTAP 組態建議，以最佳化成本節約，除非所選的內部部署資料庫超過單一 FSx for ONTAP 檔案系統的處理量、容量或 IOPS 限制。
+
 
 
 --
