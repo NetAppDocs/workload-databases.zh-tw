@@ -1125,7 +1125,6 @@
   <block id="4a553bf9ebe9a32a6743c78be912cfbc" category="list-text">選擇*關閉*。</block>
   <block id="0b640c5e49490eb540208568a359492b" category="summary">了解NetApp Workload Factory for Databases 的新功能。</block>
   <block id="1c6922f994b9da3a35a8bb9b0644ab56" category="doc">NetApp Workload Factory for Databases 的新功能</block>
-  <block id="61c3763b08308c467fdf40bde3586f08" category="section-title">2026年10月6日</block>
   <block id="7197ea7b7a0d83f9800a417fd561bcea" category="sidebar">在NetApp Workload Factory 中的 FSx for ONTAP檔案系統儲存之上部署 Microsoft SQL Server 設定並管理資料庫環境。</block>
   <block id="d83c92d6ba7b7ac809c4616f670db665" category="sidebar">NetApp Workload Factory for Databases 文檔</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp控制台</block>
@@ -1502,4 +1501,5 @@
   <block id="4e3fbfcdffe2becd73a5b796de048459" category="list-text">*應用程式一致性快照*</block>
   <block id="0d0d1e59f6397f54691afa326ea6ef15" category="paragraph">使用應用程式一致性快照搭配 NetApp SnapCenter，可以在特定時間點對磁碟區資料進行準確可靠的快照。這可確保應用程式流暢運行，資料安全無虞。SnapCenter 能簡化備份流程，幫助您快速且準確地恢復資料，從而減少停機時間，並保護最重要的工作負載。</block>
   <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">2026 年 4 月 6 日</block>
+  <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025 年 10 月 6 日</block>
 </blocks>
