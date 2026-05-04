@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: connect-clone-cicd.html 
-keywords: connect ci/cd pipeline, clone 
-summary: 使用 REST API 程式碼將沙箱複本連線至 CI/CD 管線、以透過自動化改善軟體交付。 
+keywords: connect ci and cd pipeline, clone 
+summary: 將沙箱複本連接到 CI 和 CD 管道，並使用 REST API 程式碼，透過自動化改善軟體交付。 
 ---
 = 將沙箱複本連線至 CI/CD 工具
 :allow-uri-read: 

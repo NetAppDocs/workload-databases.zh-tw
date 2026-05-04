@@ -37,7 +37,7 @@ Workload Factory 分析以下配置的良好架構狀態：
 * 儲存配置：包含容量管理、精簡配置、分層策略、快照、Microsoft 多路徑 I/O (MPIO) 狀態和 MPIO 逾時設置
 * 計算：包括調整大小、作業系統修補程式和網路適配器設置，如接收方縮放 (RSS)、TCP 卸載和 MTU 對齊
 * 應用程式：包括 Microsoft SQL Server 授權、Microsoft SQL Server 修補程式和 MAXDOP 設定
-* 彈性：包含本機快照、FSx for ONTAP備份、跨區域複製 (CRR) 和 Microsoft SQL 高可用性。
+* 恢復能力：包括本機快照、備份組態、跨區域複寫（CRR）、Microsoft SQL 高可用性和複本清理
 * 克隆：包括刷新和刪除在 Workload Factory 內部或外部創建的超過 60 天的克隆（沙盒）的選項
 
 
@@ -48,7 +48,7 @@ Workload Factory 分析以下配置的良好架構狀態：
 * 儲存佈局：包括重做日誌放置、臨時表空間放置、資料檔案放置、存檔日誌放置、控製檔案放置和二進位檔案放置、ASM 磁碟組 LUN 數量
 * 運算：包含作業系統修補程式
 * 應用程式：包括 Oracle Critical Patch Updates
-* 恢復能力：包括跨區域複寫（CRR）和應用程式一致的快照
+* 恢復能力：包括跨區域複寫（CRR）、應用程式一致性快照、備份組態和複本清理
 
 
 Oracle 的架構完善分析功能會在組態依賴其他組態時通知您，並列出最佳化連結組態的動作。
