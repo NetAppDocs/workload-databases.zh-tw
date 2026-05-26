@@ -8,7 +8,7 @@
 
 您現在可以為 PostgreSQL 伺服器部署高可用度（ HA ）組態。
 
-link:https://review.docs.netapp.com/us-en/workload-databases_explore-savings-updates/create-postgresql-server.html["建立 PostgreSQL 伺服器"]
+link:https://docs.netapp.com/us-en/workload-databases/create-postgresql-server.html["建立 PostgreSQL 伺服器"]
 
 
 

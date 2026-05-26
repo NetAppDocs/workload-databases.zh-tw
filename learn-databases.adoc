@@ -17,7 +17,7 @@ NetApp Workload Factory for Databases 是一種端到端資料庫部署和維護
 
 == 什麼是NetApp Workload Factory for Databases？
 
-NetApp Workload Factory for Databases 可偵測、評估、規劃、配置並將 Microsoft SQL Server 資料移至Amazon FSx for NetApp ONTAP (FSx for ONTAP) 部署，並進行最佳化以滿足您的效能和成本預期，同時遵循業界最佳實務。在整個生命週期中， NetApp Workload Factory for Databases 為 FSx for ONTAP上的資料庫提供持續的最佳化和管理。
+NetApp Workload Factory for Databases 可發現、評估、規劃、配置及移轉 Microsoft SQL Server、PostgreSQL 和 Oracle 資料至 Amazon FSx for NetApp ONTAP（FSx for ONTAP）部署，這些部署經過最佳化，可滿足您的效能與成本預期，同時遵循業界最佳實踐。NetApp Workload Factory for Databases 持續在 FSx for ONTAP 上最佳化並管理資料庫。
 
 有關 Workload Factory 的更多信息，請參閱link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作負載工廠概述"^]。
 
@@ -25,7 +25,7 @@ NetApp Workload Factory for Databases 可偵測、評估、規劃、配置並將
 
 == 工作負載工廠為自管理資料庫帶來的優勢
 
-Workload Factory 為自管理資料庫提供了以下有益的最佳實踐和自動化。
+Workload Factory 為自我管理的資料庫提供最佳實務做法和自動化功能。
 
 
 
@@ -43,7 +43,7 @@ Workload Factory 為自管理資料庫提供了以下有益的最佳實踐和自
 
 Workload Factory 透過 _Codebox_ 引入了內建自動化功能。  Codebox 具有以下自動化優勢：
 
-* * 程式碼片段產生 * ：基礎架構即程式碼（ IAC ）片段是在資源建立期間產生、可與現有的協調工作流程無縫整合。
+* *程式碼片段產生*：Workload Factory 在資源建立期間產生基礎架構即程式碼（IaC）片段，從而實現與現有協調工作流程的無縫整合。
 * *基礎架構即程式碼副駕駛*：Codebox 是一個基礎架構即程式碼 (IaC) 副駕駛，可協助開發人員和 DevOps 產生程式碼來執行 Workload Factory 支援的任何操作。
 * * 程式碼檢視器與自動化目錄 * ： Codebox 提供程式碼檢視器、可快速分析自動化、並提供自動化目錄、供日後快速重複使用。
 
@@ -54,16 +54,16 @@ Workload Factory 透過 _Codebox_ 引入了內建自動化功能。  Codebox 具
 
 資料庫工作負載工廠提供以下功能：
 
-* * 簡單、快速的部署 * ：選擇規格問題的答案、並免除調查如何在 AWS 上配置和設定 Microsoft SQL Server 所需的時間、藉此簡化和簡化您的資源配置體驗。
-* *自動編排*：可透過 Workload Factory 控制台使用_Quick_和_Advanced_建立部署模式、Chatbot 和透過 Codebox 的 AWS CloudFormation。
-* * 內建功能 * ：利用內建於部署組態的 NetApp 、 Microsoft 和 Amazon 最佳實務做法和 AWS 資源選擇。
-* * 成本預估 * ：使用節省計算機評估潛在成本節約效益，並詳細說明使用 Elastic Block Store 和適用於 Windows 檔案伺服器的 FSX 進行現有 Microsoft SQL Server 部署的儲存，運算， SQL 授權，快照和複製明細成本，相較於適用於 ONTAP 的 FSX 。
-* *可重複使用的自動化模板*：從 Workload Factory Codebox 建立、重複使用和自訂 CloudFormation 模板，以便將來在多個環境中部署 Microsoft SQL Server。
-* * AWS 資源探索與資源配置 * ：自動偵測適用於 ONTAP 的 FSX 上的 Microsoft SQL Server 、適用於 Windows 檔案伺服器的 FSX 、以及從 AWS 帳戶部署的彈性區塊存放區。資料庫庫存是探索其他 AWS 儲存系統中伺服器的成本節約機會的起點、或是 ONTAP 型伺服器和執行個體的 FSX 管理工具。
-* * 沙箱建立 * ：建立隨需隔離的資料庫環境、可用於測試、整合、診斷及訓練、而不影響正式作業資料。
-* * 資料庫建立 * ：使用 _Quick_ 或 _Advanced_ 建立模式、為現有的 Microsoft SQL Server 建立使用者資料庫、以設定資料庫定序、檔案名稱和大小。內含儲存組態。
-* * 工作監控 * ：監控及追蹤資料庫工作執行進度、並在發生任何故障時診斷及疑難排解問題。
-* * 持續最佳化 * ：持續離線掃描您的 Microsoft SQL Server 資產、為您提供深入見解、商機及建議的完整報告、協助您達到卓越營運績效。
+* *成本估算*：使用節省計算器評估潛在的成本節省，該計算器估算並詳細列出現有 Microsoft SQL Server 和 Oracle 部署（使用 Elastic Block Store、FSx for Windows File Server 和內部部署）與 FSx for ONTAP 相比的儲存、運算、SQL 授權、快照和複製的逐項成本。
+* *簡單、快速的部署*：透過內建的 NetApp、Microsoft 和 Amazon 最佳實踐，簡化和最佳化主機、資料庫和沙箱的配置，消除在 AWS 上對 Microsoft SQL Server 和 PostgreSQL 執行個體進行手動配置的複雜性。
++
+** 使用 Workload Factory 控制台的 _Quick_ 或 _Advanced_ 建立模式進行部署，或透過 Codebox 建立、重複使用和自訂 AWS CloudFormation 範本，以便在多個環境中進行未來的部署。
+** 按需建立隔離資料庫，提供儲存配置和沙箱複本，可用於測試、整合、診斷和培訓，而不會影響正式作業資料。
+
+
+* *Well-architected 評估功能*：持續掃描您的 Microsoft SQL Server 和 Oracle 環境，產生包含洞察、機會和建議的綜合報告，協助您根據 AWS 最佳實務做法實現卓越營運、安全性、可靠性、效能效率和成本最佳化。
+* *錯誤分析*：使用 AI 分析器分析和疑難排解記錄錯誤，以取得詳細的錯誤訊息、疑難排解步驟和解決問題的建議。
+* *集中管理*：在一個位置即可管理 FSx for ONTAP 上的 Microsoft SQL Server、Oracle 和 PostgreSQL 資源。在 Workload Factory 中，您可以查看已連線的基礎架構、AWS 帳戶、憑證、已連線的 FSx for ONTAP 檔案系統、儲存使用情況（包括 NFS 磁碟區和 iSCSI LUN）、保護狀態、效能、架構良好狀態和錯誤分析。
 
 
 
@@ -96,7 +96,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["了�
 
 == 支援的組態
 
-Workload Factory 根據 AWS、 NetApp ONTAP、Microsoft SQL Server、Oracle 和 PostgreSQL 最佳實務支援下列資料庫引擎、版本、作業系統和部署模型。
+您可以按照 AWS、NetApp ONTAP、Microsoft SQL Server、Oracle 和 PostgreSQL 的最佳實踐，將 Workload Factory 與下列資料庫引擎、版本、作業系統和部署模型一起使用。
 
 [cols="1,1,1,1"]
 |===
@@ -169,7 +169,7 @@ Workload Factory 根據 AWS、 NetApp ONTAP、Microsoft SQL Server、Oracle 和 
 
 == 整合式 AWS 服務
 
-資料庫包含下列整合式 AWS 服務：
+資料庫包含以下整合的 AWS 服務：
 
 * CloudForation
 * 簡單通知服務
