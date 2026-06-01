@@ -212,10 +212,10 @@ VPC DNS 屬性 `EnableDnsSupport` 並 `EnableDnsHostnames` 經過修改、以啟
 +
 ... * 為 ONTAP * 建立新的 FSX ：輸入使用者名稱和密碼。
 +
-+ 對於 GovCloud 帳戶，請以下列格式輸入 FSx for ONTAP 憑證的 AWS SSM Parameter ARN 值： `{fsx:{"username":"fsxadmin","password":"pass"}}`。AWS SSM Parameter 類型必須為「Secure String」，名稱格式為 `/netapp/wlmdb/<anyname>`。深入瞭解如何從link:https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ssm.html["AWS GovCloud 文件"^]擷取 SSM 參數。
+對於 GovCloud 帳戶，請以下列格式輸入 FSx for ONTAP 憑證的 AWS SSM Parameter ARN 值： `{fsx:{"username":"fsxadmin","password":"pass"}}`。AWS SSM Parameter 類型必須為「Secure String」，名稱格式為 `/netapp/wlmdb/<anyname>`。深入瞭解如何從 link:https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ssm.html["AWS GovCloud 文件"^] 擷取 SSM 參數。
 
 +
-+ 新的 FSx for ONTAP 檔案系統可能會增加 30 分鐘或更長的安裝時間。
+適用於 ONTAP 檔案系統的全新 FSX 可能會增加 30 分鐘以上的安裝時間。
 
 ... * 為 ONTAP * 選擇現有的 FSX ：從下拉式功能表中選取適用於 ONTAP 名稱的 FSX 、然後輸入檔案系統的使用者名稱和密碼。
 +
