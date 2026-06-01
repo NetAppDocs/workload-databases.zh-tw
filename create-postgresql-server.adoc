@@ -105,6 +105,9 @@ NOTE: HA 部署僅支援用於 ONTAP 組態的多重可用性區域（ MAZ ） F
 +
 ... * 為 ONTAP * 建立新的 FSX ：輸入使用者名稱和密碼。
 +
+對於 GovCloud 帳戶，請以下列格式輸入 FSx for ONTAP 憑證的 AWS SSM Parameter ARN 值： `{fsx:{"username":"fsxadmin","password":"pass"}}`。AWS SSM Parameter 類型必須為「Secure String」，名稱格式為 `/netapp/wlmdb/<anyname>`。深入瞭解如何從link:https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ssm.html["AWS GovCloud 文件"^]擷取 SSM 參數。
+
++
 適用於 ONTAP 檔案系統的全新 FSX 可能會增加 30 分鐘以上的安裝時間。
 
 ... * 為 ONTAP * 選擇現有的 FSX ：從下拉式功能表中選取適用於 ONTAP 名稱的 FSX 、然後輸入檔案系統的使用者名稱和密碼。
@@ -187,15 +190,7 @@ VPC DNS 屬性 `EnableDnsSupport` 並 `EnableDnsHostnames` 經過修改、以啟
 ... 在 * 叢集組態 - 節點 2* 欄位中、從 * 可用性區域 * 下拉式功能表中選取 MAZ FSX for ONTAP 組態的次要可用區域、並從 * 子網路 * 下拉式功能表中選取子網路。
 
 
-.. * 安全性群組 * ：選取現有的安全性群組或建立新的安全性群組。
-+
-在新伺服器部署期間，會將兩個安全群組附加至 SQL 節點（ EC2 執行個體）。
-
-+
-... 建立工作負載安全群組，以允許 PostgreSQL 所需的連接埠和通訊協定。
-... 對於新的適用於 ONTAP 檔案系統的 FSX ，系統會建立新的安全性群組，並將其附加至 SQL 節點。對於現有的 ONTAP 檔案系統 FSX ，與其相關的安全性群組會自動新增至 PostgreSQL 節點，以便與檔案系統進行通訊。
-
-
+.. *安全群組*：建立工作負載安全群組是為了允許 PostgreSQL 所需的連接埠和協定。此外，您可以選擇一個或多個安全群組。
 
 
 . 在 * 應用程式設定 * 下、提供下列項目：
@@ -204,6 +199,9 @@ VPC DNS 屬性 `EnableDnsSupport` 並 `EnableDnsHostnames` 經過修改、以啟
 .. 從下拉式功能表中選取 * PostgreSQL 版本 * 。
 .. * 資料庫伺服器名稱 * ：輸入資料庫叢集名稱。
 .. * 資料庫認證 * ：輸入新服務帳戶的使用者名稱和密碼、或使用 Active Directory 中現有的服務帳戶認證。
++
+對於 GovCloud 帳戶，請以下列格式輸入憑證的 AWS SSM Parameter ARN 值： `{fsx:{"username":"fsxadmin","password":"pass"}}`。AWS SSM Parameter 類型必須為「Secure String」，名稱格式為 `/netapp/wlmdb/<anyname>`。深入瞭解如何從link:https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ssm.html["AWS GovCloud 文件"^]擷取 SSM 參數。
+
 
 
 . 在 * 連線 * 下，選取金鑰配對以安全地連線至執行個體。
@@ -214,7 +212,10 @@ VPC DNS 屬性 `EnableDnsSupport` 並 `EnableDnsHostnames` 經過修改、以啟
 +
 ... * 為 ONTAP * 建立新的 FSX ：輸入使用者名稱和密碼。
 +
-適用於 ONTAP 檔案系統的全新 FSX 可能會增加 30 分鐘以上的安裝時間。
++ 對於 GovCloud 帳戶，請以下列格式輸入 FSx for ONTAP 憑證的 AWS SSM Parameter ARN 值： `{fsx:{"username":"fsxadmin","password":"pass"}}`。AWS SSM Parameter 類型必須為「Secure String」，名稱格式為 `/netapp/wlmdb/<anyname>`。深入瞭解如何從link:https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ssm.html["AWS GovCloud 文件"^]擷取 SSM 參數。
+
++
++ 新的 FSx for ONTAP 檔案系統可能會增加 30 分鐘或更長的安裝時間。
 
 ... * 為 ONTAP * 選擇現有的 FSX ：從下拉式功能表中選取適用於 ONTAP 名稱的 FSX 、然後輸入檔案系統的使用者名稱和密碼。
 +
@@ -245,7 +246,7 @@ ONTAP 的 FSX 自訂加密金鑰並未根據服務適用性列出。選取適當
 AWS 託管金鑰會根據服務適用性進行篩選。
 
 .. * 標記 * ：您可以選擇性地新增最多 40 個標記。
-.. * 簡易通知服務 * ：您也可以選擇從下拉式功能表中選取 Microsoft SQL Server 的 SNS 主題、為此組態啟用簡易通知服務（ SNS ）。
+.. *Simple Notification Service*：您可以選擇從下拉式選單中選擇 PostgreSQL 的 SNS 主題，為該組態啟用 Simple Notification Service (SNS)。
 +
 ... 啟用 Simple Notification Service 。
 ... 從下拉式功能表中選取 ARN 。
