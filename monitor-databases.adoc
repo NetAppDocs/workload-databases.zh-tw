@@ -15,6 +15,7 @@ summary: 在NetApp Workload Factory for Databases 中追蹤資料庫作業並監
 
 
 
+[[about-this-task]]
 == 關於這項工作
 
 資料庫提供工作監控功能、讓您追蹤工作進度、並在發生任何故障時進行診斷和疑難排解。您可以依類型和狀態篩選工作，使用搜尋功能尋找工作，然後下載工作表。
@@ -35,6 +36,7 @@ summary: 在NetApp Workload Factory for Databases 中追蹤資料庫作業並監
 
 
 
+[[monitor-jobs]]
 == 監控工作
 
 監控作業以追蹤資料庫操作的進度，並在發生任何故障時進行診斷和排除故障。

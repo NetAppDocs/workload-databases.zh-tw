@@ -15,6 +15,7 @@ summary: 分析資料庫工作負載工廠中的錯誤日誌。
 
 
 
+[[about-this-task]]
 == 關於這項工作
 
 錯誤日誌分析和修復有助於維護 SQL Server 執行個體和 Oracle 資料庫的健康狀況和效能。有效解讀錯誤日誌需要仔細分析和專業知識。手動監控、錯誤偵測和根本原因分析非常耗時，而且容易出錯。這些挑戰可能會延遲問題解決、增加停機時間並導致營運效率低落。智慧錯誤日誌分析器透過以下主要優勢應對了這些挑戰：
@@ -33,6 +34,7 @@ link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrock 定價"^]
 
 
 
+[[data-privacy-and-security]]
 === 資料隱私和安全
 
 此功能透過以下措施確保資料隱私和安全：
@@ -45,6 +47,7 @@ link:https://aws.amazon.com/bedrock/pricing/["Amazon Bedrock 定價"^]
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 要使用錯誤日誌分析器，您必須滿足以下先決條件：
@@ -86,6 +89,7 @@ Amazon Bedrock VPC 端點可確保您的 SQL Server 或 Oracle 主機與 Amazon 
 
 
 
+[[analyze-error-logs]]
 == 分析錯誤日誌
 
 使用 Workload Factory 控制台分析 SQL Server 錯誤日誌。

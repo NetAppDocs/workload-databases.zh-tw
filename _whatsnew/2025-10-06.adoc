@@ -4,12 +4,14 @@
 
 
 
+[[bluexp-workload-factory-now-netapp-workload-factory]]
 === BlueXP workload factory現為NetApp工作負載工廠
 
 BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。因此， BlueXP workload factory已重新命名為NetApp工作負載工廠。
 
 
 
+[[enhancements-for-oracle-in-the-workload-factory-console]]
 === Workload Factory 控制台中針對 Oracle 的增強功能
 
 
@@ -36,12 +38,14 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[databases-inventory-enhancements]]
 === 資料庫清單增強功能
 
 在資料庫清單中的執行個體畫面中，對於 Microsoft SQL Server 的單一或多個實例，或對於 Oracle 的單一或多個資料庫，可以使用修復、延遲和消除配置問題的選項。
 
 
 
+[[optimize-savings-based-on-usage-for-amazon-elastic-block-store-ebs]]
 === 根據 Amazon Elastic Block Store (EBS) 的使用情況優化節省
 
 Workload Factory 可以分析您的 EBS 效能使用情況，然後建議最佳且最具成本效益的 FSx for ONTAP配置，以便您可以透過切換到 FSx for ONTAP來節省更多。

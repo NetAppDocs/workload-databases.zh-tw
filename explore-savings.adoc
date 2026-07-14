@@ -15,6 +15,7 @@ summary: 比較使用 Amazon Elastic Block Store （ EBS ），適用於 Windows
 
 
 
+[[about-this-task]]
 == 關於這項工作
 
 您可以使用「儀表板」、「清單」標籤或「探索節省」標籤，探索在 EBS、FSx for Windows File Server 和內部部署儲存設備上執行資料庫工作負載的節省成本。在所有情況下，您都可以使用節省計算機，比較在 FSx for ONTAP 檔案系統上執行 Microsoft SQL Server 工作負載的各種成本組成（例如儲存、運算、SQL 授權、快照和複本）與 Elastic Block Store（EBS）、FSx for Windows File Server 和內部部署儲存設備上執行資料庫工作負載的成本。
@@ -35,6 +36,7 @@ image:screenshot-ebs-savings-calculator-update.png["節約計算機頁面的螢�
 
 
 
+[[sql-server-deployment-analysis]]
 == SQL Server 部署分析
 
 此計算器會檢查您的 SQL Server 部署，以確保所使用的資源和功能與 SQL Server 版本相符。以下是計算器在建議降級至 Standard Edition 之前檢查的關鍵因素和條件：
@@ -64,6 +66,7 @@ image:screenshot-ebs-savings-calculator-update.png["節約計算機頁面的螢�
 
 
 
+[[calculator-options]]
 == 計算機選項
 
 有兩種計算機選項可供您比較系統與適用於 ONTAP 的 FSX 之間的成本—自訂和偵測。
@@ -76,6 +79,7 @@ image:screenshot-ebs-savings-calculator-update.png["節約計算機頁面的螢�
 
 
 
+[[explore-savings-via-customization]]
 === 透過自訂功能探索節約效益
 
 自訂計算器中的欄位，以獲得最準確的節省估算值。
@@ -214,6 +218,7 @@ image:screenshot-ebs-savings-calculator-update.png["節約計算機頁面的螢�
 
 
 
+[[explore-savings-for-detected-hosts]]
 === 探索偵測到的主機的節約效益
 
 Workload Factory 會輸入偵測到的主機特性，以便您可以自動探索節省成本的方法。
@@ -479,6 +484,7 @@ Workload Factory 將多個 Oracle 內部部署資料庫整合為單一 FSx for O
 
 
 
+[[deploy-microsoft-sql-server-on-aws-ec2-using-fsx-for-ontap]]
 == 使用適用於 ONTAP 的 FSX 在 AWS EC2 上部署 Microsoft SQL Server
 
 如果您想要切換至 FSX for ONTAP 以節省成本、請按一下 * 建立 * 、直接從「建立新的 Microsoft SQL 伺服器」精靈建立建議的組態、或按一下 * 儲存 * 來儲存建議的組態以供稍後使用。

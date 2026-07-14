@@ -37,6 +37,7 @@ NOTE: 使用 SMB 通訊協定的 Microsoft SQL Server 不支援資料庫建立�
 
 
 
+[[create-a-database]]
 == 建立資料庫
 
 在 Workload Factory 中，您可以使用「快速建立」或「進階建立」部署模式來完成此任務。

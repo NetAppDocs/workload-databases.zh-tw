@@ -19,6 +19,7 @@ link:optimize-overview.html["了解 Workload Factory 中的配置分析和良好
 
 
 
+[[about-this-task]]
 == 關於這項工作
 
 Workload Factory 每日分析資料庫組態。每日分析提供架構完善的狀態、洞察分析與建議。您可以自動修復組態問題，以符合最佳實務做法。
@@ -55,6 +56,7 @@ Oracle 的架構完善分析功能會在組態依賴其他組態時通知您，�
 
 
 
+[[perform-a-one-time-assessment-of-your-configurations]]
 == 對您的組態進行一次性評估
 
 執行一次性評估，以了解您的 Microsoft SQL Server 執行個體或 Oracle 資料庫的架構是否良好，而無需儲存認證或註冊資源。
@@ -102,6 +104,7 @@ Oracle 的架構完善分析功能會在組態依賴其他組態時通知您，�
 ====
 
 
+[[before-you-begin-fixing-dismissing-and-re-activating-configurations]]
 == 在開始修復、關閉和重新啟動配置之前
 
 持續監控資料庫環境並自動修正組態問題需要符合下列需求。一次性評估不需要這些需求。
@@ -113,6 +116,7 @@ Oracle 的架構完善分析功能會在組態依賴其他組態時通知您，�
 
 
 
+[[fix-a-configuration-issue]]
 == 修復配置問題
 
 修正在 FSx for ONTAP儲存上執行的 SQL Server 或 Oracle 環境的設定問題。
@@ -161,6 +165,7 @@ Workload Factory 開始修復問題。選擇「作業監控」標籤來查看操
 
 
 
+[[dismiss-the-analysis-of-database-configurations]]
 == 關閉資料庫組態分析
 
 為避免不必要的警報和不準確的最佳化結果，請忽略不適用於您資料庫環境的特定資料庫配置分析。您可以隨時重新啟動已忽略的組態分析。
@@ -182,6 +187,7 @@ Workload Factory 停止組態分析。
 
 
 
+[[reactivate-a-dismissed-configuration-analysis]]
 == 重新啟動已關閉的組態分析
 
 您可以隨時重新啟動已關閉的組態分析。您可以選擇一個或多個組態進行重新啟動。

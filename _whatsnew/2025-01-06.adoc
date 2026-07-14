@@ -4,6 +4,7 @@
 
 
 
+[[databases-dashboard-enhancements]]
 === 資料庫儀表板增強功能
 
 儀表板的全新設計包括下列圖形和增強功能：
@@ -19,6 +20,7 @@
 
 
 
+[[new-completed-with-issues-status-in-job-monitoring]]
 === 工作監控中的新「已完成但有問題」狀態
 
 資料庫的工作監控功能現在提供新的「已完成但有問題」狀態，讓您瞭解哪些子工作有問題，以及問題為何。
@@ -27,6 +29,7 @@ link:https://docs.netapp.com/us-en/workload-databases/monitor-databases.html["�
 
 
 
+[[assessment-and-optimization-for-over-provisioned-microsoft-sql-server-licenses]]
 === 針對過度配置的 Microsoft SQL Server 授權進行評估與最佳化
 
 節約計算機現在會評估您的 Microsoft SQL Server 部署是否需要 Enterprise Edition 。如果授權過度配置，計算機會建議降級。您可以透過最佳化應用程式，自動降級資料庫中的授權。

@@ -15,6 +15,7 @@ NetApp Workload Factory for Databases 是一種端到端資料庫部署和維護
 
 
 
+[[what-is-netapp-workload-factory-for-databases]]
 == 什麼是NetApp Workload Factory for Databases？
 
 NetApp Workload Factory for Databases 可發現、評估、規劃、配置及移轉 Microsoft SQL Server、PostgreSQL 和 Oracle 資料至 Amazon FSx for NetApp ONTAP（FSx for ONTAP）部署，這些部署經過最佳化，可滿足您的效能與成本預期，同時遵循業界最佳實踐。NetApp Workload Factory for Databases 持續在 FSx for ONTAP 上最佳化並管理資料庫。
@@ -23,12 +24,14 @@ NetApp Workload Factory for Databases 可發現、評估、規劃、配置及移
 
 
 
+[[workload-factory-benefits-for-self-managed-databases]]
 == 工作負載工廠為自管理資料庫帶來的優勢
 
 Workload Factory 為自我管理的資料庫提供最佳實務做法和自動化功能。
 
 
 
+[[best-practices]]
 === 最佳實務做法
 
 * AWS Cloud 、 Microsoft Windows 和 SQL 伺服器、以及 NetApp ONTAP 在 EC2 執行個體上部署 SQL Server 的整合式知識。
@@ -39,6 +42,7 @@ Workload Factory 為自我管理的資料庫提供最佳實務做法和自動化
 
 
 
+[[automation-with-workload-factory-codebox]]
 === 使用 Workload Factory Codebox 實現自動化
 
 Workload Factory 透過 _Codebox_ 引入了內建自動化功能。  Codebox 具有以下自動化優勢：
@@ -50,6 +54,7 @@ Workload Factory 透過 _Codebox_ 引入了內建自動化功能。  Codebox 具
 
 
 
+[[workload-factory-for-databases-features]]
 === 資料庫工作負載工廠功能
 
 資料庫工作負載工廠提供以下功能：
@@ -68,6 +73,7 @@ Workload Factory 透過 _Codebox_ 引入了內建自動化功能。  Codebox 具
 
 
 
+[[benefits-of-amazon-fsx-for-ontap-for-self-managed-databases]]
 == Amazon FSX for ONTAP 的優點、適用於自行管理的資料庫
 
 * * 耐用性、可用度及可靠性 * ：適用於 ONTAP 的 FSX 提供多項功能、可提升在適用於 ONTAP 的 FSX 上託管的自我管理資料庫的耐用性與可用度、例如支援單一和多重可用性區域部署的高可用度、應用程式感知快照、使用複寫改善災難恢復、以及有效率的備份。
@@ -79,6 +85,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["了�
 
 
 
+[[tools-to-use-netapp-workload-factory]]
 == 使用NetApp Workload Factory 的工具
 
 您可以將NetApp Workload Factory 與以下工具一起使用：
@@ -94,6 +101,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["了�
 
 
 
+[[supported-configurations]]
 == 支援的組態
 
 您可以按照 AWS、NetApp ONTAP、Microsoft SQL Server、Oracle 和 PostgreSQL 的最佳實踐，將 Workload Factory 與下列資料庫引擎、版本、作業系統和部署模型一起使用。
@@ -167,6 +175,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["了�
 |===
 
 
+[[integrated-aws-services]]
 == 整合式 AWS 服務
 
 資料庫包含以下整合的 AWS 服務：
@@ -180,6 +189,7 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["了�
 
 
 
+[[regions]]
 == 區域
 
 支援 ONTAP 適用的 FSX 的所有商業地區均支援資料庫。 https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["檢視支援的Amazon地區。"^]
@@ -187,13 +197,13 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["了�
 不支援下列 AWS 區域：
 
 * 中國地區
-* GovCloud（美國）地區
 * 秘密雲端
 * Top Secret Cloud
 
 
 
 
+[[getting-help]]
 == 取得協助
 
 Amazon FSX for NetApp ONTAP 的功能是AWS的第一方解決方案。如需與適用於 ONTAP 檔案系統、基礎架構或任何使用此服務的解決方案的 FSX 相關的問題或技術支援問題、請使用 AWS 管理主控台的支援中心、開啟 AWS 的支援案例。選取「FSXfor ONTAP Sf1」服務和適當的類別。提供建立AWS支援案例所需的其餘資訊。

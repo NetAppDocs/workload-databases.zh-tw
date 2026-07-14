@@ -4,6 +4,7 @@
 
 
 
+[[optimize-savings-in-the-databases-calculator-for-amazon-elastic-block-store-ebs]]
 === 優化 Amazon Elastic Block Store (EBS) 資料庫節省計算器
 
 兩個新的計算器功能改進了在使用 EBS 儲存體運行多個執行個體時的成本節約分析，以便您可以透過切換到 FSx for ONTAP來節省更多成本。
@@ -16,12 +17,14 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html#explo
 
 
 
+[[excel-report-available-for-the-well-architected-dashboard]]
 === 針對架構完善的儀表板，提供 Excel 報表。
 
 您可以下載一份結構完善的儀表板的 Excel 報表。該報告提供了資料庫資源的良好架構狀態，並針對所有資源配置（包括作業系統和ONTAP 的子配置）提出了建議。
 
 
 
+[[error-log-analyzer-available-for-oracle-databases]]
 === 適用於 Oracle 資料庫的錯誤日誌分析器
 
 Agentic AI 驅動的錯誤日誌分析器適用於 Oracle 資料庫。此功能利用先進的機器學習演算法自動偵測和分析日誌檔案中的錯誤。該工具旨在透過根據日誌中識別的模式向開發人員提供可操作的見解和建議來簡化故障排除過程。
@@ -30,6 +33,7 @@ link:https://docs.netapp.com/us-en/workload-databases/analyze-error-logs.html["�
 
 
 
+[[well-architected-analysis-for-oracle]]
 === 針對 Oracle 的良好架構分析
 
 精心設計的分析包括兩種新的儲存容量配置。此分析評估並修復了現有 Oracle 資料庫部署中與交換空間分配和檔案系統餘裕相關的設定問題。

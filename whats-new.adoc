@@ -15,10 +15,12 @@ summary: 了解NetApp Workload Factory for Databases 的新功能。
 
 
 
+[[01-june-2026]]
 == 2026 年 6 月 1 日
 
 
 
+[[custom-savings-for-oracle-hosts-on-amazon-elastic-block-store]]
 === Amazon Elastic Block Store 上 Oracle 主機的自訂節省成本
 
 NetApp Workload Factory for Databases 可讓您自訂 Amazon Elastic Block Store （EBS） 上 Oracle 主機的節省策略。您可以調整快照頻率、複製副本數量和磁碟區詳細資料等多個欄位，以查看它們如何影響節省的成本。
@@ -27,6 +29,7 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["探�
 
 
 
+[[multiple-security-group-selection-for-microsoft-sql-server-and-postgresql-host-deployment]]
 === 為 Microsoft SQL Server 和 PostgreSQL 主機部署選擇多個安全性群組
 
 NetApp Workload Factory for Databases 現在可讓您在部署 Microsoft SQL Server 和 PostgreSQL 主機時選擇多個安全性群組。這使您在配置資料庫工作負載的網路安全性時擁有更大的靈活性。
@@ -37,16 +40,19 @@ NetApp Workload Factory for Databases 現在可讓您在部署 Microsoft SQL Ser
 
 
 
+[[support-for-aws-govcloud-us-in-netapp-workload-factory]]
 === 在 NetApp Workload Factory 中支援 AWS GovCloud（US）
 
 NetApp Workload Factory 支援 AWS GovCloud（US）帳戶。使用 GovCloud 帳戶，您可以在 AWS GovCloud（US）區域中部署和管理資料庫工作負載。
 
 
 
+[[03-may-2026]]
 == 2026 年 5 月 3 日
 
 
 
+[[well-architected-analysis-for-oracle]]
 === 針對 Oracle 的良好架構分析
 
 架構完善的分析包括以下針對 Oracle 的新組態：
@@ -59,6 +65,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[automatic-savings-calculation-for-oracle-databases-on-amazon-elastic-block-store-ebs]]
 === 在 Amazon Elastic Block Store （EBS） 上自動計算 Oracle 資料庫的節省成本
 
 Workload Factory 會自動分析用於 Oracle 資料庫的 EBS 儲存成本，並推薦最佳且最具成本效益的 FSx for ONTAP 配置。您可以選擇多個 EBS 主機進行分析，然後比較在 EBS 上執行這些主機與在 FSx for ONTAP 執行這些主機的成本。
@@ -67,6 +74,7 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html#explo
 
 
 
+[[crr-configuration-prerequisite-check]]
 === CRR 組態先決條件檢查
 
 為資料庫環境啟用跨區域複製 (CRR) 時，Database 工作負載會檢查 FSx for ONTAP 檔案系統是否具有關聯的連結和複製設定。如果需要，Database 工作負載會將您重新導向至 FSx for ONTAP Storage 工作負載複製精靈，以便以與 Storage 相同的方式處理連結先決條件。
@@ -75,16 +83,19 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[associated-luns-for-microsoft-sql-server-databases]]
 === Microsoft SQL Server 資料庫的關聯 LUN
 
 現在，您可以在 Workload Factory 的「清單」畫面中查看對應到 Microsoft SQL Server 資料庫的 LUN。這樣，您可以輕鬆識別哪些 LUN 與哪些資料庫關聯，從而更輕鬆地管理和最佳化儲存資源。
 
 
 
+[[06-april-2026]]
 == 2026 年 4 月 6 日
 
 
 
+[[well-architected-analysis-for-oracle]]
 === 針對 Oracle 的良好架構分析
 
 架構完善的分析包括以下針對 Oracle 的新組態：
@@ -98,6 +109,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[one-time-assessment-for-oracle]]
 === Oracle 的一次性評估
 
 Workload Factory 現在提供一次性評估，可隨時分析您的 Oracle 資料庫部署配置 - 新部署、遷移後、故障排除等。您將獲得有助於最佳化部署配置並遵循最佳實務的建議。這是您無需完全投入設定流程即可使用架構完善功能的機會。您可以在不於 Workload Factory 中儲存憑證、不註冊資料庫資源或不設定外部連線的情況下評估資料庫。
@@ -106,6 +118,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[improved-cost-savings-for-several-oracle-databases]]
 === 改善多個 Oracle 資料庫的成本節約
 
 我們增強了 Oracle 的成本節約分析，為多個 Oracle 內部部署資料庫提供統一的儲存解決方案，這些資料庫將儲存在一個 FSx for ONTAP 檔案系統上。這種整合透過減少多個資料庫所需的檔案系統數量來優化儲存成本，從而進一步降低成本。
@@ -114,10 +127,12 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html#explo
 
 
 
+[[02-march-2026]]
 == 2026 年 3 月 02 日
 
 
 
+[[one-time-assessment-for-sql-server]]
 === SQL Server 一次性評估
 
 Workload Factory 現在提供一次性評估，可隨時分析您的 SQL Server 資料庫部署配置 - 新部署、遷移後、故障排除等。您將獲得有助於最佳化部署配置並遵循最佳實務的建議。這是您無需完全投入設定流程即可使用架構完善功能的絕佳機會。您無需在 Workload Factory 中儲存憑證、註冊資料庫資源或設定外部連線即可評估資料庫。
@@ -126,6 +141,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[registration-support-for-always-on-availability-groups-on-microsoft-sql-server-and-data-guard-on-oracle]]
 === 支援在 Microsoft SQL Server 上註冊 Always On 可用性群組，以及在 Oracle 上註冊 Data Guard
 
 現在，您可以在 NetApp Workload Factory 的資料庫工作負載中發現並註冊採用 Always On 可用性群組（AOAG）部署模型的 Microsoft SQL Server 執行個體以及採用 Data Guard 部署模型的 Oracle 資料庫。此增強功能可讓您在 Workload Factory 主控台中更好地管理 SQL Server 和 Oracle 資源。
@@ -138,6 +154,7 @@ link:https://docs.netapp.com/us-en/workload-databases/register-instance.html#reg
 
 
 
+[[well-architected-analysis-for-oracle]]
 === 針對 Oracle 的良好架構分析
 
 精心設計的分析包括 Oracle 的 *Operating system patches* ，用於檢查您的作業系統是否安裝了最新的修補程式，並告訴您如何安裝。
@@ -148,6 +165,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[oracle-on-premises-database-environments-cost-analysis-and-migration-planning]]
 === Oracle 內部部署資料庫環境成本分析與遷移規劃
 
 Workload Factory for Databases 現在可以分析並協助您規劃將 Oracle 內部部署資料庫移轉至 Amazon FSx for NetApp ONTAP。您可以使用節省成本計算機來估算在雲端中執行 Oracle 內部部署資料庫環境的成本，並檢閱將內部部署資料庫環境移轉至雲端的建議。
@@ -156,6 +174,7 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["探�
 
 
 
+[[new-ask-me-bookmark-available-in-workload-factory]]
 === Workload Factory 中新增了「問我」書籤
 
 我們在 Workload Factory 控制台的每個畫面上都新增了 Ask Me 書籤。這項改進讓您在需要協助時更輕鬆快速地存取 Ask Me。Ask Me 是我們的 AI 助手，您可以詢問有關自身工作負載環境的問題，直接從您的環境中獲取個人化見解，並查看先前的對話記錄。
@@ -166,10 +185,12 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overvie
 
 
 
+[[02-february-2026]]
 == 2026 年 2 月 02 日
 
 
 
+[[improved-cost-savings-for-several-database-hosts-on-microsoft-sql-server-on-premises]]
 === 提高了多個內部部署 Microsoft SQL Server 資料庫主機的成本節約
 
 針對 Microsoft SQL Server 內部部署儲存設備的成本節約分析已增強，可為單一 FSx for ONTAP 檔案系統上的多個資料庫主機提供整合儲存解決方案。這種整合透過減少多個資料庫主機所需的檔案系統數量來優化儲存成本，從而提高成本節約效益。
@@ -178,6 +199,7 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html#explo
 
 
 
+[[well-architected-analysis-for-oracle]]
 === 針對 Oracle 的良好架構分析
 
 精心設計的分析方案包含四個針對 Oracle 儲存配置分析的全新子評估：dNFS 啟用、dNFS 一致性 IP 解析、dNFS 設定檔和 dNFS `nosharecache`。這些評估與在 Oracle 環境中啟用和設定 Direct NFS（dNFS）相關，dNFS 繞過主機 NFS 用戶端，直接在 NFS 伺服器上執行 NFS 檔案操作，從而提高 I/O 效能，並降低主機和儲存系統的負載，因為 I/O 執行效率更高。
@@ -186,20 +208,24 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[04-january-2026]]
 == 2026年1月4日
 
 
 
+[[ask-me-ai-assistant-home-page-integration]]
 === Ask Me AI 助理首頁整合
 
 Workload Factory 控制台主頁內建了 Ask Me AI 助手，您可以向它諮詢有關自身儲存環境的問題，直接從您的環境中獲取個人化見解，並查看先前的對話。您可以與 Ask Me 互動，了解您的工作負載、排查問題並深入了解 Workload Factory ——所有操作均無需離開控制台。
 
 
 
+[[18-december-2025]]
 == 2025年12月18日
 
 
 
+[[active-directory-integration-enhancements]]
 === Active Directory 整合增強功能
 
 使用「進階建立」選項部署 Microsoft SQL Server 時，資料庫工作負載工廠將包含三個新的 Active Directory (AD) 欄位。這些增強功能可讓您指定 Active Directory 加入首選項並使用託管服務帳戶。
@@ -215,10 +241,12 @@ link:https://docs.netapp.com/us-en/workload-databases/create-database.html["部�
 
 
 
+[[27-november-2025]]
 == 2025年11月27日
 
 
 
+[[optimize-savings-in-the-databases-calculator-for-amazon-elastic-block-store-ebs]]
 === 優化 Amazon Elastic Block Store (EBS) 資料庫節省計算器
 
 兩個新的計算器功能改進了在使用 EBS 儲存體運行多個執行個體時的成本節約分析，以便您可以透過切換到 FSx for ONTAP來節省更多成本。
@@ -231,12 +259,14 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html#explo
 
 
 
+[[excel-report-available-for-the-well-architected-dashboard]]
 === 針對架構完善的儀表板，提供 Excel 報表。
 
 您可以下載一份結構完善的儀表板的 Excel 報表。該報告提供了資料庫資源的良好架構狀態，並針對所有資源配置（包括作業系統和ONTAP 的子配置）提出了建議。
 
 
 
+[[error-log-analyzer-available-for-oracle-databases]]
 === 適用於 Oracle 資料庫的錯誤日誌分析器
 
 Agentic AI 驅動的錯誤日誌分析器適用於 Oracle 資料庫。此功能利用先進的機器學習演算法自動偵測和分析日誌檔案中的錯誤。該工具旨在透過根據日誌中識別的模式向開發人員提供可操作的見解和建議來簡化故障排除過程。
@@ -245,6 +275,7 @@ link:https://docs.netapp.com/us-en/workload-databases/analyze-error-logs.html["�
 
 
 
+[[well-architected-analysis-for-oracle]]
 === 針對 Oracle 的良好架構分析
 
 精心設計的分析包括兩種新的儲存容量配置。此分析評估並修復了現有 Oracle 資料庫部署中與交換空間分配和檔案系統餘裕相關的設定問題。
@@ -253,16 +284,19 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[02-november-2025]]
 == 2025年11月2日
 
 
 
+[[dashboard-improvements]]
 === 儀錶板改進
 
 新的儀表板經過簡化和更好地組織，可以在一個屏幕上更清晰地概覽數據庫資源和工作負載工廠的關鍵功能；一張卡片突出顯示數據庫資源，一張卡片提供有關架構良好評分和分析的信息，一張卡片顯示錯誤分析，兩張卡片顯示每月成本和潛在節省，一張卡片顯示有關沙盒的信息。
 
 
 
+[[well-architected-analysis-for-oracle]]
 === 針對 Oracle 的良好架構分析
 
 精心設計的分析包括對 Oracle 配置的以下評估和修復：
@@ -276,6 +310,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[permissions-changes-for-workload-factory-for-databases]]
 === 資料庫工作負載工廠的權限變更
 
 Workload Factory for Databases 更新了權限策略，以便更清楚地說明特定操作所需的權限，並允許您更精細地選擇所需的權限。新增憑證時，您將有三個權限選項可供選擇，而不是先前的權限模型（_唯讀_和_讀/寫_）。新的權限模型將權限策略分解如下：
@@ -291,12 +326,14 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[well-architected-dashboard-screen-added]]
 === 新增了設計精良的儀錶板介面。
 
 資料庫選單中新增了一個名為「架構完善的儀錶板」的畫面。透過此畫面，您可以獲得整個資料庫環境配置狀態的總計視圖。
 
 
 
+[[edit-protection-for-database-deployments-in-netapp-backup-and-recovery]]
 === NetApp Backup and Recovery中資料庫部署的編輯保護
 
 在 Workload Factory 控制台中，您可以選擇編輯受保護資源的保護，然後您將被重新導向到NetApp Console中的備份和恢復，在那裡您可以修改保護策略或計劃。
@@ -305,6 +342,7 @@ link:https://docs.netapp.com/us-en/workload-databases/protect-sql-server.html["�
 
 
 
+[[error-filtering-by-tags-available-for-the-error-analysis-feature]]
 === 錯誤分析功能支援按標籤進行錯誤篩選
 
 使用 Workload Factory 中的錯誤分析功能時，您可以依照基礎架構的標籤篩選並檢視 Microsoft SQL Server 錯誤日誌。這項增強功能可協助您快速對問題進行分類、檢查和解決問題。
@@ -313,16 +351,19 @@ link:https://docs.netapp.com/us-en/workload-databases/analyze-error-logs.html["�
 
 
 
+[[06-october-2025]]
 == 2025 年 10 月 6 日
 
 
 
+[[bluexp-workload-factory-now-netapp-workload-factory]]
 === BlueXP workload factory現為NetApp工作負載工廠
 
 BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。因此， BlueXP workload factory已重新命名為NetApp工作負載工廠。
 
 
 
+[[enhancements-for-oracle-in-the-workload-factory-console]]
 === Workload Factory 控制台中針對 Oracle 的增強功能
 
 
@@ -349,12 +390,14 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[databases-inventory-enhancements]]
 === 資料庫清單增強功能
 
 在資料庫清單中的執行個體畫面中，對於 Microsoft SQL Server 的單一或多個實例，或對於 Oracle 的單一或多個資料庫，可以使用修復、延遲和消除配置問題的選項。
 
 
 
+[[optimize-savings-based-on-usage-for-amazon-elastic-block-store-ebs]]
 === 根據 Amazon Elastic Block Store (EBS) 的使用情況優化節省
 
 Workload Factory 可以分析您的 EBS 效能使用情況，然後建議最佳且最具成本效益的 FSx for ONTAP配置，以便您可以透過切換到 FSx for ONTAP來節省更多。
@@ -363,10 +406,12 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html#explo
 
 
 
+[[1-september-2025]]
 == 2025年9月1日
 
 
 
+[[agentic-ai-powered-error-log-analyzer]]
 === Agentic AI 驅動的錯誤日誌分析器
 
 Agentic AI 驅動的錯誤日誌分析器是一項新功能，它利用先進的機器學習演算法自動偵測和分析日誌檔案中的錯誤。該工具旨在透過根據日誌中識別的模式向開發人員提供可操作的見解和建議來簡化故障排除過程。
@@ -375,6 +420,7 @@ link:https://docs.netapp.com/us-en/workload-databases/analyze-error-logs.html["�
 
 
 
+[[oracle-support]]
 === Oracle 支援
 
 工作負載工廠包括對 Oracle 資料庫的支援。在工作負載工廠控制台中，您可以從庫存中查看 Oracle 資料庫，註冊資料庫以使用工作負載工廠中的進階功能，並使用架構良好的功能分析 Oracle 資料庫以符合最佳實務。良好的架構分析決定了 Oracle 資料庫的儲存配置是否已最佳化。您可以使用此資訊對資料庫部署做出明智的決策並確保它們有效運作。
@@ -383,12 +429,14 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[support-for-microsoft-sql-server-deployments-on-second-generation-fsx-for-ontap-file-systems]]
 === 支援在第二代 FSx for ONTAP檔案系統上部署 Microsoft SQL Server
 
 工作負載工廠支援在第二代 FSx for ONTAP檔案系統上部署 Microsoft SQL Server。此增強功能可讓您在管理 SQL Server 工作負載的同時利用第二代檔案系統中的最新功能和效能改進。
 
 
 
+[[windows-authentication-for-sql-server-protection]]
 === 用於 SQL Server 保護的 Windows 驗證
 
 使用 Windows 憑證對 Microsoft SQL Server 執行個體進行驗證已嵌入到工作流程中，以準備使用BlueXP backup and recovery原來保護 Microsoft SQL Server 主機。這曾經是需要手動完成的先決步驟。相反，如果您尚未使用 Windows 憑證在工作負載工廠中註冊主機，系統將提示您與管理員存取權限共用 Windows 憑證。
@@ -397,6 +445,7 @@ link:https://docs.netapp.com/us-en/workload-databases/protect-sql-server.html["�
 
 
 
+[[well-architected-analysis-includes-mtu-alignment-for-sql-server]]
 === 架構良好的分析包括 SQL Server 的 MTU 對齊
 
 精心設計的分析評估並修復了 FSx for ONTAP儲存上 Microsoft SQL Server 跨端點的最大傳輸單元 (MTU) 錯位。調整 MTU 設定有助於最佳化網路效能並減少 SQL Server 工作負載的延遲。
@@ -405,10 +454,12 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[12-august-2025]]
 == 2025年8月12日
 
 
 
+[[bluexp-backup-and-recovery-now-supports-microsoft-sql-server-workloads]]
 === BlueXP backup and recovery現在支援 Microsoft SQL Server 工作負載
 
 BlueXP backup and recovery可讓您備份、還原、驗證和複製 Microsoft SQL Server 資料庫和可用性群組。從工作負載工廠控制台，您可以存取和使用BlueXP backup and recovery保護 Microsoft SQL Server 工作負載。
@@ -419,10 +470,12 @@ link:https://docs.netapp.com/us-en/workload-databases/protect-sql-server.html["�
 
 
 
+[[04-august-2025]]
 == 2025年8月4日
 
 
 
+[[well-architected-analysis-includes-high-availability-cluster-validation]]
 === 架構良好的分析包括高可用性叢集驗證
 
 精心設計的分析現在包括對高可用性叢集的驗證。此驗證會從伺服器端檢查所有與叢集相關的配置，包括兩個節點上的磁碟可用性和配置、Windows 叢集配置和故障轉移準備。這可確保 Windows 叢集正確設定並可在需要時成功進行故障轉移。
@@ -431,6 +484,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[multi-level-menu-available-for-instances]]
 === 實例可用的多層選單
 
 工作負載工廠控制台現在包括實例的多層選單。此變更為管理實例提供了更有條理、更直觀的導航結構。實例管理的選單選項包括檢視實例儀表板、檢視資料庫、建立資料庫和建立沙盒克隆。
@@ -439,6 +493,7 @@ image:manage-instance-table-menu.png["具有多層選單結構的實例表選單
 
 
 
+[[new-authentication-option-to-explore-savings]]
 === 新的身份驗證選項可探索節省
 
 當 `NT Authority\SYSTEM`使用者在 Microsoft SQL Server 上沒有足夠的權限，您可以使用 SQL Server 憑證進行驗證，或將缺少的 SQL Server 權限新增至 `NT Authority\SYSTEM`。
@@ -447,10 +502,12 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["探�
 
 
 
+[[30-june-2025]]
 == 2025 年 6 月 30 日
 
 
 
+[[bluexp-workload-factory-notification-service-support]]
 === BlueXP 工作負載工廠通知服務支持
 
 BlueXP 工作負載工廠通知服務支援工作負載工廠向 BlueXP 警報服務或 Amazon SNS 主題發送通知。發送到 BlueXP 警報的通知會顯示在 BlueXP 警報面板中。當工作負載工廠向 Amazon SNS 主題發布通知時，該主題的訂閱者（例如人員或其他應用程式）會在為該主題配置的終端節點上收到通知（例如電子郵件或簡訊）。
@@ -465,6 +522,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.
 
 
 
+[[onboarding-enhancement-for-registering-instances]]
 === 用於註冊實例的入門增強功能
 
 資料庫工作負載工廠改進了在 Amazon FSx for NetApp ONTAP 儲存上執行的執行個體的註冊流程。現在，您可以批次選擇實例進行註冊。一旦執行個體註冊，您就可以在工作負載工廠控制台內建立和管理資料庫資源。
@@ -473,6 +531,7 @@ link:https://docs.netapp.com/us-en/workload-databases/manage-instance.html["執�
 
 
 
+[[analysis-and-fix-for-microsoft-multipath-io-timeout-setting]]
 === Microsoft Multipath I/O 逾時設定的分析與修復
 
 資料庫執行個體的良好架構狀態現在包括對 Microsoft 多路徑 I/O (MPIO) 逾時設定的分析和修復。將 MPIO 逾時設定為 60 秒可確保 FSx for ONTAP 儲存故障轉移期間的連線性和穩定性。如果 MPIO 設定未正確設置，工作負載工廠將提供修復程序，將 MPIO 逾時值設定為 60 秒。
@@ -481,6 +540,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[enhancements-to-graphics-in-instance-inventory]]
 === 實例清單中的圖形增強功能
 
 從實例庫存螢幕，各種資源利用率圖表（如吞吐量和 IOPS）現在顯示 7 天的數據，以便您可以更有效地從工作負載工廠控制台監控 SQL 節點的效能。從 SQL 節點收集的效能指標將保存在 Amazon CloudWatch 中，可用於 Logs Insights 或與您環境中的其他分析服務整合。
@@ -489,6 +549,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[support-for-windows-authentication-in-workload-factory]]
 === 工作負載工廠中對 Windows 身份驗證的支持
 
 現在，工作負載工廠支援使用 Windows 驗證的使用者來註冊執行個體並從管理功能中受益的 SQL Server 驗證。
@@ -497,16 +558,19 @@ link:https://docs.netapp.com/us-en/workload-databases/register-instance.html["�
 
 
 
+[[03-june-2025]]
 == 2025 年 6 月 03 日
 
 
 
+[[postgresql-and-oracle-detection]]
 === PostgreSQL 和 Oracle 檢測
 
 現在，您可以在工作負載工廠控制台中發現 AWS 帳戶中執行 PostgreSQL 伺服器資料庫和 Oracle 資料庫部署的執行個體。已發現的實例將顯示在資料庫清單中。
 
 
 
+[[updated-optimization-terminology]]
 === 更新了「優化」術語
 
 工作負載工廠以前稱為“最佳化”，現在使用“良好架構的問題”和“良好架構的狀態”來描述資料庫配置的分析，並使用“修復”來描述改善資料庫配置以滿足最佳實踐建議的機會的補救措施。
@@ -515,6 +579,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-overview.html["�
 
 
 
+[[improved-onboarding-for-instances]]
 === 改進實例的入門
 
 工作負載工廠現在使用「註冊」來表示執行個體管理，而不是使用「未偵測到」、「未託管」或「託管」等術語。新的註冊流程包括對執行個體進行身份驗證和準備，以便您可以在工作負載工廠控制台中建立、監控、分析和修復資料庫配置中的資源。註冊流程中的準備步驟指示您的實例是否已準備好進行管理。
@@ -523,10 +588,12 @@ link:https://docs.netapp.com/us-en/workload-databases/manage-instance.html["執�
 
 
 
+[[04-may-2025]]
 == 2025 年 04 月 5 日
 
 
 
+[[dashboard-enhancements]]
 === 儀表板增強功能
 
 * 當您在 BlueXP  工作負載工廠主控台的索引標籤之間瀏覽時，可以使用跨帳戶和跨區域檢視。新的檢視可改善資源管理，監控及最佳化。
@@ -535,18 +602,21 @@ link:https://docs.netapp.com/us-en/workload-databases/manage-instance.html["執�
 
 
 
+[[ad-hoc-scan-available-for-database-configurations]]
 === 可用於資料庫組態的臨機操作掃描
 
 資料庫的 BlueXP  工作負載原廠會自動掃描採用 FSX 的託管 Microsoft SQL Server 執行個體 ONTAP ，以找出可能的組態問題。除了每日掃描之外，您還可以隨時進行掃描。
 
 
 
+[[removal-of-on-premises-assessment-records]]
 === 刪除內部部署評估記錄
 
 探索 Microsoft SQL Server 內部部署主機的節約效益之後，您可以選擇從 BlueXP  工作負載工廠移除內部部署主機記錄。
 
 
 
+[[optimization-enhancements]]
 === 最佳化增強功能
 
 
@@ -563,16 +633,19 @@ link:https://docs.netapp.com/us-en/workload-databases/manage-instance.html["執�
 
 
 
+[[updated-permissions-terminology]]
 === 更新的權限術語
 
 工作負載工廠使用者介面和文件現在使用“只讀”來指讀取權限，使用“讀取/寫入”來指稱自動化權限。
 
 
 
+[[04-april-2025]]
 == 2025 年 4 月 04 日
 
 
 
+[[optimization-enhancements]]
 === 最佳化增強功能
 
 最佳化資料庫環境時，可以使用新的最佳化評估，修正及顯示多個資源。
@@ -611,12 +684,14 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[improved-inventory-view]]
 === 改善的庫存檢視
 
 工作負載原廠主控台中的「庫存」索引標籤已簡化，因此只包含執行於 Amazon FSX for NetApp ONTAP 上的 SQL Server 。現在您可以在內部部署中找到 SQL Server ，並在 Amazon Elastic Block Store 和 Amazon FSX for Windows File Server 的 Explore 節約標籤中執行。
 
 
 
+[[quick-create-available-for-postgresql-server-deployment]]
 === 可用於 PostgreSQL 伺服器部署的快速建立
 
 您可以使用此快速部署選項，建立具有 HA 組態和內嵌最佳實務做法的 PostgreSQL 伺服器。
@@ -625,10 +700,12 @@ link:https://docs.netapp.com/us-en/workload-databases/create-postgresql-server.h
 
 
 
+[[03-march-2025]]
 == 2025 年 3 月 03 日
 
 
 
+[[postgresql-high-availability-configuration]]
 === PostgreSQL 高可用度組態
 
 您現在可以為 PostgreSQL 伺服器部署高可用度（ HA ）組態。
@@ -637,6 +714,7 @@ link:https://docs.netapp.com/us-en/workload-databases/create-postgresql-server.h
 
 
 
+[[terraform-support-for-postgresql-server-creation]]
 === Terraform 支援建立 PostgreSQL 伺服器
 
 您現在可以使用 Codebox 中的 Terraform 來部署 PostgreSQL 。
@@ -647,6 +725,7 @@ link:https://docs.netapp.com/us-en/workload-databases/create-postgresql-server.h
 
 
 
+[[resiliency-assessment-for-local-snapshot-schedule]]
 === 本機快照排程的恢復能力評估
 
 新的恢復能力評估可供資料庫工作負載使用。我們會評估您 Microsoft SQL Server 執行個體的 Volume 是否具有有效的排程快照原則。快照是資料的時間點複本，有助於在資料遺失時保持資料庫環境的彈性。
@@ -655,6 +734,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[maxdop-remediation-for-database-workloads]]
 === 資料庫工作負載的 MAXDOP 補救措施
 
 BlueXP  資料庫工作負載工廠現在支援補救最大平行度（ MAXDOP ）伺服器組態。當 MAXDOP 組態不是最佳化時，您可以讓 BlueXP  工作負載原廠為您最佳化組態。
@@ -663,16 +743,19 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[email-savings-analysis-report]]
 === 電子郵件節約分析報告
 
 當您探索 Amazon Elastic Block Store 和適用於 Windows 檔案伺服器儲存環境的 FSX 與適用於 ONTAP 的 FSX 的節約效益時，您現在可以透過電子郵件傳送建議報告給自己，團隊成員和客戶。
 
 
 
+[[03-february-2025]]
 == 2025 年 03 月 2 日
 
 
 
+[[sql-server-on-premises-database-environments-cost-analysis-and-migration-planning]]
 === SQL Server 內部部署資料庫環境成本分析與移轉規劃
 
 BlueXP workload factory for Databases 現在可以偵測、分析並協助您規劃將內部部署 SQL Server 資料庫移轉至 Amazon FSx for NetApp ONTAP 。您可以使用節省成本計算機來估算在雲端執行內部部署 SQL Server 資料庫環境的成本，並檢視將內部部署資料庫環境移轉至雲端的建議。
@@ -681,6 +764,7 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["探�
 
 
 
+[[new-optimization-assessments-for-databases]]
 === 新的資料庫最佳化評估
 
 BlueXP  工作負載工廠現已提供資料庫的下列評估。這些評估的重點在於偵測並防範潛在的安全性弱點，以及偵測和減輕效能瓶頸。
@@ -694,10 +778,12 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[06-january-2025]]
 == 2025 年 1 月 06 日
 
 
 
+[[databases-dashboard-enhancements]]
 === 資料庫儀表板增強功能
 
 儀表板的全新設計包括下列圖形和增強功能：
@@ -713,6 +799,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[new-completed-with-issues-status-in-job-monitoring]]
 === 工作監控中的新「已完成但有問題」狀態
 
 資料庫的工作監控功能現在提供新的「已完成但有問題」狀態，讓您瞭解哪些子工作有問題，以及問題為何。
@@ -721,6 +808,7 @@ link:https://docs.netapp.com/us-en/workload-databases/monitor-databases.html["�
 
 
 
+[[assessment-and-optimization-for-over-provisioned-microsoft-sql-server-licenses]]
 === 針對過度配置的 Microsoft SQL Server 授權進行評估與最佳化
 
 節約計算機現在會評估您的 Microsoft SQL Server 部署是否需要 Enterprise Edition 。如果授權過度配置，計算機會建議降級。您可以透過最佳化應用程式，自動降級資料庫中的授權。
@@ -731,10 +819,12 @@ link:https://docs.netapp.com/us-en/workload-databases/monitor-databases.html["�
 
 
 
+[[01-december-2024]]
 == 2024 年 12 月 01 日
 
 
 
+[[continuous-optimization-adds-compute-remediation-and-assessment]]
 === 持續最佳化可新增運算修正與評估功能
 
 資料庫現在提供深入分析和建議，協助您最佳化 Microsoft SQL Server 執行個體的運算資源。我們會測量 CPU 使用率，並運用 AWS 運算最佳化工具服務來建議適當大小的最佳執行個體類型，並通知您可用的作業系統修補程式。最佳化運算資源有助於您做出有關執行個體類型的明智決策，進而節省成本並提高資源使用率。
@@ -743,6 +833,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[postgresql-support]]
 === PostgreSQL 支援
 
 您現在可以在資料庫中部署及管理獨立的 PostgreSQL 伺服器部署。
@@ -751,10 +842,12 @@ link:https://docs.netapp.com/us-en/workload-databases/create-postgresql-server.h
 
 
 
+[[3-november-2024]]
 == 2024 年 11 月 3 日
 
 
 
+[[continuously-optimize-your-microsoft-sql-server-workloads-with-databases]]
 === 使用資料庫持續最佳化您的 Microsoft SQL Server 工作負載
 
 BlueXP  工作負載工廠推出持續指引和 guardrails 、確保在 Amazon FSX for NetApp ONTAP 上持續最佳化並遵循 Microsoft SQL Server 工作負載儲存元件的最佳實務做法。這項功能會持續離線掃描您的 Microsoft SQL Server 資產、提供深入分析、商機和建議的完整報告、協助您達到最佳效能、成本效益和法規遵循。
@@ -763,6 +856,7 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[terraform-support]]
 === Terraform 支援
 
 您現在可以使用 Codebox 中的 Terraform 來部署 Microsoft SQL Server 。
@@ -773,10 +867,12 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[29-september-2024]]
 == 2024 年 9 月 29 日
 
 
 
+[[explore-savings-for-detected-microsoft-sql-servers-on-fsx-for-windows-file-server]]
 === 探索在適用於 Windows 檔案伺服器的 FSX 上偵測到的 Microsoft SQL 伺服器所能節省的成本
 
 您現在可以在 Amazon EC2 上探索偵測到的 Microsoft SQL 伺服器、並在節約計算機中使用適用於 Windows 檔案伺服器儲存設備的 FSX 。根據您的 SQL 伺服器和儲存需求、您可能會發現適用於 ONTAP 儲存設備的 FSX 最符合資料庫工作負載的成本效益。
@@ -785,10 +881,12 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["利�
 
 
 
+[[1-september-2024]]
 == 2024 年 9 月 1 日
 
 
 
+[[explore-savings-via-customization]]
 === 透過自訂功能探索節約效益
 
 您現在可以使用適用於 Windows 檔案伺服器的 FSX 、以及節省計算機中的 Elastic Block Store 儲存設備、在 Amazon EC2 上自訂 Microsoft SQL Server 的組態設定。根據您的儲存需求、您可能會發現 ONTAP 儲存設備的 FSX 最符合資料庫工作負載的成本效益。
@@ -797,6 +895,7 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["利�
 
 
 
+[[navigate-to-the-savings-calculator-from-the-home-page]]
 === 從首頁瀏覽至節約計算機
 
 您現在可以從link:https://console.workloads.netapp.com["工作負載原廠主控台"]首頁瀏覽至節約計算機。從「 Elastic Block Store 」和「適用於 Windows 檔案伺服器的 FSX 」中選取以開始使用。
@@ -805,10 +904,12 @@ image:screenshot-explore-savings-home-small.png["工作負載原廠主控台首�
 
 
 
+[[4-august-2024]]
 == 2024 年 8 月 4 日
 
 
 
+[[savings-calculator-enhancements]]
 === 節省計算機增強功能
 
 * 成本預估說明
@@ -837,10 +938,12 @@ link:https://docs.netapp.com/us-en/workload-databases/explore-savings.html["利�
 
 
 
+[[7-july-2024]]
 == 2024 年 7 月 7 日
 
 
 
+[[initial-release-of-bluexp-workload-factory-for-databases]]
 === 資料庫的 BlueXP  工作負載工廠初始版本
 
 初始版本包含以下功能：利用 Amazon FSX for NetApp ONTAP 做為資料庫工作負載的儲存環境，探索節省成本，偵測，管理及部署 Microsoft SQL Server ，部署及複製資料庫，以及在工作負載工廠內監控這些工作。

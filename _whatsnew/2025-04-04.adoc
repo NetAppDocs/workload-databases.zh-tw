@@ -4,6 +4,7 @@
 
 
 
+[[optimization-enhancements]]
 === 最佳化增強功能
 
 最佳化資料庫環境時，可以使用新的最佳化評估，修正及顯示多個資源。
@@ -42,12 +43,14 @@ link:https://docs.netapp.com/us-en/workload-databases/optimize-configurations.ht
 
 
 
+[[improved-inventory-view]]
 === 改善的庫存檢視
 
 工作負載原廠主控台中的「庫存」索引標籤已簡化，因此只包含執行於 Amazon FSX for NetApp ONTAP 上的 SQL Server 。現在您可以在內部部署中找到 SQL Server ，並在 Amazon Elastic Block Store 和 Amazon FSX for Windows File Server 的 Explore 節約標籤中執行。
 
 
 
+[[quick-create-available-for-postgresql-server-deployment]]
 === 可用於 PostgreSQL 伺服器部署的快速建立
 
 您可以使用此快速部署選項，建立具有 HA 組態和內嵌最佳實務做法的 PostgreSQL 伺服器。

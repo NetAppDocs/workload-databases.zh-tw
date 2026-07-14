@@ -4,6 +4,7 @@
 
 
 
+[[bluexp-backup-and-recovery-now-supports-microsoft-sql-server-workloads]]
 === BlueXP backup and recovery現在支援 Microsoft SQL Server 工作負載
 
 BlueXP backup and recovery可讓您備份、還原、驗證和複製 Microsoft SQL Server 資料庫和可用性群組。從工作負載工廠控制台，您可以存取和使用BlueXP backup and recovery保護 Microsoft SQL Server 工作負載。

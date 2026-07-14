@@ -15,6 +15,7 @@ summary: 在NetApp Workload Factory for Databases 中建立一個新的 PostgreS
 
 
 
+[[about-this-task]]
 == 關於這項工作
 
 在從 Workload Factory 建立 PostgreSQL 伺服器之前，請先了解資料庫主機配置的可用儲存部署類型、工作負載工廠操作模式以及完成此操作的要求。
@@ -30,12 +31,14 @@ summary: 在NetApp Workload Factory for Databases 中建立一個新的 PostgreS
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 你必須有 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["授予 _database 主機建立_ 權限"^] 在您的 AWS 帳戶中，在工作負載工廠中建立一個新的資料庫主機。
 
 
 
+[[create-a-postgresql-server]]
 == 建立 PostgreSQL 伺服器
 
 您可以使用 _ 快速建立 _ 或 _ 進階建立 _ 部署模式，以 _ 自動化 _ 模式權限在工作負載工廠完成這項工作。您也可以使用 Codebox 中的下列工具： REST API ， AWS CLI ， AWS CloudForformation 和 Terraform 。link:https://docs.netapp.com/us-en/workload-setup-admin/use-codebox.html#how-to-use-codebox["瞭解如何使用 Codebox 進行自動化"^]。
