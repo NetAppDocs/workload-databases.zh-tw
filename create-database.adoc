@@ -24,9 +24,9 @@ summary: 使用NetApp Workload Factory for Databases 建立 Microsoft SQL 資料
 NOTE: 使用 SMB 通訊協定的 Microsoft SQL Server 不支援資料庫建立。
 
 .開始之前
-建立新資料庫之前、請務必先完成下列先決條件。
+在建立新資料庫之前，請完成以下先決條件。
 
-* *憑證和權限*：您必須擁有 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和_檢視、規劃和分析_權限"^] 在 Workload Factory 中建立一個新資料庫。
+* *憑證和權限*：您必須具備 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["AWS 帳戶憑證和 _operations and remediation_ 權限"^] 才能在 Workload Factory 中建立新資料庫。
 +
 或者，您也可以使用 Codebox 來複製範本，以便使用 REST API 在工作負載工廠以外部署資料庫。link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["深入瞭解 CodeBox 自動化"^]。
 

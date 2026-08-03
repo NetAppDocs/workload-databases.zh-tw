@@ -136,7 +136,6 @@
   <block id="6f03d6ad36824b69611930dbe2fb4d42" category="paragraph">建立資料庫時、會在適用於 ONTAP 檔案系統的 FSX 中建立兩個新磁碟區、其中包含用於存放資料庫資料和記錄檔的實體 LUN 。新資料庫中的資料庫檔案是以精簡配置的方式配置、只會使用分配給新資料庫的總大小的幾 MB 。</block>
   <block id="6d7b2a50e46356cb2ecf2805e3b5bb59" category="paragraph">如果您想要分隔資料庫的儲存空間、可以使用 _virtual 掛載點 _ 來執行此作業。虛擬掛載點可讓您將資料庫整合至主機上的幾個一般磁碟機。</block>
   <block id="92e04fe5d2a269f38993f394f5b1eb9b" category="admonition">使用 SMB 通訊協定的 Microsoft SQL Server 不支援資料庫建立。</block>
-  <block id="7dd1095f5b5a654fc784015352d1066d" category="paragraph">建立新資料庫之前、請務必先完成下列先決條件。</block>
   <block id="78898e52fcbdc5337204a384f2456d4f" category="list-text">Microsoft SQL Server</block>
   <block id="1271a3d360115d2332889fc326f89944" category="section-title">建立資料庫</block>
   <block id="16b7e1ed68be5b41e619ec00b93a3de0" category="list-text">在「建立使用者資料庫」頁面的「資料庫資訊」下、提供下列資訊：</block>
@@ -288,7 +287,6 @@
   <block id="ad308330f566581c7c1ac5769e060883" category="paragraph">支援 ONTAP 適用的 FSX 的所有商業地區均支援資料庫。<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
   <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">不支援下列 AWS 區域：</block>
   <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">中國地區</block>
-  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">GovCloud（美國）地區</block>
   <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">秘密雲端</block>
   <block id="151ef168e17772f7a361db78a0c86552" category="list-text">Top Secret Cloud</block>
   <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">取得協助</block>
@@ -480,12 +478,6 @@
   <block id="c7f1094806f4a7907a28dc01a1473f90" category="inline-link-macro">瞭解如何使用 Codebox 進行自動化</block>
   <block id="04dff47f9a41cfa54b616dd86a4a6043" category="list-text">儲存規模：包括儲存層、檔案系統保留空間、記錄磁碟機大小及 TempDB 磁碟機大小</block>
   <block id="b1107628010e55afc5ec740439838f10" category="list-text">儲存配置：包括使用者資料檔案放置、記錄檔放置及 TempDB 放置</block>
-  <block id="1c11d2e59190fe6a4e37f1e68abafcb4" category="paragraph">主要功能包括：</block>
-  <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">自動最佳實務驗證</block>
-  <block id="029d49350caff46ab3e1f31c9c60f494" category="list-text">適當調整規模的建議</block>
-  <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">主動觀察</block>
-  <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">行動洞見</block>
-  <block id="7a3fc3cf12e9da54628c7311398bee5c" category="list-text">AWS 架構良好的架構顧問</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024 年 11 月 3 日</block>
   <block id="d1e68728a28b7936858b1484445ef50f" category="sidebar">最佳化組態</block>
   <block id="35c4b7b7975b86786b96de60f8d9159c" category="doc">資料庫的 BlueXP  工作負載工廠初始版本</block>
@@ -679,8 +671,6 @@
   <block id="f73028254f9c4297e3f60654068105e0" category="list-text">選取下拉式箭頭以檢視任何組態的建議。建議包括最佳實踐、未優化配置的潛在缺陷以及重要注意事項。請務必仔細檢閱建議內容。</block>
   <block id="dae891145ffbf1b1653fc3da2a87faac" category="list-text">當選項可用時，選擇“查看並修復”配置問題。</block>
   <block id="45b5dce37159255d07342e3102124571" category="list-text">選取 * 繼續 * 以修正組態問題。</block>
-  <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">每日組態分析</block>
-  <block id="3f6f8b4e204fd3aa39cac35661de164d" category="section-title">分析需求</block>
   <block id="4eadd345921a1f4292d9b98892d3b84e" category="inline-link-macro">實施結構良好的資料庫配置</block>
   <block id="9f79767d5e4eb4d13f2a6d925ed59d0f" category="paragraph"><block ref="9f79767d5e4eb4d13f2a6d925ed59d0f" category="inline-link-macro-rx"></block></block>
   <block id="32077805607c935c0ac59dd7b4a3fdc6" category="inline-link-macro">部署主機伺服器</block>
@@ -1030,7 +1020,6 @@
   <block id="bc4a349f7f95e73490c3e2f8aaabe892" category="list-text">選擇*重新啟動*以重新啟動已延遲或已取消的配置的配置分析。</block>
   <block id="7c6a7786a083c7d074bada76f0bcd33b" category="summary">資料庫工作負載工廠會定期分析 Microsoft SQL Server 和 Oracle 配置以確定是否有任何問題。</block>
   <block id="8317ffd1a53e5d269aaac07d321b8dd0" category="doc">Workload Factory 中的資料庫環境配置分析</block>
-  <block id="1725276922bab9d023ef938d5fce0d7c" category="paragraph">資料庫工作負載工廠會定期分析資料庫配置，以確定Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 和 Oracle 部署是否有任何問題。當發現問題時，Workload Factory 會向您展示問題所在，並解釋需要進行哪些更改以確保您的資料庫配置達到最佳效能、成本效益並符合最佳實踐。</block>
   <block id="84ee3cc4e2a4f169585c115121112580" category="paragraph">使用 Workload Factory 控制台中的NetApp Backup and Recovery 保護您的 Microsoft SQL Server 應用程式資料。透過此集成，您可以實現以下保護目標：使用本機快照在本機主Amazon FSx for NetApp ONTAP （FSx for ONTAP）儲存上備份工作負載，並將工作負載複製到輔助 FSx for ONTAP儲存。</block>
   <block id="bb1b704677e0a9ac00a2bda88f85fe27" category="paragraph">Workload Factory 可自動發現資源、驗證先決條件以及設定和安裝 Microsoft SQL Server 插件，為使用NetApp Backup and Recovery 保護您的工作負載做好準備。該外掛程式是NetApp軟體的主機端元件，可讓您保護 Microsoft SQL Server 工作負載。</block>
   <block id="e9575ae90b7ec054c43a9797544d0103" category="paragraph">NetApp Backup and Recovery 利用NetApp SnapMirror資料複製技術，透過建立快照副本並將其傳輸到備份位置來確保所有備份完全同步。</block>
@@ -1066,7 +1055,6 @@
   <block id="63ba9d2341fcd316dd11a8e4d659a680" category="list-text">在沙盒中，選擇要刷新的沙盒克隆的操作選單。</block>
   <block id="5c312d6e56cb086ef38ed7860931fe1c" category="summary">註冊資源，以便您可以監控NetApp Workload Factory for Databases 中的資源狀態、資源使用率、保護和儲存效能。</block>
   <block id="ec1098eb54d9b05cc1e929562eb8d30d" category="doc">在NetApp Workload Factory for Databases 中註冊資源</block>
-  <block id="0bc907adb7562b30973df586f142f009" category="paragraph">註冊 Microsoft SQL Server 執行個體和 Oracle 資料庫，以便您可以在NetApp Workload Factory for Databases 中監控執行個體和資料庫狀態、資源使用率、保護和儲存效能。</block>
   <block id="1d72541b2e1a224311e8b78af73bab83" category="summary">將資料庫（沙盒）克隆還原為在NetApp Workload Factory for Databases 中建立時的原始版本。</block>
   <block id="ecf8d68388a40ca09bc6475e0cb33a92" category="doc">在NetApp Workload Factory for Databases 中還原資料庫克隆</block>
   <block id="b006ea3a9fc3f700c7ea6c3fc404a855" category="paragraph">當您克隆資料庫時，建立時的克隆是_baseline_克隆。克隆的資料庫中的資料與建立時的來源資料庫相同。由於資料庫克隆中的資料會隨著時間而變化，您可能希望將資料還原到首次建立克隆時的基線。此操作稱為重新基線克隆。重新基準化克隆而不是創建新的克隆可以節省空間；但是，對資料庫克隆所做的任何更改都將被刪除。</block>
@@ -1139,11 +1127,8 @@
   <block id="465e9d802e89a57d0c6d975dfa335b10" category="paragraph">你必須 <block ref="c00ccdcb7558b1384f2bfe03bc0ccfc2" category="inline-link-macro-rx"></block> 在您的 AWS 帳戶中，在 Workload Factory 中建立一個新的資料庫主機。</block>
   <block id="faf57b7ea755136ba278c7ca635d000d" category="inline-link-macro">了解工作負載工廠權限</block>
   <block id="ee8d92152066f3db5bcbd21ab0bf2f95" category="paragraph">在工作負載工廠中建立資料庫需要_檢視、規劃和分析_權限。或者，您可以複製或下載部分完成的程式碼模板，在工作負載工廠之外完成操作。<block ref="2ed05d763ad52dc4a74c37608a2573bc" category="inline-link-macro-rx"></block> 決定你想使用哪種模式。</block>
-  <block id="24f052bbfc9bd9df6db2a9420a7adf2b" category="inline-link-macro">AWS 帳戶憑證和_檢視、規劃和分析_權限</block>
-  <block id="4f56231d78cda077af94d3e0dfd51958" category="list-text">*憑證和權限*：您必須擁有 <block ref="acc024b2636f2b609a405107ce7e1e7a" category="inline-link-macro-rx"></block> 在 Workload Factory 中建立一個新資料庫。</block>
   <block id="93d1a10f5427dcaad9dbfd835a2f78c4" category="paragraph">在 Workload Factory 中，您可以使用「快速建立」或「進階建立」部署模式來完成此任務。</block>
   <block id="2025a0042a0ae8427cc7478e4f0629ea" category="paragraph">你必須有 <block ref="c00ccdcb7558b1384f2bfe03bc0ccfc2" category="inline-link-macro-rx"></block> 在您的 AWS 帳戶中，在工作負載工廠中建立一個新的資料庫主機。</block>
-  <block id="c2a828d4f87d9d9d6977488310b2783f" category="list-text">*憑證和權限*：您必須擁有 <block ref="acc024b2636f2b609a405107ce7e1e7a" category="inline-link-macro-rx"></block> 在 Workload Factory 中建立沙盒克隆。</block>
   <block id="e271b1d3bc72a38f89e2810646dd71a1" category="paragraph">探索已偵測到的主機的節省：工作負載工廠連接到您現有的 Microsoft SQL 伺服器，並將詳細資訊提取到計算器中進行自動比較。您需要授予 _檢視、規劃和分析_ 權限才能使用此計算器選項。您可以變更使用場景，但所有其他細節都會在計算中自動確定。</block>
   <block id="d186a87b5715922555a4959a0edebfb5" category="inline-link-macro">授予查看、規劃和分析權限</block>
   <block id="1dd2a215cce31e07e812222b302e45d0" category="list-text"><block ref="eb47095b3da29cffa9f1ed319e537b9b" category="inline-link-macro-rx"></block> 在您的 AWS 帳戶中，在「探索節省」標籤下偵測 Elastic Block Store (EBS) 和 FSx for Windows 系統，並在節省計算器中顯示節省計算結果。</block>
@@ -1160,7 +1145,6 @@
   <block id="4e9dffb84355d8e05d841ef09cb0b14f" category="paragraph">選擇<block ref="7cb8f01033b9f51b50ad23ef165f92b6" category="inline-link-macro-rx"></block>滿足您的需求。</block>
   <block id="611dad37557a2cb5ae289c5e019aed4c" category="paragraph">如果您選擇不授予權限，您可以開始使用 Workload Factory for Databases 來複製部分完成的程式碼範例。</block>
   <block id="38c4c72673e051381c12c32e1dd20f50" category="paragraph">如果您選擇授予權限，您需要…<block ref="bb44378f07a38aa36833bde05fae1b5d" category="inline-link-macro-rx"></block>這包括選擇工作負載功能（例如資料庫和人工智慧），以及建立所需權限的 IAM 策略。</block>
-  <block id="14a812993e30c1769069f1d355d3b4a0" category="paragraph">實例或資料庫的主機必須出現在清單中。要讓主機出現在庫存中，您必須 <block ref="74a62493240df6cc0643a248f282a25a" category="inline-link-macro-rx"></block> 在您的 AWS 帳戶中。</block>
   <block id="4afeabae14ccab1ba1ff53887c3a9701" category="doc">優化 Amazon Elastic Block Store (EBS) 資料庫節省計算器</block>
   <block id="d9f7bd12b1b11b300e5288560b5e9987" category="paragraph">兩個新的計算器功能改進了在使用 EBS 儲存體運行多個執行個體時的成本節約分析，以便您可以透過切換到 FSx for ONTAP來節省更多成本。</block>
   <block id="32ccdc5dd4f059ebfa9dabaa8c301cf0" category="list-text">Workload Factory 為多個資料庫主機在單一 FSx for ONTAP檔案系統上提供統一的儲存解決方案。這種整合透過減少多個資料庫主機所需的檔案系統數量來優化儲存成本，從而提高成本效益。</block>
@@ -1230,24 +1214,17 @@
   <block id="8a91764939fe812c81b542206d9d0af7" category="paragraph">只有在 FSx for ONTAP 檔案系統儲存上執行的資源才能註冊。</block>
   <block id="905518fc8d8d1e03b6625a1429570b1f" category="inline-link-macro">錯誤日誌分析</block>
   <block id="ad93849f6190198b574a03052debf9ee" category="section-title">註冊 Microsoft SQL Server 執行個體</block>
-  <block id="92d119793835b54b4d7e2c5bcf09d96d" category="paragraph">註冊執行個體分為三個步驟：執行個體驗證、FSx for ONTAP 驗證以及準備完成缺少的先決條件。您可以註冊單一或多個執行個體。</block>
   <block id="1e353ab5fd8467e0928740d5976845d6" category="paragraph">Workload Factory 支援 SQL Server 的容錯移轉叢集執行個體（FCI）和獨立部署的註冊。</block>
   <block id="eb0b58928657c5dc4eb473380f85c004" category="list-text">若要驗證執行個體（步驟 1）、請執行下列動作、然後選取 *Next* ：</block>
   <block id="6b49f93b8fce5f712f19faf1d7e86198" category="list-text">選擇 *Use the same credentials for all instances* 或 *Manage credentials manually*。</block>
   <block id="f401c2a4f95521388399cd9160d348c0" category="list-text">透過提供使用者名稱和密碼資訊來驗證 SQL Server 和 Windows 的身分。</block>
   <block id="5af06cdcd5f2ae831a171dc46f044c7f" category="paragraph">如果執行個體已通過驗證，請選取 *Next* 。</block>
-  <block id="69724d4e89d54d12f3752423c87be644" category="list-text">選擇 *對所有資源使用相同的憑證* 或 *手動管理憑證*。</block>
-  <block id="34b2f9d708b57fa0ab164ac81a844832" category="paragraph">如果 FSx for ONTAP 檔案系統已通過驗證、請選取 *Next* 。</block>
-  <block id="9ed181f71730a4b981c04369e2f1719e" category="list-text">準備工作（步驟 3）：確保執行個體符合最低要求。</block>
   <block id="4aa1b1ff22a8dfe18a969e9e18594ab0" category="list-text">選擇每個功能的 *Setup details* ，以瞭解該功能的先決條件，並按照螢幕上的指示完成該功能任何缺失的先決條件。</block>
   <block id="d521398ad1462fd891ea513e4855ce5b" category="inline-link-macro">檢閱並修正架構完善的問題</block>
   <block id="9d96bcc0867ec5be17a78fc127af4785" category="paragraph">執行個體註冊開始。選取 *Job monitoring* 標籤以追蹤進度。</block>
-  <block id="efd81ed9168d148e7b33debfd48f5bbe" category="paragraph">註冊執行個體分為三個步驟：資料庫驗證、FSx for ONTAP 驗證以及準備完成缺少的先決條件。您可以註冊單一或多個資料庫。</block>
   <block id="67b60232330635a005ec1fd48b8378f5" category="list-text">在 Inventory 中，選擇 *Oracle* 作為引擎類型。</block>
   <block id="4a259cdca92c769ffaab7b1900cdf9a3" category="list-text">透過提供使用者名稱和密碼資訊來驗證 Oracle 使用者和 Automatic Storage Management (ASM) 網格使用者（如果適用）的身份。</block>
   <block id="d80e97cf9f44825e6a448342f9ee18ae" category="paragraph">如果資料庫已通過驗證，請選取 *Next* 。</block>
-  <block id="90252dc7d534ac36ea9f5b1fd7c90573" category="list-text">若要驗證 FSx for ONTAP（步驟 2）、請執行下列操作、然後選取 *Next* ：</block>
-  <block id="aea7afc9754b2383c56fbbaee6c6009d" category="list-text">在準備工作（步驟 3）中，請確保資料庫符合所有必要的先決條件。如果所有必需模組均已安裝且先決條件已滿足，請選擇 *Next* 註冊資料庫。否則，請按照以下步驟操作。</block>
   <block id="1717c98238cd6bd4091f92979d40a891" category="list-text">請在 *Prerequisite check view* 中查看先決條件。</block>
   <block id="3f4c61df91a8ed4b5fc7622369d6e56d" category="paragraph">您必須完成單一功能的所有先決條件，例如 *Review well-architected issues and recommendations*，才能註冊資料庫。</block>
   <block id="aece37c900cf74271d49a4aec3628d66" category="paragraph">資料庫註冊開始。選取 *Job monitoring* 標籤以追蹤進度。</block>
@@ -1304,7 +1281,6 @@
   <block id="4511f32d33e21257085df585e8c9dc3a" category="cell">Always On 可用性群組</block>
   <block id="650870d240bc8043d6977b1a1c975ce0" category="cell">19c、21c</block>
   <block id="edd8af7eaa131179cb70a5db89636876" category="cell">Data Guard</block>
-  <block id="5a493bafe2fb35c6f5339a3ced4adce7" category="paragraph">Workload Factory 每日分析資料庫組態。每日分析提供架構完善的狀態、洞察分析與建議。您可以自動修復組態問題，以符合最佳實務做法。</block>
   <block id="cac9df85ec3dc71ff56914f00db69c7a" category="list-text">運算：包含作業系統修補程式</block>
   <block id="2ad033703ef0dac4d52edf323faa1918" category="paragraph">Oracle 的架構完善分析功能會在組態依賴其他組態時通知您，並列出最佳化連結組態的動作。</block>
   <block id="a790f6e28b649137870b00ccf3589944" category="list-text">選擇選單 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> 然後選擇 *Databases* 。</block>
@@ -1313,7 +1289,6 @@
   <block id="cea7ad7075430d1bd0be98ca92701bcb" category="list-text">在 PowerShell 中運行腳本。一個腳本會收集所有實例的元資料。</block>
   <block id="b33feb370f35879eddcd9293135b1df1" category="list-text">選擇 *One-time assessment* &gt; *Upload* 。找到檔案並將其上傳到 Workload Factory 主控台。</block>
   <block id="c70615017296ffdedf34ebb8730eaa77" category="section-title">在開始修復、關閉和重新啟動配置之前</block>
-  <block id="50bac09b5a353b5521f0ff914fff6808" category="list-text">此資源必須在 Workload Factory 中註冊，且儲存類型必須為 FSx for ONTAP。<block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
   <block id="85d21d13c3f58b49f129dacfb4cab3a1" category="list-text">在修改設定或組態之前，請檢閱每項建議。對於 RSS 和 MAXDOP，請在變更正式作業環境之前測試建議的設定以檢查效能。</block>
   <block id="88228ff74222d41a7b32f7f73b628495" category="paragraph">選擇 *Export PDF* 以下載調查結果報告。</block>
   <block id="370419de045637c04622917ea040cd16" category="section-title">關閉資料庫組態分析</block>
@@ -1321,8 +1296,6 @@
   <block id="d6b510061438391f590afb73a62f098c" category="paragraph">您可以隨時重新啟動分析。此組態不再計入總優化分數。</block>
   <block id="61ab3b6f044b76185565a9f1d6db2113" category="section-title">重新啟動已關閉的組態分析</block>
   <block id="99206ff00921c00b5d887375a108d167" category="paragraph">您可以隨時重新啟動已關閉的組態分析。您可以選擇一個或多個組態進行重新啟動。</block>
-  <block id="1a0cee014540e049f4d08b2ca15c2447" category="inline-link-macro">架構完善的評估</block>
-  <block id="27cfb14157482da47350bb4484f7e792" category="paragraph">註冊執行個體（SQL Server）或資料庫（Oracle）涉及三個步驟：執行個體或資料庫驗證、FSx for ONTAP 驗證以及準備工作。準備工作包括在執行個體或資料庫上安裝 AWS、NetApp 和 PowerShell 模組，並符合 Workload Factory for Databases 功能（例如 <block ref="b3b44214924ae2c9e9d272ea31fcb428" category="inline-link-macro-rx"></block> 或 <block ref="d21897e75c312daacd024fa4c48cd6a7" category="inline-link-macro-rx"></block>）的最低要求。</block>
   <block id="672da44d295a636d22c64c52022ddf81" category="paragraph">Workload Factory 僅支援 Microsoft SQL Server 執行個體和 Oracle 資料庫的註冊和管理。根據您在 Workload Factory 中選擇的 AWS 帳戶憑證，PostgreSQL 主機會出現在清單中。目前，Workload Factory 僅支援在 Amazon Linux 作業系統上執行的未註冊 PostgreSQL 執行個體。</block>
   <block id="7651418602ee7e0d7035d3f2eed1ac58" category="paragraph">若要在沒有外部連線的私人網路中註冊執行個體或資料庫，請在 VPC 中提供所需的端點，並將其與相關的子網路建立關聯。在介面端點的安全群組中允許連接埠 443。</block>
   <block id="aa880a36f751894aa3fd6f4bc9d30355" category="paragraph">如果您使用 Proxy 伺服器進行傳出 EC2 連線、請允許存取這些網域以進行管理作業：</block>
@@ -1334,85 +1307,12 @@
   <block id="9ffdb95250e26c7a6b468126ac7c75b0" category="section-title">運作方式</block>
   <block id="2888fa977354ad1bf513fa2f17fdd7df" category="paragraph">Workload Factory 每日分析您在 Amazon FSx for NetApp ONTAP 檔案系統部署上執行的工作負載。此分析提供架構完善的狀態資訊、洞察分析和建議。</block>
   <block id="678b83ba882b41e4bae10f8e48f4a766" category="paragraph">每日分析完成後，部署的 Well-architected 儀表板會顯示配置狀態為「已最佳化」或「未最佳化」。您可以在這裡查看總優化得分、按類別劃分的配置問題以及配置問題和建議清單。您可以查看針對配置問題的建議。部分問題可由 Workload Factory 自動修復，而其他問題則需要人工幹預。在這種情況下，Workload Factory 會提供詳細說明，幫助您實施建議的變更。</block>
-  <block id="1fab3ff575faec37f5f5855ba6c44e9b" category="paragraph">您可以忽略不適用於您環境的配置分析。這樣可以避免不必要的警報和不準確的優化結果。當您忽略某個設定分析時，Workload Factory 不會將該配置計入總最佳化得分。</block>
   <block id="ee25e0b6cd574166f206b4c5b7f02df3" category="section-title">為什麼這很重要</block>
   <block id="1ae45cc8915c23757127ca10c1cc4000" category="paragraph">Workload Factory 將最佳實踐應用於大型儲存、資料庫和 VMware 環境，透過持續評估與建議洞察和修復措施相結合。在 Workload Factory 主控台中套用的自動化修復可減少人為錯誤、確保統一管理，並維護工作負載基礎架構的效能和可靠性。</block>
-  <block id="a54f5b1fe41547cbf19f1fb9561340dc" category="inline-link-macro">註冊您的資源</block>
-  <block id="32b8a48be5601496781767d49968bd51" category="list-text"><block ref="89c16bb90a0fdfa73434baf56ae09810" category="inline-link-macro-rx"></block> 並確保它們在線。</block>
-  <block id="25c44f83d9d45dc9b2d2a8e46fcc5b19" category="list-text">關聯連結。連結連線功能使 Workload Factory 能夠分析所有資料庫部署組態，例如儲存配置和恢復能力。</block>
-  <block id="be8334e3a8f0885af8e03ba816b24537" category="inline-link-macro">了解如何關聯現有連結或建立並關聯新連結</block>
-  <block id="3b1785543fb9e9ab18e56f4cf89f47d9" category="paragraph"><block ref="d247bd89ba7282a8d4fed90c00e6cb68" category="inline-link-macro-rx"></block>.</block>
-  <block id="64aefaaa1ffe9f3b50d13850f89ff59a" category="list-text">在您的 AWS 帳戶中授予 _view、planning 和 analysis_ 權限。</block>
-  <block id="bf2ef084e923ce6ebc4b57db27892de8" category="inline-link-macro">了解如何授予 AWS 帳戶權限</block>
-  <block id="582f3532371a870cf4bd6406f93d26de" category="paragraph"><block ref="582f3532371a870cf4bd6406f93d26de" category="inline-link-macro-rx"></block></block>
-  <block id="1828f0f67d6613341efbc43d822fd8dc" category="section-title">資料庫工作負載的最佳實務與建議</block>
-  <block id="1ed3d8c93156794cc432b123457d635f" category="paragraph">Workload Factory 提供了一系列最佳實踐和建議，用於運行架構良好的資料庫工作負載。架構良好分析會評估 Microsoft SQL Server 和 Oracle Database 的配置和設定，包括儲存大小、儲存佈局、儲存配置、運算、應用程式（SQL Server）和恢復能力等方面。</block>
-  <block id="894445e8ea6df545bfbc4247797a2162" category="section-title">儲存容量調整</block>
-  <block id="5418270ffed466b82b925869518520c0" category="list-text">*儲存層*</block>
-  <block id="117987020781031a1637fb2474fcda5a" category="paragraph">使用主 SSD 層儲存 FSx for ONTAP 磁碟區以確保最佳效能。容量池層可能會降低效能並增加延遲。主 SSD 層專為高效能工作負載而設計，而容量池層則針對成本效益進行了最佳化，可能無法滿足 SQL Server 工作負載的效能要求。</block>
-  <block id="50a35154861297e0463ad6610197fd71" category="list-text">*檔案系統餘裕*</block>
-  <block id="d3b9cd115041e7966b18702c6a73f2a0" category="paragraph">在總磁碟區大小之上維持足夠的檔案系統容量。空間不足會導致效能問題；空間過多則會浪費儲存空間並增加成本。</block>
-  <block id="e52ac523a924c00b4c5ccd742f0d98f3" category="list-text">*日誌磁碟機大小*</block>
-  <block id="88a778779ac5da9ed188a4ca76e5ea7b" category="paragraph">適當調整 SQL Server 日誌磁碟機的大小並進行監控，以防止因日誌磁碟機已滿而導致的交易回溯、資料庫無法使用、資料損壞和效能問題。</block>
-  <block id="300311b18477e304f1d9e66ce254c8fd" category="list-text">*TempDB 磁碟機大小*</block>
-  <block id="6f6c8627ab8cdaf7724764b892b49c26" category="paragraph">合理調整 TempDB 的大小並進行監控，以維持最佳效能和系統穩定性。TempDB 空間不足會導致查詢速度變慢、應用程式逾時和系統崩潰。</block>
-  <block id="196cc0216fd769aaf46f47da965f30f0" category="section-title">儲存配置</block>
-  <block id="983e88e86ed869a9aab818469a6f0c9d" category="list-text">*資料檔案 (.mdf) 放置位置*和*日誌檔案 (.ldf) 放置位置*</block>
-  <block id="cea56a3ff1140d20f606958853a708ce" category="paragraph">將資料檔案和日誌檔案放在不同的磁碟機上，以提高效能並實現獨立的備份和還原作業。</block>
-  <block id="5b9b356226fe0fdbf3042c364d45373b" category="list-text">*TempDB 放置*</block>
-  <block id="7a94f55aa80442d5d46490909ae726d7" category="paragraph">將 TempDB 放置在專用磁碟機上，可以避免 I/O 爭用，進而提高 SQL Server 的效能和穩定性。否則，可能會遇到 I/O 瓶頸、查詢速度變慢和系統不穩定等問題。</block>
-  <block id="6e8775bd755a8835ce86806d669677ea" category="section-title">儲存組態</block>
-  <block id="6fff5b0f8a5584251f9c517e970984b4" category="list-text">*ONTAP 組態*</block>
-  <block id="7824f7be61b3770dbf45d9c0e7149f1a" category="paragraph">為 FSx for ONTAP 磁碟區啟用精簡配置、自動調整大小和空間管理，以最佳化儲存效率和成本效益。配置分層策略，將較舊的快照移至容量層，同時保持活動資料的高效能。對於 LUN ，確保作業系統類型與作業系統分區方案匹配，以實現正確的 I/O 對齊；啟用空間預留以防止寫入失敗；並啟用空間分配，以便在儲存空間已滿時自動回收空間並通知主機。</block>
-  <block id="f17cbc45bebb2b318df7730cf320226f" category="list-text">*作業系統*</block>
-  <block id="64845b1fc47ddfef3f821cf6b77deab0" category="paragraph">啟用並設定 Microsoft Multipath I/O (MPIO)，並設定適當的逾時時間，以確保在 EC2 上使用 FSx for ONTAP 的 SQL Server 資料庫具有高可用性和資料存取一致性。MPIO 提供冗餘路徑，可在故障轉移期間增強彈性並提升效能。合理配置 NTFS 分配單元大小，以實現最佳磁碟利用率和效能。</block>
   <block id="a623a8d0366bf079411aa30be45b2d10" category="section-title">運算</block>
-  <block id="552508d9abd0206f8a2258a4e950c0ce" category="list-text">*運算資源調整*</block>
-  <block id="e2f45442bdec494bd836b4ec7ed91332" category="paragraph">根據工作負載需求合理調整 SQL Server EC2 執行個體的大小，以平衡效能和成本效益。如果目前執行個體配置不足，升級可以提升 CPU、記憶體和 I/O 容量。如果配置過高，降級可以在保持效能的同時降低成本。</block>
-  <block id="f4aa5339a6267f9aa498876d3f99817d" category="list-text">*作業系統修補程式*</block>
-  <block id="9078834dd366cfbcfbb7495028b90ff2" category="paragraph">套用最新的作業系統修補程式，以增強安全性和系統可靠性。</block>
-  <block id="f7ea56e7a1a3d21f93afb8868a46597f" category="list-text">*網路介面卡設定*</block>
-  <block id="3e87f3ec9808572e9326017dfb470169" category="paragraph">設定接收端擴充（RSS）以將網路處理任務指派到多個處理器上，從而提高網路效能。在應用到生產環境之前，請先測試這些設定。</block>
-  <block id="46042d8ee782bd40a22e572200cc7f86" category="list-text">*MTU 對齊*</block>
-  <block id="0ffe6b9fe982d3cb2c6117acb223809c" category="paragraph">將 EC2 執行個體的最大傳輸單元（MTU）設定與 FSx for ONTAP 對齊，以防止網路碎片化並最佳化 SQL Server 效能。修復 MTU 不一致問題可確保所有節點和網路路徑上的 MTU 配置一致。</block>
-  <block id="213ae318e1d77a9d7c891744d5e088ad" category="section-title">應用程式 (SQL Server)</block>
-  <block id="ee998db55a5373c890946748cb8dafeb" category="list-text">*授權*</block>
-  <block id="dc2c42603ecce6ed6ff4935c61807ce2" category="paragraph">SQL Server 授權評估和建議是在主機層級提供的。Workload Factory 會在偵測到您的資料庫基礎架構未使用任何您已付費的商業軟體授權功能時，將該授權視為「未最佳化」。未最佳化的授權可能會導致不必要的成本。請檢查您的 SQL Server 授權使用情況，確保您已充分利用所有已付費的功能。</block>
-  <block id="a8642bb1e88dfe2e58d1d4d34aed2d28" category="list-text">*Microsoft SQL Server 修補程式*</block>
-  <block id="aeb19b16f26ffba9cda709a80fdd7572" category="paragraph">應用最新的 SQL Server 修補程式，以增強安全性、防止漏洞並提高系統可靠性。</block>
-  <block id="4eddb0eeecb1e4ae314e258e08e465e3" category="list-text">*MAXDOP*</block>
   <block id="a87a9d28595a379a45146753041d53f3" category="paragraph">配置 MAXDOP 以最佳化查詢效能。通常情況下，4、8 或 16 的值效果良好。測試您的工作負載並監控並行等待類型，例如 CXPACKET。</block>
-  <block id="277088f7a0bc1d2b0023dc08b1d30e37" category="list-text">*排程本機快照*</block>
-  <block id="2a18a15eebd0bb67a6bfebc30c94b035" category="paragraph">排程定期快照，以便進行時間點備份，並快速從意外刪除、資料毀損和其他問題中復原。</block>
-  <block id="29e7ad88f894625110c66db9a5db3cae" category="list-text">*備份組態*</block>
-  <block id="4f191d1258f960fe582f682581657e6d" category="paragraph">配置 FSx for ONTAP 備份或 AWS Backup 以滿足資料保留和合規性要求。避免冗餘備份。</block>
-  <block id="b34347ddf6e48f7eb5aee09d6f7b92a6" category="list-text">* 跨區域複寫 *</block>
-  <block id="d4a143ea376b0803a77b86507a94ef57" category="paragraph">啟用跨區域複製（CRR）可提高資料可用性和災難復原能力。使用 CRR 可防止區域性中斷，確保業務連續性。</block>
-  <block id="7b3f859ceed0c4f3ae005839c139cd94" category="list-text">*Microsoft SQL Server 高可用性*</block>
-  <block id="95e2d9af5f0697796bab45294c72c532" category="paragraph">確保 SQL Server 具備高可用性，方法是檢查所有叢集節點是否都能存取所有共用儲存設備、節點間的磁碟機代號是否相同以防止容錯移轉期間發生衝突、是否已為叢集健全狀況設定仲裁、是否已為雲端環境設定活動訊號臨界值，以及是否已將 SQL Server 服務設定為自動啟動和容錯移轉。</block>
-  <block id="e2521a2a2f696d450620b08167cf1c24" category="list-text">*複製清理*</block>
-  <block id="a794e82abecb038fd6fa9a47fd045637" category="paragraph">定期檢查並刪除過時的 clone，以降低儲存成本。老舊和未使用的 clone 會導致高昂的成本。</block>
-  <block id="652ffdd012027e3af53ecb01c1e500ab" category="paragraph">保持足夠的檔案系統容量，以優化儲存效能並防止效能下降。充足的容量可以實現高效的儲存管理，並支援資料庫的成長。</block>
-  <block id="2162171f540307c958ebbf45ee85c9e6" category="list-text">*交換空間*</block>
   <block id="d84ec6da982197f7083af7347dab367c" category="paragraph">根據 RAM 容量設定交換空間，以便系統能夠應對記憶體壓力，避免運行速度變慢或崩潰。</block>
-  <block id="8e2df12faf538d6bacaf28eee1c9ba5c" category="list-text">*Oracle 二進位配置*</block>
-  <block id="b783d71d72c6af6a879383d98084b39c" category="paragraph">將 Oracle 二進位檔案放置在專用磁碟區上，透過減少 I/O 爭用來確保最佳效能和穩定性。這種分離方式簡化了軟體更新，並將意外修改或損毀的風險降至最低。</block>
-  <block id="191de1563ead1b097eb12ccf44a2c6e4" category="list-text">*資料檔案放置位置*</block>
-  <block id="c16d7b149b235cecee807abf5f897328" category="paragraph">將資料檔案放置在專用磁碟區或與控制檔案一起使用，以隔離隨機 I/O 並提高效能。這種隔離方式支援自訂快照配置、分層策略和效率機制，從而優化效能和成本。</block>
-  <block id="5c5a39c795bca8602578d6afc0b265b0" category="list-text">*控制檔案放置*</block>
-  <block id="d8dcefdf0aa7cd4e098cfddd267dc143" category="paragraph">將控制文件的副本儲存在不同的磁碟區或磁碟上，以避免單點故障並增加冗餘。將控制文件放在專用磁碟區上，或與重做日誌或資料文件共用，但由於效能要求，不要將其放在分層到物件儲存的磁碟區上。</block>
-  <block id="d2a9eedab15224a70b510d60bff1eacf" category="list-text">*重做日誌放置*</block>
-  <block id="874e6770e7350eb26458ff75f3c9371b" category="paragraph">將重做日誌放置在專用磁碟區上，或與暫存檔案或控制檔案適當共用，以隔離高寫入 I/O 操作並提高效能。將重做日誌的每個副本儲存在單獨的磁碟區上以實現備援。請勿將重做日誌放置在磁碟區快照或分層至物件儲存的磁碟區上，因為它們會經常更新。</block>
-  <block id="cef21d61286ad1feaed1b9c70b94e413" category="list-text">*臨時安置*</block>
-  <block id="cf0091757f6ff40803416e58f1745563" category="paragraph">將暫存檔案放置在專用磁碟區上，或與重做或控制檔案適當共用，以隔離高寫入 I/O 作業並提高效能。每個多工暫存副本都應位於單獨的磁碟區上以實現備援。由於暫存檔案的更新模式頻繁，因此不應將其放置在磁碟區快照或分層到物件儲存的磁碟區上。</block>
-  <block id="e160b9717e54bc435262f70122ed19d8" category="list-text">*歸檔位置*</block>
-  <block id="a0659f391b761a5b4ff8b65f28154fd3" category="paragraph">將歸檔日誌放置在專用磁碟區上，以防止高 I/O 需求干擾其他資料庫操作，從而提高效能和復原流程。</block>
-  <block id="ba4e74fb4a08b807adc219f9df1ea143" category="list-text">*僅限 ASM 的組態：ASM 資料磁碟群組 LUN、ASM 記錄磁碟群組 LUN 和 ASM 歸檔磁碟群組 LUN*</block>
   <block id="e7c6352933ceb00c7f004d9b3b578903" category="paragraph">將 LUN 分佈在 Automatic Storage Management (ASM) 資料、重做日誌和歸檔日誌磁碟組中，以實現最佳效能和冗餘。</block>
-  <block id="d911b17f4f4cdcca62a04ad77aa9403d" category="list-text">*ONTAP*</block>
-  <block id="d1bf0b5773fa36619112fb2acdf1eef8" category="paragraph">針對 Oracle 資料庫最佳化 FSx for ONTAP 組態，啟用精簡配置、自動調整大小和磁碟區空間管理。設定適當的快照原則和分層策略，以平衡效能和成本。對於 LUN，請確保正確的作業系統類型對齊、空間保留和空間配置設定，以防止寫入失敗並啟用自動空間回收。</block>
-  <block id="ec2a0c82b5fcb006f719221eff77fb9b" category="paragraph">配置作業系統設定以獲得最佳 Oracle 資料庫效能，包括針對資料庫工作負載調整核心參數，以及針對網路檔案系統存取適當配置 NFS 或 dNFS 設定。</block>
-  <block id="f02adb373ce0bc6a6199e6d2ba9b16b9" category="paragraph">定期套用作業系統修補程式，以確保 Oracle 資料庫環境的安全性、穩定性和效能改善。</block>
   <block id="d3274d6efd4629f10f6f21cf8a7c4820" category="doc">SQL Server 一次性評估</block>
   <block id="8f42179a48bba7e0f2424b2849f64183" category="paragraph">Workload Factory 現在提供一次性評估，可隨時分析您的 SQL Server 資料庫部署配置 - 新部署、遷移後、故障排除等。您將獲得有助於最佳化部署配置並遵循最佳實務的建議。這是您無需完全投入設定流程即可使用架構完善功能的絕佳機會。您無需在 Workload Factory 中儲存憑證、註冊資料庫資源或設定外部連線即可評估資料庫。</block>
   <block id="d34510ab77e099f24fa05ceac3ff150c" category="paragraph">架構完善的分析包括以下針對 Oracle 的新組態：</block>
@@ -1429,7 +1329,6 @@
   <block id="dd6bcf35b4739e139fa3041add91e4f2" category="paragraph"><block ref="dd6bcf35b4739e139fa3041add91e4f2" category="inline-link-macro-rx"></block></block>
   <block id="7e54439875eebd71cfeadcfc4cd7318c" category="paragraph">Workload Factory 將多個 Oracle 內部部署資料庫整合為單一 FSx for ONTAP 組態建議，以最佳化成本節約，除非所選的內部部署資料庫超過單一 FSx for ONTAP 檔案系統的處理量、容量或 IOPS 限制。</block>
   <block id="6a5a609e38cb11091780a0494b87dc4d" category="paragraph">您也可以忽略不適用於您環境的組態分析，以避免產生額外的警示和不準確的結果。</block>
-  <block id="c3ebb88c8fa8ba0761ebfdca34dbaeba" category="paragraph">您可以在 Workload Factory 控制台的「資料庫清單」或「架構完善」儀表板中檢視和修復問題。</block>
   <block id="3a40f68be193f0f7bc0c01f622d3cc5f" category="paragraph">您也可以選擇執行一次性評估，以審查資料庫組態的最佳實務做法，而無需儲存認證資料或註冊資源。</block>
   <block id="e112d8634bd0280eb27ad63e9eeb9493" category="list-text">應用程式：包括 Microsoft SQL Server 授權、Microsoft SQL Server 修補程式和 MAXDOP 設定</block>
   <block id="f953bb98ceaddd49464d672fa425c300" category="list-text">應用程式：包括 Oracle Critical Patch Updates</block>
@@ -1444,7 +1343,6 @@
   <block id="5ff54af90bf02d618e79e03c84b00700" category="list-text">在 *Inventory* 中，選擇 *Oracle* 作為引擎類型。</block>
   <block id="8cbcf57c0ff19d0bfce7c5c703a985f7" category="list-text">將 Python 指令碼複製到您的 Oracle 資料庫主機。</block>
   <block id="1403600c1d66e7c9c648c18cc49caa6b" category="list-text">在對應的 shell 中執行腳本。一個腳本會收集所有資料庫的元資料。</block>
-  <block id="b740c45c86ad7009995655549fe4d99e" category="paragraph">持續監控資料庫環境並自動修正組態問題需要符合下列需求。一次性評估不需要這些需求。</block>
   <block id="ee3b04dc1b62ec42f7ac81b2e81b8eef" category="admonition">修正組態可能會導致停機或服務中斷。在選擇修正組態之前，請務必仔細檢閱建議。</block>
   <block id="4f03f223eb6e4b828fcf786106ebb22e" category="list-text">除了複製清理之外，對於所有組態，請檢閱建議詳細資料以瞭解修正問題的影響。某些補救作業可能會導致停機或服務中斷。</block>
   <block id="9d5f676da687a39223271ef7bfef6eb9" category="paragraph">Workload Factory 停止組態分析。</block>
@@ -1453,17 +1351,9 @@
   <block id="fbce5e4a64b8c9a295b946cbdba92ed5" category="paragraph">Workload Factory 提供以下選項來分析您的資料庫環境：</block>
   <block id="b2583e88253ca682a5c9db94c5ed500a" category="inline-link-macro">一次性評估</block>
   <block id="552cb152a031acb4dd113f600e3ade2f" category="list-text">*一次性評估*：執行<block ref="8a4d4d5f036a1f87bfd488fd328f962f" category="inline-link-macro-rx"></block>以了解您的 Microsoft SQL Server 執行個體或 Oracle 資料庫的架構良好狀態，而無需儲存憑證或註冊資源。</block>
-  <block id="2527ed375db9a9b7c8eb438c41b158af" category="list-text">*持續監控*：註冊資源以啟用持續監控。Workload Factory 會定期分析您的資料庫環境、持續提供最佳化組態的建議，並自動修復問題。</block>
-  <block id="c00d1429cf92a83ae3a29f82b1d3ce87" category="paragraph">對於一次性評估，您只需提供一次要分析的 Microsoft SQL Server 執行個體或 Oracle 資料庫的認證即可。</block>
-  <block id="8e66e2128d2e2c62b019aa77535f4ea2" category="paragraph">若要進行持續監控，您需要在 AWS 帳戶中註冊資源、建立連結關聯並授予權限。</block>
   <block id="e498749f3c42246d50b15c81c101d988" category="section-title">應用程式</block>
-  <block id="6f4c4a3cb603b128e3558183f12a42c6" category="list-text">*Oracle 重大修補程式更新*</block>
   <block id="b73450e7e11af7bf00f7fdd615541be8" category="paragraph">套用最新的 Oracle Critical Patch Updates 以解決安全性漏洞，並維護資料庫環境的完整性。定期檢閱並套用修補程式，以防範潛在威脅並確保符合安全性最佳實務做法。</block>
   <block id="02bc0523497de72834c4c7990e32d155" category="section-title">彈性</block>
-  <block id="10797d31a69c2502a69facc97a069c1e" category="list-text">*跨區域複寫（CRR）*</block>
-  <block id="a9e4d72be69fab8a75dc490382a14871" category="paragraph">啟用跨區域複製（CRR）可增強 Oracle 資料庫的資料可用性和災難復原能力。CRR 透過在地理位置分散的區域複製資料，幫助防止區域性中斷，並確保業務連續性。</block>
-  <block id="4e3fbfcdffe2becd73a5b796de048459" category="list-text">*應用程式一致性快照*</block>
-  <block id="0d0d1e59f6397f54691afa326ea6ef15" category="paragraph">使用應用程式一致性快照搭配 NetApp SnapCenter，可以在特定時間點對磁碟區資料進行準確可靠的快照。這可確保應用程式流暢運行，資料安全無虞。SnapCenter 能簡化備份流程，幫助您快速且準確地恢復資料，從而減少停機時間，並保護最重要的工作負載。</block>
   <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">2026 年 4 月 6 日</block>
   <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025 年 10 月 6 日</block>
   <block id="e41556fc62415ea0a9f5770be89f198d" category="summary">將沙箱複本連接到 CI 和 CD 管道，並使用 REST API 程式碼，透過自動化改善軟體交付。</block>
@@ -1521,8 +1411,6 @@
   <block id="f00fe8f9c85e91dd0181e63717f16462" category="paragraph">對於 GovCloud 帳戶，請以下列格式輸入 FSx for ONTAP 憑證的 AWS SSM Parameter ARN 值：<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>。AWS SSM Parameter 類型必須為「Secure String」，名稱格式為<block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block>。深入瞭解如何從 <block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block> 擷取 SSM 參數。</block>
   <block id="5703c433440d20d33af4c4796d45da41" category="list-text">*安全群組*：建立工作負載安全群組是為了允許 PostgreSQL 所需的連接埠和協定。此外，您可以選擇一個或多個安全群組。</block>
   <block id="48aa17a242c1289545660436a5da586e" category="paragraph">對於 GovCloud 帳戶，請以下列格式輸入憑證的 AWS SSM Parameter ARN 值：<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>。AWS SSM Parameter 類型必須為「Secure String」，名稱格式為<block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block>。深入瞭解如何從<block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>擷取 SSM 參數。</block>
-  <block id="79841a1330c11b7cedd1a1d3cbb4ae1c" category="paragraph">+ 對於 GovCloud 帳戶，請以下列格式輸入 FSx for ONTAP 憑證的 AWS SSM Parameter ARN 值：<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>。AWS SSM Parameter 類型必須為「Secure String」，名稱格式為<block ref="2bf2dc3b6c5a539d284c40964555ce50" prefix=" " category="inline-code"></block>。深入瞭解如何從<block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>擷取 SSM 參數。</block>
-  <block id="6e9a724ad6108741081bde02ae2912e7" category="paragraph">+ 新的 FSx for ONTAP 檔案系統可能會增加 30 分鐘或更長的安裝時間。</block>
   <block id="d452bc6133c698b08bf18ab5b595d341" category="list-text">*Simple Notification Service*：您可以選擇從下拉式選單中選擇 PostgreSQL 的 SNS 主題，為該組態啟用 Simple Notification Service (SNS)。</block>
   <block id="4a82368a947d7ff0c661da3504176f5c" category="paragraph">自訂計算器中的欄位，以獲得最準確的節省估算值。</block>
   <block id="9ef59a9ba51ad7927edec8e6fcbeb5ed" category="section-title">為 Microsoft SQL Server 主機自訂節省成本</block>
@@ -1533,10 +1421,247 @@
   <block id="8e99d4b967a68c2639bd0e29eb652859" category="list-text">從資料庫中、選取 *Explore savings* 、然後選取 *Oracle on EBS* 。</block>
   <block id="cb1217d0ae1d0062d087d1a39e9f29af" category="list-text">*Oracle 版本*：請從下拉式選單中選擇 Oracle 版本。</block>
   <block id="298643abfe0d666f175f7f94a8751629" category="list-text">*Oracle BYOL 每月費用（美元）*：您可以選擇輸入 Oracle BYOL 的每月費用（美元）。</block>
-  <block id="45d65f4c65aa938b39f96d1b869cd23a" category="paragraph">AWS GovCloud （US）使用者必須使用 AWS Secrets Manager 對 FSx for ONTAP 憑證進行驗證。其他所有使用者必須使用檔案系統憑證對 FSx for ONTAP 進行身份驗證。</block>
-  <block id="2ef73c74b0cad2520f602596db0ba30e" category="list-text">輸入 AWS SSM Parameter ARN 以及 FSx for ONTAP 的 GovCloud 帳戶憑證，或輸入所有其他帳戶的 FSx for ONTAP 檔案系統使用者名稱和密碼，然後選取 *Next* 。</block>
-  <block id="9fc473da6470452a4af104eed53ea7a9" category="paragraph">對於 GovCloud 帳戶，AWS SSM Parameter ARN 值在 AWS Management Console 的 Parameter Store 中的 Parameter details 下提供，格式如下：<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>。AWS SSM Parameter 類型必須為「Secure String」，名稱格式為<block ref="a698aa1fbee7824723aef2f6f3386343" prefix=" " category="inline-code"></block>。深入瞭解如何從<block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>擷取 SSM 參數。</block>
   <block id="fcf9f8c650605555c801d6284a159f59" category="list-text">若要驗證資料庫（步驟 1）、請執行下列操作、然後選取 *Next* ：</block>
-  <block id="4c290bde270addf9889d6824ca16e3ab" category="paragraph">AWS SSM 參數類型必須為「Secure String」，名稱格式為<block ref="a698aa1fbee7824723aef2f6f3386343" prefix=" " category="inline-code"></block>。請以下列格式輸入 AWS SSM Parameter ARN 的值：<block ref="e9051332cce6a4a45153762fd24852b2" prefix=" " category="inline-code"></block>。深入瞭解如何從<block ref="19e2986392c22c543c40f011778abe34" category="inline-link-macro-rx"></block>擷取 SSM 參數。</block>
   <block id="431b3c73dcd090440f753c5d3af80bb0" category="section-title">2026 年 6 月 1 日</block>
+  <block id="78a4e31d1c34a343ac1189ff737a0982" category="doc">架構完善的分析中 Oracle 和 Microsoft SQL Server 的組態變更</block>
+  <block id="1d617de46837a3d67b6850fd27b13c02" category="paragraph">在架構完善的分析中，多種資料庫組態已合併並重新命名為以下組態。</block>
+  <block id="70dc13ee7e3320f270e7236f7fa9f60d" category="list-text">*區塊設備空間管理*：包含保留空間、空間分配和部分保留</block>
+  <block id="c75bc7e1a77b2b8e809bf87a1b1c2b5b" category="list-text">*儲存效率*：包含壓縮、重複資料刪除和資料精簡</block>
+  <block id="706125d817b831eb4c31ea90c004eee2" category="list-text">*分層/TCO 最佳化*：包含分層原則和分層最低冷卻天數</block>
+  <block id="08ab4e6e5d6d250dd93617842402b41f" category="list-text">*Schedule local snapshots*：包含快照原則</block>
+  <block id="3791b9a912543795aa72719e1fa5c488" category="inline-link-macro">工作負載工廠中的組態分析</block>
+  <block id="5874b771173388bd46c8912da31750a0" category="paragraph"><block ref="5874b771173388bd46c8912da31750a0" category="inline-link-macro-rx"></block></block>
+  <block id="da0c92072a1db7fee3208bcad3ad822b" category="section-title">更新了資料庫的 IAM 權限原則。</block>
+  <block id="e9e3af45119a834b75ee5ce8ad5fc96d" category="paragraph">資料庫的權限已更新，以改善功能存取並限制不必要的 SSM 存取。</block>
+  <block id="6f70bfe68d48e1ab770cfb69bea59dfd" category="paragraph">檢視、規劃和分析權限僅限於 AWS SSM 文件。擁有這些權限，您可以檢視主機、執行個體和資料庫。您也可以對資源執行基本的隨需架構完善分析。</block>
+  <block id="e9ad7ba5991717b52c215bd25e788b28" category="paragraph">操作和修復權限可讓您變更資源、分析錯誤日誌、取得資源的全面架構完善分析並修復組態問題。</block>
+  <block id="b8646f09ea34b75c077cfea12f75617b" category="inline-link-macro">權限參考</block>
+  <block id="c041c2dfd235a9062883922df8e04748" category="paragraph"><block ref="c041c2dfd235a9062883922df8e04748" category="inline-link-macro-rx"></block></block>
+  <block id="21b694dc2503eab08ab245a8bcfe9f1c" category="inline-link-macro">了解 AI 管理</block>
+  <block id="d4d3603f8d07cf225f744c7e81bf9374" category="admonition">如果您的帳戶管理員已關閉 AI 功能，您將看到一則訊息，並且無法使用 AI 分析。請聯絡您的系統管理員或 <block ref="a4efb9d0168cfdc15063741b91ed0040" category="inline-link-macro-rx"></block>。</block>
+  <block id="08c0c91e4ebd389e49d8401cc707b402" category="paragraph">在建立新資料庫之前，請完成以下先決條件。</block>
+  <block id="e58af96aa41efa7b7129c35a28907a57" category="inline-link-macro">AWS 帳戶憑證和 _operations and remediation_ 權限</block>
+  <block id="1e4408f83c8df67583019f5dfedf1213" category="list-text">*憑證和權限*：您必須具備 <block ref="1a05fe4795203e9e173c7abb17442c68" category="inline-link-macro-rx"></block> 才能在 Workload Factory 中建立新資料庫。</block>
+  <block id="73a7f4e2adc565d1202c5f44437f9744" category="list-text">*憑證和權限*：您必須<block ref="1a05fe4795203e9e173c7abb17442c68" category="inline-link-macro-rx"></block>才能在 Workload Factory 中建立沙盒 Clone。</block>
+  <block id="2699ce4834e3dde5ebf6ecc63a20668f" category="paragraph">Workload Factory 每日分析資料庫組態。每日分析提供架構完善的狀態、洞察分析與建議。</block>
+  <block id="13a5b378a5653f612b43f5a72bd01ebf" category="paragraph">當您為 AWS 帳戶授予 _view、planning 和 analysis_ 權限時，即可獲得許多建議。如果您授予 _operations 和 remediation_ 權限，則所有建議均可用，並且您可以自動修復組態問題以符合最佳實踐。</block>
+  <block id="f0e6b8c01ee6280b1e2c01fc31fc15bc" category="paragraph">您可以在 Workload Factory 主控台的「資料庫清單」或「架構完善」儀表板中審查並修復問題。由於資料庫組態要求各不相同，您可以忽略不適用於您資料庫環境的特定組態分析。這有助於避免不必要的警示及不準確的最佳化結果。</block>
+  <block id="6988a60bf6eae2f55b7ea830a8e6eb42" category="inline-link-macro">了解更多關於自訂規則的資訊。</block>
+  <block id="7d42d1268339efac1f7013d0c68448d7" category="paragraph">您也可以使用純文字語言建立自訂規則，以根據組織的標準和 NetApp 最佳實務來驗證您的環境。先透過模擬執行測試規則，然後排程在您的環境中執行。<block ref="bb56f08e5b6beded55992987f1280d78" category="inline-link-macro-rx"></block></block>
+  <block id="bbb1ab722da0458db430250c6f9c7ecf" category="paragraph">對於每種組態，您可以檢視目前值和建議值。</block>
+  <block id="51648136bc76557527e95cc08d7d8442" category="section-title">執行隨需評估</block>
+  <block id="5c27d2d0f6aa4dc0aa396077ed4f1d4a" category="paragraph">如果您在 AWS 帳戶中授予 _operations and remediation_ 權限，則可以對 Oracle 資料庫執行隨需評估。您無需註冊資源即可執行此評估。</block>
+  <block id="5227b8ee327ecf194cc43a7ae9929373" category="list-text">選擇 *View and fix*。</block>
+  <block id="de660a2c1b217998786c97e826fbaebe" category="list-text">在「架構良好」狀態標籤中，選擇 *Analyze now*。</block>
+  <block id="51a946e47b36e2a8e6bdc90ecaffb549" category="paragraph">以下要求對於持續評估您的資料庫環境和自動修復組態問題是必要的。這些要求並非一次性評估的必要條件。</block>
+  <block id="0073a9a9fec00b0e0d441fbce3c544fa" category="list-text">您必須在 Workload Factory 中註冊資源，且儲存設備類型必須為 FSx for ONTAP。<block ref="aed8a618f1e8a1dc325945b821521d6c" category="inline-link-macro-rx"></block></block>
+  <block id="b1ae0ae9242e09dd4fa8f55938d508c0" category="inline-link-macro">了解 Workload Factory 中資料庫資源的組態分析和架構良好狀態</block>
+  <block id="b043d22379220d7c37654b5eb6a3d126" category="list-text"><block ref="b043d22379220d7c37654b5eb6a3d126" category="inline-link-macro-rx"></block></block>
+  <block id="a9d8fc136a7c1528e9a5743b9de2661a" category="inline-link-macro">使用連結連線至 FSx for ONTAP 檔案系統</block>
+  <block id="dd4a2200748e1259c6fcaf870c467634" category="list-text"><block ref="dd4a2200748e1259c6fcaf870c467634" category="inline-link-macro-rx"></block></block>
+  <block id="4bd4792ab17b2dfaf1c72610c348727b" category="inline-link-macro">了解自訂規則</block>
+  <block id="8444c5470da00bec410076ad80f12456" category="list-text"><block ref="8444c5470da00bec410076ad80f12456" category="inline-link-macro-rx"></block></block>
+  <block id="c249c97fe800a930c35e0c53dc6aee34" category="paragraph">Workload Factory for Databases 會定期分析資料庫組態，以確定在 Amazon FSx for NetApp ONTAP 儲存設備上部署的 Microsoft SQL Server 和 Oracle 是否存在任何問題。發現問題時，Workload Factory 會向您說明問題所在，並解釋需要進行哪些變更，以使您的資料庫組態達到最佳效能、成本效率並符合最佳實務的法規遵循要求。</block>
+  <block id="963b0a9785e6644e0fdfc032d0cd9b6d" category="paragraph">Workload Factory 為架構良好的資料庫工作負載提供最佳實務和建議。架構良好分析會評估 Microsoft SQL Server 和 Oracle Database 的組態和設定，包括儲存設備、運算、應用程式、恢復能力以及 Clone 等方面。</block>
+  <block id="8215457eb88ef1fb110b79579b908e3d" category="paragraph">您可以忽略不適用於您環境的組態分析。這樣可以避免不必要的警示和不準確的最佳化結果。</block>
+  <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">深入瞭解自訂規則</block>
+  <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">您也可以使用純文字語言建立自訂規則，以根據組織的標準和 NetApp 最佳實務來驗證您的環境。先進行模擬執行測試規則，然後排程在您的環境中執行。<block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>。</block>
+  <block id="8be08850265c9930c26a8e5b28183a2e" category="paragraph">您也可以使用純文字語言建立自訂規則，以根據組織的標準和 NetApp 最佳實務來驗證您的環境。先進行模擬執行測試規則，然後排程在您的環境中執行。</block>
+  <block id="7c24f3892a999a3e8d688cabe068b17a" category="paragraph"><block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>。</block>
+  <block id="e2f155aff866bc2907bb5aaf211ff083" category="paragraph">對於一次性評估，您只需提供一次要分析的 Microsoft SQL Server 執行個體或 Oracle 資料庫的憑證即可。</block>
+  <block id="3132f405525cd70f7bad3d7130c03410" category="list-text">*持續評估*：Workload Factory 定期分析您的資料庫環境，後續提供最佳化組態的建議，並自動修復問題。</block>
+  <block id="90d64ee5b341967517900bb62d4c728f" category="paragraph">要進行持續評估，您需要在 AWS 帳戶中註冊您的資源、關聯連結並授予權限。</block>
+  <block id="49a10780393d000b311748a7793ade55" category="section-title">Microsoft SQL Server 最佳實務</block>
+  <block id="7d1cc293036e2017c7baf9a6bb73fd17" category="paragraph">以下最佳實務與建議適用於 Microsoft SQL Server 工作負載。</block>
+  <block id="8c4aa541ee911e8d80451ef8cc304806" category="section-title">儲存</block>
+  <block id="d2c74a0b2370a7994e2c41c03e1f69bf" category="paragraph-title">儲存設備層</block>
+  <block id="48792e7901f205d3495a4ceecf82104d" category="paragraph">將主要 SSD 分層用於對效能敏感的 SQL 工作負載。</block>
+  <block id="eeddaf6dcc22498a1ca23cbb5ab462e1" category="paragraph">為了獲得最佳效能，請使用主要 SSD 分層來儲存 FSx for ONTAP Volume。容量資源池分層可能會降低效能並增加延遲。主要 SSD 分層專為高效能工作負載而設計，而容量資源池分層則針對成本效率進行最佳化，可能無法滿足 SQL Server 工作負載的效能要求。</block>
+  <block id="69d3d1b390fe55f780caca8f8609eba0" category="paragraph-title">檔案系統餘裕</block>
+  <block id="d523849e567b425b986c6490d0b079c9" category="paragraph">保持高於 Volume 總大小的足夠可用空間。</block>
+  <block id="d03ee155a1b1c5adedc8bc1ea1a60c3f" category="paragraph">請確保檔案系統容量高於總 Volume 大小。可用空間過少會導致效能問題；可用空間過多則會浪費儲存設備並增加成本。</block>
+  <block id="a3b0d7ad4ce9d75cff9d4aef3eb86b62" category="paragraph-title">日誌磁碟機大小</block>
+  <block id="0d7fedb3fb94ac9db7d03559c12e2023" category="paragraph">調整日誌磁碟機的大小並加以監控，以避免復原和中斷。</block>
+  <block id="55839a84a9d5f4546a06311512c78e78" category="paragraph">調整 SQL Server 日誌磁碟機的大小並加以監控，以防止因日誌磁碟機已滿而導致的交易回溯、資料庫無法使用、資料毀損和效能問題。</block>
+  <block id="b75b38b240aa16e7f7a133981a60673a" category="paragraph-title">TempDB 磁碟機大小</block>
+  <block id="3d7ec405e5245de459ac95b0e0cf9408" category="paragraph">調整 TempDB 的大小，避免瓶頸和逾時。</block>
+  <block id="b8b2e35bc22e3e4ee50b55a84f59d89e" category="paragraph">合理調整並監控 TempDB 的大小，以維持效能和穩定性。TempDB 空間過小會導致查詢變慢、應用程式逾時甚至系統當機。</block>
+  <block id="894e4914bdd54c61d3c018914b6bfe7e" category="paragraph-title">資料和日誌檔案放置</block>
+  <block id="edaa44b4673f1ace33a6bf9e95e6fd62" category="paragraph">分開<block ref="937f38432beb92fdba3d47780720bdf7" prefix=" " category="inline-code"></block>和<block ref="cb15b9539ae0d984ff8740c68b52561c" prefix=" " category="inline-code"></block>路徑。</block>
+  <block id="e7ebfdd1505a7af8df3df607fc4f76de" category="paragraph">將資料和日誌檔案分別放在不同的磁碟機上，可以提高並行 I/O 效能、備份靈活度和還原效能。對於較小的資料庫，我們建議將資料和日誌 LUN 路徑分別放在不同的 Volume 中。</block>
+  <block id="761c97293a8026d7c7f8ec2593a47382" category="paragraph-title">TempDB 放置</block>
+  <block id="04f18a6883939a0f0475c400a6f1b379" category="paragraph">使用專用磁碟機。</block>
+  <block id="eb90a59c44b45a41d6b8156ff6bb6d5f" category="paragraph">將 TempDB 放置在專用磁碟機上，可以避免 I/O 爭用，進而提高 SQL Server 的效能和穩定性。</block>
+  <block id="6cd880eabbec3488232c6cba3fbcf998" category="paragraph-title">資源隨需配置</block>
+  <block id="5c98dcfd59ba12311a4b40fe4c061502" category="paragraph">根據需要分配儲存設備。</block>
+  <block id="7d00f267930eb94ba2b5e3ffd925a4d6" category="paragraph">為 FSx for ONTAP Volume 配置資源隨需配置，以更妥善地利用儲存設備並降低成本。資源隨需配置可讓您視需要分配儲存設備，而非一次保留所有容量。</block>
+  <block id="dac3217c156bbf86e088921748624a95" category="paragraph-title">自動調整規模和自動調整規模模式</block>
+  <block id="6d5b78a56096b43f47ab2b1559418542" category="paragraph">自動擴充 Volume。</block>
+  <block id="f8b1a4ac4b87f668ed344cedc89310e0" category="paragraph">啟用自動調整規模，並將模式設定為 <block ref="4d200fce73a8e1cc965cfc2c43343824" prefix=" " category="inline-code"></block>，使 Volume 在變滿並變為唯讀之前自動增加。</block>
+  <block id="ea87fe154a3b0752922812472bd1e33d" category="paragraph-title">區塊設備空間管理</block>
+  <block id="d82733fa8b83c7e6ff9b3484ae4ddbdb" category="paragraph">設定 SQL Server 所使用 LUN 的區塊裝置空間設定。</block>
+  <block id="1a4af9dd8b0718ca82a5280f6ee0cf01" category="paragraph">設定 Microsoft SQL Server 執行個體所使用之 LUN 的區塊裝置空間設定，以防止寫入失敗並提升 FSx for ONTAP 的空間效率。</block>
+  <block id="8a707a0c8529edc214836d6a826d0e58" category="paragraph-title">Snapshot 複本保留和自動刪除</block>
+  <block id="228fa58f3d0893b479077c0e80653337" category="paragraph">保留空間用於儲存作用中資料。</block>
+  <block id="134980a2b985cf7e78464d1df07f8900" category="paragraph">將 Snapshot 複本保留設為 0%，並啟用 Snapshot 自動刪除，以保護作用中資料的空間。</block>
+  <block id="9b4c3976d453e66a3dd22e2793fc3a8e" category="paragraph-title">空間管理</block>
+  <block id="0ce6d7a30d8954cd07ff4dba5cbe7d03" category="paragraph">刪除 Snapshot 複本前，請先擴充 Volume。</block>
+  <block id="2476aa452a62d62160e670e98f0ab2fb" category="paragraph">當空間不足時，請在刪除 Snapshot 複本之前擴充 Volume。擴充 Volume 可防止出現「Volume 已滿」錯誤，減少寫入失敗，並保留 Snapshot 恢復點。</block>
+  <block id="99a4db627c18d74e0c6835ad609e2644" category="paragraph-title">分層 / TCO 優化</block>
+  <block id="0cbe9d93db06e8320c6315e8347f8e0c" category="paragraph">使用僅快照分層原則對 Snapshot 資料進行分層。</block>
+  <block id="b04592a941f106f17c24013cd67843c0" category="paragraph">使用僅快照分層原則，此原則僅將快照資料移至容量分層，同時將作用中資料保留在 SSD 分層。這種方法既能保持 SQL 工作負載的低延遲效能，又能降低儲存設備成本。快照資料在 7 天冷卻期後進行分層。</block>
+  <block id="af20abc7154e9ee224c54b48b6ec7d63" category="paragraph-title">儲存效率</block>
+  <block id="97d67971c5e355df3efafcc19837ddfb" category="paragraph">使用重複資料刪除、壓縮和資料精簡。</block>
+  <block id="6c49bace7f5a1990fdc7dc4d7a9dcfae" category="paragraph">啟用重複資料刪除、壓縮和資料精簡，以減少儲存設備使用量和成本，同時保持效能。</block>
+  <block id="6fcd25081a49cfc1b0ec4806afa3d35f" category="paragraph-title">OS 類型</block>
+  <block id="24acec3b12ef97ec2b34e3a2fa7efc85" category="paragraph">將 ONTAP LUN 作業系統類型與主機分割區進行比對。</block>
+  <block id="4dc199c782f9154731cbef4836a8c1a1" category="paragraph">將 ONTAP LUN 作業系統值與主機分割區方案相符，以維持正確的 I/O 對齊。</block>
+  <block id="90999b34ec14dedf379fa674961057fa" category="paragraph-title">MPIO 原則、工作階段、狀態和逾時設定</block>
+  <block id="1a48fbbfd5ce10ce23ee05574028ed47" category="paragraph">設定多路徑 I/O (MPIO) 原則、工作階段、狀態和逾時設定。</block>
+  <block id="aa5db6de95fdbce8978cd3d3ab233a3c" category="paragraph">設定多路徑 I/O （MPIO） 以提高彈性和處理量。對於 iSCSI LUN 上的 SQL Server，每個目標介面使用五個 MPIO 工作階段，監控路徑狀態，並將主機逾時設為 60 秒。</block>
+  <block id="a42fd8229369082ad3674453750c8cb7" category="paragraph-title">NTFS 分配單元大小</block>
+  <block id="c7e18970a572792767bc4d2fd2ea05a3" category="paragraph">設定為 64K。</block>
+  <block id="54fb57e43ead133701d85d34f84385d2" category="paragraph">將 NTFS 分配單元大小設定為 64K，以提升 SQL Server 工作負載的磁碟效率並減少碎片。</block>
+  <block id="aff279b636a9024db3b44375d88e80eb" category="paragraph-title">已排程的本機 Snapshot 快照技術</block>
+  <block id="94c95b7b51d009b9d2eb49440bbfc689" category="paragraph">停用排程 Snapshot。</block>
+  <block id="45eb819837b9c2a7adbea195ac9d00c8" category="paragraph">停用 Microsoft SQL Server 所使用的 FSx for ONTAP Volume 的排程快照。而是使用 NetApp SnapCenter 等工具在外部管理快照，這些工具可建立應用程式一致性備份，並有助於防止還原作業期間發生資料毀損。</block>
+  <block id="34d46ee23892b96b30e5db7bf4eb7871" category="paragraph-title">運算規模調整</block>
+  <block id="4ea5f06406337856ac6939d3241f93ea" category="paragraph">根據工作負載需求調整 EC2 執行個體大小。</block>
+  <block id="3054d94c8571ba5fe02a5baa9c0f0238" category="paragraph">根據工作負載需求調整 SQL Server EC2 執行個體的大小。當資源配置不足時增加執行個體大小，當資源配置過剩時減少執行個體大小，以平衡成本和效能。</block>
+  <block id="826f844c1cfe489216a00374ad7ffcfa" category="paragraph-title">作業系統修補程式</block>
+  <block id="46868a13e02001f08f80086c305d3290" category="paragraph">安裝最新的作業系統修補程式。</block>
+  <block id="f352d91096fcc4d14791e6774b46f28f" category="paragraph">套用最新的作業系統修補程式，以提升安全性和可靠性。</block>
+  <block id="eabac3a6cb984e4c8283a694dac970bd" category="paragraph-title">網路介面卡設定</block>
+  <block id="a9573723b19fee57f1cfdf4839a30d2d" category="paragraph">設定接收端縮放（RSS）。</block>
+  <block id="250a8a619f4d75c094b3ca829aaf8237" category="paragraph">設定接收端擴充 （RSS） 以將網路處理分配至各個 CPU，進而提升網路效能。在正式部署前驗證設定。</block>
+  <block id="94c600c47cccc2c5504c4a78652a9b1c" category="paragraph-title">MTU 對齊</block>
+  <block id="1e5e4a55729302c4b7b903922447c1dc" category="paragraph">使主機和儲存設備路徑上的最大傳輸單元 (MTU) 保持一致。</block>
+  <block id="fec54de77fb3838fcfbd089d1ba12851" category="paragraph">將 EC2 最大傳輸單元 (MTU) 設定與 FSx for ONTAP 路徑保持一致，以防止碎片化並維持穩定的處理量。</block>
+  <block id="794df3791a8c800841516007427a2aa3" category="paragraph-title">授權</block>
+  <block id="986d440f729677f3208e7605d0553393" category="paragraph">審查付費功能的授權使用情況。</block>
+  <block id="858d6ed360d78ca4829972c8007e4c9b" category="paragraph">審查主機層級的 SQL Server 授權使用情況。如果未使用付費功能，則授權並非最佳化的，可能會增加成本。</block>
+  <block id="1a1cd903f6318a6355509caa78de1faa" category="paragraph-title">Microsoft SQL Server 修補程式</block>
+  <block id="ac4e66143f8aeac9f82bf332c8e729c4" category="paragraph">套用最新的 Microsoft SQL Server 修補程式。</block>
+  <block id="a4a0b4e39ec2b5db6f473a0de3736956" category="paragraph">套用最新的 SQL Server 修補程式，以提升安全性和系統可靠性。</block>
+  <block id="1abedc5f6ab369ab9fcd16d6b7990638" category="paragraph-title">MAXDOP</block>
+  <block id="1193fbb5e90747775b0e24d142eb0d02" category="paragraph">使用經過工作負載測試的值。</block>
+  <block id="090926c93cbf85baf7fc9ebeda7b568c" category="paragraph-title">應用程式一致性快照</block>
+  <block id="0b01ca87b42f013664121c6824e598a9" category="paragraph">使用 NetApp SnapCenter 的應用程式一致性快照。</block>
+  <block id="93d7629752a3e1bb4b1cb9519e2ebd7a" category="paragraph">使用 NetApp SnapCenter 的應用程式一致性快照，可以在特定時間點對 Volume 資料進行準確可靠的快照。SnapCenter 可簡化備份程序，並協助您快速還原資料，從而減少停機並保護關鍵工作負載。</block>
+  <block id="ae2679a66d07f8c7efd50d972a34a112" category="paragraph-title">跨區域複寫</block>
+  <block id="c385b3e4deb1a87960e4b4dc01ac87c7" category="paragraph">防止區域性中斷。</block>
+  <block id="a24f4d9aebe2602012f407e3fdff57d0" category="paragraph">啟用跨區域複寫 （CRR） 可提高 SQL Server 環境中的資料可用度和災難恢復。CRR 透過在不同位置複寫資料，協助防範區域性中斷，並確保業務連續性。</block>
+  <block id="a550061a86038966d9bac1bce9c12b7b" category="paragraph-title">備份組態</block>
+  <block id="d6d0f5a3f08bc3750fdaef02669400e4" category="paragraph">設定 FSx for ONTAP 備份或 AWS Backup。</block>
+  <block id="99f480d7c489c8218cb3c7e344ade5e2" category="paragraph">設定 FSx for ONTAP 備份或 AWS Backup，以符合保留和法規遵循要求，同時避免重複的備份工作流程。</block>
+  <block id="6716a97e4d0f5c2b2ba84a9c8a65b74d" category="paragraph-title">叢集仲裁</block>
+  <block id="3349e51783007390a7aa0ebe76cb1c9b" category="paragraph">設定容錯移轉叢集執行個體的仲裁。</block>
+  <block id="1c0ee6d7592730324673f23436a1cb1f" category="paragraph">正確設定 SQL Server Failover Cluster Instances 的仲裁，使叢集能夠容忍預期的節點故障。</block>
+  <block id="2fd93710037364874693d0231e709aea" category="paragraph-title">磁碟機代號</block>
+  <block id="cc552ddb219e28c92b4169787045d8ec" category="paragraph">保持各節點上的磁碟機代號一致。</block>
+  <block id="e16012d9dda9cc9c6ee2bc352a4ae759" category="paragraph">在 SQL Server 高可用度設定中，每個節點都應使用相同的磁碟機代號。這可以簡化管理，並有助於故障轉移正常運作。</block>
+  <block id="e6293976a81f8762e8b3c80832b4f7d5" category="paragraph-title">心跳設定</block>
+  <block id="884528a1b26c385906fcd05f57e1ad62" category="paragraph">調整心跳機制以實現穩定的故障轉移行為。</block>
+  <block id="e56dd572af77c70d30157e05e6ce82eb" category="paragraph">調整心跳設定，避免不必要的容錯移轉，同時快速偵測真正的故障。</block>
+  <block id="928fe421f0c735b90f3b3ec353741235" category="paragraph-title">共享儲存設備</block>
+  <block id="73a67c7a0024044c6850a532fe8c9d9f" category="paragraph">確保兩個節點都能存取共享的 iSCSI LUN。</block>
+  <block id="9aab42dd8ff5fdf6ae9ac858e113b2bb" category="paragraph">在 FCI 部署模型中，所有共享磁碟（iSCSI LUN）必須可從兩個節點存取，以便容錯移轉能夠正常運作。</block>
+  <block id="af5433572271233c7e656fe582076960" category="paragraph-title">SQL Server 服務</block>
+  <block id="bcc3a6ae2fc2f20ec81542e152329a7e" category="paragraph">驗證服務帳戶和啟動相依性。</block>
+  <block id="323efe827a0b8d392fb1ca53fdf4477f" category="paragraph">驗證服務帳戶權限、啟動類型和相依性，以確保可靠的高可用度行為。</block>
+  <block id="217601d383b816e6a2548e57b5006f92" category="section-title">複製</block>
+  <block id="61339cb538c00d138c281cf003e6daa0" category="paragraph">定期移除舊的複製。</block>
+  <block id="63da65562cf9a00b9876985cee9f85c8" category="paragraph">定期移除過時的複製，以降低儲存設備成本並減少運維工作量。老舊且未使用的複製會導致高昂的成本。</block>
+  <block id="36a6bee8815abfd7b4cc2eff4afd7b69" category="section-title">Oracle 最佳實務</block>
+  <block id="696a4bf0fabb46881f722e0f6b9477a5" category="paragraph">以下最佳實務和建議適用於 Oracle 工作負載。</block>
+  <block id="38be62841af5eb1b3fd9b70e7cab0c13" category="paragraph">啟用自動調整規模功能，並將模式設定為 <block ref="4d200fce73a8e1cc965cfc2c43343824" prefix=" " category="inline-code"></block>，使 Volume 在容量滿載並變為唯讀之前自動增加。</block>
+  <block id="da35784c3d0985ae5f62d676de22f8a3" category="paragraph">設定 Oracle 資料庫所使用 LUN 的區塊設備空間設定，以防止寫入失敗並提升 FSx for ONTAP 的儲存效率。</block>
+  <block id="45bd6a67c7bf42b606ad0eec042c1dde" category="paragraph-title">交換空間</block>
+  <block id="f04d6ae7c13c82ac4f025f6c794c5bf3" category="paragraph">根據記憶體容量設定交換空間。</block>
+  <block id="e5f1fd3cebcf908444382289a3b320f9" category="paragraph-title">歸檔、資料、控制、重做和暫存放置</block>
+  <block id="c5712399e507c16911100e7798a70fcc" category="paragraph">為每種類型的 Oracle 檔案使用專用 Volume，以隔離 I/O 模式並提升效能。</block>
+  <block id="ac7c9e1bf60e62d895269f1119ef6903" category="paragraph">將歸檔日誌、資料檔案、控制檔案、重做日誌和臨時檔案放置在分隔的磁碟機上，以隔離 I/O 模式並提高系統彈性。必要時，在分隔的 Volume 上保留備援副本。</block>
+  <block id="99909d9059d74886fd5c52eb6bd6859b" category="paragraph-title">Oracle 二進位放置</block>
+  <block id="1cc12633815798dcf3f3c411875a347c" category="paragraph">使用專用 Volume。</block>
+  <block id="bac97783eb2663a0753cdde4c1824c5b" category="paragraph">將 Oracle 二進位檔案放置在專用 Volume 上，以減少 I/O 爭用。這種分隔方式簡化了軟體更新，並將意外修改或毀損的風險降至最低。</block>
+  <block id="1aaa0ec9581d3a6477d2aae7e94f7138" category="paragraph">停用本機排程快照。</block>
+  <block id="39374be868860832a209dd66605ab324" category="paragraph">停用 Oracle 用於 FSx for ONTAP Volume 的排程快照，以節省空間並降低成本。而是使用 NetApp SnapCenter 等工具在外部管理快照，這些工具可建立應用程式一致性備份，並有助於防止在還原作業期間發生資料毀損。</block>
+  <block id="fa0aea5064b5bf5dc0f261f37a637fab" category="paragraph-title">NFS 僅限根目錄</block>
+  <block id="4c2f444c20b5fc7382a5cc918b3b93b3" category="paragraph">停用 dNFS。</block>
+  <block id="f414483fe953bd9573db2c3275f75b95" category="paragraph">停用 dNFS 的 ONTAP<block ref="77743dec92afc92eca95c255fd9333d7" prefix=" " category="inline-code"></block> 參數。<block ref="77743dec92afc92eca95c255fd9333d7" prefix=" " category="inline-code"></block> 會將 NFS 連線限制在特權連接埠（&lt;1024）。由於 NFSv4+ 中的 dNFS 程序並非以根目錄執行，而是使用較高的連接埠，因此停用此參數可允許必要的連線。</block>
+  <block id="6c348de071434b3bb4f1295a52711603" category="paragraph-title">二進位匯出原則</block>
+  <block id="a4eb79b95fb4a3fec2083cf140deb305" category="paragraph">在 Oracle 二進位檔案的專用匯出原則中包含超級使用者和 setuid 權限。</block>
+  <block id="c8be78bc7a152a3013a32b128e5ee03b" category="paragraph">如果 Oracle 二進位檔案位於 NFS 共享上，請確保匯出原則包含超級使用者和 setuid 權限。超級使用者（root）存取允許 NFS 用戶端以 root 身分進行映射，這是執行二進位檔案所必需的。</block>
+  <block id="37ef805076476027b7ee89af1cec0cc2" category="paragraph-title">ASM 設定</block>
+  <block id="be849ab14c8918a65f233bcdeaf09cfc" category="paragraph">為在 FSx for ONTAP 上執行的 iSCSI 型儲存設備設定 Oracle Automatic Storage Management （ASM）。</block>
+  <block id="802ce068e53ceb792da4548471c660d5" category="paragraph">使用 Oracle Automatic Storage Management (ASM) 來最佳化在 FSx for ONTAP 上執行的 iSCSI 型儲存設備，以提升效能、簡化儲存管理，並增強 Oracle Database 部署的擴充性。</block>
+  <block id="f7a768d30472beee2a39f3fc0da1b86e" category="list-title">僅 ASM 組態</block>
+  <block id="f2780427ca033806c8dd715ca7ef2ca8" category="list-text">*ASM 資料磁碟群組、ASM 日誌磁碟群組、ASM FRA 磁碟群組和 ASM 歸檔磁碟群組 LUN*</block>
+  <block id="1b9d631e7ab100885da6fc994b421909" category="paragraph">將 LUN 分散到自動儲存管理 (ASM) 磁碟群組資源。</block>
+  <block id="1112b6f26197effaa44503985bf6147d" category="list-text">*ASM 外部備援*</block>
+  <block id="b0d43bfdbd4c8549d283c290d18f0373" category="paragraph">使用 EXTERNAL 備援設定 Oracle ASM 磁碟群組。</block>
+  <block id="b96572dfbc47d5f38d4bf92438e2a958" category="paragraph">為 FSx for ONTAP iSCSI LUN 配置具有 EXTERNAL 備援的 Oracle ASM 磁碟群組，以運用 FSx for ONTAP 的內建高可用度、最佳化儲存效率，並透過避免 Oracle 層級資料鏡射來降低成本。</block>
+  <block id="2f6bbbc420968e67a09f1cc4a6901165" category="list-text">*ASM 過濾器驅動程式和 ASMLib 邏輯區塊大小對齊*</block>
+  <block id="bf6586df87afaab6a9f4dd83266830e4" category="paragraph">設定 Oracle ASM Filter Driver (AFD) 和 ASMLib，以使用底層 FSx for ONTAP 儲存設備的邏輯區塊大小。</block>
+  <block id="99cf847a99446d87e0935576a63b9b99" category="paragraph">在 ASMLib 組態檔案中設定 Oracle ASM 過濾器驅動程式 （AFD） 和 ASMLib，使其使用底層 FSx for ONTAP 儲存設備的邏輯區塊大小。這可確保 AFD 和 ASMLib 將 I/O 操作與儲存設備的區塊大小保持一致，從而透過最小化延遲並降低不必要的 I/O 例行成本來最佳化效能。</block>
+  <block id="7868dbfdabfbdc991050a9525bbaf81c" category="paragraph-title">TCP 插槽表</block>
+  <block id="4f038091793d701c74a472affe9e3faa" category="paragraph">對於基於 NFS 的 Oracle 工作負載，設定為 128。</block>
+  <block id="2239fe06179e36f0432df56889009996" category="paragraph">對於執行在 NFS 上的 Oracle 工作負載，請將 TCP 插槽表核心參數設定為 128。此組態可實現更多並行 I/O 作業，從而降低 Oracle 資料檔案存取等高處理量情境下的延遲。核心參數控制 TCP 上未完成的 NFS 請求的最大數量，其作用類似於 Fibre Channel 設定中的佇列深度。Linux 的預設值通常設定為 16，無法支援最佳資料庫效能。</block>
+  <block id="e3e5ba88ce9dac34df243578b82d21a5" category="paragraph-title">NFS 裝載選項 - 資料庫檔案</block>
+  <block id="07c9f35036db9318dc67bc8488e924ed" category="paragraph">使用能最佳化資料庫檔案效能的 NFS 裝載選項。</block>
+  <block id="0e3683440b3c91a8adf8fbc8feab2ac4" category="paragraph">為資料庫檔案使用最佳化的 NFS 裝載選項。關鍵參數包括<block ref="038c0dc8a958ffea17af047244fb6960" prefix=" " category="inline-code"></block>用於讀寫存取、<block ref="5523c88dd347d1b7cc617f632b7efdb7" prefix=" " category="inline-code"></block>用於背景裝載、<block ref="d64a84456adc959f56de6af685d0dadd" prefix=" " category="inline-code"></block>用於故障時無限重試，以及<block ref="d730f7fb328f30a84ee9742562b9295f" prefix=" " category="inline-code"></block>用於可靠傳輸。<block ref="2c8f7e3ea90b72af8582c0f2716bd2b8" prefix=" " category="inline-code"></block>和<block ref="374422a639d51557c7fcfc9c97aa4c07" prefix=" " category="inline-code"></block>的值 262144 可改善大型 I/O 作業，提升處理量，同時<block ref="ee11561e2136a5c9308a88da37690b2d" prefix=" " category="inline-code"></block>不會中斷長時間執行的任務。此組態可提升資料庫效能和彈性，尤其是在高處理量環境中。</block>
+  <block id="25a244403a35913993f825b673e426d2" category="paragraph-title">ADR 主目錄的 NFS 裝載選項</block>
+  <block id="156573ad09e164898f281869695f86fe" category="paragraph">使用 NFS 裝載選項來最佳化 ADR 主目錄的效能。</block>
+  <block id="d43a2be16ef10e0f68ab8c52d183873a" category="paragraph">對自動診斷儲存庫 (ADR) 主目錄（或根目錄）使用最佳化的 NFS 裝載選項。ADR 主目錄儲存日誌和追蹤資訊，這些資訊與核心資料庫檔案享有類似的可靠性選項優點，但由於其操作對中斷的敏感度較低，因此不需要<block ref="ee11561e2136a5c9308a88da37690b2d" prefix=" " category="inline-code"></block>裝載選項。</block>
+  <block id="d69395b39602b93b8de7577bd1d01da3" category="paragraph-title">NFSv4 網域名稱</block>
+  <block id="be46a35eaff0a0f4998bb76cd05f3526" category="paragraph">確保主機和 NFS 伺服器之間的 NFSv4 網域名稱相符。</block>
+  <block id="e77fd06a075f4ac68cd5a4da6e166281" category="paragraph">在主機 <block ref="f606fb2da2ae329157d791c6955a0337" prefix="(" category="inline-code"></block> 或 <block ref="de8eb7e79f8adee89501d0d7a83427ac" prefix=" " category="inline-code"></block>）與 ONTAP 中的 NFS 伺服器 <block ref="c54a41b01595bd7042188e1a80fd2682" prefix="(" category="inline-code"></block>）之間比對 NFSv4 網域名稱。</block>
+  <block id="9cce33269f5443b166a643ec86a07eeb" category="paragraph-title">NFS 快取選項</block>
+  <block id="dae3d8af9ee67826a33dc041750329e7" category="paragraph">請勿在獨立式部署中停用主機快取。</block>
+  <block id="a1fb4bd70dc4087cc2722a4bceb5e76a" category="paragraph">在獨立式 Oracle 部署中，為了提高效率和可靠性，應省略停用主機快取的 NFS 裝載選項（例如<block ref="3504e2b0e7c968444314433be465518d" prefix=" " category="inline-code"></block>和<block ref="79fea224ffd9e8111e4e87cab732464b" prefix=" " category="inline-code"></block>）。這些選項適用於叢集環境以確保快取一致性，但在單一執行個體環境中，它們會不必要地繞過快取，並可能顯著降低效能。</block>
+  <block id="5017259dadba571295ba93287ef883f9" category="paragraph-title">dNFS 啟用</block>
+  <block id="f3ea8f6b6e0f1cc3ff1fa39b2fffd01d" category="paragraph">啟用 dNFS。</block>
+  <block id="769631bf3f7ef2a761523236336ff53c" category="paragraph">在 Oracle 環境中啟用 Direct NFS （dNFS），以提升 NFS 儲存效能和可靠性。</block>
+  <block id="3968d7d3f8cb0f09289a934bc1584128" category="paragraph-title">dNFS 一致性 IP 解析</block>
+  <block id="258af232c30d61bf5f6d7843f786b2ef" category="paragraph">避免採用輪詢方式進行名稱解析。</block>
+  <block id="67e6488bb67f9c078ed9b0f2696c3140" category="paragraph">避免將 Direct NFS （dNFS） 與任何類型的輪詢名稱解析方式（包括 DNS、DDNS、NIS 或任何其他方法）一起使用。這包括 ONTAP 中提供的 DNS 負載平衡功能。一致的 IP 位址解析可維護資料庫穩定性，並防止潛在的崩潰或資料毀損。</block>
+  <block id="a727ea61b65e8aff8729b4fc3c629094" category="paragraph-title">dNFS 設定檔</block>
+  <block id="03b447c34fed08ce6d9597fffb98709f" category="paragraph">驗證<block ref="2372935c504c62470d80387029c2d069" prefix=" " category="inline-code"></block>內容。</block>
+  <block id="88698d771a4d8305b08d15b08d706baf" category="paragraph">檢查並更新<block ref="2372935c504c62470d80387029c2d069" prefix=" " category="inline-code"></block>檔案內容，以確保正確使用 Direct NFS （dNFS）。該<block ref="2372935c504c62470d80387029c2d069" prefix=" " category="inline-code"></block>檔案對於設定進階 dNFS 功能（例如多路徑和特定 NFS 選項）至關重要。正確的組態可提升資料存取和管理的效率。</block>
+  <block id="7259678c27bfd15f5edb583d463192b4" category="paragraph-title">dNFS 無共享的快取</block>
+  <block id="f955bf964f282b5a4cf1d966190aaa72" category="paragraph">適用<block ref="4740c034d97ca90a96b8050082816605" prefix=" " category="inline-code"></block>於特定的多重掛載案例。</block>
+  <block id="9390fa8e9f932f71646f336e5a80b1ff" category="paragraph">為啟用了 Direct NFS （dNFS） 的環境設定<block ref="4740c034d97ca90a96b8050082816605" prefix=" " category="inline-code"></block>裝載選項，適用於來源 Volume 透過巢狀 NFS 裝載在單一伺服器上超過一次的情況。此組態可防止裝載點之間共用快取，從而確保資料一致性和最佳化的效能。</block>
+  <block id="d67d25983d4252e6111c706ccde7cdfc" category="paragraph">套用目前的修補程式。</block>
+  <block id="a936acc7c69423ed1ac751a9607788fa" category="paragraph-title">透明大頁面</block>
+  <block id="886fc568c19edaf8ae5578270ca36404" category="paragraph">停用透明大頁面（THP）。</block>
+  <block id="5e3516309d634b611d3bdddebdd430f9" category="paragraph">在執行 Oracle 資料庫的資料庫主機上停用透明大頁 (THP)，以防止潛在的效能減低並改善記憶體容量管理。</block>
+  <block id="2361ad388b530c520aedb64fd0ff6e8e" category="paragraph-title">TCP 進階選項</block>
+  <block id="a449e30ee76868472a4c42879b1b3be3" category="paragraph">啟用傳輸控制協定（TCP）進階選項。</block>
+  <block id="ff69e71473557a4a76527191db21c9cb" category="paragraph">啟用 TCP 時間戳、SACK 和視窗擴充，以獲得最佳網路效能和可靠性。</block>
+  <block id="575eddb1382086cefb426267e48f70aa" category="paragraph-title">檔案系統 I/O 選項</block>
+  <block id="63cb59e2a0a7c927aec7ca1249956fa5" category="paragraph">設定<block ref="6a1623be7d673ed665d6446f22dbb37c" prefix=" " category="inline-code"></block>。</block>
+  <block id="dd626f1fb52d9514e13696aa723b8a9f" category="paragraph">設定<block ref="6a1623be7d673ed665d6446f22dbb37c" prefix=" " category="inline-code"></block>以獲得最佳 I/O 效能。如有需要，在停用緩衝 I/O 時調整系統全域區域 （SGA） 大小。</block>
+  <block id="ef350a6e6ea9d94712da2ef1d329bfe9" category="paragraph-title">多區塊讀取計數</block>
+  <block id="016a831106cc17785b93a6e6cc19490e" category="paragraph">移除該<block ref="d3cc759510a3aba837fc8efeb2e24b91" prefix=" " category="inline-code"></block>參數。</block>
+  <block id="f99f871af6af75a896b4a609228f8acf" category="paragraph">從文字格式的 FILE<block ref="b6bd7c570605affc5b50bbd3e436f0c0" prefix=" " category="inline-code"></block> 或伺服器管理的二進位 SPFILE <block ref="11515cb7cf24e9929a59b3ce6c560d8f" prefix="(" category="inline-code"></block>) 移除<block ref="d3cc759510a3aba837fc8efeb2e24b91" prefix=" " category="inline-code"></block> 參數，以防止 Oracle 資料庫發生效能問題，並允許 Oracle 自動管理此設定。</block>
+  <block id="8548dd4b6475455aa5e42bb42850e02c" category="paragraph-title">Oracle 關鍵修補程式更新</block>
+  <block id="d8039e71b5c2a89fd072db6355ecb7ef" category="paragraph">套用最新的 CPU 更新。</block>
+  <block id="edeae11e7d0e740c1ce1808a0d8e1007" category="paragraph">啟用跨區域複寫 （CRR） 可提高 Oracle 資料庫的資料可用度和災難恢復。CRR 透過在不同位置複寫資料，協助防範區域性中斷，並確保業務連續性。</block>
+  <block id="f1d6739b2edd7c40d8bb5296ef99bc14" category="paragraph">註冊 Microsoft SQL Server 執行個體和 Oracle 資料庫，以便您可以在 NetApp Workload Factory for Databases 中管理資源、建立資料庫和沙箱複製、執行錯誤日誌分析以及最佳化配置。</block>
+  <block id="66838c4423bf1c8d4c224cf83659c73e" category="inline-link-macro">建立資料庫</block>
+  <block id="1afcb9bffd23494eb7082b6174279b4d" category="inline-link-macro">建立沙箱</block>
+  <block id="192b0c17a5a27f63674a4d9452d69504" category="inline-link-macro">架構完善的評估</block>
+  <block id="fa02160083eeafd4641b6b5afb04b76d" category="paragraph">註冊執行個體（SQL Server）或資料庫（Oracle）涉及兩個步驟：執行個體或資料庫驗證和準備。驗證是驗證執行個體或資料庫憑證的過程。準備工作包括在執行個體或資料庫上安裝 AWS、NetApp 和 PowerShell 模組，以滿足 Workload Factory for Databases 功能（例如 <block ref="8da16c4c34e559d912e7bb550c09127f" category="inline-link-macro-rx"></block>、<block ref="634e501de898ade0d86425983c3d2aaf" category="inline-link-macro-rx"></block>、<block ref="b3b44214924ae2c9e9d272ea31fcb428" category="inline-link-macro-rx"></block> 或 <block ref="669a5b35f31c2d438554bfd3664e70fd" category="inline-link-macro-rx"></block>）的最低要求。</block>
+  <block id="a2a913b400e09d69af0a98ae84160d0c" category="paragraph">在註冊執行個體或資料庫之前，您必須執行以下操作：</block>
+  <block id="e2176f2c95e1c5e96b502c5753a9d9fc" category="inline-link-macro">授予 _operations and remediation_ 權限</block>
+  <block id="6d77b284c5d4fef59e4ee4a93a4df81e" category="list-text">請確保您要註冊的資源的主機出現在清單中。<block ref="62d24a992d64a0168253dffbd51a5da4" category="inline-link-macro-rx"></block> 在您的 AWS 帳戶中。</block>
+  <block id="eb53f00e7f60995176fbd9714071211a" category="inline-link-macro">了解如何關聯現有連結或建立並關聯新連結。</block>
+  <block id="afa025dafea9385f0d320d45e580c19d" category="list-text">將連結與託管要註冊資源的 FSx for ONTAP 檔案系統關聯起來。<block ref="89d491b5ade88a91deb72b16afa18293" category="inline-link-macro-rx"></block>連結關聯完成後，返回此操作。</block>
+  <block id="39ad0edf1fcb7cdf08722a87826835d9" category="paragraph">註冊執行個體分為兩個步驟：執行個體驗證和準備。您可以註冊單一執行個體或多個執行個體。</block>
+  <block id="7af860cadb4b06a3271bc297b39bb97f" category="list-text">準備工作（步驟 2）：確保執行個體符合最低要求。</block>
+  <block id="1a1d10440fb1e367272741222fb63f2b" category="paragraph">註冊執行個體分為兩個步驟：資料庫驗證和準備。您可以註冊單一執行個體或多個資料庫。</block>
+  <block id="2fd311c2ea2e47a076be77a578b2ee7b" category="list-text">在準備工作（步驟 2）中，請確保資料庫符合所有必要的先決條件。如果所有必需模組均已安裝且先決條件已滿足，請選擇 *Next* 註冊資料庫。否則，請按照以下步驟操作。</block>
+  <block id="ecf2ed7ba31a9f6e31583b9d9052f055" category="inline-link-macro">取得一份全面、架構完善的資料庫配置評估</block>
+  <block id="75c47d4b747a86f2b6de36d602facc46" category="list-text"><block ref="75c47d4b747a86f2b6de36d602facc46" category="inline-link-macro-rx"></block></block>
+  <block id="91d90ea5487ed9ed44e834f42f272ccb" category="section-title">2026年8月3日</block>
 </blocks>
