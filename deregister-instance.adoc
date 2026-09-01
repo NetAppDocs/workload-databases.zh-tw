@@ -4,7 +4,7 @@ permalink: deregister-instance.html
 keywords: Microsoft SQL Server instance, PostgreSQL server instance, Oracle database, deregister instance, unregister instance, remove instance 
 summary: 如果您不再想從 Workload Factory 控制台部署或監控資源，請取消註冊該資源。 
 ---
-= 在NetApp Workload Factory 中取消註冊資源
+= 在 NetApp Workload Factory for Databases 中取消登錄資源
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

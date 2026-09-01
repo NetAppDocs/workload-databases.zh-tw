@@ -4,7 +4,7 @@ permalink: view-clone-connection.html
 keywords: view clone connection, copy connection information 
 summary: 檢視和複製NetApp Workload Factory for Databases 中資料庫複製的連線資訊。 
 ---
-= 查看資料庫克隆的連接信息
+= 在 NetApp Workload Factory for Databases 中檢視 Clone 連線資訊
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
