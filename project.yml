@@ -27,60 +27,44 @@ sidebar:
       url: "/learn-databases.html"
     - title: 快速入門
       url: "/quick-start-databases.html"
-  - title: 使用資料庫工作負載
+  - title: 使用 Workload Factory 處理資料庫工作負載
     entries:
     - title: 探索節約效益
       url: "/explore-savings.html"
-    - title: 建立新的資料庫伺服器
+    - title: 建立資料庫資源
       entries:
       - title: 建立 Microsoft SQL Server
         url: "/create-database-server.html"
       - title: 建立 PostgreSQL 伺服器
         url: "/create-postgresql-server.html"
+      - title: 建立資料庫
+        url: "/create-database.html"
+      - title: 建立沙箱複製
+        url: "/create-sandbox-clone.html"
     - title: 管理資源
       entries:
       - title: 資源管理
         url: "/manage-instance.html"
       - title: 註冊資源
         url: "/register-instance.html"
-      - title: 建立資料庫
-        url: "/create-database.html"
-      - title: 建立沙箱複製
-        url: "/create-sandbox-clone.html"
-    - title: 使用 CodeBox 自動化
-      url: "/automate-codebox.html"
-    - title: 保護 Microsoft SQL Server 工作負載
-      url: "/protect-sql-server.html"
-  - title: 管理與監控
+      - title: 管理複本
+        url: "/manage-clones.html"
+      - title: 註銷資源
+        url: "/deregister-instance.html"
+  - title: 保護、監控和最佳化資料庫資源
     entries:
-    - title: 監視資料庫作業
-      url: "/monitor-databases.html"
+    - title: 分析錯誤日誌
+      url: "/analyze-error-logs.html"
     - title: 實施配置最佳實踐
       entries:
       - title: 資料庫配置分析
         url: "/optimize-overview.html"
       - title: 實施結構良好的資料庫配置
         url: "/optimize-configurations.html"
-    - title: 分析錯誤日誌
-      url: "/analyze-error-logs.html"
-    - title: 管理複本
-      entries:
-      - title: 檢查沙箱複本的完整性
-        url: "/check-clone-integrity.html"
-      - title: 還原沙箱複本
-        url: "/revert-clone.html"
-      - title: 重新整理沙箱複本
-        url: "/refresh-clone.html"
-      - title: 連線至 CI/CD 管道
-        url: "/connect-clone-cicd.html"
-      - title: 檢視複製連線資訊
-        url: "/view-clone-connection.html"
-      - title: 分割沙箱複本
-        url: "/split-clone.html"
-      - title: 刪除沙箱複本
-        url: "/delete-clone.html"
-    - title: 註銷資源
-      url: "/deregister-instance.html"
+    - title: 監視資料庫作業
+      url: "/monitor-databases.html"
+    - title: 保護 Microsoft SQL Server 工作負載
+      url: "/protect-sql-server.html"
   - title: 知識與支援
     entries:
     - title: 註冊以取得支援

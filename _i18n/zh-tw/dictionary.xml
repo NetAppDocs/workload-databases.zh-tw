@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="08c1bf6e31ef174ff608b5eb3d282063" category="summary">您可以使用 Codebox 將主機部署、資料庫建立等作業自動化。</block>
-  <block id="2ea6aca63123969c1931cd33bf4619a0" category="doc">使用 CodeBox 自動化</block>
   <block id="bd282943a337f4287ca0d70f9a836261" category="inline-link-macro">CodeBox 自動化</block>
   <block id="7954c9f6b266222ad558a397a97a8531" category="paragraph">深入瞭解 <block ref="d6a91743d83ea88006a3d66c27289981" category="inline-link-macro-rx"></block> 及使用方法。</block>
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">關於這項工作</block>
@@ -368,18 +367,8 @@
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
   <block id="aef814f0c9c4dccfb365b3322172cb51" category="sidebar">資料庫工作負載文件</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
-  <block id="991fc877b6135bcda7435016745ae066" category="sidebar">使用資料庫工作負載</block>
-  <block id="fbe27670bf06b7e38d268c77e7f002f0" category="sidebar">建立新的資料庫伺服器</block>
-  <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">管理與監控</block>
   <block id="6ea5d3d06add60328b6497a58edc5878" category="sidebar">管理複本</block>
   <block id="7375873088079584bbffaf102f0fdae4" category="sidebar">建立沙箱複製</block>
-  <block id="566d7361c862d8d2bd63be4cb3f852cd" category="sidebar">檢查沙箱複本的完整性</block>
-  <block id="6de665240f982d480aa54b5ebea09683" category="sidebar">還原沙箱複本</block>
-  <block id="6f78b6d7089b4700a6ce9674115ea116" category="sidebar">重新整理沙箱複本</block>
-  <block id="93aaedd59af13c8ec678bc053a076fe4" category="sidebar">連線至 CI/CD 管道</block>
-  <block id="d1512bc8e97fad026d3a9604a38eafeb" category="sidebar">檢視複製連線資訊</block>
-  <block id="3ed62cfc8918e6f101daf8572a05eac8" category="sidebar">分割沙箱複本</block>
-  <block id="651b8da486ba685aa80d9dd4866d0171" category="sidebar">刪除沙箱複本</block>
   <block id="e7310dc180b25aba87aadafb96fb45f4" category="inline-image-macro">節約計算機頁面的螢幕擷取畫面會顯示左側 Amazon Elastic Block Store 組態上所選的 Microsoft SQL Server 、並提供自訂快照和複製值的選項。左側顯示的是在適用於 ONTAP 的 FSX 上使用 Microsoft SQL Server 和 Elastic Block Store 儲存設備的每月總成本、可節省美元金額和百分比。</block>
   <block id="dfa401fd4fd8841a340bd9f87c0910f8" category="list-text">* Snapshot frequency * ：從下拉式功能表中選取快照頻率。</block>
   <block id="3a886ba0c11f46f4a69567f2c732a39e" category="list-text">* 複製複本數 * ：在 EBS 組態中輸入複製複本的數量。</block>
@@ -946,7 +935,6 @@
   <block id="65c95ed5c9f895be6dfa81e8583c86af" category="list-text">*CloudShell CLI*：Workload Factory 包含 CloudShell CLI，可透過基於瀏覽器的單一 CLI 跨帳號管理和操作 AWS 和NetApp環境。從 Workload Factory 控制台頂部欄存取 CloudShell。</block>
   <block id="34904d30d825a389b588efb76a1ceb16" category="list-text">*REST API*：使用 Workload Factory REST API 部署和管理您的 FSx for ONTAP檔案系統和其他 AWS 資源。</block>
   <block id="3995165ba76339d9d4d08edf5a17c07c" category="list-text">*CloudFormation*：使用 AWS CloudFormation 程式碼執行您在 Workload Factory 控制台中定義的操作，以從您的 AWS 帳戶中的 CloudFormation 堆疊對 AWS 和第三方資源進行建模、配置和管理。</block>
-  <block id="a1b1209dad1b58c4e66fd68ee5bc0148" category="list-text">*Terraform NetApp Workload Factory 提供者*：使用 Terraform 建置和管理在 Workload Factory 控制台中產生的基礎架構工作流程。</block>
   <block id="7bfa30721c5e726ff17e3f972237a82c" category="cell">引擎</block>
   <block id="34b6cd75171affba6957e308dcbd92be" category="cell">版本</block>
   <block id="64d354dc5879cf570ce7b4ef676e75bd" category="cell">作業系統</block>
@@ -1024,14 +1012,11 @@
   <block id="5e0206d9f6dda7994dfcc67c593023cc" category="paragraph">資料庫工作負載工廠會定期透過 Well-architected 儀表板分析Amazon FSx for NetApp ONTAP儲存上的 Microsoft SQL Server 和 Oracle 部署。要從結構良好的資料庫資源儀表板解決問題，首先需要<block ref="001cc0ec03a1e5527fa917b277b2c766" category="inline-link-macro-rx"></block>。</block>
   <block id="3fbdba44cc285fba2fa390c4a2d7bd17" category="paragraph">註冊實例後，您可以查看架構良好的狀態並採取行動<block ref="1c0f7e78a2011839a2cb972a47f46536" category="inline-link-macro-rx"></block>在工作負載工廠中。</block>
   <block id="1783d14ebd2dc685cc9c5fb74ee32f49" category="paragraph">當您在資料庫清單中使用 FSx for ONTAP檔案系統儲存註冊資源後，您可以<block ref="3d11347aa47327ab2988d0d3d3d6bd99" category="inline-link-macro-rx"></block>或者<block ref="e4dc5f068f234adb2616993ddf9e76bc" category="inline-link-macro-rx"></block>。</block>
-  <block id="f151b3fb8dc81419491717835cd44e64" category="summary">刷新NetApp Workload Factory for Databases 中的資料庫克隆，使其等同於當下時刻或先前某個時間點的來源資料庫。</block>
-  <block id="b7a6cd6a59539d67306baf5891d48224" category="doc">在NetApp Workload Factory for Databases 中刷新資料庫克隆</block>
   <block id="c22418865f823dceb3fa0031532d541e" category="paragraph">刷新NetApp Workload Factory for Databases 中的資料庫（沙盒）克隆，使其等同於當前時刻或先前時間點的來源資料庫。</block>
   <block id="63ba9d2341fcd316dd11a8e4d659a680" category="list-text">在沙盒中，選擇要刷新的沙盒克隆的操作選單。</block>
   <block id="5c312d6e56cb086ef38ed7860931fe1c" category="summary">註冊資源，以便您可以監控NetApp Workload Factory for Databases 中的資源狀態、資源使用率、保護和儲存效能。</block>
   <block id="ec1098eb54d9b05cc1e929562eb8d30d" category="doc">在NetApp Workload Factory for Databases 中註冊資源</block>
   <block id="1d72541b2e1a224311e8b78af73bab83" category="summary">將資料庫（沙盒）克隆還原為在NetApp Workload Factory for Databases 中建立時的原始版本。</block>
-  <block id="ecf8d68388a40ca09bc6475e0cb33a92" category="doc">在NetApp Workload Factory for Databases 中還原資料庫克隆</block>
   <block id="b006ea3a9fc3f700c7ea6c3fc404a855" category="paragraph">當您克隆資料庫時，建立時的克隆是_baseline_克隆。克隆的資料庫中的資料與建立時的來源資料庫相同。由於資料庫克隆中的資料會隨著時間而變化，您可能希望將資料還原到首次建立克隆時的基線。此操作稱為重新基線克隆。重新基準化克隆而不是創建新的克隆可以節省空間；但是，對資料庫克隆所做的任何更改都將被刪除。</block>
   <block id="b9b9dcaedb68518f618349de0f962cda" category="list-text">在沙盒中，選擇要還原的資料庫複製的操作選單。</block>
   <block id="6e9172aaf947b38ec5222c7fb3133fb6" category="list-text">在「重新基線」對話方塊中，選擇「*重新基線*」。</block>
@@ -1217,7 +1202,6 @@
   <block id="f7b5008af0a2a63908c672bf116eb9cd" category="paragraph">註冊 AOAG 執行個體和 Data Guard 資料庫後、您可以利用 Workload Factory for Databases 中的各種功能、例如檢視資源詳細資料和分析錯誤記錄。</block>
   <block id="b670d12d9dbeacc2f76bcbbabb59b072" category="paragraph">Workload Factory for Databases 也支援採用 AOAG 部署模型的 Microsoft SQL Server 執行個體進行架構完善的分析。您可以分析可用性群組中 SQL Server 執行個體的組態，並獲得最佳化部署組態和遵循最佳實務做法的建議。註冊您的 AOAG 執行個體即可啟用此功能。</block>
   <block id="fd16a8943ae80384234824f7a04cb2eb" category="inline-link-macro">在 Workload Factory for Databases 註冊資源</block>
-  <block id="e2da1373bb80f776ff6f57fbbe534851" category="paragraph"><block ref="e2da1373bb80f776ff6f57fbbe534851" category="inline-link-macro-rx"></block></block>
   <block id="acc6acf63c7f7148c690b518cbbc53ca" category="paragraph">精心設計的分析包括 Oracle 的 *Operating system patches* ，用於檢查您的作業系統是否安裝了最新的修補程式，並告訴您如何安裝。</block>
   <block id="10c0be29accc7dc47a6524aa470214cb" category="paragraph">此外，針對 Oracle 精心設計的分析功能會在儲存佈局等組態與其他組態有相依性時發出通知。該通知會告知您需要採取哪些行動來最佳化連結的組態，以便我們提供的所有建議都是最佳的。</block>
   <block id="c02b138b3ded0ad5c64dc6ef4350f29e" category="section-title">Oracle 內部部署資料庫環境成本分析與遷移規劃</block>
@@ -1329,7 +1313,6 @@
   <block id="02bc0523497de72834c4c7990e32d155" category="section-title">彈性</block>
   <block id="7f65119c79afd09b7f99936d13e97909" category="section-title">2026 年 4 月 6 日</block>
   <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025 年 10 月 6 日</block>
-  <block id="e41556fc62415ea0a9f5770be89f198d" category="summary">將沙箱複本連接到 CI 和 CD 管道，並使用 REST API 程式碼，透過自動化改善軟體交付。</block>
   <block id="7c82c4b76396ded628b47eba74c65565" category="paragraph">Workload Factory 會輸入偵測到的主機特性，以便您可以自動探索節省成本的方法。</block>
   <block id="d3fcf12bb075f268d31cdb0724f5ce8c" category="section-title">探索已偵測到的 Microsoft SQL Server 主機的節省方案</block>
   <block id="86a575769a61e2abed6c5895311f8530" category="section-title">探索已偵測到的 Oracle 主機的節省方案</block>
@@ -1676,16 +1659,36 @@
   <block id="a5ca0e96d815aa95d08fcc15e4dee05c" category="inline-link-macro">資料庫工作負載的權限</block>
   <block id="6c371a91504dc6f98ab6ece596f7ab2f" category="list-text"><block ref="6c371a91504dc6f98ab6ece596f7ab2f" category="inline-link-macro-rx"></block></block>
   <block id="82c635e3b100afc233299479fb3eda14" category="doc">在 NetApp Workload Factory for Databases 中分析錯誤記錄</block>
-  <block id="8b5884ee309b1732b4b26db4f1d9391b" category="doc">在 NetApp Workload Factory for Databases 中檢查沙箱資料完整性</block>
-  <block id="0354b35f78b3b0a2abc4857046c8bb44" category="doc">將沙箱 Clone 連接到 NetApp Workload Factory for Databases 中的 CI/CD</block>
   <block id="c4e3c9361d524348aecb1ccf6a70b736" category="doc">在 NetApp Workload Factory for Databases 中建立 Microsoft SQL Server</block>
   <block id="1929af40476a50a593dc74fdadb92f44" category="doc">在 NetApp Workload Factory for Databases 中建立 PostgreSQL 伺服器</block>
-  <block id="0f1488f1cffdc496b17aa68133f45409" category="doc">在 NetApp Workload Factory for Databases 中刪除資料庫 Clone</block>
   <block id="06eec6f6dae375e43105994b315f1664" category="doc">在 NetApp Workload Factory for Databases 中取消登錄資源</block>
   <block id="5719a8b368e4d1cde735746b2f77b822" category="doc">在 NetApp Workload Factory 中實作架構完善的資料庫組態</block>
   <block id="c845f87358189f25588e9dd9d9cf0101" category="doc">了解 NetApp Workload Factory for Databases 中的組態分析</block>
   <block id="b1ac22e25e1bec51612ad9e1ac8a5f03" category="doc">使用 NetApp Workload Factory for Databases 保護 Microsoft SQL Server 工作負載</block>
   <block id="1251c2c3562b89a08c4f6e3d98cee073" category="doc">在 NetApp Workload Factory for Databases 中拆分資料庫 Clone</block>
-  <block id="95d5b5a9387ddb73c562c266681172d5" category="doc">在 NetApp Workload Factory for Databases 中檢視 Clone 連線資訊</block>
   <block id="1641126472d40ab162e3acf05ac611ba" category="section-title">2026年8月30日</block>
+  <block id="b5ed82020518e1a667b7f42bf1da1877" category="paragraph"><block ref="b5ed82020518e1a667b7f42bf1da1877" category="inline-link-macro-rx"></block></block>
+  <block id="b3ae445fa637203f0dc17550b5c4a56c" category="doc">包含在架構良好儀表板中的資料庫組態</block>
+  <block id="a04fc413f106e041524732d895e4258e" category="paragraph">架構完善的儀表板現在包含資料庫組態的建議，讓您能根據最佳實務來評估與最佳化您的設定。首批組態包括：</block>
+  <block id="0ab265b548fdc40b21483e61ffde3aba" category="list-text">冷資料分層</block>
+  <block id="4c0abf2d4c54820b8d33061abaf30759" category="list-text">Snapshot 原則</block>
+  <block id="6f5cf50fa90f8d99bf50f65e676c6cba" category="list-text">SSD 容量餘裕</block>
+  <block id="4dcac8e07a1246e665077c1572955236" category="paragraph">在 Workload Factory 主控台中選擇主選單，然後選擇 *Well-architected*，即可找到架構完善的儀表板。</block>
+  <block id="2d647234501319107057acb4d3f8dfaf" category="inline-image-macro">Workload Factory 控制台中設計良好的選單選項</block>
+  <block id="353cc99df6b21e74c805e74bdab4b8aa" category="paragraph"><block ref="353cc99df6b21e74c805e74bdab4b8aa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="06e2f75907573850abfa673fd6e8572a" category="list-text">*NetApp Terraform 供應商*：使用 Terraform 建置和管理在 Workload Factory 主控台中產生的基礎架構工作流程。</block>
+  <block id="8ffaca7bd1131475769b15e5950997fd" category="summary">在 NetApp Workload Factory for Databases 中管理您的沙箱 Clone，以保持您的開發和測試環境可靠且具成本效益的。</block>
+  <block id="b4f39381f48079f073b43be17aadcceb" category="doc">在 NetApp Workload Factory for Databases 中管理資料庫 Clone</block>
+  <block id="cdfd274ec9252902ff30c3bd23bbcaba" category="paragraph">在 NetApp Workload Factory for Databases 中管理您的沙箱 Clone，以保持您的開發和測試環境可靠且具成本效益的。驗證 Clone 的資料是否完整，將 Clone 連接到您的 CI/CD 傳輸途徑以自動化軟體交付，或重新整理、回復或分割 Clone，使其遵守您目前的開發需求。當您不再需要 Clone 時，請將其刪除以釋放儲存容量。</block>
+  <block id="db54b9f026ef1c8abbb8346ab98e867f" category="section-title">檢查沙箱資料完整性</block>
+  <block id="5b88b561c9410bf3c277c33679dc3e85" category="section-title">將沙箱 Clone 連接到 CI/CD</block>
+  <block id="d4af634ce853b3cd21c6be2c615e7967" category="section-title">刪除資料庫 Clone</block>
+  <block id="a47b976ddc050be325174233baded1f1" category="section-title">重新整理資料庫 Clone</block>
+  <block id="c615884836ba8ff129bccac26af65a58" category="section-title">回復資料庫 Clone</block>
+  <block id="74c32f8fc6fe86c04537074f1e3cb88e" category="section-title">分割資料庫 Clone</block>
+  <block id="2f06756420805ba71f60842577c60dc8" category="section-title">檢視 Clone 的連線資訊</block>
+  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">2026 年 9 月 27 日</block>
+  <block id="e30e82b6ba088958ce23ba4d6a33b01f" category="sidebar">使用 Workload Factory 處理資料庫工作負載</block>
+  <block id="573be33921395db38cda47a4830a127e" category="sidebar">建立資料庫資源</block>
+  <block id="33995eab65a0112a35f0233d5de5a0a6" category="sidebar">保護、監控和最佳化資料庫資源</block>
 </blocks>

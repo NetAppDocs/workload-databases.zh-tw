@@ -1,0 +1,8 @@
+---
+permalink: refresh-clone.html 
+redirect: workload-databases/manage-clones.html 
+---
+= 
+:allow-uri-read: 
+
+

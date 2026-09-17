@@ -1,0 +1,159 @@
+---
+sidebar: sidebar 
+permalink: manage-clones.html 
+keywords: manage clones, manage sandboxes, manage sandbox clones, check clone integrity, check data integrity, connect to CICD, delete clone 
+summary: 在 NetApp Workload Factory for Databases 中管理您的沙箱 Clone，以保持您的開發和測試環境可靠且具成本效益的。 
+---
+= 在 NetApp Workload Factory for Databases 中管理資料庫 Clone
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 NetApp Workload Factory for Databases 中管理您的沙箱 Clone，以保持您的開發和測試環境可靠且具成本效益的。驗證 Clone 的資料是否完整，將 Clone 連接到您的 CI/CD 傳輸途徑以自動化軟體交付，或重新整理、回復或分割 Clone，使其遵守您目前的開發需求。當您不再需要 Clone 時，請將其刪除以釋放儲存容量。
+
+
+
+[[check-sandbox-data-integrity]]
+== 檢查沙箱資料完整性
+
+執行完整性檢查以確定NetApp Workload Factory for Databases 中的沙盒克隆資料是否完整或損壞。
+
+.關於這項工作
+當您在來源資料庫忙碌時、從來源資料庫建立沙箱複本時、該複本的資料可能與來源資料庫的最新快照不同步。此作業會檢查沙箱複製中所有物件的完整性、以判斷沙箱複製資料是否為最新資料。
+
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇“儲存”。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇要檢查完整性的沙盒克隆的操作選單。
+. 選取 * 執行完整性檢查 * 。
+. 在完整性檢查對話方塊中、按一下 * 完整性檢查 * 。
+. 在沙箱或工作監控中檢查完整性核取方塊的狀態。
+
+
+如果完整性檢查失敗、我們建議您不要使用沙箱複製、並建立新的沙箱複製。
+
+
+
+[[connect-a-sandbox-clone-to-cicd]]
+== 將沙箱 Clone 連接到 CI/CD
+
+使用 REST API 程式碼將沙盒克隆連接到持續整合和持續交付 (CI/CD) 管道，以透過NetApp Workload Factory for Databases 中的自動化改進軟體交付。
+
+.關於這項工作
+若要將新版軟體自動傳送至資料庫複本、您應該連線至 CI/CD 管道。使用此作業提供的 REST API 程式碼建立連線。
+
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇*資料庫*。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇沙盒克隆的操作選單以連接到 CI/CD 工具。
+. 選取 * 連線至 CI/CD 工具 * 。
+. 在 CI/CD 對話方塊中、複製或下載連線至 CI/CD 工具所需的 REST API 程式碼。
+. 按一下 * 關閉 * 。
+
+
+
+
+[[delete-a-database-clone]]
+== 刪除資料庫 Clone
+
+當您不再需要NetApp Workload Factory for Databases 中的沙盒克隆並想要釋放儲存容量時，請將其刪除。
+
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇*資料庫*。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇要刪除的沙盒複製的操作選單。
+. 選擇*刪除*。
+. 在刪除對話方塊中，選擇*刪除*確認刪除。
+
+
+
+
+[[refresh-a-database-clone]]
+== 重新整理資料庫 Clone
+
+刷新NetApp Workload Factory for Databases 中的資料庫（沙盒）克隆，使其等同於當前時刻或先前時間點的來源資料庫。
+
+.關於這項工作
+重新整理複本可將複本更新至目前的來源資料庫、或更新至先前時間點所拍攝的來源資料庫快照。對沙箱複製所做的任何變更都將被刪除。
+
+.開始之前
+只有在來源資料庫處於作用中狀態時、才能重新整理。
+
+若要從快照重新整理資料庫複本、來源資料庫至少必須有一個快照才能執行作業。
+
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇*資料庫*。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇要刷新的沙盒克隆的操作選單。
+. 選取 * 重新整理 * 。
+. 在「重新整理」對話方塊中、選取下列其中一個選項：
++
+.. * 重新整理至目前時間 *
+.. * 重新整理至時間點 *
++
+針對此選項、請從下拉式功能表中選取要重新整理的資料庫快照。
+
+
+
+. 按一下*重新整理*。
+
+
+
+
+[[revert-a-database-clone]]
+== 回復資料庫 Clone
+
+將資料庫（沙盒）克隆還原為在NetApp Workload Factory for Databases 中建立時的原始版本。
+
+當您克隆資料庫時，建立時的克隆是_baseline_克隆。克隆的資料庫中的資料與建立時的來源資料庫相同。由於資料庫克隆中的資料會隨著時間而變化，您可能希望將資料還原到首次建立克隆時的基線。此操作稱為重新基線克隆。重新基準化克隆而不是創建新的克隆可以節省空間；但是，對資料庫克隆所做的任何更改都將被刪除。
+
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇*資料庫*。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇要還原的資料庫複製的操作選單。
+. 選取 * 重新建立基準線 * 。
+. 在「重新基線」對話方塊中，選擇「*重新基線*」。
+
+
+
+
+[[split-a-database-clone]]
+== 分割資料庫 Clone
+
+在NetApp Workload Factory for Databases 中，將資料庫克隆從其來源資料庫中拆分出來會建立一個新的資料庫，這將消耗一定量的儲存容量。當拆分完成並且新資料庫出現在庫存中時，克隆將被刪除。
+
+.開始之前
+請考慮新資料庫需要多少儲存容量。如有需要、 link:https://docs.netapp.com/us-en/workload-fsx-ontap/increase-file-system-capacity.html["增加檔案系統容量"^] 請在開始之前為 ONTAP 檔案系統使用 FSX 。
+
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇*資料庫*。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇要拆分的資料庫克隆的操作選單。
+. 選取 * 分割 * 。
+. 在拆分對話框中，選擇*拆分*。
+
+
+
+
+[[view-a-clones-connection-information]]
+== 檢視 Clone 的連線資訊
+
+檢視和複製NetApp Workload Factory for Databases 中資料庫複製的連線資訊。
+
+.步驟
+. 使用其中一項登link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主控台體驗"^]入。
+. 選擇選單 image:workloads-menu-icon.png["漢堡選單圖示用於導航至儲存、EDA、AI、資料庫、VMware 和管理等工作負載。"] 然後選擇*資料庫*。
+. 從資料庫選單中，選擇*沙盒*。
+. 在沙盒中，選擇沙盒克隆的操作選單來查看其連接資訊。
+. 選取 * 顯示連線資訊 * 。
+. 在 [ 顯示連線資訊 ] 對話方塊中，視需要複製連線資訊。
+. 選擇*關閉*。
+

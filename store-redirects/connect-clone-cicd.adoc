@@ -1,0 +1,8 @@
+---
+permalink: connect-clone-cicd.html 
+redirect: workload-databases/manage-clones.html 
+---
+= 
+:allow-uri-read: 
+
+
