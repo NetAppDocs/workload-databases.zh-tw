@@ -1668,14 +1668,6 @@
   <block id="1251c2c3562b89a08c4f6e3d98cee073" category="doc">在 NetApp Workload Factory for Databases 中拆分資料庫 Clone</block>
   <block id="1641126472d40ab162e3acf05ac611ba" category="section-title">2026年8月30日</block>
   <block id="b5ed82020518e1a667b7f42bf1da1877" category="paragraph"><block ref="b5ed82020518e1a667b7f42bf1da1877" category="inline-link-macro-rx"></block></block>
-  <block id="b3ae445fa637203f0dc17550b5c4a56c" category="doc">包含在架構良好儀表板中的資料庫組態</block>
-  <block id="a04fc413f106e041524732d895e4258e" category="paragraph">架構完善的儀表板現在包含資料庫組態的建議，讓您能根據最佳實務來評估與最佳化您的設定。首批組態包括：</block>
-  <block id="0ab265b548fdc40b21483e61ffde3aba" category="list-text">冷資料分層</block>
-  <block id="4c0abf2d4c54820b8d33061abaf30759" category="list-text">Snapshot 原則</block>
-  <block id="6f5cf50fa90f8d99bf50f65e676c6cba" category="list-text">SSD 容量餘裕</block>
-  <block id="4dcac8e07a1246e665077c1572955236" category="paragraph">在 Workload Factory 主控台中選擇主選單，然後選擇 *Well-architected*，即可找到架構完善的儀表板。</block>
-  <block id="2d647234501319107057acb4d3f8dfaf" category="inline-image-macro">Workload Factory 控制台中設計良好的選單選項</block>
-  <block id="353cc99df6b21e74c805e74bdab4b8aa" category="paragraph"><block ref="353cc99df6b21e74c805e74bdab4b8aa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="06e2f75907573850abfa673fd6e8572a" category="list-text">*NetApp Terraform 供應商*：使用 Terraform 建置和管理在 Workload Factory 主控台中產生的基礎架構工作流程。</block>
   <block id="8ffaca7bd1131475769b15e5950997fd" category="summary">在 NetApp Workload Factory for Databases 中管理您的沙箱 Clone，以保持您的開發和測試環境可靠且具成本效益的。</block>
   <block id="b4f39381f48079f073b43be17aadcceb" category="doc">在 NetApp Workload Factory for Databases 中管理資料庫 Clone</block>
@@ -1691,4 +1683,6 @@
   <block id="e30e82b6ba088958ce23ba4d6a33b01f" category="sidebar">使用 Workload Factory 處理資料庫工作負載</block>
   <block id="573be33921395db38cda47a4830a127e" category="sidebar">建立資料庫資源</block>
   <block id="33995eab65a0112a35f0233d5de5a0a6" category="sidebar">保護、監控和最佳化資料庫資源</block>
+  <block id="753d621a767f80f69e64e577e1856e54" category="doc">支援單一執行個體中的多個檔案系統</block>
+  <block id="6adeb7328ee4497e74b45036bf16ff9d" category="paragraph">Workload Factory for Databases 支援每個單一 Microsoft SQL Server 執行個體擁有多個檔案系統。您可以在一個 SQL Server 執行個體中註冊多個檔案系統，並同時修復一個 SQL Server 執行個體中多個檔案系統的一個組態問題。</block>
 </blocks>
