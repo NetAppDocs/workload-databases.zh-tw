@@ -1679,10 +1679,10 @@
   <block id="c615884836ba8ff129bccac26af65a58" category="section-title">回復資料庫 Clone</block>
   <block id="74c32f8fc6fe86c04537074f1e3cb88e" category="section-title">分割資料庫 Clone</block>
   <block id="2f06756420805ba71f60842577c60dc8" category="section-title">檢視 Clone 的連線資訊</block>
-  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">2026 年 9 月 27 日</block>
   <block id="e30e82b6ba088958ce23ba4d6a33b01f" category="sidebar">使用 Workload Factory 處理資料庫工作負載</block>
   <block id="573be33921395db38cda47a4830a127e" category="sidebar">建立資料庫資源</block>
   <block id="33995eab65a0112a35f0233d5de5a0a6" category="sidebar">保護、監控和最佳化資料庫資源</block>
   <block id="753d621a767f80f69e64e577e1856e54" category="doc">支援單一執行個體中的多個檔案系統</block>
   <block id="6adeb7328ee4497e74b45036bf16ff9d" category="paragraph">Workload Factory for Databases 支援每個單一 Microsoft SQL Server 執行個體擁有多個檔案系統。您可以在一個 SQL Server 執行個體中註冊多個檔案系統，並同時修復一個 SQL Server 執行個體中多個檔案系統的一個組態問題。</block>
+  <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026 年 9 月 30 日</block>
 </blocks>
