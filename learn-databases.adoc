@@ -138,6 +138,9 @@ link:https://docs.netapp.com/us-en/workload-fsx-ontap/learn-fsx-ontap.html["了�
 | Microsoft SQL Server | 2022年SQL Server | Windows Server 2022 | FCI、獨立式 
 
 
+| Microsoft SQL Server | SQL Server 2025 | Windows Server 2025 | FCI、獨立式 
+
+
 | Microsoft SQL Server | SQL 伺服器 2017 | 任何 | FCI、獨立式 
 
 
