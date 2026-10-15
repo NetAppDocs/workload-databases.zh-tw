@@ -1687,4 +1687,114 @@
   <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026 年 9 月 30 日</block>
   <block id="3fba0171e458258e875a2f8013e395b8" category="cell">SQL Server 2025</block>
   <block id="9e5f96378bed43aac0d5d94368775263" category="cell">Windows Server 2025</block>
+  <block id="4782267fdadc095a2cd17da937e1ccad" category="summary">關於適用於資料庫的 NetApp Workload Factory 常見問題。</block>
+  <block id="2a4cac40440a22026c2bfd855df4dbe7" category="doc">適用於資料庫的 NetApp Workload Factory 常見問題解答</block>
+  <block id="1e1a3b6ab01f226ca1e127f75f84287e" category="paragraph">尋找有關 NetApp Workload Factory for 資料庫的常見問題解答，包括在 Amazon FSx for NetApp ONTAP 上部署、註冊、最佳化、Clone 和保護資料庫工作負載時有用的概念、先決條件和行為。</block>
+  <block id="ff937566d140b3beee0ae05fa3bf1d16" category="section-title">入門指南和權限</block>
+  <block id="49806e49d4920a1a191dc7edec063393" category="paragraph-title">什麼是 Workload Factory for Databases，它支援哪些資料庫引擎和部署模型？</block>
+  <block id="2534f34768fea6d6d2a3f455dcdd11b6" category="paragraph">Workload Factory for Databases 可探索、評估、配置與管理 FSx for ONTAP 上的 SQL Server、PostgreSQL 和 Oracle 資料庫。</block>
+  <block id="9edc1f7174eb2abf6e14bc33c86eb1ed" category="paragraph">請參閱 <block ref="de005eec6ae9c7f16694e816ae3da980" category="inline-link-macro-rx"></block> 以了解支援的型號。</block>
+  <block id="8f8ab4a3f82cb0a5c9ace0c25cb1f331" category="paragraph-title">Workload Factory for Databases 在哪些 AWS 區域中可用？</block>
+  <block id="d58b792ff3cf7eb876f7a2615ce9c542" category="paragraph">Workload Factory for Databases 可在所有支援 FSx for ONTAP 的商業區域運行，但在中國區域、Secret Cloud 或 Top Secret Cloud 中不可用。</block>
+  <block id="ee9b3af8630059982f4d1dd2fd3834a3" category="paragraph"><block ref="ee9b3af8630059982f4d1dd2fd3834a3" category="inline-link-rx"></block></block>
+  <block id="9b97f837f597c001894db81a4bf49825" category="paragraph-title">我是否需要授予 AWS 權限才能開始使用 Workload Factory for Databases？</block>
+  <block id="583f7ad88c222c9eeb6be0a5adabca4a" category="paragraph">否。您可以在未授予權限的情況下以基本模式啟動，並從 Codebox 複製部分完成的程式碼範例。如果您想要探索主機並管理資源，則必須新增 AWS 認證資料，並為所需的權限建立 IAM 原則。請參閱 <block ref="701d6c5998b7a600f073d19741bb6f76" category="inline-link-macro-rx"></block>。</block>
+  <block id="d5a49a1760f5eae8454d84b8ea1027b1" category="paragraph-title">每個工作（探索、註冊、資料庫建立、主機部署、修復組態）需要什麼權限層級？</block>
+  <block id="5574a5c0b6d209a5d99bf1cd351dd82d" category="paragraph">已偵測主機的節省計算器和錯誤記錄分析器需要檢視、規劃和分析權限。註冊資源、建立資料庫、建立沙箱 Clone 以及修復架構完善的問題需要操作和修復權限。部署新的資料庫主機需要資料庫主機建立權限。</block>
+  <block id="818beeb2b71e78e10efcaea058043e4a" category="section-title">部署資料庫主機</block>
+  <block id="520f3a0f200db765ec937ead78ce446b" category="paragraph-title">部署 SQL Server 主機時，「快速建立」和「進階建立」有什麼區別？</block>
+  <block id="75983eb7ad3c1f715505bd02a3095fb3" category="paragraph">快速建立會套用預設值：FCI 部署、Windows Server 2016 和 SQL Server 2019 標準版。進階建立可讓您自訂部署模型（FCI 或單一執行個體）、作業系統、版次、版本、執行個體類型、配置的 IOPS 和處理量、加密與監控。</block>
+  <block id="ba03f36f2433a2b0aac616d2bb21982c" category="inline-link-macro">建立 SQL Server 主機</block>
+  <block id="fca5317673ab7aed382180b8b3e0459c" category="paragraph"><block ref="5c93d04b6d4ac34e7791c381e0707def" category="inline-link-macro-rx"></block>。</block>
+  <block id="c8b3a2b20e28f630c501ddc4dd6be315" category="paragraph-title">新的 SQL Server FCI 或獨立式部署會建立怎樣的 FSx for ONTAP 組態？</block>
+  <block id="8a42f97bc55e5daa61133e176e70fafb" category="paragraph">FCI 部署會建立 Multi-AZ FSx for ONTAP 檔案系統，且 FCI 僅支援 Multi-AZ 組態。獨立式部署會建立 Single-AZ 檔案系統。如果您選擇現有的檔案系統，則會為 SQL Server 工作負載建立新的儲存設備 VM。</block>
+  <block id="1379a0f6a94145014fed6787720550c7" category="paragraph-title">部署主機是否會改變我的 VPC 網路組態？</block>
+  <block id="f74756cfd372f6bc4d1c6a6538a11682" category="paragraph">有可能。部署會建立所需的 AWS 介面端點和 S3 閘道端點（如果它們不存在）。它也會將 VPC DNS 屬性<block ref="cb0df2380d372b70fd568d139d704794" prefix=" " category="inline-code"></block> 和<block ref="df550516571c5adda5f49cb0f14d22f1" prefix=" " category="inline-code"></block> 設為 true（如果尚未設定）。</block>
+  <block id="74c1ffeee10328970a7ab8ceb202160a" category="inline-link-macro">了解更多關於建立 SQL Server 主機</block>
+  <block id="6ead88c28062baaf60c6d5e6f4f1f313" category="paragraph"><block ref="bda43f4548ee4bc87595f0de68111ac7" category="inline-link-macro-rx"></block>。</block>
+  <block id="7cb60af25bc13129ccee186d65ba8511" category="paragraph-title">部署 SQL Server 主機需要哪些 Active Directory 存取？</block>
+  <block id="d81468426a0a35f10d104f45b9adfa5b" category="paragraph">您需要 Active Directory 管理存取權，以便部署能夠參加網域並建立電腦物件。如果您未提供 SQL 服務帳戶，部署將會建立一個。對於使用者代管的 Active Directory，您必須提供一個安全性群組，允許從 EC2 執行個體到目錄服務的流量。</block>
+  <block id="d0f051280c736f69fc18f3a0710773d7" category="paragraph-title">為什麼我的 SQL Server 部署會因為 CredSSP 而失敗？</block>
+  <block id="4eb056bd12f0faec74839c64756e414d" category="paragraph">在部署期間，Workload Factory 會啟用 CredSSP，以便將認證資料委派給資源配置指令碼。如果群組原則封鎖所有網域電腦的 CredSSP 委派，部署就會失敗。部署後，Workload Factory 會停用 CredSSP。</block>
+  <block id="71c15050afabf2e28c17ebb68e94db0c" category="paragraph-title">部署完成後我可以立即連線到 SQL Server 嗎？</block>
+  <block id="a5157316a874f41547a714f96d5153dd" category="paragraph">不會立即生效。Workload Factory 不會在已部署的 SQL Server 上啟用遠端連線，因此您需要自行設定，例如在安全性群組中允許所需的用戶端 IP 或子網路。</block>
+  <block id="4958c8f1ec71818c73a1e2d3efaedbaf" category="inline-link-macro">了解如何在 SQL Server 上啟用遠端連線</block>
+  <block id="f97e008ec427b318ebfaef6889042295" category="paragraph"><block ref="14cf7d66aa5058a706da37f374ee402c" category="inline-link-macro-rx"></block>。</block>
+  <block id="a9e05cf4049d5a4138457dc4467edeb6" category="section-title">註冊與管理資源</block>
+  <block id="84410efd9f37ce7811945ec68cc2b64e" category="paragraph-title">在 Workload Factory 中註冊執行個體可以獲得什麼好處？需要滿足哪些前提條件？</block>
+  <block id="4f37599f7acfe386ce98d17026d91d5f" category="paragraph">註冊可讓您建立資料庫和沙箱 Clone、執行錯誤記錄分析，以及最佳化組態。資源必須在 FSx for ONTAP 儲存設備上執行，並顯示在清單中，這需要 AWS 認證資料。您也必須將連結與 FSx for ONTAP 檔案系統建立關聯，並完成先決條件檢查，包括適用於 SQL Server 的 AWS 和 NetApp PowerShell 模組。</block>
+  <block id="9c40ded53e74c2102ef6e824ab1b6db6" category="paragraph"><block ref="2dd9f57d2265bdf5844c29c119e8ca9c" category="inline-link-macro-rx"></block>。</block>
+  <block id="e53c6b066d6c6602a811c3d11467d84a" category="paragraph-title">哪些資料庫可以註冊和代管？ PostgreSQL 呢？</block>
+  <block id="3356e42ee4c2ec8d9acbd45ac17c1497" category="paragraph">只有 SQL Server 執行個體（FCI 和獨立式）以及 Oracle 資料庫才能註冊和管理。PostgreSQL 主機會根據您的 AWS 認證資料出現在清單中，但並未註冊。偵測功能僅涵蓋 Amazon Linux 上的 PostgreSQL 和 Red Hat Enterprise Linux 上的 Oracle。</block>
+  <block id="6c9d9e9e8f1e090fee51f5e6b35cffbf" category="paragraph-title">在沒有網際網路存取的私有網路中註冊執行個體需要哪些條件？</block>
+  <block id="7877d69d57003f53050f42fd212847ac" category="paragraph">確保 S3、AWS Systems Manager 和 FSx for ONTAP 的 VPC 端點在 VPC 中可用，並在安全性群組中允許介面端點使用 443 連接埠。如果您使用 Proxy，則也必須允許所需的 Microsoft、PowerShell Gallery（SQL Server）和 AWS 網域。</block>
+  <block id="f0997ab9b5b94cc907f86118e2e69a5e" category="inline-link-macro">了解如何註冊資源</block>
+  <block id="b00857e376acec9ec806f92fa888fd00" category="paragraph"><block ref="553020237d27eff9374392b59b689fd2" category="inline-link-macro-rx"></block>。</block>
+  <block id="019bc8bdc013ea6dd01441af0dd627b8" category="paragraph-title">註銷資源時會發生什麼事？</block>
+  <block id="cb06b21ddc280eb470693219ca29e347" category="paragraph">您無法再透過控制台部署或監控該資源，其 FSx for ONTAP 儲存容量也不再計入執行個體已使用容量。您可以稍後重新註冊該資源。</block>
+  <block id="258e1dcdf969c7c797e745f6a20f7e0d" category="inline-link-macro">註銷資源</block>
+  <block id="fa489722060669b6cbfe6be503909b15" category="paragraph"><block ref="611e4576ed62c821287b729b7dab411f" category="inline-link-macro-rx"></block>。</block>
+  <block id="c1f0a545597f1b39d635f65446676dfc" category="paragraph-title">建立資料庫需要了解哪些知識？</block>
+  <block id="6626cd1c97285f801e13ba3e2c689004" category="paragraph">建立資料庫會新增兩個具有獨立 LUN 的新 Volume，供資料和記錄檔案使用。這些檔案採用精簡配置，僅使用所配置大小的幾 MB。使用 SMB 的 SQL Server 不支援建立資料庫。</block>
+  <block id="539522affb555c466b5c8f976eb383f3" category="inline-link-macro">建立 SQL Server 資料庫</block>
+  <block id="2da0747e53050b6c56950827d0893fc4" category="paragraph"><block ref="75046a90403261241119455d1696bc5d" category="inline-link-macro-rx"></block>。</block>
+  <block id="0cda48b44d12625b3d3d3ec35e20bd75" category="paragraph-title">節省成本計算器比較了哪些內容，以及如何評估內部部署 SQL Server 主機？</block>
+  <block id="3593386e7986db9c4b4d29ff9618b055" category="paragraph">它會比較 FSx for ONTAP 與 Amazon Elastic Block Store、FSx for Windows File Server 及內部部署儲存設備上的儲存設備、運算、SQL 授權、快照和 Clone 成本。對於內部部署主機，您可以下載 PowerShell 評估指令碼，在主機上執行該指令碼，然後上傳結果。然後，您可以選擇最多五個主機進行分析。請注意，內部部署 Volume 的大小不會計入成本和節省百分比的計算中。</block>
+  <block id="d29c90b4f82c166798f1f8e15dcd72f2" category="inline-link-macro">了解如何使用節省計算機</block>
+  <block id="3892560eb1e15954593d8839a8469893" category="paragraph"><block ref="8d0197f1622e03b4410d58423c12a49b" category="inline-link-macro-rx"></block>。</block>
+  <block id="8c73290e62f99a78591a57f6892086a1" category="paragraph-title">為什麼計算機建議將 SQL Server 企業版降級為標準版？</block>
+  <block id="1d2450e32998a69e802f089a858f7ce2" category="paragraph">當執行個體的 vCPU 數量為 48 個或更少，且記憶體容量為 128 GB 或更少時，建議降級。此外，執行個體不得使用企業版功能，例如線上索引作業、資源調控器、點對點或 Oracle 複寫、R/Python 擴充功能或記憶體最佳化 TempDB。部署模型也不得需要企業版。</block>
+  <block id="46d01e5ed21aca01e1648b2531ed1a77" category="paragraph-title">當我選擇多個主機時，計算器如何決定 FSx for ONTAP 組態的大小？</block>
+  <block id="71df076cb0fed0fad9fd4d4c052d4e8f" category="paragraph">您可以選擇最多五個偵測到的主機。除非主機超過單一檔案系統的處理量、容量或 IOPS 限制，否則 Workload Factory 會將它們合併到一個包含單一 SQL 執行個體的 FSx for ONTAP 組態建議中。不支援建立或儲存多個 FSx for ONTAP 檔案系統。</block>
+  <block id="92199d6114a18ff14ac267b0173c17cf" category="paragraph"><block ref="e22e7e4f32e98dc6a7aba821004e4eb9" category="inline-link-macro-rx"></block>。</block>
+  <block id="150b53a82438f77e58d4d56e871000c4" category="section-title">架構良好的組態</block>
+  <block id="426068083195285a1aab3a4ac3dad0aa" category="paragraph-title">一次性和持續性的架構完善評估之間有什麼差異？</block>
+  <block id="e62f13f574bfb5c2fd45fa1ab5cd278f" category="paragraph">一次性評估會在主機上執行指令碼並上傳結果，因此無需儲存任何認證資料，也無需註冊資源。持續評估則需要註冊資源、關聯連結並授予權限。它每日進行分析，並能自動修復問題。</block>
+  <block id="0e4628a5e4d70a809c14848ca21c2f82" category="inline-link-macro">最佳化您的資料庫組態</block>
+  <block id="f6985afd62801e041de4bdbdf125b562" category="paragraph"><block ref="10be26d607b04ac41b48d14462192458" category="inline-link-macro-rx"></block>。</block>
+  <block id="36484a6959ea51ce2f860df0759af8ad" category="paragraph-title">在修復架構良好的組態問題之前，我應該考慮哪些風險？</block>
+  <block id="26115cb105e2df3aff2a9d2157750eec" category="paragraph">某些修復方案可能會導致停機或服務中斷，因此請先仔細審查每項建議。例如，在變更生產環境配置之前，請先測試 RSS 和 MAXDOP 建議的效能。</block>
+  <block id="76d360863ce992220cc5e13d969b6bf5" category="inline-link-macro">執行評估以了解更多組態建議</block>
+  <block id="88423f215b257810305394aaec401fc4" category="paragraph"><block ref="79479fcdf0af6ed1d4212c50bf618c17" category="inline-link-macro-rx"></block>。</block>
+  <block id="c25f05e3f5c4c56586f6b9a81eee18aa" category="paragraph-title">我可以忽略不適用於我環境的架構完善建議嗎？</block>
+  <block id="6ab26fb5272a8e6062288d07b5a960ad" category="paragraph">是的。忽略組態會停止對其分析，避免不必要的警報，並將其從總最佳化分數中移除。您可以隨時重新啟動它，分析將恢復每日進行。</block>
+  <block id="216b0f9d0defb9c7b2fc90a44d91b17e" category="inline-link-macro">從架構良好的評估中排除組態</block>
+  <block id="1d694d6efb18a8286bf26f017330481b" category="paragraph"><block ref="415cc2faf846f6c4919c812f17ee1f68" category="inline-link-macro-rx"></block>。</block>
+  <block id="861078a51e1d73e99a256817c9a5a154" category="paragraph-title">為什麼最佳實務做法建議停用 SQL Server 和 Oracle 的 Volume 上的排程本機快照？</block>
+  <block id="3af2059afd09ef0862a548bd0ec73305" category="paragraph">排程的 FSx for ONTAP 快照不具備應用程式一致性。建議使用 NetApp SnapCenter 等工具從外部管理快照，以取得應用程式一致的備份，並避免在還原期間發生毀損。請注意，進階建立主機部署預設會啟用具有 7 天保留期的每日快照原則。</block>
+  <block id="65d2da016345bf35d0d44ca8442e33fe" category="inline-link-macro">深入瞭解資料庫組態的分析</block>
+  <block id="75fbe2066fe307cd782606b24bd4869b" category="paragraph"><block ref="07c33d76d8f0770dfab847775db7d241" category="inline-link-macro-rx"></block>。</block>
+  <block id="b106daf2fdae0a4bd49b38f8d420b68d" category="section-title">沙盒 Clone</block>
+  <block id="391ca9db72946303109a24d4896a9267" category="paragraph-title">如何建立沙盒 Clone，以及可以將其放置在何處？</block>
+  <block id="3bbf7c958cb2e4ab495a36a32d5d63a1" category="paragraph">沙箱 Clone 是從來源資料庫的最新快照建立。它可以位於同一個 SQL Server 執行個體或另一個執行個體上，只要目標主機與來源位於同一個 VPC 中，並且共用相同的 FSx for ONTAP 檔案系統即可。建立沙箱 Clone 需要代管（已註冊）的 SQL Server 以及操作和修復權限。</block>
+  <block id="1c1dbe56fdf08bd43c074d9a934cd336" category="paragraph"><block ref="6504d115c0eb5a22b47c2642ce84b891" category="inline-link-macro-rx"></block>。</block>
+  <block id="982c02d5df1637bf58d01b9461097110" category="paragraph-title">對於沙盒 Clone，重新整理、重新基線和分割之間有什麼區別？</block>
+  <block id="98c2003f15ada0740fd4faa8e94e0045" category="paragraph">重新整理會將 Clone 同步到來源資料庫的目前狀態或先前的快照，並刪除您對 Clone 所做的任何變更。重新基線會將 Clone 還原到建立時的狀態，同樣會刪除變更，並且與建立新 Clone 相比，可以節省空間。分割會將 Clone 轉換為獨立的資料庫，使用儲存容量，並在分割完成後刪除 Clone。</block>
+  <block id="e1f1b37e7b02212acbe08f9f82f26b8e" category="inline-link-macro">管理資料庫 Clone</block>
+  <block id="5aa6f3dd95bb84df52cc5b97e9fd7a9f" category="list-text"><block ref="2a272be59d3fc3e9b24f62aa8d372380" category="inline-link-macro-rx"></block>。</block>
+  <block id="5f7aaee7c16475aab769c15496c46e5d" category="list-text"><block ref="b7b6079009afe43a128528756b1dbee0" category="inline-link-macro-rx"></block>。</block>
+  <block id="0dae0c13a95ce8c681bc28a121c3ae69" category="paragraph-title">如何驗證沙箱 Clone 的資料是否正確？如果檢查失敗該怎麼辦？</block>
+  <block id="e7ed74627b1561cd8461a79358810b61" category="paragraph">如果在來源資料庫繁忙時建立 Clone，則 Clone 可能與最新快照不同步。完整性檢查會檢查 Clone 中的所有物件。如果檢查失敗，請勿使用該 Clone，並建立一個新的 Clone。</block>
+  <block id="dbb8c4266166bc0f89a2824c48e50dc4" category="inline-link-macro">檢查資料庫 Clone 的完整性</block>
+  <block id="c2ba1a80540f225e5274dff0d33108e1" category="paragraph"><block ref="8ac128c775c2cc11f12b591126762515" category="inline-link-macro-rx"></block>。</block>
+  <block id="a330102b21fc2aa74640b5b0f6d20d7f" category="paragraph-title">在分割 Clone 之前，我應該檢查什麼？</block>
+  <block id="3cc98a05c0bcbde8d2308b172248e95b" category="paragraph">分割會建立一個新的資料庫，使用額外儲存容量。請提前規劃所需容量，並根據需要增加 FSx for ONTAP 檔案系統的容量。</block>
+  <block id="7e7397a7b79323762c61941fc0e6b5f9" category="section-title">資料保護</block>
+  <block id="d404dd8427b4c28dbfa1d2c86416a047" category="paragraph-title">Backup and Recovery 可為 SQL Server 工作負載提供哪些保護？</block>
+  <block id="65bae2ad8db3bdaec75f329c8a5c1340" category="paragraph">它使用本機快照在主要 FSx for ONTAP 儲存設備上備份工作負載，並使用 SnapMirror 技術將其複寫到次要 FSx for ONTAP 儲存設備。您可以在 Backup and Recovery 中建立保護原則。</block>
+  <block id="134f4db723fad5218b0420d296c36f6a" category="inline-link-macro">使用備份和復原保護 SQL Server 工作負載</block>
+  <block id="682e931964d4d25dc4a6e06bb893382e" category="paragraph"><block ref="235de46f62004f88453be487a16a47c1" category="inline-link-macro-rx"></block>。</block>
+  <block id="e6e540463f0da11c64286b3213d032da" category="paragraph-title">使用 NetApp Backup and Recovery 保護 SQL Server 需要哪些條件？</block>
+  <block id="1f2c4d8d8181aba9734a284d26f3c4a9" category="paragraph">SQL Server 執行個體必須使用 Windows 認證資料註冊。您還必須符合 Backup and Recovery SQL Server 需求、NetApp Console 需求（包括 Console 代理程式）以及授權。Workload Factory 接著會安裝 Microsoft SQL Server 外掛程式，並將您重新導向至 Backup and Recovery 以建立保護原則。</block>
+  <block id="2e593c29b9200c847ee51d180b1672af" category="section-title">自動化與錯誤分析</block>
+  <block id="067d3f9b6c9ef0aac1905cdc0585e3dd" category="paragraph-title">Codebox 是什麼？使用產生的程式碼時需要注意什麼？</block>
+  <block id="2ea6aca63123969c1931cd33bf4619a0" category="inline-link-macro">使用 Codebox 實現自動化</block>
+  <block id="d53f23cf23eba63c40f3cc866dbe6cfd" category="paragraph">Codebox 是一個基礎架構即程式碼輔助工具，可為 Workload Factory 支援的操作產生 REST API、AWS CLI、CloudFormation 和 Terraform 程式碼。Terraform 程式碼會隱藏 fsxadmin 和 vsadmin 密碼，因此您必須重新輸入這些密碼。下載或複製的 CloudFormation 範本僅保留七天。請參閱 <block ref="4d16796654a24e4b45ccd7b4cddbdc2e" category="inline-link-macro-rx"></block>。</block>
+  <block id="f97304e52b5c3c013082ec79473f77a0" category="paragraph-title">要使用人工智慧驅動的錯誤日誌分析器，我需要進行哪些設定？</block>
+  <block id="5e7e8f81a0ac4fd14f2f16c1ab2fa852" category="paragraph">分析器需要啟動 Amazon Bedrock、與主機子網路關聯的 Bedrock VPC 終端節點、已註冊的資源，以及所需的 IAM 權限。對於 Oracle，您還必須授予對 V$DIAG_ALERT_EXT 的存取權。如果您的帳戶系統管理員停用了 AI 功能，則無法使用分析器。</block>
+  <block id="d1abcf29bd372f70cbfc47a67e60c139" category="inline-link-macro">了解如何在 Workload Factory 中分析錯誤日誌</block>
+  <block id="04449fe0790df54b48e4cb6221e921ab" category="paragraph"><block ref="52e72fd03a4cc0d6f5999e643649e945" category="inline-link-macro-rx"></block>。</block>
+  <block id="c205c53a606156f982f2d7d7c8d9b4a3" category="paragraph-title">使用錯誤日誌分析器時，我的日誌資料安全嗎？</block>
+  <block id="2aec8f10b1cd6aa48fdd1951d13b132d" category="paragraph">日誌資料和聚合結果保留在您的 AWS 帳戶中，並透過私人 VPC 端點傳輸，不會暴露於公共網際網路。客戶資料不會用於訓練或改進模型。Bedrock 會即時處理日誌，並將結果儲存在您的環境中。</block>
+  <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常見問題</block>
 </blocks>
