@@ -1797,4 +1797,18 @@
   <block id="c205c53a606156f982f2d7d7c8d9b4a3" category="paragraph-title">使用錯誤日誌分析器時，我的日誌資料安全嗎？</block>
   <block id="2aec8f10b1cd6aa48fdd1951d13b132d" category="paragraph">日誌資料和聚合結果保留在您的 AWS 帳戶中，並透過私人 VPC 端點傳輸，不會暴露於公共網際網路。客戶資料不會用於訓練或改進模型。Bedrock 會即時處理日誌，並將結果儲存在您的環境中。</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常見問題</block>
+  <block id="b3ae445fa637203f0dc17550b5c4a56c" category="doc">包含在架構良好儀表板中的資料庫組態</block>
+  <block id="17d52f36b5492e8aeada41d949434243" category="paragraph">精心設計的儀表板現在包含資料庫配置建議，方便您根據最佳實踐評估和優化您的設定。儀表板中包含的首批配置如下：</block>
+  <block id="0ab265b548fdc40b21483e61ffde3aba" category="list-text">冷資料分層</block>
+  <block id="4c0abf2d4c54820b8d33061abaf30759" category="list-text">Snapshot 原則</block>
+  <block id="6f5cf50fa90f8d99bf50f65e676c6cba" category="list-text">SSD 容量餘裕</block>
+  <block id="935aff9bc7bcf43dd1fe5825226b72c1" category="list-text">將區塊設備作業系統類型與主機匹配</block>
+  <block id="868e9efce60d04bdf51fc2494a73a9ce" category="list-text">非作用中區塊裝置（LUN）</block>
+  <block id="797a6fe95ffc7bef7107556bac722567" category="list-text">資料檔（.mdf）放置</block>
+  <block id="27c70398ced593abb96a3c33b5e1072b" category="list-text">日誌檔（.ldf）放置</block>
+  <block id="346c87aaab415cd5adb218f88181ede8" category="list-text">多路徑 I/O 狀態</block>
+  <block id="92a6dbd219f1455bd74f5d666b1b27c5" category="list-text">多路徑 I/O 逾時</block>
+  <block id="33bf723377efe51bc70f70bbb5efa8a4" category="paragraph">在 Workload Factory 控制台中選擇主選單，然後選擇 *架構完善* 以尋找架構完善的儀表板。</block>
+  <block id="2d647234501319107057acb4d3f8dfaf" category="inline-image-macro">Workload Factory 控制台中設計良好的選單選項</block>
+  <block id="353cc99df6b21e74c805e74bdab4b8aa" category="paragraph"><block ref="353cc99df6b21e74c805e74bdab4b8aa" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
